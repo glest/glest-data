@@ -32,19 +32,20 @@
 		<image-cancel path="../spearman/images/tech_cancel.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
-			<sound path="$COMMONDATAPATH/sounds/worker_select1.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/worker_select2.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/worker_select3.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/worker_select4.wav"/>
+			<sound path="sounds/slave_select1.wav"/>
+			<sound path="sounds/slave_select2.wav"/>
+			<sound path="sounds/slave_select3.wav"/>
+			<sound path="sounds/slave_select4.wav"/>
+			<sound path="sounds/slave_select5.wav"/>
+			<sound path="sounds/slave_select6.wav"/>
 		</selection-sounds>
 		<command-sounds enabled="true">
-			<sound path="$COMMONDATAPATH/sounds/worker_ack1.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/worker_ack2.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/worker_ack3.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/worker_ack4.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/worker_ack5.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/worker_ack6.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/worker_ack7.wav"/>
+			<sound path="sounds/slave_ack1.wav"/>
+			<sound path="sounds/slave_ack2.wav"/>
+			<sound path="sounds/slave_ack3.wav"/>
+			<sound path="sounds/slave_ack4.wav"/>
+			<sound path="sounds/slave_ack5.wav"/>
+			<sound path="sounds/slave_ack6.wav"/>
 		</command-sounds>
 	</parameters>
 
@@ -199,9 +200,9 @@
 			<anim-speed value="50"/>
 			<animation path="models/slave_dying.g3d"/>
 			<sound enabled="true" start-time="0">
-				<sound-file path="$COMMONDATAPATH/sounds/worker_die1.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/worker_die2.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/worker_die3.wav"/>
+				<sound-file path="sounds/slave_die1.wav"/>
+				<sound-file path="sounds/slave_die2.wav"/>
+				<sound-file path="sounds/slave_die3.wav"/>
 			</sound>
 			<fade value="false"/>
 		</skill>
@@ -239,20 +240,16 @@
 			<move-skill value="move_skill"/>
 			<build-skill value="build_skill"/>
 			<buildings>
-                                <building name="farm"/>
+                <building name="farm"/>
 				<building name="desert_camp"/>
 				<building name="temple"/>
-                                <building name="obelisk"/>
+                <building name="obelisk"/>
 				<building name="air_pyramid"/>
 				<building name="sphinx"/>
 				<building name="pyramid"/>
 			</buildings>
 			<start-sound enabled="false"/>
-			<built-sound enabled="true">
-				<sound-file path="$COMMONDATAPATH/sounds/worker_work_end1.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/worker_work_end2.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/worker_work_end3.wav"/>
-			</built-sound>
+			<built-sound enabled="false"/>
 		</command>
 
 		<command>
@@ -270,7 +267,7 @@
 				<unit name="sphinx"/>
 				<unit name="pyramid"/>
 				<unit name="air_pyramid"/>
-                                <unit name="obelisk"/>
+                <unit name="obelisk"/>
 			</repaired-units>
 		</command>
 

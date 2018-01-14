@@ -1,16 +1,16 @@
 <?xml version="1.0" standalone="no"?>
+
 <unit>
 	<parameters>
 		<size value="4"/>
-		<height value="4"/>
-		<ai-build-size value="5"/>
+		<height value="3"/>
 		<max-hp value="7000" regeneration="0"/>
 		<max-ep value="0"/>
 		<armor value="20"/>
 		<armor-type value="wood"/>
 		<sight value="16"/>
 		<time value="140"/>
-		<multi-selection value="false"/>
+		<multi-selection value="true"/>
 		<cellmap value="true">
 			<row value="0110"/>
 			<row value="0110"/>
@@ -49,7 +49,9 @@
 			<sound path="$COMMONDATAPATH/sounds/tech_click.wav"/>
 		</command-sounds>
 	</parameters>
+
 	<skills>
+
 		<skill>
 			<type value="stop"/>
 			<name value="stop_skill"/>
@@ -59,6 +61,7 @@
 			<animation path="models/sphinx.g3d"/>
 			<sound enabled="false"/>
 		</skill>
+
 		<skill>
 			<type value="be_built"/>
 			<name value="be_built_skill"/>
@@ -68,6 +71,7 @@
 			<animation path="models/sphinx_construction.g3d"/>
 			<sound enabled="false"/>
 		</skill>
+
 		<skill>
 			<type value="attack"/>
 			<name value="attack_skill"/>
@@ -76,8 +80,9 @@
 			<anim-speed value="90"/>
 			<animation path="models/sphinx.g3d"/>
 			<sound enabled="true" start-time="0">
-				<sound-file path="$COMMONDATAPATH/sounds/defense_tower_attack1.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/defense_tower_attack2.wav"/>
+				<sound-file path="sounds/sphinx_attack1.wav"/>
+				<sound-file path="sounds/sphinx_attack2.wav"/>
+				<sound-file path="sounds/sphinx_attack3.wav"/>
 			</sound>
 			<attack-strenght value="120"/>
 			<attack-var value="50"/>
@@ -95,7 +100,6 @@
 					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit2.wav"/>
 					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit3.wav"/>
 					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit4.wav"/>
-					<!--sound-file path="$COMMONDATAPATH/sounds/archmage_hit1.wav"/-->
 				</sound>
 			</projectile>
 			<splash value="true">
@@ -104,6 +108,7 @@
 				<particle value="true" path="particle_splash.xml"/>
 			</splash>
 		</skill>
+
 		<skill>
 			<type value="die"/>
 			<name value="die_skill"/>
@@ -116,8 +121,11 @@
 			</sound>
 			<fade value="false"/>
 		</skill>
+
 	</skills>
+
 	<commands>
+
 		<command>
 			<type value="stop"/>
 			<name value="attack_off"/>
@@ -126,6 +134,7 @@
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
 		</command>
+
 		<command>
 			<type value="attack_stopped"/>
 			<name value="attack_on"/>
@@ -133,7 +142,8 @@
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<attack-skill value="attack_skill"/>
-			<stop-skill value="stop_skill"/>
+                        <stop-skill value="stop_skill"/>
 		</command>
+
 	</commands>
 </unit>

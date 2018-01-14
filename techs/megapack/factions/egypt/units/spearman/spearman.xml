@@ -38,14 +38,15 @@
 			<sound path="sounds/spearman_select2.wav"/>
 			<sound path="sounds/spearman_select3.wav"/>
 			<sound path="sounds/spearman_select4.wav"/>
+			<sound path="sounds/spearman_select5.wav"/>
+			<sound path="sounds/spearman_select6.wav"/>
+			<sound path="sounds/spearman_select7.wav"/>
 		</selection-sounds>
 		<command-sounds enabled="true">
 			<sound path="sounds/spearman_ack1.wav"/>
 			<sound path="sounds/spearman_ack2.wav"/>
 			<sound path="sounds/spearman_ack3.wav"/>
 			<sound path="sounds/spearman_ack4.wav"/>
-			<sound path="sounds/spearman_ack5.wav"/>
-			<sound path="sounds/spearman_ack6.wav"/>
 		</command-sounds>
 	</parameters>
 
@@ -66,7 +67,7 @@
 			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="220"/>
-			<anim-speed value="90"/>
+			<anim-speed value="115"/>
 			<animation path="models/spearman_charging.g3d"/>
 			<sound enabled="false"/>
 		</skill>
@@ -88,16 +89,11 @@
 			<speed value="100"/>
 			<anim-speed value="100"/>
 			<animation path="models/spearman_attacking.g3d"/>
-			<sound enabled="true" start-time="0.20">
-				<sound-file path="sounds/spearman_attack7.wav"/>
-				<sound-file path="sounds/spearman_attack8.wav"/>
+			<sound enabled="true" start-time="0.25">
 				<sound-file path="sounds/spearman_attack1.wav"/>
 				<sound-file path="sounds/spearman_attack2.wav"/>
 				<sound-file path="sounds/spearman_attack3.wav"/>
 				<sound-file path="sounds/spearman_attack4.wav"/>
-				<sound-file path="sounds/spearman_attack5.wav"/>
-				<sound-file path="sounds/spearman_attack6.wav"/>
-				<sound-file path="sounds/spearman_attack9.wav"/>
 			</sound>
 			<attack-strenght value="80"/>
 			<attack-var value="30"/>
@@ -106,7 +102,7 @@
 			<attack-fields>
 				<field value="land"/>
 			</attack-fields>
-			<attack-start-time value="0"/>
+			<attack-start-time value="0.55"/>
 			<projectile value="false"/>
 			<splash value="false"/>
 		</skill>
@@ -132,6 +128,7 @@
 				<sound-file path="sounds/spearman_die1.wav"/>
 				<sound-file path="sounds/spearman_die2.wav"/>
 				<sound-file path="sounds/spearman_die3.wav"/>
+				<sound-file path="sounds/spearman_die4.wav"/>
 			</sound>
 			<fade value="false"/>
 		</skill>
