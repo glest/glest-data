@@ -13,8 +13,8 @@
 		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
-			<level name="expert" kills="5"/>
-			<level name="master" kills="15"/>
+			<level name="battleworn" kills="5"/>
+			<level name="ancient" kills="15"/>
 			<level name="legendary" kills="30"/>
 		</levels>
 		<fields>
@@ -27,7 +27,6 @@
 		<upgrade-requirements>
 			<upgrade name="summon_scarab"/>
 		</upgrade-requirements>
-
 		<resource-requirements>
 			<resource name="gold" amount="150"/>
 			<resource name="stone" amount="100"/>
@@ -62,7 +61,7 @@
 			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="1000"/>
-			<anim-speed value="60"/>
+			<anim-speed value="40"/>
 			<animation path="models/scarab_standing.g3d"/>
 			<sound enabled="false"/>
 		</skill>
@@ -72,7 +71,7 @@
 			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="140"/>
-			<anim-speed value="140"/>
+			<anim-speed value="250"/>
 			<animation path="models/scarab_walking.g3d"/>
 			<sound enabled="false"/>
 		</skill>
@@ -84,7 +83,7 @@
 			<speed value="75"/>
 			<anim-speed value="75"/>
 			<animation path="models/scarab_attacking.g3d"/>
-			<sound enabled="true" start-time="0">
+			<sound enabled="true" start-time="0.4">
 				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack1.wav"/>
 				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack2.wav"/>
 				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack3.wav"/>
@@ -104,7 +103,7 @@
 			<attack-fields>
 				<field value="land"/>
 			</attack-fields>
-			<attack-start-time value="0.2"/>
+			<attack-start-time value="0.55"/>
 			<projectile value="true">
 				<particle value="true" path="particle_proj.xml"/>
 				<sound enabled="true">

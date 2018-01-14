@@ -33,21 +33,23 @@
 		<image-cancel path="../spearman/images/tech_cancel.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
-			<sound path="$COMMONDATAPATH/sounds/swordman_select1.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/swordman_select2.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/swordman_select3.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/swordman_select4.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/swordman_select5.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/swordman_select6.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/swordman_select7.wav"/>
+			<sound path="sounds/priest_select1.wav"/>
+			<sound path="sounds/priest_select2.wav"/>
+			<sound path="sounds/priest_select3.wav"/>
+			<sound path="sounds/priest_select4.wav"/>
+			<sound path="sounds/priest_select5.wav"/>
+			<sound path="sounds/priest_select6.wav"/>
+			<sound path="sounds/priest_select7.wav"/>
 		</selection-sounds>
 		<command-sounds enabled="true">
-			<sound path="$COMMONDATAPATH/sounds/swordman_ack1.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/swordman_ack2.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/swordman_ack3.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/swordman_ack4.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/swordman_ack5.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/swordman_ack6.wav"/>
+			<sound path="sounds/priest_ack1.wav"/>
+			<sound path="sounds/priest_ack2.wav"/>
+			<sound path="sounds/priest_ack3.wav"/>
+			<sound path="sounds/priest_ack4.wav"/>
+			<sound path="sounds/priest_ack5.wav"/>
+			<sound path="sounds/priest_ack6.wav"/>
+			<sound path="sounds/priest_ack7.wav"/>
+			<sound path="sounds/priest_ack8.wav"/>
 		</command-sounds>
 	</parameters>
 
@@ -68,7 +70,7 @@
 			<name value="produce_skill"/>
 			<ep-cost value="0"/>
 			<speed value="150"/>
-			<anim-speed value="50"/>
+			<anim-speed value="45"/>
 			<animation path="models/pharao_producing.g3d"/>
 			<sound enabled="true" start-time="0.3">
 				<sound-file path="$COMMONDATAPATH/sounds/summoner_summon1.wav"/>
@@ -76,6 +78,9 @@
 				<sound-file path="$COMMONDATAPATH/sounds/summoner_summon3.wav"/>
 				<sound-file path="$COMMONDATAPATH/sounds/summoner_summon4.wav"/>
 			</sound>
+			<particles value="true">
+				<particle-file path="produce_particles.xml"/>
+			</particles>
 		</skill>
 
 		<skill>
@@ -83,7 +88,7 @@
 			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="210"/>
-			<anim-speed value="120"/>
+			<anim-speed value="50"/>
 			<animation path="models/pharao_walking.g3d"/>
 			<sound enabled="false"/>
 		</skill>
@@ -138,32 +143,15 @@
 			<name value="heal"/>
 			<ep-cost value="0"/>
 			<speed value="210"/>
-			<anim-speed value="110"/>
+			<anim-speed value="60"/>
 			<animation path="models/pharao_healing.g3d"/>
+			<particles value="true">
+				<particle-file path="healing_particles.xml"/>
+			</particles>
 			<sound enabled="true" start-time="0.5">
 				<sound-file path="$COMMONDATAPATH/sounds/shaman_heal1.wav"/>
 			</sound>
 		</skill>
-
-		<!--skill>
-			<type value="move"/>
-			<name value="charge_skill"/>
-			<ep-cost value="0"/>
-			<speed value="220"/>
-			<anim-speed value="125"/>
-			<animation path="models/spearman_charging.g3d"/>
-			<sound enabled="false"/>
-		</skill>
-
-		<skill>
-			<type value="morph"/>
-			<name value="morph_skill"/>
-			<ep-cost value="0"/>
-			<speed value="500"/>
-			<anim-speed value="80"/>
-			<animation path="models/spearman_standing.g3d"/>
-			<sound enabled="false"/>
-		</skill-->
 
 		<skill>
 			<type value="die"/>
@@ -173,10 +161,11 @@
 			<anim-speed value="50"/>
 			<animation path="models/pharao_dying.g3d"/>
 			<sound enabled="true" start-time="0">
-				<sound-file path="$COMMONDATAPATH/sounds/technician_die1.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/technician_die2.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/technician_die3.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/technician_die4.wav"/>
+				<sound-file path="sounds/priest_die1.wav"/>
+				<sound-file path="sounds/priest_die2.wav"/>
+				<sound-file path="sounds/priest_die3.wav"/>
+				<sound-file path="sounds/priest_die4.wav"/>
+				<sound-file path="sounds/priest_die5.wav"/>
 			</sound>
 			<fade value="false"/>
 		</skill>
@@ -242,7 +231,7 @@
 				<unit name="snake"/>
 				<unit name="spearman"/>
 				<unit name="spearthrower"/>
-                                <unit name="scarab"/>
+                <unit name="scarab"/>
 			</repaired-units>
 		</command>
 
@@ -268,7 +257,7 @@
 
 		<command>
 			<type value="attack"/>
-			<name value="ice_nova"/>
+			<name value="energy_attack"/>
 			<image path="images/priest_attack.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>

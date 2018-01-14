@@ -35,24 +35,21 @@
 		<image-cancel path="../spearman/images/tech_cancel.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
-			<sound path="sounds/warrior_select1.wav"/>
-			<sound path="sounds/warrior_select2.wav"/>
-			<sound path="sounds/warrior_select3.wav"/>
+			<sound path="sounds/anubis_warrior_select1.wav"/>
+			<sound path="sounds/anubis_warrior_select2.wav"/>
+			<sound path="sounds/anubis_warrior_select3.wav"/>
 		</selection-sounds>
 		<command-sounds enabled="true">
-			<sound path="sounds/warrior_ack1.wav"/>
-			<sound path="sounds/warrior_ack2.wav"/>
-			<sound path="sounds/warrior_ack3.wav"/>
-			<sound path="sounds/warrior_ack4.wav"/>
-			<sound path="sounds/warrior_ack5.wav"/>
-			<sound path="sounds/warrior_ack6.wav"/>
-			<sound path="sounds/warrior_ack7.wav"/>
+			<sound path="sounds/anubis_warrior_ack1.wav"/>
+			<sound path="sounds/anubis_warrior_ack2.wav"/>
+			<sound path="sounds/anubis_warrior_ack3.wav"/>
+			<sound path="sounds/anubis_warrior_ack4.wav"/>
+			<sound path="sounds/anubis_warrior_ack5.wav"/>
+			<sound path="sounds/anubis_warrior_ack6.wav"/>
 		</command-sounds>
-
 	</parameters>
 
 	<skills>
-
 		<skill>
 			<type value="stop"/>
 			<name value="stop_skill"/>
@@ -80,16 +77,11 @@
 			<speed value="100"/>
 			<anim-speed value="100"/>
 			<animation path="models/anubis_attacking.g3d"/>
-			<sound enabled="true" start-time="0.5">
-				<sound-file path="sounds/warrior_attack1.wav"/>
-				<sound-file path="sounds/warrior_attack2.wav"/>
-				<sound-file path="sounds/warrior_attack6.wav"/>
-				<sound-file path="sounds/warrior_attack7.wav"/>
-				<sound-file path="sounds/warrior_attack3.wav"/>
-				<sound-file path="sounds/warrior_attack4.wav"/>
-				<sound-file path="sounds/warrior_attack5.wav"/>
-				<sound-file path="sounds/warrior_attack8.wav"/>
-				<sound-file path="sounds/warrior_attack9.wav"/>
+			<sound enabled="true" start-time="0.25">
+				<sound-file path="sounds/anubis_warrior_attack1.wav"/>
+				<sound-file path="sounds/anubis_warrior_attack2.wav"/>
+				<sound-file path="sounds/anubis_warrior_attack3.wav"/>
+				<sound-file path="sounds/anubis_warrior_attack4.wav"/>
 			</sound>
 			<attack-strenght value="130"/>
 			<attack-var value="40"/>
@@ -98,7 +90,7 @@
 			<attack-fields>
 				<field value="land"/>
 			</attack-fields>
-			<attack-start-time value="0.3"/>
+			<attack-start-time value="0.65"/>
 			<projectile value="false"/>
 			<splash value="false"/>
 		</skill>
@@ -111,10 +103,9 @@
 			<anim-speed value="40"/>
 			<animation path="models/anubis_dying.g3d"/>
 			<sound enabled="true" start-time="0">
-				<sound-file path="sounds/warrior_die1.wav"/>
-				<sound-file path="sounds/warrior_die2.wav"/>
-				<sound-file path="sounds/warrior_die3.wav"/>
-				<sound-file path="sounds/warrior_die4.wav"/>
+				<sound-file path="sounds/anubis_warrior_die1.wav"/>
+				<sound-file path="sounds/anubis_warrior_die2.wav"/>
+				<sound-file path="sounds/anubis_warrior_die3.wav"/>
 			</sound>
 			<fade value="false"/>
 		</skill>
