@@ -26,6 +26,5 @@ hint34=想了解如何自己托管游戏服务器，请查阅 \nhttp://FAQ.mega
 hint36=要永久标记地图某处，\n请按 '#BookmarkAdd#' 键，然后点击地图某处。\n要取消标记，\n按'#BookmarkRemove#' 键，再次击地图某处。
 hint38=在 Linux 和 OS X 系统里，你可以随时按 Alt-Enter\n切换窗口和全屏模式。
 hint42=要通过第三人称视角跟随一个单位，选中这个单位并按下 '#CameraFollowSelectedUnit#' 键。\n要返回正常的相机模式，按 #ResetCameraMode# 键。
-hint43=广告： linux 是最好的操作系统……就目前来说 :)
 # hint44=Free Software made this game possible.\nThat's free as in liberty, not beer. Read up on Free Software and GNU and\nsupport the Free Software Foundation (fsf.org).
 hint45=发现翻译有缺失或不妥？请帮助翻译 MegaGlest！http://translate.megaglest.org
