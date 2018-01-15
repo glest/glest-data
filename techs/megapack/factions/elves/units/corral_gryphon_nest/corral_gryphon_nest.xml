@@ -1,0 +1,137 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="5" />
+		<height value="2" />
+		<max-hp value="7400" regeneration="0"/>
+		<max-ep value="0" />
+		<armor value="0" />
+		<armor-type value="stone"/>				
+		<sight value="15" />
+		<time value="80" />
+		<multi-selection value="false" />
+		<cellmap value="true">
+			<row value="00000"/>
+			<row value="11101"/>
+			<row value="11100"/>
+			<row value="11101"/>
+			<row value="00000"/>
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false"/>
+		<unit-requirements>
+            <unit name="academy"/>
+		</unit-requirements>
+		<upgrade-requirements>
+			<upgrade name="quenya"/>
+		</upgrade-requirements>
+		<resource-requirements>
+			<resource name="gold" amount="75" />
+			<resource name="grace" amount="30" />
+			<resource name="wood" amount="150" />
+		</resource-requirements>
+		<resources-stored>
+			<resource name= "gold" amount="2000"/>
+			<resource name= "wood" amount="1000"/>
+		</resources-stored>
+		<image path="images/stable_corral.bmp" />
+		<image-cancel path="../tree_of_life/images/stop.bmp"/>
+		<meeting-point value="true" image-path="../tree_of_life/images/mp.bmp"/>
+		<selection-sounds enabled="true">
+			<sound path="../tree_of_life/sounds/magic_click.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="../tree_of_life/sounds/magic_click.wav"/>
+		</command-sounds>
+	</parameters>
+	
+	<!-- *** skills *** -->
+	<skills>
+
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="100" />
+			<animation path="../corral/models/stable_gryphon_nest.g3d" />
+			<sound enabled="false" />
+		</skill>
+		
+		<skill>
+			<type value="produce" />
+			<name value="produce_skill"/>		
+			<ep-cost value="0" />
+			<speed value="450" />
+			<anim-speed value="400" />
+			<animation path="../corral/models/stable_gryphon_nest.g3d" />
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="die" />
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="../corral/models/stable_gnest_des.g3d" />
+			<sound enabled="true" start-time="0">
+				<sound-file path="../tree_of_life/sounds/magic_building_fall2.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+		<skill>
+			<type value="upgrade" />
+			<name value="upgrade_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="150" />
+			<animation path="../corral/models/stable_gryphon_nest.g3d" />
+			<sound enabled="false"/>
+		</skill>
+
+	</skills>
+	
+	<!-- *** commands *** -->
+	<commands>
+
+		<command>
+			<type value="produce"/>
+			<name value="train_reaver" />
+			<image path="../reaver/images/reaver.bmp" />
+			<unit-requirements />
+			<upgrade-requirements/>
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="reaver"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="train_silver_helm_lancer" />
+			<image path="../silver_helm_lancer/images/silver_helm.bmp" />
+			<unit-requirements />
+			<upgrade-requirements/>
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="silver_helm_lancer"/>
+		</command>
+		
+		<command>
+			<type value="produce"/>
+			<name value="train_gryphon" />
+			<image path="../gryphon/images/gryphon.bmp" />
+			<unit-requirements />
+			<upgrade-requirements/>
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="gryphon"/>
+		</command>
+
+	</commands>
+</unit>

@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="no"?>
+
+<upgrade>
+	<image path="images/noldor_armour.bmp"/>
+	<image-cancel path="../../units/tree_of_life/images/stop.bmp"/>
+	<time value="200"/>
+	<unit-requirements/>
+	<upgrade-requirements>
+		<upgrade name="elven_lore"/>
+	</upgrade-requirements>
+	<resource-requirements>
+		<resource name="wood" amount="150"/>
+		<resource name="gold" amount="200"/>
+		<resource name="stone" amount="150"/>
+	</resource-requirements>
+	<effects>
+		<unit name="galadrim_archer"/>
+		<unit name="grey_elf_archer"/>
+		<unit name="magol_hedir"/>
+		<unit name="reaver"/>
+	</effects>
+	<max-hp value="0"/>
+	<max-ep value="0"/>
+	<sight value="0"/>
+	<attack-strenght value="0"/>
+	<attack-range value="0"/>
+	<armor value="12"/>
+	<move-speed value="-10"/>
+	<production-speed value="0"/>
+</upgrade>
