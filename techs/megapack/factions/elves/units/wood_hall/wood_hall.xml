@@ -1,0 +1,143 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="4"/>
+		<height value="6"/>
+		<max-hp value="5000" regeneration="0"/>
+		<max-ep value="0"/>
+		<armor value="0"/>
+		<armor-type value="stone"/>				
+		<sight value="15"/>
+		<time value="100"/>
+		<multi-selection value="false"/>
+		<cellmap value="true">
+			<row value="0110"/> 
+			<row value="1111"/> 
+			<row value="1111"/> 
+			<row value="0110"/> 
+
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land"/>
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false"/>
+		<unit-requirements>
+			<unit name="corral"/>
+		</unit-requirements>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="gold" amount="150"/>
+			<resource name="wood" amount="150"/>
+			<resource name="stone" amount="50"/>
+		</resource-requirements>
+		<resources-stored>
+			<resource name= "wood" amount="5000"/>			
+		</resources-stored>
+		<image path="images/wood_hallico.bmp" />
+		<image-cancel path="../tree_of_life/images/stop.bmp"/>
+		<meeting-point value="true" image-path="../tree_of_life/images/mp.bmp"/>
+		<selection-sounds enabled="true">
+			<sound path="../tree_of_life/sounds/magic_click.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="../tree_of_life/sounds/magic_click.wav"/>
+		</command-sounds>
+	</parameters>
+	
+	<!-- *** skills *** -->
+	<skills>
+
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill"/>		
+			<ep-cost value="0" />
+			<speed value="500" />
+			<anim-speed value="100" />
+			<animation path="../lore_house/models/wood_hall.g3d"/>
+			<sound enabled="false" />
+		</skill>
+		
+		<skill>
+			<type value="be_built"/>
+			<name value="be_built_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="300"/>
+			<animation path="../lore_house/models/wood_hall_con.g3d"/>
+			<sound enabled="false"/>
+		</skill>	
+			
+
+		<skill>
+			<type value="produce" />
+			<name value="produce_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="../lore_house/models/wood_hall.g3d" />
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="die" />
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="destruction_models/mage_tower_destruction.g3d" />
+			<sound enabled="true" start-time="0">
+				<sound-file path="../tree_of_life/sounds/magic_building_fall2.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+  <skill>
+			<type value="upgrade" />
+			<name value="upgrade_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="../lore_house/models/wood_hall.g3d" />
+			<sound enabled="false" />
+		</skill>	
+
+	</skills>
+	
+	<!-- *** commands *** -->
+	<commands>
+		<command>
+			<type value="produce"/>
+			<name value="train_minstrel" />
+			<image path="../minstrel/images/minstrel.bmp" />
+			<unit-requirements />
+			<upgrade-requirements/>
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="minstrel"/>
+		</command>
+		
+		<command>
+			<type value="upgrade"/>
+			<name value="elven_lore" />
+			<image path="../../upgrades/elven_lore/images/lore_and_song.bmp" />
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="elven_lore"/>   
+		</command>
+		
+		<command>
+			<type value="upgrade"/>
+			<name value="quenya" />
+			<image path="../../upgrades/quenya/images/quenya.bmp" />
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="quenya"/>   
+		</command>
+	</commands>
+</unit>

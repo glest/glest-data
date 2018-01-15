@@ -1,0 +1,336 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="1"/>
+		<height value="2"/>
+		<max-hp value="800" regeneration="5"/>
+		<max-ep value="0"/>
+		<armor value="5"/>	
+		<armor-type value="leather"/>				
+		<sight value="12"/>
+		<time value="30"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels/>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements/>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="gold" amount="25"/>
+			<resource name="wood" amount="75"/>
+			<resource name="grace" amount="2"/>
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/elf.bmp"/>
+		<image-cancel path="../tree_of_life/images/stop.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="sounds/worker_select1.wav"/>
+			<sound path="sounds/worker_select2.wav"/>
+			<sound path="sounds/worker_select3.wav"/>
+			<sound path="sounds/worker_select4.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="sounds/worker_ack1.wav"/>
+			<sound path="sounds/worker_ack2.wav"/>
+			<sound path="sounds/worker_ack3.wav"/>
+			<sound path="sounds/worker_ack4.wav"/>		
+			<sound path="sounds/worker_ack5.wav"/>
+			<sound path="sounds/worker_ack6.wav"/>
+			<sound path="sounds/worker_ack7.wav"/>	
+		</command-sounds>
+	</parameters>
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="30"/>
+			<animation path="models/worker_standing.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="stop"/>
+			<name value="stop_loaded_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="70"/>
+			<anim-speed value="60"/>
+			<animation path="models/worker_standing_loaded.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+
+
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="200"/>
+			<anim-speed value="105"/>
+			<animation path="models/worker_walking.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_gold_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="220"/>
+			<anim-speed value="130"/>
+			<animation path="models/worker_walking.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_loaded_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="200"/>
+			<anim-speed value="100"/>
+			<animation path="models/worker_walking_loaded.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_loaded_wood_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="225"/>
+			<anim-speed value="100"/>
+			<animation path="models/worker_walking.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="build"/>
+			<name value="build_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="130"/>
+			<anim-speed value="75"/>
+			<animation path="models/worker_building.g3d"/>
+			<sound enabled="true" start-time="0.45">
+				<sound-file path="sounds/worker_build1.wav"/>
+				<sound-file path="sounds/worker_build2.wav"/>
+				<sound-file path="sounds/worker_build3.wav"/>
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="repair"/>
+			<name value="repair_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="80"/>
+			<anim-speed value="70"/>
+			<animation path="models/worker_building.g3d"/>
+			<sound enabled="true" start-time="0.45">
+				<sound-file path="sounds/worker_build1.wav"/>
+				<sound-file path="sounds/worker_build2.wav"/>
+				<sound-file path="sounds/worker_build3.wav"/>
+			</sound>
+		</skill>
+
+
+		<skill>
+			<type value="harvest"/>
+			<name value="harvest_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="50"/>
+			<animation path="models/worker_mining.g3d"/>
+			<sound enabled="true" start-time="0.44">	
+				<sound-file path="sounds/worker_mining1.wav"/>
+				<sound-file path="sounds/worker_mining2.wav"/>
+				<sound-file path="sounds/worker_mining3.wav"/>
+				<sound-file path="sounds/worker_mining4.wav"/>
+			</sound>
+		</skill>
+
+
+		<skill>
+			<type value="harvest"/>
+			<name value="harvest_wood_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="900"/>
+			<anim-speed value="28"/>
+			<animation path="models/worker_harvesting_wood.g3d"/>
+			<sound enabled="true" start-time="0">	
+				<sound-file path="sounds/elven_whispers1.wav"/>
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="morph"/>
+			<name value="morph_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="500"/>
+			<anim-speed value="5"/>
+			<animation path="models/worker_dying.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="150"/>
+			<anim-speed value="150"/>
+			<animation path="models/worker_dying.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/worker_die1.wav"/>
+				<sound-file path="sounds/worker_die2.wav"/>
+				<sound-file path="sounds/worker_die3.wav"/>	
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+
+	<commands>
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="../tree_of_life/images/stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+		
+		<command>
+			<type value= "move"/>
+			<name value="move"/>
+			<image path="../tree_of_life/images/move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="build"/>
+			<name value="build"/>
+			<image path="images/build.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<build-skill value="build_skill"/>
+			<buildings>
+				<building name="tree_of_life"/>
+				<building name="sanctuary"/>
+				<building name="academy"/>
+				<building name="corral"/>
+				<building name="wood_hall"/>
+				<building name="forge"/>
+				<building name="lore_house"/>
+				<building name="forest_guardian"/>
+			</buildings>
+			<start-sound enabled="false"/>
+			<built-sound enabled="true">
+				<sound-file path="sounds/worker_work_end1.wav"/>
+				<sound-file path="sounds/worker_work_end2.wav"/>
+				<sound-file path="sounds/worker_work_end3.wav"/>						
+			</built-sound>	
+
+		</command>
+
+		<!--command>
+			<type value="build"/>
+			<name value="build_wisely"/>
+			<image path="images/build2.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<build-skill value="build_skill"/>
+			<buildings>
+				<building name="lore_house"/>
+				<building name="forge"/>
+				<building name="tree_circle"/>
+				<building name="tree_of_life"/>
+				<building name="wood_guard"/>
+			</buildings>
+			<start-sound enabled="false"/>
+			<built-sound enabled="true">
+				<sound-file path="sounds/worker_work_end1.wav"/>
+				<sound-file path="sounds/worker_work_end2.wav"/>
+				<sound-file path="sounds/worker_work_end3.wav"/>						
+			</built-sound>	
+		</command-->
+
+		<command>
+			<type value="harvest"/>
+			<name value="mine"/>
+			<image path="images/mine.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<harvest-skill value="harvest_skill"/>
+			<stop-loaded-skill value="stop_loaded_skill"/>
+			<move-loaded-skill value="move_loaded_skill"/>
+			<harvested-resources>
+				<resource name="gold"/>	
+				<resource name="stone"/>													
+			</harvested-resources>
+			<max-load value="35"/>
+			<hits-per-unit value="2"/>				
+		</command>
+
+		<command>
+			<type value="harvest"/>
+			<name value="concentrate_wood_essense"/>
+			<image path="images/mine.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<harvest-skill value="harvest_wood_skill"/>
+			<stop-loaded-skill value="stop_skill"/>
+			<move-loaded-skill value="move_loaded_wood_skill"/>
+			<harvested-resources>
+				<resource name="wood"/>													
+			</harvested-resources>
+			<max-load value="40"/>
+			<hits-per-unit value="2"/>				
+		</command>
+
+		<command>
+			<type value="repair"/>
+			<name value="repair"/>
+			<image path="images/repair.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<repair-skill value="repair_skill"/>
+			<repaired-units>
+				<unit name="sanctuary"/>
+				<unit name="tree_of_life"/>
+				<unit name="wood_hall"/>
+				<unit name="lore_house"/>
+				<unit name="forge"/>
+				<unit name="academy"/>
+				<unit name="corral"/>
+				<unit name="corral_gryphon_nest"/>
+				<unit name="forest_guardian"/>
+			</repaired-units>		
+		</command>
+
+		<command>
+			<type value="morph"/>
+			<name value="gather_wisdom"/>
+			<image path="images/wise_elf.bmp"/>
+			<unit-requirements>
+				<unit name="lore_house"/>
+			</unit-requirements>
+			<upgrade-requirements/>
+			<morph-skill value="morph_skill"/>
+			<morph-unit name= "wise_elf"/>
+			<discount value="0"/>
+		</command>
+
+	</commands>
+</unit>

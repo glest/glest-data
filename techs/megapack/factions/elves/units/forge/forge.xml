@@ -1,0 +1,137 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="4" />
+		<height value="2" />
+		<max-hp value="8500" regeneration="0"/>
+		<max-ep value="0" />
+		<armor value="5" />
+		<armor-type value="metal"/>				
+		<sight value="14" />
+		<time value="100" />
+		<multi-selection value="false" />
+		<cellmap value="true">
+			<row value="1111"/>
+			<row value="1111"/>
+			<row value="0111"/>
+			<row value="1111"/>
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="true" red="1.0" green="0.5" blue="0.2"/>
+		<unit-requirements>
+			<unit name="corral"/>
+		</unit-requirements>
+		<upgrade-requirements>
+		</upgrade-requirements>
+		<resource-requirements>
+			<resource name="gold" amount="100" />
+			<resource name="stone" amount="200" />
+			<resource name="wood" amount="25" />
+		</resource-requirements>
+		<resources-stored>
+			<resource name="stone" amount="3200"/>			
+		</resources-stored>
+		<image path="images/forgeb.bmp" />
+		<image-cancel path="../tree_of_life/images/stop.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="../tree_of_life/sounds/magic_click.wav" />
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="../tree_of_life/sounds/magic_click.wav" />
+		</command-sounds>
+	</parameters>
+	
+	<!-- *** skills *** -->
+	<skills>
+
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="100" />
+			<animation path="models/forge.g3d" />
+			<sound enabled="false" />
+		</skill>
+		
+		<skill>
+			<type value="be_built" />
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="350" />
+			<anim-speed value="400" />
+			<animation path="models/forge_cons.g3d" />
+			<sound enabled="false" />
+		</skill>	
+		
+                <skill>
+			<type value="upgrade" />
+			<name value="upgrade_skill"/>		
+			<ep-cost value="0" />
+			<speed value="240" />
+			<anim-speed value="100" />
+			<animation path="models/forge_working.g3d" />
+			<sound enabled="true" start-time="0.68">
+				<sound-file path="sounds/forge_hit1.wav"/>
+				<sound-file path="sounds/forge_hit2.wav"/>
+			</sound>
+		</skill>	
+		
+		<skill>
+			<type value="die" />
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/forge_des.g3d" />
+			<sound enabled="true" start-time="0">
+				<sound-file path="../tree_of_life/sounds/magic_building_fall1.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+	
+	<!-- *** commands *** -->
+	<commands>
+	
+		<command>
+			<type value="upgrade"/>
+			<name value="silverthorn_arrows" />
+			<image path="../../upgrades/silverthorn_arrows/images/silverthorn_arrows.bmp" />
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="silverthorn_arrows"/>   
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="noldor_armour" />
+			<image path="../../upgrades/noldor_armour_crafting/images/noldor_armour.bmp" />
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="noldor_armour_crafting"/>   
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="noldor_weaponry" />
+			<image path="../../upgrades/noldor_weaponry/images/noldor_weaponry.bmp" />
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="noldor_weaponry"/>   
+		</command>
+	
+	</commands>
+</unit>
