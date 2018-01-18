@@ -2,65 +2,33 @@
 
 <faction>
     <starting-resources>
-		<resource name="gold" amount="550"/>
+		<resource name="gold" amount="450"/>
 		<resource name="stone" amount="500"/>
-		<resource name="wood" amount="400"/>
+		<resource name="wood" amount="550"/>
 		<resource name="grace" amount="600"/>
 	</starting-resources>
 	<starting-units>
 		<unit name="tree_of_life" amount="1"/>
 		<unit name="elf" amount="4"/>
 		<unit name="dryad" amount="2"/>
-		<unit name="wise_elf" amount="0"/>
-		<unit name="gryphon" amount="0"/>
-		<unit name="gryphon_rider" amount="0"/>
-		<unit name="ent" amount="0"/>
 		<unit name="grey_elf_archer" amount="1"/>
-		<unit name="reaver" amount="0"/>
-		<unit name="sanctuary" amount="0"/>
-		<unit name="wood_hall" amount="0"/>
-		<unit name="lore_house" amount="0"/>
 		<unit name="forest_guardian" amount="1"/>
-		<unit name="forge" amount="0"/>
-		<unit name="magol_hedir" amount="0"/>
-		<unit name="minstrel" amount="0"/>
 	</starting-units>
 	<ai-behavior>
-		<worker-units>
-			<unit name="elf" minimum="5"/>
-		</worker-units>
-		<warrior-units>
-			<unit name="grey_elf_archer" minimum="4"/>
-			<unit name="magol_hedir" minimum="2"/>
-			<unit name="reaver" minimum="2"/>
-			<unit name="galadrim_archer" minimum="2"/>
-			<unit name="gryphon" minimum="1"/>
-			<unit name="wise_elf" minimum="1"/>
-			<unit name="prince" minimum="1"/>
-			<unit name="silver_helm_lancer" minimum="1"/>
-			<unit name="ent" minimum="1"/>
-			<unit name="gryphon_rider" minimum="1"/>
-		</warrior-units>
+		<worker-units/>
+		<warrior-units/>
 		<resource-producer-units>
 			<unit name="sanctuary" minimum="2"/>
 		</resource-producer-units>
 		<building-units>
 			<unit name="sanctuary" minimum="1"/>
-			<unit name="academy" minimum="1"/>
+			<unit name="academy" minimum="2"/>
 			<unit name="corral" minimum="1"/>
 			<unit name="wood_hall" minimum="1"/>
 			<unit name="forge" minimum="1"/>
-			<unit name="lore_house" minimum="1"/>
-			<unit name="corral_gryphon_nest" minimum="1"/>
 		</building-units>
 		<upgrades>
-			<upgrade name="elven_lore"/>
-			<upgrade name="silverthorn_arrows"/>
-			<upgrade name="quenya"/>
-			<upgrade name="noldor_weaponry"/>
-			<upgrade name="noldor_armour_crafting"/>
-			<upgrade name="taming_song"/>
-			<upgrade name="mystical_forest"/>
+			<upgrade name="dryad_weaponry" />
 		</upgrades>
 	</ai-behavior>
 	<music value="true" path="music/elven_music.ogg"/>
