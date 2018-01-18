@@ -7,10 +7,11 @@
 		<max-hp value="7400" regeneration="0"/>
 		<max-ep value="0" />
 		<armor value="0" />
-		<armor-type value="stone"/>				
+		<armor-type value="stone"/>
 		<sight value="15" />
 		<time value="80" />
-		<multi-selection value="false" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="true">
 			<row value="00000"/>
 			<row value="11101"/>
@@ -51,46 +52,46 @@
 			<sound path="../tree_of_life/sounds/magic_click.wav"/>
 		</command-sounds>
 	</parameters>
-	
+
 	<!-- *** skills *** -->
 	<skills>
 
 		<skill>
 			<type value="stop" />
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="100" />
 			<animation path="../corral/models/stable_gryphon_nest.g3d" />
 			<sound enabled="false" />
 		</skill>
-		
+
 		<skill>
 			<type value="produce" />
-			<name value="produce_skill"/>		
+			<name value="produce_skill"/>
 			<ep-cost value="0" />
 			<speed value="450" />
 			<anim-speed value="400" />
 			<animation path="../corral/models/stable_gryphon_nest.g3d" />
 			<sound enabled="false" />
-		</skill>	
-		
+		</skill>
+
 		<skill>
 			<type value="die" />
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="../corral/models/stable_gnest_des.g3d" />
 			<sound enabled="true" start-time="0">
 				<sound-file path="../tree_of_life/sounds/magic_building_fall2.wav"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 
 		<skill>
 			<type value="upgrade" />
-			<name value="upgrade_skill"/>		
+			<name value="upgrade_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="150" />
@@ -99,7 +100,7 @@
 		</skill>
 
 	</skills>
-	
+
 	<!-- *** commands *** -->
 	<commands>
 
@@ -122,7 +123,7 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="silver_helm_lancer"/>
 		</command>
-		
+
 		<command>
 			<type value="produce"/>
 			<name value="train_gryphon" />

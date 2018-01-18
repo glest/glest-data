@@ -7,10 +7,11 @@
 		<max-hp value="7100" regeneration="0"/>
 		<max-ep value="0" />
 		<armor value="50" />
-		<armor-type value="wood"/>				
+		<armor-type value="wood"/>
 		<sight value="15" />
 		<time value="110" />
-		<multi-selection value="false" />
+		<multi-selection value="true" />
+		<uniform-selection value="true"/>
 		<cellmap value="true">
 			<row value="1111"/>
 			<row value="1111"/>
@@ -43,56 +44,56 @@
 			<sound path="../tree_of_life/sounds/magic_click.wav"/>
 		</command-sounds>
 	</parameters>
-	
+
 	<!-- *** skills *** -->
 	<skills>
 
 		<skill>
 			<type value="stop" />
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="100" />
 			<animation path="models/academy.g3d" />
 			<sound enabled="false" />
 		</skill>
-		
+
 		<skill>
 			<type value="be_built" />
-			<name value="be_built_skill"/>		
+			<name value="be_built_skill"/>
 			<ep-cost value="0" />
 			<speed value="450" />
 			<anim-speed value="300" />
 			<animation path="models/academy_cons.g3d" />
 			<sound enabled="false" />
-		</skill>	
-		
+		</skill>
+
 		<skill>
 			<type value="produce" />
-			<name value="produce_skill"/>		
+			<name value="produce_skill"/>
 			<ep-cost value="0" />
 			<speed value="275" />
 			<anim-speed value="300" />
 			<animation path="models/academy.g3d" />
 			<sound enabled="false" />
-		</skill>	
-		
+		</skill>
+
 		<skill>
 			<type value="die" />
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="destruction_models/castle_destruction.g3d" />
 			<sound enabled="true" start-time="0">
 				<sound-file path="../tree_of_life/sounds/magic_building_fall2.wav"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 
 		<skill>
 			<type value="upgrade" />
-			<name value="upgrade_skill"/>		
+			<name value="upgrade_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="150" />
@@ -101,7 +102,7 @@
 		</skill>
 
 	</skills>
-	
+
 	<!-- *** commands *** -->
 	<commands>
 		<command>
@@ -133,7 +134,7 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="galadrim_archer"/>
 		</command>
-		
+
 		<command>
 			<type value="upgrade"/>
 			<name value="train_and_equip_dryads"/>

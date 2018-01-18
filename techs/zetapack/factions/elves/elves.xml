@@ -3,7 +3,7 @@
 <faction>
     <starting-resources>
 		<resource name="gold" amount="550"/>
-		<resource name="stone" amount="500"/>	
+		<resource name="stone" amount="500"/>
 		<resource name="wood" amount="400"/>
 		<resource name="grace" amount="600"/>
 	</starting-resources>
@@ -25,7 +25,7 @@
 		<unit name="magol_hedir" amount="0"/>
 		<unit name="minstrel" amount="0"/>
 	</starting-units>
-	<!--ai-behavior> (Slight restructuring of the tech tree fixed the AI)
+	<ai-behavior>
 		<worker-units>
 			<unit name="elf" minimum="5"/>
 		</worker-units>
@@ -54,7 +54,6 @@
 			<unit name="corral_gryphon_nest" minimum="1"/>
 		</building-units>
 		<upgrades>
-			<upgrade name="archery_range"/>
 			<upgrade name="elven_lore"/>
 			<upgrade name="silverthorn_arrows"/>
 			<upgrade name="quenya"/>
@@ -63,6 +62,6 @@
 			<upgrade name="taming_song"/>
 			<upgrade name="mystical_forest"/>
 		</upgrades>
-	</ai-behavior-->
+	</ai-behavior>
 	<music value="true" path="music/elven_music.ogg"/>
 </faction>

@@ -7,10 +7,11 @@
 		<max-hp value="4000" regeneration="25"/>
 		<max-ep value="100" regeneration="10"/>
 		<armor value="100" />
-		<armor-type value="wood"/>				
+		<armor-type value="wood"/>
 		<sight value="18" />
 		<time value="65" />
-		<multi-selection value="false" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="false"/>
 		<levels/>
 		<fields>
@@ -40,22 +41,22 @@
 			<sound path="../tree_of_life/sounds/magic_click.wav"/>
 		</command-sounds>
 	</parameters>
-	
+
 	<skills>
 
 		<skill>
 			<type value="stop" />
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="22" />
 			<animation path="models/wood_guard_idle.g3d" />
 			<sound enabled="false" />
-		</skill>	
-		
+		</skill>
+
 		<skill>
 			<type value="be_built" />
-			<name value="be_built_skill"/>		
+			<name value="be_built_skill"/>
 			<ep-cost value="0" />
 			<speed value="120"/>
 			<anim-speed value="50" />
@@ -65,18 +66,18 @@
 
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="10"/>
 			<speed value="220"/>
 			<anim-speed value="30"/>
 			<animation path="models/wood_guard_idle.g3d"/>
 			<sound enabled="false"/>
 		</skill>
-		
+
 
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="attack_skill"/>
 			<ep-cost value="0"/>
 			<speed value="25"/>
 			<anim-speed value="25"/>
@@ -112,7 +113,7 @@
 
 		<skill>
 			<type value="die" />
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="24" />
@@ -125,17 +126,17 @@
 
 		<skill>
 			<type value="morph"/>
-			<name value="morph_skill"/>		
+			<name value="morph_skill"/>
 			<ep-cost value="0"/>
 			<speed value="500"/>
 			<anim-speed value="22"/>
 			<animation path="models/wood_guard_idle.g3d"/>
 			<sound enabled="false"/>
 		</skill>
-		
+
 		<skill>
 			<type value="produce"/>
-			<name value="produce_skill"/>		
+			<name value="produce_skill"/>
 			<ep-cost value="4"/>
 			<speed value="300"/>
 			<anim-speed value="22"/>
@@ -144,8 +145,8 @@
 		</skill>
 
 	</skills>
-	
-	
+
+
 	<commands>
 		<command>
 			<type value= "stop"/>
@@ -166,7 +167,7 @@
 			<stop-skill value="stop_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
-		
+
 		<command>
 			<type value="produce"/>
 			<name value="call_upon_dryad" />
