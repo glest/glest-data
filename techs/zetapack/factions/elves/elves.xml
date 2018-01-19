@@ -10,26 +10,31 @@
 	<starting-units>
 		<unit name="tree_of_life" amount="1"/>
 		<unit name="elf" amount="4"/>
-		<unit name="dryad" amount="2"/>
-		<unit name="grey_elf_archer" amount="1"/>
+		<unit name="minstrel" amount="1"/>
+		<unit name="grey_elf_archer" amount="2"/>
 		<unit name="forest_guardian" amount="1"/>
 	</starting-units>
 	<ai-behavior>
 		<worker-units/>
-		<warrior-units/>
+		<warrior-units>
+			<unit name="grey_elf_archer" minimum="5"/>
+			<unit name="dryad" minimum="5"/>
+		</warrior-units>
 		<resource-producer-units>
-			<unit name="sanctuary" minimum="2"/>
+			<unit name="sanctuary" minimum="3"/>
 		</resource-producer-units>
 		<building-units>
-			<unit name="sanctuary" minimum="1"/>
-			<unit name="academy" minimum="2"/>
-			<unit name="corral" minimum="3"/>
+			<unit name="academy" minimum="1"/>
 			<unit name="wood_hall" minimum="1"/>
-			<unit name="forge" minimum="1"/>
+			<unit name="corral" minimum="1"/>
+			<unit name="lore_house" minimum="1"/>
+			<unit name="forest_guardian" minimum="3"/>
 			<unit name="corral_gryphon_nest" minimum="1"/>
 		</building-units>
 		<upgrades>
 			<upgrade name="dryad_weaponry" />
+			<upgrade name="elven_lore" />
+			<upgrade name="quenya"/>
 		</upgrades>
 	</ai-behavior>
 	<music value="true" path="music/elven_music.ogg"/>

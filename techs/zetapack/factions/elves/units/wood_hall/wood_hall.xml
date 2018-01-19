@@ -28,7 +28,7 @@
 		</properties>
 		<light enabled="false"/>
 		<unit-requirements>
-			<unit name="corral"/>
+			<unit name="academy"/>
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>

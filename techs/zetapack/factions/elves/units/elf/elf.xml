@@ -6,23 +6,23 @@
 		<height value="2"/>
 		<max-hp value="800" regeneration="5"/>
 		<max-ep value="0"/>
-		<armor value="5"/>	
-		<armor-type value="leather"/>				
+		<armor value="5"/>
+		<armor-type value="leather"/>
 		<sight value="12"/>
-		<time value="30"/>	
-		<multi-selection value="true"/>	
+		<time value="30"/>
+		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels/>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties/>
 		<light enabled="false"/>
 		<unit-requirements/>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="gold" amount="25"/>
-			<resource name="wood" amount="75"/>
+			<resource name="gold" amount="75"/>
+			<resource name="wood" amount="0"/>
 			<resource name="grace" amount="2"/>
 		</resource-requirements>
 		<resources-stored/>
@@ -39,18 +39,18 @@
 			<sound path="sounds/worker_ack1.wav"/>
 			<sound path="sounds/worker_ack2.wav"/>
 			<sound path="sounds/worker_ack3.wav"/>
-			<sound path="sounds/worker_ack4.wav"/>		
+			<sound path="sounds/worker_ack4.wav"/>
 			<sound path="sounds/worker_ack5.wav"/>
 			<sound path="sounds/worker_ack6.wav"/>
-			<sound path="sounds/worker_ack7.wav"/>	
+			<sound path="sounds/worker_ack7.wav"/>
 		</command-sounds>
 	</parameters>
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="30"/>
@@ -60,7 +60,7 @@
 
 		<skill>
 			<type value="stop"/>
-			<name value="stop_loaded_skill"/>		
+			<name value="stop_loaded_skill"/>
 			<ep-cost value="0"/>
 			<speed value="70"/>
 			<anim-speed value="60"/>
@@ -72,7 +72,7 @@
 
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="200"/>
 			<anim-speed value="105"/>
@@ -82,7 +82,7 @@
 
 		<skill>
 			<type value="move"/>
-			<name value="move_gold_skill"/>		
+			<name value="move_gold_skill"/>
 			<ep-cost value="0"/>
 			<speed value="220"/>
 			<anim-speed value="130"/>
@@ -92,7 +92,7 @@
 
 		<skill>
 			<type value="move"/>
-			<name value="move_loaded_skill"/>		
+			<name value="move_loaded_skill"/>
 			<ep-cost value="0"/>
 			<speed value="200"/>
 			<anim-speed value="100"/>
@@ -102,7 +102,7 @@
 
 		<skill>
 			<type value="move"/>
-			<name value="move_loaded_wood_skill"/>		
+			<name value="move_loaded_wood_skill"/>
 			<ep-cost value="0"/>
 			<speed value="225"/>
 			<anim-speed value="100"/>
@@ -112,7 +112,7 @@
 
 		<skill>
 			<type value="build"/>
-			<name value="build_skill"/>		
+			<name value="build_skill"/>
 			<ep-cost value="0"/>
 			<speed value="130"/>
 			<anim-speed value="75"/>
@@ -126,7 +126,7 @@
 
 		<skill>
 			<type value="repair"/>
-			<name value="repair_skill"/>		
+			<name value="repair_skill"/>
 			<ep-cost value="0"/>
 			<speed value="80"/>
 			<anim-speed value="70"/>
@@ -141,12 +141,12 @@
 
 		<skill>
 			<type value="harvest"/>
-			<name value="harvest_skill"/>		
+			<name value="harvest_skill"/>
 			<ep-cost value="0"/>
 			<speed value="300"/>
 			<anim-speed value="50"/>
 			<animation path="models/worker_mining.g3d"/>
-			<sound enabled="true" start-time="0.44">	
+			<sound enabled="true" start-time="0.44">
 				<sound-file path="sounds/worker_mining1.wav"/>
 				<sound-file path="sounds/worker_mining2.wav"/>
 				<sound-file path="sounds/worker_mining3.wav"/>
@@ -157,19 +157,19 @@
 
 		<skill>
 			<type value="harvest"/>
-			<name value="harvest_wood_skill"/>		
+			<name value="harvest_wood_skill"/>
 			<ep-cost value="0"/>
 			<speed value="900"/>
 			<anim-speed value="28"/>
 			<animation path="models/worker_harvesting_wood.g3d"/>
-			<sound enabled="true" start-time="0">	
+			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/elven_whispers1.wav"/>
 			</sound>
 		</skill>
 
 		<skill>
 			<type value="morph"/>
-			<name value="morph_skill"/>		
+			<name value="morph_skill"/>
 			<ep-cost value="0"/>
 			<speed value="500"/>
 			<anim-speed value="5"/>
@@ -179,7 +179,7 @@
 
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="150"/>
 			<anim-speed value="150"/>
@@ -187,8 +187,8 @@
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/worker_die1.wav"/>
 				<sound-file path="sounds/worker_die2.wav"/>
-				<sound-file path="sounds/worker_die3.wav"/>	
-			</sound>			
+				<sound-file path="sounds/worker_die3.wav"/>
+			</sound>
 			<fade value="false"/>
 		</skill>
 
@@ -203,7 +203,7 @@
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
 		</command>
-		
+
 		<command>
 			<type value= "move"/>
 			<name value="move"/>
@@ -230,14 +230,14 @@
 				<building name="forge"/>
 				<building name="lore_house"/>
 				<building name="forest_guardian"/>
+				<building name="corral_gryphon_nest"/>
 			</buildings>
 			<start-sound enabled="false"/>
 			<built-sound enabled="true">
 				<sound-file path="sounds/worker_work_end1.wav"/>
 				<sound-file path="sounds/worker_work_end2.wav"/>
-				<sound-file path="sounds/worker_work_end3.wav"/>						
-			</built-sound>	
-
+				<sound-file path="sounds/worker_work_end3.wav"/>
+			</built-sound>
 		</command>
 
 		<!--command>
@@ -259,8 +259,8 @@
 			<built-sound enabled="true">
 				<sound-file path="sounds/worker_work_end1.wav"/>
 				<sound-file path="sounds/worker_work_end2.wav"/>
-				<sound-file path="sounds/worker_work_end3.wav"/>						
-			</built-sound>	
+				<sound-file path="sounds/worker_work_end3.wav"/>
+			</built-sound>
 		</command-->
 
 		<command>
@@ -274,11 +274,11 @@
 			<stop-loaded-skill value="stop_loaded_skill"/>
 			<move-loaded-skill value="move_loaded_skill"/>
 			<harvested-resources>
-				<resource name="gold"/>	
-				<resource name="stone"/>													
+				<resource name="gold"/>
+				<resource name="stone"/>
 			</harvested-resources>
 			<max-load value="35"/>
-			<hits-per-unit value="2"/>				
+			<hits-per-unit value="2"/>
 		</command>
 
 		<command>
@@ -292,10 +292,10 @@
 			<stop-loaded-skill value="stop_skill"/>
 			<move-loaded-skill value="move_loaded_wood_skill"/>
 			<harvested-resources>
-				<resource name="wood"/>													
+				<resource name="wood"/>
 			</harvested-resources>
 			<max-load value="40"/>
-			<hits-per-unit value="2"/>				
+			<hits-per-unit value="2"/>
 		</command>
 
 		<command>
@@ -316,7 +316,8 @@
 				<unit name="corral"/>
 				<unit name="corral_gryphon_nest"/>
 				<unit name="forest_guardian"/>
-			</repaired-units>		
+				<unit name="corral_gryphon_nest"/>
+			</repaired-units>
 		</command>
 
 		<command>

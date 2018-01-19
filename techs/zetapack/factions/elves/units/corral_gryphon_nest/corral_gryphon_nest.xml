@@ -99,6 +99,16 @@
 			<sound enabled="false"/>
 		</skill>
 
+		<skill>
+			<type value="be_built" />
+			<name value="be_built_skill"/>
+			<ep-cost value="0" />
+			<speed value="500" />
+			<anim-speed value="40" />
+			<animation path="../corral/models/stable.g3d" />
+			<sound enabled="false" />
+		</skill>
+
 	</skills>
 
 	<!-- *** commands *** -->

@@ -86,7 +86,7 @@
 			<type value="produce" />
 			<name value="produce_skill"/>
 			<ep-cost value="0" />
-			<speed value="375" />
+			<speed value="300" />
 			<anim-speed value="40" />
 			<animation path="models/tree_of_life.g3d"/>/>
 			<sound enabled="false" />
