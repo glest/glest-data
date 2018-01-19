@@ -23,9 +23,10 @@
 		<building-units>
 			<unit name="sanctuary" minimum="1"/>
 			<unit name="academy" minimum="2"/>
-			<unit name="corral" minimum="1"/>
+			<unit name="corral" minimum="3"/>
 			<unit name="wood_hall" minimum="1"/>
 			<unit name="forge" minimum="1"/>
+			<unit name="corral_gryphon_nest" minimum="1"/>
 		</building-units>
 		<upgrades>
 			<upgrade name="dryad_weaponry" />
