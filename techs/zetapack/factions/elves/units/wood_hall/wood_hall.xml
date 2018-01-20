@@ -4,6 +4,7 @@
 	<parameters>
 		<size value="4"/>
 		<height value="6"/>
+		<ai-build-size value="5"/>
 		<max-hp value="5000" regeneration="0"/>
 		<max-ep value="0"/>
 		<armor value="0"/>
@@ -17,7 +18,6 @@
 			<row value="1111"/>
 			<row value="1111"/>
 			<row value="0110"/>
-
 		</cellmap>
 		<levels/>
 		<fields>
@@ -120,7 +120,7 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="minstrel"/>
 		</command>
-
+<!--
 		<command>
 			<type value="upgrade"/>
 			<name value="elven_lore" />
@@ -129,7 +129,7 @@
 			<upgrade-requirements/>
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="elven_lore"/>
-		</command>
+		</command> -->
 
 		<command>
 			<type value="upgrade"/>

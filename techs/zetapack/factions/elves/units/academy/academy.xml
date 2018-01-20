@@ -4,6 +4,7 @@
 	<parameters>
 		<size value="4" />
 		<height value="2" />
+		<ai-build-size value="5"/>
 		<max-hp value="7100" regeneration="0"/>
 		<max-ep value="0" />
 		<armor value="50" />
@@ -144,5 +145,16 @@
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="dryad_weaponry"/>
 		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="elven_lore" />
+			<image path="../../upgrades/elven_lore/images/lore_and_song.bmp" />
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="elven_lore"/>
+		</command>
+
 	</commands>
 </unit>

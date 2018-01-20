@@ -12,6 +12,8 @@
 		<sight value="13"/>
 		<time value="120"/>
 		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
+		<meeting-point value="true" image-path="../academy/images/mp.bmp"/>
 		<cellmap value="false"/>
 		<levels>
 		 	<level name="hope_giving" kills="4"/>
@@ -31,7 +33,6 @@
 		<resources-stored/>
 		<image path="images/minstrel.bmp"/>
 		<image-cancel path="../tree_of_life/images/stop.bmp"/>
-		<meeting-point value="true" image-path="../academy/images/mp.bmp"/>
 		<selection-sounds enabled="false"/>
 		<command-sounds enabled="false"/>
 	</parameters>

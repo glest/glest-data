@@ -4,6 +4,7 @@
 	<parameters>
 		<size value="2" />
 		<height value="2" />
+		<ai-build-size value="4"/>
 		<max-hp value="2600" regeneration="0"/>
 		<max-ep value="100" regeneration="1"/>
 		<armor value="0" />
@@ -93,8 +94,8 @@
 		</skill>
 	</skills>
 
-	<!-- *** commands *** -->
 	<commands>
+
 		<command>
 			<type value="produce"/>
 			<name value="summon_elf" />
@@ -104,5 +105,6 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="elf"/>
 		</command>
+
 	</commands>
 </unit>

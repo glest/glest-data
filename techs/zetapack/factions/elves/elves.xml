@@ -2,39 +2,37 @@
 
 <faction>
     <starting-resources>
-		<resource name="gold" amount="450"/>
+		<resource name="gold" amount="500"/>
 		<resource name="stone" amount="500"/>
-		<resource name="wood" amount="550"/>
+		<resource name="wood" amount="500"/>
 		<resource name="grace" amount="600"/>
 	</starting-resources>
 	<starting-units>
 		<unit name="tree_of_life" amount="1"/>
+		<unit name="sanctuary" amount="1"/>
 		<unit name="elf" amount="4"/>
 		<unit name="minstrel" amount="1"/>
-		<unit name="grey_elf_archer" amount="2"/>
+		<unit name="grey_elf_archer" amount="1"/>
+		<unit name="magol_hedir" amount="2"/>
 		<unit name="forest_guardian" amount="1"/>
 	</starting-units>
 	<ai-behavior>
 		<worker-units/>
-		<warrior-units>
-			<unit name="grey_elf_archer" minimum="5"/>
-			<unit name="dryad" minimum="5"/>
-		</warrior-units>
+		<warrior-units/>
 		<resource-producer-units>
-			<unit name="sanctuary" minimum="3"/>
+			<unit name="sanctuary" minimum="5"/>
 		</resource-producer-units>
 		<building-units>
 			<unit name="academy" minimum="1"/>
 			<unit name="wood_hall" minimum="1"/>
 			<unit name="corral" minimum="1"/>
 			<unit name="lore_house" minimum="1"/>
-			<unit name="forest_guardian" minimum="3"/>
-			<unit name="corral_gryphon_nest" minimum="1"/>
+			<unit name="corral_gryphon_nest" minimum="2"/>
 		</building-units>
 		<upgrades>
-			<upgrade name="dryad_weaponry" />
-			<upgrade name="elven_lore" />
+			<upgrade name="dryad_weaponry"/>
 			<upgrade name="quenya"/>
+			<upgrade name="elven_lore"/>
 		</upgrades>
 	</ai-behavior>
 	<music value="true" path="music/elven_music.ogg"/>

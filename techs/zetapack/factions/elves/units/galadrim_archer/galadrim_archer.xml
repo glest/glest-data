@@ -6,11 +6,11 @@
 		<height value="1"/>
 		<max-hp value="875" regeneration="2"/>
 		<max-ep value="500" regeneration="1"/>
-		<armor value="40"/>	
-		<armor-type value="metal"/>				
+		<armor value="40"/>
+		<armor-type value="metal"/>
 		<sight value="14"/>
-		<time value="100"/>	
-		<multi-selection value="true"/>	
+		<time value="100"/>
+		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
 			<level name="veteran" kills="9"/>
@@ -18,18 +18,24 @@
 		<fields>
 			<field value="land"/>
 			<field value="air"/>
-		</fields>	
+		</fields>
 		<properties/>
 		<light enabled="false"/>
 		<unit-requirements/>
+		<!-- It's difficult to get the AI to build the forge and do this upgrade
+		-andy599
 		<upgrade-requirements>
 			<upgrade name="silverthorn_arrows"/>
+		</upgrade-requirements>
+		-->
+		<upgrade-requirements>
+			<upgrade name="elven_lore"/>
 		</upgrade-requirements>
 		<resource-requirements>
 			<resource name="gold" amount="300"/>
 			<resource name="grace" amount="4"/>
 			<resource name="stone" amount="50"/>
-			<resource name="wood" amount="150"/>			
+			<resource name="wood" amount="150"/>
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/gladrim.bmp"/>
@@ -69,20 +75,20 @@
 	</parameters>
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="16"/>
 			<animation path="models/glarcher_idle.g3d"/>
 			<sound enabled="false"/>
 		</skill>
-		
+
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="250"/>
 			<anim-speed value="36"/>
@@ -94,7 +100,7 @@
 
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="attack_skill"/>
 			<ep-cost value="0"/>
 			<speed value="55"/>
 			<anim-speed value="55"/>
@@ -129,7 +135,7 @@
 
 		<skill>
 			<type value="attack"/>
-			<name value="sword_skill"/>		
+			<name value="sword_skill"/>
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="60"/>
@@ -139,7 +145,7 @@
 				<sound-file path="sounds/armored_swordman_attack2.wav"/>
 				<sound-file path="sounds/armored_swordman_attack3.wav"/>
 				<sound-file path="sounds/armored_swordman_attack4.wav"/>
-			</sound> 
+			</sound>
 			<attack-strenght value="100"/>
 			<attack-var value="30"/>
 			<attack-range value="1"/>
@@ -151,11 +157,11 @@
 			<projectile value="false"/>
 			<splash value="false"/>
 		</skill>
-		
-		
+
+
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="40"/>
@@ -165,13 +171,13 @@
 				<sound-file path="sounds/archer_die2.wav"/>
 				<sound-file path="sounds/archer_die3.wav"/>
 				<sound-file path="sounds/archer_die4.wav"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 
 		<skill>
 			<type value="morph"/>
-			<name value="morph_skill"/>		
+			<name value="morph_skill"/>
 			<ep-cost value="1"/>
 			<speed value="500"/>
 			<anim-speed value="16"/>
@@ -183,9 +189,9 @@
 	</skills>
 
 	<!-- *** commands *** -->
-	
+
 	<commands>
-		
+
 		<command>
 			<type value= "stop"/>
 			<name value="stop"/>
@@ -223,7 +229,7 @@
 			<move-skill value="move_skill"/>
 			<attack-skill value="sword_skill"/>
 		</command>
-		
+
 		<command>
 			<type value="attack_stopped"/>
 			<name value="hold_position"/>
@@ -241,9 +247,9 @@
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<morph-skill value="morph_skill"/>
-			<morph-unit name= "prince"/>
+			<morph-unit name="prince"/>
 			<discount value="0"/>
 		</command>
-		
+
 	</commands>
 </unit>
