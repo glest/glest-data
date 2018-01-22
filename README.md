@@ -33,9 +33,15 @@ To suggest a map, please [open a ticket](https://github.com/ZetaGlest/zetaglest-
 
 ## Contributed Content (not yet available on the ZetaGlest server)
 
-[TECHTREES.md]
-[TILESETS.md]
-[SCENARIOS.md]
+[MODS.md](https://github.com/ZetaGlest/zetaglest-data/blob/develop/MODS.md)
+[TILESETS.md](https://github.com/ZetaGlest/zetaglest-data/blob/develop/TILESETS.md)
+[SCENARIOS.md](https://github.com/ZetaGlest/zetaglest-data/blob/develop/SCENARIOS.md)
+
+### Other artwork (sounds, graphics, 3d models, icons)
+
+We are working on creating and completing documentation. In the
+meantime, please contact us with any questions or ideas. Thank you for
+your interest in this project.
 
 [Contact / Community](https://github.com/ZetaGlest/zetaglest-source#contact)
 [Contributing](https://github.com/ZetaGlest/zetaglest-source/blob/develop/CONTRIBUTING.md)
