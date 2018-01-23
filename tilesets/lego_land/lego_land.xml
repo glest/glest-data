@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+
+<tileset>
+
+	<surfaces>
+		<surface partsize="256">
+			<texture path="textures/surface1.bmp"/>
+        </surface>
+		<surface partsize="256">
+			<texture path="textures/surface2.bmp"/>
+        </surface>
+		<surface partsize="256">
+			<texture path="textures/surface3a.bmp" prob="0.5"/>
+			<texture path="textures/surface3b.bmp" prob="0.5"/>
+		</surface>
+		<surface partsize="256">
+			<texture path="textures/surface4a.bmp" prob="0.5"/>
+			<texture path="textures/surface4b.bmp" prob="0.5"/>
+		</surface>
+		<surface partsize="256">
+			<texture path="textures/surface5.bmp"/>
+		</surface>
+	</surfaces>
+
+	<objects>
+		<object walkable="false">
+			<model path="models/lego_tree.g3d" rotationAllowed="false" randomPositionEnabled="false"/>
+			<model path="models/pine_tree.g3d" rotationAllowed="false" randomPositionEnabled="false"/>
+            <model path="models/pine_tree2.g3d" rotationAllowed="false" randomPositionEnabled="false"/>
+			<model path="models/mini_pine_tree.g3d" rotationAllowed="false" randomPositionEnabled="false"/>
+            <model path="models/mini_pine_tree2.g3d" rotationAllowed="false" randomPositionEnabled="false"/>
+			<model path="models/tree.g3d" rotationAllowed="false" randomPositionEnabled="false"/>
+		</object>
+		
+		<object walkable="false">
+			<model path="models/tree_dead1.g3d" rotationAllowed="false" randomPositionEnabled="false"/>			
+		</object>
+		
+		<object walkable="false">
+			<model path="models/block.g3d" rotationAllowed="false" randomPositionEnabled="false"/>
+			<model path="models/blocks.g3d" rotationAllowed="false" randomPositionEnabled="false"/>
+		</object>
+		
+		<object walkable="true">
+            <model path="models/flowers_yellow.g3d" />
+            <model path="models/flowers.g3d"/>
+			<model path="models/grass.g3d" />
+			<model path="models/lego_pieces.g3d" />
+		</object>
+		
+        <object walkable="true">
+			<model path="models/grass.g3d"/>
+		</object>
+		
+		<object walkable="false">
+			<model path="models/big_tree1.g3d" rotationAllowed="false" randomPositionEnabled="false"/>
+			<model path="models/big_tree2.g3d" rotationAllowed="false" randomPositionEnabled="false"/>
+			<model path="models/lego_palm_tree_rotated_smaller.g3d" rotationAllowed="true" randomPositionEnabled="false"/>
+			<model path="models/stump_retex.g3d" rotationAllowed="true" randomPositionEnabled="false"/>
+		</object>
+		
+		<object walkable="false">
+			<model path="models/hung.g3d" rotationAllowed="false" randomPositionEnabled="false"/>
+			<model path="models/impaled.g3d" rotationAllowed="false" randomPositionEnabled="false"/>
+		</object>
+		
+		<object walkable="false">
+			<model path="models/broken_statue.g3d" rotationAllowed="false" randomPositionEnabled="false"/>
+			<model path="models/statue.g3d" rotationAllowed="false" randomPositionEnabled="false"/>
+		</object>
+		
+		<object walkable="false">
+			<model path="models/big_stone.g3d" rotationAllowed="false" randomPositionEnabled="false"/>
+		</object>
+		
+		<object walkable="false">
+			<model path="models/none.g3d"/>
+		</object>					
+	</objects>
+	
+	<ambient-sounds>
+		<day-sound enabled="false"/>
+		<night-sound enabled="true" path="sounds/night.ogg" play-always="true"/>
+		<rain-sound enabled="false"/>
+		<snow-sound enabled="false"/>
+		<day-start-sound enabled="true" path="sounds/rooster.ogg"/>	
+		<night-start-sound enabled="true" path="sounds/owl.ogg"/>						
+	</ambient-sounds>
+
+	<parameters>
+		<water effects="true">
+			<texture path="textures/water_01.png"/>
+			<texture path="textures/water_02.png"/>
+			<texture path="textures/water_03.png"/>
+			<texture path="textures/water_04.png"/>
+		</water>
+		<fog enabled="false"/>
+		<sun-light red="1" green="1" blue="1"/>
+		<moon-light red="0.3" green="0.3" blue="0.4"/>
+		<day-night value="0.8"/>
+		<weather sun="1.0" rain="0" snow="0"/> 
+	</parameters>
+</tileset>

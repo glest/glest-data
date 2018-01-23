@@ -11,7 +11,8 @@
 		<armor-type value="stone"/>
 		<sight value="15" />
 		<time value="150" />
-		<multi-selection value="false" />
+		<multi-selection value="true" />
+		<uniform-selection value="true"/>
 		<cellmap value="true">
 			<row value="00000"/>
 			<row value="11101"/>
@@ -28,7 +29,7 @@
 		</properties>
 		<light enabled="false"/>
 		<unit-requirements>
-            <unit name="academy"/>
+			<unit name="academy"/>
 		</unit-requirements>
 		<upgrade-requirements />
 		<resource-requirements>
