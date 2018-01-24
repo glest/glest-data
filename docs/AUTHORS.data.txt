@@ -144,6 +144,7 @@ Scenarios:
  amazones                   by Titus Tscharntke (titi)
  amazones_light             by Titus Tscharntke (titi)
  beehive_castle             by Titus Tscharntke (titi)
+ death_road                 by Julie Marchant
  indian_attack              by Titus Tscharntke (titi)
  kill_the_magic             by Titus Tscharntke (titi)
  magic_can_do_it            by Titus Tscharntke (titi)
