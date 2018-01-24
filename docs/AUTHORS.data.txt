@@ -150,6 +150,7 @@ Scenarios:
  my_island                  by Titus Tscharntke (titi)
  norsemen_attack            by Titus Tscharntke (titi)
  persian_conflict           by Philipp Tscharntke
+ warlock_overlords          by Julie Marchant
  waterworld                 by Titus Tscharntke (titi)
  waterworld_light           by Titus Tscharntke (titi)
 

@@ -1,0 +1,131 @@
+<?xml version="1.0" standalone="yes" ?>
+<!--
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<scenario>
+	<difficulty value="2"/>
+	<players>
+		<player control="human" faction="magic" team="1"/>
+		<player control="cpu" faction="tech" team="2"/>
+		<player control="cpu" faction="tech" team="2"/>
+		<player control="cpu" faction="tech" team="2"/>
+		<player control="cpu" faction="tech" team="2"/>
+	</players>
+	<map value="Warlock_Overlords"/>
+	<tileset value="dark_forest"/>
+	<tech-tree value="magitech"/>
+	<default-resources value="false"/>
+	<default-units value="false"/>
+	<fog-of-war value="false"/>
+	<default-victory-conditions value="false"/>
+	<scripts>
+		<startup>
+			-- Disable A.I.
+			disableAi(1)
+			disableConsume(0)
+			disableConsume(1)
+
+			-- Create player's units
+			player_units = {}
+			createUnit('archmage', 0, startLocation(0))
+			player_units[#player_units + 1] = lastCreatedUnit()
+			createUnit('archmage', 0, {startLocation(0)[1] + 1, startLocation(0)[2]})
+			player_units[#player_units + 1] = lastCreatedUnit()
+			createUnit('archmage', 0, {startLocation(0)[1], startLocation(0)[2] + 1})
+			player_units[#player_units + 1] = lastCreatedUnit()
+			createUnit('archmage', 0, {startLocation(0)[1] + 1, startLocation(0)[2] + 1})
+			player_units[#player_units + 1] = lastCreatedUnit()
+
+			-- Create enemy units
+			enemy_units = {}
+			createUnit('barracks', 1, startLocation(1))
+			enemy_units[#enemy_units + 1] = lastCreatedUnit()
+			createUnit('archer', 1, {startLocation(1)[1] - 3, startLocation(1)[2] + 1})
+			enemy_units[#enemy_units + 1] = lastCreatedUnit()
+			createUnit('archer', 1, {startLocation(1)[1] - 1, startLocation(1)[2] + 3})
+			enemy_units[#enemy_units + 1] = lastCreatedUnit()
+			createUnit('archer', 1, {startLocation(1)[1] - 2, startLocation(1)[2]})
+			enemy_units[#enemy_units + 1] = lastCreatedUnit()
+			createUnit('archer', 1, {startLocation(1)[1], startLocation(1)[2] + 2})
+			enemy_units[#enemy_units + 1] = lastCreatedUnit()
+
+			createUnit('technodrome', 1, startLocation(2))
+			enemy_units[#enemy_units + 1] = lastCreatedUnit()
+			createUnit('catapult', 1, {startLocation(2)[1] + 2, startLocation(2)[2] + 2})
+			enemy_units[#enemy_units + 1] = lastCreatedUnit()
+			createUnit('airship', 1, {startLocation(2)[1], startLocation(2)[2] - 2})
+			enemy_units[#enemy_units + 1] = lastCreatedUnit()
+			createUnit('airship', 1, {startLocation(2)[1] - 2, startLocation(2)[2]})
+			enemy_units[#enemy_units + 1] = lastCreatedUnit()
+
+			createUnit('blacksmith', 1, startLocation(3))
+			enemy_units[#enemy_units + 1] = lastCreatedUnit()
+			createUnit('guard', 1, {startLocation(3)[1] - 3, startLocation(3)[2] - 3})
+			enemy_units[#enemy_units + 1] = lastCreatedUnit()
+			createUnit('worker', 1, {startLocation(3)[1] + 3, startLocation(3)[2]})
+			enemy_units[#enemy_units + 1] = lastCreatedUnit()
+			createUnit('worker', 1, {startLocation(3)[1] + 3, startLocation(3)[2] + 1})
+			enemy_units[#enemy_units + 1] = lastCreatedUnit()
+			createUnit('worker', 1, {startLocation(3)[1], startLocation(3)[2] + 3})
+			enemy_units[#enemy_units + 1] = lastCreatedUnit()
+			createUnit('worker', 1, {startLocation(3)[1] + 1, startLocation(3)[2] + 3})
+			enemy_units[#enemy_units + 1] = lastCreatedUnit()
+
+			createUnit('farm', 1, startLocation(4))
+			enemy_units[#enemy_units + 1] = lastCreatedUnit()
+			createUnit('horseman', 1, {startLocation(4)[1] + 2, startLocation(4)[2] - 2})
+			enemy_units[#enemy_units + 1] = lastCreatedUnit()
+			createUnit('cow', 1, {startLocation(4)[1] - 3, startLocation(4)[2]})
+			createUnit('cow', 1, {startLocation(4)[1] - 4, startLocation(4)[2]})
+			createUnit('cow', 1, {startLocation(4)[1] - 3, startLocation(4)[2] + 1})
+			createUnit('cow', 1, {startLocation(4)[1] - 4, startLocation(4)[2] + 1})
+			createUnit('pig', 1, {startLocation(4)[1], startLocation(4)[2] + 3})
+			createUnit('pig', 1, {startLocation(4)[1]- 1, startLocation(4)[2] + 3})
+			createUnit('pig', 1, {startLocation(4)[1], startLocation(4)[2] + 4})
+			createUnit('pig', 1, {startLocation(4)[1] - 1, startLocation(4)[2] + 4})
+			createUnit('pig', 1, {startLocation(4)[1], startLocation(4)[2] + 5})
+			createUnit('pig', 1, {startLocation(4)[1] - 1, startLocation(4)[2] + 5})
+
+			-- Show mission objective
+			setDisplayText('objective')
+		</startup>
+		<unitDied>
+			-- Check for player deaths
+			for i, unit in ipairs(player_units) do
+				if lastDeadUnit() == unit then
+					player_units[i] = player_units[#player_units]
+					player_units[#player_units] = nil
+					if 0 >= #player_units then
+						clearDisplayText()
+						setPlayerAsWinner(1)
+						endGame()
+					end
+				end
+			end
+
+			-- Check for enemy deaths
+			for i, unit in ipairs(enemy_units) do
+				if lastDeadUnit() == unit then
+					enemy_units[i] = enemy_units[#enemy_units]
+					enemy_units[#enemy_units] = nil
+					if 0 >= #enemy_units then
+						clearDisplayText()
+						setPlayerAsWinner(0)
+						endGame()
+					end
+				end
+			end
+		</unitDied>
+	</scripts>
+</scenario>
