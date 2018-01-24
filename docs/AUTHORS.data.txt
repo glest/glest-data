@@ -152,6 +152,7 @@ Scenarios:
  persian_conflict           by Philipp Tscharntke
  waterworld                 by Titus Tscharntke (titi)
  waterworld_light           by Titus Tscharntke (titi)
+ witches_hunt               by Julie Marchant
 
 Tutorials:
 ==========
