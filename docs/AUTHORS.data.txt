@@ -148,6 +148,7 @@ Scenarios:
  kill_the_magic             by Titus Tscharntke (titi)
  magic_can_do_it            by Titus Tscharntke (titi)
  my_island                  by Titus Tscharntke (titi)
+ native_unrest              by Julie Marchant
  norsemen_attack            by Titus Tscharntke (titi)
  persian_conflict           by Philipp Tscharntke
  waterworld                 by Titus Tscharntke (titi)
