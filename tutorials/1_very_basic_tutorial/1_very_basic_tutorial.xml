@@ -9,7 +9,7 @@
 	</players>
 	<map value="conflict"/>
 	<tileset value="evergreen"/>
-	<tech-tree value="megapack"/>
+	<tech-tree value="zetapack"/>
 	<default-resources value="true"/>
 	<default-units value="false"/>
 	<default-victory-conditions value="false"/>
