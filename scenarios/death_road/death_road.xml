@@ -27,7 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	</players>
 	<map value="Death_Road"/>
 	<tileset value="dark_forest"/>
-	<tech-tree value="megapack"/>
+	<tech-tree value="zetapack"/>
 	<default-resources value="false"/>
 	<default-units value="false"/>
 	<fog-of-war value="false"/>
@@ -80,7 +80,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             createUnit('air_ballista', 3, {startLocation(3)[1] + 6, startLocation(3)[2] + 6})
             createUnit('technician', 3, {startLocation(3)[1] + 8, startLocation(3)[2] - 6})
             createUnit('technician', 3, {startLocation(3)[1] + 8, startLocation(3)[2] + 6})
-            
+
             createUnit('defense_tower', 3, {startLocation(3)[1] - 9, startLocation(3)[2] - 2})
             createUnit('defense_tower', 3, {startLocation(3)[1] - 7, startLocation(3)[2] + 8})
             createUnit('archer', 3, {startLocation(3)[1] - 9, startLocation(3)[2] + 2})
@@ -109,11 +109,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 			-- Create enemy units
 			createUnit('golem', 1, startLocation(1))
-			createUnit('draco_rider', 1, {startLocation(1)[1] - 8, startLocation(1)[2] - 4})
-			createUnit('draco_rider', 1, {startLocation(1)[1] - 9, startLocation(1)[2]})
-			createUnit('draco_rider', 1, {startLocation(1)[1] - 8, startLocation(1)[2] + 4})
-			createUnit('draco_rider', 1, {startLocation(1)[1] - 4, startLocation(1)[2] - 2})
-			createUnit('draco_rider', 1, {startLocation(1)[1] - 4, startLocation(1)[2] + 2})
+			createUnit('dragon_rider', 1, {startLocation(1)[1] - 8, startLocation(1)[2] - 4})
+			createUnit('dragon_rider', 1, {startLocation(1)[1] - 9, startLocation(1)[2]})
+			createUnit('dragon_rider', 1, {startLocation(1)[1] - 8, startLocation(1)[2] + 4})
+			createUnit('dragon_rider', 1, {startLocation(1)[1] - 4, startLocation(1)[2] - 2})
+			createUnit('dragon_rider', 1, {startLocation(1)[1] - 4, startLocation(1)[2] + 2})
 			createUnit('summoner', 1, {startLocation(1)[1] + 8, startLocation(1)[2] - 4})
 			createUnit('summoner', 1, {startLocation(1)[1] + 8, startLocation(1)[2]})
 			createUnit('summoner', 1, {startLocation(1)[1] + 8, startLocation(1)[2] + 4})
