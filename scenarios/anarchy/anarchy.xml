@@ -9,7 +9,7 @@
 	</players>
 	<map value="four_rivers"/>
 	<tileset value="winter_forest"/>
-	<tech-tree value="megapack"/>
+	<tech-tree value="zetapack"/>
 	<default-resources value="true"/>
 	<default-units value="true"/>
 	<default-victory-conditions value="true"/>

@@ -9,7 +9,7 @@
 	</players>
 	<map value="overgrown_city"/>
 	<tileset value="autumn"/>
-	<tech-tree value="megapack"/>
+	<tech-tree value="zetapack"/>
 	<default-resources value="true"/>
 	<default-units value="true"/>
 	<default-victory-conditions value="true"/>

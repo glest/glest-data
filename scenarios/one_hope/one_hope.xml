@@ -9,7 +9,7 @@
 	</players>
 	<map value="swamp_of_sorrow"/>
 	<tileset value="forest"/>
-	<tech-tree value="megapack"/>
+	<tech-tree value="zetapack"/>
 	<default-resources value="true"/>
 	<default-units value="true"/>
 	<default-victory-conditions value="true"/>
