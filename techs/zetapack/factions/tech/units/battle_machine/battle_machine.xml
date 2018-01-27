@@ -6,16 +6,18 @@
 		<size value="2"/>
 		<height value="3"/>
 		<ai-build-size value="3"/>
-		<max-hp value="2500" regeneration="1"/>
+		<max-hp value="3200" regeneration="2"/>
 		<max-ep value="0"/>
 		<armor value="45"/>
 		<armor-type value="wood"/>
-		<sight value="10"/>
+		<sight value="11"/>
 		<time value="140"/>
 		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
-			<level name="elite" kills="10"/>
+			<level name="elite" kills="8"/>
+      <level name="anihilator" kills="15"/>
+      <level name="legendary" kills="30"/>
 		</levels>
 		<fields>
 			<field value="land"/>
@@ -32,7 +34,7 @@
 		</upgrade-requirements>
 		<resource-requirements>
 			<resource name="wood" amount="300"/>
-			<resource name="gold" amount="150"/>
+			<resource name="gold" amount="200"/>
 			<resource name="food" amount="1"/>
 		</resource-requirements>
 		<resources-stored/>
@@ -122,9 +124,9 @@
 				<sound-file path="sounds/machine_attack2b.wav"/>
 				<sound-file path="sounds/machine_attack2c.wav"/>
 			</sound>
-			<attack-strenght value="170"/>
+			<attack-strenght value="175"/>
 			<attack-var value="75"/>
-			<attack-range value="9"/>
+			<attack-range value="12"/>
 			<attack-type value="piercing"/>
 			<attack-start-time value="0.5"/>
 			<attack-fields>

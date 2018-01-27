@@ -15,6 +15,7 @@
 		<levels>
 			<level name="expert" kills="5"/>
 			<level name="master" kills="15"/>
+            <level name="godlike" kills="20"/>
 			<level name="legendary" kills="30"/>
 		</levels>
 		<fields>

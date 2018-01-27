@@ -11,6 +11,7 @@
 		<sight value="9"/>
 		<time value="40"/>
 		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="false"/>
 		<levels/>
 		<fields>
@@ -124,8 +125,8 @@
 			<type value="build"/>
 			<name value="build_skill"/>
 			<ep-cost value="0"/>
-			<speed value="150"/>
-			<anim-speed value="80"/>
+			<speed value="200"/>
+			<anim-speed value="85"/>
 			<animation path="models/initiate_building.g3d"/>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/initiate_build1.wav"/>
@@ -137,7 +138,7 @@
 			<type value="repair"/>
 			<name value="repair_skill"/>
 			<ep-cost value="0"/>
-			<speed value="50"/>
+			<speed value="75"/>
 			<anim-speed value="150"/>
 			<animation path="models/initiate_repairing.g3d"/>
 			<sound enabled="true" start-time="0">

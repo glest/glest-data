@@ -14,12 +14,12 @@
 	<effects>
 		<unit name="initiate"/>
 	</effects>
-	<max-hp value="0"/>
-	<max-ep value="0"/>
+	<max-hp value="100"/>
+	<max-ep value="50"/>
 	<sight value="0"/>
-	<attack-strenght value="0"/>
-	<attack-range value="0"/>
-	<armor value="0"/>
-	<move-speed value="20" value-percent-multiplier="true"/>
+	<attack-strenght value="50"/>
+	<attack-range value="1"/>
+	<armor value="10"/>
+	<move-speed value="120" value-percent-multiplier="true"/>
 	<production-speed value="0"/>
 </upgrade>
