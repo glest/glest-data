@@ -4,7 +4,7 @@
 	<parameters>
 		<size value="2"/>
 		<height value="1"/>
-		<max-hp value="1700" regeneration="3"/>
+		<max-hp value="1700" regeneration="6"/>
 		<max-ep value="1000" regeneration="200"/>
 		<armor value="20"/>
 		<armor-type value="organic"/>
@@ -13,7 +13,11 @@
 		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
-			<level name="expert" kills="8"/>
+			<level name="expert" kills="4"/>
+            <level name="master" kills="8"/>
+            <level name="unstoppable" kills="12"/>
+            <level name="godlike" kills="18"/>
+            <level name="legendary" kills="30"/>
 		</levels>
 		<fields>
 			<field value="air"/>
@@ -60,7 +64,7 @@
 			<type value="move"/>
 			<name value="move_skill"/>
 			<ep-cost value="0"/>
-			<speed value="350"/>
+			<speed value="360"/>
 			<anim-speed value="75"/>
 			<animation path="models/dragon_walking.g3d"/>
 			<particles value="true">
@@ -88,7 +92,7 @@
 			</sound>
 			<attack-strenght value="450"/>
 			<attack-var value="40"/>
-			<attack-range value="10"/>
+			<attack-range value="9"/>
 			<attack-type value="magic"/>
 			<attack-fields>
 				<field value="land"/>

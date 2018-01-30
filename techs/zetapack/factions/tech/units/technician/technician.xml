@@ -133,7 +133,7 @@
 			<sound enabled="true" start-time="0.5">
 				<sound-file path="sounds/technician_attack.wav"/>
 			</sound>
-			<attack-strenght value="150"/>
+			<attack-strenght value="180"/>
 			<attack-var value="100"/>
 			<attack-range value="6"/>
 			<attack-type value="energy"/>
@@ -186,7 +186,7 @@
 			<type value="harvest"/>
 			<name value="mine_skill"/>
 			<ep-cost value="0"/>
-			<speed value="50"/>
+			<speed value="450"/>
 			<anim-speed value="210"/>
 			<animation path="models/technician_mining.g3d"/>
 			<sound enabled="true" start-time="0.5">
@@ -317,6 +317,12 @@
 				<unit name="battle_machine"/>
 				<unit name="air_ballista"/>
 				<unit name="aerodrome"/>
+				<unit name="farm"/>
+				<unit name="barracks"/>
+				<unit name="blacksmith"/>
+				<unit name="defense_tower"/>
+				<unit name="technodrome"/>
+				<unit name="castle"/>
 			</repaired-units>
 		</command>
 

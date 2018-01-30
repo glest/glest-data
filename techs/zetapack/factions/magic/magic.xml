@@ -29,20 +29,26 @@
 			<unit name="summoner" minimum="1"/>
 			<unit name="battlemage" minimum="12"/>
 			<unit name="ghost_armor" minimum="3"/>
+      <unit name="golem" minimum="1"/>
+      <unit name="behemoth" minimum="1"/>
+      <unit name="power_golem" minimum="1"/>
 		</warrior-units>
 		<resource-producer-units>
 			<unit name="energy_source" minimum="20"/>
 		</resource-producer-units>
 		<building-units>
-			<unit name="mage_tower" minimum="2"/>
+			<unit name="mage_tower" minimum="3"/>
 			<unit name="summoner_guild" minimum="1"/>
 			<unit name="library" minimum="1"/>
+            <unit name="archmage_tower" minimum="1"/>
 		</building-units>
 		<upgrades>
 			<upgrade name="ancient_summoning"/>
 			<upgrade name="energy_sharpening"/>
 			<upgrade name="hell_gate"/>
 			<upgrade name="faster_movement"/>
+            <upgrade name="golem_power"/>
+            <upgrade name="dragon_call"/>
 		</upgrades>
 		<static-values>
 			<static type-name="MinMinWarriorsExpandCpuUltra" value="9"/>

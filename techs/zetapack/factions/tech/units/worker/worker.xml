@@ -322,7 +322,7 @@
 				<unit name="defense_tower"/>
 				<unit name="technodrome"/>
 				<unit name="castle"/>
-                                <unit name="aerodrome"/>
+        <unit name="aerodrome"/>
 			</repaired-units>
 		</command>
 
