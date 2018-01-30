@@ -11,6 +11,7 @@
 		<sight value="5" />
 		<time value="50" />
 		<multi-selection value="true" />
+		<uniform-selection value="true"/>
 		<cellmap value="true">
 			<row value="0111" />
 			<row value="0111" />
@@ -30,10 +31,10 @@
 		</unit-requirements>
 		<upgrade-requirements />
 		<resource-requirements>
-			<resource name="gold" amount="100"/>
-			<resource name="wood" amount="150"/>
-			<resource name="stone" amount="50"/>
-			<resource name="food" amount="-10"/>
+			<resource name="gold" amount="175"/>
+			<resource name="wood" amount="250"/>
+			<resource name="stone" amount="150"/>
+			<resource name="food" amount="-45"/>
 		</resource-requirements>
 		<resources-stored>
 			<resource name="food" amount="20"/>
@@ -105,47 +106,6 @@
 		</skill>
 
 		<skill>
-			<type value="produce" />
-			<name value="produce_skill"/>
-			<ep-cost value="0" />
-			<speed value="300" />
-			<anim-speed value="40" />
-			<animation path="models/chickenfarm.g3d" />
-			<sound enabled="true" start-time="0">
-				<sound-file path="sounds/farm_idle2.wav"/>
-				<sound-file path="../chicken/sounds/chicken_select1.wav"/>
-				<sound-file path="../chicken/sounds/chicken_select2.wav"/>
-				<sound-file path="../chicken/sounds/chicken_select3.wav"/>
-				<sound-file path="../chicken/sounds/chicken_select4.wav"/>
-				<sound-file path="../chicken/sounds/chicken_ack1.wav"/>
-				<sound-file path="../chicken/sounds/chicken_ack2.wav"/>
-				<sound-file path="../chicken/sounds/chicken_ack3.wav"/>
-				<sound-file path="../chicken/sounds/chicken_ack4.wav"/>
-				<sound-file path="../chicken/sounds/chicken_ack5.wav"/>
-				<sound-file path="../chicken/sounds/chicken_single1.wav"/>
-				<sound-file path="../chicken/sounds/chicken_single2.wav"/>
-				<sound-file path="../chicken/sounds/chicken_single3.wav"/>
-				<sound-file path="sounds/null.wav"/>
-				<sound-file path="sounds/null.wav"/>
-				<sound-file path="sounds/null.wav"/>
-				<sound-file path="sounds/null.wav"/>
-				<sound-file path="sounds/null.wav"/>
-				<sound-file path="sounds/null.wav"/>
-				<sound-file path="sounds/null.wav"/>
-				<sound-file path="sounds/null.wav"/>
-				<sound-file path="sounds/null.wav"/>
-				<sound-file path="sounds/null.wav"/>
-				<sound-file path="sounds/null.wav"/>
-				<sound-file path="sounds/null.wav"/>
-				<sound-file path="sounds/null.wav"/>
-				<sound-file path="sounds/null.wav"/>
-				<sound-file path="sounds/null.wav"/>
-				<sound-file path="sounds/null.wav"/>
-				<sound-file path="sounds/null.wav"/>
-			</sound>
-		</skill>
-
-		<skill>
 			<type value="die" />
 			<name value="die_skill"/>
 			<ep-cost value="0" />
@@ -170,18 +130,6 @@
 
 	</skills>
 
-	<!-- *** commands *** -->
-	<commands>
+	<commands/>
 
-		<command>
-			<type value="produce"/>
-			<name value="produce_chicken" />
-			<image path="../chicken/images/chicken.bmp" />
-			<unit-requirements />
-			<upgrade-requirements />
-			<produce-skill value="produce_skill"/>
-			<produced-unit name="chicken"/>
-		</command>
-
-	</commands>
 </unit>
