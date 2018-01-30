@@ -92,7 +92,7 @@
 			</sound>
 			<attack-strenght value="450"/>
 			<attack-var value="40"/>
-			<attack-range value="10"/>
+			<attack-range value="9"/>
 			<attack-type value="magic"/>
 			<attack-fields>
 				<field value="land"/>
