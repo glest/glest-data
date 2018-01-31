@@ -1,0 +1,9 @@
+[submodule "scenarios/island_survival"]
+	path = scenarios/island_survival
+	url = https://github.com/mathusummut/island_survival
+[submodule "scenarios/the_wild_hunt"]
+	path = scenarios/the_wild_hunt
+	url = https://github.com/KeithSammut/the_wild_hunt
+[submodule "scenarios/the_seventh_element"]
+	path = scenarios/the_seventh_element
+	url = https://github.com/KeithSammut/the_seventh_element
