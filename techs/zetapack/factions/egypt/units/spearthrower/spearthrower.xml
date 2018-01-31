@@ -11,6 +11,7 @@
 		<sight value="15"/>
 		<time value="60"/>
 		<multi-selection value="true"/>
+		<uniform-selection value="false"/>
 		<cellmap value="false"/>
 		<levels>
 			<level name="elite" kills="5"/>
