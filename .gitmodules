@@ -10,3 +10,6 @@
 [submodule "scenarios/possession_obsession"]
 	path = scenarios/possession_obsession
 	url = https://github.com/KeithSammut/possession_obsession
+[submodule "scenarios/tartarus"]
+	path = scenarios/tartarus
+	url = https://github.com/KeithSammut/tartarus
