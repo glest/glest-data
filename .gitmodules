@@ -7,3 +7,6 @@
 [submodule "scenarios/the_seventh_element"]
 	path = scenarios/the_seventh_element
 	url = https://github.com/KeithSammut/the_seventh_element
+[submodule "scenarios/possession_obsession"]
+	path = scenarios/possession_obsession
+	url = https://github.com/KeithSammut/possession_obsession
