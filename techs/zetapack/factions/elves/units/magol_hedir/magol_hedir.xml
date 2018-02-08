@@ -9,18 +9,19 @@
 		<height value="2"/>
 		<max-hp value="875"  regeneration="1"/>
 		<max-ep value="0"/>
-		<armor value="40"/>	
+		<armor value="40"/>
 		<armor-type value="metal"/>
 		<sight value="15"/>
-		<time value="120"/>	
-		<multi-selection value="true"/>	
+		<time value="120"/>
+		<multi-selection value="true"/>
+		<uniform-selection value="false"/>
 		<cellmap value="false"/>
 		<levels>
 			<level name="honored" kills="7"/>
 		</levels>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties/>
 		<light enabled="false"/>
 		<unit-requirements/>
@@ -29,7 +30,7 @@
 			<resource name="gold" amount="250"/>
 			<resource name="stone" amount="50"/>
 			<resource name="wood" amount="40"/>
-			<resource name="grace" amount="4"/>		
+			<resource name="grace" amount="4"/>
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/magol.bmp"/>
@@ -57,7 +58,7 @@
 	<!-- *** skills *** -->
 
 	<skills>
-	
+
 		<!-- *** skill 0 *** -->
 		<skill>
 			<type value="stop"/>
@@ -68,11 +69,11 @@
 			<animation path="models/magol_hedir_idle.g3d"/>
 			<sound enabled="false"/>
 		</skill>
-		
+
 		<!-- *** skill 1 *** -->
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="220"/>
 			<anim-speed value="120"/>
@@ -83,7 +84,7 @@
 		<!-- *** skill 2 *** -->
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="attack_skill"/>
 			<ep-cost value="0"/>
 			<speed value="75"/>
 			<anim-speed value="75"/>
@@ -103,11 +104,11 @@
 				<sound-file path="sounds/armored_swordman_attack12.wav"/>
 				<sound-file path="sounds/armored_swordman_attack13.wav"/>
 				<sound-file path="sounds/armored_swordman_attack14.wav"/>
-			</sound> 
+			</sound>
 			<attack-strenght value="225"/>
 			<attack-var value="65"/>
 			<attack-range value="1"/>
-			<attack-type value="slashing"/>	
+			<attack-type value="slashing"/>
 			<attack-fields>
 				<field value="land"/>
 			</attack-fields>
@@ -118,8 +119,8 @@
 
 		<!-- *** skill 3 *** -->
 		<skill>
-			<type value="die"/>	
-			<name value="die_skill"/>		
+			<type value="die"/>
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="60"/>
@@ -132,35 +133,35 @@
 			</sound>
 			<fade value="false"/>
 		</skill>
-		
+
 		<!-- *** skill 4 *** -->
 		<skill>
-			<type value="move"/>		
-			<name value="charge_skill"/>		
+			<type value="move"/>
+			<name value="charge_skill"/>
 			<ep-cost value="0"/>
 			<speed value="185"/>
 			<anim-speed value="140"/>
 			<animation path="models/magol_hedir_walking.g3d"/>
-			<sound enabled="false"/>			
+			<sound enabled="false"/>
 		</skill>
 
 		<!-- *** skill 5 *** -->
 		<skill>
 			<type value="produce" />
-			<name value="produce_skill"/>		
+			<name value="produce_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="models/magol_hedir_idle.g3d" />
 			<sound enabled="false" />
-		</skill>	
+		</skill>
 
 	</skills>
 
 	<!-- *** commands *** -->
-	
+
 	<commands>
-		
+
 		<!-- *** command 3 *** -->
 		<command>
 			<type value="stop"/>

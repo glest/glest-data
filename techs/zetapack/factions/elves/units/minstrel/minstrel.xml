@@ -12,7 +12,7 @@
 		<sight value="13"/>
 		<time value="120"/>
 		<multi-selection value="true"/>
-		<uniform-selection value="false"/>
+		<uniform-selection value="true"/>
 		<meeting-point value="true" image-path="../academy/images/mp.bmp"/>
 		<cellmap value="false"/>
 		<levels>

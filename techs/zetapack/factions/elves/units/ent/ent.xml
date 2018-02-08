@@ -6,11 +6,12 @@
 		<height value="5"/>
 		<max-hp value="6300" regeneration="3"/>
 		<max-ep value="0" />
-		<armor value="15"/>	
+		<armor value="15"/>
 		<armor-type value="wood"/>
 		<sight value="18"/>
-		<time value="250"/>	
-		<multi-selection value="true"/>	
+		<time value="250"/>
+		<multi-selection value="true"/>
+				<uniform-selection value="false"/>
 		<cellmap value="false"/>
 		<levels>
 			<level name="great" kills="14"/>
@@ -18,7 +19,7 @@
 		</levels>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties/>
 		<light enabled="false"/>
 		<unit-requirements>
@@ -69,20 +70,20 @@
 	<!-- *** skills *** -->
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="25"/>
 			<animation path="models/ent_idle.g3d"/>
 			<sound enabled="false"/>
 		</skill>
-		
+
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="150"/>
 			<anim-speed value="20"/>
@@ -96,7 +97,7 @@
 
 		<skill>
 			<type value="attack"/>
-			<name value="melee"/>		
+			<name value="melee"/>
 			<ep-cost value="0"/>
 			<speed value="40"/>
 			<anim-speed value="40"/>
@@ -118,11 +119,11 @@
 				<damage-all value="false"/>
 				<particle value="false"/>
 			</splash>
-		</skill>		
+		</skill>
 
                 <skill>
 			<type value="attack"/>
-			<name value="siege"/>		
+			<name value="siege"/>
 			<ep-cost value="0"/>
 			<speed value="50"/>
 			<anim-speed value="25"/>
@@ -130,7 +131,7 @@
 			<sound enabled="true" start-time="0.1">
 				<sound-file path="sounds/catapult_attack1.wav"/>
 				<sound-file path="sounds/catapult_attack2.wav"/>
-			</sound> 
+			</sound>
 			<attack-strenght value="320"/>
 			<attack-var value="300"/>
 			<attack-range value="10"/>
@@ -156,7 +157,7 @@
 
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="120"/>
 			<anim-speed value="30"/>
@@ -164,13 +165,13 @@
 			<sound enabled="true" start-time="0.75">
 				<sound-file path="/sounds/catapult_hit1.wav"/>
 				<sound-file path="/sounds/catapult_hit2.wav"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 
 		<skill>
 			<type value="build"/>
-			<name value="plant_skill"/>		
+			<name value="plant_skill"/>
 			<ep-cost value="0"/>
 			<speed value="150"/>
 			<anim-speed value="50"/>
@@ -180,7 +181,7 @@
 
 		<skill>
 			<type value="repair"/>
-			<name value="repair_skill"/>		
+			<name value="repair_skill"/>
 			<ep-cost value="0"/>
 			<speed value="50"/>
 			<anim-speed value="150"/>
@@ -189,9 +190,9 @@
 		</skill>
 
 	</skills>
-	
+
 	<commands>
-		
+
 		<command>
 			<type value="stop"/>
 			<name value="stop"/>
@@ -256,9 +257,9 @@
 			<move-skill value="move_skill"/>
 			<repair-skill value="repair_skill"/>
 			<repaired-units>
-				<unit name="forest_guardian"/>	
-				<unit name="tree_of_life"/>					
-			</repaired-units>		
+				<unit name="forest_guardian"/>
+				<unit name="tree_of_life"/>
+			</repaired-units>
 		</command>
 
 		<command>

@@ -8,17 +8,18 @@
 		<max-hp value="285" regeneration="10"/>
 		<max-ep value="250" regeneration="50"/>
 		<armor value="20"/>
-		<armor-type value="wood"/>					
+		<armor-type value="wood"/>
 		<sight value="13"/>
-		<time value="50"/>	
-		<multi-selection value="true"/>	
+		<time value="50"/>
+		<multi-selection value="true"/>
+		<uniform-selection value="false"/>
 		<cellmap value="false"/>
 		<levels>
 		 	<level name="adored" kills="4"/>
 		</levels>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties/>
 		<light enabled="false"/>
 		<unit-requirements/>
@@ -36,20 +37,20 @@
 	</parameters>
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="40"/>
 			<animation path="models/dryad_idle.g3d"/>
 			<sound enabled="false"/>
 		</skill>
-		
+
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="210"/>
 			<anim-speed value="37"/>
@@ -59,7 +60,7 @@
 
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="attack_skill"/>
 			<ep-cost value="50"/>
 			<speed value="60"/>
 			<anim-speed value="60"/>
@@ -92,18 +93,18 @@
 
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="80"/>
 			<anim-speed value="80"/>
 			<animation path="models/dryad_dying.g3d"/>
-			<sound enabled="false"/>			
+			<sound enabled="false"/>
 			<fade value="true"/>
-		</skill>        
+		</skill>
 	</skills>
-	
+
 	<commands>
-		
+
 		<command>
 			<type value= "stop"/>
 			<name value="stop"/>
