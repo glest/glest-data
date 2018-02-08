@@ -97,6 +97,16 @@
 			<fade value="false"/>
 		</skill>
 
+		<skill>
+			<type value="morph"/>
+			<name value="morph_skill"/>
+			<ep-cost value="0"/>
+			<speed value="500"/>
+			<anim-speed value="40"/>
+			<animation path="models/stable.g3d" />
+			<sound enabled="false"/>
+		</skill>
+
 	</skills>
 
 	<!-- *** commands *** -->
@@ -120,6 +130,17 @@
 			<upgrade-requirements/>
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="silver_helm_lancer"/>
+		</command>
+
+		<command>
+			<type value="morph"/>
+			<name value="gryphon_nest" />
+			<image path="images/sapling.bmp" />
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<morph-skill value="morph_skill"/>
+			<morph-unit name="corral_gryphon_nest"/>
+			<discount value="0"/>
 		</command>
 
 	</commands>

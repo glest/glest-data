@@ -231,7 +231,6 @@
 				<building name="forge"/>
 				<building name="lore_house"/>
 				<building name="forest_guardian"/>
-				<building name="corral_gryphon_nest"/>
 			</buildings>
 			<start-sound enabled="false"/>
 			<built-sound enabled="true">
