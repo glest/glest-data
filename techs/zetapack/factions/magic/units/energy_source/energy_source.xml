@@ -60,6 +60,9 @@
 			<anim-speed value="100" />
 			<animation path="models/energy_source.g3d" />
 			<sound enabled="false" />
+			<particles value="true">
+				<particle-file path="particle_beam_idle.xml" />
+			</particles>
 		</skill>
 		<skill>
 			<type value="die" />
