@@ -131,7 +131,6 @@
 			<speed value="60"/>
 			<anim-speed value="60"/>
 			<animation path="models/ge_archer_dying.g3d"/>
-			<animation path="models/ge_archer_dying2.g3d"/>
 			<animation-random-cycle-maxcount value="1" />
 			<sound enabled="true" start-time="0">
 				<sound-file path="../galadrim_archer/sounds/archer_die1.wav"/>
