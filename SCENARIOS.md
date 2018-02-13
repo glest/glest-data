@@ -24,6 +24,6 @@ gets, so Beware.
 Which ever unit you kill, becomes yours! The most fun you will ever have :D
 
 
-## [The Wild Hunt](https://github.com/KeithSammut/the_wild_hunt)<br />
+## [The Wild Hunt](https://github.com/KeithSammut/wild_hunt)<br />
 You must evolve from one animal to another by consuming prey inorder to
 dominate over all creatures
