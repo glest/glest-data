@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<projectile-particle-system>
+    	<texture value="true" luminance="true" path="images/particle.bmp"/>
+    	<model value="true" path="models/bullet.g3d"/>
+	<primitive value="line"/>
+	<offset x="0" y="0.44" z="1.9"/>
+	<color red="1.0" green="1.0" blue="1.0" alpha="0.5" />
+	<color-no-energy red="0.0" green="0.0" blue="0.0" alpha="0.2" />
+    	<size value="3" />
+    	<size-no-energy value="3" />
+    	<speed value="0" />
+	<gravity value="0"/>
+    	<emission-rate value="1" />
+    	<energy-max value="20" />
+    	<energy-var value="0" />
+	
+	<trajectory type="parabolic">
+		<speed value="15"/>
+		<scale value="0"/>
+	</trajectory>
+</projectile-particle-system>
