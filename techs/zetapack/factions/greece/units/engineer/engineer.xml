@@ -1,0 +1,389 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+
+	<parameters>
+		<size value="1"/>
+		<height value="2"/>
+		<max-hp value="800" regeneration="0"/>
+		<max-ep value="0"/>
+		<armor value="0"/>
+		<armor-type value="leather"/>					
+		<sight value="8"/>
+		<time value="80"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels/>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements/>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="gold" amount="150"/>
+			<resource name="food" amount="1"/>			
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/technician.bmp"/>
+		<image-cancel path="../archer/images/tech_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="sounds/technician_select1.ogg"/>
+			<sound path="sounds/technician_select2.ogg"/>
+			<sound path="sounds/technician_select3.ogg"/>
+			<sound path="sounds/technician_select4.ogg"/>
+			<sound path="sounds/technician_select5.ogg"/>
+			<sound path="sounds/technician_select6.ogg"/>
+			<sound path="sounds/technician_select7.ogg"/>
+			<sound path="sounds/technician_select8.ogg"/>					
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="sounds/technician_ack1.ogg"/>
+			<sound path="sounds/technician_ack2.ogg"/>
+			<sound path="sounds/technician_ack3.ogg"/>
+			<sound path="sounds/technician_ack4.ogg"/>		
+			<sound path="sounds/technician_ack5.ogg"/>
+			<sound path="sounds/technician_ack6.ogg"/>
+			<sound path="sounds/technician_ack7.ogg"/>
+			<sound path="sounds/technician_ack8.ogg"/>
+			<sound path="sounds/technician_ack9.ogg"/>
+			<sound path="sounds/technician_ack10.ogg"/>
+			<sound path="sounds/technician_ack11.ogg"/>		
+			<sound path="sounds/technician_ack12.ogg"/>
+			<sound path="sounds/technician_ack13.ogg"/>
+			<sound path="sounds/technician_ack14.ogg"/>
+			<sound path="sounds/technician_ack15.ogg"/>
+			<sound path="sounds/technician_ack16.ogg"/>		
+			<sound path="sounds/technician_ack17.ogg"/>
+			<sound path="sounds/technician_ack18.ogg"/>
+			<sound path="sounds/technician_ack19.ogg"/>					
+		</command-sounds>
+
+
+	</parameters>
+
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="55"/>
+			<animation path="models/engineer_idle.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="upgrade" />
+			<name value="upgrade_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="150" />
+			<animation path="models/upgrade/engineer_research.g3d" />
+			<particles value="false"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="220"/>
+			<anim-speed value="125"/>
+			<animation path="models/engineer_walk.g3d"/>
+			<sound enabled="false"/>
+		</skill>	
+
+		<skill>
+			<type value="repair"/>
+			<name value="repair_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="180"/>
+			<anim-speed value="180"/>
+			<animation path="models/engineer_build.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/technician_build1.ogg"/>
+				<sound-file path="sounds/technician_build2.ogg"/>
+				<sound-file path="sounds/technician_build3.ogg"/>	
+				<sound-file path="sounds/technician_build4.ogg"/>									
+				<sound-file path="sounds/technician_build5.ogg"/>	
+				<sound-file path="sounds/technician_build6.ogg"/>
+			</sound>
+
+		</skill>
+                
+		<skill>
+			<type value="attack"/>
+			<name value="molotov_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="111"/>
+			<anim-speed value="111"/>
+			<animation path="models/engineer_attack.g3d"/>
+			<sound enabled="true" start-time="0.5">
+				<sound-file path="../alexander/sounds/swordman_attack1.ogg"/>
+				<sound-file path="../alexander/sounds/swordman_attack2.ogg"/>
+				<sound-file path="../alexander/sounds/swordman_attack3.ogg"/>
+				<sound-file path="../alexander/sounds/swordman_attack4.ogg"/>
+				<sound-file path="../alexander/sounds/swordman_attack5.ogg"/>
+				<sound-file path="../alexander/sounds/swordman_attack6.ogg"/>
+				<sound-file path="../alexander/sounds/swordman_attack7.ogg"/>
+				<sound-file path="../alexander/sounds/swordman_attack8.ogg"/>
+				<sound-file path="../alexander/sounds/swordman_attack9.ogg"/>
+				<sound-file path="../alexander/sounds/swordman_attack10.ogg"/>
+				<sound-file path="../alexander/sounds/swordman_attack11.ogg"/>
+				<sound-file path="../alexander/sounds/swordman_attack12.ogg"/>
+			</sound> 
+			<attack-strenght value="100"/>
+			<attack-var value="50"/>
+			<attack-range value="1"/>
+			<attack-type value="slashing"/>
+			<attack-start-time value="0.5"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<projectile value="false"/>
+			<splash value="false"/>
+		</skill>
+
+		<skill>
+			<type value="repair"/>
+			<name value="heal"/>		
+			<ep-cost value="0"/>
+			<speed value="210"/>
+			<anim-speed value="210"/>
+			<animation path="models/engineer_heal.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="build"/>
+			<name value="build_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="210"/>
+			<anim-speed value="210"/>
+			<animation path="models/engineer_build.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/technician_build1.ogg"/>
+				<sound-file path="sounds/technician_build2.ogg"/>
+				<sound-file path="sounds/technician_build3.ogg"/>	
+				<sound-file path="sounds/technician_build4.ogg"/>									
+				<sound-file path="sounds/technician_build5.ogg"/>	
+				<sound-file path="sounds/technician_build6.ogg"/>
+			</sound>
+		</skill>		
+
+		<skill>
+			<type value="morph"/>
+			<name value="build_ballista"/>		
+			<ep-cost value="0"/>
+			<speed value="500"/>
+			<anim-speed value="200"/>
+			<animation path="../oxybeles/models/ballista_build.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/technician_build1.ogg"/>
+				<sound-file path="sounds/technician_build2.ogg"/>
+				<sound-file path="sounds/technician_build3.ogg"/>	
+				<sound-file path="sounds/technician_build4.ogg"/>									
+				<sound-file path="sounds/technician_build5.ogg"/>	
+				<sound-file path="sounds/technician_build6.ogg"/>
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="morph"/>
+			<name value="build_chariot"/>		
+			<ep-cost value="0"/>
+			<speed value="500"/>
+			<anim-speed value="200"/>
+			<animation path="../chariot/models/chaiot_build.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/technician_build1.ogg"/>
+				<sound-file path="sounds/technician_build2.ogg"/>
+				<sound-file path="sounds/technician_build3.ogg"/>	
+				<sound-file path="sounds/technician_build4.ogg"/>									
+				<sound-file path="sounds/technician_build5.ogg"/>	
+				<sound-file path="sounds/technician_build6.ogg"/>
+			</sound>
+		</skill>
+		
+		<skill>
+			<type value="morph"/>
+			<name value="build_org"/>		
+			<ep-cost value="0"/>
+			<speed value="200"/>
+			<anim-speed value="200"/>
+			<animation path="../onager/models/ornager_build.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/technician_build1.ogg"/>
+				<sound-file path="sounds/technician_build2.ogg"/>
+				<sound-file path="sounds/technician_build3.ogg"/>	
+				<sound-file path="sounds/technician_build4.ogg"/>									
+				<sound-file path="sounds/technician_build5.ogg"/>	
+				<sound-file path="sounds/technician_build6.ogg"/>
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="morph"/>
+			<name value="build_battering_ram"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="200"/>
+			<animation path="../battering_ram/models/battering_ram_build.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/technician_build1.ogg"/>
+				<sound-file path="sounds/technician_build2.ogg"/>
+				<sound-file path="sounds/technician_build3.ogg"/>	
+				<sound-file path="sounds/technician_build4.ogg"/>									
+				<sound-file path="sounds/technician_build5.ogg"/>	
+				<sound-file path="sounds/technician_build6.ogg"/>
+			</sound>
+		</skill>			
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="90"/>
+			<anim-speed value="50"/>
+			<animation path="models/engineer_die.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/technician_die1.ogg"/>
+				<sound-file path="sounds/technician_die2.ogg"/>
+				<sound-file path="sounds/technician_die3.ogg"/>	
+				<sound-file path="sounds/technician_die4.ogg"/>									
+			</sound>			
+			<fade value="false"/>
+		</skill>						
+
+	</skills>
+	
+	<commands>
+
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="../archer/images/tech_stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="../archer/images/tech_move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="build"/>
+			<name value="build_advanced"/>
+			<image path="../slave/images/worker_build_advanced.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<build-skill value="build_skill"/>
+			<buildings>
+                                <building name="tower"/>
+                                <building name="air_box"/>
+                                <building name="palace"/>
+                                <building name="temple"/>
+                                <building name="trojan_horse"/>
+                	</buildings>
+			<start-sound enabled="false"/>
+			<built-sound enabled="true" start-time="0">
+				<sound-file path="sounds/technician_select1.ogg"/>
+				<sound-file path="sounds/technician_select5.ogg"/>
+			</built-sound>
+		</command>
+
+		<command>
+			<type value="repair"/>
+			<name value="repair"/>
+			<image path="images/technician_repair.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<repair-skill value="repair_skill"/>
+			<repaired-units>	
+				<unit name="trojan_horse"/>	
+				<unit name="barley_field"/>		
+				<unit name="barracks"/>	
+				<unit name="blacksmith"/>		
+				<unit name="tower"/>				
+				<unit name="castle"/>	
+				<unit name="palace"/>	
+				<unit name="temple"/>		
+				<unit name="air_box"/>	
+				<unit name="oxybeles"/>	
+				<unit name="battering_ram"/>	
+				<unit name="chariot"/>	
+				<unit name="onager"/>	
+			</repaired-units>		
+		</command>
+
+		<command>
+			<type value="repair"/>
+			<name value="heal"/>
+			<image path="images/technician_heal.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<repair-skill value="heal"/>
+			<repaired-units>	
+				<unit name="slave"/>	
+				<unit name="calvary"/>		
+				<unit name="engineer"/>	
+				<unit name="hoplite"/>		
+				<unit name="peltast"/>
+				<unit name="alexander"/>	
+				<unit name="artemis"/>		
+				<unit name="atlas"/>	
+				<unit name="archer"/>	
+				<unit name="psiloi"/>			
+			</repaired-units>		
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="molotov"/>
+			<image path="images/molotov.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="molotov_skill"/>
+		</command>
+
+		<command>
+			<type value="morph"/>
+			<name value="build_oxybeles"/>
+			<image path="../oxybeles/images/air_ballista.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<morph-skill value="build_ballista"/>
+			<morph-unit name= "oxybeles"/>
+			<discount value="40"/>
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="research_advanced_buildings"/>
+			<image path="../../upgrades/advanced_buildings/images/training_field.bmp"/>
+	          	<unit-requirements>
+		        	<unit name="blacksmith" />
+	        	</unit-requirements>
+             		<upgrade-requirements/>
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="advanced_buildings"/>
+		</command>
+
+	</commands>
+</unit>

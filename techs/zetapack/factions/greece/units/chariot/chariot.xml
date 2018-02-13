@@ -1,0 +1,216 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+
+	<parameters>
+		<size value="3"/>
+		<height value="2"/>
+		<max-hp value="2500" regeneration="1"/>
+		<max-ep value="0"/>
+		<armor value="45"/>	
+		<armor-type value="wood"/>
+		<sight value="10"/>
+		<time value="140"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="true">
+			<row value="010"/>
+			<row value="010"/>
+			<row value="010"/>
+		</cellmap>
+		<levels>
+			<level name="elite" kills="10"/>
+		</levels>
+		<fields>
+			<field value="land"/>
+			<field value="air"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements>
+			<unit name="blacksmith"/>
+			<unit name="temple"/>
+		</unit-requirements>
+		<upgrade-requirements>
+			<upgrade name="barley_bales"/>
+			<upgrade name="advanced_training"/>
+		</upgrade-requirements>
+		<resource-requirements>
+			<resource name="wood" amount="300"/>
+			<resource name="gold" amount="150"/>
+			<resource name="food" amount="1"/>
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/battle_machine.bmp"/>
+		<image-cancel path="../archer/images/tech_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="../calvary/sounds/horseman_select1.ogg"/>
+			<sound path="../calvary/sounds/horseman_select2.ogg"/>
+			<sound path="../calvary/sounds/horseman_select3.ogg"/>
+			<sound path="../calvary/sounds/horseman_select4.ogg"/>
+			<sound path="../calvary/sounds/horseman_select5.ogg"/>
+			<sound path="../calvary/sounds/horseman_select6.ogg"/>
+			<sound path="../calvary/sounds/horseman_select7.ogg"/>
+			<sound path="../calvary/sounds/horseman_select8.ogg"/>
+			<sound path="../calvary/sounds/horseman_select9.ogg"/>
+			<sound path="../calvary/sounds/horseman_select10.ogg"/>
+			<sound path="../calvary/sounds/horseman_select11.ogg"/>
+			<sound path="../calvary/sounds/horseman_select12.ogg"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="../calvary/sounds/horseman_ack1.ogg"/>
+			<sound path="../calvary/sounds/horseman_ack2.ogg"/>
+			<sound path="../calvary/sounds/horseman_ack3.ogg"/>
+			<sound path="../calvary/sounds/horseman_ack4.ogg"/>		
+			<sound path="../calvary/sounds/horseman_ack5.ogg"/>
+			<sound path="../calvary/sounds/horseman_ack6.ogg"/>
+			<sound path="../calvary/sounds/horseman_ack7.ogg"/>
+			<sound path="../calvary/sounds/horseman_ack8.ogg"/>
+			<sound path="../calvary/sounds/horseman_ack9.ogg"/>
+			<sound path="../calvary/sounds/horseman_ack10.ogg"/>
+			<sound path="../calvary/sounds/horseman_ack11.ogg"/>		
+			<sound path="../calvary/sounds/horseman_ack12.ogg"/>
+			<sound path="../calvary/sounds/horseman_ack13.ogg"/>
+			<sound path="../calvary/sounds/horseman_ack14.ogg"/>
+			<sound path="../calvary/sounds/horseman_ack15.ogg"/>						
+		</command-sounds>
+
+	</parameters>
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="50"/>
+			<animation path="models/chariot_idle.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="440"/>
+			<anim-speed value="110"/>
+			<animation path="models/chariot_walk.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="../calvary/sounds/horseman_walk1.ogg"/>
+				<sound-file path="../calvary/sounds/horseman_walk2.ogg"/>
+				<sound-file path="../calvary/sounds/horseman_walk3.ogg"/>
+			</sound> 
+
+		</skill>
+                 
+		<skill>
+			<type value="attack"/>
+			<name value="attack_arrow_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="60"/>
+			<anim-speed value="75"/>
+			<animation path="models/chariot_attack.g3d"/>
+			<sound enabled="true" start-time="0.5">
+				<sound-file path="../peltast/sounds/archer_attack1.ogg"/>
+				<sound-file path="../peltast/sounds/archer_attack2.ogg"/>
+				<sound-file path="../peltast/sounds/archer_attack3.ogg"/>
+				<sound-file path="../peltast/sounds/archer_attack4.ogg"/>
+			</sound>
+			<attack-strenght value="170"/>
+			<attack-var value="75"/>
+			<attack-range value="9"/>
+			<attack-type value="piercing"/>
+			<attack-start-time value="0.5"/>
+			<attack-fields>
+				<field value="air"/>
+				<field value="land"/>
+			</attack-fields>
+			<projectile value="true">
+				<particle value="true" path="particle_proj.xml"/>
+				<sound enabled="false"/>
+			</projectile>
+			<splash value="true">
+				<radius value="1"/>
+				<damage-all value="true"/>
+				<particle value="true" path="particle_splash.xml"/>
+			</splash>
+		</skill>
+
+		<skill>
+			<type value="die"/>	
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="60"/>
+			<anim-speed value="60"/>
+			<animation path="models/chariot_die.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/machine_die1.ogg"/>
+				<sound-file path="sounds/machine_die2.ogg"/>
+				<sound-file path="sounds/machine_die3.ogg"/>
+			</sound> 			
+			<fade value="false"/>
+		</skill>
+		
+		<skill>
+			<type value="move"/>
+			<name value="charge_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="480"/>
+			<anim-speed value="120"/>
+			<animation path="models/chariot_walk.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="../calvary/sounds/horseman_walk1.ogg"/>
+				<sound-file path="../calvary/sounds/horseman_walk2.ogg"/>
+				<sound-file path="../calvary/sounds/horseman_walk3.ogg"/>
+			</sound> 
+
+		</skill>	
+
+	</skills>
+
+	<!-- *** commands *** -->
+	
+	<commands>
+		
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="../archer/images/tech_stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="../archer/images/tech_move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="attack_spear"/>
+			<image path="images/battle_machine_attack_arrow.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="charge_skill"/>
+			<attack-skill value="attack_arrow_skill"/>
+		</command>
+
+                   <command>
+			<type value="attack_stopped"/>
+			<name value="hold_position"/>
+			<image path="../archer/images/tech_hold.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="attack_arrow_skill"/>
+		</command>                
+
+
+	</commands>
+</unit>

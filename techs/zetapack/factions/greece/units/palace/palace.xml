@@ -1,0 +1,162 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="5" />
+		<height value="3" />
+		<max-hp value="6000" regeneration="0"/>
+		<max-ep value="0" />
+		<armor value="0" />
+		<armor-type value="stone"/>				
+		<sight value="15" />
+		<time value="200" />
+		<multi-selection value="false" />
+		<cellmap value="true">
+			<row value="11111"/>
+			<row value="10011"/>
+			<row value="10001"/>
+			<row value="10101"/>
+			<row value="10101"/>
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="true" red="0.8" green="0.8" blue="0.5"/>
+		<rotationAllowed value="true" />
+		<unit-requirements>
+			<unit name="blacksmith"/>
+			<unit name="castle"/>
+		</unit-requirements>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="gold" amount="100" />
+			<resource name="stone" amount="100" />
+			<resource name="wood" amount="100" />
+		</resource-requirements>
+		<resources-stored>
+			<resource name= "gold" amount="800"/>			
+			<resource name= "stone" amount="500"/>				
+		</resources-stored>
+		<image path="images/castle.bmp" />
+		<image-cancel path="../archer/images/tech_cancel.bmp"/>
+		<meeting-point value="true" image-path="../barracks/images/meeting_point.bmp"/>
+		<selection-sounds enabled="true">
+			<sound path="../barracks/sounds/tech_click.ogg" />
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="../barracks/sounds/tech_click.ogg" />
+		</command-sounds>
+	</parameters>
+	
+	<!-- *** skills *** -->
+	<skills>
+
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="100" />
+			<animation path="models/palace.g3d" />
+			<sound enabled="false" />
+		</skill>
+		
+		<skill>
+			<type value="be_built" />
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/palace_build.g3d" />
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="produce" />
+			<name value="produce_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/palace.g3d" />
+			<sound enabled="false" />
+		</skill>	
+
+		<skill>
+			<type value="upgrade" />
+			<name value="upgrade_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="150" />
+			<animation path="models/palace.g3d" />
+			<particles value="false"/>
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="die" />
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/palace_die.g3d" />
+			<particles value="true">
+				<particle-file path="smoke_particles.xml"/>
+				<particle-file path="glow_particles.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="../barracks/sounds/tech_building_fall2.ogg"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+	
+	<!-- *** commands *** -->
+	<commands>
+	
+		<command>
+			<type value="produce"/>
+			<name value="build_chariot"/>
+			<image path="../chariot/images/battle_machine.bmp"/>
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="chariot"/>
+		</command>
+	
+		<command>
+			<type value="produce"/>
+			<name value="produce_alexander" />
+			<image path="../alexander/images/archmage.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="alexander"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_artemis" />
+			<image path="../artemis/images/technician.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="artemis"/>
+		</command>
+	
+		<!--command>
+			<type value="upgrade"/>
+			<name value="research_advanced_buildings"/>
+			<image path="../../upgrades/advanced_buildings/images/training_field.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="advanced_buildings"/>
+		</command-->
+
+	</commands>
+</unit>
