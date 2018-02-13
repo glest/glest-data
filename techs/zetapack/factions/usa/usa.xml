@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="no"?>
+
+<faction>
+        <starting-resources>
+		<resource name="gold" amount="500"/>
+		<resource name="wood" amount="400"/>	
+		<resource name="stone" amount="400"/>	
+		<resource name="patriotism" amount="5"/>	
+	</starting-resources>
+	<starting-units>
+		<unit name="bank" amount="1"/>
+		<unit name="flag" amount="1"/>
+		<unit name="citizen" amount="3"/>
+		<unit name="gunner" amount="2"/>
+		<unit name="uncle_sam" amount="1"/>
+		<unit name="combat_knifer" amount="1"/>
+                <unit name="guard_tower" amount="1"/>
+                <unit name="pentagon" amount="0"/>
+                <unit name="nurse" amount="0"/>
+                <unit name="black_guy" amount="0"/>
+                <unit name="fighter_jet" amount="0"/>
+                <unit name="missile_launcher" amount="0"/>
+                <unit name="president" amount="0"/>
+                <unit name="statue_of_liberty" amount="0"/>
+                <unit name="sniper_" amount="0"/>
+	</starting-units>	
+	<music value="true" path="music/music_magic.ogg"/>
+</faction>

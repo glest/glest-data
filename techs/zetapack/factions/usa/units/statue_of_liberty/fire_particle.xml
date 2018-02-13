@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<unit-particle-system>
+    	<texture value="true" path="images/fire_particle.bmp" luminance="false"/>
+	<primitive value="quad"/>
+	<offset x="-0.65" y="2.6" z="0.16"/>
+	<direction x="0" y="1" z="0"/>
+	<color red="0.1" green="0.4" blue="1.0" alpha="0.5" />
+	<color-no-energy red="0.2" green="1.0" blue="0.0" alpha="0.0" />
+    	<radius value="0.1" />
+    	<size value="0.2" />
+    	<size-no-energy value="0.2" />
+    	<speed value="2.5" />
+	<gravity value="0"/>
+    	<emission-rate value="20" />
+    	<energy-max value="40" />
+    	<energy-var value="0" />
+	<relative value="false" />
+    	<fixed value="false" />
+    	<teamcolorNoEnergy value="false" />
+    	<teamcolorEnergy value="false" />
+</unit-particle-system>

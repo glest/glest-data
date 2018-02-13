@@ -1,0 +1,158 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="2"/>
+		<height value="3"/>
+		<max-hp value="2000" regeneration="3"/>
+		<max-ep value="0" regeneration="0"/>
+		<armor value="45"/>	
+		<armor-type value="stone"/>
+		<sight value="10"/>
+		<time value="150"/>	
+		<multi-selection value="false"/>	
+		<cellmap value="false"/>
+		<levels>
+			<level name="high" kills="10"/>
+		</levels>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false"/>
+		<unit-requirements>
+			<unit name="uncle_sam"/>
+		        <unit name="pentagon"/>
+		</unit-requirements>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="stone" amount="250"/>
+			<resource name="gold" amount="250"/>
+			<resource name="patriotism" amount="2"/>
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/golem.bmp"/>
+		<image-cancel path="../president/images/magic_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="/sounds/golem_select1.wav"/>
+			<sound path="/sounds/golem_select2.wav"/>
+			<sound path="/sounds/golem_select3.wav"/>
+			<sound path="/sounds/golem_select4.wav"/>
+			<sound path="/sounds/golem_select5.wav"/>
+			<sound path="/sounds/golem_select6.wav"/>
+			<sound path="/sounds/golem_select7.wav"/>
+			<sound path="/sounds/golem_select8.wav"/>
+			<sound path="/sounds/golem_select9.wav"/>
+			<sound path="/sounds/golem_select10.wav"/>
+			<sound path="/sounds/golem_select11.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+		        <sound path="/sounds/golem_ack1.wav"/>
+			<sound path="/sounds/golem_ack2.wav"/>
+			<sound path="/sounds/golem_ack3.wav"/>
+			<sound path="/sounds/golem_ack4.wav"/>
+			<sound path="/sounds/golem_ack5.wav"/>
+			<sound path="/sounds/golem_ack6.wav"/>
+			<sound path="/sounds/golem_ack7.wav"/>
+			<sound path="/sounds/golem_ack8.wav"/>
+			<sound path="/sounds/golem_ack9.wav"/>
+			<sound path="/sounds/golem_ack10.wav"/>
+			<sound path="/sounds/golem_ack11.wav"/>
+		</command-sounds>
+
+	</parameters>
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="50"/>
+			<animation path="models/tower.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="500"/>
+			<anim-speed value="60"/>
+			<animation path="models/tower.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="/sounds/shot1.wav"/>
+			</sound>
+			<attack-strenght value="200"/>
+			<attack-var value="150"/>
+			<attack-range value="10"/>
+			<attack-type value="piercing"/>
+			<attack-start-time value="0.4"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<projectile value="true">
+				<particle value="true" path="particle_proj.xml"/>
+				<sound enabled="false"/>
+			</projectile>
+			<splash value="false">
+			</splash>
+		</skill>	
+
+		<skill>
+			<type value="die"/>	
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="60"/>
+			<anim-speed value="60"/>
+			<animation path="models/tower_die.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/golem_die1.wav"/>
+				<sound-file path="sounds/golem_die2.wav"/>
+				<sound-file path="sounds/golem_die3.wav"/>
+			</sound> 
+                        <fade value="false"/>
+		</skill>
+		
+		<skill>
+			<type value="be_built" />
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="120"/>
+			<speed value="120"/>
+			<anim-speed value="300" />
+			<animation path="models/tower_build.g3d" />
+			<sound enabled="false" />
+		</skill>
+		
+	</skills>
+
+	<!-- *** commands *** -->
+	
+	<commands>
+		
+		<command>
+			<type value= "stop"/>
+			<name value="attack_off"/>
+			<image path="images/golem_attack_stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value= "attack_stopped"/>
+			<name value="attack_on"/>
+			<image path="images/golem_attack.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<attack-skill value="attack_skill"/>
+                        <stop-skill value="stop_skill"/>
+		</command>
+
+	</commands>
+</unit>
