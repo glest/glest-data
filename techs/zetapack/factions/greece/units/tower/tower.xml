@@ -6,16 +6,17 @@
 		<height value="7"/>
 		<max-hp value="7000" regeneration="0"/>
 		<max-ep value="0"/>
-		<armor value="20"/>	
-		<armor-type value="wood"/>			
+		<armor value="20"/>
+		<armor-type value="wood"/>
 		<sight value="16"/>
-		<time value="140"/>	
-		<multi-selection value="false"/>
+		<time value="140"/>
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="false"/>
-		<levels/>	
+		<levels/>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties>
 			<property value="burnable"/>
 		</properties>
@@ -29,7 +30,7 @@
 		</upgrade-requirements>
 		<resource-requirements>
 			<resource name="gold" amount="250"/>
-			<resource name="stone" amount="200"/>			
+			<resource name="stone" amount="200"/>
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/defense_tower.bmp"/>
@@ -44,10 +45,10 @@
 	</parameters>
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="300"/>
 			<anim-speed value="100"/>
@@ -57,7 +58,7 @@
 
 		<skill>
 			<type value="be_built"/>
-			<name value="be_built_skill"/>		
+			<name value="be_built_skill"/>
 			<ep-cost value="0"/>
 			<speed value="300"/>
 			<anim-speed value="300"/>
@@ -67,7 +68,7 @@
 
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="attack_skill"/>
 			<ep-cost value="0"/>
 			<speed value="80"/>
 			<anim-speed value="90"/>
@@ -100,7 +101,7 @@
 
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="300"/>
 			<anim-speed value="300"/>
@@ -111,12 +112,12 @@
 			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="../barracks/sounds/tech_building_fall5.ogg"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 
 	</skills>
-	
+
 	<commands>
 
 		<command>

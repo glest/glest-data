@@ -9,7 +9,8 @@
 		<armor-type value="stone"/>
 		<sight value="6" />
 		<time value="100" />
-		<multi-selection value="false" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="true">
 			<row value="1111"/>
 			<row value="1001"/>
@@ -47,10 +48,10 @@
 			<sound path="sounds/tech_click.ogg" />
 		</command-sounds>
 	</parameters>
-	
+
 	<skills>
 		<skill>
-			<type value="stop"/>	
+			<type value="stop"/>
 			<name value="stop_skill"/>
 			<ep-cost value="0" />
 			<speed value="50" />
@@ -58,40 +59,40 @@
 			<animation path="models/advanced_barracks.g3d" />
 			<sound enabled="false" />
 		</skill>
-		
+
 		<skill>
-			<type value="be_built" />	
-			<name value="be_built_skill"/>		
+			<type value="be_built" />
+			<name value="be_built_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="models/advanced_barracks_build.g3d" />
 			<sound enabled="false" />
-		</skill>	
-		
+		</skill>
+
 		<skill>
-			<type value="upgrade"/>	
-			<name value="upgrade_skill"/>	
+			<type value="upgrade"/>
+			<name value="upgrade_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="models/advanced_barracks.g3d" />
 			<sound enabled="false" />
 		</skill>
-		
+
 		<skill>
 			<type value="produce"/>
-			<name value="produce_skill"/>	
+			<name value="produce_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="models/advanced_barracks.g3d" />
 			<sound enabled="false" />
-		</skill>	
-		
+		</skill>
+
 		<skill>
-			<type value="die" />	
-			<name value="die_skill"/>		
+			<type value="die" />
+			<name value="die_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
@@ -102,14 +103,14 @@
 			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="../barracks/sounds/tech_building_fall4.ogg"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 
 	</skills>
-	
+
 	<commands>
-	
+
 		<command>
 			<type value="produce"/>
 			<name value="produce_hoplite" />
@@ -129,7 +130,7 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="psiloi"/>
 		</command>
-		
+
 		<command>
 			<type value="produce"/>
 			<name value="produce_archer" />
@@ -139,7 +140,7 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="archer"/>
 		</command>
-		
+
 		<command>
 			<type value="produce"/>
 			<name value="produce_peltast" />
@@ -148,8 +149,8 @@
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="peltast"/>
-		</command>		
-		
+		</command>
+
 		<command>
 			<type value="produce"/>
 			<name value="produce_calvary" />
@@ -159,7 +160,7 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="calvary"/>
 		</command>
-		
+
 		<command>
 			<type value="produce"/>
 			<name value="build_onager"/>
@@ -169,7 +170,7 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="onager"/>
 		</command>
-		
+
 		<command>
 			<type value="produce"/>
 			<name value="build_battering_ram"/>
@@ -179,7 +180,7 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="battering_ram"/>
 		</command>
-		
+
 		<command>
 			<type value="upgrade"/>
 			<name value="create_advanced_training_field"/>
@@ -188,6 +189,6 @@
 			<upgrade-requirements />
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="advanced_training"/>
-		</command>				
+		</command>
 	</commands>
 </unit>

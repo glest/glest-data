@@ -10,22 +10,23 @@
 		<max-hp value="600" regeneration="0"/>
 		<max-ep value="0"/>
 		<armor value="0"/>
-		<armor-type value="leather"/>					
+		<armor-type value="leather"/>
 		<sight value="9"/>
-		<time value="40"/>	
-		<multi-selection value="true"/>	
+		<time value="40"/>
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="false"/>
 		<levels/>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties/>
 		<light enabled="false"/>
 		<unit-requirements/>
 		<upgrade-requirements/>
 		<resource-requirements>
 			<resource name="gold" amount="75"/>
-			<resource name="food" amount="1"/>			
+			<resource name="food" amount="1"/>
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/worker.bmp"/>
@@ -35,16 +36,16 @@
 			<sound path="sounds/worker_select1.ogg"/>
 			<sound path="sounds/worker_select2.ogg"/>
 			<sound path="sounds/worker_select3.ogg"/>
-			<sound path="sounds/worker_select4.ogg"/>					
+			<sound path="sounds/worker_select4.ogg"/>
 		</selection-sounds>
 		<command-sounds enabled="true">
 			<sound path="sounds/worker_ack1.ogg"/>
 			<sound path="sounds/worker_ack2.ogg"/>
 			<sound path="sounds/worker_ack3.ogg"/>
-			<sound path="sounds/worker_ack4.ogg"/>		
+			<sound path="sounds/worker_ack4.ogg"/>
 			<sound path="sounds/worker_ack5.ogg"/>
 			<sound path="sounds/worker_ack6.ogg"/>
-			<sound path="sounds/worker_ack7.ogg"/>					
+			<sound path="sounds/worker_ack7.ogg"/>
 		</command-sounds>
 	</parameters>
 
@@ -52,20 +53,20 @@
 	<!-- *** skills *** -->
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="55"/>
 			<animation path="models/worker_standing.g3d"/>
 			<sound enabled="false"/>
 		</skill>
-		
+
 		<skill>
 			<type value="stop"/>
-			<name value="stop_loaded_skill"/>		
+			<name value="stop_loaded_skill"/>
 			<ep-cost value="0"/>
 			<speed value="75"/>
 			<anim-speed value="70"/>
@@ -75,7 +76,7 @@
 
 		<skill>
 			<type value="stop"/>
-			<name value="stop_loaded_wood_skill"/>		
+			<name value="stop_loaded_wood_skill"/>
 			<ep-cost value="0"/>
 			<speed value="75"/>
 			<anim-speed value="70"/>
@@ -85,7 +86,7 @@
 
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="190"/>
 			<anim-speed value="130"/>
@@ -95,7 +96,7 @@
 
 		<skill>
 			<type value="move"/>
-			<name value="move_wood_skill"/>		
+			<name value="move_wood_skill"/>
 			<ep-cost value="0"/>
 			<speed value="210"/>
 			<anim-speed value="130"/>
@@ -105,7 +106,7 @@
 
 		<skill>
 			<type value="move"/>
-			<name value="move_gold_skill"/>		
+			<name value="move_gold_skill"/>
 			<ep-cost value="0"/>
 			<speed value="210"/>
 			<anim-speed value="130"/>
@@ -115,7 +116,7 @@
 
 		<skill>
 			<type value="move"/>
-			<name value="move_loaded_skill"/>		
+			<name value="move_loaded_skill"/>
 			<ep-cost value="0"/>
 			<speed value="190"/>
 			<anim-speed value="100"/>
@@ -125,17 +126,17 @@
 
 		<skill>
 			<type value="move"/>
-			<name value="move_loaded_wood_skill"/>		
+			<name value="move_loaded_wood_skill"/>
 			<ep-cost value="0"/>
 			<speed value="190"/>
 			<anim-speed value="100"/>
 			<animation path="models/worker_walking_loaded_wood.g3d"/>
 			<sound enabled="false"/>
 		</skill>
-		
+
 		<skill>
 			<type value="build"/>
-			<name value="build_skill"/>		
+			<name value="build_skill"/>
 			<ep-cost value="0"/>
 			<speed value="105"/>
 			<anim-speed value="100"/>
@@ -145,11 +146,11 @@
 				<sound-file path="sounds/worker_build2.ogg"/>
 				<sound-file path="sounds/worker_build3.ogg"/>
 			</sound>
-		</skill>	
-		
+		</skill>
+
 		<skill>
 			<type value="harvest"/>
-			<name value="mine_skill"/>		
+			<name value="mine_skill"/>
 			<ep-cost value="0"/>
 			<speed value="225"/>
 			<anim-speed value="90"/>
@@ -162,11 +163,11 @@
 				<sound-file path="sounds/worker_mine5.ogg"/>
 				<sound-file path="sounds/worker_mine6.ogg"/>
 			</sound>
-		</skill>	
-		
+		</skill>
+
 		<skill>
 			<type value="harvest"/>
-			<name value="harvest_wood_skill"/>		
+			<name value="harvest_wood_skill"/>
 			<ep-cost value="0"/>
 			<speed value="150"/>
 			<anim-speed value="90"/>
@@ -176,11 +177,11 @@
 				<sound-file path="sounds/worker_harvest_wood2.ogg"/>
 				<sound-file path="sounds/worker_harvest_wood3.ogg"/>
 			</sound>
-		</skill>		
-		
+		</skill>
+
 		<skill>
 			<type value="repair"/>
-			<name value="repair_skill"/>		
+			<name value="repair_skill"/>
 			<ep-cost value="0"/>
 			<speed value="40"/>
 			<anim-speed value="100"/>
@@ -190,21 +191,21 @@
 				<sound-file path="sounds/worker_build2.ogg"/>
 				<sound-file path="sounds/worker_build3.ogg"/>
 			</sound>
-		</skill>	
+		</skill>
 
 		<skill>
 			<type value="morph"/>
-			<name value="morph_skill"/>		
+			<name value="morph_skill"/>
 			<ep-cost value="0"/>
 			<speed value="500"/>
 			<anim-speed value="80"/>
 			<animation path="models/worker_learn.g3d"/>
 			<sound enabled="false"/>
-		</skill>	
-		
+		</skill>
+
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="90"/>
 			<anim-speed value="90"/>
@@ -212,17 +213,17 @@
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/worker_die1.ogg"/>
 				<sound-file path="sounds/worker_die2.ogg"/>
-				<sound-file path="sounds/worker_die3.ogg"/>								
-			</sound>			
+				<sound-file path="sounds/worker_die3.ogg"/>
+			</sound>
 			<fade value="false"/>
-		</skill>						
+		</skill>
 
 	</skills>
 
 	<!-- *** commands *** -->
-	
+
 	<commands>
-		
+
 		<command>
 			<type value= "stop"/>
 			<name value="stop"/>
@@ -252,16 +253,16 @@
 			<buildings>
                                 <building name="barley_field"/>
 				<building name="barracks"/>
-				<building name="blacksmith"/>	
+				<building name="blacksmith"/>
 				<building name="castle"/>
-				<building name="tower"/>			
+				<building name="tower"/>
 			</buildings>
 			<start-sound enabled="false"/>
 			<built-sound enabled="true">
 				<sound-file path="sounds/worker_work_end1.ogg"/>
 				<sound-file path="sounds/worker_work_end2.ogg"/>
-				<sound-file path="sounds/worker_work_end3.ogg"/>							
-			</built-sound>	
+				<sound-file path="sounds/worker_work_end3.ogg"/>
+			</built-sound>
 		</command>
 
 		<!--command>
@@ -279,8 +280,8 @@
 			<built-sound enabled="true">
 				<sound-file path="sounds/worker_work_end1.ogg"/>
 				<sound-file path="sounds/worker_work_end2.ogg"/>
-				<sound-file path="sounds/worker_work_end3.ogg"/>							
-			</built-sound>	
+				<sound-file path="sounds/worker_work_end3.ogg"/>
+			</built-sound>
 		</command-->
 
 		<command>
@@ -294,11 +295,11 @@
 			<stop-loaded-skill value="stop_loaded_skill"/>
 			<move-loaded-skill value="move_loaded_skill"/>
 			<harvested-resources>
-				<resource name="gold"/>	
-				<resource name="stone"/>		
+				<resource name="gold"/>
+				<resource name="stone"/>
 			</harvested-resources>
 			<max-load value="25"/>
-			<hits-per-unit value="1"/>				
+			<hits-per-unit value="1"/>
 		</command>
 
 		<command>
@@ -312,12 +313,12 @@
 			<stop-loaded-skill value="stop_loaded_wood_skill"/>
 			<move-loaded-skill value="move_loaded_wood_skill"/>
 			<harvested-resources>
-				<resource name="wood"/>		
+				<resource name="wood"/>
 			</harvested-resources>
 			<max-load value="25"/>
-			<hits-per-unit value="1"/>				
+			<hits-per-unit value="1"/>
 		</command>
-		
+
 		<command>
 			<type value="repair"/>
 			<name value="repair"/>
@@ -327,17 +328,17 @@
 			<move-skill value="move_skill"/>
 			<repair-skill value="repair_skill"/>
 			<repaired-units>
-				<unit name="barley_field"/>		
-				<unit name="barracks"/>	
-				<unit name="blacksmith"/>		
-				<unit name="tower"/>				
-				<unit name="castle"/>	
-				<unit name="palace"/>	
-				<unit name="temple"/>	
-				<unit name="air_box"/>	
-				<unit name="advanced_barracks"/>	
-			</repaired-units>		
-		</command>	
+				<unit name="barley_field"/>
+				<unit name="barracks"/>
+				<unit name="blacksmith"/>
+				<unit name="tower"/>
+				<unit name="castle"/>
+				<unit name="palace"/>
+				<unit name="temple"/>
+				<unit name="air_box"/>
+				<unit name="advanced_barracks"/>
+			</repaired-units>
+		</command>
 
 		<!--command>
 			<type value="morph"/>

@@ -7,15 +7,16 @@
 		<max-hp value="1500" regeneration="1"/>
 		<max-ep value="0"/>
 		<armor value="10"/>
-		<armor-type value="wood"/>					
+		<armor-type value="wood"/>
 		<sight value="10"/>
-		<time value="100"/>	
-		<multi-selection value="true"/>	
+		<time value="100"/>
+		<multi-selection value="true"/>
+		<uniform-selection value="false"/>
 		<cellmap value="false"/>
 		<levels/>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties>
 			<property value="rotated_climb"/>
 		</properties>
@@ -38,35 +39,35 @@
 			<sound path="../engineer/sounds/technician_select1.ogg"/>
 			<sound path="../engineer/sounds/technician_select2.ogg"/>
 			<sound path="../engineer/sounds/technician_select3.ogg"/>
-			<sound path="../engineer/sounds/technician_select4.ogg"/>					
+			<sound path="../engineer/sounds/technician_select4.ogg"/>
 		</selection-sounds>
 		<command-sounds enabled="true">
 			<sound path="../engineer/sounds/technician_ack1.ogg"/>
 			<sound path="../engineer/sounds/technician_ack2.ogg"/>
 			<sound path="../engineer/sounds/technician_ack3.ogg"/>
-			<sound path="../engineer/sounds/technician_ack4.ogg"/>		
+			<sound path="../engineer/sounds/technician_ack4.ogg"/>
 			<sound path="../engineer/sounds/technician_ack5.ogg"/>
 			<sound path="../engineer/sounds/technician_ack6.ogg"/>
-			<sound path="../engineer/sounds/technician_ack7.ogg"/>					
+			<sound path="../engineer/sounds/technician_ack7.ogg"/>
 		</command-sounds>
 
 	</parameters>
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="40"/>
 			<animation path="models/ornager_idle.g3d"/>
 			<sound enabled="false"/>
 		</skill>
-		
+
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="150"/>
 			<anim-speed value="150"/>
@@ -78,12 +79,12 @@
 				<sound-file path="sounds/catapult_walk4.ogg"/>
 				<sound-file path="sounds/catapult_walk5.ogg"/>
 				<sound-file path="sounds/catapult_walk6.ogg"/>
-			</sound> 
+			</sound>
 		</skill>
 
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="attack_skill"/>
 			<ep-cost value="0"/>
 			<speed value="50"/>
 			<anim-speed value="50"/>
@@ -91,7 +92,7 @@
 			<sound enabled="true" start-time="0.333">
 				<sound-file path="sounds/catapult_attack1.ogg"/>
 				<sound-file path="sounds/catapult_attack2.ogg"/>
-			</sound> 
+			</sound>
 			<attack-strenght value="450"/>
 			<attack-var value="150"/>
 			<attack-range value="10"/>
@@ -116,7 +117,7 @@
 
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="120"/>
 			<anim-speed value="120"/>
@@ -125,13 +126,13 @@
 				<sound-file path="sounds/catapult_die1.ogg"/>
 				<sound-file path="sounds/catapult_die2.ogg"/>
 				<sound-file path="sounds/catapult_die3.ogg"/>
-			</sound> 			
+			</sound>
 			<fade value="false"/>
 		</skill>
 
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="40"/>
@@ -140,9 +141,9 @@
 		</skill>
 
 	</skills>
-	
+
 	<commands>
-		
+
 		<command>
 			<type value="stop"/>
 			<name value="stop"/>

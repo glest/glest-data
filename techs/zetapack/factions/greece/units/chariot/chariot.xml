@@ -7,11 +7,12 @@
 		<height value="2"/>
 		<max-hp value="2500" regeneration="1"/>
 		<max-ep value="0"/>
-		<armor value="45"/>	
+		<armor value="45"/>
 		<armor-type value="wood"/>
 		<sight value="10"/>
-		<time value="140"/>	
-		<multi-selection value="true"/>	
+		<time value="140"/>
+		<multi-selection value="true"/>
+		<uniform-selection value="false"/>
 		<cellmap value="true">
 			<row value="010"/>
 			<row value="010"/>
@@ -23,7 +24,7 @@
 		<fields>
 			<field value="land"/>
 			<field value="air"/>
-		</fields>	
+		</fields>
 		<properties/>
 		<light enabled="false"/>
 		<unit-requirements>
@@ -61,24 +62,24 @@
 			<sound path="../calvary/sounds/horseman_ack1.ogg"/>
 			<sound path="../calvary/sounds/horseman_ack2.ogg"/>
 			<sound path="../calvary/sounds/horseman_ack3.ogg"/>
-			<sound path="../calvary/sounds/horseman_ack4.ogg"/>		
+			<sound path="../calvary/sounds/horseman_ack4.ogg"/>
 			<sound path="../calvary/sounds/horseman_ack5.ogg"/>
 			<sound path="../calvary/sounds/horseman_ack6.ogg"/>
 			<sound path="../calvary/sounds/horseman_ack7.ogg"/>
 			<sound path="../calvary/sounds/horseman_ack8.ogg"/>
 			<sound path="../calvary/sounds/horseman_ack9.ogg"/>
 			<sound path="../calvary/sounds/horseman_ack10.ogg"/>
-			<sound path="../calvary/sounds/horseman_ack11.ogg"/>		
+			<sound path="../calvary/sounds/horseman_ack11.ogg"/>
 			<sound path="../calvary/sounds/horseman_ack12.ogg"/>
 			<sound path="../calvary/sounds/horseman_ack13.ogg"/>
 			<sound path="../calvary/sounds/horseman_ack14.ogg"/>
-			<sound path="../calvary/sounds/horseman_ack15.ogg"/>						
+			<sound path="../calvary/sounds/horseman_ack15.ogg"/>
 		</command-sounds>
 
 	</parameters>
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
 			<name value="stop_skill"/>
@@ -88,10 +89,10 @@
 			<animation path="models/chariot_idle.g3d"/>
 			<sound enabled="false"/>
 		</skill>
-		
+
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="440"/>
 			<anim-speed value="110"/>
@@ -100,13 +101,13 @@
 				<sound-file path="../calvary/sounds/horseman_walk1.ogg"/>
 				<sound-file path="../calvary/sounds/horseman_walk2.ogg"/>
 				<sound-file path="../calvary/sounds/horseman_walk3.ogg"/>
-			</sound> 
+			</sound>
 
 		</skill>
-                 
+
 		<skill>
 			<type value="attack"/>
-			<name value="attack_arrow_skill"/>		
+			<name value="attack_arrow_skill"/>
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="75"/>
@@ -138,8 +139,8 @@
 		</skill>
 
 		<skill>
-			<type value="die"/>	
-			<name value="die_skill"/>		
+			<type value="die"/>
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="60"/>
@@ -148,13 +149,13 @@
 				<sound-file path="sounds/machine_die1.ogg"/>
 				<sound-file path="sounds/machine_die2.ogg"/>
 				<sound-file path="sounds/machine_die3.ogg"/>
-			</sound> 			
+			</sound>
 			<fade value="false"/>
 		</skill>
-		
+
 		<skill>
 			<type value="move"/>
-			<name value="charge_skill"/>		
+			<name value="charge_skill"/>
 			<ep-cost value="0"/>
 			<speed value="480"/>
 			<anim-speed value="120"/>
@@ -163,16 +164,16 @@
 				<sound-file path="../calvary/sounds/horseman_walk1.ogg"/>
 				<sound-file path="../calvary/sounds/horseman_walk2.ogg"/>
 				<sound-file path="../calvary/sounds/horseman_walk3.ogg"/>
-			</sound> 
+			</sound>
 
-		</skill>	
+		</skill>
 
 	</skills>
 
 	<!-- *** commands *** -->
-	
+
 	<commands>
-		
+
 		<command>
 			<type value="stop"/>
 			<name value="stop"/>
@@ -209,7 +210,7 @@
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
 			<attack-skill value="attack_arrow_skill"/>
-		</command>                
+		</command>
 
 
 	</commands>

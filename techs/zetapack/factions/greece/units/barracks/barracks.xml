@@ -9,7 +9,8 @@
 		<armor-type value="stone"/>
 		<sight value="6" />
 		<time value="100" />
-		<multi-selection value="false" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="true">
 			<row value="1011"/>
 			<row value="0000"/>
@@ -45,10 +46,10 @@
 			<sound path="sounds/tech_click.ogg" />
 		</command-sounds>
 	</parameters>
-	
+
 	<skills>
 		<skill>
-			<type value="stop"/>	
+			<type value="stop"/>
 			<name value="stop_skill"/>
 			<ep-cost value="0" />
 			<speed value="50" />
@@ -56,40 +57,40 @@
 			<animation path="models/barracks.g3d" />
 			<sound enabled="false" />
 		</skill>
-		
+
 		<skill>
-			<type value="be_built" />	
-			<name value="be_built_skill"/>		
+			<type value="be_built" />
+			<name value="be_built_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="models/barracks_build.g3d" />
 			<sound enabled="false" />
-		</skill>	
-		
+		</skill>
+
 		<skill>
-			<type value="upgrade"/>	
-			<name value="upgrade_skill"/>	
+			<type value="upgrade"/>
+			<name value="upgrade_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="models/barracks.g3d" />
 			<sound enabled="false" />
 		</skill>
-		
+
 		<skill>
 			<type value="produce"/>
-			<name value="produce_skill"/>	
+			<name value="produce_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="models/barracks.g3d" />
 			<sound enabled="false" />
-		</skill>	
+		</skill>
 
 		<skill>
 			<type value="morph"/>
-			<name value="advanced_barracks"/>		
+			<name value="advanced_barracks"/>
 			<ep-cost value="0"/>
 			<speed value="300"/>
 			<anim-speed value="200"/>
@@ -97,16 +98,16 @@
 			<sound enabled="true" start-time="0">
 				<sound-file path="../engineer/sounds/technician_build1.ogg"/>
 				<sound-file path="../engineer/sounds/technician_build2.ogg"/>
-				<sound-file path="../engineer/sounds/technician_build3.ogg"/>	
-				<sound-file path="../engineer/sounds/technician_build4.ogg"/>			
-				<sound-file path="../engineer/sounds/technician_build5.ogg"/>	
+				<sound-file path="../engineer/sounds/technician_build3.ogg"/>
+				<sound-file path="../engineer/sounds/technician_build4.ogg"/>
+				<sound-file path="../engineer/sounds/technician_build5.ogg"/>
 				<sound-file path="../engineer/sounds/technician_build6.ogg"/>
 			</sound>
 		</skill>
-		
+
 		<skill>
-			<type value="die" />	
-			<name value="die_skill"/>		
+			<type value="die" />
+			<name value="die_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
@@ -117,14 +118,14 @@
 			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="../barracks/sounds/tech_building_fall4.ogg"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 
 	</skills>
-	
+
 	<commands>
-	
+
 		<command>
 			<type value="produce"/>
 			<name value="produce_hoplite" />
@@ -144,7 +145,7 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="psiloi"/>
 		</command>
-		
+
 		<command>
 			<type value="produce"/>
 			<name value="produce_archer" />
@@ -154,7 +155,7 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="archer"/>
 		</command>
-		
+
 		<command>
 			<type value="produce"/>
 			<name value="produce_peltast" />
@@ -163,8 +164,8 @@
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="peltast"/>
-		</command>		
-		
+		</command>
+
 		<command>
 			<type value="produce"/>
 			<name value="produce_calvary" />
@@ -174,7 +175,7 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="calvary"/>
 		</command>
-		
+
 		<command>
 			<type value="upgrade"/>
 			<name value="create_training_field"/>
@@ -183,7 +184,7 @@
 			<upgrade-requirements />
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="training_field"/>
-		</command>	
+		</command>
 
 		<command>
 			<type value="morph"/>
@@ -194,6 +195,6 @@
 			<morph-skill value="advanced_barracks"/>
 			<morph-unit name= "advanced_barracks"/>
 			<discount value="40"/>
-		</command>			
+		</command>
 	</commands>
 </unit>
