@@ -83,6 +83,7 @@
 					<unit-type name="slave" />
 					<unit-type name="peltast" />
 					<unit-type name="psiloi" />
+					<unit-type name="hoplite" />
 					<unit-type name="archer" />
 					<unit-type name="calvary" />
 					<unit-type name="atlas" />
