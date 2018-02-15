@@ -6,7 +6,7 @@
 		<size value="1"/>
 		<height value="2"/>
 		<max-hp value="285" regeneration="10"/>
-		<max-ep value="250" regeneration="50"/>
+		<max-ep value="300" regeneration="10"/>
 		<armor value="20"/>
 		<armor-type value="wood"/>
 		<sight value="13"/>
