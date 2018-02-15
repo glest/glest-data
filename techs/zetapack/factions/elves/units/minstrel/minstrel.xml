@@ -121,6 +121,29 @@
 			<anim-speed value="40"/>
 			<animation path="models/minstrel_idle.g3d"/>
 			<sound enabled="false"/>
+			<attack-boost>
+				<allow-multiple-boosts value="true" />
+				<radius value="8"/>
+				<target value="faction">
+					<unit-type name="dryad" />
+					<unit-type name="elf" />
+					<unit-type name="ent" />
+					<unit-type name="galadrim_archer" />
+					<unit-type name="grey_elf_archer" />
+					<unit-type name="magol_hedir" />
+					<unit-type name="prince" />
+					<unit-type name="reaver" />
+					<unit-type name="silver_helm_lancer" />
+					<unit-type name="wise_elf" />
+				</target>
+				<max-hp value="0" regeneration="5"/>
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<production-speed value="0"/>
+				<particles value="false"/>
+			</attack-boost>
 		</skill>
 
 		<skill>
