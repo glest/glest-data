@@ -64,6 +64,27 @@
 			<anim-speed value="55"/>
 			<animation path="models/pharao_standing.g3d"/>
 			<sound enabled="false"/>
+			<attack-boost>
+				<allow-multiple-boosts value="true" />
+				<radius value="8"/>
+				<target value="faction">
+					<unit-type name="slave" />
+					<unit-type name="chicken" />
+					<unit-type name="mummy" />
+					<unit-type name="scarab" />
+					<unit-type name="snake" />
+					<unit-type name="anubis_warrior" />
+					<unit-type name="spearman" />
+					<unit-type name="spearthrower" />
+				</target>
+				<max-hp value="0" regeneration="5"/>
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<production-speed value="0"/>
+				<particles value="false"/>
+			</attack-boost>
 		</skill>
 
 		<skill>
