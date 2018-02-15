@@ -4,8 +4,9 @@
 	<parameters>
 		<size value="2" />
 		<height value="3" />
-		<max-hp value="4000" regeneration="25"/>
+		<max-hp value="4000" regeneration="5"/>
 		<max-ep value="100" regeneration="10"/>
+		<max-unit-count value="5"/>
 		<armor value="100" />
 		<armor-type value="wood"/>
 		<sight value="18" />
