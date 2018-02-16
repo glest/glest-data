@@ -7,14 +7,15 @@
 		<max-hp value="3000" regeneration="0"/>
 		<max-ep value="0" />
 		<armor value="0" />
-		<armor-type value="wood"/>				
+		<armor-type value="wood"/>
 		<sight value="5" />
 		<time value="50" />
-		<multi-selection value="false" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="true">
-			<row value="0000" /> 
-			<row value="0110" /> 
-			<row value="0110" /> 
+			<row value="0000" />
+			<row value="0110" />
+			<row value="0110" />
 			<row value="0000" />
 		</cellmap>
 		<levels/>
@@ -22,7 +23,7 @@
 			<field value="land" />
 		</fields>
 		<properties>
-			
+
 		</properties>
 		<light enabled="false" />
 		<unit-requirements>
@@ -48,13 +49,13 @@
 			<sound path="../bing_ying/sounds/gong.ogg"/>
 		</command-sounds>
 	</parameters>
-	
+
 	<!-- *** skills *** -->
 	<skills>
 
 		<skill>
 			<type value="be_built" />
-			<name value="be_built_skill"/>		
+			<name value="be_built_skill"/>
 			<ep-cost value="0" />
 			<speed value="120"/>
 			<speed value="120"/>
@@ -62,30 +63,30 @@
 			<animation path="models/paddy_field_build.g3d" />
 			<sound enabled="false" />
 		</skill>
-		
+
 		<skill>
 			<type value="stop" />
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="10" />
 				<animation path="models/paddy_field.g3d" />
 			<sound enabled="false" />
-		</skill>	
-		
+		</skill>
+
 		<skill>
 			<type value="produce" />
-			<name value="produce_skill"/>		
+			<name value="produce_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="10" />
 				<animation path="models/paddy_field.g3d" />
 		<sound enabled="false" />
-		</skill>	
-		
+		</skill>
+
 		<skill>
 			<type value="die" />
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0" />
 			<speed value="50" />
 			<anim-speed value="50" />
@@ -93,17 +94,17 @@
 			<particles value="false"/>
 			<sound enabled="true" start-time="0">
 				<sound-file path="../bing_ying/sounds/tech_building_fall3.wav"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 
-               
+
 
 	</skills>
-	
+
 	<!-- *** commands *** -->
 	<commands>
-	
+
 		<command>
 			<type value="produce"/>
 			<name value="produce_pig" />
@@ -112,11 +113,11 @@
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="zhu"/>
-		</command>	
+		</command>
 
-		
 
-               
+
+
 
 	</commands>
 </unit>

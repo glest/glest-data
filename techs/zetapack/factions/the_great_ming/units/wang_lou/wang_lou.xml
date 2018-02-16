@@ -6,30 +6,31 @@
 		<height value="6"/>
 		<max-hp value="7000" regeneration="0"/>
 		<max-ep value="0"/>
-		<armor value="20"/>	
-		<armor-type value="wood"/>			
+		<armor value="20"/>
+		<armor-type value="wood"/>
 		<sight value="16"/>
-		<time value="140"/>	
-		<multi-selection value="false"/>
+		<time value="140"/>
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="false"/>
-		<levels/>	
+		<levels/>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties>
 			<property value="burnable"/>
 		</properties>
 		<light enabled="false"/>
 		<rotationAllowed value="false" />
 		<unit-requirements>
-			
+
 		</unit-requirements>
 		<upgrade-requirements>
-			
+
 		</upgrade-requirements>
 		<resource-requirements>
 			<resource name="gold" amount="250"/>
-			<resource name="wood" amount="250"/>			
+			<resource name="wood" amount="250"/>
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/defense_tower.bmp"/>
@@ -44,10 +45,10 @@
 	</parameters>
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="300"/>
 			<anim-speed value="20"/>
@@ -56,7 +57,7 @@
 		</skill>
 		<skill>
 			<type value="stop"/>
-			<name value="show_range_skill"/>		
+			<name value="show_range_skill"/>
 			<ep-cost value="0"/>
 			<speed value="200"/>
 			<anim-speed value="200"/>
@@ -76,26 +77,26 @@
 		</skill>
 		<skill>
 			<type value="be_built"/>
-			<name value="be_built_skill"/>		
+			<name value="be_built_skill"/>
 			<ep-cost value="0"/>
 			<speed value="300"/>
 			<anim-speed value="20"/>
 			<animation path="../dao_tian/models/far_looking_building_build.g3d"/>
 			<sound enabled="false"/>
 		</skill>
-		<skill>												
-			<type value="morph"/>											
-			<name value="convert"/>											
-			<ep-cost value="0"/>											
-			<speed value="500"/>											
-			<anim-speed value="7"/>											
-			<animation path="../dao_tian/models/far_looking_building_build.g3d"/>											
-			<sound enabled="false"/> 											
+		<skill>
+			<type value="morph"/>
+			<name value="convert"/>
+			<ep-cost value="0"/>
+			<speed value="500"/>
+			<anim-speed value="7"/>
+			<animation path="../dao_tian/models/far_looking_building_build.g3d"/>
+			<sound enabled="false"/>
 		</skill>
 
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="attack_skill"/>
 			<ep-cost value="0"/>
 			<speed value="80"/>
 			<anim-speed value="80"/>
@@ -128,7 +129,7 @@
 
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="60"/>
@@ -139,12 +140,12 @@
 			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="../bing_ying/sounds/tech_building_fall5.wav"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 
 	</skills>
-	
+
 	<commands>
 
 		<command>
@@ -165,7 +166,8 @@
 			<attack-skill value="attack_skill"/>
                         <stop-skill value="stop_skill"/>
 		</command>
-		<command>
+
+<command>
 			<type value="stop"/>
 			<name value="show_ranges"/>
 			<image path="images/ranges.bmp"/>

@@ -7,10 +7,11 @@
 		<max-hp value="6000" regeneration="0"/>
 		<max-ep value="0" />
 		<armor value="0" />
-		<armor-type value="stone"/>				
+		<armor-type value="stone"/>
 		<sight value="10" />
 		<time value="300" />
-		<multi-selection value="false" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="true">
 			<row value="00000"/>
 			<row value="00111"/>
@@ -40,27 +41,27 @@
 		</resource-requirements>
 		<resources-stored>
 			<resource name= "gold" amount="100"/>
-			<resource name= "wood" amount="100"/>				
-			<resource name= "stone" amount="100"/>				
-			<resource name= "food" amount="5"/>	
+			<resource name= "wood" amount="100"/>
+			<resource name= "stone" amount="100"/>
+			<resource name= "food" amount="5"/>
 		</resources-stored>
 		<image path="images/gate.bmp" />
 		<image-cancel path="images/tech_cancel.bmp"/>
 		<meeting-point value="true" image-path="images/tech_meetingpoint.bmp"/>
 		<selection-sounds enabled="true">
-			<sound path="../bing_ying/sounds/gong.ogg" />	
+			<sound path="../bing_ying/sounds/gong.ogg" />
 		</selection-sounds>
 		<command-sounds enabled="true">
-			<sound path="../bing_ying/sounds/gong.ogg" />	
+			<sound path="../bing_ying/sounds/gong.ogg" />
 		</command-sounds>
 	</parameters>
-	
+
 	<!-- *** skills *** -->
 	<skills>
 
 		<skill>
 			<type value="stop" />
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="100" />
@@ -69,16 +70,16 @@
 
 			<sound enabled="false" />
 		</skill>
-		
+
 		<skill>
 			<type value="be_built" />
-			<name value="be_built_skill"/>		
+			<name value="be_built_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="../cheng_bao/models/ming_factory_build.g3d" />
 			<sound enabled="false" />
-		</skill>	
+		</skill>
 		<!-- Produce Skill -->
      		<skill>
        			 <type value="produce"/>
@@ -97,35 +98,35 @@
         		<speed value="300"/>
         		<anim-speed value="100"/>
         		<animation path="../cheng_bao/models/ming_factory_smelt.g3d"/>
-			<particles value="true">			
-				<particle-file path="smelt_smoke_particles.xml"/>		
-				<particle-file path="smelt_particles.xml"/>		
-			</particles>	
+			<particles value="true">
+				<particle-file path="smelt_smoke_particles.xml"/>
+				<particle-file path="smelt_particles.xml"/>
+			</particles>
         		<sound enabled="false"/>
      		</skill>
 		<skill>
 			<type value="die" />
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0" />
 			<speed value="50" />
 			<anim-speed value="50" />
 			<animation path="../cheng_bao/models/ming_factory_die.g3d" />
 			<particles value="true">
-				<particle-file path="particle_fall.xml"/>			
-				<particle-file path="smoke_particles.xml"/>		
-				<particle-file path="glow_particles.xml"/>		
-			</particles>			
-			<sound enabled="true" start-time="0">			
-				<sound-file path="sounds/tech_building_fall4.wav"/>		
-			</sound>			
+				<particle-file path="particle_fall.xml"/>
+				<particle-file path="smoke_particles.xml"/>
+				<particle-file path="glow_particles.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/tech_building_fall4.wav"/>
+			</sound>
 			<fade value="false"/>
 		</skill>
 
 	</skills>
-	
+
 	<!-- *** commands *** -->
 	<commands>
-		
+
 		<command>
        			 <type value="produce"/>
         		<name value="assemble_fire_cart"/>
@@ -153,8 +154,8 @@
         		<produce-skill value="produce_skill"/>
         		<produced-unit name="ying_che"/>
     		 </command>
-		
-		
-	
+
+
+
 	</commands>
 </unit>
