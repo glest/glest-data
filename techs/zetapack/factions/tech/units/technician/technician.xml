@@ -98,16 +98,6 @@
 		</skill>
 
 		<skill>
-			<type value="stop"/>
-			<name value="stop_loaded_skill"/>
-			<ep-cost value="0"/>
-			<speed value="1000"/>
-			<anim-speed value="150"/>
-			<animation path="models/technician_standing_loaded.g3d"/>
-			<sound enabled="false"/>
-		</skill>
-
-		<skill>
 			<type value="move"/>
 			<name value="move_skill"/>
 			<ep-cost value="0"/>
@@ -201,21 +191,6 @@
 				<sound-file path="$COMMONDATAPATH/sounds/technician_build4.wav"/>
 				<sound-file path="$COMMONDATAPATH/sounds/technician_build5.wav"/>
 				<sound-file path="$COMMONDATAPATH/sounds/technician_build6.wav"/>
-			</sound>
-		</skill>
-
-		<skill>
-			<type value="harvest"/>
-			<name value="mine_skill"/>
-			<ep-cost value="0"/>
-			<speed value="450"/>
-			<anim-speed value="210"/>
-			<animation path="models/technician_mining.g3d"/>
-			<sound enabled="true" start-time="0.5">
-				<sound-file path="sounds/technician_mine1.wav"/>
-				<sound-file path="sounds/technician_mine2.wav"/>
-				<sound-file path="sounds/technician_mine3.wav"/>
-				<sound-file path="sounds/technician_mine4.wav"/>
 			</sound>
 		</skill>
 
@@ -364,23 +339,6 @@
 				<unit name="guard"/>
 				<unit name="horseman"/>
 			</repaired-units>
-		</command>
-
-		<command>
-			<type value="harvest"/>
-			<name value="mine_gold"/>
-			<image path="images/technician_mine.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<move-skill value="move_skill"/>
-			<harvest-skill value="mine_skill"/>
-			<stop-loaded-skill value="stop_loaded_skill"/>
-			<move-loaded-skill value="move_loaded_skill"/>
-			<harvested-resources>
-				<resource name="gold"/>
-			</harvested-resources>
-			<max-load value="5"/>
-			<hits-per-unit value="1"/>
 		</command>
 
 		<command>
