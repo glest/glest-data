@@ -6,6 +6,7 @@
 		<height value="5"/>
 		<max-hp value="6300" regeneration="3"/>
 		<max-ep value="0" />
+		<max-unit-count value="3"/>
 		<armor value="15"/>
 		<armor-type value="wood"/>
 		<sight value="18"/>
