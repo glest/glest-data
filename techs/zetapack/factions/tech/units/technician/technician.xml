@@ -73,6 +73,28 @@
 			<anim-speed value="55"/>
 			<animation path="models/technician_standing.g3d"/>
 			<sound enabled="false"/>
+			<attack-boost>
+				<allow-multiple-boosts value="true" />
+				<radius value="8"/>
+				<target value="faction">
+					<unit-type name="archer" />
+					<unit-type name="battle_machine" />
+					<unit-type name="catapult" />
+					<unit-type name="cow" />
+					<unit-type name="guard" />
+					<unit-type name="horseman" />
+					<unit-type name="pig" />
+					<unit-type name="swordman" />
+					<unit-type name="worker" />
+				</target>
+				<max-hp value="0" regeneration="5"/>
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<production-speed value="0"/>
+				<particles value="false"/>
+			</attack-boost>
 		</skill>
 
 		<skill>
