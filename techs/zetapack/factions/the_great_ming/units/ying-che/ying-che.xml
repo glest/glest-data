@@ -1,0 +1,177 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="2"/>
+		<height value="3"/>
+		<max-hp value="1000" regeneration="0"/>
+		<max-ep value="0"/>
+		<armor value="60"/>	
+		<armor-type value="wood"/>				
+		<sight value="10"/>
+		<time value="110"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels>
+			<level name="veteran" kills="8"/>
+		</levels>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements>
+			
+		</unit-requirements>
+		<upgrade-requirements>
+			
+		</upgrade-requirements>
+		<resource-requirements>
+				
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/archer.bmp"/>
+		<image-cancel path="images/tech_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="sounds/ni_hao.ogg"/>
+
+
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="sounds/zai_jian.ogg"/>
+		</command-sounds>
+	</parameters>
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="45"/>
+			<animation path="../ji_bing/models/eagle_cart_trans.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+		<skill>
+			<type value="stop"/>
+			<name value="show_range_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="200"/>
+			<anim-speed value="200"/>
+			<animation path="../ji_bing/models/eagle_cart_trans.g3d"/>
+			<particles value="true">
+				<particle-file path="particle_range.xml">
+					<shape value="conical">
+						<angle value="90"/>
+					</shape>
+					<radius value="9"/>
+					<min-radius value="8.9"/>
+					<direction x="0" y="0.1" z="0"/>
+					<offset x="0" y="0" z="0"/>
+				</particle-file>
+				<particle-file path="particle_sight.xml">
+					<shape value="conical">
+						<angle value="90"/>
+					</shape>
+					<radius value="15"/>
+					<min-radius value="14.9"/>
+					<direction x="0" y="0.1" z="0"/>
+					<offset x="0" y="0" z="0"/>
+				</particle-file>
+			</particles>
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="120"/>
+			<anim-speed value="125"/>
+			<animation path="../ji_bing/models/eagle_cart_trans_move.g3d"/>
+			<particles value="true">
+				<particle-file path="walk_particles.xml"/>
+			</particles>
+			<sound enabled="false"/>
+		</skill>
+		
+
+		
+		
+		<skill>												
+			<type value="morph"/>											
+			<name value="convert"/>											
+			<ep-cost value="0"/>											
+			<speed value="1000"/>											
+			<anim-speed value="8"/>											
+			<animation path="../ji_bing/models/eagle_cart_deploy.g3d"/>										
+			<sound enabled="false"/> 											
+		</skill>
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="60"/>
+			<anim-speed value="60"/>
+			<animation path="../ji_bing/models/eagle_cart_die.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/archer_die1.wav"/>
+				<sound-file path="sounds/archer_die2.wav"/>
+				<sound-file path="sounds/archer_die3.wav"/>
+				<sound-file path="sounds/archer_die4.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+
+	</skills>
+
+	<!-- *** commands *** -->
+	
+	<commands>
+		
+		<command>
+			<type value= "stop"/>
+			<name value="stop"/>
+			<image path="images/tech_stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="images/tech_move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		
+		<command>												
+			<type value="morph"/>											
+			<name value="deploy"/>											
+			<image path="../ying_che_/images/archer.bmp"/>											
+			<unit-requirements/>											
+			<upgrade-requirements>
+			</upgrade-requirements>
+											
+			<morph-skill value="convert"/>											
+			<morph-unit name= "ying_che_"/>											
+			<discount value="0"/>											
+		</command>
+
+
+		<command>
+			<type value="stop"/>
+			<name value="show_ranges"/>
+			<image path="images/ranges.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="show_range_skill"/>
+		</command>
+	</commands>
+</unit>

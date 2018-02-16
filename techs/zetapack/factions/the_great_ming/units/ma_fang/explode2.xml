@@ -1,0 +1,64 @@
+<?xml version="1.0" standalone="yes"?>
+<unit-particle-system>
+	<shape value="linear"/>
+    	<texture value="true" path="images/explosion.png" luminance="false"/>
+	<mode value="black"/>
+	<primitive value="quad"/>
+	<offset x="0" y="0" z="0"/>
+	<direction x="0" y="3" z="0"/>
+	<color red="0.55" green="0.5" blue="0.4" alpha="0.2" />
+	<color-no-energy red="0.8" green="0.8" blue="0.8" alpha="0.0" />
+    	<radius value="0.5" />
+	<size value="3" />
+    	<size-no-energy value="1" />
+    	<speed value="1.1" />
+	<gravity value="-0.5"/>
+	<emission-rate-fade value="5"/>
+    	<emission-rate value="100" />
+    	<energy-max value="20" />
+    	<energy-var value="1" />
+	<relative value="true" />
+    	<fixed value="true" />
+    	<teamcolorNoEnergy value="false" />
+    	<teamcolorEnergy value="false" />
+    	<child-particles value="true">
+    		<!-- inner ground blast ring of flame -->
+		<particle-file path="explode1.xml"/>
+		<!-- outer ground blast ring of flame is shockwave only -->
+		<particle-file path="explode1.xml">
+			<texture value="true" path="images/explosion.png" luminance="true"/>
+			<radius value="3"/>
+			<min-radius value="1"/>
+			<speed value="8"/>
+			<energy-max value="20" />
+			<energy-var value="5" />
+		</particle-file>
+		<!-- after we've got a column, go mega -->
+		<particle-file path="explode1.xml">
+			<shape value="spherical"/>
+			<energy-max value="40" />
+			<radius value="0.5"/>
+			<min-radius value="0"/>
+			<offset x="0" y="0.5" z="0"/>
+			<size value="2"/>
+			<delay value="0.8"/>
+		</particle-file>
+		<!-- with some blast rings in the stratophere too -->
+		<particle-file path="explode1.xml">
+			<color red="0.55" green="0.5" blue="0.4" alpha="0.2" />
+			<color-no-energy red="0.8" green="0.8" blue="0.8" alpha="0.0" />
+			<radius value="3"/>
+			<min-radius value="0"/>
+			<offset x="0" y="0.1" z="0"/>
+			<size value="3"/>
+			<delay value="1.1"/>
+		</particle-file>
+		<particle-file path="explode1.xml">
+			<energy-max value="20" />
+			<color red="0.55" green="0.5" blue="0.4" alpha="0.2" />
+			<color-no-energy red="0.8" green="0.8" blue="0.8" alpha="0.0" />
+			<offset x="0" y="0.3" z="0"/>
+			<delay value="1.1"/>
+		</particle-file>
+	</child-particles>
+</unit-particle-system>

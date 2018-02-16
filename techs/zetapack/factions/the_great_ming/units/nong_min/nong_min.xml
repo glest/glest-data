@@ -1,0 +1,373 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+
+	<!-- *** parameters *** -->
+
+	<parameters>
+		<size value="1"/>
+		<height value="2"/>
+		<max-hp value="600" regeneration="0"/>
+		<max-ep value="0"/>
+		<armor value="0"/>
+		<armor-type value="leather"/>					
+		<sight value="9"/>
+		<time value="40"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels/>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements/>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="gold" amount="75"/>
+			<resource name="food" amount="1"/>			
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/worker.bmp"/>
+		<image-cancel path="images/tech_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="sounds/ni_hao.ogg"/>
+								
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="sounds/zai_jian.ogg"/>
+						
+		</command-sounds>
+	</parameters>
+
+
+	<!-- *** skills *** -->
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="55"/>
+			<animation-random-cycle-maxcount value="1" />
+				<animation path="../ji_bing/models/eastern_peasant.g3d"/>
+				
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="stop"/>
+			<name value="stop_loaded_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="75"/>
+			<anim-speed value="75"/>
+			<animation path="../ji_bing/models/eastern_peasant_loaded.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="stop"/>
+			<name value="stop_loaded_wood_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="75"/>
+			<anim-speed value="75"/>
+			<animation path="../ji_bing/models/eastern_peasant_wood.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="190"/>
+			<anim-speed value="140"/>
+			<animation path="../ji_bing/models/eastern_peasant_move.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_wood_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="210"/>
+			<anim-speed value="140"/>
+			<animation path="../ji_bing/models/eastern_peasant_move_ax.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_gold_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="210"/>
+			<anim-speed value="140"/>
+			<animation path="../ji_bing/models/eastern_peasant_move_pick.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_loaded_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="190"/>
+			<anim-speed value="130"/>
+			<animation path="../ji_bing/models/eastern_peasant_move_load.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_loaded_wood_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="190"/>
+			<anim-speed value="130"/>
+			<animation path="../ji_bing/models/eastern_peasant_move_wood.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="build"/>
+			<name value="build_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="205"/>
+			<anim-speed value="100"/>
+			<animation path="../ji_bing/models/eastern_peasant_build.g3d"/>
+			<sound enabled="true" start-time="0.5">
+				<sound-file path="sounds/worker_build1.wav"/>
+				<sound-file path="sounds/worker_build2.wav"/>
+				<sound-file path="sounds/worker_build3.wav"/>
+			</sound>
+		</skill>	
+		
+		<skill>
+			<type value="harvest"/>
+			<name value="mine_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="225"/>
+			<anim-speed value="120"/>
+			<animation path="../ji_bing/models/eastern_peasant_pick.g3d"/>
+			<sound enabled="true" start-time="0.5">
+				<sound-file path="sounds/worker_mine1.wav"/>
+				<sound-file path="sounds/worker_mine2.wav"/>
+				<sound-file path="sounds/worker_mine3.wav"/>
+				<sound-file path="sounds/worker_mine4.wav"/>
+				<sound-file path="sounds/worker_mine5.wav"/>
+				<sound-file path="sounds/worker_mine6.wav"/>
+			</sound>
+		</skill>	
+		
+		<skill>
+			<type value="harvest"/>
+			<name value="harvest_wood_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="150"/>
+			<anim-speed value="120"/>
+			<animation path="../ji_bing/models/eastern_peasant_ax.g3d"/>
+			<sound enabled="true" start-time="0.5">
+				<sound-file path="sounds/worker_harvest_wood1.wav"/>
+				<sound-file path="sounds/worker_harvest_wood2.wav"/>
+				<sound-file path="sounds/worker_harvest_wood3.wav"/>
+			</sound>
+		</skill>		
+		
+		<skill>
+			<type value="repair"/>
+			<name value="repair_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="100"/>
+			<anim-speed value="100"/>
+			<animation path="../ji_bing/models/eastern_peasant_build.g3d"/>
+			<sound enabled="true" start-time="0.5">
+				<sound-file path="sounds/worker_build1.wav"/>
+				<sound-file path="sounds/worker_build2.wav"/>
+				<sound-file path="sounds/worker_build3.wav"/>
+			</sound>
+		</skill>		
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="150"/>
+			<anim-speed value="150"/>
+			
+				<animation path="../ji_bing/models/eastern_peasant_kick.g3d"/>
+				<animation path="../ji_bing/models/eastern_peasant_reverse.g3d"/>
+				<animation path="../ji_bing/models/eastern_peasant_spinkick.g3d"/>
+			<sound enabled="true" start-time="1">
+				<sound-file path="sounds/hit04.wav"/>
+				<sound-file path="sounds/hit08.wav"/>
+				<sound-file path="sounds/hit13.wav"/>	
+				<sound-file path="sounds/hit21.wav"/>							
+			</sound>
+			
+			<attack-strenght value="50"/>
+			<attack-var value="30"/>
+			<attack-range value="1"/>
+			<attack-type value="impact"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<attack-start-time value="0"/>
+			<projectile value="false"/>
+			<splash value="false"/>
+		</skill>
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="90"/>
+			<anim-speed value="90"/>
+			<animation path="../ji_bing/models/eastern_peasant_die.g3d"/>
+			
+			<particles value="true" start-time="0.01" end-time="0.03">
+				<particle-file path="particle_splat.xml">
+					<shape value="conical">
+						<angle value="60"/>
+					</shape>
+					<radius value="1.3"/>
+					<min-radius value="0.1"/>
+					<direction x="2" y="0.6" z="2"/>
+					<offset x="0" y="0" z="0"/>
+				</particle-file>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/worker_die1.wav"/>
+				<sound-file path="sounds/worker_die2.wav"/>
+				<sound-file path="sounds/worker_die3.wav"/>								
+			</sound>			
+			<fade value="false"/>
+		</skill>						
+
+	</skills>
+
+	<!-- *** commands *** -->
+	
+	<commands>
+		
+		<command>
+			<type value= "stop"/>
+			<name value="stop"/>
+			<image path="images/tech_stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value= "move"/>
+			<name value="move"/>
+			<image path="images/tech_move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value= "build"/>
+			<name value="build"/>
+			<image path="images/worker_build_basic.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<build-skill value="build_skill"/>
+			<buildings>
+                                <building name="dao_tian"/>
+				<building name="cheng_bao"/>	
+				<building name="bing_ying"/>
+				<building name="gucha"/>
+				<building name="ma_fang"/>
+				<building name="bing_gong_chang"/>
+				<building name="siheyuan"/>
+				<building name="wang_lou"/>
+				<building name="lou_lu"/>
+			</buildings>
+			<start-sound enabled="false"/>
+			<built-sound enabled="true">
+				<sound-file path="sounds/zai_jian.ogg"/>							
+			</built-sound>	
+		</command>
+
+	
+		<command>
+			<type value="harvest"/>
+			<name value="mine"/>
+			<image path="images/worker_mine.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_gold_skill"/>
+			<harvest-skill value="mine_skill"/>
+			<stop-loaded-skill value="stop_loaded_skill"/>
+			<move-loaded-skill value="move_loaded_skill"/>
+			<harvested-resources>
+				<resource name="gold"/>	
+				<resource name="stone"/>									
+			</harvested-resources>
+			<max-load value="25"/>
+			<hits-per-unit value="1"/>				
+		</command>
+
+		<command>
+			<type value="harvest"/>
+			<name value="harvest_wood"/>
+			<image path="images/worker_harvest_wood.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_wood_skill"/>
+			<harvest-skill value="harvest_wood_skill"/>
+			<stop-loaded-skill value="stop_loaded_wood_skill"/>
+			<move-loaded-skill value="move_loaded_wood_skill"/>
+			<harvested-resources>
+				<resource name="wood"/>									
+			</harvested-resources>
+			<max-load value="20"/>
+			<hits-per-unit value="1"/>				
+		</command>
+		
+		<command>
+			<type value="repair"/>
+			<name value="repair"/>
+			<image path="images/worker_repair.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<repair-skill value="repair_skill"/>
+			<repaired-units>
+				<unit name="dao_tian"/>		
+				<unit name="bing_ying"/>	
+				<unit name="gucha"/>
+				<unit name="wang_lou"/>		
+				<unit name="bing_gong_chang"/>		
+				<unit name="ma_fang"/>
+				<unit name="siheyuan"/>
+				<unit name="cheng_bao"/>
+                     		<unit name="lou_lu"/>			
+			</repaired-units>		
+		</command>	
+		<command>
+			<type value="attack"/>
+			<name value="kung_fu"/>
+			<image path="images/attack.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements>
+				<upgrade name="kung_fu"/>
+			</upgrade-requirements>
+			<move-skill value="move_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+		<command>
+			<type value="attack_stopped"/>
+			<name value="hold_position"/>
+			<image path="images/tech_hold.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements>
+				<upgrade name="advanced_training"/>
+			</upgrade-requirements>
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+	</commands>
+</unit>

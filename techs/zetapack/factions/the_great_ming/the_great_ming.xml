@@ -1,0 +1,55 @@
+<?xml version="1.0" standalone="no"?>		
+		
+<faction>		
+	<ai-behavior>
+		<worker-units>
+			<unit name="nong_min" minimum="8"/>
+		</worker-units>
+		<warrior-units>
+			
+		</warrior-units>
+		<resource-producer-units>
+			<unit name="dao_tian" minimum="3"/>
+		</resource-producer-units>
+		<building-units>
+			<unit name="bing_ying" minimum="2"/>
+			<unit name="gucha" minimum="1"/>
+			<unit name="bing_gong_chang" minimum="1"/>
+			<unit name="ma_fang" minimum="1"/>
+		</building-units>
+		<upgrades>
+			<upgrade name="gunpowder" />
+			<upgrade name="advanced_training" />
+			<upgrade name="artillery" />
+			<upgrade name="cavalry" />
+			<upgrade name="european_trading" />
+			
+		</upgrades>
+	</ai-behavior>
+
+	<starting-resources>	
+		<resource name="gold" amount="500"/>
+		<resource name="wood" amount="500"/>
+		<resource name="stone" amount="500"/>
+		<resource name="food" amount="50"/>
+	</starting-resources>	
+	<starting-units>
+		
+		
+		<unit name="cheng_bao" amount="1"/>
+		<unit name="dao_tian" amount="1"/>
+		<unit name="zhu" amount="1"/>
+		<unit name="nong_min" amount="3"/>
+		
+		<unit name="wang_lou" amount="1"/>
+		
+	
+
+		<unit name="liang_xian" amount="2"/>		
+		<unit name="she_shou" amount="1"/>
+		
+
+	</starting-units>	
+	<music value="true" path="music/rain_drops_falling_on_bajiao.ogg"/>	
+</faction>		
+		
