@@ -65,7 +65,7 @@
 			<sound enabled="false"/>
 			<attack-boost>
 				<allow-multiple-boosts value="true" />
-				<radius value="8"/>
+				<radius value="15"/>
 				<target value="faction">
 					<unit-type name="elephant" />
 					<unit-type name="fakir" />
