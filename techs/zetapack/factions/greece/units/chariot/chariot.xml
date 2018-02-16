@@ -45,35 +45,35 @@
 		<image-cancel path="../archer/images/tech_cancel.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
-			<sound path="../calvary/sounds/horseman_select1.ogg"/>
-			<sound path="../calvary/sounds/horseman_select2.ogg"/>
-			<sound path="../calvary/sounds/horseman_select3.ogg"/>
-			<sound path="../calvary/sounds/horseman_select4.ogg"/>
-			<sound path="../calvary/sounds/horseman_select5.ogg"/>
-			<sound path="../calvary/sounds/horseman_select6.ogg"/>
-			<sound path="../calvary/sounds/horseman_select7.ogg"/>
-			<sound path="../calvary/sounds/horseman_select8.ogg"/>
-			<sound path="../calvary/sounds/horseman_select9.ogg"/>
-			<sound path="../calvary/sounds/horseman_select10.ogg"/>
-			<sound path="../calvary/sounds/horseman_select11.ogg"/>
-			<sound path="../calvary/sounds/horseman_select12.ogg"/>
+			<sound path="../cavalry/sounds/horseman_select1.ogg"/>
+			<sound path="../cavalry/sounds/horseman_select2.ogg"/>
+			<sound path="../cavalry/sounds/horseman_select3.ogg"/>
+			<sound path="../cavalry/sounds/horseman_select4.ogg"/>
+			<sound path="../cavalry/sounds/horseman_select5.ogg"/>
+			<sound path="../cavalry/sounds/horseman_select6.ogg"/>
+			<sound path="../cavalry/sounds/horseman_select7.ogg"/>
+			<sound path="../cavalry/sounds/horseman_select8.ogg"/>
+			<sound path="../cavalry/sounds/horseman_select9.ogg"/>
+			<sound path="../cavalry/sounds/horseman_select10.ogg"/>
+			<sound path="../cavalry/sounds/horseman_select11.ogg"/>
+			<sound path="../cavalry/sounds/horseman_select12.ogg"/>
 		</selection-sounds>
 		<command-sounds enabled="true">
-			<sound path="../calvary/sounds/horseman_ack1.ogg"/>
-			<sound path="../calvary/sounds/horseman_ack2.ogg"/>
-			<sound path="../calvary/sounds/horseman_ack3.ogg"/>
-			<sound path="../calvary/sounds/horseman_ack4.ogg"/>
-			<sound path="../calvary/sounds/horseman_ack5.ogg"/>
-			<sound path="../calvary/sounds/horseman_ack6.ogg"/>
-			<sound path="../calvary/sounds/horseman_ack7.ogg"/>
-			<sound path="../calvary/sounds/horseman_ack8.ogg"/>
-			<sound path="../calvary/sounds/horseman_ack9.ogg"/>
-			<sound path="../calvary/sounds/horseman_ack10.ogg"/>
-			<sound path="../calvary/sounds/horseman_ack11.ogg"/>
-			<sound path="../calvary/sounds/horseman_ack12.ogg"/>
-			<sound path="../calvary/sounds/horseman_ack13.ogg"/>
-			<sound path="../calvary/sounds/horseman_ack14.ogg"/>
-			<sound path="../calvary/sounds/horseman_ack15.ogg"/>
+			<sound path="../cavalry/sounds/horseman_ack1.ogg"/>
+			<sound path="../cavalry/sounds/horseman_ack2.ogg"/>
+			<sound path="../cavalry/sounds/horseman_ack3.ogg"/>
+			<sound path="../cavalry/sounds/horseman_ack4.ogg"/>
+			<sound path="../cavalry/sounds/horseman_ack5.ogg"/>
+			<sound path="../cavalry/sounds/horseman_ack6.ogg"/>
+			<sound path="../cavalry/sounds/horseman_ack7.ogg"/>
+			<sound path="../cavalry/sounds/horseman_ack8.ogg"/>
+			<sound path="../cavalry/sounds/horseman_ack9.ogg"/>
+			<sound path="../cavalry/sounds/horseman_ack10.ogg"/>
+			<sound path="../cavalry/sounds/horseman_ack11.ogg"/>
+			<sound path="../cavalry/sounds/horseman_ack12.ogg"/>
+			<sound path="../cavalry/sounds/horseman_ack13.ogg"/>
+			<sound path="../cavalry/sounds/horseman_ack14.ogg"/>
+			<sound path="../cavalry/sounds/horseman_ack15.ogg"/>
 		</command-sounds>
 
 	</parameters>
@@ -98,9 +98,9 @@
 			<anim-speed value="110"/>
 			<animation path="models/chariot_walk.g3d"/>
 			<sound enabled="true" start-time="0">
-				<sound-file path="../calvary/sounds/horseman_walk1.ogg"/>
-				<sound-file path="../calvary/sounds/horseman_walk2.ogg"/>
-				<sound-file path="../calvary/sounds/horseman_walk3.ogg"/>
+				<sound-file path="../cavalry/sounds/horseman_walk1.ogg"/>
+				<sound-file path="../cavalry/sounds/horseman_walk2.ogg"/>
+				<sound-file path="../cavalry/sounds/horseman_walk3.ogg"/>
 			</sound>
 
 		</skill>
@@ -161,9 +161,9 @@
 			<anim-speed value="120"/>
 			<animation path="models/chariot_walk.g3d"/>
 			<sound enabled="true" start-time="0">
-				<sound-file path="../calvary/sounds/horseman_walk1.ogg"/>
-				<sound-file path="../calvary/sounds/horseman_walk2.ogg"/>
-				<sound-file path="../calvary/sounds/horseman_walk3.ogg"/>
+				<sound-file path="../cavalry/sounds/horseman_walk1.ogg"/>
+				<sound-file path="../cavalry/sounds/horseman_walk2.ogg"/>
+				<sound-file path="../cavalry/sounds/horseman_walk3.ogg"/>
 			</sound>
 
 		</skill>

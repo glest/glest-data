@@ -15,7 +15,7 @@
 		<unit name="archer"/>
 		<unit name="hoplite"/>
 		<unit name="peltast"/>
-		<unit name="calvary"/>
+		<unit name="cavalry"/>
 		<unit name="battering_ram"/>
 		<unit name="chariot"/>
 		<unit name="onager"/>

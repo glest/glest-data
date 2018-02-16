@@ -85,7 +85,7 @@
 					<unit-type name="psiloi" />
 					<unit-type name="hoplite" />
 					<unit-type name="archer" />
-					<unit-type name="calvary" />
+					<unit-type name="cavalry" />
 					<unit-type name="atlas" />
 					<unit-type name="alexander" />
 					<unit-type name="artemis" />
@@ -365,7 +365,7 @@
 			<repair-skill value="heal"/>
 			<repaired-units>
 				<unit name="slave"/>
-				<unit name="calvary"/>
+				<unit name="cavalry"/>
 				<unit name="engineer"/>
 				<unit name="hoplite"/>
 				<unit name="peltast"/>

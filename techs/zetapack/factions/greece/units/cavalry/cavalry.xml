@@ -79,7 +79,7 @@
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="50"/>
-			<animation path="models/calvary_idle.g3d"/>
+			<animation path="models/cavalry_idle.g3d"/>
 			<sound enabled="false"/>
 		</skill>
 
@@ -89,7 +89,7 @@
 			<ep-cost value="0"/>
 			<speed value="480"/>
 			<anim-speed value="120"/>
-			<animation path="models/calvary_walk.g3d"/>
+			<animation path="models/cavalry_walk.g3d"/>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/horseman_walk1.ogg"/>
 				<sound-file path="sounds/horseman_walk2.ogg"/>
@@ -103,7 +103,7 @@
 			<ep-cost value="0"/>
 			<speed value="100"/>
 			<anim-speed value="100"/>
-			<animation path="models/calvary_attack.g3d"/>
+			<animation path="models/cavalry_attack.g3d"/>
 			<sound enabled="true" start-time="0.4">
 				<sound-file path="sounds/horseman_attack1.ogg"/>
 				<sound-file path="sounds/horseman_attack2.ogg"/>
@@ -138,7 +138,7 @@
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="50"/>
-			<animation path="models/calvary_die.g3d"/>
+			<animation path="models/cavalry_die.g3d"/>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/horseman_die1.ogg"/>
 				<sound-file path="sounds/horseman_die2.ogg"/>

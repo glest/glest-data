@@ -168,12 +168,12 @@
 
 		<command>
 			<type value="produce"/>
-			<name value="produce_calvary" />
-			<image path="../calvary/images/horseman.bmp" />
+			<name value="produce_cavalry" />
+			<image path="../cavalry/images/horseman.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
-			<produced-unit name="calvary"/>
+			<produced-unit name="cavalry"/>
 		</command>
 
 		<command>
