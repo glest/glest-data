@@ -87,7 +87,7 @@
 			<anim-speed value="100"/>
 			<animation path="models/trojan_horse.g3d"/>
 			<sound enabled="false"/>
-			<attack-strenght value="1000"/>
+			<attack-strength value="1000"/>
 			<attack-var value="0"/>
 			<attack-range value="8"/>
 			<attack-type value="slashing"/>
@@ -108,7 +108,7 @@
 			<anim-speed value="100"/>
 			<animation path="models/trojan_horse.g3d"/>
 			<sound enabled="false"/>
-			<attack-strenght value="1"/>
+			<attack-strength value="1"/>
 			<attack-var value="0"/>
 			<attack-range value="0"/>
 			<attack-type value="slashing"/>

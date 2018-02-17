@@ -20,7 +20,7 @@
 	<max-hp value="150"/>
 	<max-ep value="0" regeneration="0"/>
 	<sight value="1"/>
-	<attack-strenght value="50"/>
+	<attack-strength value="50"/>
 	<attack-range value="2"/>
 	<armor value="10"/>
 	<move-speed value="0"/>

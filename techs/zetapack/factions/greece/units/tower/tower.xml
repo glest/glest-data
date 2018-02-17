@@ -77,7 +77,7 @@
 				<sound-file path="sounds/defense_tower_attack1.ogg"/>
 				<sound-file path="sounds/defense_tower_attack2.ogg"/>
 			</sound>
-			<attack-strenght value="120"/>
+			<attack-strength value="120"/>
 			<attack-var value="50"/>
 			<attack-range value="12"/>
 			<attack-type value="piercing"/>

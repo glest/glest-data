@@ -89,7 +89,7 @@
 				<sound-file path="sounds/spearthrower_attack2.wav"/>
 				<sound-file path="sounds/spearthrower_attack3.wav"/>
 			</sound>
-			<attack-strenght value="95"/>
+			<attack-strength value="95"/>
 			<attack-var value="65"/>
 			<attack-range value="9"/>
 			<attack-type value="piercing"/>

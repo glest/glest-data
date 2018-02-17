@@ -77,7 +77,7 @@
 			<anim-speed value="50"/>
 			<animation path="models/minstrel_attacking.g3d"/>
 			<sound enabled="false"/>
-			<attack-strenght value="130"/>
+			<attack-strength value="130"/>
 			<attack-var value="50"/>
 			<attack-range value="11"/>
 			<attack-type value="energy"/>

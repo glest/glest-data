@@ -67,7 +67,7 @@
 			<anim-speed value="60"/>
 			<animation path="models/dryad_attacking.g3d"/>
 			<sound enabled="false"/>
-			<attack-strenght value="65"/>
+			<attack-strength value="65"/>
 			<attack-var value="25"/>
 			<attack-range value="4"/>
 			<attack-type value="energy"/>

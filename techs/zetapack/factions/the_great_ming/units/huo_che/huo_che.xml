@@ -130,7 +130,7 @@
 				<particle-file path="flash1.xml"/>
 				<particle-file path="gunsmoke_particles.xml"/>
 			</particles>
-			<attack-strenght value="250"/>
+			<attack-strength value="250"/>
 			<attack-var value="50"/>
 			<attack-range value="9"/>
 			<attack-type value="energy"/>

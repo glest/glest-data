@@ -118,7 +118,7 @@
 				<sound-file path="../peltast/sounds/archer_attack3.ogg"/>
 				<sound-file path="../peltast/sounds/archer_attack4.ogg"/>
 			</sound>
-			<attack-strenght value="170"/>
+			<attack-strength value="170"/>
 			<attack-var value="75"/>
 			<attack-range value="9"/>
 			<attack-type value="piercing"/>

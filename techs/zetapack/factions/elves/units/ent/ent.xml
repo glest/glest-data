@@ -91,7 +91,7 @@
 			<sound enabled="true" start-time="0.02">
 				<sound-file path="$COMMONDATAPATH/sounds/golem_attack1.wav"/>
 			</sound>
-			<attack-strenght value="475"/>
+			<attack-strength value="475"/>
 			<attack-var value="60"/>
 			<attack-range value="1"/>
 			<attack-type value="impact"/>
@@ -118,7 +118,7 @@
 				<sound-file path="$COMMONDATAPATH/sounds/catapult_attack1.wav"/>
 				<sound-file path="$COMMONDATAPATH/sounds/catapult_attack2.wav"/>
 			</sound>
-			<attack-strenght value="320"/>
+			<attack-strength value="320"/>
 			<attack-var value="300"/>
 			<attack-range value="10"/>
 			<attack-type value="impact"/>

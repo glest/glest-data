@@ -117,7 +117,7 @@
 			<sound enabled="true" start-time="0.07">
 				<sound-file path="sounds/swish.ogg"/>
 			</sound>
-			<attack-strenght value="75"/>
+			<attack-strength value="75"/>
 			<attack-var value="30"/>
 			<attack-range value="6"/>
 			<attack-type value="slashing"/>

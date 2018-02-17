@@ -115,7 +115,7 @@
 				<particle-file path="flash2.xml"/>
 				<particle-file path="gunsmoke_particles2.xml"/>
 			</particles>
-			<attack-strenght value="350"/>
+			<attack-strength value="350"/>
 			<attack-var value="30"/>
 			<attack-range value="9"/>
 			<attack-type value="piercing"/>

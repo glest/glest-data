@@ -127,7 +127,7 @@
 			<particles value="true" start-time="0.03" end-time="0.7">
 				<particle-file path="gunsmoke_particles.xml"/>
 			</particles>
-			<attack-strenght value="400"/>
+			<attack-strength value="400"/>
 			<attack-var value="150"/>
 			<attack-range value="13"/>
 			<attack-type value="impact"/>

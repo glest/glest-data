@@ -131,7 +131,7 @@
 				<particle-file path="flash.xml"/>
 				<particle-file path="gunsmoke_particles.xml"/>
 			</particles>
-			<attack-strenght value="220"/>
+			<attack-strength value="220"/>
 			<attack-var value="30"/>
 			<attack-range value="8"/>
 			<attack-type value="piercing"/>
@@ -165,7 +165,7 @@
 				<sound-file path="sounds/hit01.wav"/>
 			</sound>
 			<particles value="false"/>
-			<attack-strenght value="100"/>
+			<attack-strength value="100"/>
 			<attack-var value="30"/>
 			<attack-range value="2"/>
 			<attack-type value="impact"/>

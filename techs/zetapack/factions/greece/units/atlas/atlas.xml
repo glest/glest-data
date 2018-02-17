@@ -93,7 +93,7 @@
 				<sound-file path="/sounds/hit1.ogg"/>
 				<sound-file path="/sounds/hit2.ogg"/>
 			</sound>
-			<attack-strenght value="400"/>
+			<attack-strength value="400"/>
 			<attack-var value="100"/>
 			<attack-range value="1"/>
 			<attack-type value="energy"/>

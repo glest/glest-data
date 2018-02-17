@@ -74,7 +74,7 @@
 			<sound enabled="true" start-time="0.06">
 				<sound-file path="../infantryman/sounds/shot1.wav"/>
 			</sound>
-			<attack-strenght value="120"/>
+			<attack-strength value="120"/>
 			<attack-var value="50"/>
 			<attack-range value="12"/>
 			<attack-type value="piercing"/>

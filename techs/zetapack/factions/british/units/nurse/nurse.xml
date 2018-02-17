@@ -102,7 +102,7 @@
 			<particles value="true" start-time="0.1" end-time="0.2">
 				<particle-file path="flash.xml"/>
 			</particles>
-			<attack-strenght value="150"/>
+			<attack-strength value="150"/>
 			<attack-var value="100"/>
 			<attack-range value="6"/>
 			<attack-type value="energy"/>

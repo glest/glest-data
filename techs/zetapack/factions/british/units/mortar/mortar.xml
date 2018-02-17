@@ -74,7 +74,7 @@
 			<sound enabled="true" start-time="0">
 				<sound-file path="/sounds/tower_attack1.wav"/>
 			</sound>
-			<attack-strenght value="400"/>
+			<attack-strength value="400"/>
 			<attack-var value="100"/>
 			<attack-range value="15"/>
 			<attack-type value="energy"/>

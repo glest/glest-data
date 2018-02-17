@@ -103,7 +103,7 @@
 				<sound-file path="sounds/archer_attack3.wav"/>
 				<sound-file path="sounds/archer_attack4.wav"/>
 			</sound>
-			<attack-strenght value="150"/>
+			<attack-strength value="150"/>
 			<attack-var value="100"/>
 			<attack-range value="12"/>
 			<attack-type value="piercing"/>
@@ -138,7 +138,7 @@
 				<sound-file path="sounds/archer_attack3.wav"/>
 				<sound-file path="sounds/archer_attack4.wav"/>
 			</sound>
-			<attack-strenght value="300"/>
+			<attack-strength value="300"/>
 			<attack-var value="100"/>
 			<attack-range value="12"/>
 			<attack-type value="piercing"/>
@@ -157,7 +157,7 @@
 				<max-hp value="0"/>
 				<max-ep value="0"/>
 				<sight value="0"/>
-				<attack-strenght value="50" value-percent-multiplier="true"/>
+				<attack-strength value="50" value-percent-multiplier="true"/>
 				<attack-range value="0"/>
 				<armor value="0"/>
 				<move-speed value="20"/>
@@ -195,7 +195,7 @@
 				<sound-file path="sounds/archer_attack3.wav"/>
 				<sound-file path="sounds/archer_attack4.wav"/>
 			</sound>
-			<attack-strenght value="5500"/>
+			<attack-strength value="5500"/>
 			<attack-var value="500"/>
 			<attack-range value="11"/>
 			<attack-type value="piercing"/>

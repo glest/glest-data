@@ -89,7 +89,7 @@
 				<max-hp value="0"/>
 				<max-ep value="0"/>
 				<sight value="2"/>
-				<attack-strenght value="30" value-percent-multiplier="true"/>
+				<attack-strength value="30" value-percent-multiplier="true"/>
 				<attack-range value="0"/>
 				<armor value="10"/>
 				<move-speed value="0"/>
@@ -134,7 +134,7 @@
 				<max-hp value="0"/>
 				<max-ep value="0"/>
 				<sight value="2"/>
-				<attack-strenght value="30" value-percent-multiplier="true"/>
+				<attack-strength value="30" value-percent-multiplier="true"/>
 				<attack-range value="0"/>
 				<armor value="10"/>
 				<move-speed value="0"/>
@@ -158,7 +158,7 @@
 			<sound enabled="true" start-time="0.06">
 				<sound-file path="/sounds/shot1.wav"/>
 			</sound>
-			<attack-strenght value="300"/>
+			<attack-strength value="300"/>
 			<attack-var value="60"/>
 			<attack-range value="7"/>
 			<attack-type value="piercing"/>
@@ -185,7 +185,7 @@
 				<max-hp value="0"/>
 				<max-ep value="0"/>
 				<sight value="2"/>
-				<attack-strenght value="30" value-percent-multiplier="true"/>
+				<attack-strength value="30" value-percent-multiplier="true"/>
 				<attack-range value="0"/>
 				<armor value="10"/>
 				<move-speed value="0"/>

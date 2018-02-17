@@ -94,7 +94,7 @@
 				<max-hp value="0"/>
 				<max-ep value="0"/>
 				<sight value="1"/>
-				<attack-strenght value="50" value-percent-multiplier="true"/>
+				<attack-strength value="50" value-percent-multiplier="true"/>
 				<attack-range value="0"/>
 				<armor value="0"/>
 				<move-speed value="20" value-percent-multiplier="true"/>
@@ -131,7 +131,7 @@
 				<max-hp value="0"/>
 				<max-ep value="0"/>
 				<sight value="1"/>
-				<attack-strenght value="50" value-percent-multiplier="true"/>
+				<attack-strength value="50" value-percent-multiplier="true"/>
 				<attack-range value="0"/>
 				<armor value="0"/>
 				<move-speed value="20" value-percent-multiplier="true"/>
@@ -158,7 +158,7 @@
 				<max-hp value="0"/>
 				<max-ep value="0"/>
 				<sight value="1"/>
-				<attack-strenght value="50" value-percent-multiplier="true"/>
+				<attack-strength value="50" value-percent-multiplier="true"/>
 				<attack-range value="0"/>
 				<armor value="0"/>
 				<move-speed value="20" value-percent-multiplier="true"/>
@@ -182,7 +182,7 @@
 				<sound-file path="sounds/swordman_attack11.ogg"/>
 				<sound-file path="sounds/swordman_attack12.ogg"/>
 			</sound>
-			<attack-strenght value="900"/>
+			<attack-strength value="900"/>
 			<attack-var value="100"/>
 			<attack-range value="1"/>
 			<attack-type value="slashing"/>
@@ -208,7 +208,7 @@
 				<max-hp value="0"/>
 				<max-ep value="0"/>
 				<sight value="1"/>
-				<attack-strenght value="50" value-percent-multiplier="true"/>
+				<attack-strength value="50" value-percent-multiplier="true"/>
 				<attack-range value="0"/>
 				<armor value="0"/>
 				<move-speed value="20" value-percent-multiplier="true"/>
@@ -224,7 +224,7 @@
 				<sound-file path="../archer/sounds/archer_attack3.ogg"/>
 				<sound-file path="../archer/sounds/archer_attack4.ogg"/>
 			</sound>
-			<attack-strenght value="800"/>
+			<attack-strength value="800"/>
 			<attack-var value="200"/>
 			<attack-range value="10"/>
 			<attack-type value="energy"/>

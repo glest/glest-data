@@ -162,7 +162,7 @@
 				<sound-file path="../alexander/sounds/swordman_attack11.ogg"/>
 				<sound-file path="../alexander/sounds/swordman_attack12.ogg"/>
 			</sound>
-			<attack-strenght value="100"/>
+			<attack-strength value="100"/>
 			<attack-var value="50"/>
 			<attack-range value="1"/>
 			<attack-type value="slashing"/>

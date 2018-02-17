@@ -105,7 +105,7 @@
 				<sound-file path="sounds/ab_attack1.ogg"/>
 				<sound-file path="sounds/ab_attack2.ogg"/>
 			</sound>
-			<attack-strenght value="200"/>
+			<attack-strength value="200"/>
 			<attack-var value="75"/>
 			<attack-range value="15"/>
 			<attack-type value="piercing"/>

@@ -107,7 +107,7 @@
 			</particles>
 			<sound enabled="false"/>
 
-			<attack-strenght value="240"/>
+			<attack-strength value="240"/>
 			<attack-var value="30"/>
 			<attack-range value="10"/>
 			<attack-type value="energy"/>

@@ -109,7 +109,7 @@
 			<sound enabled="true" start-time="0.06">
 				<sound-file path="/sounds/shot1.wav"/>
 			</sound>
-			<attack-strenght value="100"/>
+			<attack-strength value="100"/>
 			<attack-var value="50"/>
 			<attack-range value="10"/>
 			<attack-type value="piercing"/>

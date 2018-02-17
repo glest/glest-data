@@ -113,7 +113,7 @@
 				<particle-file path="gunsmoke_particles2.xml"/>
 				<particle-file path="gunsmoke_particles3.xml"/>
 			</particles>
-			<attack-strenght value="220"/>
+			<attack-strength value="220"/>
 			<attack-var value="30"/>
 			<attack-range value="10"/>
 			<attack-type value="piercing"/>

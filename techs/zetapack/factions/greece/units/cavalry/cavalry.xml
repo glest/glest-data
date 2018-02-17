@@ -120,7 +120,7 @@
 				<sound-file path="sounds/horseman_attack13.ogg"/>
 				<sound-file path="sounds/horseman_attack14.ogg"/>
 			</sound>
-			<attack-strenght value="220"/>
+			<attack-strength value="220"/>
 			<attack-var value="50"/>
 			<attack-range value="1"/>
 			<attack-type value="piercing"/>
