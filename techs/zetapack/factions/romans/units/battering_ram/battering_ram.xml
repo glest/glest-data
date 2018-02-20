@@ -43,17 +43,14 @@
 		<image-cancel path="../archer/images/tech_cancel.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
-			<sound path="$COMMONDATAPATH/sounds/golem_select1.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_select2.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_select3.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_select4.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/battering_ram_select1.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/battering_ram_select2.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/battering_ram_select3.wav"/>
 		</selection-sounds>
 		<command-sounds enabled="true">
-			<sound path="$COMMONDATAPATH/sounds/golem_attack_command1.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_attack_command2.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_attack_command3.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_attack_command4.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_attack_command5.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/battering_ram_attack_command1.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/battering_ram_attack_command2.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/battering_ram_attack_command3.wav"/>
 		</command-sounds>
 
 	</parameters>
@@ -80,7 +77,7 @@
 			<anim-speed value="80"/>
 			<animation path="models/battering_ram_walk.g3d"/>
 			<sound enabled="true" start-time="0">
-				<sound-file path="$COMMONDATAPATH/sounds/golem_walk1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/battering_ram_walk1.wav"/>
 			</sound>
 
 		</skill>
@@ -93,7 +90,7 @@
 			<anim-speed value="40"/>
 			<animation path="models/battering_ram_attack.g3d"/>
 			<sound enabled="true" start-time="0.3">
-				<sound-file path="$COMMONDATAPATH/sounds/golem_attack1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/battering_ram_attack1.wav"/>
 			</sound>
 			<attack-strength value="500"/>
 			<attack-var value="100"/>
@@ -148,7 +145,7 @@
 			<anim-speed value="100"/>
 			<animation path="models/battering_ram_die.g3d"/>
 			<sound enabled="true" start-time="0">
-				<sound-file path="$COMMONDATAPATH/sounds/golem_die1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/battering_ram_die1.wav"/>
 			</sound>
                         <fade value="false"/>
 		</skill>
