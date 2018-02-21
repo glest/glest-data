@@ -40,10 +40,8 @@
 		<image-cancel path="../archer/images/tech_cancel.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
-			<sound path="$COMMONDATAPATH/sounds/golem_select1.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_select2.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_select3.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_select4.wav"/>
+			<sound path="sounds/thor_select1.wav"/>
+			<sound path="sounds/thor_select2.wav"/>
 		</selection-sounds>
 		<command-sounds enabled="true">
 			<sound path="$COMMONDATAPATH/sounds/golem_attack_command1.wav"/>
