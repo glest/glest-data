@@ -20,6 +20,6 @@
 	<attack-strength value="50"/>
 	<attack-range value="1"/>
 	<armor value="10"/>
-	<move-speed value="120" value-percent-multiplier="true"/>
+	<move-speed value="70" value-percent-multiplier="true"/>
 	<production-speed value="0"/>
 </upgrade>
