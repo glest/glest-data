@@ -90,6 +90,7 @@
 					<unit-type name="alexander" />
 					<unit-type name="artemis" />
 					<unit-type name="chariot" />
+					<unit-type name="onager" />
 					<unit-type name="oxybeles" />
 				</target>
 				<max-hp value="0" regeneration="5"/>
@@ -121,6 +122,31 @@
 			<anim-speed value="125"/>
 			<animation path="models/engineer_walk.g3d"/>
 			<sound enabled="false"/>
+			<attack-boost>
+				<allow-multiple-boosts value="true" />
+				<radius value="15"/>
+				<target value="faction">
+					<unit-type name="slave" />
+					<unit-type name="peltast" />
+					<unit-type name="psiloi" />
+					<unit-type name="hoplite" />
+					<unit-type name="archer" />
+					<unit-type name="cavalry" />
+					<unit-type name="atlas" />
+					<unit-type name="alexander" />
+					<unit-type name="artemis" />
+					<unit-type name="chariot" />
+					<unit-type name="onager" />
+					<unit-type name="oxybeles" />
+				</target>
+				<max-hp value="0" regeneration="5"/>
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<production-speed value="0"/>
+				<particles value="false"/>
+			</attack-boost>
 		</skill>
 
 		<skill>
