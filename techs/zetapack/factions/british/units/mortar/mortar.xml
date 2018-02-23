@@ -7,7 +7,7 @@
 		<max-hp value="6000" regeneration="1"/>
 		<max-ep value="0" />
 		<armor value="0" />
-		<armor-type value="metal"/>				
+		<armor-type value="metal"/>
 		<sight value="16" />
 		<time value="50" />
 		<multi-selection value="false" />
@@ -35,44 +35,44 @@
 		<image-cancel path="images/tech_cancel.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
-			<sound path="sounds/tech_click.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/tech_click.wav"/>
 		</selection-sounds>
 		<command-sounds enabled="true">
-			<sound path="sounds/tech_click.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/tech_click.wav"/>
 		</command-sounds>
 	</parameters>
-	
+
 	<skills>
 
 		<skill>
 			<type value="stop" />
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="100" />
 			<animation path="models/mortar_sit.g3d" />
 			<sound enabled="false" />
-		</skill>	
+		</skill>
 
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="210"/>
 			<anim-speed value="120"/>
 			<animation path="models/mortar_sit.g3d"/>
 			<sound enabled="false"/>
 		</skill>
-		
+
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="attack_skill"/>
 			<ep-cost value="0"/>
 			<speed value="15"/>
 			<anim-speed value="25"/>
 			<animation path="models/mortar_attack.g3d"/>
 			<sound enabled="true" start-time="0">
-				<sound-file path="/sounds/tower_attack1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/tower_attack1.wav"/>
 			</sound>
 			<attack-strength value="400"/>
 			<attack-var value="100"/>
@@ -89,7 +89,7 @@
 			<projectile value="true">
 			<particle value="true" path="particle_proj.xml"/>
 			<sound enabled="true" start-time="0">
-				<sound-file path="/sounds/tower_hit1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/tower_hit1.wav"/>
 			</sound>
 			</projectile>
 			<splash value="true">
@@ -101,7 +101,7 @@
 
 		<skill>
 			<type value="die" />
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
@@ -112,8 +112,8 @@
 		</skill>
 
 	</skills>
-	
-	
+
+
 	<commands>
 		<command>
 			<type value= "stop"/>
