@@ -12,12 +12,12 @@
 		<multi-selection value="true"/>
 		<uniform-selection value="true"/>
 		<cellmap value="true">
-			<row value="111011"/>
-			<row value="111011"/>
-			<row value="111000"/>
-			<row value="000011"/>
-			<row value="101011"/>
-			<row value="111011"/>
+			<row value="111111"/>
+			<row value="111111"/>
+			<row value="111111"/>
+			<row value="111111"/>
+			<row value="111111"/>
+			<row value="111111"/>
 		</cellmap>
 		<levels/>
 		<fields>
@@ -64,7 +64,7 @@
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="50" />
-			<animation path="models/fourm.g3d" />
+			<animation path="models/colosseum.g3d" />
 			<sound enabled="false" />
 		</skill>
 		<skill>
@@ -73,7 +73,7 @@
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
-			<animation path="models/fourm_build.g3d" />
+			<animation path="models/colosseum_build.g3d" />
 			<sound enabled="false" />
 		</skill>
 		<skill>
@@ -82,7 +82,7 @@
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="50" />
-			<animation path="models/fourm.g3d" />
+			<animation path="models/colosseum.g3d" />
 			<sound enabled="false" />
 		</skill>
 		<skill>
@@ -91,7 +91,7 @@
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
-			<animation path="models/fourm_destruction.g3d" />
+			<animation path="models/colosseum_destruction.g3d" />
 			<sound enabled="true" start-time="0">
 				<sound-file path="$COMMONDATAPATH/sounds/tech_building_fall2.wav"/>
 			</sound>
