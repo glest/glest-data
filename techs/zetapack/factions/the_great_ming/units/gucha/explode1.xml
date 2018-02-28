@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<unit-particle-system>
+	<mode value="black"/>
+	<shape value="conical">
+		<angle value="90"/>
+	</shape>
+    	<texture value="true" path="images/explosion.png" luminance="false"/>
+	<primitive value="quad"/>
+	<offset x="0" y="0" z="0.0"/>
+	<direction x="0" y="2" z="0"/>
+	
+	<color red="0.55" green="0.5" blue="0.4" alpha="0.2" />
+	<color-no-energy red="0.8" green="0.8" blue="0.8" alpha="0.0" />
+    	<radius value="3" />
+	<min-radius value="1.5"/>
+    	<size value="0.5" />
+    	<size-no-energy value="2" />
+    	<speed value="5" />
+	<gravity value="0.2"/>
+	<emission-rate-fade value="400"/>
+    	<emission-rate value="1000" />
+    	<energy-max value="10" />
+    	<energy-var value="5" />
+	<relative value="true" />
+    	<fixed value="false" />
+    	<teamcolorNoEnergy value="false" />
+    	<teamcolorEnergy value="false" />
+</unit-particle-system>

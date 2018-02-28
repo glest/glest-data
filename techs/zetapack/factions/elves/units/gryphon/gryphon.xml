@@ -11,6 +11,7 @@
 		<sight value="20"/>
 		<time value="250"/>
 		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
 			<level name="tame" kills="4"/>
@@ -106,7 +107,7 @@
 				<sound-file path="sounds/ground_attack3.wav"/>
 				<sound-file path="sounds/ground_attack4.wav"/>
 			</sound>
-			<attack-strenght value="450"/>
+			<attack-strength value="450"/>
 			<attack-var value="70"/>
 			<attack-range value="7"/>
 			<attack-type value="impact"/>

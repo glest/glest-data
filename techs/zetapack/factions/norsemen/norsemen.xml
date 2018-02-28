@@ -15,6 +15,7 @@
 		<unit name="cow" amount="1"/>
 		<unit name="axe_thrower" amount="1"/>
 		<unit name="thrall" amount="3"/>
+		<unit name="thor" amount="0"/>
 	</starting-units>
 	<music value="true" path="music/manolo_camp-medieval.ogg"/>
 	<flat-particle-positions value="true"/>

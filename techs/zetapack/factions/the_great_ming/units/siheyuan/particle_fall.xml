@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="yes"?>
+<unit-particle-system>
+    	<texture value="true" path="images/particle.bmp" luminance="true"/>
+        <mode value="black"/>
+	<model value="false"/>
+	<primitive value="quad"/>
+	<offset x="0" y="0" z="0"/>
+	<direction x="0.3" y="1" z="0"/>
+	<color red="0.1" green="0.1" blue="0.1" alpha="0.43" />
+	<color-no-energy red="0.0" green="0.0" blue="0.0" alpha="0.0" />
+    	<size value="1" />
+    	<radius value="1" />
+	<size-no-energy value="2.0" />
+    	<speed value="5" />
+	<gravity value="0.4"/>
+    	<emission-rate value="50" />
+
+	<relative value="true" />
+	<relativeDirection value="false" />
+    	<fixed value="false" />
+    	<teamcolorNoEnergy value="false" />
+    	<teamcolorEnergy value="false" />
+
+    	<energy-max value="30" />
+    	<energy-var value="20" />
+	<child-particles value="true">
+		<particle-file path="explode2.xml"/>
+	</child-particles>
+	<emission-rate-fade value="50"/>
+	<vertical-spread a="1" b="0.5"/>
+	<horizontal-spread a="1" b="0"/>
+</unit-particle-system>

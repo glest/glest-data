@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<unit-particle-system>
+    <!-- this is the main stuff we change -->
+        <size value="0.1" /> <!-- how big it is -->
+        <emission-rate value="1000" /> <!-- more == more defined -->
+    <radius value="0.1"/> <!-- how much wobble there is -->
+    <offset x="0" y="0" z="0"/> 
+    <color red="0" green="0" blue="0.9" alpha="0.9" />
+    <color-no-energy red="0" green="0" blue="0.9" alpha="0.7" /> 
+        <texture value="true" path="images/particle_range.bmp" luminance="true" />
+
+        <!-- this is all stuff you don't really change -->
+    <direction x="0" y="0" z="0"/>
+    <relative value="false"/>
+    <fixed value="true"/>
+        <model value="false"/>
+    <primitive value="quad"/>
+        <size-no-energy value="2" />
+        <speed value="0.0" />
+    <gravity value="0.0"/>
+        <energy-max value="0" />
+        <energy-var value="0" />
+</unit-particle-system>

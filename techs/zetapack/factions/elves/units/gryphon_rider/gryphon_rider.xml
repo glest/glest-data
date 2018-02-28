@@ -11,6 +11,7 @@
 		<sight value="20"/>
 		<time value="250"/>
 		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
 			<level name="master" kills="4"/>
@@ -86,7 +87,7 @@
 				<sound-file path="/sounds/archer_attack3.wav"/>
 				<sound-file path="/sounds/archer_attack4.wav"/>
 			</sound>
-			<attack-strenght value="160"/>
+			<attack-strength value="160"/>
 			<attack-var value="50"/>
 			<attack-range value="11"/>
 			<attack-type value="piercing"/>

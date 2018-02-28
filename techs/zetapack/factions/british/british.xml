@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no"?>
+
+<faction>
+	<starting-resources>
+		<resource name="gold" amount="500"/>
+		<resource name="wood" amount="500"/>	
+		<resource name="stone" amount="500"/>	
+		<resource name="food" amount="50"/>	
+	</starting-resources>
+	<starting-units>
+		<unit name="fort" amount="1"/>
+		<unit name="colonist" amount="3"/>
+		<unit name="saberman" amount="2"/>
+		<unit name="cow" amount="1"/>
+		<unit name="infantryman" amount="1"/>
+		<unit name="lookout_tower" amount="1"/>
+		<unit name="captain" amount="0"/>
+		<unit name="mortar" amount="0"/>
+		<unit name="puckle_gun" amount="0"/>
+		<unit name="artillery_foundry" amount="0"/>
+		<unit name="cannon" amount="0"/>
+		<unit name="wagon_worker" amount="0"/>
+		<unit name="balloon" amount="0"/>
+		<unit name="nurse" amount="0"/>
+	</starting-units>	
+	<music value="true" path="music/british_music.ogg"/>
+</faction>

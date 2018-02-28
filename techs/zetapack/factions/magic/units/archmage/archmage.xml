@@ -15,6 +15,7 @@
 		<levels>
 			<level name="expert" kills="5"/>
 			<level name="master" kills="15"/>
+            <level name="godlike" kills="20"/>
 			<level name="legendary" kills="30"/>
 		</levels>
 		<fields>
@@ -92,7 +93,7 @@
 				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack15.wav"/>
 				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack16.wav"/>
 			</sound>
-			<attack-strenght value="280"/>
+			<attack-strength value="280"/>
 			<attack-var value="90"/>
 			<attack-range value="9"/>
 			<attack-type value="energy"/>
@@ -132,7 +133,7 @@
 				<sound-file path="sounds/archmage_attack23.wav"/>
 				<sound-file path="sounds/archmage_attack24.wav"/>
 			</sound>
-			<attack-strenght value="700"/>
+			<attack-strength value="700"/>
 			<attack-var value="50"/>
 			<attack-range value="8"/>
 			<attack-type value="energy"/>

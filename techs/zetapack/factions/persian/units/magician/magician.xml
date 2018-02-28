@@ -63,6 +63,27 @@
 			<anim-speed value="45"/>
 			<animation path="models/magician_ambient.g3d"/>
 			<sound enabled="false"/>
+			<attack-boost>
+				<allow-multiple-boosts value="true" />
+				<radius value="15"/>
+				<target value="faction">
+					<unit-type name="elephant" />
+					<unit-type name="fakir" />
+					<unit-type name="genie" />
+					<unit-type name="princess" />
+					<unit-type name="sheep" />
+					<unit-type name="stickfighter" />
+					<unit-type name="swordman" />
+					<unit-type name="worker" />
+				</target>
+				<max-hp value="0" regeneration="5"/>
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<production-speed value="0"/>
+				<particles value="false"/>
+			</attack-boost>
 		</skill>
 
 		<skill>
@@ -142,7 +163,7 @@
 			<sound enabled="true" start-time="0.0">
 				<sound-file path="/sounds/throw2.wav"/>
 			</sound>
-			<attack-strenght value="150"/>
+			<attack-strength value="150"/>
 			<attack-var value="70"/>
 			<attack-range value="10"/>
 			<attack-type value="energy"/>

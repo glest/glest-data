@@ -6,11 +6,13 @@
 		<height value="5"/>
 		<max-hp value="6300" regeneration="3"/>
 		<max-ep value="0" />
-		<armor value="15"/>	
+		<max-unit-count value="3"/>
+		<armor value="15"/>
 		<armor-type value="wood"/>
 		<sight value="18"/>
-		<time value="250"/>	
-		<multi-selection value="true"/>	
+		<time value="250"/>
+		<multi-selection value="true"/>
+				<uniform-selection value="false"/>
 		<cellmap value="false"/>
 		<levels>
 			<level name="great" kills="14"/>
@@ -18,7 +20,7 @@
 		</levels>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties/>
 		<light enabled="false"/>
 		<unit-requirements>
@@ -37,30 +39,17 @@
 		<image-cancel path="../tree_of_life/images/stop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
-			<sound path="sounds/golem_select1.wav"/>
-			<sound path="sounds/golem_select2.wav"/>
-			<sound path="sounds/golem_select3.wav"/>
-			<sound path="sounds/golem_select4.wav"/>
-			<sound path="sounds/golem_select5.wav"/>
-			<sound path="sounds/golem_select6.wav"/>
-			<sound path="sounds/golem_select7.wav"/>
-			<sound path="sounds/golem_select8.wav"/>
-			<sound path="sounds/golem_select9.wav"/>
-			<sound path="sounds/golem_select10.wav"/>
-			<sound path="sounds/golem_select11.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/golem_select1.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/golem_select2.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/golem_select3.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/golem_select4.wav"/>
 		</selection-sounds>
 		<command-sounds enabled="true">
-			<sound path="sounds/golem_ack1.wav"/>
-			<sound path="sounds/golem_ack2.wav"/>
-			<sound path="sounds/golem_ack3.wav"/>
-			<sound path="sounds/golem_ack4.wav"/>
-			<sound path="sounds/golem_ack5.wav"/>
-			<sound path="sounds/golem_ack6.wav"/>
-			<sound path="sounds/golem_ack7.wav"/>
-			<sound path="sounds/golem_ack8.wav"/>
-			<sound path="sounds/golem_ack9.wav"/>
-			<sound path="sounds/golem_ack10.wav"/>
-			<sound path="sounds/golem_ack11.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/golem_attack_command1.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/golem_attack_command2.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/golem_attack_command3.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/golem_attack_command4.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/golem_attack_command5.wav"/>
 		</command-sounds>
 
 	</parameters>
@@ -69,42 +58,40 @@
 	<!-- *** skills *** -->
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="25"/>
 			<animation path="models/ent_idle.g3d"/>
 			<sound enabled="false"/>
 		</skill>
-		
+
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="150"/>
 			<anim-speed value="20"/>
 			<animation path="models/ent_walking.g3d"/>
 			<sound enabled="true" start-time="0">
-			<sound-file path="sounds/golem_die1.wav"/>
-			<sound-file path="sounds/golem_die2.wav"/>
-			<sound-file path="sounds/golem_die3.wav"/>
+			<sound-file path="$COMMONDATAPATH/sounds/golem_die1.wav"/>
 			</sound>
 		</skill>
 
 		<skill>
 			<type value="attack"/>
-			<name value="melee"/>		
+			<name value="melee"/>
 			<ep-cost value="0"/>
 			<speed value="40"/>
 			<anim-speed value="40"/>
 			<animation path="models/ent_melee_attack.g3d"/>
 			<sound enabled="true" start-time="0.02">
-				<sound-file path="sounds/golem_attack1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/golem_attack1.wav"/>
 			</sound>
-			<attack-strenght value="475"/>
+			<attack-strength value="475"/>
 			<attack-var value="60"/>
 			<attack-range value="1"/>
 			<attack-type value="impact"/>
@@ -118,20 +105,20 @@
 				<damage-all value="false"/>
 				<particle value="false"/>
 			</splash>
-		</skill>		
+		</skill>
 
                 <skill>
 			<type value="attack"/>
-			<name value="siege"/>		
+			<name value="siege"/>
 			<ep-cost value="0"/>
 			<speed value="50"/>
 			<anim-speed value="25"/>
 			<animation path="models/ent_siege_attack.g3d"/>
 			<sound enabled="true" start-time="0.1">
-				<sound-file path="sounds/catapult_attack1.wav"/>
-				<sound-file path="sounds/catapult_attack2.wav"/>
-			</sound> 
-			<attack-strenght value="320"/>
+				<sound-file path="$COMMONDATAPATH/sounds/catapult_attack1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/catapult_attack2.wav"/>
+			</sound>
+			<attack-strength value="320"/>
 			<attack-var value="300"/>
 			<attack-range value="10"/>
 			<attack-type value="impact"/>
@@ -143,8 +130,8 @@
 			<projectile value="true">
 				<particle value="true" path="particle_proj.xml"/>
 				<sound enabled="true">
-					<sound-file path="/sounds/catapult_hit1.wav"/>
-					<sound-file path="/sounds/catapult_hit2.wav"/>
+					<sound-file path="$COMMONDATAPATH/sounds/catapult_hit1.wav"/>
+					<sound-file path="$COMMONDATAPATH/sounds/catapult_hit2.wav"/>
 				</sound>
 			</projectile>
 			<splash value="true">
@@ -156,21 +143,21 @@
 
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="120"/>
 			<anim-speed value="30"/>
 			<animation path="models/ent_dying.g3d"/>
 			<sound enabled="true" start-time="0.75">
-				<sound-file path="/sounds/catapult_hit1.wav"/>
-				<sound-file path="/sounds/catapult_hit2.wav"/>
-			</sound>			
+				<sound-file path="$COMMONDATAPATH/sounds/catapult_hit1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/catapult_hit2.wav"/>
+			</sound>
 			<fade value="false"/>
 		</skill>
 
 		<skill>
 			<type value="build"/>
-			<name value="plant_skill"/>		
+			<name value="plant_skill"/>
 			<ep-cost value="0"/>
 			<speed value="150"/>
 			<anim-speed value="50"/>
@@ -180,7 +167,7 @@
 
 		<skill>
 			<type value="repair"/>
-			<name value="repair_skill"/>		
+			<name value="repair_skill"/>
 			<ep-cost value="0"/>
 			<speed value="50"/>
 			<anim-speed value="150"/>
@@ -189,9 +176,9 @@
 		</skill>
 
 	</skills>
-	
+
 	<commands>
-		
+
 		<command>
 			<type value="stop"/>
 			<name value="stop"/>
@@ -256,9 +243,9 @@
 			<move-skill value="move_skill"/>
 			<repair-skill value="repair_skill"/>
 			<repaired-units>
-				<unit name="forest_guardian"/>	
-				<unit name="tree_of_life"/>					
-			</repaired-units>		
+				<unit name="forest_guardian"/>
+				<unit name="tree_of_life"/>
+			</repaired-units>
 		</command>
 
 		<command>

@@ -11,6 +11,7 @@
 		<sight value="12"/>
 		<time value="30"/>
 		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="false"/>
 		<levels/>
 		<fields>
@@ -230,7 +231,6 @@
 				<building name="forge"/>
 				<building name="lore_house"/>
 				<building name="forest_guardian"/>
-				<building name="corral_gryphon_nest"/>
 			</buildings>
 			<start-sound enabled="false"/>
 			<built-sound enabled="true">

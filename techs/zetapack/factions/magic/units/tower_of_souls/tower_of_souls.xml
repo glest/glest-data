@@ -32,7 +32,9 @@
 			<resource name="stone" amount="250"/>
 			<resource name="energy" amount="3"/>
 		</resource-requirements>
-		<resources-stored/>
+		<resources-stored>
+			<resource name= "stone" amount="200"/>
+		</resources-stored>
 		<image path="images/tower_of_souls.bmp"/>
 		<image-cancel path="../archmage/images/magic_cancel.bmp"/>
 		<meeting-point value="false"/>
@@ -78,7 +80,7 @@
 				<sound-file path="$COMMONDATAPATH/sounds/tower_attack5.wav"/>
 				<sound-file path="$COMMONDATAPATH/sounds/tower_attack6.wav"/>
 			</sound>
-			<attack-strenght value="200"/>
+			<attack-strength value="200"/>
 			<attack-var value="50"/>
 			<attack-range value="15"/>
 			<attack-type value="energy"/>

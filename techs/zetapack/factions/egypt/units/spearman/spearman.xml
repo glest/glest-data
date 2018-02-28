@@ -11,6 +11,7 @@
 		<sight value="10"/>
 		<time value="35"/>
 		<multi-selection value="true"/>
+		<uniform-selection value="false"/>
 		<cellmap value="false"/>
 		<levels>
 			<level name="elite" kills="3"/>
@@ -95,7 +96,7 @@
 				<sound-file path="sounds/spearman_attack3.wav"/>
 				<sound-file path="sounds/spearman_attack4.wav"/>
 			</sound>
-			<attack-strenght value="80"/>
+			<attack-strength value="80"/>
 			<attack-var value="30"/>
 			<attack-range value="1"/>
 			<attack-type value="slashing"/>

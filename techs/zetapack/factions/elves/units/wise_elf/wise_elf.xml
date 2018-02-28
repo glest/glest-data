@@ -6,16 +6,17 @@
 		<height value="2"/>
 		<max-hp value="1000" regeneration="5"/>
 		<max-ep value="50" regeneration="2"/>
-		<armor value="5"/>	
-		<armor-type value="leather"/>				
+		<armor value="5"/>
+		<armor-type value="leather"/>
 		<sight value="20"/>
-		<time value="100"/>	
-		<multi-selection value="true"/>	
+		<time value="100"/>
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="false"/>
 		<levels/>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties/>
 		<max-unit-count value="2"/>
 		<light enabled="false"/>
@@ -49,10 +50,10 @@
 	</parameters>
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="70"/>
@@ -62,7 +63,7 @@
 
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="150"/>
 			<anim-speed value="130"/>
@@ -72,7 +73,7 @@
 
 		<skill>
 			<type value="build"/>
-			<name value="build_skill"/>		
+			<name value="build_skill"/>
 			<ep-cost value="0"/>
 			<speed value="150"/>
 			<anim-speed value="80"/>
@@ -87,7 +88,7 @@
 
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="attack_skill"/>
 			<ep-cost value="10"/>
 			<speed value="20"/>
 			<anim-speed value="20"/>
@@ -102,7 +103,7 @@
 				<sound-file path="sounds/initiate_attack7.wav"/>
 				<sound-file path="sounds/initiate_attack8.wav"/>
 			</sound>
-			<attack-strenght value="600"/>
+			<attack-strength value="600"/>
 			<attack-var value="80"/>
 			<attack-range value="9"/>
 			<attack-type value="energy"/>
@@ -120,11 +121,11 @@
 			</sound>
 			</projectile>
 			<splash value="false"/>
-		</skill>	
+		</skill>
 
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="150"/>
 			<anim-speed value="150"/>
@@ -133,14 +134,14 @@
 				<sound-file path="sounds/initiate_die1.wav"/>
 				<sound-file path="sounds/initiate_die2.wav"/>
 				<sound-file path="sounds/initiate_die3.wav"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 
 	</skills>
 
 	<commands>
-		
+
 		<command>
 			<type value="stop"/>
 			<name value="stop"/>
@@ -188,7 +189,7 @@
 
 			<built-sound enabled="true">
 				<sound-file path="sounds/initiate_work_end1.wav"/>
-				<sound-file path="sounds/initiate_work_end2.wav"/>						
+				<sound-file path="sounds/initiate_work_end2.wav"/>
 			</built-sound>
 		</command>
 

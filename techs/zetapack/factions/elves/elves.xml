@@ -26,8 +26,6 @@
 			<unit name="academy" minimum="1"/>
 			<unit name="wood_hall" minimum="1"/>
 			<unit name="corral" minimum="1"/>
-			<unit name="lore_house" minimum="1"/>
-			<unit name="corral_gryphon_nest" minimum="2"/>
 		</building-units>
 		<upgrades>
 			<upgrade name="dryad_weaponry"/>

@@ -11,6 +11,7 @@
 		<sight value="16"/>
 		<time value="140"/>
 		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="true">
 			<row value="0110"/>
 			<row value="0110"/>
@@ -84,7 +85,7 @@
 				<sound-file path="sounds/sphinx_attack2.wav"/>
 				<sound-file path="sounds/sphinx_attack3.wav"/>
 			</sound>
-			<attack-strenght value="120"/>
+			<attack-strength value="120"/>
 			<attack-var value="50"/>
 			<attack-range value="12"/>
 			<attack-type value="piercing"/>
@@ -104,7 +105,7 @@
 			</projectile>
 			<splash value="true">
 				<radius value="4"/>
-				<damage-all value="true"/>
+				<damage-all value="false"/>
 				<particle value="true" path="particle_splash.xml"/>
 			</splash>
 		</skill>

@@ -9,7 +9,7 @@
 	</starting-resources>
 	<starting-units>
 		<unit name="pyramid" amount="1"/>
-		<unit name="sphinx" amount="1"/>
+		<unit name="scarab" amount="1"/>
 		<unit name="slave" amount="3"/>
 		<unit name="spearman" amount="1"/>
 		<unit name="spearthrower" amount="1"/>

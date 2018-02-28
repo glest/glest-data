@@ -22,10 +22,35 @@ Our goal is to help promote content that is submitted, and encourage
 testing by users.
 
 If you have created content and would like to add a link to it, please
-[make a PR](https://github.com/ZetaGlest/zetaglest-source/blob/develop/CONTRIBUTING.md#pull-requests)
-or [open an issue](https://github.com/ZetaGlest/zetaglest-data/issues)
-to discuss how we can make it available for testing. See the "Contact"
-page (linked below) for other ways to get in touch with us.
+[open an issue](https://github.com/ZetaGlest/zetaglest-data/issues).
+
+Include the following information:
+
+* Subject:
+  * [submission]`name of the mod`
+* Body:
+  * mod title, link, description.
+  * Paste the output of `zetaglest --validate...` into a gist at
+          https://gist.github.com.
+
+
+### Using Validate
+
+```
+--validate-techtrees=x=purgeunused=purgeduplicates=gitdelete=hideduplicates
+                     	Where x is a comma-delimited list of techtrees to validate.
+                     	zetaglest --validate-techtrees=megapack,vbros_pack_5
+--validate-factions=x=purgeunused=purgeduplicates=hideduplicates
+                     	Where x is a comma-delimited list of factions to validate.
+                     	    --validate-techtrees
+                     	example: zetaglest --validate-factions=tech,egypt
+--validate-scenario=x=purgeunused=gitdelete
+                     	Where x is a single scenario to validate.
+                     	example: zetaglest --validate-scenario=stranded
+--validate-tileset=x=purgeunused=gitdelete
+                     	Where x is a single tileset to validate.
+                     	example: zetaglest --validate-tileset=desert2
+```
 
 ### Maps
 

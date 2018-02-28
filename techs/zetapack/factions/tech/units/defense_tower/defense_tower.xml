@@ -8,7 +8,7 @@
 		<target-height value="7" />
 		<max-hp value="7000" regeneration="0"/>
 		<max-ep value="0"/>
-		<armor value="20"/>
+		<armor value="30"/>
 		<armor-type value="wood"/>
 		<sight value="16"/>
 		<time value="140"/>
@@ -74,7 +74,7 @@
 				<sound-file path="$COMMONDATAPATH/sounds/defense_tower_attack1.wav"/>
 				<sound-file path="$COMMONDATAPATH/sounds/defense_tower_attack2.wav"/>
 			</sound>
-			<attack-strenght value="120"/>
+			<attack-strength value="120"/>
 			<attack-var value="50"/>
 			<attack-range value="12"/>
 			<attack-type value="piercing"/>

@@ -11,6 +11,7 @@
 		<sight value="12"/>
 		<time value="70"/>
 		<multi-selection value="true"/>
+		<uniform-selection value="false"/>
 		<cellmap value="false"/>
 		<levels>
 			<level name="expert" kills="5"/>
@@ -87,7 +88,7 @@
 				<sound-file path="sounds/snake_attack3.wav"/>
 				<sound-file path="sounds/snake_attack4.wav"/>
 			</sound>
-			<attack-strenght value="140"/>
+			<attack-strength value="140"/>
 			<attack-var value="30"/>
 			<attack-range value="9"/>
 			<attack-type value="energy"/>
