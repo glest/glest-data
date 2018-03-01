@@ -9,7 +9,7 @@
 	</starting-resources>
 	<starting-units>
 		<unit name="castle" amount="1"/>
-		<unit name="tower" amount="1"/>
+		<unit name="tower" amount="0"/>
 		<unit name="slave" amount="3"/>
 		<unit name="hoplite" amount="1"/>
 		<unit name="archer" amount="1"/>
@@ -24,6 +24,7 @@
 		<unit name="blacksmith" amount="0"/>
 		<unit name="alexander" amount="0"/>
 		<unit name="artemis" amount="0"/>
+		<unit name="atlas" amount="1"/>
 	</starting-units>
 	<music value="true" path="music/music_greek.ogg"/>
 </faction>
