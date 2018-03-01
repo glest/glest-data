@@ -22,7 +22,7 @@
 		<light enabled="false"/>
 		<unit-requirements>
 			<unit name="blacksmith_shop"/>
-			<unit name="forum"/>
+			<unit name="colosseum"/>
 		</unit-requirements>
 		<upgrade-requirements>
 			<upgrade name="bless_of_minerva"/>
