@@ -24,7 +24,7 @@
 		<properties/>
 		<light enabled="false" />
 		<unit-requirements>
-			<unit name="forum" />
+			<unit name="colosseum" />
 		</unit-requirements>
 		<upgrade-requirements />
 		<resource-requirements>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <menu>
-	<menu-background-model value="data/core/menu/main_model/menu_main1.g3d"/>
+	<menu-background-model value="data/core/menu/main_model/menu_main2.g3d"/>
 	<water value="true" height="3"/>
 	<rain value="true"/>
 	<fog value="true" density="0.015"/>

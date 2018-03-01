@@ -32,7 +32,7 @@
 			<particle-file path="smoke_particles2.xml"/>
 		</damage-particles>
 		<unit-requirements>
-			<unit name="forum" />
+			<unit name="colosseum" />
 		</unit-requirements>
 		<upgrade-requirements />
 		<resource-requirements>

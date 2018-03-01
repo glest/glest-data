@@ -13,10 +13,10 @@
 		<multi-selection value="false" />
 		<max-unit-count value="4"/>
 		<cellmap value="true">
-			<row value="0110"/>
 			<row value="1111"/>
 			<row value="1111"/>
-			<row value="0110"/>
+			<row value="1111"/>
+			<row value="1111"/>
 		 </cellmap>
 		<levels/>
 		<fields>
