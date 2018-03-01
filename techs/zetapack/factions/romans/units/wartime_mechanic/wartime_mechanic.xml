@@ -344,7 +344,7 @@
 			<repair-skill value="repair_skill"/>
 			<repaired-units>
 				<unit name="eagle_pillar"/>
-				<unit name="forum"/>
+				<unit name="colosseum"/>
 				<unit name="training_camp"/>
 				<unit name="blacksmith_shop"/>
 				<unit name="temple"/>

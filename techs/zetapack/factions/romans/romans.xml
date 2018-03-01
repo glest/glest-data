@@ -8,7 +8,7 @@
 		<resource name="food" amount="50"/>
 	</starting-resources>
 	<starting-units>
-		<unit name="forum" amount="1"/>
+		<unit name="colosseum" amount="1"/>
 		<unit name="slave" amount="3"/>
 		<unit name="spearman" amount="2"/>
 		<unit name="guard_tower" amount="1"/>
