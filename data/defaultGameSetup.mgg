@@ -75,3 +75,17 @@ FactionTeamForIndex7=0
 FactionStartLocationForIndex7=7
 FactionTypeNameForIndex7=*Random*
 FactionPlayerNameForIndex7=Closed
+
+FactionControlForIndex8=0
+ResourceMultiplierIndex8=10
+FactionTeamForIndex8=0
+FactionStartLocationForIndex8=8
+FactionTypeNameForIndex8=*Random*
+FactionPlayerNameForIndex8=Closed
+
+FactionControlForIndex9=0
+ResourceMultiplierIndex9=10
+FactionTeamForIndex9=0
+FactionStartLocationForIndex9=9
+FactionTypeNameForIndex9=*Random*
+FactionPlayerNameForIndex9=Closed
