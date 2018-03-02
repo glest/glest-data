@@ -6,19 +6,19 @@
 		<height value="2"/>
 		<max-hp value="900"  regeneration="5"/>
 		<max-ep value="0"/>
-		<max-unit-count value="5"/>	
-		<armor value="15"/>	
-		<armor-type value="organic"/>				
+		<max-unit-count value="5"/>
+		<armor value="15"/>
+		<armor-type value="organic"/>
 		<sight value="10"/>
-		<time value="100"/>	
-		<multi-selection value="true"/>	
+		<time value="100"/>
+		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
 			<level name="master" kills="8"/>
 		</levels>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties/>
 		<light enabled="false"/>
 		<unit-requirements />
@@ -26,7 +26,7 @@
 		<resource-requirements>
 			<resource name="wood" amount="75"/>
 			<resource name="gold" amount="150"/>
-			<resource name="food" amount="1"/>						
+			<resource name="food" amount="1"/>
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/unit.bmp"/>
@@ -34,7 +34,7 @@
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
 			<sound path="sounds/ni_hao.ogg"/>
-			
+
 		</selection-sounds>
 		<command-sounds enabled="true">
 			<sound path="sounds/zai_jian.ogg"/>
@@ -42,19 +42,43 @@
 	</parameters>
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="30"/>
 			<animation path="../ji_bing/models/shaolin_stand.g3d"/>
 			<sound enabled="false"/>
+			<attack-boost>
+				<allow-multiple-boosts value="true" />
+				<radius value="15"/>
+				<target value="faction">
+					<unit-type name="nong_min" />
+					<unit-type name="da_jiang_jun_chong" />
+					<unit-type name="folang_zhi" />
+					<unit-type name="hua_tang_qiang_shou" />
+					<unit-type name="huo_che" />
+					<unit-type name="huo_jian_bing" />
+					<unit-type name="huo_qiang" />
+					<unit-type name="ji_bing" />
+					<unit-type name="liang_xian" />
+					<unit-type name="nong_min" />
+					<unit-type name="qi_bing" />
+					<unit-type name="qi_she_shou" />
+					<unit-type name="qi_zhi" />
+					<unit-type name="she_shou" />
+					<unit-type name="teng_pai_bing" />
+					<unit-type name="zhu" />
+				</target>
+				<max-hp value="0" regeneration="5"/>
+				<particles value="false"/>
+			</attack-boost>
 		</skill>
 		<skill>
 			<type value="stop"/>
-			<name value="show_range_skill"/>		
+			<name value="show_range_skill"/>
 			<ep-cost value="0"/>
 			<speed value="200"/>
 			<anim-speed value="200"/>
@@ -83,7 +107,7 @@
 		</skill>
 		<skill>
 			<type value="stop"/>
-			<name value="hold_stop_skill"/>		
+			<name value="hold_stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="10"/>
@@ -95,28 +119,52 @@
 
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="300"/>
 			<anim-speed value="150"/>
 			<animation path="../ji_bing/models/shaolin_move.g3d"/>
 			<sound enabled="false"/>
+			<attack-boost>
+				<allow-multiple-boosts value="true" />
+				<radius value="15"/>
+				<target value="faction">
+					<unit-type name="nong_min" />
+					<unit-type name="da_jiang_jun_chong" />
+					<unit-type name="folang_zhi" />
+					<unit-type name="hua_tang_qiang_shou" />
+					<unit-type name="huo_che" />
+					<unit-type name="huo_jian_bing" />
+					<unit-type name="huo_qiang" />
+					<unit-type name="ji_bing" />
+					<unit-type name="liang_xian" />
+					<unit-type name="nong_min" />
+					<unit-type name="qi_bing" />
+					<unit-type name="qi_she_shou" />
+					<unit-type name="qi_zhi" />
+					<unit-type name="she_shou" />
+					<unit-type name="teng_pai_bing" />
+					<unit-type name="zhu" />
+				</target>
+				<max-hp value="0" regeneration="5"/>
+				<particles value="false"/>
+			</attack-boost>
 		</skill>
 
 		<skill>
 			<type value="move"/>
-			<name value="charge_skill"/>		
+			<name value="charge_skill"/>
 			<ep-cost value="0"/>
 			<speed value="400"/>
 			<anim-speed value="150"/>
 			<animation path="../ji_bing/models/shaolin_move.g3d"/>
-			
+
 			<sound enabled="false"/>
 		</skill>
 
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="attack_skill"/>
 			<ep-cost value="0"/>
 			<speed value="120"/>
 			<anim-speed value="120"/>
@@ -131,7 +179,7 @@
 				<sound-file path="sounds/hit33.wav"/>
 				<sound-file path="sounds/hit34.wav"/>
 				<sound-file path="sounds/hit35.wav"/>
-			</sound> 
+			</sound>
 			<attack-strength value="160"/>
 			<attack-var value="30"/>
 			<attack-range value="2"/>
@@ -144,11 +192,11 @@
 			<splash value="false"/>
 		</skill>
 
-		
+
 
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="70"/>
@@ -167,12 +215,12 @@
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/swordman_die1.wav"/>
 				<sound-file path="sounds/swordman_die2.wav"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 		<skill>
 			<type value="repair"/>
-			<name value="heal"/>		
+			<name value="heal"/>
 			<ep-cost value="0"/>
 			<speed value="420"/>
 			<anim-speed value="100"/>
@@ -184,9 +232,10 @@
 		</skill>
 
 	</skills>
-	
+
 	<commands>
-		<command>
+
+<command>
 			<type value="stop"/>
 			<name value="stop"/>
 			<image path="images/stop.bmp"/>
@@ -213,19 +262,21 @@
 			<move-skill value="charge_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
-		
+
+
 		<command>
 			<type value="attack_stopped"/>
 			<name value="hold_position"/>
 			<image path="images/hold.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements>
-				
+
 			</upgrade-requirements>
 			<stop-skill value="hold_stop_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
-		<command>
+
+<command>
 			<type value="stop"/>
 			<name value="show_ranges"/>
 			<image path="images/ranges.bmp"/>
@@ -241,18 +292,18 @@
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
 			<repair-skill value="heal"/>
-			<repaired-units>	
-				<unit name="huo_jian_bing"/>	
-				<unit name="huo_qiang"/>		
+			<repaired-units>
+				<unit name="huo_jian_bing"/>
+				<unit name="huo_qiang"/>
 				<unit name="ji_bing"/>
 				<unit name="liang_xian"/>
-				<unit name="nong_min"/>	
+				<unit name="nong_min"/>
 				<unit name="qi_bing"/>
 				<unit name="qi_she_shou"/>
 				<unit name="qi_zhi"/>
 				<unit name="she_shou"/>
 				<unit name="teng_pai_bing"/>
-			</repaired-units>		
+			</repaired-units>
 		</command>
 	</commands>
 </unit>
