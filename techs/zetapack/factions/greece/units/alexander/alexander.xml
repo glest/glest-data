@@ -36,35 +36,35 @@
 		<image-cancel path="../archer/images/tech_cancel.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
-			<sound path="../archer/sounds/archer_select1.ogg"/>
-			<sound path="../archer/sounds/archer_select2.ogg"/>
-			<sound path="../archer/sounds/archer_select3.ogg"/>
-			<sound path="../archer/sounds/archer_select4.ogg"/>
-			<sound path="../archer/sounds/archer_select5.ogg"/>
-			<sound path="../archer/sounds/archer_select6.ogg"/>
-			<sound path="../archer/sounds/archer_select7.ogg"/>
-			<sound path="../archer/sounds/archer_select8.ogg"/>
-			<sound path="../archer/sounds/archer_select9.ogg"/>
-			<sound path="../archer/sounds/archer_select10.ogg"/>
-			<sound path="../archer/sounds/archer_select11.ogg"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_select1.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_select2.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_select3.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_select4.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_select5.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_select6.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_select7.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_select8.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_select9.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_select10.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_select11.wav"/>
 
 		</selection-sounds>
 		<command-sounds enabled="true">
-			<sound path="../archer/sounds/archer_ack1.ogg"/>
-			<sound path="../archer/sounds/archer_ack2.ogg"/>
-			<sound path="../archer/sounds/archer_ack3.ogg"/>
-			<sound path="../archer/sounds/archer_ack4.ogg"/>
-			<sound path="../archer/sounds/archer_ack5.ogg"/>
-			<sound path="../archer/sounds/archer_ack6.ogg"/>
-			<sound path="../archer/sounds/archer_ack7.ogg"/>
-			<sound path="../archer/sounds/archer_ack8.ogg"/>
-			<sound path="../archer/sounds/archer_ack9.ogg"/>
-			<sound path="../archer/sounds/archer_ack10.ogg"/>
-			<sound path="../archer/sounds/archer_ack11.ogg"/>
-			<sound path="../archer/sounds/archer_ack12.ogg"/>
-			<sound path="../archer/sounds/archer_ack13.ogg"/>
-			<sound path="../archer/sounds/archer_ack14.ogg"/>
-			<sound path="../archer/sounds/archer_ack15.ogg"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_ack1.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_ack2.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_ack3.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_ack4.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_ack5.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_ack6.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_ack7.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_ack8.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_ack9.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_ack10.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_ack11.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_ack12.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_ack13.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_ack14.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/archer_ack15.wav"/>
 		</command-sounds>
 	</parameters>
 
@@ -169,18 +169,18 @@
 				</particles>
                         </attack-boost>
 			<sound enabled="true" start-time="0.47">
-				<sound-file path="sounds/swordman_attack1.ogg"/>
-				<sound-file path="sounds/swordman_attack2.ogg"/>
-				<sound-file path="sounds/swordman_attack3.ogg"/>
-				<sound-file path="sounds/swordman_attack4.ogg"/>
-				<sound-file path="sounds/swordman_attack5.ogg"/>
-				<sound-file path="sounds/swordman_attack6.ogg"/>
-				<sound-file path="sounds/swordman_attack7.ogg"/>
-				<sound-file path="sounds/swordman_attack8.ogg"/>
-				<sound-file path="sounds/swordman_attack9.ogg"/>
-				<sound-file path="sounds/swordman_attack10.ogg"/>
-				<sound-file path="sounds/swordman_attack11.ogg"/>
-				<sound-file path="sounds/swordman_attack12.ogg"/>
+				<sound-file path="$COMMONDATAPATH/sounds/swordman_attack1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/swordman_attack2.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/swordman_attack3.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/swordman_attack4.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/swordman_attack5.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/swordman_attack6.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/swordman_attack7.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/swordman_attack8.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/swordman_attack9.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/swordman_attack10.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/swordman_attack11.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/swordman_attack12.wav"/>
 			</sound>
 			<attack-strength value="900"/>
 			<attack-var value="100"/>
@@ -219,10 +219,10 @@
 				</particles>
                         </attack-boost>
 			<sound enabled="true" start-time="0.8">
-				<sound-file path="../archer/sounds/archer_attack1.ogg"/>
-				<sound-file path="../archer/sounds/archer_attack2.ogg"/>
-				<sound-file path="../archer/sounds/archer_attack3.ogg"/>
-				<sound-file path="../archer/sounds/archer_attack4.ogg"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archer_attack1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archer_attack2.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archer_attack3.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archer_attack4.wav"/>
 			</sound>
 			<attack-strength value="800"/>
 			<attack-var value="200"/>
@@ -236,11 +236,11 @@
 			<projectile value="true">
 				<particle value="true" path="particle_proj.xml"/>
 				<sound enabled="true">
-					<sound-file path="../archer/sounds/arrow_hit1.ogg"/>
-					<sound-file path="../archer/sounds/arrow_hit2.ogg"/>
-					<sound-file path="../archer/sounds/arrow_hit3.ogg"/>
-					<sound-file path="../archer/sounds/arrow_hit4.ogg"/>
-					<sound-file path="../archer/sounds/arrow_hit5.ogg"/>
+					<sound-file path="$COMMONDATAPATH/sounds/arrow_hit1.wav"/>
+					<sound-file path="$COMMONDATAPATH/sounds/arrow_hit2.wav"/>
+					<sound-file path="$COMMONDATAPATH/sounds/arrow_hit3.wav"/>
+					<sound-file path="$COMMONDATAPATH/sounds/arrow_hit4.wav"/>
+					<sound-file path="$COMMONDATAPATH/sounds/arrow_hit5.wav"/>
 				</sound>
 			</projectile>
 			<splash value="true">
@@ -258,10 +258,10 @@
 			<anim-speed value="120"/>
 			<animation path="models/prince_die.g3d"/>
 			<sound enabled="true" start-time="0">
-				<sound-file path="../archer/sounds/archer_die1.ogg"/>
-				<sound-file path="../archer/sounds/archer_die2.ogg"/>
-				<sound-file path="../archer/sounds/archer_die3.ogg"/>
-				<sound-file path="../archer/sounds/archer_die4.ogg"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archer_die1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archer_die2.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archer_die3.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archer_die4.wav"/>
 			</sound>
 			<fade value="false"/>
 		</skill>
