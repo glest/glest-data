@@ -4,35 +4,35 @@
 	<parameters>
 		<size value="1"/>
 		<height value="3"/>
-		<max-hp value="1000" regeneration="0"/>
+		<max-hp value="1000" regeneration="1"/>
 		<max-ep value="0"/>
-		<armor value="20"/>	
-		<armor-type value="leather"/>				
+		<armor value="20"/>
+		<armor-type value="leather"/>
 		<sight value="15"/>
-		<time value="120"/>	
-		<multi-selection value="true"/>	
+		<time value="120"/>
+		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
 			<level name="elite" kills="7"/>
 		</levels>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties>
 			<property value="rotated_climb"/>
 		</properties>
 		<light enabled="false"/>
 		<unit-requirements>
-			
+
 		</unit-requirements>
 		<upgrade-requirements>
 			<upgrade name="gunpowder"/>
 		</upgrade-requirements>
-			
+
 		<resource-requirements>
 			<resource name="wood" amount="150"/>
 			<resource name="gold" amount="250"/>
-			<resource name="food" amount="1"/>				
+			<resource name="food" amount="1"/>
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/archer.bmp"/>
@@ -40,20 +40,20 @@
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
 			<sound path="sounds/ni_hao.ogg"/>
-			
+
 
 		</selection-sounds>
 		<command-sounds enabled="true">
 			<sound path="sounds/zai_jian.ogg"/>
-			
+
 		</command-sounds>
 	</parameters>
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="45"/>
@@ -62,7 +62,7 @@
 		</skill>
 		<skill>
 			<type value="stop"/>
-			<name value="show_range_skill"/>		
+			<name value="show_range_skill"/>
 			<ep-cost value="0"/>
 			<speed value="200"/>
 			<anim-speed value="200"/>
@@ -91,7 +91,7 @@
 		</skill>
 		<skill>
 			<type value="stop"/>
-			<name value="hold_stop_skill"/>		
+			<name value="hold_stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="10"/>
@@ -100,7 +100,7 @@
 		</skill>
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="180"/>
 			<anim-speed value="125"/>
@@ -109,7 +109,7 @@
 		</skill>
 		<skill>
 			<type value="move"/>
-			<name value="charge_skill"/>		
+			<name value="charge_skill"/>
 			<ep-cost value="0"/>
 			<speed value="215"/>
 			<anim-speed value="135"/>
@@ -119,7 +119,7 @@
 
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="attack_skill"/>
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="60"/>
@@ -146,16 +146,16 @@
 					<sound-file path="/sounds/artillery_shells.ogg"/>
 				</sound>
 			</projectile>
-			<splash value="true">					
-				<radius value="2"/>				
-				<damage-all value="true"/>				
-				<particle value="true" path="particle_splash.xml"/>				
+			<splash value="true">
+				<radius value="2"/>
+				<damage-all value="true"/>
+				<particle value="true" path="particle_splash.xml"/>
 			</splash>
 		</skill>
-		
+
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="60"/>
@@ -165,7 +165,7 @@
 				<sound-file path="sounds/archer_die2.wav"/>
 				<sound-file path="sounds/archer_die3.wav"/>
 				<sound-file path="sounds/archer_die4.wav"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 
@@ -173,9 +173,9 @@
 	</skills>
 
 	<!-- *** commands *** -->
-	
+
 	<commands>
-		
+
 		<command>
 			<type value= "stop"/>
 			<name value="stop"/>
@@ -203,7 +203,7 @@
 			<move-skill value="charge_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
-		
+
 		<command>
 			<type value="attack_stopped"/>
 			<name value="hold_position"/>
@@ -215,7 +215,8 @@
 			<stop-skill value="hold_stop_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
-		<command>
+
+<command>
 			<type value="stop"/>
 			<name value="show_ranges"/>
 			<image path="images/ranges.bmp"/>

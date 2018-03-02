@@ -4,20 +4,20 @@
 	<parameters>
 		<size value="1"/>
 		<height value="2"/>
-		<max-hp value="800" regeneration="0"/>
+		<max-hp value="800" regeneration="1"/>
 		<max-ep value="0"/>
-		<armor value="25"/>	
-		<armor-type value="metal"/>				
+		<armor value="25"/>
+		<armor-type value="metal"/>
 		<sight value="12"/>
-		<time value="80"/>	
-		<multi-selection value="true"/>	
+		<time value="80"/>
+		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
 			<level name="veteran" kills="8"/>
 		</levels>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties/>
 		<light enabled="false"/>
 		<unit-requirements />
@@ -25,7 +25,7 @@
 		<resource-requirements>
 			<resource name="wood" amount="25"/>
 			<resource name="gold" amount="75"/>
-			<resource name="food" amount="1"/>						
+			<resource name="food" amount="1"/>
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/unit.bmp"/>
@@ -33,7 +33,7 @@
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
 			<sound path="sounds/ni_hao.ogg"/>
-			
+
 		</selection-sounds>
 		<command-sounds enabled="true">
 			<sound path="sounds/zai_jian.ogg"/>
@@ -41,10 +41,10 @@
 	</parameters>
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="30"/>
@@ -53,7 +53,7 @@
 		</skill>
 		<skill>
 			<type value="stop"/>
-			<name value="show_range_skill"/>		
+			<name value="show_range_skill"/>
 			<ep-cost value="0"/>
 			<speed value="200"/>
 			<anim-speed value="200"/>
@@ -82,7 +82,7 @@
 		</skill>
 		<skill>
 			<type value="stop"/>
-			<name value="hold_stop_skill"/>		
+			<name value="hold_stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="10"/>
@@ -92,7 +92,7 @@
 
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="220"/>
 			<anim-speed value="100"/>
@@ -107,12 +107,12 @@
 
 		<skill>
 			<type value="move"/>
-			<name value="charge_skill"/>		
+			<name value="charge_skill"/>
 			<ep-cost value="0"/>
 			<speed value="220"/>
 			<anim-speed value="120"/>
 			<animation path="models/ming_inf_charge.g3d"/>
-			
+
 			<sound enabled="true" start-time="0">
 			<sound-file path="sounds/9908__snoman__gravel101.wav"/>
 			<sound-file path="sounds/9909__snoman__gravel201.wav"/>
@@ -123,7 +123,7 @@
 
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="attack_skill"/>
 			<ep-cost value="0"/>
 			<speed value="80"/>
 			<anim-speed value="80"/>
@@ -138,7 +138,7 @@
 				<sound-file path="sounds/hit33.wav"/>
 				<sound-file path="sounds/hit34.wav"/>
 				<sound-file path="sounds/hit35.wav"/>
-			</sound> 
+			</sound>
 			<attack-strength value="100"/>
 			<attack-var value="30"/>
 			<attack-range value="2"/>
@@ -151,11 +151,11 @@
 			<splash value="false"/>
 		</skill>
 
-		
+
 
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="70"/>
@@ -175,15 +175,16 @@
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/swordman_die1.wav"/>
 				<sound-file path="sounds/swordman_die2.wav"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 
 
 	</skills>
-	
+
 	<commands>
-		<command>
+
+<command>
 			<type value="stop"/>
 			<name value="stop"/>
 			<image path="images/stop.bmp"/>
@@ -210,7 +211,8 @@
 			<move-skill value="charge_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
-		
+
+
 		<command>
 			<type value="attack_stopped"/>
 			<name value="hold_position"/>
@@ -222,7 +224,8 @@
 			<stop-skill value="hold_stop_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
-		<command>
+
+<command>
 			<type value="stop"/>
 			<name value="show_ranges"/>
 			<image path="images/ranges.bmp"/>
@@ -230,6 +233,6 @@
 			<upgrade-requirements/>
 			<stop-skill value="show_range_skill"/>
 		</command>
-		
+
 	</commands>
 </unit>
