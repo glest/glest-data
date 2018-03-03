@@ -64,6 +64,10 @@ To suggest a map, please [open a ticket](https://github.com/ZetaGlest/zetaglest-
 
 ### Other artwork (sounds, graphics, 3d models, icons)
 
+### Blender models
+
+[Model Specifications](https://zetaglest.github.io/docs/model_specifications.html)
+
 We are working on creating and completing documentation. In the
 meantime, please contact us with any questions or ideas. Thank you for
 your interest in this project.
