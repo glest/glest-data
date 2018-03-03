@@ -12,7 +12,7 @@ A Hard Hellish Mega Glest Scenario With Devastating Monsters And
 Daemons. Also featuring obstacles like lava, volcanos and others!
 
 
-## [The Seventh Element](https://github.com/KeithSammut/the_seventh_element)<br />
+## [Seventh Element](https://github.com/KeithSammut/seventh_element)<br />
 An Epic Adventure scenario based on Magic and Tech. The Titans have
 sent you to defeat four demonic guardians and you must use your powers
 and agility to defeat all four of them and return the cursed treasure
@@ -24,6 +24,10 @@ gets, so Beware.
 Which ever unit you kill, becomes yours! The most fun you will ever have :D
 
 
-## [The Wild Hunt](https://github.com/KeithSammut/wild_hunt)<br />
+## [Wild Hunt](https://github.com/KeithSammut/wild_hunt)<br />
 You must evolve from one animal to another by consuming prey inorder to
 dominate over all creatures
+
+## [Atlantis](https://github.com/KeithSammut/atlantis)<br />
+
+An incredible scenario about the pursue of the great underwater city of Atlantis. You must build a raft to travel on water and face various challenges in order to obtain the map to the gateway to Atlantis.
