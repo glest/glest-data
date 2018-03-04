@@ -73,7 +73,6 @@
 					<unit-type name="battering_ram" />
 					<unit-type name="catapult" />
 					<unit-type name="cavalry" />
-					<unit-type name="cow" />
 					<unit-type name="fire_archer" />
 					<unit-type name="general" />
 					<unit-type name="gladiator" />
@@ -111,7 +110,6 @@
 					<unit-type name="battering_ram" />
 					<unit-type name="catapult" />
 					<unit-type name="cavalry" />
-					<unit-type name="cow" />
 					<unit-type name="fire_archer" />
 					<unit-type name="general" />
 					<unit-type name="gladiator" />
@@ -224,7 +222,6 @@
 					<unit-type name="battering_ram" />
 					<unit-type name="catapult" />
 					<unit-type name="cavalry" />
-					<unit-type name="cow" />
 					<unit-type name="fire_archer" />
 					<unit-type name="general" />
 					<unit-type name="gladiator" />

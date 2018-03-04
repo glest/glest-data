@@ -38,6 +38,7 @@
 		<resource-requirements>
 			<resource name="gold" amount="150" />
 			<resource name="wood" amount="100" />
+			<resource name="food" amount="-6" />
 		</resource-requirements>
 		<resources-stored />
 		<image path="images/barracks.jpg" />

@@ -34,6 +34,7 @@
 			<resource name="gold" amount="200" />
 			<resource name="wood" amount="200" />
 			<resource name="stone" amount="100"/>
+			<resource name="food" amount="-12"/>
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/castle.jpg" />
