@@ -20,32 +20,32 @@ NetworkPauseGameForLaggedClients=1
 FactionThisFactionIndex=0
 FactionCount=4
 
-FactionControlForIndex0=1
-ResourceMultiplierIndex0=0
+FactionControlForIndex0=7
+ResourceMultiplierIndex0=5
 FactionTeamForIndex0=0
 FactionStartLocationForIndex0=0
-FactionTypeNameForIndex0=tech
-FactionPlayerNameForIndex0=AI1
+FactionTypeNameForIndex0=indian
+FactionPlayerNameForIndex0=???
 
-FactionControlForIndex1=0
-ResourceMultiplierIndex1=0
+FactionControlForIndex1=5
+ResourceMultiplierIndex1=5
 FactionTeamForIndex1=0
 FactionStartLocationForIndex1=1
-FactionTypeNameForIndex1=persian
-FactionPlayerNameForIndex1=Closed
+FactionTypeNameForIndex1=indian
+FactionPlayerNameForIndex1=???
 
-FactionControlForIndex2=7
-ResourceMultiplierIndex2=5
+FactionControlForIndex2=1
+ResourceMultiplierIndex2=0
 FactionTeamForIndex2=1
 FactionStartLocationForIndex2=2
-FactionTypeNameForIndex2=indian
-FactionPlayerNameForIndex2=???
+FactionTypeNameForIndex2=tech
+FactionPlayerNameForIndex2=AI1
 
-FactionControlForIndex3=5
-ResourceMultiplierIndex3=5
+FactionControlForIndex3=0
+ResourceMultiplierIndex3=0
 FactionTeamForIndex3=1
 FactionStartLocationForIndex3=3
-FactionTypeNameForIndex3=indian
+FactionTypeNameForIndex3=persian
 FactionPlayerNameForIndex3=???
 
 FactionControlForIndex4=0

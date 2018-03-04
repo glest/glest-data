@@ -24,29 +24,29 @@ FactionControlForIndex0=7
 ResourceMultiplierIndex0=5
 FactionTeamForIndex0=0
 FactionStartLocationForIndex0=0
-FactionTypeNameForIndex0=indian
+FactionTypeNameForIndex0=tech
 FactionPlayerNameForIndex0=???
 
-FactionControlForIndex3=2
-ResourceMultiplierIndex3=5
-FactionTeamForIndex3=1
-FactionStartLocationForIndex3=3
-FactionTypeNameForIndex3=magic
-FactionPlayerNameForIndex3=AI1
-
 FactionControlForIndex1=0
-ResourceMultiplierIndex1=10
+ResourceMultiplierIndex1=0
 FactionTeamForIndex1=0
 FactionStartLocationForIndex1=1
 FactionTypeNameForIndex1=indian
-FactionPlayerNameForIndex1=Closed
+FactionPlayerNameForIndex1=???
 
-FactionControlForIndex2=0
-ResourceMultiplierIndex2=10
+FactionControlForIndex2=1
+ResourceMultiplierIndex2=0
 FactionTeamForIndex2=1
 FactionStartLocationForIndex2=2
-FactionTypeNameForIndex2=magic
-FactionPlayerNameForIndex2=Closed
+FactionTypeNameForIndex2=romans
+FactionPlayerNameForIndex2=AI1
+
+FactionControlForIndex3=0
+ResourceMultiplierIndex3=0
+FactionTeamForIndex3=1
+FactionStartLocationForIndex3=3
+FactionTypeNameForIndex3=persian
+FactionPlayerNameForIndex3=???
 
 FactionControlForIndex4=0
 ResourceMultiplierIndex4=10
