@@ -32,7 +32,7 @@
 			<resource name="gold" amount="50" />
 			<resource name="stone" amount="200" />
 			<resource name="wood" amount="50" />
-			<resource name="grace" amount="-32" />
+			<resource name="grace" amount="-48" />
 		</resource-requirements>
 		<resources-stored>
 			<!--resource name= "gold" amount="400"/-->
