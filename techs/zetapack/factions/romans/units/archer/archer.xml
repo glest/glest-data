@@ -27,7 +27,7 @@
 		<resource-requirements>
 			<resource name="wood" amount="50"/>
 			<resource name="gold" amount="75"/>
-			<resource name="food" amount="1"/>
+			<resource name="grace" amount="1"/>
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/archer.bmp"/>

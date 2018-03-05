@@ -5,7 +5,7 @@
 		<resource name="gold" amount="500"/>
 		<resource name="wood" amount="500"/>
 		<resource name="stone" amount="500"/>
-		<resource name="food" amount="15"/>
+		<resource name="grace" amount="15"/>
 	</starting-resources>
 	<starting-units>
 		<unit name="colosseum" amount="1"/>
