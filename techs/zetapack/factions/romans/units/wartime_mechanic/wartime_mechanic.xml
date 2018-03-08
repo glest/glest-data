@@ -26,7 +26,7 @@
 		<resource-requirements>
 			<resource name="wood" amount="50"/>
 			<resource name="gold" amount="100"/>
-			<resource name="food" amount="1"/>
+			<resource name="grace" amount="1"/>
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/guard.jpg"/>
@@ -73,7 +73,6 @@
 					<unit-type name="battering_ram" />
 					<unit-type name="catapult" />
 					<unit-type name="cavalry" />
-					<unit-type name="cow" />
 					<unit-type name="fire_archer" />
 					<unit-type name="general" />
 					<unit-type name="gladiator" />
@@ -111,7 +110,6 @@
 					<unit-type name="battering_ram" />
 					<unit-type name="catapult" />
 					<unit-type name="cavalry" />
-					<unit-type name="cow" />
 					<unit-type name="fire_archer" />
 					<unit-type name="general" />
 					<unit-type name="gladiator" />
@@ -224,7 +222,6 @@
 					<unit-type name="battering_ram" />
 					<unit-type name="catapult" />
 					<unit-type name="cavalry" />
-					<unit-type name="cow" />
 					<unit-type name="fire_archer" />
 					<unit-type name="general" />
 					<unit-type name="gladiator" />

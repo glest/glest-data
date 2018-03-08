@@ -28,7 +28,7 @@
 		<resource-requirements>
 			<resource name="wood" amount="75"/>
 			<resource name="gold" amount="200"/>
-			<resource name="food" amount="2"/>
+			<resource name="grace" amount="2"/>
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/axe_man.bmp"/>
