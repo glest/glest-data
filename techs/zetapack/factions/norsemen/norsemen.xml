@@ -12,11 +12,20 @@
 		<unit name="swordman" amount="1"/>
 		<unit name="archer" amount="1"/>
 		<unit name="spearman" amount="2"/>
-		<unit name="cow" amount="1"/>
 		<unit name="axe_thrower" amount="1"/>
 		<unit name="thrall" amount="3"/>
 		<unit name="thor" amount="0"/>
 	</starting-units>
 	<music value="true" path="music/manolo_camp-medieval.ogg"/>
 	<flat-particle-positions value="true"/>
+	<ai-behavior>
+		<worker-units/>
+		<warrior-units/>
+		<resource-producer-units>
+			<unit name="farm" minimum="3"/>
+		</resource-producer-units>
+		<building-units/>
+		<upgrades/>
+		<static-values/>
+	</ai-behavior>
 </faction>
