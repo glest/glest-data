@@ -13,6 +13,7 @@
 		<unit name="axe_thrower" amount="1"/>
 		<unit name="stickfighter" amount="2"/>
 		<unit name="archer" amount="1"/>
+		<unit name="totem" amount="1"/>
 	</starting-units>
 	<music value="true" path="music/music_indian.ogg"/>
 	<flat-particle-positions value="true"/>

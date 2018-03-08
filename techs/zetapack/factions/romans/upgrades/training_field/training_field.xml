@@ -9,6 +9,7 @@
 	<resource-requirements>
 		<resource name="gold" amount="150"/>
 		<resource name="wood" amount="150"/>
+		<resource name="grace" amount="2"/>
 	</resource-requirements>
 	<effects>
 		<unit name="training_camp"/>

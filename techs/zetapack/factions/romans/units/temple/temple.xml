@@ -32,10 +32,9 @@
 			<resource name="gold" amount="50" />
 			<resource name="stone" amount="200" />
 			<resource name="wood" amount="50" />
-			<resource name="grace" amount="-48" />
+			<resource name="grace" amount="-28" />
 		</resource-requirements>
 		<resources-stored>
-			<!--resource name= "gold" amount="400"/-->
 			<resource name= "grace" amount="100"/>
 		</resources-stored>
 		<image path="images/castle.bmp" />
