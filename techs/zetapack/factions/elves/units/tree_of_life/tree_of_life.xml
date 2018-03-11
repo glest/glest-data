@@ -4,12 +4,12 @@
 	<parameters>
 		<size value="4"/>
 		<height value="5"/>
-		<max-hp value="12000" regeneration="25"/>
+		<max-hp value="12000" regeneration="0"/>
 		<max-ep value="0"/>
-		<armor value="100"/>
+		<armor value="0"/>
 		<armor-type value="wood"/>
 		<sight value="15"/>
-		<time value="40"/>
+		<time value="300"/>
 		<multi-selection value="true"/>
 		<uniform-selection value="true"/>
 		<cellmap value="true">
