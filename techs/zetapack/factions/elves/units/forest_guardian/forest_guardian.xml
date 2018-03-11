@@ -7,10 +7,10 @@
 		<max-hp value="4000" regeneration="0"/>
 		<max-ep value="0" regeneration="0"/>
 		<max-unit-count value="0"/>
-		<armor value="100" />
+		<armor value="10" />
 		<armor-type value="wood"/>
 		<sight value="18" />
-		<time value="65" />
+		<time value="90" />
 		<multi-selection value="true"/>
 		<uniform-selection value="true"/>
 		<cellmap value="false"/>
@@ -27,7 +27,8 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="gold" amount="250"/>
+			<resource name="gold" amount="200"/>
+			<resource name="wood" amount="350"/>
 			<resource name="grace" amount="7"/>
             <resource name="wood" amount="400"/>
 		</resource-requirements>
