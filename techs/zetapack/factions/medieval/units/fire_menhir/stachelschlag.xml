@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<projectile-particle-system>
+    	<texture value="true" path="images/stachelstern.png" luminance="true"/>
+    	<model value="false"/>
+	<primitive value="quad"/>
+	<offset x="0" y="2.5" z="0"/>
+	<color red="0.7" green="0.5" blue="0.1" alpha="0.8" />
+	<color-no-energy red="0.8" green="0.5" blue="0.1" alpha="0.0" />
+    	<size value="1.5" />
+    	<size-no-energy value="0.1" />
+    	<speed value="1" />
+	<gravity value="0"/>
+    	<emission-rate value="20" />
+    	<energy-max value="28" />
+    	<energy-var value="4" />
+	
+	<trajectory type="spiral">
+		<speed value="30.0"/>
+		<scale value="0.3"/>
+		<frequency value="10"/>
+	</trajectory>
+</projectile-particle-system>

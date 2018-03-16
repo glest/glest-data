@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<projectile-particle-system>
+    	<texture value="true" path="images/particle.bmp" luminance="true"/>
+    	<model value="true" path="../castle/models/cannonball.g3d"/>
+	<primitive value="quad"/>
+	<offset x="0" y="-2" z="0"/>
+	<color red="0.1" green="0.1" blue="0.1" alpha="0.1" />
+	<color-no-energy red="0.1" green="0.1" blue="0.1" alpha="0.12" />
+    	<size value="0.5" />
+    	<size-no-energy value="0.8" />
+    	<speed value="8.0" />
+	<gravity value="0.1"/>
+    	<emission-rate value="20" />
+    	<energy-max value="10" />
+    	<energy-var value="2" />
+	
+	<trajectory type="parabolic">
+		<speed value="30"/>
+		<scale value="2"/>
+	</trajectory>
+</projectile-particle-system>

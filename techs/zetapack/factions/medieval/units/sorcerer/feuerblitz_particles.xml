@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<unit-particle-system>
+    	<texture value="true" path="images/super_fire_particle.bmp" luminance="false"/>
+	<primitive value="quad"/>
+	<offset x="0" y="1" z="2"/>
+	<direction x="0" y="0" z="1"/>
+	<color red="0.8" green="0.1" blue="0.1" alpha="0.8" />
+	<color-no-energy red="0.8" green="0.1" blue="0.1" alpha="0" />
+    	<radius value="0.9" />
+    	<size value="3" />
+    	<size-no-energy value="0.4" />
+    	<speed value="8.0" />
+	<gravity value="0"/>
+    	<emission-rate value="7" />
+    	<energy-max value="14" />
+    	<energy-var value="4" />
+	<relative value="true" />
+	<relativeDirection value="true" />
+    	<fixed value="false" />
+    	<teamcolorNoEnergy value="false" />
+    	<teamcolorEnergy value="false" />
+
+	<!--trajectory type="spiral">
+		<speed value="14.0"/>
+		<scale value="1"/>
+		<frequency value="0.5"/>
+	</trajectory-->
+</unit-particle-system>

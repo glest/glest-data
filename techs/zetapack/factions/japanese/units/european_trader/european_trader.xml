@@ -1,0 +1,130 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<parameters>
+		<size value="3" />
+		<height value="3" />
+		<max-hp value="6000" regeneration="0"/>
+		<max-ep value="0" />
+		<armor value="0" />
+		<armor-type value="wood"/>
+		<sight value="6" />
+		<time value="120" />
+		<multi-selection value="false" />
+		<cellmap value="false" />
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false" />
+		<unit-requirements />
+		<upgrade-requirements>
+			<upgrade name="nanban_trade"/>
+		</upgrade-requirements>
+		<resource-requirements>
+			<resource name="gold" amount="200" />
+			<resource name="wood" amount="150" />
+			<resource name="stone" amount="50" />
+		</resource-requirements>
+		<resources-stored />
+		<image path="images/unit_europeantrader.bmp" />
+		<image-cancel path="images/japanese_cancel.bmp"/>
+		<meeting-point value="true" image-path="images/japanese_meetingpoint.bmp"/>
+		<selection-sounds enabled="true">
+			<sound path="../castle/sounds/jp_click.wav" />
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="../castle/sounds/jp_command1.wav" />
+		</command-sounds>
+	</parameters>
+	
+	<skills>
+		<skill>
+			<type value="stop"/>	
+			<name value="stop_skill"/>
+			<ep-cost value="0" />
+			<speed value="50" />
+			<anim-speed value="100" />
+			<animation path="../castle/models/europeantrader.g3d" />
+			<sound enabled="false" />
+		</skill>
+		
+		<skill>
+			<type value="be_built" />	
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+                	<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="../castle/construction_models/barracks_construction.g3d" />
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="produce"/>
+			<name value="produce_skill"/>	
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="../castle/models/europeantrader.g3d" />
+			<sound enabled="false" />
+		</skill>
+
+		<skill>
+			<type value="upgrade" />
+			<name value="upgrade_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="150" />
+			<animation path="../castle/models/europeantrader.g3d" />
+			<particles value="true">
+				<particle-file path="../daimyo_yashiki/sakura_particles_daimyo.xml"/>
+			</particles>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="die" />	
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="40" />
+			<animation path="../castle/models/europeantrader_destruction.g3d" />
+			<particles value="true">
+				<particle-file path="../farmhouse/smoke_particles.xml"/>
+				<particle-file path="../farmhouse/glow_particles.xml"/>
+				<particle-file path="../farmhouse/farm_dust_particles.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="../barrack/sounds/tech_building_fall3.wav"/>
+			</sound>	
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+	
+	<commands>
+	
+		<command>
+			<type value="produce"/>
+			<name value="purchase_cannon" />
+			<image path="../cannon/images/unit_cannon.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="cannon"/>
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="purchase_medical_text" />
+			<image path="../../upgrades/anatomische_tabellen/images/upgrade_anatomische_tabellen.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="anatomische_tabellen"/>
+		</command>
+		
+	</commands>
+</unit>

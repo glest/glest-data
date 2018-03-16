@@ -1,0 +1,551 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="1"/>
+		<height value="2"/>
+		<max-hp value="700" regeneration="0"/>
+		<max-ep value="500" regeneration="5"/>
+		<armor value="20"/>	
+		<armor-type value="leather"/>
+		<sight value="12"/>
+		<time value="120"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels>
+			<level name="veteran" kills="5"/>				
+			<level name="expert" kills="10"/>
+			<level name="master" kills="20"/>
+			<level name="legendary" kills="40"/>
+		</levels>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements>
+			<unit name="stone_sanctuary"/>
+		</unit-requirements>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="gold" amount="200"/>
+			<resource name="wood" amount="90"/>
+			<resource name="food" amount="1"/>
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/hexer.png"/>
+		<image-cancel path="../worker/images/abbrechen.png"/>
+		<meeting-point value="true" image-path="../town_center/images/zielpunkt.png"/>
+		<selection-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/technician_select1.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_select2.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_select3.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_select4.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_select5.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_select6.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_select7.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_select8.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/technician_ack1.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_ack2.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_ack3.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_ack4.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_ack5.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_ack6.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_ack7.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_ack8.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_ack9.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_ack10.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_ack11.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_ack12.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_ack13.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_ack14.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_ack15.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_ack16.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_ack17.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_ack18.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/technician_ack19.wav"/>
+		</command-sounds>
+	</parameters>
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>
+			<ep-cost value="0"/>
+			<speed value="200"/>
+			<anim-speed value="35"/>
+			<animation path="models/priest_idle1.g3d"/>
+			<animation path="models/priest_idle2.g3d"/>
+			<animation path="models/priest_idle3.g3d"/>
+			<sound enabled="false"/>
+			<attack-boost name="angst_vor_dem_hexer">
+				<allow-multiple-boosts value="false" />
+				<radius value="10"/>
+				<target value="faction">
+					<unit-type name="worker" />					
+				</target>
+				<max-hp value="0" />
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-strenght value="0"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<move-speed value="75" />
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="../sentry_tower/flinke_fuesse.xml"/>
+				</particles>
+			</attack-boost>  
+		</skill>   
+
+	<!--	<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>
+			<ep-cost value="0"/>
+			<speed value="200"/>
+			<anim-speed value="35"/>
+			<animation path="models/priest_idle1.g3d"/>
+			<animation path="models/priest_idle2.g3d"/>
+			<animation path="models/priest_idle3.g3d"/>
+			<sound enabled="false"/>
+			<attack-boost name="des_hexers_zombie">
+				<allow-multiple-boosts value="false" />
+				<radius value="10"/>
+				<target value="faction">
+					<unit-type name="untoter" />					
+				</target>
+				<max-hp value="0" regeneration="3" value-percent-multipler="false"/>
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-strenght value="20"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<move-speed value="0" />
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="../hexer/untoten_erschaffen_particles.xml"/>
+				</particles>
+			</attack-boost>
+		</skill>  -->
+
+		<skill>
+			<type value="stop"/>
+			<name value="show_range_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="200"/>
+			<anim-speed value="35"/>
+			<animation path="models/priest_idle1.g3d"/>
+			<animation path="models/priest_idle2.g3d"/>
+			<animation path="models/priest_idle3.g3d"/>
+			<particles value="true">
+				<particle-file path="particle_sight.xml">
+					<shape value="conical">
+						<angle value="90"/>
+					</shape>
+					<radius value="11"/>
+					<min-radius value="10.9"/>
+					<direction x="0" y="0.1" z="0"/>
+					<offset x="0" y="0" z="0"/>
+				</particle-file>
+				<particle-file path="particle_range.xml">
+					<shape value="conical">
+						<angle value="90"/>
+					</shape>
+					<radius value="10"/>
+					<min-radius value="9.9"/>
+					<direction x="0" y="0.1" z="0"/>
+					<offset x="0" y="0" z="0"/>
+				</particle-file>
+				<particle-file path="particle_range.xml">
+					<shape value="conical">
+						<angle value="90"/>
+					</shape>
+					<radius value="8"/>
+					<min-radius value="7.9"/>
+					<direction x="0" y="0.1" z="0"/>
+					<offset x="0" y="0" z="0"/>
+				</particle-file>
+			</particles>
+			<sound enabled="false"/>
+			<attack-boost name="angst_vor_dem_hexer">
+				<allow-multiple-boosts value="false" />
+				<radius value="10"/>
+				<target value="faction">
+					<unit-type name="worker" />					
+				</target>
+				<max-hp value="0" />
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-strenght value="0"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<move-speed value="75" />
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="../sentry_tower/flinke_fuesse.xml"/>
+				</particles>
+			</attack-boost>  
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>
+			<ep-cost value="0"/>
+			<speed value="250"/>
+			<anim-speed value="160"/>
+			<animation path="models/priest_walk.g3d"/>
+			<sound enabled="false"/>
+			<attack-boost name="angst_vor_dem_hexer">
+				<allow-multiple-boosts value="false" />
+				<radius value="10"/>
+				<target value="faction">
+					<unit-type name="worker" />					
+				</target>
+				<max-hp value="0" />
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-strenght value="0"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<move-speed value="75" />
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="../sentry_tower/flinke_fuesse.xml"/>
+				</particles>
+			</attack-boost>
+		</skill>
+
+		<skill>
+			<type value="produce"/>
+			<name value="hexer_magie"/>		
+			<ep-cost value="0"/>
+			<speed value="150"/>
+			<anim-speed value="100"/>
+			<animation path="models/priest_heal.g3d"/>
+			<sound enabled="false"/>
+			<particles value="true">
+				<particle-file path="untoten_erschaffen_particles.xml"/>
+			</particles>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="knueppel_angriff"/>		
+			<ep-cost value="0"/>
+			<speed value="111"/>
+			<anim-speed value="111"/>
+			<animation path="models/priest_attack2.g3d"/>
+			<animation path="models/priest_attack3.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="$COMMONDATAPATH/sounds/stickfighter_attack1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/stickfighter_attack2.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/stickfighter_attack3.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/stickfighter_attack4.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/stickfighter_attack5.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/stickfighter_attack6.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/stickfighter_attack7.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/stickfighter_attack8.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/stickfighter_attack9.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/stickfighter_attack10.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/stickfighter_attack11.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/stickfighter_attack12.wav"/>
+			</sound>
+			<attack-strenght value="50"/>
+			<attack-var value="25"/>
+			<attack-range value="1"/>
+			<attack-type value="impact"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<attack-start-time value="0.5"/>
+			<projectile value="false"/>
+			<splash value="false"/>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="feuerblitz_angriff"/>		
+			<ep-cost value="25"/>
+			<speed value="125"/>
+			<anim-speed value="70"/>
+			<animation path="models/priest_attack2.g3d"/>
+			<particles value="true" start-time="0.05" end-time="0.1">
+				<particle-file path="feuerblitz_particles.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0.2">
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack17.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack18.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack19.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack20.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack21.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack22.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack23.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack24.wav"/>
+			</sound>
+			<attack-strenght value="100"/>
+			<attack-var value="40"/>
+			<attack-range value="8"/>
+			<attack-type value="magic"/>				
+			<attack-fields>
+				<field value="land"/>
+				<field value="air"/>
+			</attack-fields>
+			<attack-start-time value="0.3"/>
+			<projectile value="true">
+				<particle value="true" path="feuerblitz_particle_proj.xml"/>
+				<sound enabled="true">
+					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit1.wav"/>
+					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit2.wav"/>
+					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit3.wav"/>
+					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit4.wav"/>	
+				</sound>
+			</projectile>
+			<splash value="true">
+				<radius value="1"/>
+				<damage-all value="true"/>
+				<particle value="true" path="fire_splash.xml"/>
+			</splash>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="feuerschlag_angriff"/>		
+			<ep-cost value="150"/>
+			<speed value="60"/>
+			<anim-speed value="40"/>
+			<animation path="models/priest_attack3.g3d"/>
+			<particles value="true" start-time="0.05" end-time="0.1">
+				<particle-file path="feuerschlag_particles.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0.2">
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack17.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack18.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack19.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack20.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack21.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack22.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack23.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack24.wav"/>
+			</sound>
+			<attack-strenght value="300"/>
+			<attack-var value="100"/>
+			<attack-range value="10"/>
+			<attack-type value="magic"/>				
+			<attack-fields>
+				<field value="land"/>
+				<field value="air"/>
+			</attack-fields>
+			<attack-start-time value="0.1"/>
+			<projectile value="true">
+				<particle value="true" path="feuerschlag_particle_proj.xml"/>
+				<sound enabled="true">
+					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit1.wav"/>
+					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit2.wav"/>
+					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit3.wav"/>
+					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit4.wav"/>	
+				</sound>
+			</projectile>
+			<splash value="true">
+				<radius value="1"/>
+				<damage-all value="true"/>
+				<particle value="true" path="fire_splash.xml"/>
+			</splash>
+		</skill>
+
+		<skill>
+			<type value="repair"/>
+			<name value="heilen"/>		
+			<ep-cost value="0"/>
+			<speed value="210"/>
+			<anim-speed value="100"/>
+			<animation path="models/priest_heal.g3d"/>
+			<sound enabled="false"/>
+			<particles value="true">
+				<particle-file path="heal_particles.xml"/>
+			</particles>
+		</skill>
+		
+		<skill>
+			<type value="upgrade"/>	
+			<name value="upgrade_skill"/>	
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="40" />
+			<animation path="models/priest_heal.g3d"/>
+			<sound enabled="false" />
+			<particles value="true">
+				<particle-file path="sternen_particles.xml"/>
+			</particles>
+		</skill>
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>	
+			<ep-cost value="0"/>
+			<speed value="120"/>
+			<anim-speed value="120"/>
+			<animation path="models/priest_die.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_die1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_die2.wav"/>
+			</sound>
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+
+	<!-- *** commands *** -->
+	
+	<commands>
+		
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="../worker/images/stop.png"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="../worker/images/bewegen.png"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+
+			<type value="stop"/>
+			<name value="show_range"/>
+			<image path="../sentry_tower/images/reichweite.png"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="show_range_skill"/>
+		</command>
+
+		<command>
+			<type value="repair"/>
+			<name value="repair"/>
+			<image path="images/heilen.png"/>
+			<unit-requirements/>
+			<upgrade-requirements>
+				<upgrade name="medicine" />
+			</upgrade-requirements>				
+			<move-skill value="move_skill"/>
+			<repair-skill value="heilen"/>
+			<repaired-units>
+				<unit name="worker"/>
+				<unit name="swordsman"/>
+				<unit name="armored_knight"/>
+				<unit name="lancer"/>
+				<unit name="axeman"/>
+				<unit name="armored_axeman"/>
+				<unit name="hunter"/>
+				<unit name="banner_bearer"/>
+				<unit name="sorcerer"/>
+				<unit name="hunting_wolf"/>
+				<unit name="stone_golem"/>
+				<unit name="cow"/>
+			</repaired-units>
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="manifest_time_jump"/>
+			<image path="../../upgrades/magical_time_jump/images/speedup.png" />
+			<unit-requirements>
+				<unit name="stone_sanctuary" />
+			</unit-requirements>
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="magical_time_jump"/>
+		</command>
+
+		<command>
+			<type value="attack_stopped"/>
+			<name value="fire_lightning_hold_position"/>
+			<image path="images/halte_position_feuerspruch.png"/>
+			<unit-requirements/>							
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="feuerblitz_angriff"/>
+		</command>
+
+		<command>
+			<type value="attack_stopped"/>
+			<name value="fire_impact_hold_position"/>
+			<image path="images/halte_position_feuerschlag.png"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="feuerschlag_angriff"/>
+		</command>
+
+		<command>
+			<type value="attack_stopped"/>
+			<name value="staff_beat_hold_position"/>
+			<image path="../hunter/images/position_halten.png"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="knueppel_angriff"/>
+		</command>
+
+		<command>
+			<type value= "upgrade"/>
+			<name value="dragon_lure"/>
+			<image path="../../upgrades/dragon_lure/images/drachenruf.png"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="dragon_lure"/>			
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="fire_lightning"/>
+			<image path="images/hexerangriff_feuerspruch.png"/>
+			<unit-requirements/>			
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="feuerblitz_angriff"/>
+		</command>		
+
+		<command>
+			<type value="attack"/>
+			<name value="fire_impact"/>
+			<image path="images/hexerangriff_feuerschlag.png"/>
+			<unit-requirements/>		
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="feuerschlag_angriff"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="beat"/>
+			<image path="images/hexerangriff.png"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="knueppel_angriff"/>
+		</command>
+
+		<command>
+			<type value= "produce"/>
+			<name value="resurrect_zombie"/>
+			<image path="../zombie/images/zombie.png"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<produce-skill value="hexer_magie"/>
+			<produced-unit name="zombie"/>			
+		</command>
+
+	</commands>
+</unit>

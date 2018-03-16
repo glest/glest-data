@@ -1,0 +1,140 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<parameters>
+		<size value="2" />
+		<height value="2" />
+		<max-hp value="2000" regeneration="0"/>
+		<max-ep value="0" />
+		<armor value="0" />
+		<armor-type value="wood"/>
+		<sight value="6" />
+		<time value="100" />
+		<multi-selection value="false" />
+		<cellmap value="false">				
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="true" red="0.8" green="0.8" blue="0.5" />
+		<rotationAllowed value="true" />
+		<unit-requirements>
+			<unit name="town_center" />
+			<unit name="farm" />
+		</unit-requirements>
+		<upgrade-requirements>
+			
+		</upgrade-requirements>
+		<resource-requirements>
+			<resource name="gold" amount="100" />
+			<resource name="stone" amount="50" />
+			<resource name="wood" amount="150" />
+		</resource-requirements>
+		<resources-stored />
+		<image path="images/hundehuette.png" />
+		<image-cancel path="../worker/images/abbrechen.png" />
+		<meeting-point value="true" image-path="../town_center/images/zielpunkt.png" />
+		<selection-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/tech_click.wav" />
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/tech_click.wav" />
+		</command-sounds>
+	</parameters>
+	
+	<skills>
+		<skill>
+			<type value="stop" />	
+			<name value="stop_skill" />
+			<ep-cost value="0" />
+			<speed value="1000" />
+			<anim-speed value="100" />
+			<animation path="models/hundehuette.g3d" />
+			<sound enabled="false" />
+		</skill>
+
+		<skill>
+			<type value="produce" />
+			<name value="produce_skill" />	
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/hundehuette.g3d" />
+			<particles value="true">
+				<particle-file path="knochen_particles.xml" />	
+			</particles>
+			<sound enabled="false" />
+		</skill>
+
+		<skill>
+			<type value="upgrade" />	
+			<name value="upgrade_skill" />	
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/hundehuette.g3d" />
+			<particles value="true">
+				<particle-file path="upgrade_particles_hundehuette.xml" />	
+			</particles>			
+			<sound enabled="false" />
+		</skill>
+
+		<skill>
+			<type value="be_built" />	
+			<name value="be_built_skill" />		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/hundehuette_aufbau.g3d" />
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="die" />	
+			<name value="die_skill" />		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="../town_center/destruction_models/barracks_destruction.g3d" />
+			<particles value="true">
+				<particle-file path="smoke_particles.xml" />
+				<particle-file path="glow_particles.xml" />
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="$COMMONDATAPATH/sounds/tech_building_fall4.wav" />
+			</sound>			
+			<fade value="false" />
+		</skill>
+
+	</skills>
+	
+	<commands>
+		
+		<command>
+			<type value="produce" />
+			<name value="jagdhund_erstellen" />
+			<image path="../hunting_wolf/images/jagdhund.png" />
+			<unit-requirements>
+			</unit-requirements>
+			<upgrade-requirements />
+			<produce-skill value="produce_skill" />
+			<produced-unit name="hunting_wolf" />
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="wolf_training"/>
+			<image path="../../upgrades/wolf_training/images/hundetraining.png" />
+			<unit-requirements>
+				<unit name="hunting_wolf"/>
+			</unit-requirements>
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="wolf_training"/>
+		</command>						
+		
+	</commands>
+</unit>

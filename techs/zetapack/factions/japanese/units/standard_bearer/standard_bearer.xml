@@ -1,0 +1,365 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="1"/>
+		<height value="2"/>
+		<max-hp value="800" regeneration="0"/>
+		<max-ep value="0"/>
+		<armor value="30"/>	
+		<armor-type value="metal"/>				
+		<sight value="6"/>
+		<time value="65"/>	
+		<multi-selection value="true"/>	
+		<max-unit-count value="4"/>
+		<cellmap value="false"/>
+		<levels>
+			<level name="tough" kills="3"/>
+		</levels>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements>
+			<unit name="daimyo_yashiki"/>
+		</unit-requirements>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="wood" amount="75"/>
+			<resource name="gold" amount="125"/>
+			<resource name="food" amount="1"/>						
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/unit_standard_bearer.bmp"/>
+		<image-cancel path="images/japanese_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="../yumi_ashigaru/sounds/hage_tono.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_sonae.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_aao01.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="../yumi_ashigaru/sounds/drum101.wav"/>
+			<sound path="../yumi_ashigaru/sounds/drum201.wav"/>>
+			<sound path="../yumi_ashigaru/sounds/file2.wav"/>
+			<sound path="../yumi_ashigaru/sounds/file5.wav"/>
+			<sound path="../yumi_ashigaru/sounds/ikuzo00_16.wav"/>
+			<sound path="../yumi_ashigaru/sounds/drum301.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_semeyose2.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_kakare.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_kakare2.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_doubletime.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_doubletime2.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_doubletime3.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_ose.wav"/>
+		</command-sounds>
+	</parameters>
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="30"/>
+			<animation path="../castle/models/standardbearer_idle1.g3d"/>
+			<animation path="../castle/models/standardbearer_idle2.g3d"/>
+			<sound enabled="false"/>
+			<attack-boost>
+				<allow-multiple-boosts value="false" />
+				<radius value="15"/>
+				<target value="faction">
+					<unit-type name="nagae_ashigaru" />
+					<unit-type name="samurai" />
+					<unit-type name="swordsman" />
+					<unit-type name="taketaba_archer" />
+					<unit-type name="tsubute" />
+					<unit-type name="yumi_ashigaru" />
+					<unit-type name="teppo_ashigaru" />
+					<unit-type name="taketaba_gunner" />
+				</target>
+				<max-hp value="0" />
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-strenght value="20"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<move-speed value="0" />
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="flag_particles.xml"/>
+				</particles>
+			</attack-boost>
+		</skill>
+
+		<skill>
+			<type value="stop"/>
+			<name value="hold_stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="40"/>
+			<animation path="../castle/models/standardbearer_hold.g3d"/>
+			<sound enabled="false"/>
+			<attack-boost>
+				<allow-multiple-boosts value="false" />
+				<radius value="15"/>
+				<target value="faction">
+					<unit-type name="nagae_ashigaru" />
+					<unit-type name="samurai" />
+					<unit-type name="swordsman" />
+					<unit-type name="taketaba_archer" />
+					<unit-type name="tsubute" />
+					<unit-type name="yumi_ashigaru" />
+					<unit-type name="teppo_ashigaru" />
+					<unit-type name="taketaba_gunner" />
+				</target>
+				<max-hp value="0" />
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-strenght value="20"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<move-speed value="0" />
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="flag_particles.xml"/>
+				</particles>
+			</attack-boost>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="220"/>
+			<anim-speed value="100"/>
+			<animation path="../castle/models/standardbearer_move.g3d"/>
+			<sound enabled="false" />
+			<attack-boost>
+				<allow-multiple-boosts value="false" />
+				<radius value="15"/>
+				<target value="faction">
+					<unit-type name="nagae_ashigaru" />
+					<unit-type name="samurai" />
+					<unit-type name="swordsman" />
+					<unit-type name="taketaba_archer" />
+					<unit-type name="tsubute" />
+					<unit-type name="yumi_ashigaru" />
+					<unit-type name="teppo_ashigaru" />
+					<unit-type name="taketaba_gunner" />
+				</target>
+				<max-hp value="0" />
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-strenght value="20"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<move-speed value="0" />
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="flag_particles.xml"/>
+				</particles>
+			</attack-boost>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="charge_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="220"/>
+			<anim-speed value="120"/>
+			<animation path="../castle/models/standardbearer_move.g3d"/>
+			<sound enabled="false" />
+			<attack-boost>
+				<allow-multiple-boosts value="false" />
+				<radius value="15"/>
+				<target value="faction">
+					<unit-type name="nagae_ashigaru" />
+					<unit-type name="samurai" />
+					<unit-type name="swordsman" />
+					<unit-type name="taketaba_archer" />
+					<unit-type name="tsubute" />
+					<unit-type name="yumi_ashigaru" />
+					<unit-type name="teppo_ashigaru" />
+					<unit-type name="taketaba_gunner" />
+				</target>
+				<max-hp value="0" />
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-strenght value="20"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<move-speed value="0" />
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="flag_particles.xml"/>
+				</particles>
+			</attack-boost>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="stay_behind"/>		
+			<ep-cost value="0"/>
+			<speed value="40"/>
+			<anim-speed value="40"/>
+			<animation path="../castle/models/standardbearer_hold.g3d"/>
+			<sound enabled="false"/>
+			<attack-strenght value="0"/>
+			<attack-var value="0"/>
+			<attack-range value="8"/>
+			<attack-type value="slashing"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<attack-start-time value="0"/>
+			<projectile value="false"/>
+			<splash value="false"/>
+			<attack-boost>
+				<allow-multiple-boosts value="false" />
+				<radius value="15"/>
+				<target value="faction">
+					<unit-type name="nagae_ashigaru" />
+					<unit-type name="samurai" />
+					<unit-type name="swordsman" />
+					<unit-type name="taketaba_archer" />
+					<unit-type name="tsubute" />
+					<unit-type name="yumi_ashigaru" />
+					<unit-type name="teppo_ashigaru" />
+					<unit-type name="taketaba_gunner" />
+				</target>
+				<max-hp value="0" />
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-strenght value="20"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<move-speed value="0" />
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="flag_particles.xml"/>
+				</particles>
+			</attack-boost>
+		</skill>
+		
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="100"/>
+			<anim-speed value="100"/>
+			<animation path="../castle/models/standardbearer_attack1.g3d"/>
+			<animation path="../castle/models/standardbearer_attack2.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="../swordsman/sounds/sword/77611__joelaudio__sfx_attack_sword_00101.wav"/>
+				<sound-file path="../swordsman/sounds/sword/sen_ka_katana_kiru0201.wav"/>
+				<sound-file path="../swordsman/sounds/sword/sen_ka_katana_utiai0201.wav"/>
+				<sound-file path="../swordsman/sounds/sword/sen_ka_kiru0301.wav"/>
+			</sound> 
+			<attack-strenght value="90"/>
+			<attack-var value="40"/>
+			<attack-range value="1"/>
+			<attack-type value="slashing"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<attack-start-time value="0"/>
+			<projectile value="false"/>
+			<splash value="false"/>
+			<attack-boost>
+				<allow-multiple-boosts value="false" />
+				<radius value="15"/>
+				<target value="faction">
+					<unit-type name="nagae_ashigaru" />
+					<unit-type name="samurai" />
+					<unit-type name="swordsman" />
+					<unit-type name="taketaba_archer" />
+					<unit-type name="tsubute" />
+					<unit-type name="yumi_ashigaru" />
+					<unit-type name="teppo_ashigaru" />
+					<unit-type name="taketaba_gunner" />
+				</target>
+				<max-hp value="0" />
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-strenght value="20"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<move-speed value="0" />
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="flag_particles.xml"/>
+				</particles>
+			</attack-boost>
+		</skill>
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="60"/>
+			<anim-speed value="70"/>
+			<animation-random-cycle-maxcount value="1" />
+			<animation path="../castle/models/standardbearer_death1.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="../nagae_ashigaru/sounds/swordman_die1.wav"/>
+				<sound-file path="../nagae_ashigaru/sounds/swordman_die2.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+
+	</skills>
+	
+	<commands>
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="images/japanese_halt.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="images/japanese_move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+		
+		<command>
+			<type value="attack"/>
+			<name value="stay_behind"/>
+			<image path="images/japanese_inspire.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="charge_skill"/>
+			<attack-skill value="stay_behind"/>
+		</command>
+		
+		<command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="images/japanese_sword.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="charge_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+		
+		<command>
+			<type value="attack_stopped"/>
+			<name value="hold_position"/>
+			<image path="images/japanese_hold.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="hold_stop_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+	</commands>
+</unit>

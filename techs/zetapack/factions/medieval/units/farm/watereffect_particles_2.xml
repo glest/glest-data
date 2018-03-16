@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<unit-particle-system>
+   <texture value="true" path="../hunter/images/particle.bmp" luminance="true"/>
+   <mode value="black"/>
+   <primitive value="quad"/>
+   <offset x="-1.35" y="-0.7" z="1.17"/>
+   <direction x="0" y="1" z="0"/>
+   <color red="0.09" green="0.5" blue="0.78" alpha="0.3" />
+   <color-no-energy red="0.09" green="0.5" blue="0.78" alpha="0.2" />
+   <radius value="0.08" />
+   <size value="0.4" />
+   <size-no-energy value="0.2" />
+   <speed value="0.0" />
+   <gravity value="0.1"/>
+   <emission-rate value="5" />
+   <energy-max value="100" />
+   <energy-var value="0" />
+   <relative value="true" />
+   <fixed value="true" />
+   <teamcolorNoEnergy value="false" />
+   <teamcolorEnergy value="false" />
+</unit-particle-system>

@@ -1,0 +1,240 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<parameters>
+		<size value="3" />
+		<height value="2" />
+		<max-hp value="6000" regeneration="0"/>
+		<max-ep value="0" regeneration="0"/>
+		<armor value="10" />
+		<armor-type value="stone"/>
+		<sight value="6" />
+		<time value="150" />
+		<multi-selection value="false" />
+		<cellmap value="true">
+			<row value="011"/>
+			<row value="111"/>
+			<row value="110"/>						
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false" />
+		<rotationAllowed value="false" />
+		<unit-requirements>
+			<unit name="town_center" />
+			<unit name="metal_wreaker" />
+		</unit-requirements>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="gold" amount="200" />
+			<resource name="stone" amount="200" />
+		</resource-requirements>
+		<resources-stored />
+		<image path="images/steinheiligtum.png" />
+		<image-cancel path="../worker/images/abbrechen.png"/>
+		<meeting-point value="true" image-path="../town_center/images/zielpunkt.png" />
+		<selection-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/tech_click.wav" />
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/tech_click.wav" />
+		</command-sounds>
+	</parameters>
+	
+	<skills>
+		<skill>
+			<type value="stop"/>	
+			<name value="stop_skill"/>
+			<ep-cost value="0" />
+			<speed value="1000" />
+			<anim-speed value="100" />
+			<animation path="models/steinheiligtum.g3d" />
+			<sound enabled="false" />			
+			<attack-boost>
+				<allow-multiple-boosts value="true" />
+				<radius value="15"/>
+				<target value="faction">
+					<unit-type name="sorcerer" />					
+				</target>
+				<max-hp value="500"/>
+				<max-ep value="500"/>
+				<sight value="3"/>
+				<attack-strenght value="25"/>
+				<attack-range value="1"/>
+				<armor value="15"/>
+				<move-speed value="0" />
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="upgrade_particles.xml"/>
+				</particles>
+			</attack-boost>
+		</skill>
+
+		<skill>
+			<type value="upgrade"/>	
+			<name value="upgrade_skill"/>	
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/steinheiligtum.g3d" />
+			<sound enabled="false" />
+			<particles value="true">
+				<particle-file path="portal_kreis_innen.xml"/>
+				<particle-file path="portal_kreis_aussen.xml"/>	
+			</particles>
+		</skill>
+		
+		<skill>
+			<type value="produce"/>
+			<name value="produce_skill"/>	
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/steinheiligtum.g3d" />
+			<sound enabled="false" />
+			<particles value="true">
+				<particle-file path="portal_kreis_innen.xml"/>
+				<particle-file path="portal_kreis_aussen.xml"/>			
+			</particles>
+		</skill>
+
+		<skill>
+			<type value="stop" />
+			<name value="show_range_skill" />		
+			<ep-cost value="0" />
+			<speed value="200" />
+			<anim-speed value="200" />
+			<animation path="models/steinheiligtum.g3d" />
+			<particles value="true">
+				<particle-file path="particle_range.xml">
+					<shape value="conical">
+						<angle value="90" />
+					</shape>
+					<radius value="15" />
+					<min-radius value="14.9" />
+					<direction x="0" y="0.1" z="0" />
+					<offset x="0" y="0" z="0" />
+				</particle-file>
+			</particles>
+			<sound enabled="false" />
+			<attack-boost>
+				<allow-multiple-boosts value="true" />
+				<radius value="15"/>
+				<target value="faction">
+					<unit-type name="sorcerer" />					
+				</target>
+				<max-hp value="500"/>
+				<max-ep value="500"/>
+				<sight value="3"/>
+				<attack-strenght value="25"/>
+				<attack-range value="1"/>
+				<armor value="15"/>
+				<move-speed value="0" />
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="upgrade_particles.xml"/>
+				</particles>
+			</attack-boost>
+		</skill>
+		
+		<skill>
+			<type value="be_built" />	
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/steinheiligtum_aufbau_20.g3d" minHp="0" maxHp="1000" />
+			<animation path="models/steinheiligtum_aufbau_30.g3d" minHp="1001" maxHp="2100" />
+			<animation path="models/steinheiligtum_aufbau_40.g3d" minHp="2101" maxHp="3350" />
+			<animation path="models/steinheiligtum_aufbau_60.g3d" minHp="3351" maxHp="4700" />
+			<animation path="models/steinheiligtum_aufbau_80.g3d" minHp="4701" maxHp="6000" />
+			<sound enabled="false" />
+		</skill>		
+		
+		<skill>
+			<type value="die" />	
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="../town_center/destruction_models/barracks_destruction.g3d" />
+			<particles value="true">
+				<particle-file path="smoke_particles.xml"/>
+				<particle-file path="glow_particles.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="$COMMONDATAPATH/sounds/tech_building_fall4.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+	
+	<commands>
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="../worker/images/stop.png"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="stop" />
+			<name value="show_range" />
+			<image path="../sentry_tower/images/reichweite.png" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<stop-skill value="show_range_skill" />
+		</command>
+
+		<command>
+			<type value="produce" />
+			<name value="summon_sorcerer" />
+			<image path="../sorcerer/images/hexer.png" />
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<produce-skill value="produce_skill" />
+			<produced-unit name="sorcerer" />
+		</command>
+
+		<command>
+			<type value="upgrade" />
+			<name value="research_healing_potions" />
+			<image path="../../upgrades/healing_potions/images/heiltrank.png" />
+			<unit-requirements>
+				<unit name="stone_sanctuary"/>
+				<unit name="dragon_tower"/>
+				<unit name="sorcerer"/>
+			</unit-requirements>
+			<upgrade-requirements>
+				<upgrade name="medicine"/>
+				<upgrade name="poison"/>
+			</upgrade-requirements>
+			<upgrade-skill value="upgrade_skill" />
+			<produced-upgrade name="healing_potions" />			
+		</command>
+
+		<command>
+			<type value="upgrade" />
+			<name value="research_mana_potions" />
+			<image path="../../upgrades/mana_potions/images/manatrank.png" />
+			<unit-requirements>
+				<unit name="stone_sanctuary"/>
+				<unit name="dragon_tower"/>
+				<unit name="sorcerer"/>
+			</unit-requirements>
+			<upgrade-requirements>
+				<upgrade name="medicine"/>
+				<upgrade name="poison"/>
+			</upgrade-requirements>
+			<upgrade-skill value="upgrade_skill" />
+			<produced-upgrade name="mana_potions" />			
+		</command>
+	</commands>
+</unit>

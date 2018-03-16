@@ -1,0 +1,155 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="4" />
+		<height value="2" />
+		<max-hp value="3000" regeneration="0"/>
+		<max-ep value="0" />
+		<armor value="5" />
+		<armor-type value="wood"/>				
+		<sight value="5" />
+		<time value="50" />
+		<multi-selection value="false" />
+		<cellmap value="true">	
+			<row value="1111" /> 
+			<row value="1111" /> 
+			<row value="0011" />
+			<row value="1011" />
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false" />
+		<rotationAllowed value="true" />
+		<unit-requirements>
+		</unit-requirements>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="gold" amount="100"/>
+			<resource name="wood" amount="150"/>
+			<resource name="stone" amount="50"/>
+			<resource name="food" amount="-10"/>
+		</resource-requirements>
+		<resources-stored>
+			<resource name="food" amount="20" />
+		</resources-stored>
+		<image path="images/farm.png" />
+		<image-cancel path="../worker/images/abbrechen.png" />
+		<meeting-point value="true" image-path="../town_center/images/zielpunkt.png" />
+		<selection-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/tech_click.wav" />
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/tech_click.wav" />
+		</command-sounds>
+	</parameters>
+	
+	<!-- *** skills *** -->
+	<skills>
+
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill" />		
+			<ep-cost value="0" />
+			<speed value="1000" />
+			<anim-speed value="50" />
+			<animation path="models/farmhaus.g3d" />
+			<sound enabled="false" />
+			<particles value="true">
+				<particle-file path="watereffect_particles_2.xml" />
+			</particles>
+		</skill>
+
+		<skill>
+			<type value="produce" />
+			<name value="produce_skill" />		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="50" />
+			<animation path="models/farmhaus.g3d" />
+			<sound enabled="false" />
+			<particles value="true">
+				<particle-file path="watereffect_particles_2.xml" />
+				<particle-file path="bauernhof_produkt_particles.xml" />
+			</particles>
+		</skill>
+
+                <skill>
+			<type value="upgrade" />
+			<name value="upgrade_skill" />		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300"/>
+			<animation path="models/farmhaus.g3d" />
+			<particles value="true">
+				<particle-file path="../army_tent/upgrade_particles.xml" />
+				<particle-file path="watereffect_particles_2.xml" />
+			</particles>
+			<sound enabled="false" />
+		</skill>
+
+		<skill>
+			<type value="be_built" />
+			<name value="be_built_skill" />		
+			<ep-cost value="0" />
+			<speed value="120" />
+			<anim-speed value="50" />
+			<animation path="models/farmhaus_aufbau_10.g3d" minHp="0" maxHp="600"/>
+			<animation path="models/farmhaus_aufbau_20.g3d" minHp="601" maxHp="1200"/>
+			<animation path="models/farmhaus_aufbau_40.g3d" minHp="1201" maxHp="1700"/>
+			<animation path="models/farmhaus_aufbau_60.g3d" minHp="1701" maxHp="2300"/>
+			<animation path="models/farmhaus_aufbau_80.g3d" minHp="2301" maxHp="3000"/>
+			<sound enabled="false" />
+			<particles value="true">
+				<particle-file path="watereffect_particles_2.xml" />
+			</particles>
+		</skill>
+		
+		<skill>
+			<type value="die" />
+			<name value="die_skill" />		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="../town_center/destruction_models/farm_destruction.g3d" />
+			<particles value="true">
+				<particle-file path="smoke_particles.xml" />
+				<particle-file path="glow_particles.xml" />
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="$COMMONDATAPATH/sounds/tech_building_fall3.wav" />
+			</sound>			
+			<fade value="false" />
+		</skill>
+
+	</skills>
+	
+	<!-- *** commands *** -->
+	<commands>
+	
+		<command>
+			<type value="produce"/>
+			<name value="produce_cow" />
+			<image path="../cow/images/kuh.png" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill" />
+			<produced-unit name="cow" />
+		</command>
+
+		<command>
+			<type value="upgrade" />
+			<name value="produce_dog_food" />
+			<image path="../../upgrades/dog_food/images/futter.png" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill" />
+			<produced-upgrade name="dog_food" />
+		</command>
+	</commands>
+</unit>
