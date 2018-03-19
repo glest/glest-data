@@ -113,14 +113,5 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="slave"/>
 		</command>
-		<command>
-			<type value="produce"/>
-			<name value="produce_cow" />
-			<image path="../cow/images/cow.bmp" />
-			<unit-requirements />
-			<upgrade-requirements />
-			<produce-skill value="produce_skill"/>
-			<produced-unit name="cow"/>
-		</command>
 	</commands>
 </unit>
