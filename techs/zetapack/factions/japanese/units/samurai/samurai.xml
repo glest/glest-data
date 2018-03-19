@@ -1,0 +1,213 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="1"/>
+		<height value="2"/>
+		<max-hp value="1300"  regeneration="0"/>
+		<max-ep value="0"/>
+		<armor value="60"/>
+		<armor-type value="metal"/>
+		<sight value="12"/>
+		<time value="100"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels>
+			<level name="honorable" kills="7"/>
+		</levels>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements/>
+		<upgrade-requirements>
+			<upgrade name="bushido"/>
+		</upgrade-requirements>
+		<resource-requirements>
+			<resource name="wood" amount="125"/>
+			<resource name="gold" amount="200"/>
+			<resource name="food" amount="2"/>						
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/unit_samurai.bmp"/>
+		<image-cancel path="images/japanese_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="../yumi_ashigaru/sounds/hage_tono.wav"/>
+			<sound path="sounds/hage_samurai2.wav"/>
+			<sound path="sounds/hage_samurai3.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="../yumi_ashigaru/sounds/drum101.wav"/>
+			<sound path="../yumi_ashigaru/sounds/drum201.wav"/>
+			<sound path="../yumi_ashigaru/sounds/file2.wav"/>
+			<sound path="../yumi_ashigaru/sounds/file5.wav"/>
+			<sound path="../yumi_ashigaru/sounds/drum301.wav"/>
+			<sound path="sounds/hage_iza.wav"/>
+			<sound path="sounds/hage_izaya.wav"/>
+			<sound path="sounds/ikuzo00_16.wav"/>
+			<sound path="../shinobi/sounds/ha02_22.wav"/>
+		</command-sounds>
+	</parameters>
+
+	<skills>
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="25"/>
+			<animation path="../castle/models/samurai_idle.g3d"/>
+			<animation path="../castle/models/samuraib_idleb.g3d"/>
+			<animation path="../castle/models/samuraib_idlec.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="stop"/>
+			<name value="hold_stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="10"/>
+			<animation path="../castle/models/samuraib_hold.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="170"/>
+			<anim-speed value="90"/>
+			<animation path="../castle/models/samurai_move.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/armor_walk01.wav"/>
+				<sound-file path="sounds/armor_walk02.wav"/>
+				<sound-file path="sounds/armor_walk03.wav"/>
+				<sound-file path="sounds/armor_walk04.wav"/>
+				<sound-file path="sounds/armor_walk05.wav"/>
+				<sound-file path="sounds/armor_walk06.wav"/>
+				<sound-file path="sounds/armor_walk07.wav"/>
+				<sound-file path="sounds/armor_walk08.wav"/>
+			</sound> 
+
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="100"/>
+			<anim-speed value="100"/>
+			<animation path="../castle/models/samurai_attackc.g3d"/>
+			<animation path="../castle/models/samurai_attackb.g3d"/>
+			<animation path="../castle/models/samurai_attackd.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/guard_attack1.wav"/>
+				<sound-file path="sounds/guard_attack2.wav"/>
+				<sound-file path="sounds/guard_attack3.wav"/>
+				<sound-file path="sounds/guard_attack4.wav"/>
+				<sound-file path="sounds/guard_attack5.wav"/>
+				<sound-file path="sounds/guard_attack6.wav"/>
+				<sound-file path="sounds/guard_attack7.wav"/>
+				<sound-file path="sounds/guard_attack8.wav"/>
+				<sound-file path="sounds/guard_attack9.wav"/>
+				<sound-file path="sounds/guard_attack10.wav"/>
+				<sound-file path="sounds/guard_attack11.wav"/>
+				<sound-file path="sounds/guard_attack12.wav"/>
+				<sound-file path="sounds/guard_attack13.wav"/>
+				<sound-file path="sounds/guard_attack14.wav"/>
+			</sound> 
+			<attack-strenght value="180"/>
+			<attack-var value="40"/>
+			<attack-range value="3"/>
+			<attack-type value="piercing"/>	
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<attack-start-time value="0"/>
+			<projectile value="false"/>
+			<splash value="false"/>
+		</skill>
+
+		<skill>
+			<type value="die"/>	
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="60"/>
+			<anim-speed value="40"/>
+			<animation-random-cycle-maxcount value="1" />
+			<animation path="../castle/models/samurai_death.g3d"/>
+			<animation path="../castle/models/samurai_deathb.g3d"/>
+			<animation path="../castle/models/samurai_deathc.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/guard_die1.wav"/>
+				<sound-file path="sounds/guard_die2.wav"/>
+				<sound-file path="sounds/guard_die3.wav"/>
+				<sound-file path="sounds/guard_die4.wav"/>
+			</sound>
+			<fade value="false"/>
+		</skill>
+		
+		<skill>
+			<type value="move"/>		
+			<name value="charge_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="170"/>
+			<anim-speed value="100"/>
+			<animation path="../castle/models/samurai_charge.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/armor_walk01.wav"/>
+				<sound-file path="sounds/armor_walk02.wav"/>
+				<sound-file path="sounds/armor_walk03.wav"/>
+				<sound-file path="sounds/armor_walk04.wav"/>
+				<sound-file path="sounds/armor_walk05.wav"/>
+				<sound-file path="sounds/armor_walk06.wav"/>
+				<sound-file path="sounds/armor_walk07.wav"/>
+				<sound-file path="sounds/armor_walk08.wav"/>
+			</sound> 			
+		</skill>	
+
+	</skills>
+	
+	<commands>
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="images/japanese_halt.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="images/japanese_move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="images/japanese_spear.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="charge_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+
+		<command>
+			<type value="attack_stopped"/>
+			<name value="hold_position"/>
+			<image path="images/japanese_hold.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements />
+			<stop-skill value="hold_stop_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+	</commands>
+</unit>

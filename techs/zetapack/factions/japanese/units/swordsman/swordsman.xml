@@ -1,0 +1,180 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="1"/>
+		<height value="2"/>
+		<max-hp value="1150" regeneration="0"/>
+		<max-ep value="0" regeneration="0"/>
+		<armor value="35"/>
+		<armor-type value="metal"/>				
+		<sight value="12"/>
+		<time value="100"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels>
+			<level name="great" kills="5"/>
+			<level name="saint" kills="12"/>
+		</levels>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements/>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="wood" amount="75"/>
+			<resource name="gold" amount="175"/>
+			<resource name="food" amount="2"/>						
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/unit_swordsman.bmp"/>
+		<image-cancel path="images/japanese_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="../yumi_ashigaru/sounds/hage_tono.wav"/>
+			<sound path="sounds/hage_swordsman.wav"/>
+			<sound path="sounds/hage_swordsman2.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="../shinobi/sounds/ha02_22.wav"/>
+			<sound path="../yumi_ashigaru/sounds/file2.wav"/>
+			<sound path="../yumi_ashigaru/sounds/file5.wav"/>
+			<sound path="../samurai/sounds/hage_iza.wav"/>
+			<sound path="../samurai/sounds/hage_izaya.wav"/>
+			<sound path="../samurai/sounds/ikuzo00_16.wav"/>
+		</command-sounds>
+	</parameters>
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="15"/>
+			<animation path="../castle/models/swordsman_idle.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="stop"/>
+			<name value="hold_stop_skill"/>	
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="15"/>
+			<animation path="../castle/models/swordsman_halt.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="220"/>
+			<anim-speed value="100"/>
+			<animation path="../castle/models/swordsman_move.g3d"/>
+			<sound enabled="false" />
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="charge_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="220"/>
+			<anim-speed value="120"/>
+			<animation path="../castle/models/swordsman_move.g3d"/>
+			<sound enabled="false" />
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="100"/>
+			<anim-speed value="100"/>
+			<animation path="../castle/models/swordsman_attack.g3d"/>
+			<animation path="../castle/models/swordsman_attackd.g3d"/>
+			<animation path="../castle/models/swordsman_attackc.g3d"/>
+			<animation path="../castle/models/swordsman_iai.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/sword/77611__joelaudio__sfx_attack_sword_00101.wav"/>
+				<sound-file path="sounds/sword/sen_ka_katana_kiru0201.wav"/>
+				<sound-file path="sounds/sword/sen_ka_katana_utiai0201.wav"/>
+				<sound-file path="sounds/sword/sen_ka_kiru0301.wav"/>
+			</sound> 
+			<attack-strenght value="220"/>
+			<attack-var value="60"/>
+			<attack-range value="1"/>
+			<attack-type value="slashing"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<attack-start-time value="0"/>
+			<projectile value="false"/>
+			<splash value="false"/>
+		</skill>
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="60"/>
+			<anim-speed value="80"/>
+			<animation-random-cycle-maxcount value="1" />
+			<animation path="../castle/models/swordsman_death.g3d"/>
+			<animation path="../castle/models/swordsman_deathb.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="../nagae_ashigaru/sounds/swordman_die1.wav"/>
+				<sound-file path="../nagae_ashigaru/sounds/swordman_die2.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+
+	</skills>
+	
+	<commands>
+		
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="images/japanese_halt.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="images/japanese_move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="images/japanese_sword.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="charge_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+	
+		<command>
+			<type value="attack_stopped"/>
+			<name value="hold_position"/>
+			<image path="images/japanese_hold.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements />
+			<stop-skill value="hold_stop_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+
+	</commands>
+</unit>

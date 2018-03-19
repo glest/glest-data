@@ -1,0 +1,193 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<parameters>
+		<size value="2" />
+		<height value="3" />
+		<max-hp value="5000" regeneration="0"/>
+		<max-ep value="0" />
+		<armor value="5" />
+		<armor-type value="leather"/>
+		<sight value="6" />
+		<time value="120" />
+		<multi-selection value="false" />
+		<cellmap value="false">
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="true" red="0.8" green="0.8" blue="0.5" />
+		<rotationAllowed value="true" />
+		<unit-requirements>
+			<unit name="town_center" />			
+		</unit-requirements>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="gold" amount="150" />
+			<resource name="stone" amount="50" />
+			<resource name="wood" amount="100" />
+		</resource-requirements>
+		<resources-stored />
+		<image path="images/landsknechtzelt.png" />
+		<image-cancel path="../worker/images/abbrechen.png" />
+		<meeting-point value="true" image-path="../town_center/images/zielpunkt.png" />
+		<selection-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/tech_click.wav" />
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/tech_click.wav" />
+		</command-sounds>
+	</parameters>
+	
+	<skills>
+		<skill>
+			<type value="stop" />	
+			<name value="stop_skill" />
+			<ep-cost value="0" />
+			<speed value="1000" />
+			<anim-speed value="100" />
+			<animation path="models/landsknechtzelt.g3d" />
+			<sound enabled="false" />
+		</skill>
+
+		<skill>
+			<type value="produce" />
+			<name value="produce_skill" />	
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/landsknechtzelt.g3d" />
+			<particles value="true">
+				<particle-file path="../worker/sternen_particles.xml" />	
+			</particles>
+			<sound enabled="false" />
+		</skill>
+
+		<skill>
+			<type value="upgrade" />	
+			<name value="upgrade_skill" />	
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/landsknechtzelt.g3d" />
+			<particles value="true">
+				<particle-file path="upgrade_particles.xml" />	
+			</particles>
+			<sound enabled="false" />
+		</skill>
+
+		<skill>
+			<type value="be_built" />	
+			<name value="be_built_skill" />		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/landsknechtzelt_konstruktion.g3d"/>
+			<sound enabled="false" />
+		</skill>		
+		
+		<skill>
+			<type value="die" />	
+			<name value="die_skill" />		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="../town_center/destruction_models/barracks_destruction.g3d" />
+			<particles value="true">
+				<particle-file path="smoke_particles.xml" />
+				<particle-file path="glow_particles.xml" />
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="$COMMONDATAPATH/sounds/tech_building_fall4.wav" />
+			</sound>			
+			<fade value="false" />
+		</skill>
+
+	</skills>
+	
+	<commands>
+
+		<command>
+			<type value="produce" />
+			<name value="produce_swordsman" />
+			<image path="../swordsman/images/schwertkaempfer.png" />
+			<unit-requirements>
+				<unit name="army_tent" />
+				<unit name="metal_wreaker" />
+			</unit-requirements>
+			<upgrade-requirements />
+			<produce-skill value="produce_skill" />
+			<produced-unit name="swordsman" />
+		</command>
+		
+		<command>
+			<type value="produce" />
+			<name value="produce_lancer" />
+			<image path="../lancer/images/speerkaempfer.png" />
+			<unit-requirements>
+				<unit name="army_tent" />
+			</unit-requirements>
+			<upgrade-requirements />
+			<produce-skill value="produce_skill" />
+			<produced-unit name="lancer" />
+		</command>
+	
+		<command>
+			<type value="produce" />
+			<name value="produce_axeman" />
+			<image path="../axeman/images/axtkaempfer.png" />
+			<unit-requirements>
+				<unit name="army_tent" />
+				<unit name="metal_wreaker" />
+			</unit-requirements>
+			<upgrade-requirements />
+			<produce-skill value="produce_skill" />
+			<produced-unit name="axeman" />
+		</command>
+				
+		<command>
+			<type value="produce" />
+			<name value="produce_hunter" />
+			<image path="../hunter/images/jaeger.png" />
+			<unit-requirements>
+				<unit name="army_tent" />
+				<unit name="farm" />
+			</unit-requirements>
+			<upgrade-requirements />
+			<produce-skill value="produce_skill" />
+			<produced-unit name="hunter" />
+		</command>
+		
+		<command>
+			<type value="produce" />
+			<name value="produce_banner_bearer" />
+			<image path="../banner_bearer/images/bannertraeger_2.png" />
+			<unit-requirements>
+				<unit name="town_center" />
+				<unit name="farm" />
+				<unit name="army_tent" />
+				<unit name="metal_wreaker" />
+			</unit-requirements>
+			<upgrade-requirements />
+			<produce-skill value="produce_skill" />
+			<produced-unit name="banner_bearer" />
+		</command>
+ 				
+		<command>
+			<type value="upgrade"/>
+			<name value="create_training_field"/>
+			<image path="../../upgrades/training_field/images/trainingsfeld.png" />
+			<unit-requirements>
+				<unit name="town_center" />
+				<unit name="army_tent" />
+			</unit-requirements>
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="training_field"/>    
+		</command>			
+ 		
+	</commands>
+</unit>

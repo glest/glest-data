@@ -13,11 +13,11 @@
 		<uniform-selection value="true"/>
 		<cellmap value="true">
 			<row value="111111"/>
-			<row value="111111"/>
-			<row value="111111"/>
-			<row value="111111"/>
-			<row value="111111"/>
-			<row value="111111"/>
+			<row value="110011"/>
+			<row value="100001"/>
+			<row value="100001"/>
+			<row value="110011"/>
+			<row value="110011"/>
 		</cellmap>
 		<levels/>
 		<fields>
@@ -112,6 +112,15 @@
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="slave"/>
+		</command>
+		<command>
+			<type value="produce"/>
+			<name value="produce_cow" />
+			<image path="../cow/images/cow.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="cow"/>
 		</command>
 	</commands>
 </unit>

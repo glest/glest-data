@@ -1,0 +1,182 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="2" />
+		<height value="5" />
+		<max-hp value="4000" regeneration="5" />
+		<max-ep value="2500" regeneration="10"/>
+		<armor value="25" />	
+		<armor-type value="stone" />			
+		<sight value="16" />
+		<time value="150" />	
+		<multi-selection value="false" />
+		<cellmap value="false" />
+		<levels />
+		<fields>
+			<field value="land" />
+		</fields>	
+		<properties>
+			<property value="burnable" />
+		</properties>
+		<light enabled="false" />
+		<rotationAllowed value="true" />
+		<unit-requirements>
+			<unit name="town_center" />
+			<unit name="stone_sanctuary" />
+		</unit-requirements>
+		<upgrade-requirements>
+		</upgrade-requirements>
+		<resource-requirements>
+			<resource name="gold" amount="100" />
+			<resource name="stone" amount="200" />			
+		</resource-requirements>
+		<resources-stored />
+		<image path="images/stachel.png" />
+		<image-cancel path="../worker/images/abbrechen.png" />
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/tech_click.wav" />
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/tech_click.wav" />
+		</command-sounds>
+	</parameters>
+
+	<skills>
+	
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill" />		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="100" />
+			<animation path="models/stachel.g3d" />
+			<sound enabled="false" />
+		</skill>
+
+		<skill>
+			<type value="stop" />
+			<name value="show_range_skill" />		
+			<ep-cost value="0" />
+			<speed value="200" />
+			<anim-speed value="200" />
+			<animation path="models/stachel.g3d" />
+			<particles value="true">
+				<particle-file path="particle_range.xml">
+					<shape value="conical">
+						<angle value="90" />
+					</shape>
+					<radius value="15" />
+					<min-radius value="14.9" />
+					<direction x="0" y="0.1" z="0" />
+					<offset x="0" y="0" z="0" />
+				</particle-file>
+				<particle-file path="particle_sight.xml">
+					<shape value="conical">
+						<angle value="90"/>
+					</shape>
+					<radius value="16"/>
+					<min-radius value="15.9"/>
+					<direction x="0" y="0.1" z="0"/>
+					<offset x="0" y="0" z="0"/>
+				</particle-file>
+			</particles>
+			<sound enabled="false" />
+		</skill>
+
+		<skill>
+			<type value="attack" />
+			<name value="attack_skill" />		
+			<ep-cost value="50" />
+			<speed value="100" />
+			<anim-speed value="120" />
+			<animation path="models/stachel.g3d" />
+			<sound enabled="true" start-time="0">
+				<sound-file path="$COMMONDATAPATH/sounds/defense_tower_attack1.wav" />
+				<sound-file path="$COMMONDATAPATH/sounds/defense_tower_attack2.wav" />
+			</sound>
+			<attack-strenght value="200" />
+			<attack-var value="75" />
+			<attack-range value="15" />
+			<attack-type value="magic" />
+			<attack-start-time value="0.1" />
+			<attack-fields>
+				<field value="air" />
+			</attack-fields>
+			<projectile value="true">
+				<particle value="true" path="stachelschlag.xml"/>
+				<sound enabled="true">
+					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit1.wav"/>
+					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit2.wav"/>
+					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit3.wav"/>
+					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit4.wav"/>	
+				</sound>
+			</projectile>		
+			<splash value="false" />
+		</skill>
+
+		<skill>
+			<type value="be_built" />
+			<name value="be_built_skill" />		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/stachel_bauen.g3d" minHp="0" maxHp="1000" />
+			<animation path="models/stachel_bauen_25.g3d" minHp="1001" maxHp="2000" />
+			<animation path="models/stachel_bauen_50.g3d" minHp="2001" maxHp="3000" />
+			<animation path="models/stachel_bauen_75.g3d" minHp="3001" maxHp="4000" />
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="die" />
+			<name value="die_skill" />		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="../town_center/destruction_models/barracks_destruction.g3d" />
+			<particles value="true">
+				<particle-file path="smoke_particles.xml" />
+				<particle-file path="glow_particles.xml" />
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="$COMMONDATAPATH/sounds/tech_building_fall5.wav" />
+			</sound>			
+			<fade value="false" />
+		</skill>
+
+	</skills>
+	
+	<commands>
+
+		<command>
+			<type value="stop" />
+			<name value="stop" />
+			<image path="../worker/images/stop.png" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<stop-skill value="stop_skill" />
+		</command>
+
+		<command>
+			<type value="attack_stopped" />
+			<name value="attack" />
+			<image path="../hunter/images/bogenangriff.png" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<attack-skill value="attack_skill" />
+                        <stop-skill value="stop_skill" />
+		</command>
+
+		<command>
+			<type value="stop" />
+			<name value="show_range" />
+			<image path="../sentry_tower/images/reichweite.png" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<stop-skill value="show_range_skill" />
+		</command>
+
+	</commands>
+</unit>

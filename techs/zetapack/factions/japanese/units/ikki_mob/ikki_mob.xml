@@ -1,0 +1,197 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+
+	<!-- *** parameters *** -->
+
+	<parameters>
+		<size value="1"/>
+		<height value="2"/>
+		<max-hp value="600" regeneration="0"/>
+		<max-ep value="0"/>
+		<armor value="15"/>
+		<armor-type value="leather"/>					
+		<sight value="12"/>
+		<time value="20"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels>
+			<level name="raging" kills="2"/>
+		</levels>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements/>
+		<upgrade-requirements>
+			<upgrade name="civil_ikki"/>
+		</upgrade-requirements>
+		<resource-requirements/>
+		<resources-stored/>
+		<image path="images/unit_ikki_mob.bmp"/>
+		<image-cancel path="images/japanese_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="../worker/sounds/ha02.wav"/>
+			<sound path="../worker/sounds/ha03.wav"/>
+			<sound path="../worker/sounds/kushami01.wav"/>		
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="../worker/sounds/ack01.wav"/>
+			<sound path="../worker/sounds/ack02.wav"/>
+			<sound path="../worker/sounds/ack05.wav"/>
+			<sound path="../worker/sounds/ack06.wav"/>
+		</command-sounds>
+	</parameters>
+
+
+	<!-- *** skills *** -->
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="40"/>
+			<animation path="../castle/models/ikki_mob_idle.g3d"/>
+			<animation path="../castle/models/ikki_mob_idle2.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="190"/>
+			<anim-speed value="100"/>
+			<animation path="../castle/models/ikki_mob_move.g3d"/>
+			<sound enabled="true" start-time="0">
+			<sound-file path="../nagae_ashigaru/sounds/9904__snoman__grass101.wav"/>
+			<sound-file path="../nagae_ashigaru/sounds/9905__snoman__grass201.wav"/>
+			<sound-file path="../nagae_ashigaru/sounds/9906__snoman__grass301.wav"/>
+			<sound-file path="../nagae_ashigaru/sounds/9907__snoman__grass401.wav"/>
+			<sound-file path="../nagae_ashigaru/sounds/9912__snoman__grass501.wav"/>
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="100"/>
+			<anim-speed value="100"/>
+			<animation path="../castle/models/ikki_mob_attack.g3d"/>
+			<animation path="../castle/models/ikki_mob_attack2.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="../swordsman/sounds/sword/77611__joelaudio__sfx_attack_sword_00101.wav"/>
+				<sound-file path="../swordsman/sounds/sword/sen_ka_katana_kiru0201.wav"/>
+				<sound-file path="../swordsman/sounds/sword/sen_ka_katana_utiai0201.wav"/>
+				<sound-file path="../swordsman/sounds/sword/sen_ka_kiru0301.wav"/>
+			</sound> 
+			<attack-strenght value="90"/>
+			<attack-var value="40"/>
+			<attack-range value="1"/>
+			<attack-type value="slashing"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<attack-start-time value="0"/>
+			<projectile value="false"/>
+			<splash value="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="charge_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="190"/>
+			<anim-speed value="120"/>
+			<animation path="../castle/models/ikki_mob_move.g3d"/>
+			<sound enabled="true" start-time="0">
+			<sound-file path="../nagae_ashigaru/sounds/9904__snoman__grass101.wav"/>
+			<sound-file path="../nagae_ashigaru/sounds/9905__snoman__grass201.wav"/>
+			<sound-file path="../nagae_ashigaru/sounds/9906__snoman__grass301.wav"/>
+			<sound-file path="../nagae_ashigaru/sounds/9907__snoman__grass401.wav"/>
+			<sound-file path="../nagae_ashigaru/sounds/9912__snoman__grass501.wav"/>
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="morph"/>
+			<name value="morph_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="80"/>
+			<animation path="../castle/models/ikki_mob_idle.g3d"/>
+			<particles value="true">
+				<particle-file path="sakura_particles.xml"/>
+			</particles>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="60"/>
+			<anim-speed value="80"/>
+			<animation-random-cycle-maxcount value="1" />
+			<animation path="../castle/models/ikki_mob_death.g3d"/>
+			<animation path="../castle/models/ikki_mob_death2.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="../worker/sounds/worker_die1.wav"/>
+				<sound-file path="../worker/sounds/worker_die2.wav"/>
+				<sound-file path="../worker/sounds/worker_die3.wav"/>								
+			</sound>			
+			<fade value="false"/>
+		</skill>						
+
+	</skills>
+
+	<!-- *** commands *** -->
+	
+	<commands>
+		
+		<command>
+			<type value= "stop"/>
+			<name value="stop"/>
+			<image path="images/japanese_halt.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value= "move"/>
+			<name value="move"/>
+			<image path="images/japanese_move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="images/japanese_sword.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="charge_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+
+		<command>
+			<type value="morph"/>
+			<name value="disarm"/>
+			<image path="../worker/images/worker.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<morph-skill value="morph_skill"/>
+			<morph-unit name= "worker"/>
+			<discount value="100"/>
+		</command>
+	</commands>
+</unit>

@@ -1,0 +1,79 @@
+<?xml version="1.0" standalone="no"?>
+
+<faction>
+	<ai-behavior>
+		<worker-units>
+			<unit name="worker" minimum="8"/>
+		</worker-units>
+		<warrior-units/>
+		<resource-producer-units>
+			<unit name="peasant" minimum="4"/>
+		</resource-producer-units>
+		<building-units>
+			<unit name="barrack" minimum="2"/>
+			<unit name="daimyo_yashiki" minimum="1"/>
+			<unit name="blacksmith" minimum="1"/>
+			<unit name="dojo" minimum="1"/>
+			<unit name="buddhist_temple" minimum="1"/>
+			<unit name="european_trader" minimum="1"/>
+			<unit name="yagura" minimum="1"/>
+		</building-units>
+		<upgrades>
+			<upgrade name="bushido" />
+			<upgrade name="nanban_trade" />
+			<upgrade name="arquebus" />
+			<upgrade name="siege_engineering" />
+		</upgrades>
+	</ai-behavior>
+	<starting-resources>
+		<resource name="gold" amount="500"/>
+		<resource name="wood" amount="500"/>	
+		<resource name="stone" amount="500"/>	
+		<resource name="food" amount="100"/>	
+	</starting-resources>
+	<starting-units>
+		<unit name="barrack" amount="0"/>
+		<unit name="blacksmith" amount="0"/>
+		<unit name="buddhist_temple" amount="0"/>
+		<unit name="cannon" amount="0"/>
+		<unit name="castle" amount="1"/>
+		<unit name="daimyo_yashiki" amount="0"/>
+		<unit name="dojo" amount="0"/>
+		<unit name="european_trader" amount="0"/>
+		<unit name="farmhouse" amount="0"/>
+		<unit name="ikki_mob" amount="0"/>
+		<unit name="medical_priest" amount="0"/>
+		<unit name="nagae_ashigaru" amount="2"/>
+		<unit name="peasant" amount="1"/>
+		<unit name="samurai" amount="0"/>
+		<unit name="shinobi" amount="0"/>
+		<unit name="standard_bearer" amount="0"/>
+		<unit name="swordsman" amount="0"/>
+		<unit name="taketaba_archer" amount="0"/>
+		<unit name="taketaba_gunner" amount="0"/>
+		<unit name="teppo_ashigaru" amount="0"/>
+		<unit name="tsubute" amount="0"/>
+		<unit name="warrior_monk" amount="0"/>
+		<unit name="watchtower" amount="1"/>
+		<unit name="watchtower_gun" amount="0"/>
+		<unit name="worker" amount="3"/>
+		<unit name="yagura" amount="0"/>
+		<unit name="yagura_gun" amount="0"/>
+		<unit name="yumi_ashigaru" amount="1"/>
+	</starting-units>	
+	<music value="true" path="music/20090531.ogg"/>
+
+	<attack-notice enabled="true" min-delay="7">
+		<sound-file path="sounds/horn_advance_short01.wav"/>
+		<sound-file path="sounds/horn_attack_101.wav"/>
+		<sound-file path="sounds/horn_alarm_301.wav"/>
+		<sound-file path="sounds/86001.wav"/>
+		<sound-file path="sounds/ta_ge_kotaiko0101.wav"/>
+	</attack-notice>
+
+	<enemy-sighted-notice enabled="false" min-delay="7">
+		<sound-file path="sounds/horn_alarm_301.wav"/>
+		<sound-file path="sounds/86001.wav"/>
+		<sound-file path="sounds/ta_ge_kotaiko0101.wav"/>
+	</enemy-sighted-notice>
+</faction>

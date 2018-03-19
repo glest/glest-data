@@ -1,0 +1,176 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<parameters>
+		<size value="4" />
+		<height value="2" />
+		<max-hp value="8000" regeneration="0"/>
+		<max-ep value="0" />
+		<max-unit-count value="1"/>
+		<armor value="0" />
+		<armor-type value="wood"/>
+		<sight value="6" />
+		<time value="120" />
+		<multi-selection value="false" />
+		<cellmap value="true">
+			<row value="1111"/>
+			<row value="0001"/>
+			<row value="0001"/>
+			<row value="1111"/>
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="true" red="0.8" green="0.8" blue="0.5"/>
+		<unit-requirements />
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="stone" amount="100" />
+			<resource name="wood" amount="150" />
+			<resource name="gold" amount="150" />
+		</resource-requirements>
+		<resources-stored>
+			<resource name="gold" amount="200" />
+		</resources-stored>
+		<image path="images/unit_mansion_of_daimyo.bmp" />
+		<image-cancel path="images/japanese_cancel.bmp"/>
+		<meeting-point value="false" />
+		<selection-sounds enabled="true">
+			<sound path="../castle/sounds/jp_click.wav" />
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="../castle/sounds/jp_command1.wav" />
+		</command-sounds>
+	</parameters>
+	
+	<skills>
+		<skill>
+			<type value="stop"/>	
+			<name value="stop_skill"/>
+			<ep-cost value="0" />
+			<speed value="50" />
+			<anim-speed value="100" />
+			<animation path="../castle/models/mansion_of_daimyo.g3d" />
+			<sound enabled="false" />
+		</skill>
+		
+		<skill>
+			<type value="be_built" />	
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="../castle/models/mansion_of_daimyo_construction.g3d" />
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="upgrade"/>	
+			<name value="upgrade_skill"/>	
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="../castle/models/mansion_of_daimyo.g3d" />
+			<particles value="true">
+				<particle-file path="sakura_particles_daimyo.xml"/>
+			</particles>
+			<sound enabled="false" />
+		</skill>
+		
+		<skill>
+			<type value="produce"/>
+			<name value="produce_skill"/>	
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="50" />
+			<animation path="../castle/models/mansion_of_daimyo.g3d" />
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="die" />	
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="40" />
+			<animation path="../castle/models/manor_destruction.g3d" />
+			<particles value="true">
+				<particle-file path="../barrack/smoke_particles.xml"/>
+				<particle-file path="../barrack/glow_particles.xml"/>
+				<particle-file path="../barrack/barrack_dust_particles.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="../barrack/sounds/tech_building_fall4.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+	
+	<commands>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="advanced_architecture" />
+			<image path="../../upgrades/advanced_architecture/images/upgrade_advanced_architecture.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="advanced_architecture"/>
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="bushido" />
+			<image path="../../upgrades/bushido/images/upgrade_bushido.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="bushido"/>
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="shadow_syndicate" />
+			<image path="../../upgrades/shadow_syndicate/images/upgrade_shadow_syndicate.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="shadow_syndicate"/>
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="nanban_trading" />
+			<image path="../../upgrades/nanban_trade/images/upgrade_nanban_trade.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="nanban_trade"/>
+		</command>
+			
+		<command>
+			<type value="upgrade"/>
+			<name value="civil_ikki" />
+			<image path="../../upgrades/civil_ikki/images/upgrade_ikki.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="civil_ikki"/>
+		</command>
+			
+		<command>
+			<type value="upgrade"/>
+			<name value="siege_engineering" />
+			<image path="../../upgrades/siege_engineering/images/upgrade_siege_engineering.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="siege_engineering"/>
+		</command>
+
+	</commands>
+</unit>

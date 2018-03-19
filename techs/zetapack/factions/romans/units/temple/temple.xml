@@ -11,6 +11,7 @@
 		<sight value="15" />
 		<time value="300" />
 		<multi-selection value="false" />
+		<max-unit-count value="4"/>
 		<cellmap value="true">
 			<row value="1111"/>
 			<row value="1111"/>
@@ -34,6 +35,7 @@
 			<resource name="grace" amount="-33" />
 		</resource-requirements>
 		<resources-stored>
+			<!--resource name= "gold" amount="400"/-->
 			<resource name= "grace" amount="100"/>
 		</resources-stored>
 		<image path="images/castle.bmp" />

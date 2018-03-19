@@ -1,0 +1,202 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="3" />
+		<height value="7" />
+		<max-hp value="8000" regeneration="0"/>
+		<max-ep value="0" />
+		<!-- max-unit-count value="1"/ -->
+		<armor value="0" />
+		<armor-type value="wood"/>				
+		<sight value="16" />
+		<time value="120" />
+		<multi-selection value="false" />
+		<cellmap value="false" />
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="true" red="0.8" green="0.8" blue="0.5"/>
+		<rotationAllowed value="false" />
+		<unit-requirements>
+			<unit name="daimyo_yashiki"/>
+		</unit-requirements>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="gold" amount="150" />
+			<resource name="stone" amount="50" />
+			<resource name="wood" amount="150" />
+		</resource-requirements>
+		<resources-stored />
+		<image path="images/unit_buddhist_temple.bmp" />
+		<image-cancel path="images/japanese_cancel.bmp"/>
+		<meeting-point value="true" image-path="images/japanese_meetingpoint.bmp"/>
+		<selection-sounds enabled="true">
+			<sound path="sounds/13786__marec__kyoto_temple_gong201.wav" />
+			<sound path="sounds/butsubella_0801.wav" />
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="../castle/sounds/jp_command1.wav" />
+		</command-sounds>
+	</parameters>
+	
+	<!-- *** skills *** -->
+	<skills>
+
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="100" />
+			<animation path="../castle/models/buddhist_temple.g3d" />
+			<sound enabled="false" />
+			<attack-boost>
+				<allow-multiple-boosts value="false" />
+				<radius value="21"/>
+				<target value="faction">
+					<unit-type name="warrior_monk" />
+				</target>
+				<max-hp value="0" />
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-strenght value="20"/>
+				<attack-range value="0"/>
+				<armor value="20"/>
+				<move-speed value="0" />
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="../farmhouse/boost_fire_particles.xml"/>
+				</particles>
+			</attack-boost>
+		</skill>
+		
+		<skill>
+			<type value="be_built" />
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="../castle/models/buddhist_temple_construction.g3d" />
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="produce" />
+			<name value="produce_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="1" />
+			<animation path="../castle/models/buddhist_temple.g3d" />
+			<sound enabled="false" />
+			<attack-boost>
+				<allow-multiple-boosts value="false" />
+				<radius value="21"/>
+				<target value="faction">
+					<unit-type name="warrior_monk" />
+				</target>
+				<max-hp value="0" />
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-strenght value="20"/>
+				<attack-range value="0"/>
+				<armor value="20"/>
+				<move-speed value="0" />
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="../farmhouse/boost_fire_particles.xml"/>
+				</particles>
+			</attack-boost>
+		</skill>	
+
+		<skill>
+			<type value="upgrade" />
+			<name value="upgrade_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="150" />
+			<animation path="../castle/models/buddhist_temple.g3d" />
+			<particles value="true">
+				<particle-file path="sakura_particles_temple.xml"/>
+			</particles>
+			<particles value="false" />
+			<sound enabled="false" />
+			<attack-boost>
+				<allow-multiple-boosts value="false" />
+				<radius value="21"/>
+				<target value="faction">
+					<unit-type name="warrior_monk" />
+				</target>
+				<max-hp value="0" />
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-strenght value="20"/>
+				<attack-range value="0"/>
+				<armor value="20"/>
+				<move-speed value="0" />
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="../farmhouse/boost_fire_particles.xml"/>
+				</particles>
+			</attack-boost>
+		</skill>		
+
+		<skill>
+			<type value="die" />
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="15" />
+			<animation path="../castle/models/buddhist_temple_destruction.g3d" />
+			<particles value="true">
+				<particle-file path="smoke_particles.xml"/>
+				<particle-file path="glow_particles.xml"/>
+				<particle-file path="../farmhouse/farm_dust_particles.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="../barrack/sounds/tech_building_fall2.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+	
+	<!-- *** commands *** -->
+	<commands>
+	
+		<command>
+			<type value="produce"/>
+			<name value="produce_medical_priest" />
+			<image path="../medical_priest/images/unit_medical_priest.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="medical_priest"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_warrior_monk" />
+			<image path="../warrior_monk/images/unit_warrior_monk.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="warrior_monk"/>
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="upgrade_eastern_medicine" />
+			<image path="../../upgrades/eastern_medicine/images/upgrade_kanpo.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="eastern_medicine"/>
+		</command>
+
+	</commands>
+</unit>

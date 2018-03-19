@@ -1,0 +1,230 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="1"/>
+		<height value="2"/>
+		<max-hp value="600" regeneration="0"/>
+		<max-ep value="0"/>
+		<armor value="25"/>	
+		<armor-type value="metal"/>				
+		<sight value="12"/>
+		<time value="60"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels>
+			<level name="tough" kills="3"/>
+		</levels>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements />
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="wood" amount="25"/>
+			<resource name="gold" amount="75"/>
+			<resource name="food" amount="1"/>						
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/unit_ashigaru.bmp"/>
+		<image-cancel path="images/japanese_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="../yumi_ashigaru/sounds/hage_tono.wav"/>
+			<sound path="sounds/hage_nagae.wav"/>
+			<sound path="sounds/hage_nagae2.wav"/>
+			<sound path="sounds/hage_nagae4.wav"/>
+			<sound path="sounds/hage_nagae3.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_sonae.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_aao01.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="../yumi_ashigaru/sounds/drum101.wav"/>
+			<sound path="../yumi_ashigaru/sounds/drum201.wav"/>>
+			<sound path="../yumi_ashigaru/sounds/file2.wav"/>
+			<sound path="../yumi_ashigaru/sounds/file5.wav"/>
+			<sound path="../yumi_ashigaru/sounds/ikuzo00_16.wav"/>
+			<sound path="../yumi_ashigaru/sounds/drum301.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_semeyose2.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_kakare.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_kakare2.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_doubletime.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_doubletime2.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_doubletime3.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_ose.wav"/>
+		</command-sounds>
+	</parameters>
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="30"/>
+			<animation path="../castle/models/nagae_idle1.g3d"/>
+			<animation path="../castle/models/nagae_idle2.g3d"/>
+			<animation path="../castle/models/nagae_idle3.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="stop"/>
+			<name value="hold_stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="10"/>
+			<animation path="../castle/models/ashigaru_hold.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="220"/>
+			<anim-speed value="100"/>
+			<animation path="../castle/models/nagae_move.g3d"/>
+			<sound enabled="true" start-time="0">
+			<sound-file path="sounds/9908__snoman__gravel101.wav"/>
+			<sound-file path="sounds/9909__snoman__gravel201.wav"/>
+			<sound-file path="sounds/9910__snoman__gravel301.wav"/>
+			<sound-file path="sounds/9911__snoman__gravel401.wav"/>
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="charge_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="220"/>
+			<anim-speed value="120"/>
+			<animation path="../castle/models/nagae_charge.g3d"/>
+			<particles value="false" />
+			<sound enabled="true" start-time="0">
+			<sound-file path="sounds/9908__snoman__gravel101.wav"/>
+			<sound-file path="sounds/9909__snoman__gravel201.wav"/>
+			<sound-file path="sounds/9910__snoman__gravel301.wav"/>
+			<sound-file path="sounds/9911__snoman__gravel401.wav"/>
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="80"/>
+			<anim-speed value="80"/>
+			<animation path="../castle/models/nagae_attack.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/hit01.wav"/>
+				<sound-file path="sounds/hit04.wav"/>
+				<sound-file path="sounds/hit08.wav"/>
+				<sound-file path="sounds/hit13.wav"/>
+				<sound-file path="sounds/hit21.wav"/>
+				<sound-file path="sounds/hit27.wav"/>
+				<sound-file path="sounds/hit33.wav"/>
+				<sound-file path="sounds/hit34.wav"/>
+				<sound-file path="sounds/hit35.wav"/>
+			</sound> 
+			<attack-strenght value="80"/>
+			<attack-var value="30"/>
+			<attack-range value="4"/>
+			<attack-type value="piercing"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<attack-start-time value="0"/>
+			<projectile value="false"/>
+			<splash value="false"/>
+		</skill>
+
+		<skill>
+			<type value="morph"/>
+			<name value="morph_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="500"/>
+			<anim-speed value="30"/>
+			<animation path="../castle/models/nagae_idle1.g3d"/>
+			<particles value="true">
+				<particle-file path="sakura_particles.xml"/>
+			</particles>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="60"/>
+			<anim-speed value="70"/>
+			<animation-random-cycle-maxcount value="1" />
+			<animation path="../castle/models/nagae_death.g3d"/>
+			<animation path="../castle/models/nagae_deathb.g3d"/>
+			<animation path="../castle/models/nagae_deathc.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/swordman_die1.wav"/>
+				<sound-file path="sounds/swordman_die2.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+
+	</skills>
+	
+	<commands>
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="images/japanese_halt.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="images/japanese_move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="images/japanese_spear.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="charge_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+		
+		<command>
+			<type value="attack_stopped"/>
+			<name value="hold_position"/>
+			<image path="images/japanese_hold.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements>
+				<upgrade name="training_field"/>
+			</upgrade-requirements>
+			<stop-skill value="hold_stop_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+
+		<command>
+			<type value="morph"/>
+			<name value="promote_to_samurai"/>
+			<image path="../samurai/images/unit_samurai.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<morph-skill value="morph_skill"/>
+			<morph-unit name= "samurai"/>
+			<discount value="20"/>sakura_particles.xml
+		</command>
+	</commands>
+</unit>

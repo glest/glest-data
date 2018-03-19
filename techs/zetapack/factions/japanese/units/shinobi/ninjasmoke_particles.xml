@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<unit-particle-system>
+    	<texture value="true" path="images/smoke_particle.bmp" luminance="true"/>
+	<mode value="black"/>
+	<primitive value="quad"/>
+	<offset x="0" y="0" z="0"/>
+	<direction x="0" y="1" z="0"/>
+	<color red="0.6" green="0.6" blue="0.6" alpha="0.1" />
+	<color-no-energy red="0.6" green="0.6" blue="0.6" alpha="0.1" />
+    	<radius value="1.5" />
+    	<size value="3" />
+    	<size-no-energy value="1" />
+    	<speed value="4" />
+	<gravity value="0.001"/>
+    	<emission-rate value="4" />
+    	<energy-max value="60" />
+    	<energy-var value="20" />
+	<relative value="true" />
+	<relativeDirection value="true" />
+    	<fixed value="false" />
+    	<teamcolorNoEnergy value="false" />
+    	<teamcolorEnergy value="false" />
+
+	<!--trajectory type="spiral">
+		<speed value="14.0"/>
+		<scale value="1"/>
+		<frequency value="0.5"/>
+	</trajectory-->
+</unit-particle-system>

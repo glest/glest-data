@@ -1,0 +1,201 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="4" />
+		<height value="9" />
+		<max-hp value="7000" regeneration="0"/>
+		<max-ep value="0" />
+		<max-unit-count value="1"/>
+		<armor value="0" />
+		<armor-type value="stone"/>		
+		<sight value="16" />
+		<time value="300" />
+		<multi-selection value="false" />
+		<cellmap value="true">
+			<row value="0000"/>
+			<row value="0110"/>
+			<row value="0110"/>
+			<row value="0011"/>
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false" />
+		<unit-requirements>
+			<unit name="town_center"/>
+		</unit-requirements>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="gold" amount="250" />
+			<resource name="stone" amount="300"/>
+			<resource name="wood" amount="100"/>
+		</resource-requirements>
+		<resources-stored>
+			<resource name="gold" amount="250" />
+		</resources-stored>
+		<image path="images/turm.png"/>
+		<image-cancel path="../worker/images/abbrechen.png"/>
+		<meeting-point value="false" image-path="../town_center/images/zielpunkt.png"/>
+		<selection-sounds enabled="false">
+		</selection-sounds>
+		<command-sounds enabled="false">
+		</command-sounds>
+	</parameters>
+	
+	<skills>
+		<skill>
+			<type value="be_built" />
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="100" />
+			<animation path="models/turm_natulka_aufbau_10.g3d" minHp="0" maxHp="550"/>
+			<animation path="models/turm_natulka_aufbau_15.g3d" minHp="551" maxHp="1100"/>
+			<animation path="models/turm_natulka_aufbau_20.g3d" minHp="1101" maxHp="2200"/>
+			<animation path="models/turm_natulka_aufbau_25.g3d" minHp="2201" maxHp="2750"/>
+			<animation path="models/turm_natulka_aufbau_30.g3d" minHp="2751" maxHp="3300"/>
+			<animation path="models/turm_natulka_aufbau_35.g3d" minHp="3301" maxHp="3850"/>
+			<animation path="models/turm_natulka_aufbau_40.g3d" minHp="3851" maxHp="4350"/>
+			<animation path="models/turm_natulka_aufbau_50.g3d" minHp="4351" maxHp="4900"/>
+			<animation path="models/turm_natulka_aufbau_55.g3d" minHp="4901" maxHp="5450"/>
+			<animation path="models/turm_natulka_aufbau_60.g3d" minHp="5451" maxHp="6000"/>
+			<animation path="models/turm_natulka_aufbau_75.g3d" minHp="6001" maxHp="6500"/>
+			<animation path="models/turm_natulka_aufbau_80.g3d" minHp="6501" maxHp="7000"/>			
+			<sound enabled="false" />			
+		</skill>
+		
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="100" />
+			<animation path="models/turm.g3d" />
+			<sound enabled="false" />
+		</skill>	
+			
+		<skill>
+			<type value="stop" />
+			<name value="show_range_skill" />		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="100" />
+			<animation path="models/turm.g3d" />
+			<particles value="true">
+				<particle-file path="../sentry_tower/particle_range.xml">
+					<shape value="conical">
+						<angle value="90" />
+					</shape>
+					<radius value="18" />
+					<min-radius value="17.9" />
+					<direction x="0" y="0.1" z="0" />
+					<offset x="0" y="0" z="0" />
+				</particle-file>
+			</particles>
+			<sound enabled="false" />
+		</skill>
+
+		<skill>
+			<type value="produce" />
+			<name value="produce_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/turm.g3d" />
+			<sound enabled="false" />
+		</skill>	
+
+		<skill>
+			<type value="upgrade" />	
+			<name value="upgrade_skill" />	
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/turm.g3d" />
+			<particles value="true">
+				<particle-file path="upgrade_particles.xml" />	
+			</particles>
+			<sound enabled="false" />
+		</skill>
+
+		<skill>
+			<type value="die" />
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="../town_center/destruction_models/barracks_destruction.g3d" />
+			<particles value="true">
+				<particle-file path="smoke_particles.xml"/>
+				<particle-file path="glow_particles.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="$COMMONDATAPATH/sounds/tech_building_fall3.wav" />
+			</sound>				
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+
+	<commands>		
+
+	<!--	<command>
+			<type value="stop" />
+			<name value="abbrechen" />
+			<image path="../arbeiter/images/stop.png" />
+			<unit-requirements />
+			<upgrade-requirements />			
+			<stop-skill value="stop_skill" />
+		</command>	
+				
+		<command>
+			<type value="stop" />
+			<name value="zeige_reichweite" />
+			<image path="../jagdturm/images/reichweite.png" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<stop-skill value="show_range_skill" />
+		</command>   
+		
+		<command>
+			<type value="produce"/>
+			<name value="hexer_ausbilden" />
+			<image path="../hexer/images/hexer.png" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="hexer"/>
+		</command>  -->
+		
+		<command>
+			<type value="upgrade"/>
+			<name value="research_medicine"/>
+			<image path="../../upgrades/medicine/images/medizin.png" />
+			<unit-requirements>
+				<unit name="farm"/>
+				<unit name="stone_sanctuary"/>
+			</unit-requirements>
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="medicine"/>    
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="research_poison"/>
+			<image path="../../upgrades/poison/images/gift.png" />
+			<unit-requirements>
+				<unit name="farm"/>
+				<unit name="stone_sanctuary"/>
+			</unit-requirements>
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="poison"/>    
+		</command>
+	</commands>
+</unit>

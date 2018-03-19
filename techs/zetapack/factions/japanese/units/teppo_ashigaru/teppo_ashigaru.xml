@@ -1,0 +1,264 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="1"/>
+		<height value="2"/>
+		<max-hp value="600" regeneration="0"/>
+		<max-ep value="0"/>
+		<armor value="15"/>	
+		<armor-type value="metal"/>				
+		<sight value="15"/>
+		<time value="60"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels>
+			<level name="elite" kills="6"/>
+		</levels>
+		<fields>
+			<field value="land"/>
+			<field value="air"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements/>
+		<upgrade-requirements>
+			<upgrade name="arquebus"/>
+		</upgrade-requirements>
+		<resource-requirements>
+			<resource name="stone" amount="25"/>
+			<resource name="wood" amount="50"/>
+			<resource name="gold" amount="150"/>
+			<resource name="food" amount="1"/>				
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/unit_arquebuser.bmp"/>
+		<image-cancel path="images/japanese_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="sounds/hage_teppo.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_tono.wav"/>
+			<sound path="sounds/hage_teppo2.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_sonae.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_aao01.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="../yumi_ashigaru/sounds/drum101.wav"/>
+			<sound path="../yumi_ashigaru/sounds/drum201.wav"/>
+			<sound path="sounds/hage_teppomae.wav"/>
+			<sound path="../yumi_ashigaru/sounds/file2.wav"/>
+			<sound path="../yumi_ashigaru/sounds/file5.wav"/>
+			<sound path="../yumi_ashigaru/sounds/ikuzo00_16.wav"/>
+			<sound path="../yumi_ashigaru/sounds/drum301.wav"/>
+			<sound path="../yumi_ashigaru/sounds/drum301.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_semeyose2.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_kakare.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_kakare2.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_doubletime.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_doubletime2.wav"/>
+			<sound path="../yumi_ashigaru/sounds/hage_doubletime3.wav"/>
+		</command-sounds>
+	</parameters>
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="15"/>
+			<animation path="../castle/models/arquebuseridle.g3d"/>
+			<animation path="../castle/models/arquebuser_idle2.g3d"/>
+			<animation path="../castle/models/arquebuser_idle3.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="stop"/>
+			<name value="hold_stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="15"/>
+			<animation path="../castle/models/arquebuser_halt.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="200"/>
+			<anim-speed value="100"/>
+			<animation path="../castle/models/arquebusermove.g3d"/>
+			<sound enabled="true" start-time="0">
+			<sound-file path="../nagae_ashigaru/sounds/9904__snoman__grass101.wav"/>
+			<sound-file path="../nagae_ashigaru/sounds/9905__snoman__grass201.wav"/>
+			<sound-file path="../nagae_ashigaru/sounds/9906__snoman__grass301.wav"/>
+			<sound-file path="../nagae_ashigaru/sounds/9907__snoman__grass401.wav"/>
+			<sound-file path="../nagae_ashigaru/sounds/9912__snoman__grass501.wav"/>
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="charge_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="220"/>
+			<anim-speed value="120"/>
+			<animation path="../castle/models/arquebusermove.g3d"/>
+			<sound enabled="true" start-time="0">
+			<sound-file path="../nagae_ashigaru/sounds/9904__snoman__grass101.wav"/>
+			<sound-file path="../nagae_ashigaru/sounds/9905__snoman__grass201.wav"/>
+			<sound-file path="../nagae_ashigaru/sounds/9906__snoman__grass301.wav"/>
+			<sound-file path="../nagae_ashigaru/sounds/9907__snoman__grass401.wav"/>
+			<sound-file path="../nagae_ashigaru/sounds/9912__snoman__grass501.wav"/>
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="30"/>
+			<anim-speed value="30"/>
+			<animation-random-cycle-maxcount value="1" />
+			<animation path="../castle/models/arquebuserfire.g3d"/>
+			<animation path="../castle/models/arquebusier_fireb.g3d"/>
+			<particles value="true" start-time="0.05" end-time="0.1">
+				<particle-file path="muzzlefire_particles.xml"/>
+				<particle-file path="gunsmoke_particles.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0.05">
+				<sound-file path="sounds/matchlock_musket_01.wav"/>
+				<sound-file path="sounds/matchlock_musket_02.wav"/>
+				<sound-file path="sounds/matchlock_musket_03.wav"/>
+				<sound-file path="sounds/matchlock_musket_04.wav"/>
+				<sound-file path="sounds/matchlock_musket_05.wav"/>
+				<sound-file path="sounds/matchlock_musket_06.wav"/>
+				<sound-file path="sounds/matchlock_musket_07.wav"/>
+			</sound>
+			<attack-strenght value="240"/>
+			<attack-var value="100"/>
+			<attack-range value="10"/>
+			<attack-type value="energy"/>
+			<attack-start-time value="0.10"/>
+			<attack-fields>
+				<field value="land"/>
+				<field value="air"/>
+			</attack-fields>
+			<projectile value="true">
+				<particle value="true" path="particle_proj.xml"/>
+				<sound enabled="true">
+					<sound-file path="/sounds/sen_ge_gun_tyou01.wav"/>
+					<sound-file path="/sounds/sen_ge_gun_tyou02.wav"/>
+					<sound-file path="/sounds/sen_ge_gun_tyou03.wav"/>
+					<sound-file path="/sounds/sen_ge_gun_tyou04.wav"/>
+					<sound-file path="/sounds/sen_ge_tyou05.wav"/>
+				</sound>
+			</projectile>
+			<splash value="true">
+				<radius value="0"/>
+				<damage-all value="true"/>
+				<particle value="true" path="teppo_splash.xml"/>
+			</splash>
+		</skill>
+
+		<skill>
+			<type value="morph"/>
+			<name value="build_taketaba"/>
+			<ep-cost value="0"/>
+			<speed value="125"/>
+			<anim-speed value="150"/>
+			<animation path="../castle/models/taketaba_teppo_morph.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="../yumi_ashigaru/sounds/technician_build1.wav"/>
+				<sound-file path="../yumi_ashigaru/sounds/technician_build2.wav"/>
+				<sound-file path="../yumi_ashigaru/sounds/technician_build3.wav"/>
+				<sound-file path="../yumi_ashigaru/sounds/technician_build4.wav"/>
+				<sound-file path="../yumi_ashigaru/sounds/technician_build5.wav"/>
+				<sound-file path="../yumi_ashigaru/sounds/technician_build6.wav"/>
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="60"/>
+			<anim-speed value="120"/>
+			<animation-random-cycle-maxcount value="1" />
+			<animation path="../castle/models/arquebuser_deathb.g3d"/>
+			<animation path="../castle/models/arquebuserdeath.g3d"/>
+			<animation path="../castle/models/arquebuserb_deathc.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="../yumi_ashigaru/sounds/archer_die1.wav"/>
+				<sound-file path="../yumi_ashigaru/sounds/archer_die2.wav"/>
+				<sound-file path="../yumi_ashigaru/sounds/archer_die3.wav"/>
+				<sound-file path="../yumi_ashigaru/sounds/archer_die4.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+
+	</skills>
+
+	<!-- *** commands *** -->
+	
+	<commands>
+		
+		<command>
+			<type value= "stop"/>
+			<name value="stop"/>
+			<image path="images/japanese_halt.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="images/japanese_move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="images/japanese_bow.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="charge_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+
+		<command>
+			<type value="attack_stopped"/>
+			<name value="hold_position"/>
+			<image path="images/japanese_hold.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements>
+				<upgrade name="training_field"/>
+			</upgrade-requirements>
+			<stop-skill value="hold_stop_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+
+		<command>
+			<type value="morph"/>
+			<name value="build_taketaba"/>
+			<image path="../taketaba_gunner/images/unit_taketaba_gunner.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements>
+				<upgrade name="siege_engineering"/>
+			</upgrade-requirements>
+			<morph-skill value="build_taketaba"/>
+			<morph-unit name="taketaba_gunner"/>
+			<discount value="0"/>
+		</command>
+
+	</commands>
+</unit>

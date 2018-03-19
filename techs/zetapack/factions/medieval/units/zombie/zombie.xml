@@ -1,0 +1,186 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="1"/>
+		<height value="2"/>
+		<max-hp value="600" regeneration="1"/>
+		<max-ep value="0"/>
+		<armor value="20"/>	
+		<armor-type value="organic"/>				
+		<sight value="13"/>
+		<time value="25"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels>
+			<level name="veteran" kills="3"/>
+			<level name="expert" kills="7"/>
+			<level name="champion" kills="15"/>
+			<level name="master" kills="35"/>
+			<level name="grandmaster" kills="70"/>
+		</levels>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements>
+			<unit name="sorcerer"/>
+		</unit-requirements>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="gold" amount="45"/>
+			<resource name="food" amount="1"/>												
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/zombie.png"/>
+		<image-cancel path="../worker/images/abbrechen.png"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+				<sound path="sounds/zombie_1.wav"/>
+				<sound path="sounds/zombie_2.wav"/>
+ 				<sound path="sounds/zombie_4.wav"/>
+				<sound path="sounds/zombie_9.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+				<sound path="sounds/zombie_15.wav"/>
+				<sound path="sounds/zombie_19.wav"/>
+ 				<sound path="sounds/zombie_20.wav"/>
+				<sound path="sounds/zombie_23.wav"/>
+		</command-sounds>
+	</parameters>
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="200"/>
+			<anim-speed value="30"/>
+			<animation path="models/zombie_stand.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="gehen"/>		
+			<ep-cost value="0"/>
+			<speed value="180"/>
+			<anim-speed value="120"/>
+			<animation-random-cycle-maxcount value="1" />
+			<animation path="models/zombie_gehen.g3d"/>  
+			<animation path="models/zombie_gehen_2.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+		<skill>
+			<type value="move"/>
+			<name value="rennen"/>		
+			<ep-cost value="0"/>
+			<speed value="350"/>
+			<anim-speed value="50"/>
+			<animation path="models/zombie_rennen.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="80"/>
+			<anim-speed value="70"/>
+			<animation-random-cycle-maxcount value="1" />
+			<animation path="models/zombie_angriff.g3d"/>
+			<animation path="models/zombie_angriff_2.g3d"/>
+			<animation path="models/zombie_angriff_links.g3d"/>
+			<animation path="models/zombie_angriff_rechts.g3d"/>
+			<sound enabled="true" start-time="0.0">
+				<sound-file path="sounds/zombie_3.wav"/>
+				<sound-file path="sounds/zombie_5.wav"/>
+				<sound-file path="sounds/zombie_6.wav"/>
+				<sound-file path="sounds/zombie_11.wav"/>
+				<sound-file path="sounds/zombie_13.wav"/>
+				<sound-file path="sounds/zombie_14.wav"/>
+ 				<sound-file path="sounds/zombie_22.wav"/>
+				<sound-file path="sounds/zombie_24.wav"/>
+			</sound> 
+			<attack-strenght value="90"/>
+			<attack-var value="40"/>
+			<attack-range value="1"/>
+			<attack-type value="slashing"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<attack-start-time value="0.3"/>
+			<projectile value="false"/>
+			<splash value="false"/>
+		</skill>	
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="60"/>
+			<anim-speed value="25"/>
+			<animation-random-cycle-maxcount value="1" />
+			<animation path="models/zombie_sterben.g3d"/>
+			<animation path="models/zombie_sterben_2.g3d"/>
+			<animation path="models/zombie_sterben_3.g3d"/>
+			<sound enabled="true" start-time="0.3">
+				<sound-file path="sounds/zombie_7.wav"/>
+				<sound-file path="sounds/zombie_8.wav"/>
+				<sound-file path="sounds/zombie_10.wav"/>
+				<sound-file path="sounds/zombie_12.wav"/>
+				<sound-file path="sounds/zombie_16.wav"/>
+				<sound-file path="sounds/zombie_17.wav"/>
+ 				<sound-file path="sounds/zombie_18.wav"/>
+				<sound-file path="sounds/zombie_21.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+
+	</skills>
+	
+	<commands>
+		
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="../worker/images/stop.png"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="../worker/images/bewegen.png"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="gehen"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="charge"/>
+			<image path="images/bewegen_schnell.png"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="rennen"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="images/untoter_angriff.png"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="rennen"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+		
+
+	</commands>
+</unit>
