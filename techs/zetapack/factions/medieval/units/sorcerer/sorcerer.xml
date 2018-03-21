@@ -276,14 +276,11 @@
 				<particle-file path="feuerblitz_particles.xml"/>
 			</particles>
 			<sound enabled="true" start-time="0.2">
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack17.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack18.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack19.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack20.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack21.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack22.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack23.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack24.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack11.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack12.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack13.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack15.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack16.wav"/>
 			</sound>
 			<attack-strenght value="100"/>
 			<attack-var value="40"/>
@@ -321,14 +318,11 @@
 				<particle-file path="feuerschlag_particles.xml"/>
 			</particles>
 			<sound enabled="true" start-time="0.2">
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack17.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack18.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack19.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack20.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack21.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack22.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack23.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack24.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack11.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack12.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack13.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack15.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack16.wav"/>
 			</sound>
 			<attack-strenght value="300"/>
 			<attack-var value="100"/>
