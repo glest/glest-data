@@ -115,7 +115,7 @@
 		
 		<command>
 			<type value="produce" />
-			<name value="jagdhund_erstellen" />
+			<name value="train_hunting_wolf" />
 			<image path="../hunting_wolf/images/jagdhund.png" />
 			<unit-requirements>
 			</unit-requirements>
