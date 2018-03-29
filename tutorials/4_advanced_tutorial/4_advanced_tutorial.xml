@@ -1,0 +1,96 @@
+<?xml version="1.0" standalone="yes" ?>
+<scenario>
+	<difficulty value="1"/>
+	<players>
+		<player control="cpu" faction="tech" team="1"/>
+		<player control="human" faction="persian" team="2"/>
+		<player control="closed"/>
+		<player control="closed"/>
+	</players>
+	<map value="forest_for_four"/>
+	<tileset value="spring"/>
+	<tech-tree value="zetapack"/>
+	<default-resources value="false"/>
+	<default-units value="false"/>
+	<default-victory-conditions value="false"/>
+	<scripts>
+		<startup>
+			createUnit('palace', 1, startLocation(1))
+			setCameraPosition(unitPosition(lastCreatedUnit()))
+			createUnit('snake_basket', 1, startLocation(1))
+			createUnit('worker', 1, startLocation(1))
+			createUnit('worker', 1, startLocation(1))
+			createUnit('worker', 1, startLocation(1))
+			createUnit('sheep', 1, startLocation(1))
+			giveResource('gold', 1, 500)
+			giveResource('stone', 1, 500)
+			giveResource('wood', 1, 500)
+			showMessage('Welcome', 'GlestAdvancedTutorial')
+			showMessage('PersianBrief', 'GlestAdvancedTutorial')
+			showMessage('WorkerBrief', 'GlestAdvancedTutorial')
+			showMessage('m1', 'GlestAdvancedTutorial')
+			setDisplayText('o1')
+			objective= 'o1'
+			combatUnitCount= 0
+		</startup>
+		<unitCreated>
+		</unitCreated>
+		<unitCreatedOfType type="house">
+			if objective=='o1' then
+				showMessage('HouseBrief', 'WellDone')
+				showMessage('HouseBrief2', 'House')
+				setDisplayText('o2')
+				objective= 'fakir'
+			end
+		</unitCreatedOfType>
+		<unitCreatedOfType type="fakir">
+			if objective=='fakir' then
+				showMessage('Fakir', 'WellDone')
+				showMessage('TempleBrief', 'Temple')
+				setDisplayText('o3')
+				objective= 'o3'
+			end
+		</unitCreatedOfType>
+		<unitCreatedOfType type="temple">
+			if objective=='o3' then
+				showMessage('TempleBrief2', 'WellDone')
+				showMessage('TentBrief', 'Tent')
+				setDisplayText('o4')
+				objective= 'o4'
+			end
+		</unitCreatedOfType>
+		<unitCreatedOfType type="tent">
+			if objective=='o4' then
+				showMessage('TentBrief2', 'WellDone')
+				setDisplayText('o5')
+				objective= 'o5'
+
+				createUnit('farm', 0, startLocation(0))
+				createUnit('barracks', 0, startLocation(0))
+				createUnit('swordman', 0, startLocation(0))
+				createUnit('swordman', 0, startLocation(0))
+				createUnit('swordman', 0, startLocation(0))
+				createUnit('swordman', 0, startLocation(0))
+				createUnit('archer', 0, startLocation(0))
+				createUnit('pig', 0, startLocation(0))
+			end
+		</unitCreatedOfType>
+		<unitDied>
+			if objective=='o5' and unitCount(0)==0 then
+			
+				setDisplayText('WellDoneNextScenarios')
+				setPlayerAsWinner(1)
+				timer_event1 = startTimerEvent()
+				objective= 'end'
+			end
+		</unitDied>
+				<timerTriggerEvent>
+			if triggeredTimerEventId() == timer_event1 then
+				if timerEventSecondsElapsed(triggeredTimerEventId()) >= 5 then
+					endGame()
+					stopTimerEvent(triggeredTimerEventId())
+				end
+			end
+		</timerTriggerEvent>
+	</scripts>
+</scenario>
