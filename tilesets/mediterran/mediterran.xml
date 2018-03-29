@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+
+<tileset>
+	<surfaces>
+		<surface partsize="128">
+			<texture path="textures/grass1.png"/>
+                </surface>
+		<surface partsize="128">
+			<texture path="textures/grass0.png"/>
+                </surface>
+		<surface partsize="128">
+			<texture path="textures/way.png"/>
+		</surface>
+		<surface partsize="128">
+			<texture path="textures/cobbles.png"/>
+		</surface>
+		<surface partsize="128">
+			<texture path="textures/clover.png"/>
+		</surface>
+		<surface partsize="128">
+			<texture path="textures/rock1.png"/>
+		</surface>
+	</surfaces>
+
+	<objects>
+		<object walkable="false">
+			<model path="models/palm2.g3d" anim-speed="18" smoothTwoFrameAnim="true" />
+			<model path="models/palm31.g3d" anim-speed="20" smoothTwoFrameAnim="true"/>
+			<model path="models/palm3.g3d"  anim-speed="19" smoothTwoFrameAnim="true"/>
+			<model path="models/palm21.g3d" anim-speed="29" smoothTwoFrameAnim="true" />
+			<model path="models/phoenix.g3d"  anim-speed="23" smoothTwoFrameAnim="true" />
+			<model path="models/palm31.g3d" anim-speed="22" smoothTwoFrameAnim="true"/>
+			<model path="models/palm21.g3d" anim-speed="23" smoothTwoFrameAnim="true" />
+			<model path="models/phoenix2.g3d" anim-speed="21" smoothTwoFrameAnim="true" />
+                        <!--model path="models/birke.g3d" /-->
+		</object>
+		<object walkable="false">
+			<model path="models/bush2.g3d"/>
+			<model path="models/bush.g3d"/>
+			<model path="models/bush3.g3d"/>
+			<model path="models/bush.g3d"/>
+		</object>
+		<object walkable="false">
+			<model path="models/stone1.g3d"/>
+			<model path="models/stone2.g3d"/>
+			<model path="models/stone3.g3d"/>
+		</object>
+		<object walkable="true">
+                        <model path="models/grass.g3d"/>
+                        <model path="models/grass2.g3d"/>
+		</object>
+                <object walkable="true">
+			<model path="models/papyrus.g3d" anim-speed="19" smoothTwoFrameAnim="true"/>
+			<model path="models/papyrus.g3d" anim-speed="21" smoothTwoFrameAnim="true"/>
+			<model path="models/papyrus.g3d" anim-speed="29" smoothTwoFrameAnim="true"/>
+			<model path="models/papyrus.g3d" anim-speed="25" smoothTwoFrameAnim="true"/>
+			<model path="models/papyrus.g3d" anim-speed="23" smoothTwoFrameAnim="true"/>
+		</object>
+		<object walkable="false">
+			<model path="models/cypress44.g3d"/>
+			<model path="models/cypress43.g3d"/>
+			<model path="models/tree4.g3d" anim-speed="24" smoothTwoFrameAnim="true"/>
+			<model path="models/cypress43.g3d"/>
+			<model path="models/cypress44.g3d"/>
+			<model path="models/tree_dead1.g3d"/>
+		</object>
+		<object walkable="false">
+			<model path="models/hanged.g3d"/>
+			<model path="models/impaled.g3d"/>
+		</object>
+		<object walkable="false">
+			<model path="models/obelisk.g3d"/>
+			<model path="models/statue.g3d"/>
+                        <model path="models/broken_statue.g3d"/>
+                        <model path="models/technician_statue.g3d"/>
+                        <model path="models/battlemage_statue.g3d"/>
+			<model path="models/swordman_statue.g3d"/>
+                        <model path="models/broken_statue2.g3d"/>
+		</object>
+		<object walkable="false">
+			<model path="models/big_stone.g3d"/>
+			<model path="models/big_stone2.g3d"/>
+			<model path="models/big_stone3.g3d"/>
+		</object>
+		<object walkable="false">
+			<model path="models/none.g3d"/>
+		</object>
+	</objects>
+
+	<ambient-sounds>
+		<day-sound enabled="true" path="sounds/desertday.ogg" play-always="false"/>
+		<night-sound enabled="true" path="sounds/night.ogg" play-always="false"/>
+		<rain-sound enabled="true" path="sounds/rain.ogg"/>
+		<snow-sound enabled="false"/>
+		<day-start-sound enabled="true" path="sounds/chicken.wav"/>
+		<night-start-sound enabled="true" path="sounds/wolf.wav"/>
+	</ambient-sounds>
+
+	<parameters>
+		<water effects="true">
+			<texture path="textures/water_001.tga"/>
+			<texture path="textures/water_002.tga"/>
+			<texture path="textures/water_003.tga"/>
+			<texture path="textures/water_004.tga"/>
+			<texture path="textures/water_005.tga"/>
+			<texture path="textures/water_006.tga"/>
+			<texture path="textures/water_007.tga"/>
+			<texture path="textures/water_008.tga"/>
+		</water>
+		<fog enabled="false"/>
+		<sun-light red="1" green="1" blue="1"/>
+		<moon-light red="0.3" green="0.3" blue="0.8"/>
+		<day-night value="0.7"/>
+		<weather sun="0.98" rain="0.02" snow="0.00"/>
+	</parameters>
+</tileset>
+
