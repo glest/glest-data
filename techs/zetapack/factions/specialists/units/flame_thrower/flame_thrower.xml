@@ -1,0 +1,148 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="1"/>
+		<height value="2"/>
+		<max-hp value="850" regeneration="1"/>
+		<max-ep value="450" regeneration="10"/>
+		<armor value="70"/>	
+		<armor-type value="leather"/>
+		<sight value="13"/>
+		<time value="100"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels>
+			<level name="badass" kills="20"/>					</levels>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements />
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="gold" amount="275"/>
+			<resource name="wood" amount="75"/>
+			<resource name="food" amount="1"/>			
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/flame_thrower.bmp"/>
+		<image-cancel path="../cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="sounds/flame_thrower_select.wav"/>			</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="sounds/flame_thrower_ack.wav"/>	
+		</command-sounds>
+
+	</parameters>
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="40"/>
+			<animation path="models/flame_thrower_stop.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="160"/>
+			<anim-speed value="80"/>
+			<animation path="models/flame_thrower_move.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="1"/>
+			<speed value="2000"/>
+			<anim-speed value="2000"/>
+			<animation path="models/flame_thrower_attack.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/flame_thrower_attack.ogg"/>
+			</sound> 
+			<attack-strenght value="40"/>
+			<attack-var value="1"/>
+			<attack-range value="8"/>
+			<attack-type value="energy"/>
+			<attack-fields>
+				<field value="land"/>
+				<field value="air"/>
+			</attack-fields>
+			<attack-start-time value="0"/>
+			<projectile value="true">
+				<particle value="true" path="particle_proj.xml"/>
+				<sound enabled="false"/>
+			</projectile>
+			<splash value="true">
+				<radius value="1"/>
+				<damage-all value="true"/>
+				<particle value="true" path="particle_splash.xml"/>
+			</splash>
+		</skill>
+	
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="120"/>
+			<anim-speed value="120"/>
+			<animation path="models/flame_thrower_die.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/flame_thrower_die.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+
+	<commands>
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="../stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="../move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="images/flame_thrower_attack.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+
+		<command>
+			<type value="attack_stopped"/>
+			<name value="hold_position"/>
+			<image path="../hold.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+
+	</commands>
+</unit>
