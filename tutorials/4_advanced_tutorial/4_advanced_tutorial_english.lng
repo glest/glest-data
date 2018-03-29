@@ -1,0 +1,30 @@
+TUTORIAL_NAME=Advanced Tutorial
+;message headers
+GlestAdvancedTutorial=Advanced ZetaGlest Tutorial
+WellDone=Good Job.
+Temple=Temple
+House=House
+Tent=Tent
+
+;message strings
+Welcome=Welcome to the Advanced ZetaGlest Tutorial, here you will learn how to use the Persian Faction
+PersianBrief=This is the Persian Faction. You can control and command the units inorder to prepare for war.
+WorkerBrief=Workers, just as in Tech are the basic Persian unit, they can harvest resources, repair and build structures.
+m1=Follow the objectives shown on the top left. First start by double clicking on a worker to select all the workers you have, and click on the Build Basic icon. Then click the House image and click on the land where you want your workers to build the house.
+HouseBrief=If you click on the House once it's built, you can see a highlighted icon and unhighlighted icons. The highlighted are accessible for you to produce, while the other ones require other advances to be created.
+HouseBrief2=Click on the highlighted icon to produce a Fakir.
+Fakir=Fakir is the basic melee unit of the Persian faction, and is a very useful at the initial of the game.
+TempleBrief=Use your workers to build a Temple which is now available to build.
+TempleBrief2=The Temple is used to produce range units, such a the princess and to allow other units such as the stickfighter from the house and the tent from the workers to be produced.
+TentBrief=Now use your workers to Build a Tent with your workers
+TentBrief2=The tent can be used to produce genies which are almost equivalent to tech archers and many other upgrades. now send your workers to mine and harvest resources, so you can produce more combat units and defeat the enemy at every corner of the map.
+
+;objective strings
+o1=Objective: Use your workers to build a House
+o2=Objective: Use your house to produce one Fakir.
+o3=Objective: Use your workers to build a Temple.
+o4=Objective: Use your workers to build a tent
+o5=Objective: Produce combat units to defeat the enemy at every corner of the map.
+
+;end
+WellDoneNextScenarios=Good job! Now you can play basic games with Persians, perhaps even on Network :D

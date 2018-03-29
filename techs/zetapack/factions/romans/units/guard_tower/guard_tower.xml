@@ -107,16 +107,6 @@
 			<fade value="false"/>
 		</skill>
 
-		<skill>
-			<type value="move"/>
-			<name value="move_skill"/>
-			<ep-cost value="1"/>
-			<speed value="210"/>
-			<anim-speed value="210"/>
-			<animation path="models/guard_tower.g3d"/>
-			<sound enabled="false"/>
-		</skill>
-
 	</skills>
 	<commands>
 		<command>
@@ -135,14 +125,6 @@
 			<upgrade-requirements/>
 			<attack-skill value="attack_skill"/>
 			<stop-skill value="stop_skill"/>
-		</command>
-		<command>
-			<type value="move"/>
-			<name value="move"/>
-			<image path="../fire_archer/images/tech_move.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<move-skill value="move_skill"/>
 		</command>
 
 	</commands>
