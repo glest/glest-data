@@ -23,11 +23,13 @@
 		<light enabled="false"/>
 		<unit-requirements>
 			<unit name="artillery_foundry"/>
+			<unit name="farm_house"/>
 		</unit-requirements> 
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="gold" amount="75"/>
-			<resource name="food" amount="1"/>			
+			<resource name="gold" amount="100"/>
+			<resource name="wood" amount="200"/>
+			<resource name="food" amount="3"/>			
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/worker.bmp"/>
@@ -89,7 +91,7 @@
 			<type value="move"/>
 			<name value="move_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="210"/>
+			<speed value="160"/>
 			<anim-speed value="120"/>
 			<animation path="models/wagon_walk.g3d"/>
 			<sound enabled="false"/>
@@ -99,7 +101,7 @@
 			<type value="move"/>
 			<name value="move_wood_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="210"/>
+			<speed value="190"/>
 			<anim-speed value="120"/>
 			<animation path="models/wagon_walk_with_axe.g3d"/>
 			<sound enabled="false"/>
@@ -109,7 +111,7 @@
 			<type value="move"/>
 			<name value="move_gold_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="210"/>
+			<speed value="190"/>
 			<anim-speed value="120"/>
 			<animation path="models/wagon_walk_with_pick.g3d"/>
 			<sound enabled="false"/>
@@ -119,7 +121,7 @@
 			<type value="move"/>
 			<name value="move_loaded_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="210"/>
+			<speed value="160"/>
 			<anim-speed value="106"/>
 			<animation path="models/wagon_walk_with_gold.g3d"/>
 			<sound enabled="false"/>
@@ -129,7 +131,7 @@
 			<type value="move"/>
 			<name value="move_loaded_wood_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="210"/>
+			<speed value="160"/>
 			<anim-speed value="120"/>
 			<animation path="models/wagon_walk_with_wood.g3d"/>
 			<sound enabled="false"/>
