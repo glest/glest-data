@@ -5,8 +5,7 @@
 		<height value="6"/>
 		<ai-build-size value="4"/>
 		<max-hp value="8500" regeneration="0"/>
-		<max-ep value="5" regeneration="0" start-percentage="100"/>
-		<max-ep value="0"/>
+		<max-ep value="0" regeneration="0" start-percentage="100"/>
 		<armor value="20"/>
 		<armor-type value="stone"/>
 		<sight value="18"/>
@@ -126,6 +125,5 @@
 			<attack-skill value="attack_skill"/>
 			<stop-skill value="stop_skill"/>
 		</command>
-
 	</commands>
 </unit>
