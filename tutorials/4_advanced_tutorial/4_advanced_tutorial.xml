@@ -62,6 +62,8 @@
 		<unitCreatedOfType type="tent">
 			if objective=='o4' then
 				showMessage('TentBrief2', 'WellDone')
+				showMessage('TentBrief3', 'WellDone')
+				showMessage('TentBrief4', 'WellDone')
 				setDisplayText('o5')
 				objective= 'o5'
 
@@ -79,6 +81,7 @@
 			if objective=='o5' and unitCount(0)==0 then
 			
 				setDisplayText('WellDoneNextScenarios')
+				showMessage('fin', 'WellDone')
 				setPlayerAsWinner(1)
 				timer_event1 = startTimerEvent()
 				objective= 'end'
