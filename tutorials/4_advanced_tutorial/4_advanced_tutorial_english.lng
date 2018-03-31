@@ -17,14 +17,17 @@ Fakir=Fakir is the basic melee unit of the Persian faction, and is a very useful
 TempleBrief=Use your workers to build a Temple which is now available to build.
 TempleBrief2=The Temple is used to produce range units, such a the princess and to allow other units such as the stickfighter from the house and the tent from the workers to be produced.
 TentBrief=Now use your workers to Build a Tent with your workers
-TentBrief2=The tent can be used to produce genies which are almost equivalent to tech archers and many other upgrades. now send your workers to mine and harvest resources, so you can produce more combat units and defeat the enemy at every corner of the map.
+TentBrief2=The tent can be used to produce genies which are almost equivalent to tech archers and many other upgrades. now send your workers to mine and harvest resources, so you can produce more combat units and defeat the enemy at the top left corner of the map.
+TentBrief3=When the food multiplier amount decreases below 0, build a farm using your workers, to top up the multiplier, or else your units die of hunger.
+TentBrief4=When you come to attack your opponent, select all your combat units by holding the mouse to create a selection square, and right click on the top right corner of the small map on your screen's top left corner, so the units attack the enemy's base directly.
+fin=Good job! Now you can play basic games with Persians, perhaps even on Network :D
 
 ;objective strings
 o1=Objective: Use your workers to build a House
 o2=Objective: Use your house to produce one Fakir.
 o3=Objective: Use your workers to build a Temple.
 o4=Objective: Use your workers to build a tent
-o5=Objective: Produce combat units to defeat the enemy at every corner of the map.
+o5=Objective: Produce combat units to defeat the enemy at the top left corner of the map.
 
 ;end
 WellDoneNextScenarios=Good job! Now you can play basic games with Persians, perhaps even on Network :D
