@@ -2,7 +2,7 @@
 <unit>
 	<!-- *** parameters *** -->
 	<parameters>
-		<size value="4" />
+		<size value="3" />
 		<height value="2" />
 		<max-hp value="3000" regeneration="0"/>
 		<max-ep value="0" />
@@ -10,12 +10,12 @@
 		<armor-type value="wood"/>				
 		<sight value="5" />
 		<time value="50" />
-		<multi-selection value="false" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="true">	
-			<row value="1111" /> 
-			<row value="1111" /> 
-			<row value="0011" />
-			<row value="1011" />
+			<row value="111" /> 
+			<row value="001" /> 
+			<row value="101" />
 		</cellmap>
 		<levels/>
 		<fields>

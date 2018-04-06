@@ -11,7 +11,8 @@
 		<armor-type value="wood"/>				
 		<sight value="16" />
 		<time value="120" />
-		<multi-selection value="false" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="false" />
 		<levels/>
 		<fields>
