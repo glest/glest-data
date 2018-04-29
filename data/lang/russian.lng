@@ -85,6 +85,7 @@ Cpu=Комп (Норма)
 CpuEasy=Комп (Слабый)
 CpuMega=Комп (Мега)
 CpuUltra=Комп (Ультра)
+CpuZeta=Комп (Мега)
 CreateNewTeam=Создать новую команду
 CustomGame=Создать игру
 DataNotSynchedTitle=Следующие игровые данные отличаются:

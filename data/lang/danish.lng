@@ -85,6 +85,7 @@ Cpu=CPU
 CpuEasy=CPU (Nem)
 CpuMega=CPU (Mega)
 CpuUltra=CPU (Ultra)
+CpuZeta=CPU (Zeta)
 CreateNewTeam=Opret nyt hold
 CustomGame=Brugerdefineret spil
 DataNotSynchedTitle=Følgende spil data er anderledes:
