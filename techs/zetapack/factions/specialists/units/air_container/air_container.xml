@@ -1,0 +1,167 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="3" />
+		<height value="2" />
+		<max-hp value="5000" regeneration="1"/>
+		<max-ep value="0" />
+		<armor value="10" />
+		<armor-type value="stone"/>				
+		<sight value="12" />
+		<time value="300" />
+		<multi-selection value="false" />
+		<cellmap value="true">
+			<row value="000" /> 
+			<row value="111" /> 
+			<row value="000" />
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="air" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="true" red="0.8" green="0.8" blue="0.5"/>
+		<rotationAllowed value="true" />
+		<unit-requirements>
+			<unit name="small_container"/>
+		</unit-requirements>
+		<upgrade-requirements>
+			<upgrade name="storage_management"/>
+			<upgrade name="air_storage"/>
+		</upgrade-requirements>
+		<resource-requirements>
+			<resource name="gold" amount="25" />
+			<resource name="stone" amount="25" />
+			<resource name="wood" amount="25" />
+		</resource-requirements>
+		<resources-stored>
+			<resource name= "gold" amount="1000"/>
+			<resource name= "wood" amount="1000"/>	
+			<resource name= "stone" amount="1000"/>
+			<resource name= "food" amount="80"/>	
+		</resources-stored>
+		<image path="images/air_container.bmp" />
+		<image-cancel path="../cancel.bmp"/>
+		<meeting-point value="true" image-path="../meeting_point.bmp"/>
+		<selection-sounds enabled="false"/>
+		<command-sounds enabled="false"/>
+	</parameters>
+	
+	<!-- *** skills *** -->
+	<skills>
+
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="100" />
+			<animation path="models/air_container_stop.g3d" />
+			<sound enabled="false" />
+		</skill>
+		
+		<skill>
+			<type value="be_built" />
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/air_container_build.g3d" />
+			<sound enabled="false" />
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="50"/>
+			<anim-speed value="100"/>
+			<animation path="models/air_container_stop.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="produce" />
+			<name value="produce_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/air_container_stop.g3d" />
+			<sound enabled="false" />
+		</skill>
+
+		<skill>
+			<type value="die" />
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/air_container_die.g3d" />
+			<particles value="true">
+				<particle-file path="smoke_particles.xml"/>
+				<particle-file path="glow_particles.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="../building_die.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+		<skill>
+			<type value="morph"/>
+			<name value="morph_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="100"/>
+			<animation path="models/air_container_build.g3d"/>
+			<sound enabled="false"/>
+		</skill>	
+
+	</skills>
+	
+	<!-- *** commands *** -->
+	<commands>
+		<command>
+			<type value= "move"/>
+			<name value="move"/>
+			<image path="../move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+	
+		<command>
+			<type value="produce"/>
+			<name value="produce_flying_worker" />
+			<image path="../flying_worker/images/flying_worker.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="flying_worker"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_temporary_container" />
+			<image path= "../temporary_container/images/temporary_container.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="temporary_container"/>
+		</command>	
+
+		<command>
+			<type value="morph"/>
+			<name value="land"/>
+			<image path="../large_container/images/large_container.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<morph-skill value="morph_skill"/>
+			<morph-unit name= "large_container"/>
+			<discount value="100"/>
+		</command>
+	</commands>
+</unit>

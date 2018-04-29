@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<particle-system type="ice_nova_splash">
+    	<texture value="true" path="../particle.bmp" luminance="true"/>
+    	<model value="false"/>
+	<primitive value="quad"/>
+	<offset x="0" y="0" z="0"/>
+	<color red="1.0" green="0.5" blue="0.0" alpha="0.8" />
+	<color-no-energy red="1.0" green="1.0" blue="0.0" alpha="0.0" />
+    	<size value="11" />
+    	<size-no-energy value="11" />
+    	<speed value="4.0" />
+	<gravity value="0"/>
+    	<emission-rate value="100" />
+    	<energy-max value="100" />
+    	<energy-var value="2" />
+
+	<emission-rate-fade value="30"/>
+	<vertical-spread a="0" b="0"/>
+	<horizontal-spread a="1" b="0"/>
+</particle-system>
