@@ -101,8 +101,8 @@
 			<texture path="textures/water_008.tga"/>
 		</water>
 		<fog enabled="false"/>
-		<sun-light red="0.4" green="0.5" blue="0.6"/>
-		<moon-light red="0.4" green="0.5" blue="0.6"/>
+		<sun-light red="0.6" green="0.6" blue="0.8"/>
+		<moon-light red="0.6" green="0.6" blue="0.8"/>
 		<day-night value="0.7"/>
 		<weather sun="0.70" rain="0.30" snow="0"/> 
 	</parameters>

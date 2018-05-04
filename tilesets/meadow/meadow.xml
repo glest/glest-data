@@ -132,7 +132,7 @@
 		</water>
 		<fog enabled="true" mode="2" density="0.000" color-red="0.0" color-green="0.3" color-blue="1" />
 		<sun-light red="1" green="1" blue="1"/>
-		<moon-light red="0.3" green="0.3" blue="1"/>
+		<moon-light red="0.6" green="0.6" blue="1"/>
 		<day-night value="0.7"/>
 		<weather sun="0.6" rain="0.4" snow="0"/>
 	</parameters>
