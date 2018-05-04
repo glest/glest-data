@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="no"?>
+
+<faction>
+	<starting-resources>
+		<resource name="gold" amount="500"/>
+		<resource name="wood" amount="500"/>
+		<resource name="stone" amount="500"/>
+		<resource name="food" amount="50"/>
+		<resource name="wheat" amount="0"/>
+	</starting-resources>
+	<starting-units>
+		<unit name="large_container" amount="1"/>
+		<unit name="land_worker" amount="1"/>
+		<unit name="range_archer" amount="1"/>
+		<unit name="defence_turret" amount="1"/>
+	</starting-units>
+	<music value="true" path="music/behind_you.ogg"/>
+	<flat-particle-positions value="true"/>
+</faction>

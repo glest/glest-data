@@ -85,6 +85,7 @@ Cpu=CPU
 CpuEasy=CPU (Easy)
 CpuMega=CPU (Mega)
 CpuUltra=CPU (Ultra)
+CpuZeta=CPU (Zeta)
 CreateNewTeam=Vytvořit nový tým
 CustomGame=Vlastní hra
 DataNotSynchedTitle=Následující herní data se liší:

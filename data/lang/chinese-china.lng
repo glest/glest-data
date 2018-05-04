@@ -85,6 +85,7 @@ Cpu=CPU
 CpuEasy=CPU (简单)
 CpuMega=CPU (究极)
 CpuUltra=CPU (超级)
+CpuZeta=CPU (究极)
 CreateNewTeam=创建新团队
 CustomGame=自定义游戏
 DataNotSynchedTitle=下面的游戏数据不同：

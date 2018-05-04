@@ -85,6 +85,7 @@ Cpu=المعالج
 CpuEasy=المعالج (سهل)
 CpuMega=المعالج (ميجا)
 CpuUltra=معالج(فائق)
+CpuZeta=المعالج (ميجا)
 CreateNewTeam=إنشاء فريق جديد
 CustomGame=لعبة مخصصة
 DataNotSynchedTitle=بيانات اللعبة التالية مختلفة

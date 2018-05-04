@@ -85,6 +85,7 @@ Cpu=CPU
 CpuEasy=CPU (弱い)
 CpuMega=CPU (超強い)
 CpuUltra=CPU (強い)
+CpuZeta=CPU (超強い)
 CreateNewTeam=新しいチームを作成
 CustomGame=カスタムゲーム
 DataNotSynchedTitle=次のデータ内容の不一致:

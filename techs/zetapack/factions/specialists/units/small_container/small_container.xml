@@ -1,0 +1,149 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="3" />
+		<height value="2" />
+		<max-hp value="1000" regeneration="1"/>
+		<max-ep value="0" />
+		<armor value="32" />
+		<armor-type value="stone"/>				
+		<sight value="12" />
+		<time value="70" />
+		<multi-selection value="false" />
+		<cellmap value="true">
+			<row value="000" /> 
+			<row value="111" /> 
+			<row value="000" />
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false"/>
+		<rotationAllowed value="false" />
+		<unit-requirements/>
+		<upgrade-requirements>
+			<upgrade name="storage_management"/>
+		</upgrade-requirements>
+		<resource-requirements>
+			<resource name="wood" amount="50" />
+			<resource name="gold" amount="75" />
+			<resource name="stone" amount="100" />
+		</resource-requirements>
+		<resources-stored>
+			<resource name= "wood" amount="700"/>	
+			<resource name= "food" amount="40"/>		
+			<resource name= "gold" amount="700"/>	
+			<resource name= "stone" amount="700"/>	
+		</resources-stored>
+		<image path="images/small_container.bmp" />
+		<image-cancel path="../cancel.bmp"/>
+		<meeting-point value="true" image-path="../meeting_point.bmp"/>
+		<selection-sounds enabled="false"/>
+		<command-sounds enabled="false"/>
+	</parameters>
+	
+	<!-- *** skills *** -->
+	<skills>
+
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="100" />
+			<animation path="models/small_container_stop.g3d" />
+			<sound enabled="false" />
+		</skill>
+		
+		<skill>
+			<type value="be_built" />
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/small_container_build.g3d" />
+			<sound enabled="false" />
+		</skill>	
+
+		<skill>
+			<type value="produce" />
+			<name value="produce_skill"/>		
+			<ep-cost value="0" />
+			<speed value="250" />
+			<anim-speed value="250" />
+			<animation path="models/small_container_stop.g3d" />
+			<sound enabled="false" />
+		</skill>	
+
+		
+		<skill>
+			<type value="die" />
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/small_container_die.g3d" />
+			<particles value="true">
+				<particle-file path="smoke_particles.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/small_container_die.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+
+		<skill>
+			<type value="morph"/>
+			<name value="morph_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="100"/>
+			<animation path="models/small_container_build.g3d"/>
+			<sound enabled="false"/>
+		</skill>	
+
+
+	</skills>
+	
+	<!-- *** commands *** -->
+	<commands>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_land_worker" />
+			<image path="../land_worker/images/land_worker.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="land_worker"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_temporary_container" />
+			<image path= "../temporary_container/images/temporary_container.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="temporary_container"/>
+		</command>
+
+		<command>
+			<type value="morph"/>
+			<name value="take_down_this_container"/>
+			<image path="../taken_down_small_container/images/taken_down_small_container.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<morph-skill value="morph_skill"/>
+			<morph-unit name= "taken_down_small_container"/>
+			<discount value="0"/>
+		</command>	
+
+	</commands>
+</unit>
