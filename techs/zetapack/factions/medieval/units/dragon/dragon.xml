@@ -81,7 +81,7 @@
 				<sound-file path="$COMMONDATAPATH/sounds/defense_tower_attack1.wav" />
 				<sound-file path="$COMMONDATAPATH/sounds/defense_tower_attack2.wav" />
 			</sound>
-			<attack-strenght value="210" />
+			<attack-strength value="210" />
 			<attack-var value="50" />
 			<attack-range value="8" />
 			<attack-type value="magic" />
@@ -117,7 +117,7 @@
 				<sound-file path="$COMMONDATAPATH/sounds/defense_tower_attack1.wav" />
 				<sound-file path="$COMMONDATAPATH/sounds/defense_tower_attack2.wav" />
 			</sound>
-			<attack-strenght value="650" />
+			<attack-strength value="650" />
 			<attack-var value="50" />
 			<attack-range value="2" />
 			<attack-type value="magic" />
@@ -152,7 +152,7 @@
 				<sound-file path="$COMMONDATAPATH/sounds/defense_tower_attack1.wav" />
 				<sound-file path="$COMMONDATAPATH/sounds/defense_tower_attack2.wav" />
 			</sound>
-			<attack-strenght value="350" />
+			<attack-strength value="350" />
 			<attack-var value="50" />
 			<attack-range value="5" />
 			<attack-type value="impact" />

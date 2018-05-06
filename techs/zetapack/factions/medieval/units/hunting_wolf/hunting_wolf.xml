@@ -98,7 +98,7 @@
 			<sound enabled="true" start-time="0.2">
 				<sound-file path="sounds/dog_frieda_attack.ogg"/>
 			</sound>		
-			<attack-strenght value="200"/>
+			<attack-strength value="200"/>
 			<attack-var value="50"/>
 			<attack-range value="2"/>
 			<attack-type value="piercing"/>
