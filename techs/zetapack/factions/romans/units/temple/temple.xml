@@ -9,7 +9,7 @@
 		<armor value="0" />
 		<armor-type value="stone"/>
 		<sight value="15" />
-		<time value="300" />
+		<time value="125" />
 		<multi-selection value="false" />
 		<max-unit-count value="4"/>
 		<cellmap value="true">
@@ -107,7 +107,9 @@
 			<name value="research_sign_of_mars" />
 			<image path="../../upgrades/sign_of_mars/images/marz.bmp" />
 			<unit-requirements />
-			<upgrade-requirements />
+			<upgrade-requirements>
+				<upgrade name="reinforce_armor"/>
+			</upgrade-requirements>
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="sign_of_mars"/>
 		</command>
