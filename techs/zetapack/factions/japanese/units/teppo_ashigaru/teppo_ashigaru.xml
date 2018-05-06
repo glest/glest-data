@@ -138,7 +138,7 @@
 				<sound-file path="sounds/matchlock_musket_06.wav"/>
 				<sound-file path="sounds/matchlock_musket_07.wav"/>
 			</sound>
-			<attack-strenght value="240"/>
+			<attack-strength value="240"/>
 			<attack-var value="100"/>
 			<attack-range value="10"/>
 			<attack-type value="energy"/>
