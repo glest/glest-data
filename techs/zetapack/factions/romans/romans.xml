@@ -29,9 +29,11 @@
 		<building-units>
 			<unit name="training_camp" minimum="2"/>
 			<unit name="temple" minimum="1"/>
+			<unit name="blacksmith_shop" minimum="1"/>
 		</building-units>
 		<upgrades>
 			<upgrade name="reinforce_armor"/>
+			<upgrade name="sign_of_mars"/>
 			<upgrade name="sharpen_points"/>
 			<upgrade name="bless_of_minerva"/>
 		</upgrades>
