@@ -102,7 +102,7 @@
 				<sound-file path="../shinobi/sounds/swing011601.wav"/>
 				<sound-file path="../shinobi/sounds/throw012201.wav"/>
 			</sound>
-			<attack-strenght value="90"/>
+			<attack-strength value="90"/>
 			<attack-var value="40"/>
 			<attack-range value="8"/>
 			<attack-type value="slashing"/>

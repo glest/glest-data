@@ -98,7 +98,7 @@
 				<sound-file path="sounds/sen_ge_hasai0201.wav"/>
 				<sound-file path="sounds/sen_ge_taihou01.wav"/>
 			</sound> 
-			<attack-strenght value="550"/>
+			<attack-strength value="550"/>
 			<attack-var value="150"/>
 			<attack-range value="15"/>
 			<attack-type value="impact"/>
