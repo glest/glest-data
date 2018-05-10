@@ -10,7 +10,8 @@
 		<armor-type value="stone"/>				
 		<sight value="12" />
 		<time value="70" />
-		<multi-selection value="false" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="true">
 			<row value="000" /> 
 			<row value="111" /> 

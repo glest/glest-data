@@ -11,13 +11,14 @@
 			<row value="0" />
 		</cellmap>
 		<height value="1"/>
-		<max-hp value="170" regeneration="-1"/>
+		<max-hp value="300" regeneration="-1"/>
 		<max-ep value="0"/>
 		<armor value="0"/>
 		<armor-type value="stone"/>					
 		<sight value="1"/>
 		<time value="60"/>	
-		<multi-selection value="false"/>	
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<levels/>
 		<fields>
 			<field value="air"/>
@@ -42,7 +43,7 @@
 		</resources-stored>
 		<image path="images/temporary_container.bmp"/>
 		<image-cancel path="../cancel.bmp"/>
-		<meeting-point value="true" image-path="../meeting_point.bmp"/>
+		<meeting-point value="false" image-path="../meeting_point.bmp"/>
 		<selection-sounds enabled="false"/>
 		<command-sounds enabled="false"/>
 	</parameters>
@@ -56,8 +57,18 @@
 			<type value="stop"/>
 			<name value="stop_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="1000"/>
-			<anim-speed value="55"/>
+			<speed value="300"/>
+			<anim-speed value="100"/>
+			<animation path="models/temporary_container_stop.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="50"/>
+			<anim-speed value="100"/>
 			<animation path="models/temporary_container_stop.g3d"/>
 			<sound enabled="false"/>
 		</skill>
@@ -76,5 +87,15 @@
 	</skills>
 
 	<commands>
+	
+		<command>
+			<type value= "move"/>
+			<name value="move"/>
+			<image path="../move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+		
 	</commands>
 </unit>
