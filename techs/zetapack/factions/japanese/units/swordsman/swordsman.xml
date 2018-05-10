@@ -105,7 +105,7 @@
 				<sound-file path="sounds/sword/sen_ka_katana_utiai0201.wav"/>
 				<sound-file path="sounds/sword/sen_ka_kiru0301.wav"/>
 			</sound> 
-			<attack-strenght value="220"/>
+			<attack-strength value="220"/>
 			<attack-var value="60"/>
 			<attack-range value="1"/>
 			<attack-type value="slashing"/>

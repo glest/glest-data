@@ -116,7 +116,7 @@
 				<sound-file path="../nagae_ashigaru/sounds/swordman_attack10.wav"/>
 				<sound-file path="../nagae_ashigaru/sounds/swordman_attack12.wav"/>
 			</sound> 
-			<attack-strenght value="140"/>
+			<attack-strength value="140"/>
 			<attack-var value="20"/>
 			<attack-range value="1"/>
 			<attack-type value="slashing"/>
@@ -138,7 +138,7 @@
 			<sound enabled="true" start-time="0.5">
 				<sound-file path="/sounds/sen_ge_naifunage0301.wav"/>
 			</sound>
-			<attack-strenght value="90"/>
+			<attack-strength value="90"/>
 			<attack-var value="20"/>
 			<attack-range value="8"/>
 			<attack-type value="piercing"/>
@@ -167,7 +167,7 @@
 			<sound enabled="true" start-time="0.5">
 				<sound-file path="sounds/swing011601.wav"/>
 			</sound> 
-			<attack-strenght value="1650"/>
+			<attack-strength value="1650"/>
 			<attack-var value="400"/>
 			<attack-range value="6"/>
 			<attack-type value="energy"/>

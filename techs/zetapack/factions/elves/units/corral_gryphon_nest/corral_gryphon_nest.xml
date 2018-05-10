@@ -100,6 +100,30 @@
 			<sound enabled="false"/>
 		</skill>
 
+		<!-- The building can't use this attack skill. It's only enabled so the AI
+		will morph the corral to the corral_gryphon_nest.
+		(https://github.com/ZetaGlest/zetaglest-source/issues/119) -->
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>
+			<ep-cost value="1"/>
+			<speed value="0"/>
+			<anim-speed value="0"/>
+			<animation path="../corral/models/stable_gryphon_nest.g3d" />
+			<sound enabled="false"/>
+			<attack-strength value="0"/>
+			<attack-var value="0"/>
+			<attack-range value="0"/>
+			<attack-type value="energy"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<splash value="false"/>
+			<attack-start-time value="0.0"/>
+			<projectile value="false"/>
+		</skill>
+
 	</skills>
 
 	<!-- *** commands *** -->

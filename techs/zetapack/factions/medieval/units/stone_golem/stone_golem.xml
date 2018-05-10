@@ -84,7 +84,7 @@
 			<sound enabled="true" start-time="0">
 				<sound-file path="$COMMONDATAPATH/sounds/golem_attack1.wav"/>
 			</sound>
-			<attack-strenght value="250"/>
+			<attack-strength value="250"/>
 			<attack-var value="90"/>
 			<attack-range value="10"/>
 			<attack-type value="impact"/>
