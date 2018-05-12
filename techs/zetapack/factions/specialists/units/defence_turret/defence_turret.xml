@@ -10,7 +10,8 @@
 		<armor-type value="wood"/>			
 		<sight value="20"/>
 		<time value="130"/>	
-		<multi-selection value="false"/>
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
 			<level name="strategic" kills="15"/>
