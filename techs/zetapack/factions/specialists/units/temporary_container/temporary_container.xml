@@ -17,7 +17,8 @@
 		<armor-type value="stone"/>					
 		<sight value="1"/>
 		<time value="60"/>	
-		<multi-selection value="false"/>	
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>	
 		<levels/>
 		<fields>
 			<field value="air"/>
