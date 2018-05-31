@@ -95,7 +95,7 @@
 			</sound>
 			<attack-strength value="350"/>
 			<attack-var value="150"/>
-			<attack-range value="10"/>
+			<attack-range value="15"/>
 			<attack-type value="impact"/>
 			<attack-start-time value="0.35"/>
 			<attack-fields>
