@@ -57,7 +57,7 @@
 			<speed value="120"/>
 			<speed value="120"/>
 			<anim-speed value="50" />
-			<animation path="../castle/construction_models/barracks_construction.g3d" />
+			<animation path="models/house_build.g3d" />
 			<sound enabled="false" />
 		</skill>
 		<skill>

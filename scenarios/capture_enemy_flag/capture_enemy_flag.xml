@@ -57,12 +57,12 @@
 			giveResource('housing', 2, 1);
 
 			-- create player1 units
-			createUnit('forum', 0, startLocation(0))
+			createUnit('colosseum', 0, startLocation(0))
 			for i=1, 3 do
 				createUnit('slave', 0, startLocation(0))
 				createUnit('archer', 0, startLocation(0))
 				createUnit('spearman', 0, startLocation(0))
-				createUnit('cow', 0, startLocation(0))
+				createUnit('temple', 0, startLocation(0))
 			end
 			createUnit('guard_tower', 0, {startLocation(0)[1]-12,startLocation(0)[2]-10})
 			createUnit('guard_tower', 0, {startLocation(0)[1]-12,startLocation(0)[2]+12})
@@ -70,7 +70,7 @@
 			createUnit('guard_tower', 0, {startLocation(0)[1]+12,startLocation(0)[2]+12})
 			giveResource('gold', 0, 250);
 			giveResource('wood', 0, 150);
-			giveResource('food', 0, 150);
+			giveResource('grace', 0, 150);
 
 			player1_in_home2_zone_event = registerCellAreaTriggerEventForFactionToLocation(0, player2_home_zone_quad)
 			player1_in_home3_zone_event = registerCellAreaTriggerEventForFactionToLocation(0, player3_home_zone_quad)
