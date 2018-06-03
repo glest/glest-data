@@ -62,10 +62,17 @@
 			<type value="move"/>
 			<name value="move_skill"/>
 			<ep-cost value="0"/>
-			<speed value="480"/>
-			<anim-speed value="120"/>
-			<animation path="../cavalry/models/cavalry_walk.g3d"/>
-			<sound enabled="false"/>
+			<speed value="150"/>
+			<anim-speed value="150"/>
+			<animation path="models/trojan_horse_move.g3d"/>
+			<sound enabled="true" start-time="0.1">
+				<sound-file path="$COMMONDATAPATH/sounds/catapult_walk1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/catapult_walk2.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/catapult_walk3.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/catapult_walk4.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/catapult_walk5.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/catapult_walk6.wav"/>
+			</sound>
 		</skill>
 
 		<skill>
