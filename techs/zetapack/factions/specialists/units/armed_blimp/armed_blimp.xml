@@ -51,7 +51,7 @@
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="20"/>
-			<animation path="models/armed_blimp_standing.g3d"/>
+			<animation path="models/armed_blimp_flying.g3d"/>
 			<sound enabled="false"/>
 		</skill>
 		
@@ -61,7 +61,7 @@
 			<ep-cost value="0"/>
 			<speed value="140"/>
 			<anim-speed value="80"/>
-			<animation path="models/armed_blimp_walking.g3d"/>
+			<animation path="models/armed_blimp_flying.g3d"/>
 			<particles value="true">
 				<particle-file path="motor_particles.xml"/>
 			</particles>
