@@ -1,0 +1,117 @@
+<?xml version="1.0" standalone="yes" ?>
+<scenario>
+	<difficulty value="0"/>
+	<players>
+		<player control="human" faction="tech" team="1"/>
+		<player control="cpu-ultra" faction="egypt" team="1"/>
+		<player control="cpu-ultra" faction="indian" team="2"/>
+		<player control="cpu-ultra" faction="indian" team="2"/>
+		<player control="cpu-ultra" faction="indian" team="2"/>
+		<player control="cpu-ultra" faction="indian" team="2"/>
+		<player control="cpu-ultra" faction="indian" team="2"/>
+		<player control="cpu-ultra" faction="indian" team="2"/>
+	</players>
+	<map value="eight_gradient"/>
+	<tileset value="mediterran"/>
+	<tech-tree value="zetapack"/>
+	<default-resources value="false"/>
+	<default-units value="false"/>
+	<default-victory-conditions value="false"/>
+	<fog-of-war value="false"/>
+	<scripts>
+		<startup>
+
+			-- global vars
+			isSent=0
+
+			--disable AI
+			  disableAi(1)
+			  disableAi(2)
+			  disableAi(3)
+			  disableAi(4)
+			  disableAi(5)
+			  disableAi(6)
+			  disableAi(7)
+
+			function addAttackingEnemy(value,fno,pos)
+				createUnit(value, fno, pos)
+				givePositionCommand(lastCreatedUnit(), 'attack',startLocation(0))
+			end
+
+
+
+  			function sendFlyingUnits()
+				isSent=1
+                        	for i=1, 5 do
+					addAttackingEnemy('flyingvalkyrie')
+				end
+			end
+
+			--my units
+			createUnit('castle', 0, startLocation(0))
+			mycastle=lastCreatedUnit()
+
+			giveResource('gold', 0, 0)
+			giveResource('wood', 0, 0)
+			giveResource('stone', 0, 0)
+			giveResource('food', 0, 0)
+
+
+			--allied units
+			createUnit('sphinx', 1, startLocation(0))
+			camerapos=unitPosition(lastCreatedUnit())
+			createUnit('sphinx', 1, startLocation(0))
+			createUnit('sphinx', 1, startLocation(0))
+
+
+			for i=1, 3 do
+				createUnit('priest', 1, startLocation(0))
+			end
+
+
+			-- enemy units
+			createUnit('main_teepee', 2, startLocation(2))
+
+
+			startposGolems={135,30}
+                        for k=2, 7 do
+                        	for i=1, 1 do
+					addAttackingEnemy('fire_golem',k,startposGolems)
+				end
+			end
+			startposArchers={150,70}
+                        for k=2, 7 do
+                        	for i=1, 10 do
+					addAttackingEnemy('fire_archer',k,startposArchers)
+					addAttackingEnemy('stickfighter',k,startposArchers)
+				end
+			end
+
+
+			--objectives
+			objective='firstwave'
+			showMessage('Brief1', 'Benchmark')
+			setDisplayText('firstwave')
+			camerapos[1]=110
+			camerapos[2]=30
+			setCameraPosition(camerapos)
+			startPerformanceTimer()
+		</startup>
+
+		<unitCreated>
+		</unitCreated>
+
+		<unitDied>
+			--setCameraPosition(camerapos)
+			if lastDeadUnit()==mycastle then
+				endPerformanceTimer()
+				--clearDisplayText()
+				res=getPerformanceTimerResults()
+				DisplayFormattedText("Your result: avg updateFps=%s , avg RenderFps=%s ",res[1],res[2])
+				--showMessage('Brief1', 'Benchmark')
+				setPlayerAsWinner(1)
+				endGame()
+			end
+		</unitDied>
+	</scripts>
+</scenario>

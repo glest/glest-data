@@ -1,0 +1,9 @@
+;message headers
+Benchmark=Benchmark
+
+;message strings
+Brief1=Just click ok and wait! Don't move mouse or click anything until you loose!
+
+;objective strings
+firstwave=Objective: Just wait and do nothing! Don't move mouse or click anything!
+
