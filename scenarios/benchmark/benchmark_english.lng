@@ -2,8 +2,8 @@
 Benchmark=Benchmark
 
 ;message strings
-Brief1=Just click ok and wait! Don't move mouse or click anything until you loose!
+Brief1=Just click ok and wait! Don't move the mouse or click anything until you lose!
 
 ;objective strings
-firstwave=Objective: Just wait and do nothing! Don't move mouse or click anything!
+firstwave=Objective: Just wait and do nothing! Don't move the mouse or click anything!
 
