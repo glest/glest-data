@@ -9,7 +9,8 @@
 		<armor-type value="wood"/>
 		<sight value="5" />
 		<time value="50" />
-		<multi-selection value="false" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="true">
 			<row value="111"/>
 			<row value="000"/>
@@ -64,7 +65,7 @@
 				<max-hp value="0" />
 				<max-ep value="0"/>
 				<sight value="0"/>
-				<attack-strenght value="20"/>
+				<attack-strength value="20"/>
 				<attack-range value="0"/>
 				<armor value="40"/>
 				<move-speed value="0" />
@@ -102,7 +103,7 @@
 				<max-hp value="0" />
 				<max-ep value="0"/>
 				<sight value="0"/>
-				<attack-strenght value="20"/>
+				<attack-strength value="20"/>
 				<attack-range value="0"/>
 				<armor value="40"/>
 				<move-speed value="0" />
@@ -130,7 +131,7 @@
 				<max-hp value="0" />
 				<max-ep value="0"/>
 				<sight value="0"/>
-				<attack-strenght value="20"/>
+				<attack-strength value="20"/>
 				<attack-range value="0"/>
 				<armor value="40"/>
 				<move-speed value="0" />

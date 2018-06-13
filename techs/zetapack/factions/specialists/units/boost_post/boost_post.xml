@@ -1,0 +1,90 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="1" />
+		<height value="1" />
+		<max-hp value="250" regeneration="1"/>
+		<max-ep value="0" />
+		<armor value="20" />
+		<armor-type value="wood"/>				
+		<sight value="5" />
+		<time value="80" />
+		<cellmap value="false"/>
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties />
+		<light enabled="true" red="0" green="0.1" blue="0.1"/>
+		<rotationAllowed value="false" />
+		<unit-requirements>
+		</unit-requirements>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="gold" amount="75"/>
+			<resource name="wood" amount="50"/>
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/boost_post.jpg" />
+		<image-cancel path="../cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="false"/>
+		<command-sounds enabled="false"/>
+	</parameters>
+	
+	<skills>
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="40" />
+			<animation path="models/boost_post_stop.g3d" />
+			<sound enabled="false" />
+                <attack-boost>
+				<allow-multiple-boosts value="true" />
+				<radius value="20"/>
+                <target value="faction"/>
+				<max-hp value="20" regeneration="1"/>
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-strenght value="10" value-percent-multiplier="false"/>
+				<attack-range value="0"/>
+				<armor value="5"/>
+				<move-speed value="0"/>
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="boost.xml"/>
+				</particles>
+                </attack-boost>
+		</skill>
+	
+		<skill>
+			<type value="die" />
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="0" />
+			<animation path="../bread/models/none.g3d" />
+			<particles value="false"/>
+			<sound enabled="false"/>	
+			<fade value="true"/>
+		</skill>	
+
+		
+	</skills>
+	
+	<commands>
+		<command>
+			<type value="stop"/>
+			<name value="attack_signal_on"/>
+			<image path="images/boost_post_attack_on.png"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+	</commands>
+</unit>

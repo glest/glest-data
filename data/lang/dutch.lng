@@ -85,6 +85,7 @@ Cpu=CPU
 CpuEasy=CPU (Makkie)
 CpuMega=CPU (Extreem)
 CpuUltra=CPU (Moeilijk)
+CpuZeta=CPU (Zeta)
 CreateNewTeam=Creëer Nieuw Team
 CustomGame=Aangepast spel
 DataNotSynchedTitle=De volgende data komt niet overeen:

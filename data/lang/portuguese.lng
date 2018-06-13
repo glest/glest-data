@@ -85,6 +85,7 @@ Cpu=CPU
 CpuEasy=CPU (Fácil)
 CpuMega=CPU (Mega)
 CpuUltra=CPU (Ultra)
+CpuZeta=CPU (Zeta)
 CreateNewTeam=Criar Nova Equipe
 CustomGame=Jogo Customizado
 DataNotSynchedTitle=Os seguintes dados são diferentes:

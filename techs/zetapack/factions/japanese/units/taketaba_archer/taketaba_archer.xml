@@ -114,7 +114,7 @@
 				<sound-file path="../yumi_ashigaru/sounds/tsurune07.wav"/>
 				<sound-file path="../yumi_ashigaru/sounds/tsurune08.wav"/>
 			</sound>
-			<attack-strenght value="120"/>
+			<attack-strength value="120"/>
 			<attack-var value="40"/>
 			<attack-range value="10"/>
 			<attack-type value="piercing"/>

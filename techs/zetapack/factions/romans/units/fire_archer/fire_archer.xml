@@ -21,11 +21,10 @@
 		</fields>
 		<properties/>
 		<light enabled="false"/>
-		<unit-requirements>
-			<unit name="training_camp"/>
-			<unit name="temple"/>
-		</unit-requirements>
-		<upgrade-requirements/>
+		<unit-requirements/>
+		<upgrade-requirements>
+			<upgrade name="sign_of_mars"/>
+		</upgrade-requirements>
 		<resource-requirements>
 			<resource name="wood" amount="60"/>
 			<resource name="gold" amount="130"/>

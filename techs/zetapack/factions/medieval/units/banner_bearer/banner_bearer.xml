@@ -83,7 +83,7 @@
 				<max-hp value="0" />
 				<max-ep value="0"/>
 				<sight value="0"/>
-				<attack-strenght value="20"/>
+				<attack-strength value="20"/>
 				<attack-range value="0"/>
 				<armor value="0"/>
 				<move-speed value="0" />
@@ -116,7 +116,7 @@
 				<max-hp value="0" />
 				<max-ep value="0"/>
 				<sight value="0"/>
-				<attack-strenght value="20"/>
+				<attack-strength value="20"/>
 				<attack-range value="0"/>
 				<armor value="0"/>
 				<move-speed value="0" />
@@ -149,7 +149,7 @@
 				<max-hp value="0" />
 				<max-ep value="0"/>
 				<sight value="0"/>
-				<attack-strenght value="20"/>
+				<attack-strength value="20"/>
 				<attack-range value="0"/>
 				<armor value="0"/>
 				<move-speed value="0" />
@@ -182,7 +182,7 @@
 				<max-hp value="0" />
 				<max-ep value="0"/>
 				<sight value="0"/>
-				<attack-strenght value="20"/>
+				<attack-strength value="20"/>
 				<attack-range value="0"/>
 				<armor value="0"/>
 				<move-speed value="0" />
@@ -201,7 +201,7 @@
 			<anim-speed value="80"/>
 			<animation path="models/bannerman_idle.g3d"/>
 			<sound enabled="false"/>				
-			<attack-strenght value="0"/>
+			<attack-strength value="0"/>
 			<attack-var value="0"/>
 			<attack-range value="8"/>
 			<attack-type value="beat"/>
@@ -225,7 +225,7 @@
 				<max-hp value="0" />
 				<max-ep value="0"/>
 				<sight value="0"/>
-				<attack-strenght value="20"/>
+				<attack-strength value="20"/>
 				<attack-range value="0"/>
 				<armor value="0"/>
 				<move-speed value="0" />
@@ -259,7 +259,7 @@
 				<sound-file path="$COMMONDATAPATH/sounds/guard_attack13.wav"/>
 				<sound-file path="$COMMONDATAPATH/sounds/guard_attack14.wav"/>
 			</sound> 
-			<attack-strenght value="110"/>
+			<attack-strength value="110"/>
 			<attack-var value="50"/>
 			<attack-range value="1"/>
 			<attack-type value="slashing"/>
@@ -283,7 +283,7 @@
 				<max-hp value="0" />
 				<max-ep value="0"/>
 				<sight value="0"/>
-				<attack-strenght value="20"/>
+				<attack-strength value="20"/>
 				<attack-range value="0"/>
 				<armor value="0"/>
 				<move-speed value="0" />

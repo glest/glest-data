@@ -43,26 +43,9 @@
 			<sound path="$COMMONDATAPATH/sounds/golem_select2.wav"/>
 			<sound path="$COMMONDATAPATH/sounds/golem_select3.wav"/>
 			<sound path="$COMMONDATAPATH/sounds/golem_select4.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_select5.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_select6.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_select7.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_select8.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_select9.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_select10.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_select11.wav"/>
 		</selection-sounds>
 		<command-sounds enabled="true">
-		        <sound path="$COMMONDATAPATH/sounds/golem_ack1.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_ack2.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_ack3.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_ack4.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_ack5.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_ack6.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_ack7.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_ack8.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_ack9.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_ack10.wav"/>
-			<sound path="$COMMONDATAPATH/sounds/golem_ack11.wav"/>
+		        <sound path="$COMMONDATAPATH/sounds/golem_attack_command5.wav"/>
 		</command-sounds>
 
 	</parameters>
@@ -101,7 +84,7 @@
 			<sound enabled="true" start-time="0">
 				<sound-file path="$COMMONDATAPATH/sounds/golem_attack1.wav"/>
 			</sound>
-			<attack-strenght value="250"/>
+			<attack-strength value="250"/>
 			<attack-var value="90"/>
 			<attack-range value="10"/>
 			<attack-type value="impact"/>

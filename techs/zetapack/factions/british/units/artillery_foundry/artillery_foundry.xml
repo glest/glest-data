@@ -7,9 +7,11 @@
 		<max-ep value="0" />
 		<armor value="0" />
 		<armor-type value="stone"/>
+		<max-unit-count value="2"/>
 		<sight value="6" />
 		<time value="100" />
-		<multi-selection value="false" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="true">
 			<row value="11111"/>
 			<row value="11111"/>

@@ -125,7 +125,7 @@
 		</water>
 		<fog enabled="false" mode="2" density="0.022" color-red="0.5" color-green="1.0" color-blue="0.6"/>
 		<sun-light red="1.0" green="1.0" blue="1.0"/>
-		<moon-light red="0.3" green="0.3" blue="0.4"/>
+		<moon-light red="0.6" green="0.6" blue="0.8"/>
 		<day-night value="0.7"/>
 		<weather sun="0.7" rain="0.3" snow="0"/>
 	</parameters>

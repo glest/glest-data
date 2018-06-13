@@ -1,0 +1,135 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="2"/>
+		<height value="1"/>
+		<max-hp value="1500" regeneration="1"/>
+		<max-ep value="0" regeneration="0"/>
+		<max-unit-count value="5"/>
+		<armor value="10"/>	
+		<armor-type value="leather"/>
+		<sight value="1"/>
+		<time value="40"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels/>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements/>
+		<upgrade-requirements>
+			<upgrade name="bomb_production"/>
+		</upgrade-requirements>
+		<resource-requirements>
+			<resource name="stone" amount="500"/>
+			<resource name="food" amount="1"/>
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/suicide_bomber.bmp"/>
+		<image-cancel path="../cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="false"/>
+		<command-sounds enabled="true">
+			<sound path="sounds/suicide_bomber_ack.ogg"/>
+		</command-sounds>
+	</parameters>
+
+	<skills>
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="20"/>
+			<animation path="models/suicide_bomber_standing.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="140"/>
+			<anim-speed value="80"/>
+			<animation path="models/suicide_bomber_walking.g3d"/>
+			<particles value="false"/>
+			<sound enabled="false"/>
+		</skill>
+                
+		<skill>
+			<type value="attack"/>
+			<name value="static_fire_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1"/>
+			<anim-speed value="1"/>
+			<animation path="models/suicide_bomber_sacrifice.g3d"/>
+			<sound enabled="false"/>
+			<attack-strenght value="4000"/>
+			<attack-var value="200"/>
+			<attack-range value="1"/>
+			<attack-type value="energy"/>				
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+<sound enabled="true" start-time="0">
+				<sound-file path="sounds/suicide_bomber_attack.ogg"/>
+			</sound>
+			<attack-start-time value="0"/>
+			<projectile value="false"/>
+			<splash value="true">
+				<radius value="11"/>
+				<damage-all value="true"/>
+				<particle value="true" path="fire_splash.xml"/>
+			</splash>
+		</skill>	
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="50"/>
+			<anim-speed value="50"/>
+			<animation path="models/suicide_bomber_sacrifice.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/suicide_bomber_die.ogg"/>
+			</sound>
+                <fade value="true"/>
+		</skill>
+
+	</skills>
+	
+	<commands>
+		
+                <command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="../stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+                
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="../move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+        
+           <command>
+			<type value="attack"/>
+			<name value="throw_bomb"/>
+			<image path="images/bomb.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="static_fire_skill"/>
+		</command>
+	</commands>
+</unit>

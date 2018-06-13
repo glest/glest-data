@@ -11,7 +11,7 @@
 		<sight value="5" />
 		<time value="50" />
 		<multi-selection value="true"/>
-		<uniform-selection value="false"/>
+		<uniform-selection value="true"/>
 		<cellmap value="true">
 			<row value="0110" />
 			<row value="1001" />

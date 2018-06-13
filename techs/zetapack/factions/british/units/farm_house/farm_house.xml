@@ -10,7 +10,8 @@
 		<armor-type value="wood"/>				
 		<sight value="5" />
 		<time value="50" />
-		<multi-selection value="false" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="true">
 			<row value="1111" /> 
 			<row value="1001" /> 
@@ -110,16 +111,6 @@
 	
 	<!-- *** commands *** -->
 	<commands>
-	
-		<command>
-			<type value="produce"/>
-			<name value="produce_colonist" />
-			<image path="../colonist/images/colonist.bmp" />
-			<unit-requirements />
-			<upgrade-requirements />
-			<produce-skill value="produce_skill"/>
-			<produced-unit name="colonist"/>
-		</command>	
 
 		<command>
 			<type value="produce"/>

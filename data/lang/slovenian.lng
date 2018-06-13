@@ -85,6 +85,7 @@ Cpu=CPE
 CpuEasy=CPE (Lahko)
 CpuMega=CPE (Mega)
 CpuUltra=CPE (Ultra)
+CpuZeta=CPE (Zeta)
 CreateNewTeam=Ustvari novo ekipo
 CustomGame=Igra po meri
 DataNotSynchedTitle=Sledeči podatek v igri je različen:
