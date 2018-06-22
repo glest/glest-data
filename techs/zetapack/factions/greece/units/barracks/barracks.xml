@@ -5,10 +5,10 @@
 		<height value="2" />
 		<max-hp value="6000" regeneration="0"/>
 		<max-ep value="0" />
-		<armor value="0" />
+		<armor value="5" />
 		<armor-type value="stone"/>
 		<sight value="6" />
-		<time value="75" />
+		<time value="95" />
 		<multi-selection value="true"/>
 		<uniform-selection value="true"/>
 		<cellmap value="true">
