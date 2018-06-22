@@ -6,18 +6,18 @@
 		<height value="1"/>
 		<max-hp value="2000" regeneration="1"/>
 		<max-ep value="0"/>
-		<armor value="20"/>	
+		<armor value="20"/>
 		<armor-type value="leather"/>
 		<sight value="13"/>
-		<time value="150"/>	
-		<multi-selection value="true"/>	
+		<time value="150"/>
+		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
 			<level name="heavily" kills="20"/>
 		</levels>
 		<fields>
 			<field value="air"/>
-		</fields>	
+		</fields>
 		<properties/>
 		<damage-particles value="true">
 			<particle-file path="smoke_particles.xml"/>
@@ -29,7 +29,7 @@
 		</upgrade-requirements>
 		<resource-requirements>
 			<resource name="gold" amount="250"/>
-			<resource name="wood" amount="300"/>	
+			<resource name="wood" amount="300"/>
 			<resource name="food" amount="1"/>
 		</resource-requirements>
 		<resources-stored/>
@@ -40,24 +40,24 @@
 			<sound path="sounds/armed_blimp_select.wav"/>
 		</selection-sounds>
 		<command-sounds enabled="true">
-			<sound path="sounds/armed_blimp_ack.wav"/>		
+			<sound path="sounds/armed_blimp_ack.wav"/>
 		</command-sounds>
 	</parameters>
 
 	<skills>
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="20"/>
 			<animation path="models/armed_blimp_flying.g3d"/>
 			<sound enabled="false"/>
 		</skill>
-		
+
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="140"/>
 			<anim-speed value="80"/>
@@ -67,10 +67,10 @@
 			</particles>
 			<sound enabled="false"/>
 		</skill>
-                
+
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="attack_skill"/>
 			<ep-cost value="0"/>
 			<speed value="110"/>
 			<anim-speed value="110"/>
@@ -96,31 +96,31 @@
 				<damage-all value="true"/>
 				<particle value="true" path="particle_splash.xml"/>
 			</splash>
-		</skill>	
+		</skill>
 
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="50"/>
 			<anim-speed value="50"/>
 			<animation path="models/armed_blimp_dying.g3d"/>
-			<particles value="true">			
+			<particles value="true">
 				<particle-file path="die_particles.xml"/>
 				<particle-file path="xplode_particles.xml"/>
 			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/armed_blimp_die.wav"/>
 				<sound-file path="sounds/armed_blimp_die2.wav"/>
-				<sound-file path="sounds/armed_blimp_die3.wav"/>	
+				<sound-file path="sounds/armed_blimp_die3.wav"/>
 			</sound>
                 <fade value="false"/>
 		</skill>
 
 	</skills>
-	
+
 	<commands>
-		
+
            <command>
 			<type value="stop"/>
 			<name value="stop"/>
@@ -129,7 +129,7 @@
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
 		</command>
-                
+
 		<command>
 			<type value="move"/>
 			<name value="move"/>
@@ -139,7 +139,7 @@
 			<move-skill value="move_skill"/>
 		</command>
 
-        
+
            <command>
 			<type value="attack"/>
 			<name value="missile"/>
@@ -149,7 +149,7 @@
 			<move-skill value="move_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
-              
+
 
            <command>
 			<type value="attack_stopped"/>
