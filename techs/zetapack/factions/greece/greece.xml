@@ -26,5 +26,25 @@
 		<unit name="artemis" amount="0"/>
 		<unit name="atlas" amount="1"/>
 	</starting-units>
+	<ai-behavior>
+		<resource-producer-units> <!--
+			<unit name="farm" minimum="1"/>
+			<unit name="chicken" minimum="50"/> -->
+		</resource-producer-units>
+		<building-units>
+			<unit name="barracks" minimum="1"/>
+			<unit name="barley_field" minimum="1"/>
+			<unit name="blacksmith" minimum="1"/>
+			<unit name="barracks" minimum="2"/>
+			<unit name="temple" minimum="1"/>
+			<unit name="palace" minimum="1"/>
+		</building-units>
+		<upgrades> <!--
+			<upgrade name="spear_weapons"/>
+			<upgrade name="summon_scarab"/>
+			<upgrade name="summon_ibis"/>
+			<upgrade name="power_of_ra"/> -->
+		</upgrades>
+	</ai-behavior>
 	<music value="true" path="music/music_greek.ogg"/>
 </faction>
