@@ -5,7 +5,7 @@
 		<height value="2" />
 		<max-hp value="6000" regeneration="0"/>
 		<max-ep value="0" />
-		<armor value="0" />
+		<armor value="12" />
 		<armor-type value="stone"/>
 		<sight value="6" />
 		<time value="100" />
@@ -109,6 +109,30 @@
 				<sound-file path="$COMMONDATAPATH/sounds/tech_building_fall5.wav"/>
 			</sound>
 			<fade value="false"/>
+		</skill>
+
+				<!-- The building can't use this attack skill. It's only enabled so the AI
+		will morph the barracks into an advanced_barracks
+		(https://github.com/ZetaGlest/zetaglest-source/issues/119) -->
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>
+			<ep-cost value="1"/>
+			<speed value="0"/>
+			<anim-speed value="0"/>
+			<animation path="models/advanced_barracks.g3d" />
+			<sound enabled="false"/>
+			<attack-strength value="0"/>
+			<attack-var value="0"/>
+			<attack-range value="0"/>
+			<attack-type value="energy"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<splash value="false"/>
+			<attack-start-time value="0.0"/>
+			<projectile value="false"/>
 		</skill>
 
 	</skills>

@@ -9,7 +9,7 @@
 		<armor value="0" />
 		<armor-type value="wood"/>
 		<sight value="12" />
-		<time value="120" />
+		<time value="105" />
 		<multi-selection value="true"/>
 		<uniform-selection value="true"/>
 		<cellmap value="true">
@@ -50,6 +50,17 @@
 	</parameters>
 
 	<skills>
+
+		<skill>
+			<type value="produce" />
+			<name value="produce_skill"/>
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/blacksmith_idle.g3d" />
+			<sound enabled="false" />
+		</skill>
+
 		<skill>
 			<name value="be_built_skill"/>
 			<ep-cost value="0" />
@@ -117,6 +128,17 @@
 	</skills>
 
 	<commands>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_engineer" />
+			<image path="../engineer/images/technician.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="engineer"/>
+		</command>
+
 		<command>
 			<type value="upgrade"/>
 			<name value="upgrade_shields" />
@@ -145,6 +167,18 @@
 			<upgrade-requirements />
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="helmets"/>
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="research_advanced_buildings"/>
+			<image path="../../upgrades/advanced_buildings/images/training_field.bmp"/>
+			<unit-requirements>
+				<unit name="engineer"/>
+			</unit-requirements>
+			<upgrade-requirements/>
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="advanced_buildings"/>
 		</command>
 
 	</commands>
