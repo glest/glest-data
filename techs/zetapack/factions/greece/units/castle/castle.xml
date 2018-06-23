@@ -128,17 +128,5 @@
 			<produced-unit name="slave"/>
 		</command>
 
-		<command>
-			<type value="produce"/>
-			<name value="produce_engineer" />
-			<image path="../engineer/images/technician.bmp"/>
-			<unit-requirements>
-				<unit name="blacksmith"/>
-			</unit-requirements>
-			<upgrade-requirements />
-			<produce-skill value="produce_skill"/>
-			<produced-unit name="engineer"/>
-		</command>
-
 	</commands>
 </unit>

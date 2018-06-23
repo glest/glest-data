@@ -278,22 +278,24 @@
 			<name value="build_advanced"/>
 			<image path="../slave/images/worker_build_advanced.bmp"/>
 			<unit-requirements/>
-			<upgrade-requirements/>
+			<upgrade-requirements>
+				<upgrade name="advanced_buildings"/>
+			</upgrade-requirements>
 			<move-skill value="move_skill"/>
 			<build-skill value="build_skill"/>
 			<buildings>
-                                <building name="tower"/>
-                                <building name="air_box"/>
-                                <building name="palace"/>
-                                <building name="temple"/>
-                                <building name="trojan_horse"/>
-                	</buildings>
+        <building name="tower"/>
+				<building name="air_box"/>
+				<building name="palace"/>
+				<building name="temple"/>
+				<building name="trojan_horse"/>
+			</buildings>
 			<start-sound enabled="false"/>
 			<built-sound enabled="true" start-time="0">
 				<sound-file path="$COMMONDATAPATH/sounds/technician_select1.wav"/>
 				<sound-file path="$COMMONDATAPATH/sounds/technician_select5.wav"/>
 			</built-sound>
-		</command>
+		</command> -->
 
 		<command>
 			<type value="repair"/>

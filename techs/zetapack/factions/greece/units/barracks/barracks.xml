@@ -126,17 +126,6 @@
 			<fade value="false"/>
 		</skill>
 
-		<skill>
-			<type value="upgrade" />
-			<name value="upgrade_skill"/>
-			<ep-cost value="0" />
-			<speed value="300" />
-			<anim-speed value="150" />
-			<animation path="models/barracks.g3d" />
-			<particles value="false"/>
-			<sound enabled="false"/>
-		</skill>
-
 	</skills>
 
 	<commands>
@@ -210,18 +199,6 @@
 			<morph-skill value="advanced_barracks"/>
 			<morph-unit name= "advanced_barracks"/>
 			<discount value="40"/>
-		</command>
-
-		<command>
-			<type value="upgrade"/>
-			<name value="research_advanced_buildings"/>
-			<image path="../../upgrades/advanced_buildings/images/training_field.bmp"/>
-	          	<unit-requirements>
-		        	<unit name="engineer" />
-	        	</unit-requirements>
-             		<upgrade-requirements/>
-			<upgrade-skill value="upgrade_skill"/>
-			<produced-upgrade name="advanced_buildings"/>
 		</command>
 
 	</commands>
