@@ -106,9 +106,14 @@
 
 		</skill>
 
-		<skill>
+		<!-- 2018-06-23: removed attack skill because the AI would send many
+		engineers into battle. Why don't they act more like Egypt priests,
+		Indian Shamans, or roman wartime mechanics? -andy5995
+		 -->
+
+		<!-- <skill>
 			<type value="attack"/>
-			<name value="molotov_skill"/>
+			<name value="attack_skill"/>
 			<ep-cost value="0"/>
 			<speed value="111"/>
 			<anim-speed value="111"/>
@@ -137,7 +142,7 @@
 			</attack-fields>
 			<projectile value="false"/>
 			<splash value="false"/>
-		</skill>
+		</skill> -->
 
 		<skill>
 			<type value="repair"/>
@@ -166,6 +171,10 @@
 			</sound>
 		</skill>
 
+		 <!-- 2018-06-23: for some reason, the engineers don't make any of
+			oxybeles unless it's specified in greece.xml under the ai-behavior section
+			-andy5995
+		-->
 		<skill>
 			<type value="morph"/>
 			<name value="build_ballista"/>
@@ -173,57 +182,6 @@
 			<speed value="500"/>
 			<anim-speed value="200"/>
 			<animation path="../oxybeles/models/ballista_build.g3d"/>
-			<sound enabled="true" start-time="0">
-				<sound-file path="$COMMONDATAPATH/sounds/technician_build1.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/technician_build2.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/technician_build3.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/technician_build4.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/technician_build5.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/technician_build6.wav"/>
-			</sound>
-		</skill>
-
-		<skill>
-			<type value="morph"/>
-			<name value="build_chariot"/>
-			<ep-cost value="0"/>
-			<speed value="500"/>
-			<anim-speed value="200"/>
-			<animation path="../chariot/models/chaiot_build.g3d"/>
-			<sound enabled="true" start-time="0">
-				<sound-file path="$COMMONDATAPATH/sounds/technician_build1.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/technician_build2.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/technician_build3.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/technician_build4.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/technician_build5.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/technician_build6.wav"/>
-			</sound>
-		</skill>
-
-		<skill>
-			<type value="morph"/>
-			<name value="build_org"/>
-			<ep-cost value="0"/>
-			<speed value="200"/>
-			<anim-speed value="200"/>
-			<animation path="../onager/models/ornager_build.g3d"/>
-			<sound enabled="true" start-time="0">
-				<sound-file path="$COMMONDATAPATH/sounds/technician_build1.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/technician_build2.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/technician_build3.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/technician_build4.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/technician_build5.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/technician_build6.wav"/>
-			</sound>
-		</skill>
-
-		<skill>
-			<type value="morph"/>
-			<name value="build_battering_ram"/>
-			<ep-cost value="0"/>
-			<speed value="300"/>
-			<anim-speed value="200"/>
-			<animation path="../battering_ram/models/battering_ram_build.g3d"/>
 			<sound enabled="true" start-time="0">
 				<sound-file path="$COMMONDATAPATH/sounds/technician_build1.wav"/>
 				<sound-file path="$COMMONDATAPATH/sounds/technician_build2.wav"/>
@@ -344,15 +302,27 @@
 			</repaired-units>
 		</command>
 
-		<command>
+		<!-- <command>
 			<type value="attack"/>
-			<name value="molotov"/>
+			<name value="attack"/>
 			<image path="images/molotov.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
-			<attack-skill value="molotov_skill"/>
+			<attack-skill value="attack_skill"/>
 		</command>
+
+		<command>
+			<type value="attack_stopped"/>
+			<name value="hold_position"/>
+			<image path="../archer/images/tech_hold.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements>
+				<upgrade name="training_field"/>
+			</upgrade-requirements>
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command> -->
 
 		<command>
 			<type value="morph"/>

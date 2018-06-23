@@ -28,7 +28,7 @@
 	</starting-units>
 	<ai-behavior>
 		<resource-producer-units>
-			<unit name="barley_field" minimum="1"/>
+			<unit name="barley_field" minimum="4"/>
 		</resource-producer-units>
 		<building-units>
 			<unit name="barracks" minimum="1"/>
