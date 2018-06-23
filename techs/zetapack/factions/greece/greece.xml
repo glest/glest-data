@@ -27,15 +27,11 @@
 		<unit name="atlas" amount="1"/>
 	</starting-units>
 	<ai-behavior>
-		<resource-producer-units>
-			<unit name="barley_field" minimum="4"/>
-		</resource-producer-units>
+		<resource-producer-units/>
 		<building-units>
 			<unit name="barracks" minimum="1"/>
 			<unit name="blacksmith" minimum="1"/>
 			<unit name="barracks" minimum="2"/>
-			<unit name="temple" minimum="1"/>
-			<unit name="palace" minimum="1"/>
 		</building-units>
 		<upgrades>
 			<upgrade name="advanced_buildings"/>
