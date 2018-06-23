@@ -196,7 +196,9 @@
 			<name value="advance_barracks"/>
 			<image path="../advanced_barracks/images/barracks.bmp"/>
 			<unit-requirements/>
-			<upgrade-requirements/>
+			<upgrade-requirements>
+				<upgrade name="advanced_buildings"/>
+			</upgrade-requirements>
 			<morph-skill value="advanced_barracks"/>
 			<morph-unit name= "advanced_barracks"/>
 			<discount value="40"/>
