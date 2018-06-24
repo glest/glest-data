@@ -4,7 +4,10 @@
 	<image path="images/advanced_architecture.bmp"/>
 	<image-cancel path="images/tech_upgrade_cancel.bmp"/>
 	<time value="100"/>
-	<unit-requirements/>
+	<unit-requirements>
+		<unit name="temple"/>
+		<unit name="blacksmith_shop"/>
+	</unit-requirements>
 	<upgrade-requirements/>
 	<resource-requirements>
 		<resource name="wood" amount="100"/>

@@ -4,7 +4,7 @@
 		<size value="2"/>
 		<height value="1"/>
 		<ai-build-size value="4"/>
-		<max-hp value="7000" regeneration="0"/>
+		<max-hp value="3500" regeneration="0"/>
 		<max-ep value="0" regeneration="0"/>
 		<armor value="20"/>
 		<armor-type value="wood"/>
@@ -85,7 +85,7 @@
 			</sound>
 			<attack-strength value="120"/>
 			<attack-var value="50"/>
-			<attack-range value="12"/>
+			<attack-range value="16"/>
 			<attack-type value="energy"/>
 			<attack-start-time value="0.6"/>
 			<attack-fields>

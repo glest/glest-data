@@ -75,7 +75,7 @@
 			</sound>
 			<attack-strength value="160"/>
 			<attack-var value="50"/>
-			<attack-range value="12"/>
+			<attack-range value="15"/>
 			<attack-type value="piercing"/>
 			<attack-start-time value="0.3"/>
 			<attack-fields>
@@ -92,7 +92,7 @@
 				</sound>
 			</projectile>
 			<splash value="true">
-				<radius value="3"/>
+				<radius value="4"/>
 				<damage-all value="true"/>
 				<particle value="true" path="particle_splash.xml"/>
 			</splash>
