@@ -6,7 +6,7 @@
 		<height value="2"/>
 		<max-hp value="2000" regeneration="5"/>
 		<max-ep value="500" regeneration="2" start-percentage="40"/>
-		<armor value="50"/>
+		<armor value="10"/>
 		<armor-type value="stone"/>
 		<sight value="20"/>
 		<time value="20"/>
@@ -20,7 +20,7 @@
 			<field value="land"/>
 		</fields>
 		<properties/>
-		<light enabled="true" red="0.1" green="0.1" blue="1.0"/>
+		<light enabled="true" red="0.1" green="0.1" blue="0.8"/>
 		<unit-requirements>
 		</unit-requirements>
 		<upgrade-requirements>
@@ -61,6 +61,7 @@
 		<skill>
 			<type value="move"/>
 			<name value="move_skill"/>
+			<ep-cost value="5"/>
 			<speed value="225"/>
 			<anim-speed value="90"/>
 			<animation path="models/golem_walking.g3d"/>
@@ -71,7 +72,7 @@
 		<skill>
 			<type value="attack"/>
 			<name value="attack_skill"/>
-			<ep-cost value="10"/>
+			<ep-cost value="16"/>
 			<speed value="50"/>
 			<anim-speed value="60"/>
 			<animation path="models/golem_attacking.g3d"/>

@@ -3,12 +3,13 @@
 	<parameters>
 		<size value="4" />
 		<height value="2" />
+		<ai-build-size value="6"/>
 		<max-hp value="6000" regeneration="0"/>
 		<max-ep value="0" />
-		<armor value="0" />
+		<armor value="5" />
 		<armor-type value="stone"/>
 		<sight value="6" />
-		<time value="75" />
+		<time value="95" />
 		<multi-selection value="true"/>
 		<uniform-selection value="true"/>
 		<cellmap value="true">
@@ -195,10 +196,13 @@
 			<name value="advance_barracks"/>
 			<image path="../advanced_barracks/images/barracks.bmp"/>
 			<unit-requirements/>
-			<upgrade-requirements/>
+			<upgrade-requirements>
+				<upgrade name="advanced_buildings"/>
+			</upgrade-requirements>
 			<morph-skill value="advanced_barracks"/>
 			<morph-unit name= "advanced_barracks"/>
 			<discount value="40"/>
 		</command>
+
 	</commands>
 </unit>

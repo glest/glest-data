@@ -108,7 +108,11 @@
 			</attack-fields>
 			<attack-start-time value="0"/>
 			<projectile value="false"/>
-			<splash value="false"/>
+			<splash value="true">
+				<radius value="1"/>
+				<damage-all value="false"/>
+				<particle value="false"/>
+			</splash>
 		</skill>
 
 		<skill>

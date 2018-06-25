@@ -4,6 +4,7 @@
 	<parameters>
 		<size value="3" />
 		<height value="2" />
+		<ai-build-size value="5"/>
 		<max-hp value="14000" regeneration="0"/>
 		<max-ep value="1200" regeneration="0" start-percentage="100"/>
 		<max-unit-count value="5"/>

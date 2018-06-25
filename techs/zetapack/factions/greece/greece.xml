@@ -26,5 +26,16 @@
 		<unit name="artemis" amount="0"/>
 		<unit name="atlas" amount="1"/>
 	</starting-units>
+	<ai-behavior>
+		<resource-producer-units/>
+		<building-units>
+			<unit name="barracks" minimum="1"/>
+			<unit name="blacksmith" minimum="1"/>
+			<unit name="barracks" minimum="2"/>
+		</building-units>
+		<upgrades>
+			<upgrade name="advanced_buildings"/>
+		</upgrades>
+	</ai-behavior>
 	<music value="true" path="music/music_greek.ogg"/>
 </faction>
