@@ -7,7 +7,7 @@
 	<parameters>
 		<size value="2"/>
 		<height value="2"/>
-		<max-hp value="2700" regeneration="20"/>
+		<max-hp value="2700" regeneration="5"/>
 		<max-ep value="0"/>
 		<armor value="45"/>
 		<armor-type value="leather"/>
@@ -81,7 +81,7 @@
 				<particle-file path="dust_front_particles.xml"/>
 				<particle-file path="dust_back_particles.xml"/>
 			</particles>
-                        <sound enabled="true" start-time="0">
+				<sound enabled="true" start-time="0">
 				<sound-file path="sounds/elewalk2.wav"/>
 			</sound>
 		</skill>
@@ -158,7 +158,11 @@
 			</attack-fields>
 			<attack-start-time value="0"/>
 			<projectile value="false"/>
-			<splash value="false"/>
+			<splash value="true">
+				<radius value="1"/>
+				<damage-all value="false"/>
+				<particle value="false"/>
+			</splash>
 		</skill>
 
 		<!-- *** skill 4 *** -->

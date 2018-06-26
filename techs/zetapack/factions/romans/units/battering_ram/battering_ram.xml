@@ -8,7 +8,7 @@
 		<size value="3"/>
 		<height value="3"/>
 		<ai-build-size value="5"/>
-		<max-hp value="2700" regeneration="4"/>
+		<max-hp value="2700" regeneration="5"/>
 		<max-ep value="0"/>
 		<armor value="45"/>
 		<armor-type value="leather"/>
@@ -104,7 +104,11 @@
 				<field value="land"/>
 			</attack-fields>
 			<projectile value="false"/>
-			<splash value="false"/>
+			<splash value="true">
+				<radius value="1"/>
+				<damage-all value="false"/>
+				<particle value="false"/>
+			</splash>
 		</skill>
 
               	<skill>
