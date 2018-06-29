@@ -62,7 +62,6 @@
 			end
 			disableAi(1)
 			disableConsume(1)
-			giveResource('food', 1, 150)
 
 			enemies={}
 			enemyCount=0;
