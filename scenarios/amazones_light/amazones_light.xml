@@ -37,22 +37,20 @@
 			-- global vars
 			isSent=0
 
-			--disable AI
-			  disableAi(1)
-			--disableAi(2)
-			--disableAi(3)
+			disableAi(1)
+			disableConsume(1)
 
 			--my units
 			createUnit('castle', 0, startLocation(0))
+			createUnit('worker', 0, startLocation(0))
+			createUnit('worker', 0, startLocation(0))
+			createUnit('worker', 0, startLocation(0))
+			createUnit('swordman', 0, startLocation(0))
+			createUnit('swordman', 0, startLocation(0))
+			createUnit('swordman', 0, startLocation(0))
+			createUnit('archer', 0, startLocation(0))
+			createUnit('archer', 0, startLocation(0))
 			createUnit('cow', 0, startLocation(0))
-			createUnit('worker', 0, startLocation(0))
-			createUnit('worker', 0, startLocation(0))
-			createUnit('worker', 0, startLocation(0))
-			createUnit('swordman', 0, startLocation(0))
-			createUnit('swordman', 0, startLocation(0))
-			createUnit('swordman', 0, startLocation(0))
-			createUnit('archer', 0, startLocation(0))
-			createUnit('archer', 0, startLocation(0))
 			giveResource('gold', 0, 1000);
 			giveResource('wood', 0, 1300);
 			giveResource('stone', 0, 350);
@@ -70,9 +68,6 @@
 
 			createUnit('castle', 1, startLocation(1))
 
-			for i=1, 20 do
-				createUnit('cow', 1, startLocation(1))
-			end
 			for i=1, 30 do
 				createUnit('valkyrie', 1, startLocation(1))
 			end
