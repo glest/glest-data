@@ -4,17 +4,17 @@
 	<parameters>
 		<size value="2"/>
 		<height value="2"/>
-		<max-hp value="2000" regeneration="5"/>
+		<max-hp value="3000" regeneration="5"/>
 		<max-ep value="500" regeneration="2" start-percentage="40"/>
 		<armor value="10"/>
 		<armor-type value="stone"/>
-		<sight value="20"/>
-		<time value="20"/>
+		<sight value="16"/>
+		<time value="100"/>
 		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
-			<level name="ancient" kills="10"/>
-			<level name="legendary" kills="30"/>
+			<level name="ancient" kills="7"/>
+			<level name="legendary" kills="15"/>
 		</levels>
 		<fields>
 			<field value="land"/>
@@ -80,12 +80,13 @@
 				<sound-file path="$COMMONDATAPATH/sounds/golem_walk1.wav"/>
 			</sound>
 			<attack-strength value="250"/>
-			<attack-var value="10"/>
-			<attack-range value="15"/>
+			<attack-var value="30"/>
+			<attack-range value="12"/>
 			<attack-type value="energy"/>
 			<attack-start-time value="0.4"/>
 			<attack-fields>
 				<field value="land"/>
+				<field value="air"/>
 			</attack-fields>
 			<projectile value="true">
 				<particle value="true" path="particle_proj.xml"/>
