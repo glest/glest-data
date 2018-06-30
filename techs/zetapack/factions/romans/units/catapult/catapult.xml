@@ -9,7 +9,7 @@
 		<max-ep value="0"/>
 		<armor value="0"/>
 		<armor-type value="wood"/>
-		<sight value="20"/>
+		<sight value="16"/>
 		<time value="100"/>
 		<multi-selection value="true"/>
 		<cellmap value="false"/>
@@ -95,7 +95,7 @@
 			</sound>
 			<attack-strength value="350"/>
 			<attack-var value="150"/>
-			<attack-range value="15"/>
+			<attack-range value="12"/>
 			<attack-type value="impact"/>
 			<attack-start-time value="0.35"/>
 			<attack-fields>
