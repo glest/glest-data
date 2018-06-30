@@ -122,7 +122,7 @@
 			<type value="repair"/>
 			<name value="repair_skill"/>
 			<ep-cost value="0"/>
-			<speed value="210"/>
+			<speed value="250"/>
 			<anim-speed value="50"/>
 			<animation path="models/magician_building.g3d"/>
 			<sound enabled="false" start-time="0">
@@ -140,7 +140,7 @@
 			<type value="build"/>
 			<name value="build_skill"/>
 			<ep-cost value="0"/>
-			<speed value="180"/>
+			<speed value="300"/>
 			<anim-speed value="50"/>
 			<animation path="models/magician_building.g3d"/>
 			<sound enabled="false" start-time="0">

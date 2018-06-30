@@ -177,6 +177,20 @@
 		</skill>
 
 		<skill>
+			<type value="build"/>
+			<name value="build_skill"/>
+			<ep-cost value="0"/>
+			<speed value="200"/>
+			<anim-speed value="100"/>
+			<animation path="models/wartime_mechanic_build.g3d"/>
+			<sound enabled="true" start-time="0.5">
+				<sound-file path="$COMMONDATAPATH/sounds/worker_build1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/worker_build2.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/worker_build3.wav"/>
+			</sound>
+		</skill>
+
+		<skill>
 			<type value="repair"/>
 			<name value="repair_skill"/>
 			<ep-cost value="0"/>
@@ -329,6 +343,26 @@
 			</upgrade-requirements>
 			<stop-skill value="stop_skill"/>
 			<attack-skill value="attack_skill"/>
+		</command>
+		
+		<command>
+			<type value= "build"/>
+			<name value="build"/>
+			<image path="images/worker_build_basic.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<build-skill value="build_skill"/>
+			<buildings>
+				<building name="eagle_pillar"/>
+				<building name="guard_tower"/>
+			</buildings>
+			<start-sound enabled="false"/>
+			<built-sound enabled="true">
+				<sound-file path="$COMMONDATAPATH/sounds/worker_work_end1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/worker_work_end2.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/worker_work_end3.wav"/>
+			</built-sound>
 		</command>
 
 		<command>
