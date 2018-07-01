@@ -105,11 +105,14 @@
 		<skill>
 			<type value="upgrade"/>
 			<name value="upgrade_skill"/>
-			<ep-cost value="0"/>
-			<speed value="300"/>
-			<anim-speed value="300"/>
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="40" />
 			<animation path="models/farm.g3d"/>
-			<sound enabled="false"/>
+			<sound enabled="false" />
+			<particles value="true">
+				<particle-file path="upgrade_particles.xml"/>
+			</particles>
 		</skill>
 	</skills>
 	<commands>
@@ -121,6 +124,17 @@
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="cow"/>
+		</command>
+		<command>
+			<type value="upgrade"/>
+			<name value="give_praise_to_freyr"/>
+			<image path="../../images/speedup.bmp" />
+			<unit-requirements>
+				<unit name="mistletoe_tree" />
+			</unit-requirements>
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="speedup_cow_production"/>
 		</command>
 	</commands>
 </unit>
