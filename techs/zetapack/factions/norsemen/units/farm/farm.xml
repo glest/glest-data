@@ -11,12 +11,12 @@
 		<time value="50" />
 		<multi-selection value="true"/>
 		<uniform-selection value="true"/>
-		<!-- <max-unit-count value="3"/> -->
+		<max-unit-count value="3"/>
 		<cellmap value="true">
-			<row value="0000" />
-			<row value="0110" />
-			<row value="0110" />
-			<row value="0000" />
+			<row value="1101" />
+			<row value="1100" />
+			<row value="0001" />
+			<row value="1001" />
 		</cellmap>
 		<levels/>
 		<fields>
@@ -39,10 +39,10 @@
 		</unit-requirements>
 		<upgrade-requirements />
 		<resource-requirements>
-			<resource name="gold" amount="200"/>
-			<resource name="wood" amount="250"/>
-			<resource name="stone" amount="150"/>
-			<resource name="food" amount="-40"/>
+			<resource name="gold" amount="100"/>
+			<resource name="wood" amount="150"/>
+			<resource name="stone" amount="50"/>
+			<resource name="food" amount="-10"/>
 		</resource-requirements>
 		<resources-stored>
 			<resource name="food" amount="20"/>
@@ -78,6 +78,15 @@
 			<sound enabled="false" />
 		</skill>
 		<skill>
+			<type value="produce" />
+			<name value="produce_skill"/>
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="50" />
+			<animation path="models/farm.g3d" />
+			<sound enabled="false" />
+		</skill>
+		<skill>
 			<type value="die" />
 			<name value="die_skill"/>
 			<ep-cost value="0" />
@@ -103,5 +112,15 @@
 			<sound enabled="false"/>
 		</skill>
 	</skills>
-	<commands/>
+	<commands>
+		<command>
+			<type value="produce"/>
+			<name value="produce_cow" />
+			<image path="../cow/images/cow.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="cow"/>
+		</command>
+	</commands>
 </unit>
