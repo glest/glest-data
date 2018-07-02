@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="yes"?>
 <unit-particle-system>
-    	<texture value="true" path="../../images/fuesse_plus.png" luminance="true"/>
+    	<texture value="true" path="images/heal.bmp" luminance="true"/>
 	<primitive value="quad"/>
 	<offset x="0" y="2" z="0.0"/>
 	<direction x="0" y="0" z="0"/>

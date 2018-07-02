@@ -71,7 +71,6 @@
 					<unit-type name="fakir" />
 					<unit-type name="genie" />
 					<unit-type name="princess" />
-					<unit-type name="sheep" />
 					<unit-type name="stickfighter" />
 					<unit-type name="swordman" />
 					<unit-type name="worker" />
@@ -82,7 +81,9 @@
 				<attack-range value="0"/>
 				<armor value="0"/>
 				<production-speed value="0"/>
-				<particles value="false"/>
+				<particles value="true">
+					<affected-particle-file path="radius_heal.xml"/>
+				</particles>
 			</attack-boost>
 		</skill>
 
@@ -136,7 +137,7 @@
 				<move-speed value="0" />
 				<production-speed value="0"/>
 				<particles value="true">
-					<affected-particle-file path="flinke_fuesse.xml"/>
+					<affected-particle-file path="radius_heal.xml"/>
 				</particles>
 			</attack-boost>
 		</skill>
