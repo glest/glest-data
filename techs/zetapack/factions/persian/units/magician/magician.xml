@@ -88,60 +88,6 @@
 		</skill>
 
 		<skill>
-			<type value="stop"/>
-			<name value="show_range_skill"/>
-			<ep-cost value="0"/>
-			<speed value="200"/>
-			<anim-speed value="35"/>
-			<animation path="models/magician_ambient.g3d"/>
-			<particles value="true">
-				<particle-file path="particle_sight.xml">
-					<shape value="conical">
-						<angle value="90"/>
-					</shape>
-					<radius value="15"/>
-					<min-radius value="14.9"/>
-					<direction x="0" y="0.1" z="0"/>
-					<offset x="0" y="0" z="0"/>
-				</particle-file>
-				<particle-file path="particle_range.xml">
-					<shape value="conical">
-						<angle value="90"/>
-					</shape>
-					<radius value="15"/>
-					<min-radius value="14.9"/>
-					<direction x="0" y="0.1" z="0"/>
-					<offset x="0" y="0" z="0"/>
-				</particle-file>
-			</particles>
-			<sound enabled="false"/>
-			<attack-boost name="radius_heal">
-				<allow-multiple-boosts value="true" />
-				<radius value="15"/>
-				<target value="faction">
-					<unit-type name="elephant" />
-					<unit-type name="fakir" />
-					<unit-type name="genie" />
-					<unit-type name="princess" />
-					<unit-type name="stickfighter" />
-					<unit-type name="swordman" />
-					<unit-type name="worker" />
-				</target>
-				<max-hp value="0" regeneration="5"/>
-				<max-ep value="0"/>
-				<sight value="0"/>
-				<attack-strength value="0"/>
-				<attack-range value="0"/>
-				<armor value="0"/>
-				<move-speed value="0" />
-				<production-speed value="0"/>
-				<particles value="true">
-					<affected-particle-file path="radius_heal.xml"/>
-				</particles>
-			</attack-boost>
-		</skill>
-
-		<skill>
 			<type value="move"/>
 			<name value="move_skill"/>
 			<ep-cost value="0"/>
@@ -354,15 +300,6 @@
 			</upgrade-requirements>
 			<stop-skill value="stop_skill"/>
 			<attack-skill value="attack_skill"/>
-		</command>
-
-		<command>
-			<type value="stop"/>
-			<name value="show_range"/>
-			<image path="../../images/reichweite.png"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<stop-skill value="show_range_skill"/>
 		</command>
 
 	</commands>
