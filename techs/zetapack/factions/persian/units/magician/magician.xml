@@ -123,7 +123,6 @@
 					<unit-type name="fakir" />
 					<unit-type name="genie" />
 					<unit-type name="princess" />
-					<unit-type name="sheep" />
 					<unit-type name="stickfighter" />
 					<unit-type name="swordman" />
 					<unit-type name="worker" />

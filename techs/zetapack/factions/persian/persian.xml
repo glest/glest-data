@@ -15,7 +15,6 @@
 		<unit name="sheep" amount="1"/>
 		<unit name="stickfighter" amount="1"/>
 		<unit name="fakir" amount="2"/>
-		<unit name="magician" amount="1"/>
 	</starting-units>
 	<music value="true" path="music/aminos-together_together.ogg"/>
 	<flat-particle-positions value="true"/>
