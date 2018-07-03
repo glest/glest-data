@@ -34,7 +34,9 @@
 			<resource name="stone" amount="250"/>
 			<resource name="wood" amount="100"/>
 		</resource-requirements>
-		<resources-stored />
+		<resources-stored>
+			<resource name="stone" amount="400" />
+		</resources-stored>
 		<image path="images/library.bmp"/>
 		<image-cancel path="../archmage/images/magic_cancel.bmp"/>
 		<meeting-point value="false"/>

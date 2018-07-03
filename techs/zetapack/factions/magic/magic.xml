@@ -4,7 +4,7 @@
 	<starting-resources>
 		<resource name="gold" amount="500"/>
 		<resource name="wood" amount="400"/>
-		<resource name="stone" amount="400"/>
+		<resource name="stone" amount="750"/>
 		<resource name="energy" amount="1"/>
 	</starting-resources>
 	<starting-units>
