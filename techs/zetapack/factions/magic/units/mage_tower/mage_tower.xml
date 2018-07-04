@@ -42,7 +42,7 @@
 		</resources-stored>
 		<image path="images/mage_tower.bmp" />
 		<image-cancel path="../archmage/images/magic_cancel.bmp"/>
-		<meeting-point value="true" image-path="images/meeting_point.bmp"/>
+		<meeting-point value="true" image-path="../../images/meeting_point.bmp"/>
 		<selection-sounds enabled="true">
 			<sound path="../archmage_tower/sounds/magic_click.wav"/>
 		</selection-sounds>
