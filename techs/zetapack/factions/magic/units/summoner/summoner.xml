@@ -70,6 +70,24 @@
 			<anim-speed value="40"/>
 			<animation path="models/summoner_standing.g3d"/>
 			<sound enabled="false"/>
+			<attack-boost name="initiate_speed">
+				<allow-multiple-boosts value="false" />
+				<radius value="8"/>
+				<target value="faction">
+					<unit-type name="initiate" />
+				</target>
+				<max-hp value="0" />
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-strength value="0"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<move-speed value="35" />
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="flinke_fuesse.xml"/>
+				</particles>
+			</attack-boost>
 		</skill>
 
 		<skill>
