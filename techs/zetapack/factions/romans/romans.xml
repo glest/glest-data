@@ -29,6 +29,7 @@
 			<unit name="training_camp" minimum="2"/>
 			<unit name="temple" minimum="1"/>
 			<unit name="blacksmith_shop" minimum="1"/>
+			<unit name="military_camp" minimum="1"/>
 			<unit name="eagle_pillar" minimum="4"/>
 		</building-units>
 		<upgrades>
