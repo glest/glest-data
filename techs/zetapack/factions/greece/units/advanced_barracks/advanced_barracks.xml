@@ -191,16 +191,6 @@
 
 		<command>
 			<type value="produce"/>
-			<name value="build_onager"/>
-			<image path="../onager/images/catapult.bmp"/>
-			<unit-requirements />
-			<upgrade-requirements />
-			<produce-skill value="produce_skill"/>
-			<produced-unit name="onager"/>
-		</command>
-
-		<command>
-			<type value="produce"/>
 			<name value="build_battering_ram"/>
 			<image path="../battering_ram/images/br.bmp"/>
 			<unit-requirements />
