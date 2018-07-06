@@ -126,41 +126,6 @@
 		</skill>
 
 		<skill>
-			<type value="attack"/>
-			<name value="attack_skill"/>
-			<ep-cost value="0"/>
-			<speed value="120"/>
-			<anim-speed value="120"/>
-			<animation path="models/wartime_mechanic_attack.g3d"/>
-			<sound enabled="true" start-time="0">
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack1.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack2.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack3.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack4.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack5.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack6.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack7.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack8.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack9.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack10.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack11.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack12.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack13.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack14.wav"/>
-			</sound>
-			<attack-strength value="80"/>
-			<attack-var value="20"/>
-			<attack-range value="1"/>
-			<attack-type value="slashing"/>
-			<attack-fields>
-				<field value="land"/>
-			</attack-fields>
-			<attack-start-time value="0"/>
-			<projectile value="false"/>
-			<splash value="false"/>
-		</skill>
-
-		<skill>
 			<type value="die"/>
 			<name value="die_skill"/>
 			<ep-cost value="0"/>
@@ -323,28 +288,6 @@
 			<move-skill value="move_skill"/>
 		</command>
 
-		<command>
-			<type value="attack"/>
-			<name value="attack"/>
-			<image path="images/guard_attack.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<move-skill value="charge_skill"/>
-			<attack-skill value="attack_skill"/>
-		</command>
-
-		<command>
-			<type value="attack_stopped"/>
-			<name value="hold_position"/>
-			<image path="../archer/images/tech_hold.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements>
-				<upgrade name="training_field"/>
-			</upgrade-requirements>
-			<stop-skill value="stop_skill"/>
-			<attack-skill value="attack_skill"/>
-		</command>
-		
 		<command>
 			<type value= "build"/>
 			<name value="build"/>
