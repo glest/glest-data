@@ -9,22 +9,11 @@
 	</starting-resources>
 	<starting-units>
 		<unit name="castle" amount="1"/>
-		<unit name="tower" amount="0"/>
+		<unit name="tower" amount="1"/>
 		<unit name="slave" amount="3"/>
 		<unit name="hoplite" amount="1"/>
 		<unit name="archer" amount="1"/>
 		<unit name="peltast" amount="1"/>
-		<unit name="dragon" amount="0"/>
-		<unit name="psiloi" amount="0"/>
-		<unit name="battering_ram" amount="0"/>
-		<unit name="trojan_horse" amount="0"/>
-		<unit name="engineer" amount="0"/>
-		<unit name="air_box" amount="0"/>
-		<unit name="barracks" amount="0"/>
-		<unit name="blacksmith" amount="0"/>
-		<unit name="alexander" amount="0"/>
-		<unit name="artemis" amount="0"/>
-		<unit name="atlas" amount="1"/>
 	</starting-units>
 	<ai-behavior>
 		<resource-producer-units/>
