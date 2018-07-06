@@ -204,6 +204,23 @@
 		</skill>
 
 		<skill>
+			<type value="morph"/>
+			<name value="build_onager"/>
+			<ep-cost value="0"/>
+			<speed value="350"/>
+			<anim-speed value="200"/>
+			<animation path="../oxybeles/models/ballista_build.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="$COMMONDATAPATH/sounds/technician_build1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/technician_build2.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/technician_build3.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/technician_build4.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/technician_build5.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/technician_build6.wav"/>
+			</sound>
+		</skill>
+
+		<skill>
 			<type value="die"/>
 			<name value="die_skill"/>
 			<ep-cost value="0"/>
@@ -343,6 +360,17 @@
 			<upgrade-requirements/>
 			<morph-skill value="build_ballista"/>
 			<morph-unit name= "oxybeles"/>
+			<discount value="40"/>
+		</command>
+
+		<command>
+			<type value="morph"/>
+			<name value="build_onager"/>
+			<image path="../onager/images/catapult.bmp"/>
+			<unit-requirements />
+			<upgrade-requirements />
+			<morph-skill value="build_onager"/>
+			<morph-unit name="onager"/>
 			<discount value="40"/>
 		</command>
 
