@@ -30,7 +30,6 @@
 			<resource name="gold" amount="200"/>
 			<resource name="wood" amount="350"/>
 			<resource name="grace" amount="7"/>
-            <resource name="wood" amount="400"/>
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/wood_guard1.bmp"/>
