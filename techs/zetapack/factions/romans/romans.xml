@@ -19,16 +19,20 @@
 	<ai-behavior>
 		<worker-units>
 			<unit name="slave" minimum="8"/>
+			<unit name="wartime_mechanic" minimum="3"/>
 		</worker-units>
 		<warrior-units>
 			<unit name="archer" minimum="3"/>
 			<unit name="spearman" minimum="3"/>
 		</warrior-units>
-		<resource-producer-units/>
+		<resource-producer-units>
+			<unit name="eagle_pillar" minimum="4"/>
+		</resource-producer-units>
 		<building-units>
 			<unit name="training_camp" minimum="2"/>
 			<unit name="temple" minimum="1"/>
 			<unit name="blacksmith_shop" minimum="1"/>
+			<unit name="eagle_pillar" minimum="3"/>
 		</building-units>
 		<upgrades>
 			<upgrade name="reinforce_armor"/>
