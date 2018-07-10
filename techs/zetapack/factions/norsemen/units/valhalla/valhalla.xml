@@ -102,7 +102,7 @@
 				<armor value="0"/>
 				<production-speed value="0"/>
 				<particles value="true">
-					<affected-particle-file path="radius_heal.xml"/>
+					<affected-particle-file path="healing_particles.xml"/>
 				</particles>
 			</attack-boost>
 		</skill>
