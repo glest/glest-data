@@ -6,17 +6,17 @@
 		<height value="5"/>
 		<max-hp value="5000" regeneration="0"/>
 		<max-ep value="0"/>
-		<armor value="20"/>	
-		<armor-type value="wood"/>			
+		<armor value="20"/>
+		<armor-type value="wood"/>
 		<sight value="16"/>
-		<time value="140"/>	
+		<time value="140"/>
 		<multi-selection value="true"/>
 		<uniform-selection value="true"/>
 		<cellmap value="false"/>
-		<levels/>	
+		<levels/>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties>
 			<property value="burnable"/>
 		</properties>
@@ -29,7 +29,7 @@
 		<resource-requirements>
 			<resource name="gold" amount="150"/>
 			<resource name="stone" amount="100"/>
-			<resource name="wood" amount="250"/>			
+			<resource name="wood" amount="250"/>
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/jagdturm.png"/>
@@ -44,10 +44,10 @@
 	</parameters>
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="300"/>
 			<anim-speed value="100"/>
@@ -68,14 +68,14 @@
 				<move-speed value="100"/>
 				<production-speed value="0"/>
 				<particles value="true">
-					<affected-particle-file path="flinke_fuesse.xml"/>
+					<affected-particle-file path="swift_feet.xml"/>
 				</particles>
 			</attack-boost>
 		</skill>
-		
+
 		<skill>
 			<type value="stop"/>
-			<name value="show_range_skill"/>		
+			<name value="show_range_skill"/>
 			<ep-cost value="0"/>
 			<speed value="300"/>
 			<anim-speed value="100"/>
@@ -116,14 +116,14 @@
 				<move-speed value="100"/>
 				<production-speed value="0"/>
 				<particles value="true">
-					<affected-particle-file path="flinke_fuesse.xml"/>
+					<affected-particle-file path="swift_feet.xml"/>
 				</particles>
 			</attack-boost>
 		</skill>
 
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="attack_skill"/>
 			<ep-cost value="0"/>
 			<speed value="80"/>
 			<anim-speed value="100"/>
@@ -151,7 +151,7 @@
 					<sound-file path="$COMMONDATAPATH/sounds/arrow_hit5.wav"/>
 				</sound>
 			</projectile>
-			<splash value="false"/>	
+			<splash value="false"/>
 			<attack-boost name="gunst_des_turm">
 				<allow-multiple-boosts value="false"/>
 				<radius value="13"/>
@@ -167,14 +167,14 @@
 				<move-speed value="100"/>
 				<production-speed value="0"/>
 				<particles value="true">
-					<affected-particle-file path="flinke_fuesse.xml"/>
+					<affected-particle-file path="swift_feet.xml"/>
 				</particles>
 			</attack-boost>
-		</skill>		
+		</skill>
 
 		<skill>
 			<type value="be_built"/>
-			<name value="be_built_skill"/>		
+			<name value="be_built_skill"/>
 			<ep-cost value="0"/>
 			<speed value="300"/>
 			<anim-speed value="300"/>
@@ -183,13 +183,13 @@
 				<animation path="models/jagdturm_aufbau_40.g3d" minHp="1651" maxHp="2460"/>
 				<animation path="models/jagdturm_aufbau_50.g3d" minHp="2461" maxHp="3280"/>
 				<animation path="models/jagdturm_aufbau_70.g3d" minHp="3281" maxHp="4110"/>
-				<animation path="models/jagdturm_aufbau_80.g3d" minHp="4111" maxHp="5000"/>			
+				<animation path="models/jagdturm_aufbau_80.g3d" minHp="4111" maxHp="5000"/>
 			<sound enabled="false"/>
 		</skill>
 
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="30"/>
 			<anim-speed value="30"/>
@@ -200,12 +200,12 @@
 			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="$COMMONDATAPATH/sounds/tech_building_fall5.wav"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 
 	</skills>
-	
+
 	<commands>
 
 		<command>
@@ -213,7 +213,7 @@
 			<name value="stop"/>
 			<image path="../worker/images/stop.png"/>
 			<unit-requirements/>
-			<upgrade-requirements/>			
+			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
 		</command>
 

@@ -6,21 +6,21 @@
 		<height value="2"/>
 		<max-hp value="700" regeneration="0"/>
 		<max-ep value="500" regeneration="5"/>
-		<armor value="20"/>	
+		<armor value="20"/>
 		<armor-type value="leather"/>
 		<sight value="12"/>
-		<time value="120"/>	
-		<multi-selection value="true"/>	
+		<time value="120"/>
+		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
-			<level name="veteran" kills="5"/>				
+			<level name="veteran" kills="5"/>
 			<level name="expert" kills="10"/>
 			<level name="master" kills="20"/>
 			<level name="legendary" kills="40"/>
 		</levels>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties/>
 		<light enabled="false"/>
 		<unit-requirements>
@@ -70,7 +70,7 @@
 	</parameters>
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
 			<name value="stop_skill"/>
@@ -85,7 +85,7 @@
 				<allow-multiple-boosts value="false" />
 				<radius value="10"/>
 				<target value="faction">
-					<unit-type name="worker" />					
+					<unit-type name="worker" />
 				</target>
 				<max-hp value="0" />
 				<max-ep value="0"/>
@@ -96,10 +96,10 @@
 				<move-speed value="75" />
 				<production-speed value="0"/>
 				<particles value="true">
-					<affected-particle-file path="../sentry_tower/flinke_fuesse.xml"/>
+					<affected-particle-file path="../sentry_tower/swift_feet.xml"/>
 				</particles>
-			</attack-boost>  
-		</skill>   
+			</attack-boost>
+		</skill>
 
 	<!--	<skill>
 			<type value="stop"/>
@@ -115,7 +115,7 @@
 				<allow-multiple-boosts value="false" />
 				<radius value="10"/>
 				<target value="faction">
-					<unit-type name="untoter" />					
+					<unit-type name="untoter" />
 				</target>
 				<max-hp value="0" regeneration="3" value-percent-multipler="false"/>
 				<max-ep value="0"/>
@@ -133,7 +133,7 @@
 
 		<skill>
 			<type value="stop"/>
-			<name value="show_range_skill"/>		
+			<name value="show_range_skill"/>
 			<ep-cost value="0"/>
 			<speed value="200"/>
 			<anim-speed value="35"/>
@@ -174,7 +174,7 @@
 				<allow-multiple-boosts value="false" />
 				<radius value="10"/>
 				<target value="faction">
-					<unit-type name="worker" />					
+					<unit-type name="worker" />
 				</target>
 				<max-hp value="0" />
 				<max-ep value="0"/>
@@ -185,9 +185,9 @@
 				<move-speed value="75" />
 				<production-speed value="0"/>
 				<particles value="true">
-					<affected-particle-file path="../sentry_tower/flinke_fuesse.xml"/>
+					<affected-particle-file path="../sentry_tower/swift_feet.xml"/>
 				</particles>
-			</attack-boost>  
+			</attack-boost>
 		</skill>
 
 		<skill>
@@ -202,7 +202,7 @@
 				<allow-multiple-boosts value="false" />
 				<radius value="10"/>
 				<target value="faction">
-					<unit-type name="worker" />					
+					<unit-type name="worker" />
 				</target>
 				<max-hp value="0" />
 				<max-ep value="0"/>
@@ -213,14 +213,14 @@
 				<move-speed value="75" />
 				<production-speed value="0"/>
 				<particles value="true">
-					<affected-particle-file path="../sentry_tower/flinke_fuesse.xml"/>
+					<affected-particle-file path="../sentry_tower/swift_feet.xml"/>
 				</particles>
 			</attack-boost>
 		</skill>
 
 		<skill>
 			<type value="produce"/>
-			<name value="hexer_magie"/>		
+			<name value="hexer_magie"/>
 			<ep-cost value="0"/>
 			<speed value="150"/>
 			<anim-speed value="100"/>
@@ -233,7 +233,7 @@
 
 		<skill>
 			<type value="attack"/>
-			<name value="knueppel_angriff"/>		
+			<name value="knueppel_angriff"/>
 			<ep-cost value="0"/>
 			<speed value="111"/>
 			<anim-speed value="111"/>
@@ -267,7 +267,7 @@
 
 		<skill>
 			<type value="attack"/>
-			<name value="feuerblitz_angriff"/>		
+			<name value="feuerblitz_angriff"/>
 			<ep-cost value="25"/>
 			<speed value="125"/>
 			<anim-speed value="70"/>
@@ -285,7 +285,7 @@
 			<attack-strength value="100"/>
 			<attack-var value="40"/>
 			<attack-range value="8"/>
-			<attack-type value="magic"/>				
+			<attack-type value="magic"/>
 			<attack-fields>
 				<field value="land"/>
 				<field value="air"/>
@@ -297,7 +297,7 @@
 					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit1.wav"/>
 					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit2.wav"/>
 					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit3.wav"/>
-					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit4.wav"/>	
+					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit4.wav"/>
 				</sound>
 			</projectile>
 			<splash value="true">
@@ -309,7 +309,7 @@
 
 		<skill>
 			<type value="attack"/>
-			<name value="feuerschlag_angriff"/>		
+			<name value="feuerschlag_angriff"/>
 			<ep-cost value="150"/>
 			<speed value="60"/>
 			<anim-speed value="40"/>
@@ -327,7 +327,7 @@
 			<attack-strength value="300"/>
 			<attack-var value="100"/>
 			<attack-range value="10"/>
-			<attack-type value="magic"/>				
+			<attack-type value="magic"/>
 			<attack-fields>
 				<field value="land"/>
 				<field value="air"/>
@@ -339,7 +339,7 @@
 					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit1.wav"/>
 					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit2.wav"/>
 					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit3.wav"/>
-					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit4.wav"/>	
+					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit4.wav"/>
 				</sound>
 			</projectile>
 			<splash value="true">
@@ -351,7 +351,7 @@
 
 		<skill>
 			<type value="repair"/>
-			<name value="heilen"/>		
+			<name value="heilen"/>
 			<ep-cost value="0"/>
 			<speed value="210"/>
 			<anim-speed value="100"/>
@@ -361,10 +361,10 @@
 				<particle-file path="heal_particles.xml"/>
 			</particles>
 		</skill>
-		
+
 		<skill>
-			<type value="upgrade"/>	
-			<name value="upgrade_skill"/>	
+			<type value="upgrade"/>
+			<name value="upgrade_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="40" />
@@ -377,7 +377,7 @@
 
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>	
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="120"/>
 			<anim-speed value="120"/>
@@ -392,9 +392,9 @@
 	</skills>
 
 	<!-- *** commands *** -->
-	
+
 	<commands>
-		
+
 		<command>
 			<type value="stop"/>
 			<name value="stop"/>
@@ -430,7 +430,7 @@
 			<unit-requirements/>
 			<upgrade-requirements>
 				<upgrade name="medicine" />
-			</upgrade-requirements>				
+			</upgrade-requirements>
 			<move-skill value="move_skill"/>
 			<repair-skill value="heilen"/>
 			<repaired-units>
@@ -465,7 +465,7 @@
 			<type value="attack_stopped"/>
 			<name value="fire_lightning_hold_position"/>
 			<image path="images/halte_position_feuerspruch.png"/>
-			<unit-requirements/>							
+			<unit-requirements/>
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
 			<attack-skill value="feuerblitz_angriff"/>
@@ -498,24 +498,24 @@
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<upgrade-skill value="upgrade_skill"/>
-			<produced-upgrade name="dragon_lure"/>			
+			<produced-upgrade name="dragon_lure"/>
 		</command>
 
 		<command>
 			<type value="attack"/>
 			<name value="fire_lightning"/>
 			<image path="images/hexerangriff_feuerspruch.png"/>
-			<unit-requirements/>			
+			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
 			<attack-skill value="feuerblitz_angriff"/>
-		</command>		
+		</command>
 
 		<command>
 			<type value="attack"/>
 			<name value="fire_impact"/>
 			<image path="images/hexerangriff_feuerschlag.png"/>
-			<unit-requirements/>		
+			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
 			<attack-skill value="feuerschlag_angriff"/>
@@ -538,7 +538,7 @@
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<produce-skill value="hexer_magie"/>
-			<produced-unit name="zombie"/>			
+			<produced-unit name="zombie"/>
 		</command>
 
 	</commands>
