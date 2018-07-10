@@ -105,7 +105,7 @@
 			<projectile value="false"/>
 			<splash value="false"/>
 			<particles value="true">
-				<particle-file path="non_ranged_particles.xml"/>
+				<particle-file path="non_ranged_attack_particles.xml"/>
 			</particles>
 		</skill>
 
