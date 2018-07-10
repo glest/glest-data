@@ -9,8 +9,8 @@
 	<size value="0.15" />
 	<size-no-energy value="0" />
 	<speed value="2" />
-	<gravity value="0.01"/>
-	<emission-rate value="16" />
+	<gravity value="0.5"/>
+	<emission-rate value="4" />
 	<energy-max value="60" />
 	<energy-var value="45" />
 	<teamcolorEnergy value="true" />
