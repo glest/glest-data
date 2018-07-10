@@ -121,6 +121,9 @@
 			<attack-start-time value="0"/>
 			<projectile value="false"/>
 			<splash value="false"/>
+			<particles value="true">
+				<particle-file path="non_ranged_attack_particles.xml"/>
+			</particles>
 		</skill>
 
 		<!-- *** skill 3 *** -->
