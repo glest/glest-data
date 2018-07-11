@@ -67,7 +67,6 @@
 				<allow-multiple-boosts value="true" />
 				<radius value="15"/>
 				<target value="faction">
-					<unit-type name="elephant" />
 					<unit-type name="fakir" />
 					<unit-type name="genie" />
 					<unit-type name="princess" />
@@ -82,7 +81,7 @@
 				<armor value="0"/>
 				<production-speed value="0"/>
 				<particles value="true">
-					<affected-particle-file path="radius_heal.xml"/>
+					<affected-particle-file path="healing_particles.xml"/>
 				</particles>
 			</attack-boost>
 		</skill>
@@ -114,6 +113,9 @@
 			<speed value="210"/>
 			<anim-speed value="50"/>
 			<animation path="models/magician_healing.g3d"/>
+			<particles value="true">
+				<particle-file path="healing_particles.xml"/>
+			</particles>
 			<sound enabled="true" start-time="0.5">
 				<sound-file path="$COMMONDATAPATH/sounds/shaman_heal1.wav"/>
 			</sound>
@@ -245,10 +247,7 @@
 			<move-skill value="move_skill"/>
 			<repair-skill value="repair_skill"/>
 			<repaired-units>
-				<!--unit name="catapult"/-->
 				<unit name="snake_basket"/>
-                                <!--unit name="air_ballista"/>
-                                <unit name="aerodrome"/-->
 			</repaired-units>
 		</command>
 
@@ -287,7 +286,7 @@
 				<unit name="flying_carpet"/>
 				<unit name="sheep"/>
 				<unit name="elephant"/>
-                                <unit name="fakir"/>
+				<unit name="fakir"/>
 			</repaired-units>
 		</command>
 
