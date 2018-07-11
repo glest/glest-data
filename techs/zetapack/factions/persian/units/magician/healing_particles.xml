@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="yes"?>
 <unit-particle-system>
-	<texture value="true" path="images/health.bmp" luminance="true" />
+	<texture value="true" path="images/healing_particle.bmp" luminance="true" />
 	<primitive value="quad" />
 	<mode value="normal" />
 	<offset x="0" y="0" z="1.4" />
