@@ -244,7 +244,7 @@
 		<command>
 			<type value="attack_stopped"/>
 			<name value="hold_position"/>
-			<image path="../archer/images/tech_hold.bmp"/>
+			<image path="../../images/hold_position.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements>
 				<upgrade name="training_field"/>
