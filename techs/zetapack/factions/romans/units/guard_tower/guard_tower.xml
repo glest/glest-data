@@ -30,8 +30,11 @@
 			<resource name="gold" amount="275"/>
 			<resource name="wood" amount="100"/>
 			<resource name="stone" amount="300" />
+			<resource name="grace" amount="-10" />
 		</resource-requirements>
-		<resources-stored/>
+		<resources-stored>
+			<resource name="grace" amount="10" />
+		</resources-stored>
 		<image path="images/defense_tower.bmp"/>
 		<image-cancel path="../archer/images/tech_cancel.bmp"/>
 		<meeting-point value="false"/>
