@@ -27,7 +27,7 @@
 			<upgrade name="stables"/>
 		</upgrade-requirements>
 		<resource-requirements>
-			<resource name="wood" amount="100"/>
+			<resource name="wood" amount="300"/>
 			<resource name="gold" amount="250"/>
 			<resource name="food" amount="2"/>
 		</resource-requirements>
