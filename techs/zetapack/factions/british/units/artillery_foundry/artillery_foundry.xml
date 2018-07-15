@@ -153,7 +153,7 @@
 
 		<command>
 			<type value="upgrade"/>
-			<name value="upgrade_mortar"/>
+			<name value="research_mortar"/>
 			<image path="../../upgrades/mortar/images/mortar.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
@@ -163,7 +163,7 @@
 
 		<command>
 			<type value="upgrade"/>
-			<name value="upgrade_puckle"/>
+			<name value="research_puckle_gun"/>
 			<image path="../../upgrades/puckle/images/puckle.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
