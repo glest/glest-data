@@ -38,7 +38,6 @@
 			<resource name="wood" amount="50" />
 		</resource-requirements>
 		<resources-stored>
-			<resource name="gold" amount="200" />
 			<resource name="stone" amount="200" />
 		</resources-stored>
 		<image path="images/barracks.bmp" />
