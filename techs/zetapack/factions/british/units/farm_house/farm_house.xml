@@ -7,15 +7,15 @@
 		<max-hp value="3000" regeneration="0"/>
 		<max-ep value="0" />
 		<armor value="0" />
-		<armor-type value="wood"/>				
+		<armor-type value="wood"/>
 		<sight value="5" />
 		<time value="50" />
 		<multi-selection value="true"/>
 		<uniform-selection value="true"/>
 		<cellmap value="true">
-			<row value="1111" /> 
-			<row value="1001" /> 
-			<row value="1011" /> 
+			<row value="1111" />
+			<row value="1001" />
+			<row value="1011" />
 			<row value="1011" />
 		</cellmap>
 		<levels/>
@@ -49,13 +49,13 @@
 			<sound path="sounds/tech_click.wav"/>
 		</command-sounds>
 	</parameters>
-	
+
 	<!-- *** skills *** -->
 	<skills>
 
 		<skill>
 			<type value="be_built" />
-			<name value="be_built_skill"/>		
+			<name value="be_built_skill"/>
 			<ep-cost value="0" />
 			<speed value="120"/>
 			<speed value="120"/>
@@ -63,43 +63,43 @@
 			<animation path="models/farm_house_build.g3d" />
 			<sound enabled="false" />
 		</skill>
-		
+
 		<skill>
 			<type value="stop" />
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="50" />
 			<animation path="models/farm_house.g3d" />
 			<sound enabled="false" />
-		</skill>	
-		
+		</skill>
+
 		<skill>
 			<type value="produce" />
-			<name value="produce_skill"/>		
+			<name value="produce_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="50" />
 			<animation path="models/farm_house.g3d" />
 			<sound enabled="false" />
-		</skill>	
-		
+		</skill>
+
 		<skill>
 			<type value="die" />
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="models/farm_house_die.g3d" />
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/tech_building_fall3.wav"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 
                 <skill>
 			<type value="upgrade"/>
-			<name value="upgrade_skill"/>		
+			<name value="upgrade_skill"/>
 			<ep-cost value="0"/>
 			<speed value="300"/>
 			<anim-speed value="300"/>
@@ -108,7 +108,7 @@
 		</skill>
 
 	</skills>
-	
+
 	<!-- *** commands *** -->
 	<commands>
 
@@ -120,7 +120,7 @@
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="cow"/>
-		</command>	
+		</command>
 
 		<command>
 			<type value="produce"/>
@@ -140,26 +140,6 @@
 			<upgrade-requirements />
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="stables"/>
-		</command>
-
-		<command>
-			<type value="produce"/>
-			<name value="tax_for_wood" />
-			<image path="../wood_tax/images/gold.bmp" />
-			<unit-requirements />
-			<upgrade-requirements />
-			<produce-skill value="produce_skill"/>
-			<produced-unit name="wood_tax"/>
-		</command>
-
-		<command>
-			<type value="produce"/>
-			<name value="tax_for_stone" />
-			<image path="../stone_tax/images/gold.bmp" />
-			<unit-requirements />
-			<upgrade-requirements />
-			<produce-skill value="produce_skill"/>
-			<produced-unit name="stone_tax"/>
 		</command>
 
 	</commands>
