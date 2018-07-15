@@ -3,9 +3,9 @@
 <faction>
 	<starting-resources>
 		<resource name="gold" amount="500"/>
-		<resource name="wood" amount="500"/>	
-		<resource name="stone" amount="500"/>	
-		<resource name="food" amount="50"/>	
+		<resource name="wood" amount="500"/>
+		<resource name="stone" amount="500"/>
+		<resource name="food" amount="50"/>
 	</starting-resources>
 	<starting-units>
 		<unit name="fort" amount="1"/>
@@ -22,6 +22,6 @@
 		<unit name="wagon_worker" amount="0"/>
 		<unit name="balloon" amount="0"/>
 		<unit name="nurse" amount="0"/>
-	</starting-units>	
+	</starting-units>
 	<music value="true" path="music/british_music.ogg"/>
 </faction>

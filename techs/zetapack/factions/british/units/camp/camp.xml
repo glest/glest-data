@@ -7,7 +7,7 @@
 		<max-hp value="6000" regeneration="0"/>
 		<max-ep value="0" />
 		<armor value="0" />
-		<armor-type value="wood"/>		
+		<armor-type value="wood"/>
 		<sight value="12" />
 		<time value="120" />
 		<multi-selection value="true"/>
@@ -45,10 +45,10 @@
 			<sound path="sounds/tech_click.wav" />
 		</command-sounds>
 	</parameters>
-	
+
 	<skills>
 		<skill>
-			<name value="be_built_skill"/>		
+			<name value="be_built_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
@@ -56,20 +56,20 @@
 			<sound enabled="false" />
 			<type value="be_built" />
 		</skill>
-		
+
 		<skill>
 			<type value="stop" />
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="50" />
 			<animation path="models/camp.g3d" />
 			<sound enabled="false" />
-		</skill>	
-		
+		</skill>
+
 		<skill>
 			<type value="upgrade" />
-			<name value="upgrade_skill"/>		
+			<name value="upgrade_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="150" />
@@ -81,20 +81,20 @@
 				<sound-file path="sounds/anvil4.wav"/>
 			</sound>
 		</skill>
-		
+
 		<skill>
 			<type value="produce"/>
-			<name value="produce_skill"/>	
+			<name value="produce_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="models/camp.g3d" />
 			<sound enabled="false" />
 		</skill>
-		
+
 		<skill>
 			<type value="die" />
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
@@ -105,14 +105,14 @@
 			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/tech_building_fall1.wav"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 
 	</skills>
 
 	<commands>
-		
+
 		<command>
 			<type value="produce"/>
 			<name value="produce_infantryman" />
@@ -122,7 +122,7 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="infantryman"/>
 		</command>
-		
+
 		<command>
 			<type value="produce"/>
 			<name value="produce_saberman" />
@@ -132,7 +132,7 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="saberman"/>
 		</command>
-		
+
 		<command>
 			<type value="produce"/>
 			<name value="produce_cavalry" />
@@ -143,15 +143,17 @@
 			<produced-unit name="cavalry"/>
 		</command>
 
-		<!--command>
-			<type value="upgrade"/>
-			<name value="dog_training" />
-			<image path="../../upgrades/dog_training/images/advanced_architecture.bmp" />
+		<command>
+			<type value="produce"/>
+			<name value="produce_nurse" />
+			<image path="../nurse/images/nurse.bmp" />
 			<unit-requirements />
-			<upgrade-requirements />
-			<upgrade-skill value="upgrade_skill"/>
-			<produced-upgrade name="dog_training"/>
-		</command-->
-		
+			<upgrade-requirements>
+				<upgrade name="gun_powder"/>
+			</upgrade-requirements>
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="nurse"/>
+		</command>
+
 	</commands>
 </unit>
