@@ -27,7 +27,7 @@
 			<upgrade name="stables"/>
 		</upgrade-requirements>
 		<resource-requirements>
-			<resource name="wood" amount="100"/>
+			<resource name="wood" amount="300"/>
 			<resource name="gold" amount="250"/>
 			<resource name="food" amount="2"/>
 		</resource-requirements>
@@ -112,7 +112,6 @@
 			<attack-start-time value="0.05"/>
 			<attack-fields>
 				<field value="land"/>
-				<field value="air"/>
 			</attack-fields>
 			<particles value="true" start-time="0.05" end-time="0.1">
 				<particle-file path="flash.xml"/>
