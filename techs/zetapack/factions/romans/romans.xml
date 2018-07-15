@@ -5,33 +5,23 @@
 		<resource name="gold" amount="500"/>
 		<resource name="wood" amount="500"/>
 		<resource name="stone" amount="500"/>
-		<resource name="grace" amount="25"/>
+		<resource name="grace" amount="50"/>
 	</starting-resources>
 	<starting-units>
 		<unit name="colosseum" amount="1"/>
 		<unit name="guard_tower" amount="1"/>
 		<unit name="slave" amount="3"/>
 		<unit name="spearman" amount="2"/>
+		<unit name="eagle_pillar" amount="1"/>
 		<unit name="wartime_mechanic" amount="0"/>
 	</starting-units>
 	<music value="true" path="music/romans.ogg"/>
 	<flat-particle-positions value="true"/>
 	<ai-behavior>
-		<worker-units>
-			<unit name="slave" minimum="8"/>
-		</worker-units>
-		<warrior-units>
-			<unit name="archer" minimum="3"/>
-			<unit name="spearman" minimum="3"/>
-		</warrior-units>
+		<worker-units/>
+		<warrior-units/>
 		<resource-producer-units/>
-		<building-units>
-			<unit name="training_camp" minimum="2"/>
-			<unit name="temple" minimum="1"/>
-			<unit name="blacksmith_shop" minimum="1"/>
-			<unit name="military_camp" minimum="1"/>
-			<unit name="eagle_pillar" minimum="4"/>
-		</building-units>
+		<building-units/>
 		<upgrades>
 			<upgrade name="reinforce_armor"/>
 			<upgrade name="sign_of_mars"/>

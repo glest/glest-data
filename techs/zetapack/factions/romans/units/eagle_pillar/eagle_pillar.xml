@@ -30,7 +30,7 @@
 			<resource name="gold" amount="250"/>
 			<resource name="stone" amount="200"/>
 			<resource name="wood" amount="100"/>
-			<resource name="grace" amount="-33" />
+			<resource name="grace" amount="-23" />
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/es.bmp"/>
