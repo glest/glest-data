@@ -112,7 +112,6 @@
 			<attack-start-time value="0.05"/>
 			<attack-fields>
 				<field value="land"/>
-				<field value="air"/>
 			</attack-fields>
 			<particles value="true" start-time="0.05" end-time="0.1">
 				<particle-file path="flash.xml"/>
