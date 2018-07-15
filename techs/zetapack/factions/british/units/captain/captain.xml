@@ -4,21 +4,21 @@
 	<parameters>
 		<size value="2"/>
 		<height value="2"/>
-		<max-hp value="1200" regeneration="1"/>
+		<max-hp value="1200" regeneration="3"/>
 		<max-ep value="0"/>
-		<max-unit-count value="6"/>
-		<armor value="30"/>	
+		<max-unit-count value="1"/>
+		<armor value="30"/>
 		<armor-type value="leather"/>
-		<sight value="10"/>
-		<time value="120"/>	
-		<multi-selection value="true"/>	
+		<sight value="13"/>
+		<time value="120"/>
+		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
 			<level name="loyal" kills="6"/>
 		</levels>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties/>
 		<light enabled="false"/>
 		<unit-requirements>
@@ -28,8 +28,8 @@
 			<upgrade name="stables"/>
 		</upgrade-requirements>
 		<resource-requirements>
-			<resource name="wood" amount="150"/>
-			<resource name="gold" amount="300"/>
+			<resource name="wood" amount="280"/>
+			<resource name="gold" amount="320"/>
 			<resource name="food" amount="2"/>
 		</resource-requirements>
 		<resources-stored/>
@@ -54,24 +54,24 @@
 			<sound path="sounds/horseman_ack1.wav"/>
 			<sound path="sounds/horseman_ack2.wav"/>
 			<sound path="sounds/horseman_ack3.wav"/>
-			<sound path="sounds/horseman_ack4.wav"/>		
+			<sound path="sounds/horseman_ack4.wav"/>
 			<sound path="sounds/horseman_ack5.wav"/>
 			<sound path="sounds/horseman_ack6.wav"/>
 			<sound path="sounds/horseman_ack7.wav"/>
 			<sound path="sounds/horseman_ack8.wav"/>
 			<sound path="sounds/horseman_ack9.wav"/>
 			<sound path="sounds/horseman_ack10.wav"/>
-			<sound path="sounds/horseman_ack11.wav"/>		
+			<sound path="sounds/horseman_ack11.wav"/>
 			<sound path="sounds/horseman_ack12.wav"/>
 			<sound path="sounds/horseman_ack13.wav"/>
 			<sound path="sounds/horseman_ack14.wav"/>
-			<sound path="sounds/horseman_ack15.wav"/>						
+			<sound path="sounds/horseman_ack15.wav"/>
 		</command-sounds>
 
 	</parameters>
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
 			<name value="stop_skill"/>
@@ -80,12 +80,11 @@
 			<anim-speed value="50"/>
 			<animation path="models/captain_idle.g3d"/>
 			<sound enabled="false"/>
-                        <attack-boost>
+			<attack-boost>
 				<allow-multiple-boosts value="false" />
 				<radius value="10"/>
-                        	<target value="faction">
-                                </target>
-
+				<target value="faction">
+				</target>
 				<max-hp value="0"/>
 				<max-ep value="0"/>
 				<sight value="2"/>
@@ -94,43 +93,29 @@
 				<armor value="10"/>
 				<move-speed value="0"/>
 				<production-speed value="0"/>
-				
 				<particles value="true">
-					<!--originator-particle-file path="glow_particles.xml"/-->
-					<affected-particle-file path="glow_particles.xml"/>
+					<affected-particle-file path="boost_particles.xml"/>
 				</particles>
-
-                        </attack-boost>
+			</attack-boost>
 		</skill>
 
-		<skill>
-			<type value="morph"/>
-			<name value="morph_skill"/>		
-			<ep-cost value="0"/>
-			<speed value="500"/>
-			<anim-speed value="80"/>
-			<animation path="models/captain_idle.g3d"/>
-			<sound enabled="false"/>
-		</skill>
-		
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="0"/>
-			<speed value="500"/>
-			<anim-speed value="130"/>
+			<speed value="200"/>
+			<anim-speed value="90"/>
 			<animation path="models/captain_walk.g3d"/>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/horseman_walk1.wav"/>
 				<sound-file path="sounds/horseman_walk2.wav"/>
 				<sound-file path="sounds/horseman_walk3.wav"/>
-			</sound> 
-                        <attack-boost>
+			</sound>
+			<attack-boost>
 				<allow-multiple-boosts value="false" />
 				<radius value="10"/>
-                        	<target value="faction">
-                                </target>
-
+				<target value="faction">
+				</target>
 				<max-hp value="0"/>
 				<max-ep value="0"/>
 				<sight value="2"/>
@@ -139,18 +124,15 @@
 				<armor value="10"/>
 				<move-speed value="0"/>
 				<production-speed value="0"/>
-				
 				<particles value="true">
-					<!--originator-particle-file path="glow_particles.xml"/-->
-					<affected-particle-file path="glow_particles.xml"/>
+					<affected-particle-file path="boost_particles.xml"/>
 				</particles>
-
-                        </attack-boost>
+			</attack-boost>
 		</skill>
 
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="attack_skill"/>
 			<ep-cost value="0"/>
 			<speed value="50"/>
 			<anim-speed value="50"/>
@@ -176,12 +158,11 @@
 				</sound>
 			</projectile>
 			<splash value="false"/>
-                        <attack-boost>
+			<attack-boost>
 				<allow-multiple-boosts value="false" />
 				<radius value="10"/>
-                        	<target value="faction">
-                                </target>
-
+				<target value="faction">
+				</target>
 				<max-hp value="0"/>
 				<max-ep value="0"/>
 				<sight value="2"/>
@@ -190,18 +171,15 @@
 				<armor value="10"/>
 				<move-speed value="0"/>
 				<production-speed value="0"/>
-				
 				<particles value="true">
-					<!--originator-particle-file path="glow_particles.xml"/-->
-					<affected-particle-file path="glow_particles.xml"/>
+					<affected-particle-file path="boost_particles.xml"/>
 				</particles>
-
-                        </attack-boost>
+			</attack-boost>
 		</skill>
-                
+
 		<skill>
-			<type value="die"/>	
-			<name value="die_skill"/>		
+			<type value="die"/>
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="70"/>
 			<anim-speed value="70"/>
@@ -211,14 +189,14 @@
 				<sound-file path="sounds/horseman_die2.wav"/>
 				<sound-file path="sounds/horseman_die3.wav"/>
 				<sound-file path="sounds/horseman_die4.wav"/>
-			</sound> 
-                        <fade value="false"/>
+			</sound>
+		<fade value="false"/>
 		</skill>
 
 	</skills>
 
 	<commands>
-		
+
 		<command>
 			<type value="stop"/>
 			<name value="stop"/>
@@ -256,17 +234,6 @@
 			<stop-skill value="stop_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
-                
-		<!--command>
-			<type value="morph"/>
-			<name value="go_off_horse"/>
-			<image path="../captain_/images/archer.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<morph-skill value="morph_skill"/>
-			<morph-unit name= "captain_"/>
-			<discount value="100"/>
-		</command-->
 
 	</commands>
 </unit>
