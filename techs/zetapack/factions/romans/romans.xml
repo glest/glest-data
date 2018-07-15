@@ -12,6 +12,7 @@
 		<unit name="guard_tower" amount="1"/>
 		<unit name="slave" amount="3"/>
 		<unit name="spearman" amount="2"/>
+		<unit name="eagle_pillar" amount="1"/>
 		<unit name="wartime_mechanic" amount="0"/>
 	</starting-units>
 	<music value="true" path="music/romans.ogg"/>
