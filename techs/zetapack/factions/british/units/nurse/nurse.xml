@@ -71,15 +71,10 @@
 				<allow-multiple-boosts value="true" />
 				<radius value="15"/>
 				<target value="faction">
-					<unit-type name="cannon" />
 					<unit-type name="captain" />
-					<unit-type name="captain_" />
-					<unit-type name="cavalry" />
 					<unit-type name="colonist" />
-					<unit-type name="cow" />
 					<unit-type name="grenader" />
 					<unit-type name="infantryman" />
-					<unit-type name="pig" />
 					<unit-type name="saberman" />
 					<unit-type name="wagon_worker" />
 				</target>
@@ -89,7 +84,9 @@
 				<attack-range value="0"/>
 				<armor value="0"/>
 				<production-speed value="0"/>
-				<particles value="false"/>
+				<particles value="true">
+					<affected-particle-file path="healing_particles.xml"/>
+				</particles>
 			</attack-boost>
 		</skill>
 
@@ -101,30 +98,6 @@
 			<anim-speed value="130"/>
 			<animation path="models/nurse_walk.g3d"/>
 			<sound enabled="false"/>
-			<attack-boost>
-				<allow-multiple-boosts value="true" />
-				<radius value="15"/>
-				<target value="faction">
-					<unit-type name="cannon" />
-					<unit-type name="captain" />
-					<unit-type name="captain_" />
-					<unit-type name="cavalry" />
-					<unit-type name="colonist" />
-					<unit-type name="cow" />
-					<unit-type name="grenader" />
-					<unit-type name="infantryman" />
-					<unit-type name="pig" />
-					<unit-type name="saberman" />
-					<unit-type name="wagon_worker" />
-				</target>
-				<max-hp value="0" regeneration="5"/>
-				<max-ep value="0"/>
-				<sight value="0"/>
-				<attack-range value="0"/>
-				<armor value="0"/>
-				<production-speed value="0"/>
-				<particles value="false"/>
-			</attack-boost>
 		</skill>
 
 		<skill>
@@ -250,17 +223,6 @@
 			<stop-skill value="stop_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
-
-		<!--command>
-			<type value="morph"/>
-			<name value="promote_to_sniper"/>
-			<image path="../sniper/images/sniper.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<morph-skill value="morph_skill"/>
-			<morph-unit name= "sniper"/>
-			<discount value="0"/>
-		</command-->
 
 	</commands>
 </unit>
