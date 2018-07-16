@@ -26,6 +26,7 @@
 			<light enabled="false"/>
 		<unit-requirements>
 			<unit name="tent"/>
+			<unit name="round_tent"/>
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
@@ -107,14 +108,19 @@
 			<attack-start-time value="0.15"/>
 			<projectile value="false">
 			</projectile>
-			<splash value="true">				<radius value="0"/>				<damage-all value="true"/>				<particle value="true" path="particle_splash.xml"/>			</splash>		</skill>
+			<splash value="true">
+				<radius value="0"/>
+				<damage-all value="true"/>
+				<particle value="true" path="particle_splash.xml"/>
+			</splash>
+		</skill>
 
 		<skill>
 			<type value="morph"/>
 			<name value="morph_skill"/>
 			<ep-cost value="0"/>
 			<speed value="100"/>
-			<anim-speed value="300"/>
+			<anim-speed value="100"/>
 			<animation path="models/spearman_walking.g3d"/>
 			<sound enabled="false"/>
 		</skill>
@@ -133,6 +139,16 @@
 				<sound-file path="sounds/stickfighter_die4.wav"/>
 			</sound>
 			<fade value="false"/>
+		</skill>
+
+		<skill>
+			<type value="morph"/>
+			<name value="morph_skill"/>
+			<ep-cost value="0"/>
+			<speed value="250"/>
+			<anim-speed value="500"/>
+			<animation path="models/spearman_attacking.g3d"/>
+			<sound enabled="false"/>
 		</skill>
 
 	</skills>
@@ -168,5 +184,17 @@
 			<move-skill value="move_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
+
+		<command>
+			<type value="morph"/>
+			<name value="train_axe_indian"/>
+			<image path="../axe_indian/images/axe_indian.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<morph-skill value="morph_skill"/>
+			<morph-unit name= "axe_indian"/>
+			<discount value="20"/>
+		</command>
+
 	</commands>
 </unit>
