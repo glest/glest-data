@@ -99,6 +99,30 @@
 			</sound>
 			<fade value="false"/>
 		</skill>
+
+		<!-- a "dummy" attack skill. Without this, the AI will never morph
+		the small tent into the round tent
+		https://github.com/ZetaGlest/zetaglest-source/issues/119 -->
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>
+			<ep-cost value="1"/>
+			<speed value="0"/>
+			<anim-speed value="0"/>
+			<animation path="models/roundtent.g3d" />
+			<sound enabled="false"/>
+			<attack-strength value="0"/>
+			<attack-var value="0"/>
+			<attack-range value="0"/>
+			<attack-type value="energy"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<splash value="false"/>
+			<attack-start-time value="0.0"/>
+			<projectile value="false"/>
+		</skill>
+
 	</skills>
 	<commands>
 		<command>
