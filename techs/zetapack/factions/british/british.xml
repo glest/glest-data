@@ -11,7 +11,7 @@
 		<unit name="fort" amount="1"/>
 		<unit name="colonist" amount="3"/>
 		<unit name="saberman" amount="2"/>
-		<unit name="cow" amount="1"/>
+		<unit name="livestock" amount="1"/>
 		<unit name="infantryman" amount="1"/>
 		<unit name="lookout_tower" amount="1"/>
 		<unit name="captain" amount="0"/>

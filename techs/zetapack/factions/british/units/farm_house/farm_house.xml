@@ -98,7 +98,7 @@
 			<fade value="false"/>
 		</skill>
 
-                <skill>
+		<skill>
 			<type value="upgrade"/>
 			<name value="upgrade_skill"/>
 			<ep-cost value="0"/>
@@ -106,6 +106,9 @@
 			<anim-speed value="300"/>
 			<animation path="models/farm_house.g3d"/>
 			<sound enabled="false"/>
+			<particles value="true">
+				<particle-file path="../../particles/upgrade_particles.xml" />
+			</particles>
 		</skill>
 
 	</skills>
@@ -115,22 +118,12 @@
 
 		<command>
 			<type value="produce"/>
-			<name value="produce_cow" />
-			<image path="../cow/images/cow.bmp" />
+			<name value="process_livestock" />
+			<image path="../livestock/images/cow.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
-			<produced-unit name="cow"/>
-		</command>
-
-		<command>
-			<type value="produce"/>
-			<name value="produce_pig" />
-			<image path="../pig/images/pig.bmp" />
-			<unit-requirements />
-			<upgrade-requirements />
-			<produce-skill value="produce_skill"/>
-			<produced-unit name="pig"/>
+			<produced-unit name="livestock"/>
 		</command>
 
 		<command>

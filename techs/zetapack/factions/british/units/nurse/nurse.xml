@@ -192,11 +192,9 @@
 				<unit name="captain"/>
 				<unit name="cavalry"/>
 				<unit name="colonist"/>
-				<unit name="cow"/>
 				<unit name="grenader"/>
 				<unit name="infantryman"/>
 				<unit name="mortar"/>
-				<unit name="pig"/>
 				<unit name="puckle_gun"/>
 				<unit name="saberman"/>
 				<unit name="wagon_worker"/>
