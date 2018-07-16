@@ -5,9 +5,10 @@
 		<size value="4" />
 		<height value="3" />
 		<max-hp value="6000" regeneration="0"/>
+		<max-unit-count value="2"/>
 		<max-ep value="0" />
 		<armor value="0" />
-		<armor-type value="stone"/>		
+		<armor-type value="stone"/>
 		<sight value="12" />
 		<time value="120" />
 		<multi-selection value="true"/>
@@ -48,12 +49,12 @@
 			<sound path="../camp/sounds/tech_click.wav" />
 		</command-sounds>
 	</parameters>
-	
+
 	<!-- *** skills *** -->
 	<skills>
 		<!-- *** skill 0 *** -->
 		<skill>
-			<name value="be_built_skill"/>		
+			<name value="be_built_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
@@ -61,11 +62,11 @@
 			<sound enabled="false" />
 			<type value="be_built" />
 		</skill>
-		
+
 		<!-- *** skill 1 *** -->
 		<skill>
 			<type value="stop" />
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="50" />
@@ -74,34 +75,37 @@
 		</skill>
 
 		<skill>
-			<type value="upgrade"/>	
-			<name value="upgrade_skill"/>	
+			<type value="upgrade"/>
+			<name value="upgrade_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="10" />
 			<animation path="models/powder_house.g3d" />
 			<sound enabled="false" />
+			<particles value="true">
+				<particle-file path="../../particles/upgrade_particles.xml" />
+			</particles>
 		</skill>
-		
+
 		<skill>
 			<type value="die" />
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="models/powder_house_die.g3d" />
 			<sound enabled="true" start-time="0">
 				<sound-file path="../camp/sounds/tech_building_fall1.wav"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 
 	</skills>
-	
+
 	<!-- *** commands *** -->
 	<commands>
-		
-		
+
+
 		<command>
 			<type value="upgrade"/>
 			<name value="research_gun_powder"/>
@@ -110,7 +114,7 @@
 			<upgrade-requirements />
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="gun_powder"/>
-		</command>				
+		</command>
 
 
 		<command>
@@ -131,8 +135,8 @@
 			<upgrade-requirements />
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="bullets"/>
-		</command>				
-			
+		</command>
+
 
 	</commands>
 </unit>

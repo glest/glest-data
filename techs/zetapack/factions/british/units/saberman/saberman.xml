@@ -6,18 +6,18 @@
 		<height value="2"/>
 		<max-hp value="700" regeneration="1"/>
 		<max-ep value="0"/>
-		<armor value="20"/>	
-		<armor-type value="leather"/>				
+		<armor value="3"/>
+		<armor-type value="leather"/>
 		<sight value="10"/>
-		<time value="50"/>	
-		<multi-selection value="true"/>	
+		<time value="50"/>
+		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
 			<level name="elite" kills="3"/>
 		</levels>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties/>
 		<light enabled="false"/>
 		<unit-requirements/>
@@ -51,10 +51,10 @@
 	</parameters>
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="45"/>
@@ -64,7 +64,7 @@
 
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="220"/>
 			<anim-speed value="90"/>
@@ -74,7 +74,7 @@
 
 		<skill>
 			<type value="move"/>
-			<name value="charge_skill"/>		
+			<name value="charge_skill"/>
 			<ep-cost value="0"/>
 			<speed value="250"/>
 			<anim-speed value="155"/>
@@ -84,7 +84,7 @@
 
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="attack_skill"/>
 			<ep-cost value="0"/>
 			<speed value="100"/>
 			<anim-speed value="100"/>
@@ -102,9 +102,9 @@
 				<sound-file path="sounds/swordman_attack10.wav"/>
 				<sound-file path="sounds/swordman_attack11.wav"/>
 				<sound-file path="sounds/swordman_attack12.wav"/>
-			</sound> 
-			<attack-strength value="80"/>
-			<attack-var value="30"/>
+			</sound>
+			<attack-strength value="60"/>
+			<attack-var value="20"/>
 			<attack-range value="1"/>
 			<attack-type value="slashing"/>
 			<attack-fields>
@@ -117,27 +117,27 @@
 
 		<skill>
 			<type value="morph"/>
-			<name value="morph_mortar_skill"/>		
+			<name value="morph_mortar_skill"/>
 			<ep-cost value="0"/>
 			<speed value="500"/>
 			<anim-speed value="80"/>
 			<animation path="models/mortar2_build.g3d"/>
 			<sound enabled="false"/>
-		</skill>	
+		</skill>
 
 		<skill>
 			<type value="morph"/>
-			<name value="morph_puckle_skill"/>		
+			<name value="morph_puckle_skill"/>
 			<ep-cost value="0"/>
 			<speed value="500"/>
 			<anim-speed value="80"/>
 			<animation path="models/puckle_gun_build.g3d"/>
 			<sound enabled="false"/>
-		</skill>	
+		</skill>
 
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="100"/>
@@ -145,15 +145,15 @@
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/swordman_die1.wav"/>
 				<sound-file path="sounds/swordman_die2.wav"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 
 
 	</skills>
-	
+
 	<commands>
-		
+
 		<command>
 			<type value="stop"/>
 			<name value="stop"/>
@@ -180,7 +180,8 @@
 			<upgrade-requirements/>
 			<move-skill value="charge_skill"/>
 			<attack-skill value="attack_skill"/>
-		</command>		
+		</command>
+
 		<command>
 			<type value="attack_stopped"/>
 			<name value="hold_position"/>
@@ -190,7 +191,7 @@
 			<stop-skill value="stop_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
-                
+
 		<command>
 			<type value="morph"/>
 			<name value="build_puckle_gun"/>
@@ -201,7 +202,7 @@
 			<morph-unit name= "puckle_gun"/>
 			<discount value="40"/>
 		</command>
-                
+
 		<command>
 			<type value="morph"/>
 			<name value="build_mortar"/>
@@ -211,7 +212,7 @@
 			<morph-skill value="morph_mortar_skill"/>
 			<morph-unit name= "mortar"/>
 			<discount value="40"/>
-		</command>	
+		</command>
 
 	</commands>
 </unit>

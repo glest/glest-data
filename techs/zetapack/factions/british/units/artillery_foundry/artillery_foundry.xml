@@ -7,7 +7,7 @@
 		<max-ep value="0" />
 		<armor value="0" />
 		<armor-type value="stone"/>
-		<max-unit-count value="2"/>
+		<!-- max-unit-count value="2"/ -->
 		<sight value="6" />
 		<time value="100" />
 		<multi-selection value="true"/>
@@ -50,10 +50,10 @@
 			<sound path="sounds/tech_click.wav" />
 		</command-sounds>
 	</parameters>
-	
+
 	<skills>
 		<skill>
-			<type value="stop"/>	
+			<type value="stop"/>
 			<name value="stop_skill"/>
 			<ep-cost value="0" />
 			<speed value="50" />
@@ -64,23 +64,40 @@
 			</particles>
 			<sound enabled="false" />
 		</skill>
-		
+
 		<skill>
-			<type value="be_built" />	
-			<name value="be_built_skill"/>		
+			<type value="be_built" />
+			<name value="be_built_skill"/>
 			<ep-cost value="0" />
                 	<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="models/foundery_build.g3d" />
 			<sound enabled="false" />
-		</skill>	
-		
+		</skill>
+
 		<skill>
-			<type value="upgrade"/>	
-			<name value="upgrade_skill"/>	
+			<type value="upgrade"/>
+			<name value="upgrade_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
-                        <anim-speed value="300" />
+      <anim-speed value="300" />
+			<animation path="models/foundery.g3d" />
+			<particles value="true">
+				<particle-file path="fire_particles.xml"/>
+				<particle-file path="smoke_particles.xml"/>
+			</particles>
+			<sound enabled="false" />
+			<particles value="true">
+				<particle-file path="../../particles/upgrade_particles.xml" />
+			</particles>
+		</skill>
+
+		<skill>
+			<type value="produce"/>
+			<name value="produce_skill"/>
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
 			<animation path="models/foundery.g3d" />
 			<particles value="true">
 				<particle-file path="fire_particles.xml"/>
@@ -88,38 +105,24 @@
 			</particles>
 			<sound enabled="false" />
 		</skill>
-		
+
 		<skill>
-			<type value="produce"/>
-			<name value="produce_skill"/>	
-			<ep-cost value="0" />
-			<speed value="300" />
-			<anim-speed value="300" />
-			<animation path="models/foundery.g3d" />
-			<particles value="true">
-				<particle-file path="fire_particles.xml"/>
-				<particle-file path="smoke_particles.xml"/>
-			</particles>
-			<sound enabled="false" />
-		</skill>	
-		
-		<skill>
-			<type value="die" />	
-			<name value="die_skill"/>		
+			<type value="die" />
+			<name value="die_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="models/foundery_die.g3d" />
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/tech_building_fall4.wav"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 
 	</skills>
-	
+
 	<commands>
-		
+
 		<command>
 			<type value="produce"/>
 			<name value="produce_captain" />
@@ -129,7 +132,7 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="captain"/>
 		</command>
-		
+
 		<command>
 			<type value="produce"/>
 			<name value="produce_cannon" />
@@ -139,7 +142,7 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="cannon"/>
 		</command>
-		
+
 		<command>
 			<type value="produce"/>
 			<name value="produce_grenader" />
@@ -158,7 +161,7 @@
 			<upgrade-requirements />
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="mortar"/>
-		</command>	
+		</command>
 
 		<command>
 			<type value="upgrade"/>
@@ -169,6 +172,6 @@
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="puckle"/>
 		</command>
-			
+
 	</commands>
 </unit>

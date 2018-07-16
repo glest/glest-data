@@ -29,7 +29,7 @@
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/colonist.bmp"/>
-		<image-cancel path="images/tech_cancel.bmp"/>
+		<image-cancel path="../../images/tech_cancel.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
 			<sound path="sounds/worker_select1.wav"/>
@@ -252,11 +252,11 @@
 			<buildings>
 				<building name="farm_house"/>
 				<building name="camp"/>
-				<building name="fort"/>
 				<building name="powder_house"/>
-				<building name="lookout_tower"/>
 				<building name="artillery_foundry"/>
+				<building name="lookout_tower"/>
 				<building name="balloon_base"/>
+				<building name="fort"/>
 			</buildings>
 			<start-sound enabled="false"/>
 			<built-sound enabled="true">
@@ -317,6 +317,8 @@
 				<unit name="lookout_tower"/>
 				<unit name="artillery_foundry"/>
 				<unit name="balloon_base"/>
+				<unit name="puckle_gun"/>
+				<unit name="mortar"/>
 			</repaired-units>
 		</command>
 
