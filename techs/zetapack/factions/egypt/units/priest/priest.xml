@@ -114,6 +114,28 @@
 			<anim-speed value="50"/>
 			<animation path="models/pharao_walking.g3d"/>
 			<sound enabled="false"/>
+			<attack-boost>
+				<allow-multiple-boosts value="true" />
+				<radius value="15"/>
+				<target value="faction">
+					<unit-type name="slave" />
+					<unit-type name="mummy" />
+					<unit-type name="scarab" />
+					<unit-type name="snake" />
+					<unit-type name="anubis_warrior" />
+					<unit-type name="spearman" />
+					<unit-type name="spearthrower" />
+				</target>
+				<max-hp value="0" regeneration="5"/>
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<production-speed value="0"/>
+			<particles value="true">
+					<affected-particle-file path="healing_particles.xml"/>
+			</particles>
+			</attack-boost>
 		</skill>
 
 		<skill>
