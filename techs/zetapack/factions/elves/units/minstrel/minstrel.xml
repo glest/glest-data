@@ -53,14 +53,8 @@
 				<target value="faction">
 					<unit-type name="dryad" />
 					<unit-type name="elf" />
-					<unit-type name="ent" />
-					<unit-type name="galadrim_archer" />
 					<unit-type name="grey_elf_archer" />
 					<unit-type name="magol_hedir" />
-					<unit-type name="prince" />
-					<unit-type name="reaver" />
-					<unit-type name="silver_helm_lancer" />
-					<unit-type name="wise_elf" />
 				</target>
 				<max-hp value="0" regeneration="5"/>
 				<max-ep value="0"/>
@@ -68,7 +62,9 @@
 				<attack-range value="0"/>
 				<armor value="0"/>
 				<production-speed value="0"/>
-				<particles value="false"/>
+				<particles value="true">
+					<affected-particle-file path="healing_particles.xml"/>
+				</particles>
 			</attack-boost>
 		</skill>
 
@@ -163,14 +159,8 @@
 				<target value="faction">
 					<unit-type name="dryad" />
 					<unit-type name="elf" />
-					<unit-type name="ent" />
-					<unit-type name="galadrim_archer" />
 					<unit-type name="grey_elf_archer" />
 					<unit-type name="magol_hedir" />
-					<unit-type name="prince" />
-					<unit-type name="reaver" />
-					<unit-type name="silver_helm_lancer" />
-					<unit-type name="wise_elf" />
 				</target>
 				<max-hp value="0" regeneration="5"/>
 				<max-ep value="0"/>
@@ -178,7 +168,9 @@
 				<attack-range value="0"/>
 				<armor value="0"/>
 				<production-speed value="0"/>
-				<particles value="false"/>
+				<particles value="true">
+					<affected-particle-file path="healing_particles.xml"/>
+				</particles>
 			</attack-boost>
 		</skill>
 
@@ -190,6 +182,9 @@
 			<anim-speed value="85"/>
 			<animation path="models/minstrel_healing.g3d"/>
 			<sound enabled="false"/>
+			<particles value="true">
+				<particle-file path="healing_particles.xml"/>
+			</particles>
 		</skill>
 
 
