@@ -129,12 +129,12 @@
 
 		<command>
 			<type value="upgrade"/>
-			<name value="research_bullets"/>
-			<image path="../../upgrades/bullets/images/bullets.bmp" />
+			<name value="research_imperialism"/>
+			<image path="../../upgrades/imperialism/images/bullets.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<upgrade-skill value="upgrade_skill"/>
-			<produced-upgrade name="bullets"/>
+			<produced-upgrade name="imperialism"/>
 		</command>
 
 
