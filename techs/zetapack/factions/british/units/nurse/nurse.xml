@@ -73,7 +73,7 @@
 				<target value="faction">
 					<unit-type name="captain" />
 					<unit-type name="colonist" />
-					<unit-type name="grenader" />
+					<unit-type name="grenadier" />
 					<unit-type name="infantryman" />
 					<unit-type name="saberman" />
 					<unit-type name="wagon_worker" />
@@ -104,7 +104,7 @@
 				<target value="faction">
 					<unit-type name="captain" />
 					<unit-type name="colonist" />
-					<unit-type name="grenader" />
+					<unit-type name="grenadier" />
 					<unit-type name="infantryman" />
 					<unit-type name="saberman" />
 					<unit-type name="wagon_worker" />
@@ -213,7 +213,7 @@
 				<unit name="captain"/>
 				<unit name="cavalry"/>
 				<unit name="colonist"/>
-				<unit name="grenader"/>
+				<unit name="grenadier"/>
 				<unit name="infantryman"/>
 				<unit name="mortar"/>
 				<unit name="puckle_gun"/>

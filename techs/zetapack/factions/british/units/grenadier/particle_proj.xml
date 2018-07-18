@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="yes"?>
 <projectile-particle-system>
     	<texture value="true" path="images/particle_proj.bmp" luminance="true"/>
-    	<model value="true" path="models/granade_proge.g3d"/>
+    	<model value="true" path="models/grenade_proge.g3d"/>
 	<primitive value="quad"/>
 	<offset x="0.6" y="0" z="0"/>
 	<color red="1.0" green="0.5" blue="1.0" alpha="0.8" />
@@ -13,7 +13,7 @@
     	<emission-rate value="1" />
     	<energy-max value="1" />
     	<energy-var value="0" />
-	
+
 	<trajectory type="parabolic">
 		<speed value="10"/>
 		<scale value="2"/>
