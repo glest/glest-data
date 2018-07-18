@@ -14,7 +14,6 @@
 		<unit name="swordman" amount="2"/>
 		<unit name="archer" amount="1"/>
 		<unit name="livestock" amount="1"/>
-		<unit name="technician" amount="1"/>
 	</starting-units>
 	<music value="true" path="music/music_tech.ogg"/>
 	<flat-particle-positions value="true"/>
