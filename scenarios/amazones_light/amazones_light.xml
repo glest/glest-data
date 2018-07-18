@@ -50,7 +50,7 @@
 			createUnit('swordman', 0, startLocation(0))
 			createUnit('archer', 0, startLocation(0))
 			createUnit('archer', 0, startLocation(0))
-			createUnit('cow', 0, startLocation(0))
+			createUnit('livestock', 0, startLocation(0))
 			giveResource('gold', 0, 1000);
 			giveResource('wood', 0, 1300);
 			giveResource('stone', 0, 350);
