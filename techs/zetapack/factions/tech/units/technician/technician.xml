@@ -78,10 +78,7 @@
 				<radius value="15"/>
 				<target value="faction">
 					<unit-type name="archer" />
-					<unit-type name="battle_machine" />
-					<unit-type name="catapult" />
 					<unit-type name="guard" />
-					<unit-type name="horseman" />
 					<unit-type name="swordman" />
 					<unit-type name="worker" />
 				</target>
@@ -91,7 +88,9 @@
 				<attack-range value="0"/>
 				<armor value="0"/>
 				<production-speed value="0"/>
-				<particles value="false"/>
+				<particles value="true">
+					<affected-particle-file path="healing_particles.xml"/>
+				</particles>
 			</attack-boost>
 		</skill>
 
@@ -103,16 +102,25 @@
 			<anim-speed value="210"/>
 			<animation path="models/technician_walking.g3d"/>
 			<sound enabled="false"/>
-		</skill>
-
-		<skill>
-			<type value="move"/>
-			<name value="move_loaded_skill"/>
-			<ep-cost value="0"/>
-			<speed value="190"/>
-			<anim-speed value="50"/>
-			<animation path="models/technician_walking_loaded.g3d"/>
-			<sound enabled="false"/>
+			<attack-boost>
+				<allow-multiple-boosts value="true" />
+				<radius value="15"/>
+				<target value="faction">
+					<unit-type name="archer" />
+					<unit-type name="guard" />
+					<unit-type name="swordman" />
+					<unit-type name="worker" />
+				</target>
+				<max-hp value="0" regeneration="5"/>
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="healing_particles.xml"/>
+				</particles>
+			</attack-boost>
 		</skill>
 
 		<skill>
