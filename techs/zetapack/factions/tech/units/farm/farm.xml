@@ -106,6 +106,9 @@
 			<anim-speed value="300"/>
 			<animation path="models/farm.g3d"/>
 			<sound enabled="false"/>
+			<particles value="true">
+				<particle-file path="../../particles/upgrade_particles.xml" />
+			</particles>
 		</skill>
 	</skills>
 	<!-- *** commands *** -->
@@ -127,6 +130,19 @@
 			<upgrade-requirements/>
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="stables"/>
+
 		</command>
+				<command>
+			<type value="upgrade"/>
+			<name value="speedup_cow_production"/>
+			<image path="../../images/speedup.bmp" />
+			<unit-requirements/>
+			<upgrade-requirements>
+				<upgrade name="stables"/>
+			</upgrade-requirements>
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="speedup_cow_production"/>
+		</command>
+
 	</commands>
 </unit>
