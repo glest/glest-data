@@ -40,7 +40,7 @@
 
 			--my units
 			createUnit('castle', 0, startLocation(0))
-			createUnit('cow', 0, startLocation(0))
+			createUnit('livestock', 0, startLocation(0))
 			createUnit('worker', 0, startLocation(0))
 			createUnit('worker', 0, startLocation(0))
 			createUnit('worker', 0, startLocation(0))

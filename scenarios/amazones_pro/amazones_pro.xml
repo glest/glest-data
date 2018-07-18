@@ -41,7 +41,7 @@
 			disableAi(2)
 
 			--my units
-			createUnit('cow', 0, startLocation(0))
+			createUnit('livestock', 0, startLocation(0))
 			for i=1, 3 do
 				createUnit('worker', 0, startLocation(0))
 				createUnit('swordman', 0, startLocation(0))
