@@ -129,6 +129,9 @@
 			<anim-speed value="150"/>
 			<animation path="models/nurse_heal.g3d"/>
 			<sound enabled="false"/>
+			<particles value="true">
+				<particle-file path="healing_particles.xml"/>
+			</particles>
 		</skill>
 
 		<skill>
