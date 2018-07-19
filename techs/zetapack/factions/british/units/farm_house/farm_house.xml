@@ -127,6 +127,16 @@
 		</command>
 
 		<command>
+			<type value="produce"/>
+			<name value="train_rabid_sheep" />
+			<image path="../rabid_sheep/images/sheep.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="rabid_sheep"/>
+		</command>
+
+		<command>
 			<type value="upgrade"/>
 			<name value="upgrade_stables"/>
 			<image path="../../upgrades/stables/images/stables.bmp" />
