@@ -180,6 +180,15 @@
 			<fade value="false"/>
 		</skill>
 
+		<skill>
+			<type value="build"/>
+			<name value="build_skill"/>
+			<ep-cost value="0"/>
+			<speed value="210"/>
+			<anim-speed value="100"/>
+			<animation path="models/nurse_heal.g3d"/>
+			<sound enabled="false"/>
+		</skill>
 	</skills>
 
 	<commands>
@@ -244,6 +253,21 @@
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
 			<attack-skill value="attack_skill"/>
+		</command>
+
+		<command>
+			<type value= "build"/>
+			<name value="build"/>
+			<image path="../colonist/images/worker_build_basic.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<build-skill value="build_skill"/>
+			<buildings>
+				<building name="air_box"/>
+			</buildings>
+			<start-sound enabled="false"/>
+			<built-sound enabled="false"/>
 		</command>
 
 	</commands>

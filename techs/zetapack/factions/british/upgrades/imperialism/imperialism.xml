@@ -17,6 +17,7 @@
 		<unit name="infantryman"/>
 		<unit name="saberman"/>
 		<unit name="lookout_tower"/>
+		<unit name="air_box"/>
 		<unit name="mortar"/>
 		<unit name="puckle_gun"/>
 	</effects>
@@ -25,7 +26,7 @@
 	<sight value="0"/>
 	<attack-strength value="0"/>
 	<attack-range value="0"/>
-	<armor value="40"/>
+	<armor value="20"/>
 	<move-speed value="0"/>
 	<production-speed value="0"/>
 </upgrade>
