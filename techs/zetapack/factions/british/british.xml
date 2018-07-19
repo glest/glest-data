@@ -22,7 +22,6 @@
 		<unit name="wagon_worker" amount="0"/>
 		<unit name="balloon" amount="0"/>
 		<unit name="nurse" amount="0"/>
-		<unit name="farm_house" amount="1"/>
 	</starting-units>
 	<music value="true" path="music/british_music.ogg"/>
 </faction>
