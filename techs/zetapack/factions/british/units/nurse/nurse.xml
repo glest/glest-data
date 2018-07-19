@@ -232,6 +232,7 @@
 				<unit name="saberman"/>
 				<unit name="wagon_worker"/>
 				<unit name="nurse"/>
+				<unit name="air_box"/>
 			</repaired-units>
 		</command>
 
