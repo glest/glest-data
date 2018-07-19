@@ -319,6 +319,7 @@
 				<unit name="balloon_base"/>
 				<unit name="puckle_gun"/>
 				<unit name="mortar"/>
+				<unit name="air_box"/>
 			</repaired-units>
 		</command>
 
