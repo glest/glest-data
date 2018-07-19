@@ -43,7 +43,7 @@
      <light enabled="false"/>
      <unit-requirements/>
      <upgrade-requirements>
-         <upgrade name="explosives"/>
+         <upgrade name="imperialism"/>
      </upgrade-requirements>
      <resource-requirements>
         <resource name="gold" amount="200"/>
@@ -119,7 +119,7 @@
         <anim-speed value="90"/>
         <animation path="models/grenadier_attack.g3d"/>
         <sound enabled="true" start-time="0.4">
-				<sound-file path="sounds/technician_attack.wav"/>
+					<sound-file path="sounds/technician_attack.wav"/>
         </sound>
         <attack-strength value="400"/>
         <attack-var value="100"/>
