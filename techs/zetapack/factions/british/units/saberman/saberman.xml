@@ -206,7 +206,7 @@
 		<command>
 			<type value="morph"/>
 			<name value="build_mortar"/>
-			<image path="../mortar/images/tower_of_souls.bmp"/>
+			<image path="../mortar/images/mortar.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<morph-skill value="morph_mortar_skill"/>

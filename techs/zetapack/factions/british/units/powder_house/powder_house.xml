@@ -119,12 +119,12 @@
 
 		<command>
 			<type value="upgrade"/>
-			<name value="research_explosives"/>
-			<image path="../../upgrades/explosives/images/explosives.bmp" />
+			<name value="upgrade_medicine"/>
+			<image path="../nurse/images/heal.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<upgrade-skill value="upgrade_skill"/>
-			<produced-upgrade name="explosives"/>
+			<produced-upgrade name="medicine"/>
 		</command>
 
 		<command>

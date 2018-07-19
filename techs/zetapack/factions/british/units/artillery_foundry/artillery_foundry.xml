@@ -155,16 +155,6 @@
 
 		<command>
 			<type value="upgrade"/>
-			<name value="research_mortar"/>
-			<image path="../../upgrades/mortar/images/mortar.bmp" />
-			<unit-requirements />
-			<upgrade-requirements />
-			<upgrade-skill value="upgrade_skill"/>
-			<produced-upgrade name="mortar"/>
-		</command>
-
-		<command>
-			<type value="upgrade"/>
 			<name value="research_puckle_gun"/>
 			<image path="../../upgrades/puckle/images/puckle.bmp" />
 			<unit-requirements />
