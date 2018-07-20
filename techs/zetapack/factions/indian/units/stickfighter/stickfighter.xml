@@ -85,12 +85,14 @@
 			<speed value="220"/>
 			<anim-speed value="125"/>
 			<animation path="models/swordman_charging.g3d"/>
-			<sound enabled="true" start-time="0.0">
+			<sound enabled="false"/>
+			<!--
+
 				<sound-file path="sounds/indiattack1.wav"/>
 				<sound-file path="sounds/indiattack2.wav"/>
 				<sound-file path="sounds/indiattack3.wav"/>
 				<sound-file path="sounds/indiattack4.wav"/>
-  			</sound>
+  			</sound> -->
 		</skill>
 
 		<skill>
