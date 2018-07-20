@@ -30,9 +30,9 @@
 			<upgrade name="puckle"/>
 		</upgrade-requirements>
 		<resource-requirements>
-			<resource name="wood" amount="350"/>
-			<resource name="stone" amount="50"/>
-			<resource name="gold" amount="425"/>
+			<resource name="wood" amount="250"/>
+			<resource name="stone" amount="150"/>
+			<resource name="gold" amount="225"/>
 			<resource name="food" amount="1"/>
 		</resource-requirements>
 		<resources-stored/>
@@ -73,7 +73,7 @@
 			<type value="move"/>
 			<name value="move_skill"/>
 			<ep-cost value="0"/>
-			<speed value="120"/>
+			<speed value="70"/>
 			<anim-speed value="70"/>
 			<animation path="models/puckle_gun_walk.g3d"/>
 			<sound enabled="true" start-time="0">
@@ -90,13 +90,13 @@
 			<type value="attack"/>
 			<name value="attack_skill"/>
 			<ep-cost value="0"/>
-			<speed value="60"/>
-			<anim-speed value="75"/>
+			<speed value="90"/>
+			<anim-speed value="90"/>
 			<animation path="models/puckle_gun_attack.g3d"/>
 			<sound enabled="true" start-time="0.5">
 				<sound-file path="sounds/shot2.wav"/>
 			</sound>
-			<attack-strength value="200"/>
+			<attack-strength value="160"/>
 			<attack-var value="100"/>
 			<attack-range value="9"/>
 			<attack-type value="piercing"/>
@@ -105,7 +105,6 @@
 				<particle-file path="flash.xml"/>
 			</particles>
 			<attack-fields>
-				<field value="air"/>
 				<field value="land"/>
 			</attack-fields>
 			<projectile value="true">

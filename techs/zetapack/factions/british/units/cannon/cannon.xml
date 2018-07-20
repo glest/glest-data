@@ -68,8 +68,8 @@
 			<type value="move"/>
 			<name value="move_skill"/>
 			<ep-cost value="0"/>
-			<speed value="150"/>
-			<anim-speed value="60"/>
+			<speed value="100"/>
+			<anim-speed value="100"/>
 			<animation path="models/cannon_walk.g3d"/>
 			<sound enabled="true" start-time="0.1">
 				<sound-file path="sounds/catapult_walk1.wav"/>
@@ -85,15 +85,15 @@
 			<type value="attack"/>
 			<name value="attack_skill"/>
 			<ep-cost value="0"/>
-			<speed value="30"/>
-			<anim-speed value="30"/>
+			<speed value="20"/>
+			<anim-speed value="20"/>
 			<animation path="models/cannon_attack.g3d"/>
 			<sound enabled="true" start-time="0.08">
 				<sound-file path="sounds/catapult_attack.wav"/>
 				<sound-file path="sounds/catapult_attack1.wav"/>
 			</sound>
 			<attack-strength value="300"/>
-			<attack-var value="100"/>
+			<attack-var value="120"/>
 			<attack-range value="12"/>
 			<attack-type value="impact"/>
 			<attack-start-time value="0.08"/>
@@ -111,8 +111,8 @@
 				</sound>
 			</projectile>
 			<splash value="true">
-				<radius value="2"/>
-				<damage-all value="true"/>
+				<radius value="1"/>
+				<damage-all value="false"/>
 				<particle value="true" path="particle_splash.xml"/>
 			</splash>
 		</skill>

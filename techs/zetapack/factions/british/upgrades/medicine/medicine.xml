@@ -15,10 +15,10 @@
 	</effects>
 	<max-hp value="0"/>
 	<max-ep value="0"/>
-	<sight value="0"/>
-	<attack-strength value="0"/>
+	<sight value="1"/>
+	<attack-strength value="20"/>
 	<attack-range value="1"/>
 	<armor value="10"/>
-	<move-speed value="60"/>
-	<production-speed value="0"/>
+	<move-speed value="100"/>
+	<production-speed value="50"/>
 </upgrade>

@@ -13,7 +13,7 @@
 		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
-			<level name="elite" kills="5"/>
+			<level name="elite" kills="7"/>
 		</levels>
 		<fields>
 			<field value="land"/>
@@ -24,8 +24,8 @@
 		<unit-requirements/>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="wood" amount="60"/>
-			<resource name="gold" amount="120"/>
+			<resource name="wood" amount="80"/>
+			<resource name="gold" amount="130"/>
 			<resource name="food" amount="1"/>
 		</resource-requirements>
 		<resources-stored/>

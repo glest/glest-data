@@ -6,9 +6,9 @@
 		<height value="2"/>
 		<max-hp value="1200" regeneration="3"/>
 		<max-ep value="0"/>
-		<armor value="30"/>
+		<armor value="4"/>
 		<armor-type value="leather"/>
-		<sight value="10"/>
+		<sight value="12"/>
 		<time value="120"/>
 		<multi-selection value="true"/>
 		<cellmap value="false"/>
@@ -27,8 +27,8 @@
 			<upgrade name="stables"/>
 		</upgrade-requirements>
 		<resource-requirements>
-			<resource name="wood" amount="300"/>
-			<resource name="gold" amount="250"/>
+			<resource name="gold" amount="240"/>
+			<resource name="wood" amount="160"/>
 			<resource name="food" amount="2"/>
 		</resource-requirements>
 		<resources-stored/>
@@ -99,19 +99,20 @@
 			<type value="attack"/>
 			<name value="attack_skill"/>
 			<ep-cost value="0"/>
-			<speed value="50"/>
-			<anim-speed value="50"/>
+			<speed value="30"/>
+			<anim-speed value="30"/>
 			<animation path="models/cavalry_attack.g3d"/>
 			<sound enabled="true" start-time="0.06">
 				<sound-file path="/sounds/shot1.wav"/>
 			</sound>
-			<attack-strength value="180"/>
-			<attack-var value="50"/>
+			<attack-strength value="120"/>
+			<attack-var value="60"/>
 			<attack-range value="10"/>
 			<attack-type value="piercing"/>
 			<attack-start-time value="0.05"/>
 			<attack-fields>
 				<field value="land"/>
+				<field value="air"/>
 			</attack-fields>
 			<particles value="true" start-time="0.05" end-time="0.1">
 				<particle-file path="flash.xml"/>
