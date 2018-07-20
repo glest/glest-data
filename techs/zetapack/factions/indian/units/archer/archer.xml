@@ -135,16 +135,6 @@
 			<fade value="false"/>
 		</skill>
 
-		<skill>
-			<type value="morph"/>
-			<name value="morph_skill"/>
-			<ep-cost value="0"/>
-			<speed value="100"/>
-			<anim-speed value="100"/>
-			<animation path="models/archer_walking.g3d"/>
-			<sound enabled="false"/>
-		</skill>
-
 	</skills>
 
 	<!-- *** commands *** -->
@@ -189,17 +179,6 @@
 			</upgrade-requirements>
 			<stop-skill value="stop_skill"/>
 			<attack-skill value="attack_skill"/>
-		</command>
-
-		<command>
-			<type value="morph"/>
-			<name value="train_fire_archer"/>
-			<image path="../fire_archer/images/fire_archer.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<morph-skill value="morph_skill"/>
-			<morph-unit name= "fire_archer"/>
-			<discount value="50"/>
 		</command>
 
 	</commands>

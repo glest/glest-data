@@ -93,16 +93,6 @@
 			<sound enabled="false" />
 		</skill>
 
-		<skill>
-			<type value="morph"/>
-			<name value="morph_skill"/>
-			<ep-cost value="0"/>
-			<speed value="60"/>
-			<anim-speed value="80"/>
-			<animation path="../round_tent/models/roundtent_construction.g3d"/>
-			<sound enabled="false"/>
-		</skill>
-
 	</skills>
 
 	<commands>
@@ -114,17 +104,6 @@
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="stickfighter"/>
-		</command>
-
-		<command>
-			<type value="morph"/>
-			<name value="upgrade_to_round_tent"/>
-			<image path="../round_tent/images/roundtent.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<morph-skill value="morph_skill"/>
-			<morph-unit name= "round_tent"/>
-			<discount value="5"/>
 		</command>
 
 </commands>
