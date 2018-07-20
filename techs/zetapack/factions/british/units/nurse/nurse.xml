@@ -189,6 +189,20 @@
 			<animation path="models/nurse_heal.g3d"/>
 			<sound enabled="false"/>
 		</skill>
+
+		<skill>
+			<type value="upgrade"/>
+			<name value="upgrade_skill"/>
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="10" />
+			<animation path="models/nurse_heal.g3d" />
+			<sound enabled="false" />
+			<particles value="true">
+				<particle-file path="../../particles/upgrade_particles.xml" />
+			</particles>
+		</skill>
+
 	</skills>
 
 	<commands>
@@ -269,6 +283,16 @@
 			</buildings>
 			<start-sound enabled="false"/>
 			<built-sound enabled="false"/>
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="upgrade_medicine"/>
+			<image path="../../particles/images/upgrade.png" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="medicine"/>
 		</command>
 
 	</commands>

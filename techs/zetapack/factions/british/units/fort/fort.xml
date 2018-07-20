@@ -7,7 +7,7 @@
 		<max-hp value="10000" regeneration="0"/>
 		<max-ep value="0" />
 		<armor value="0" />
-		<armor-type value="wood"/>				
+		<armor-type value="wood"/>
 		<sight value="15" />
 		<time value="300" />
 		<multi-selection value="true"/>
@@ -31,14 +31,15 @@
 		<unit-requirements/>
 		<upgrade-requirements />
 		<resource-requirements>
-			<resource name="gold" amount="100" />
-			<resource name="wood" amount="500" />
+			<resource name="gold" amount="120" />
+			<resource name="wood" amount="180" />
+			<resource name="stone" amount="260" />
 		</resource-requirements>
 		<resources-stored>
 			<resource name= "gold" amount="2000"/>
-			<resource name= "wood" amount="1200"/>				
-			<resource name= "stone" amount="1500"/>				
-			<resource name= "food" amount="150"/>	
+			<resource name= "wood" amount="1200"/>
+			<resource name= "stone" amount="1500"/>
+			<resource name= "food" amount="150"/>
 		</resources-stored>
 		<image path="images/castle.bmp" />
 		<image-cancel path="images/tech_cancel.bmp"/>
@@ -50,33 +51,33 @@
 			<sound path="sounds/tech_click.wav" />
 		</command-sounds>
 	</parameters>
-	
+
 	<!-- *** skills *** -->
 	<skills>
 
 		<skill>
 			<type value="stop" />
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="100" />
 			<animation path="models/fort.g3d" />
 			<sound enabled="false" />
 		</skill>
-		
+
 		<skill>
 			<type value="be_built" />
-			<name value="be_built_skill"/>		
+			<name value="be_built_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="models/fort_build.g3d" />
 			<sound enabled="false" />
-		</skill>	
-		
+		</skill>
+
 		<skill>
 			<type value="produce" />
-			<name value="produce_skill"/>		
+			<name value="produce_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
@@ -86,32 +87,32 @@
 
                 <skill>
 			<type value="upgrade"/>
-			<name value="upgrade_skill"/>		
+			<name value="upgrade_skill"/>
 			<ep-cost value="0"/>
 			<speed value="300"/>
 			<anim-speed value="300"/>
 			<animation path="models/fort.g3d"/>
 			<sound enabled="false"/>
-		</skill>	
-		
+		</skill>
+
 		<skill>
 			<type value="die" />
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="models/fort_die.g3d" />
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/tech_building_fall2.wav"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 
 	</skills>
-	
+
 	<!-- *** commands *** -->
 	<commands>
-		
+
 		<!--command>
 			<type value="produce"/>
 			<name value="produce_hunter" />
@@ -121,7 +122,7 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="hunter"/>
 		</command-->
-	
+
 		<command>
 			<type value="produce"/>
 			<name value="produce_colonist" />
@@ -140,7 +141,7 @@
 			<upgrade-requirements/>
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="stables"/>
-		</command-->	
+		</command-->
 
 	</commands>
 </unit>

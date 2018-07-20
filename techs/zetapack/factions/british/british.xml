@@ -22,6 +22,7 @@
 		<unit name="wagon_worker" amount="0"/>
 		<unit name="balloon" amount="0"/>
 		<unit name="nurse" amount="0"/>
+		<unit name="cavalry" amount="0"/>
 	</starting-units>
 	<music value="true" path="music/british_music.ogg"/>
 </faction>

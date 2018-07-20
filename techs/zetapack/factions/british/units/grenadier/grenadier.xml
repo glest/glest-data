@@ -8,7 +8,7 @@
      <max-ep value="0"/>
      <armor value="5"/>
      <armor-type value="leather"/>
-     <sight value="10"/>
+     <sight value="12"/>
      <time value="100"/>
      <multi-selection value="true"/>
      <cellmap value="false"/>
@@ -115,8 +115,8 @@
         <type value="attack"/>
         <name value="attack_skill"/>
         <ep-cost value="0"/>
-        <speed value="80"/>
-        <anim-speed value="90"/>
+        <speed value="50"/>
+        <anim-speed value="50"/>
         <animation path="models/grenadier_attack.g3d"/>
         <sound enabled="true" start-time="0.4">
 					<sound-file path="sounds/technician_attack.wav"/>
@@ -128,7 +128,7 @@
         <attack-fields>
            <field value="land"/>
         </attack-fields>
-        <attack-start-time value="0.4"/>
+        <attack-start-time value="0.1"/>
         <projectile value="true">
            <particle value="true" path="particle_proj.xml"/>
 				<sound enabled="true">

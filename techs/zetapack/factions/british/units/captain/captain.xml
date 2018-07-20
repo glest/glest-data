@@ -20,7 +20,7 @@
 			<field value="land"/>
 		</fields>
 		<properties/>
-		<light enabled="false"/>
+		<light enabled="true" red="0.8" green="0.8" blue="0.5"/>
 		<unit-requirements>
 			<unit name="powder_house"/>
 		</unit-requirements>
@@ -28,8 +28,8 @@
 			<upgrade name="stables"/>
 		</upgrade-requirements>
 		<resource-requirements>
-			<resource name="wood" amount="280"/>
 			<resource name="gold" amount="320"/>
+			<resource name="wood" amount="280"/>
 			<resource name="food" amount="2"/>
 		</resource-requirements>
 		<resources-stored/>
@@ -103,8 +103,8 @@
 			<type value="move"/>
 			<name value="move_skill"/>
 			<ep-cost value="0"/>
-			<speed value="200"/>
-			<anim-speed value="90"/>
+			<speed value="260"/>
+			<anim-speed value="200"/>
 			<animation path="models/captain_walk.g3d"/>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/horseman_walk1.wav"/>
