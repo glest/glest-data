@@ -126,16 +126,6 @@
 			<splash value="false"/>
 		</skill>
 
-		<skill>
-			<type value="morph"/>
-			<name value="morph_skill"/>
-			<ep-cost value="0"/>
-			<speed value="100"/>
-			<anim-speed value="500"/>
-			<animation path="models/swordman_charging.g3d"/>
-			<sound enabled="false"/>
-		</skill>
-
 		<!-- *** skill 4 *** -->
 		<skill>
 			<type value="die"/>
@@ -197,17 +187,6 @@
 			</upgrade-requirements>
 			<stop-skill value="stop_skill"/>
 			<attack-skill value="attack_skill"/>
-		</command>
-
-		<command>
-			<type value="morph"/>
-			<name value="train_spearman"/>
-			<image path="../spearman/images/spearman.bmp"/>
-			<unit-requirements/>
-\			<upgrade-requirements/>
-			<morph-skill value="morph_skill"/>
-			<morph-unit name= "spearman"/>
-			<discount value="20"/>
 		</command>
 
 	</commands>

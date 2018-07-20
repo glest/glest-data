@@ -141,16 +141,6 @@
 			<fade value="false"/>
 		</skill>
 
-		<skill>
-			<type value="morph"/>
-			<name value="morph_skill"/>
-			<ep-cost value="0"/>
-			<speed value="250"/>
-			<anim-speed value="500"/>
-			<animation path="models/spearman_attacking.g3d"/>
-			<sound enabled="false"/>
-		</skill>
-
 	</skills>
 
 	<!-- *** commands *** -->
@@ -183,17 +173,6 @@
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
 			<attack-skill value="attack_skill"/>
-		</command>
-
-		<command>
-			<type value="morph"/>
-			<name value="train_axe_indian"/>
-			<image path="../axe_indian/images/axe_indian.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<morph-skill value="morph_skill"/>
-			<morph-unit name= "axe_indian"/>
-			<discount value="20"/>
 		</command>
 
 	</commands>
