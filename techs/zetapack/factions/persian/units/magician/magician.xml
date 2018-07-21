@@ -65,7 +65,7 @@
 			<sound enabled="false"/>
 			<attack-boost>
 				<allow-multiple-boosts value="true" />
-				<radius value="15"/>
+				<radius value="5"/>
 				<target value="faction">
 					<unit-type name="fakir" />
 					<unit-type name="genie" />
@@ -96,7 +96,7 @@
 			<sound enabled="false"/>
 			<attack-boost>
 				<allow-multiple-boosts value="true" />
-				<radius value="15"/>
+				<radius value="5"/>
 				<target value="faction">
 					<unit-type name="fakir" />
 					<unit-type name="genie" />
