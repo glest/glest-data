@@ -261,7 +261,7 @@
 				<unit name="summoner_guild"/>
 				<unit name="library"/>
 				<unit name="archmage_tower"/>
-				<unit name="wicker_behemoth"/>
+				<unit name="behemoth"/>
 				<unit name="tower_of_souls"/>
 				<unit name="golem"/>
 				<unit name="power_golem"/>
@@ -302,7 +302,7 @@
 			<buildings>
 				<building name="tower_of_souls"/>
 				<building name="golem"/>
-				<building name="wicker_behemoth"/>
+				<building name="behemoth"/>
 			</buildings>
 			<start-sound enabled="true">
 				<sound-file path="sounds/initiate_work_start1.wav"/>
