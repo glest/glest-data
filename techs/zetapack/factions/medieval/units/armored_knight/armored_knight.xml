@@ -4,13 +4,13 @@
 	<parameters>
 		<size value="1"/>
 		<height value="2"/>
-		<max-hp value="900"  regeneration="0"/>
+		<max-hp value="900"  regeneration="1"/>
 		<max-ep value="0"/>
-		<armor value="40"/>	
+		<armor value="40"/>
 		<armor-type value="metal"/>
 		<sight value="10"/>
-		<time value="80"/>	
-		<multi-selection value="true"/>	
+		<time value="80"/>
+		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
 			<level name="veteran" kills="3"/>
@@ -21,7 +21,7 @@
 		</levels>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties/>
 		<light enabled="false"/>
 		<unit-requirements>
@@ -35,7 +35,7 @@
 		<resource-requirements>
 			<resource name="wood" amount="75"/>
 			<resource name="gold" amount="150"/>
-			<resource name="food" amount="2"/>						
+			<resource name="food" amount="2"/>
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/elite_schwertkaempfer.png"/>
@@ -69,10 +69,10 @@
 			<animation path="models/guard_standing.g3d"/>
 			<sound enabled="false"/>
 		</skill>
-		
+
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="170"/>
 			<anim-speed value="110"/>
@@ -82,7 +82,7 @@
 
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="attack_skill"/>
 			<ep-cost value="0"/>
 			<speed value="120"/>
 			<anim-speed value="120"/>
@@ -102,11 +102,11 @@
 				<sound-file path="$COMMONDATAPATH/sounds/guard_attack12.wav"/>
 				<sound-file path="$COMMONDATAPATH/sounds/guard_attack13.wav"/>
 				<sound-file path="$COMMONDATAPATH/sounds/guard_attack14.wav"/>
-			</sound> 
+			</sound>
 			<attack-strength value="110"/>
 			<attack-var value="30"/>
 			<attack-range value="1"/>
-			<attack-type value="slashing"/>	
+			<attack-type value="slashing"/>
 			<attack-fields>
 				<field value="land"/>
 			</attack-fields>
@@ -116,8 +116,8 @@
 		</skill>
 
 		<skill>
-			<type value="die"/>	
-			<name value="die_skill"/>		
+			<type value="die"/>
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="60"/>
@@ -130,19 +130,19 @@
 			</sound>
 			<fade value="false"/>
 		</skill>
-		
+
 		<skill>
-			<type value="move"/>		
-			<name value="charge_skill"/>		
+			<type value="move"/>
+			<name value="charge_skill"/>
 			<ep-cost value="0"/>
 			<speed value="170"/>
 			<anim-speed value="120"/>
 			<animation path="models/guard_charging.g3d"/>
-			<sound enabled="false"/>			
-		</skill>	
+			<sound enabled="false"/>
+		</skill>
 
 	</skills>
-	
+
 	<commands>
 		<command>
 			<type value="stop"/>

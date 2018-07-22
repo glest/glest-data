@@ -4,13 +4,13 @@
 	<parameters>
 		<size value="1"/>
 		<height value="2"/>
-		<max-hp value="900" regeneration="0"/>
+		<max-hp value="900" regeneration="1"/>
 		<max-ep value="0"/>
-		<armor value="40"/>	
-		<armor-type value="metal"/>				
+		<armor value="40"/>
+		<armor-type value="metal"/>
 		<sight value="12"/>
-		<time value="60"/>	
-		<multi-selection value="true"/>	
+		<time value="60"/>
+		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
 			<level name="veteran" kills="3"/>
@@ -21,7 +21,7 @@
 		</levels>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties/>
 		<light enabled="false"/>
 		<unit-requirements>
@@ -34,8 +34,8 @@
 		</upgrade-requirements>
 		<resource-requirements>
 			<resource name="gold" amount="150"/>
-			<resource name="wood" amount="75"/>			
-			<resource name="food" amount="2"/>						
+			<resource name="wood" amount="75"/>
+			<resource name="food" amount="2"/>
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/elite_axtkaempfer.png"/>
@@ -60,10 +60,10 @@
 	</parameters>
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="45"/>
@@ -73,7 +73,7 @@
 
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="180"/>
 			<anim-speed value="100"/>
@@ -83,7 +83,7 @@
 
 		<skill>
 			<type value="move"/>
-			<name value="charge_skill"/>		
+			<name value="charge_skill"/>
 			<ep-cost value="0"/>
 			<speed value="200"/>
 			<anim-speed value="100"/>
@@ -93,7 +93,7 @@
 
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="attack_skill"/>
 			<ep-cost value="0"/>
 			<speed value="100"/>
 			<anim-speed value="100"/>
@@ -113,7 +113,7 @@
 				<sound-file path="$COMMONDATAPATH/sounds/guard_attack12.wav"/>
 				<sound-file path="$COMMONDATAPATH/sounds/guard_attack13.wav"/>
 				<sound-file path="$COMMONDATAPATH/sounds/guard_attack14.wav"/>
-			</sound> 
+			</sound>
 			<attack-strength value="125"/>
 			<attack-var value="30"/>
 			<attack-range value="1"/>
@@ -124,11 +124,11 @@
 			<attack-start-time value="0"/>
 			<projectile value="false"/>
 			<splash value="false"/>
-		</skill>	
+		</skill>
 
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="60"/>
@@ -138,15 +138,15 @@
 				<sound-file path="$COMMONDATAPATH/sounds/guard_die2.wav"/>
 				<sound-file path="$COMMONDATAPATH/sounds/guard_die3.wav"/>
 				<sound-file path="$COMMONDATAPATH/sounds/guard_die4.wav"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 
 
 	</skills>
-	
+
 	<commands>
-		
+
 		<command>
 			<type value="stop"/>
 			<name value="stop"/>
@@ -174,7 +174,7 @@
 			<move-skill value="charge_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
-		
+
 		<command>
 			<type value="attack_stopped"/>
 			<name value="position_halten"/>
@@ -185,7 +185,7 @@
 			</upgrade-requirements>
 			<stop-skill value="stop_skill"/>
 			<attack-skill value="attack_skill"/>
-		</command>	
+		</command>
 
 	</commands>
 </unit>
