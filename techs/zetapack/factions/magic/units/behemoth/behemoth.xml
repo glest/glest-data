@@ -120,6 +120,17 @@
 			</sound>
 			<fade value="false"/>
 		</skill>
+
+		<skill>
+			<type value="be_built"/>
+			<name value="be_built_skill"/>
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/wicker_behemoth_construction.g3d" />
+			<sound enabled="false" />
+		</skill>
+
 	</skills>
 	<commands>
 		<command>
