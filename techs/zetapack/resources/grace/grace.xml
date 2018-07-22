@@ -2,7 +2,5 @@
 
 <resource>
 	<image path="images/energy.bmp"/>
-	<type value="consumable">
-		<interval value="40"/>
-	</type>
+	<type value="static"/>
 </resource>
