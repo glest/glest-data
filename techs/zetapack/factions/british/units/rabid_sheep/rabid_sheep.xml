@@ -7,15 +7,17 @@
 	<parameters>
 		<size value="1"/>
 		<height value="1"/>
-		<max-hp value="550" regeneration="1"/>
+		<max-hp value="700" regeneration="1"/>
 		<max-ep value="0"/>
 		<armor value="0"/>
 		<armor-type value="organic"/>
-		<sight value="10"/>
-		<time value="40"/>
+		<sight value="12"/>
+		<time value="30"/>
 		<multi-selection value="true"/>
 		<cellmap value="false"/>
-		<levels/>
+		<levels>
+			<level name="elite" kills="3"/>
+		</levels>
 		<fields>
 			<field value="land"/>
 		</fields>
@@ -77,8 +79,8 @@
 			<type value="move"/>
 			<name value="move_skill"/>
 			<ep-cost value="0"/>
-			<speed value="220"/>
-			<anim-speed value="150"/>
+			<speed value="240"/>
+			<anim-speed value="240"/>
 			<animation path="models/sheep_walking.g3d"/>
                         <sound enabled="false" />
 		</skill>
@@ -87,12 +89,12 @@
 			<type value="attack"/>
 			<name value="attack_skill"/>
 			<ep-cost value="0"/>
-			<speed value="40"/>
+			<speed value="450"/>
 			<anim-speed value="450"/>
 			<animation path="models/sheep_walking.g3d"/>
 			<sound enabled="false"/>
-			<attack-strength value="60"/>
-			<attack-var value="25"/>
+			<attack-strength value="24"/>
+			<attack-var value="8"/>
 			<attack-range value="1"/>
 			<attack-type value="magic"/>
 			<attack-fields>

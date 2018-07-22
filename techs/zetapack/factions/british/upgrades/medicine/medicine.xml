@@ -16,9 +16,9 @@
 	<max-hp value="0"/>
 	<max-ep value="0"/>
 	<sight value="1"/>
-	<attack-strength value="20"/>
+	<attack-strength value="45"/>
 	<attack-range value="1"/>
-	<armor value="10"/>
+	<armor value="40"/>
 	<move-speed value="100"/>
-	<production-speed value="50"/>
+	<production-speed value="80"/>
 </upgrade>
