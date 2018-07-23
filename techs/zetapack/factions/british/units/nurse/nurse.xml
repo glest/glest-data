@@ -76,6 +76,7 @@
 					<unit-type name="infantryman" />
 					<unit-type name="saberman" />
 					<unit-type name="wagon_worker" />
+					<unit-type name="rabid_sheep" />
 				</target>
 				<max-hp value="0" regeneration="5"/>
 				<max-ep value="0"/>
@@ -84,7 +85,7 @@
 				<armor value="0"/>
 				<production-speed value="0"/>
 				<particles value="true">
-					<affected-particle-file path="healing_particles.xml"/>
+					<affected-particle-file path="radius_heal_particles.xml"/>
 				</particles>
 			</attack-boost>
 		</skill>
@@ -106,6 +107,7 @@
 					<unit-type name="infantryman" />
 					<unit-type name="saberman" />
 					<unit-type name="wagon_worker" />
+					<unit-type name="rabid_sheep" />
 				</target>
 				<max-hp value="0" regeneration="5"/>
 				<max-ep value="0"/>
@@ -114,7 +116,7 @@
 				<armor value="0"/>
 				<production-speed value="0"/>
 				<particles value="true">
-					<affected-particle-file path="healing_particles.xml"/>
+					<affected-particle-file path="radius_heal_particles.xml"/>
 				</particles>
 			</attack-boost>
 		</skill>
@@ -245,6 +247,7 @@
 				<unit name="wagon_worker"/>
 				<unit name="nurse"/>
 				<unit name="air_box"/>
+				<unit name="rabid_sheep" />
 			</repaired-units>
 		</command>
 
