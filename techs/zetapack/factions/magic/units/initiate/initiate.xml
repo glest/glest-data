@@ -146,6 +146,9 @@
 				<sound-file path="sounds/initiate_build2.wav"/>
 				<sound-file path="sounds/initiate_build3.wav"/>
 			</sound>
+			<particles value="true">
+				<particle-file path="repairing_particles.xml"/>
+			</particles>
 		</skill>
 		<skill>
 			<type value="harvest"/>
@@ -247,6 +250,7 @@
 			<move-skill value="move_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
+
 		<command>
 			<type value="repair"/>
 			<name value="repair"/>
@@ -267,6 +271,7 @@
 				<unit name="power_golem"/>
 			</repaired-units>
 		</command>
+
 		<command>
 			<type value="build"/>
 			<name value="build"/>
@@ -291,6 +296,7 @@
 				<sound-file path="sounds/initiate_work_end2.wav"/>
 			</built-sound>
 		</command>
+
 		<command>
 			<type value="build"/>
 			<name value="ritual"/>
@@ -313,6 +319,7 @@
 				<sound-file path="sounds/initiate_work_end2.wav"/>
 			</built-sound>
 		</command>
+
 		<command>
 			<type value="harvest"/>
 			<name value="mine"/>
@@ -330,6 +337,7 @@
 			<max-load value="20"/>
 			<hits-per-unit value="1"/>
 		</command>
+
 		<command>
 			<type value="harvest"/>
 			<name value="harvest"/>
