@@ -16,7 +16,7 @@
     	<energy-var value="20" />
 	<relative value="true" />
     	<fixed value="false" />
-    	<teamcolorNoEnergy value="false" />
-    	<teamcolorEnergy value="false" />
-    
+    	<teamcolorNoEnergy value="true" />
+    	<teamcolorEnergy value="true" />
+
 </unit-particle-system>
