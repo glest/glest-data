@@ -134,6 +134,7 @@
 				<sound-file path="sounds/initiate_build3.wav"/>
 			</sound>
 		</skill>
+
 		<skill>
 			<type value="repair"/>
 			<name value="repair_skill"/>
@@ -150,6 +151,7 @@
 				<particle-file path="repairing_particles.xml"/>
 			</particles>
 		</skill>
+
 		<skill>
 			<type value="harvest"/>
 			<name value="harvest_skill"/>
@@ -163,7 +165,11 @@
 				<sound-file path="sounds/initiate_harvest3.wav"/>
 				<sound-file path="sounds/initiate_harvest4.wav"/>
 			</sound>
+			<particles value="true">
+				<particle-file path="harvesting_particles.xml"/>
+			</particles>
 		</skill>
+
 		<skill>
 			<type value="morph"/>
 			<name value="morph_skill"/>
