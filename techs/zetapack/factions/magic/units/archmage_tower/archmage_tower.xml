@@ -67,13 +67,9 @@
 				<target value="faction">
 					<unit-type name="archmage" />
 					<unit-type name="battlemage" />
-					<unit-type name="behemoth" />
 					<unit-type name="daemon" />
-					<unit-type name="dragon_rider" />
 					<unit-type name="ghost_armor" />
-					<unit-type name="golem" />
 					<unit-type name="initiate" />
-					<unit-type name="power_golem" />
 					<unit-type name="summoner" />
 				</target>
 				<max-hp value="0" regeneration="5"/>
