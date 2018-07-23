@@ -125,7 +125,7 @@
 			<type value="be_built"/>
 			<name value="be_built_skill"/>
 			<ep-cost value="0" />
-			<speed value="300" />
+			<speed value="120" />
 			<anim-speed value="300" />
 			<animation path="models/wicker_behemoth_construction.g3d" />
 			<sound enabled="false" />
