@@ -141,12 +141,10 @@
 			<speed value="60"/>
 			<anim-speed value="60"/>
 			<animation path="models/nurse_attack.g3d"/>
-			<sound enabled="true" start-time="0.06">
-				<sound-file path="../captain/sounds/shot1.wav"/>
-			</sound>
-			<particles value="true" start-time="0.1" end-time="0.2">
-				<particle-file path="flash.xml"/>
-			</particles>
+			<sound enabled="false"/>
+			<particles value="false"/>
+			<!-- particles value="true" start-time="0.1" end-time="0.2">
+				<particle-file path="flash.xml"/ -->
 			<attack-strength value="150"/>
 			<attack-var value="100"/>
 			<attack-range value="6"/>
@@ -270,7 +268,7 @@
 
 		<command>
 			<type value="attack"/>
-			<name value="attack"/>
+			<name value="use_pepper_spray"/>
 			<image path="images/archer_attack.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
