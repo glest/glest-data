@@ -74,8 +74,8 @@
 			<type value="move"/>
 			<name value="move_skill"/>
 			<ep-cost value="0"/>
-			<speed value="220"/>
-			<anim-speed value="75"/>
+			<speed value="110"/>
+			<anim-speed value="48"/>
 			<animation path="models/elephant_walk.g3d"/>
 			<particles value="true">
 				<particle-file path="dust_front_particles.xml"/>
@@ -90,8 +90,8 @@
 			<type value="move"/>
 			<name value="charge_skill"/>
 			<ep-cost value="0"/>
-			<speed value="220"/>
-			<anim-speed value="75"/>
+			<speed value="110"/>
+			<anim-speed value="48"/>
 			<animation path="models/elephant_walk.g3d"/>
 			<particles value="true">
 				<particle-file path="dust_front_particles.xml"/>

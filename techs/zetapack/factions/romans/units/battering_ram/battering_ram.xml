@@ -76,7 +76,7 @@
 			<type value="move"/>
 			<name value="move_skill"/>
 			<ep-cost value="0"/>
-			<speed value="220"/>
+			<speed value="110"/>
 			<anim-speed value="80"/>
 			<animation path="models/battering_ram_walk.g3d"/>
 			<sound enabled="true" start-time="0">
