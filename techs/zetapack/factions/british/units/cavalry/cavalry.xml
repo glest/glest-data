@@ -200,22 +200,22 @@
 
 		<command>
 			<type value="attack"/>
-			<name value="attack"/>
-			<image path="images/horseman_attack.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<move-skill value="move_skill"/>
-			<attack-skill value="attack_skill"/>
-		</command>
-
-		<command>
-			<type value="attack"/>
-			<name value="attack_bayonet"/>
+			<name value="bayonet_attack"/>
 			<image path="images/horseman_attack2.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
 			<attack-skill value="attack_s_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="shoot_rifle"/>
+			<image path="images/horseman_attack.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="attack_skill"/>
 		</command>
 
 		<command>
