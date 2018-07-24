@@ -9,8 +9,8 @@
 		<height value="2"/>
 		<max-hp value="2000" regeneration="3"/>
 		<max-ep value="0"/>
-		<armor value="45"/>
-		<armor-type value="metal"/>
+		<armor value="20"/>
+		<armor-type value="wood"/>
 		<sight value="10"/>
 		<time value="100"/>
 		<multi-selection value="true"/>
@@ -105,7 +105,7 @@
 			</sound>
 			<attack-strength value="400"/>
 			<attack-var value="50"/>
-			<attack-range value="2"/>
+			<attack-range value="1"/>
 			<attack-type value="impact"/>
 			<attack-start-time value="0.5"/>
 			<attack-fields>
