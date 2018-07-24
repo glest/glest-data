@@ -191,6 +191,23 @@
 		</skill>
 
 		<skill>
+			<type value="morph"/>
+			<name value="build_br"/>
+			<ep-cost value="0"/>
+			<speed value="450"/>
+			<anim-speed value="200"/>
+			<animation path="models/nurse_heal.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="$COMMONDATAPATH/sounds/technician_build1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/technician_build2.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/technician_build3.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/technician_build4.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/technician_build5.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/technician_build6.wav"/>
+			</sound>
+		</skill>
+
+		<skill>
 			<type value="upgrade"/>
 			<name value="upgrade_skill"/>
 			<ep-cost value="0" />
@@ -264,7 +281,7 @@
 		<command>
 			<type value="attack_stopped"/>
 			<name value="hold_position"/>
-			<image path="../infantryman/images/tech_hold.bmp"/>
+			<image path="../../images/tech_hold.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
@@ -294,6 +311,17 @@
 			<upgrade-requirements />
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="medicine"/>
+		</command>
+
+		<command>
+			<type value="morph"/>
+			<name value="build_battering_ram"/>
+			<image path="../battering_ram/images/br.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<morph-skill value="build_br"/>
+			<morph-unit name= "battering_ram"/>
+			<discount value="20"/>
 		</command>
 
 	</commands>
