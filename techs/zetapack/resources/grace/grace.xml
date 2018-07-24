@@ -1,6 +1,11 @@
 <?xml version="1.0" standalone="no"?>
 
 <resource>
-	<image path="images/energy.bmp"/>
+	<image path="images/grace.png"/>
+	<!--    image credits
+		License: CC-BY-SA
+		http://creativecommons.org/licenses/by-sa/3.0/
+		original author: Wildfire Games
+		http://www.wildfiregames.com/ -->
 	<type value="static"/>
 </resource>
