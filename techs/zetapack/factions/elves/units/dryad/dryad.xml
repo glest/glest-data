@@ -5,9 +5,9 @@
 	<parameters>
 		<size value="1"/>
 		<height value="2"/>
-		<max-hp value="285" regeneration="10"/>
-		<max-ep value="300" regeneration="10"/>
-		<armor value="20"/>
+		<max-hp value="285" regeneration="1"/>
+		<max-ep value="300" regeneration="7"/>
+		<armor value="5"/>
 		<armor-type value="wood"/>
 		<sight value="13"/>
 		<time value="50"/>
@@ -27,7 +27,7 @@
 		<resource-requirements>
 			<resource name="gold" amount="25"/>
 			<resource name="wood" amount="40"/>
-			<resource name="grace" amount="7"/>
+			<resource name="grace" amount="1"/>
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/dryad.bmp"/>

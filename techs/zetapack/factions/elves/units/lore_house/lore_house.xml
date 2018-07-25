@@ -27,10 +27,10 @@
 			<property value="burnable"/>
 		</properties>
 		<light enabled="false"/>
-		<unit-requirements/>
-		<upgrade-requirements>
-			<upgrade name="elven_lore"/>
-		</upgrade-requirements>
+		<unit-requirements>
+			<unit name="corral"/>
+		</unit-requirements>
+		<upgrade-requirements/>
 		<resource-requirements>
 			<resource name="gold" amount="250" />
 			<resource name="stone" amount="50" />
@@ -38,7 +38,8 @@
 		</resource-requirements>
 		<resources-stored>
 			<resource name="gold" amount="1500"/>
-			<resource name="stone" amount="500"/>
+			<resource name="stone" amount="1500"/>
+			<resource name="wood" amount="3000"/>
 		</resources-stored>
 		<image path="images/lore_house.bmp" />
 		<image-cancel path="../tree_of_life/images/stop.bmp"/>
@@ -122,6 +123,16 @@
 		</command>
 
 		<command>
+			<type value="produce"/>
+			<name value="summon_elf" />
+			<image path="../elf/images/elf.bmp" />
+			<unit-requirements />
+			<upgrade-requirements/>
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="elf"/>
+		</command>
+
+		<command>
 			<type value="upgrade"/>
 			<name value="taming_song" />
 			<image path="../../upgrades/taming_song/images/etl.bmp" />
@@ -141,6 +152,16 @@
 			<upgrade-requirements />
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="mystical_forest"/>
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="elven_lore" />
+			<image path="../../upgrades/elven_lore/images/lore_and_song.bmp" />
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="elven_lore"/>
 		</command>
 
 	</commands>

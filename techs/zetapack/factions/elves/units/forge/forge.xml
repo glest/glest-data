@@ -72,7 +72,7 @@
 			<sound enabled="false" />
 		</skill>
 
-                <skill>
+		<skill>
 			<type value="upgrade" />
 			<name value="upgrade_skill"/>
 			<ep-cost value="0" />
@@ -83,6 +83,9 @@
 				<sound-file path="sounds/forge_hit1.wav"/>
 				<sound-file path="sounds/forge_hit2.wav"/>
 			</sound>
+			<particles value="true">
+				<particle-file path="../../particles/upgrade_particles.xml" />
+			</particles>
 		</skill>
 
 		<skill>

@@ -3,6 +3,7 @@
 <unit>
 
 	<parameters>
+		<max-unit-count value="1"/>
 		<size value="1"/>
 		<height value="2"/>
 		<max-hp value="600" regeneration="1"/>
@@ -22,13 +23,12 @@
 			<field value="land"/>
 		</fields>
 		<properties/>
-		<max-unit-count value="6"/>
 		<light enabled="false"/>
 		<unit-requirements/>
 		<upgrade-requirements/>
 		<resource-requirements>
 			<resource name="gold" amount="200"/>
-			<resource name="grace" amount="10"/>
+			<resource name="grace" amount="1"/>
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/minstrel.bmp"/>
@@ -49,7 +49,7 @@
 			<sound enabled="false"/>
 			<attack-boost>
 				<allow-multiple-boosts value="true" />
-				<radius value="15"/>
+				<radius value="5"/>
 				<target value="faction">
 					<unit-type name="dryad" />
 					<unit-type name="elf" />
@@ -76,29 +76,6 @@
 			<anim-speed value="45"/>
 			<animation path="models/minstrel_summoning.g3d"/>
 			<sound enabled="false"/>
-			<attack-boost>
-				<allow-multiple-boosts value="true" />
-				<radius value="15"/>
-				<target value="faction">
-					<unit-type name="dryad" />
-					<unit-type name="elf" />
-					<unit-type name="ent" />
-					<unit-type name="galadrim_archer" />
-					<unit-type name="grey_elf_archer" />
-					<unit-type name="magol_hedir" />
-					<unit-type name="prince" />
-					<unit-type name="reaver" />
-					<unit-type name="silver_helm_lancer" />
-					<unit-type name="wise_elf" />
-				</target>
-				<max-hp value="0" regeneration="5"/>
-				<max-ep value="0"/>
-				<sight value="0"/>
-				<attack-range value="0"/>
-				<armor value="0"/>
-				<production-speed value="0"/>
-				<particles value="false"/>
-			</attack-boost>
 		</skill>
 
 		<skill>
@@ -155,7 +132,7 @@
 			<sound enabled="false"/>
 			<attack-boost>
 				<allow-multiple-boosts value="true" />
-				<radius value="15"/>
+				<radius value="5"/>
 				<target value="faction">
 					<unit-type name="dryad" />
 					<unit-type name="elf" />
@@ -186,7 +163,6 @@
 				<particle-file path="healing_particles.xml"/>
 			</particles>
 		</skill>
-
 
 	</skills>
 

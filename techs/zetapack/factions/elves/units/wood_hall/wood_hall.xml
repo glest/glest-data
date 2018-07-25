@@ -105,6 +105,9 @@
 			<anim-speed value="300" />
 			<animation path="../lore_house/models/wood_hall.g3d" />
 			<sound enabled="false" />
+			<particles value="true">
+				<particle-file path="../../particles/upgrade_particles.xml" />
+			</particles>
 		</skill>
 
 	</skills>
@@ -120,16 +123,6 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="minstrel"/>
 		</command>
-<!--
-		<command>
-			<type value="upgrade"/>
-			<name value="elven_lore" />
-			<image path="../../upgrades/elven_lore/images/lore_and_song.bmp" />
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<upgrade-skill value="upgrade_skill"/>
-			<produced-upgrade name="elven_lore"/>
-		</command> -->
 
 		<command>
 			<type value="upgrade"/>
@@ -140,5 +133,6 @@
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="quenya"/>
 		</command>
+
 	</commands>
 </unit>

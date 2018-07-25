@@ -36,7 +36,7 @@
 			<resource name="gold" amount="250"/>
 			<resource name="stone" amount="150"/>
 			<resource name="wood" amount="200"/>
-			<resource name="grace" amount="-60"/>
+			<resource name="grace" amount="-26"/>
 		</resource-requirements>
 		<resources-stored>
 			<resource name="gold" amount="1800"/>
