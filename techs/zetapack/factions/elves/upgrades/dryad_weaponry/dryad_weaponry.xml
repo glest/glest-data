@@ -11,7 +11,6 @@
 	<resource-requirements>
 		<resource name="wood" amount="200"/>
 		<resource name="gold" amount="100"/>
-		<resource name="grace" amount="2"/>
 	</resource-requirements>
 	<effects>
 		<unit name="dryad"/>

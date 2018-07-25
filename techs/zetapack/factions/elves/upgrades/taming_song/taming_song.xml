@@ -9,7 +9,6 @@
 	<resource-requirements>
 		<resource name="gold" amount="200"/>
 		<resource name="wood" amount="200"/>
-		<resource name="grace" amount="20"/>
 	</resource-requirements>
 	<effects/>
 	<max-hp value="0"/>

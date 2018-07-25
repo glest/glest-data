@@ -10,7 +10,6 @@
 		<resource name="gold" amount="50"/>
 		<resource name="wood" amount="50"/>
 		<resource name="stone" amount="100"/>
-		<resource name="grace" amount="5"/>
 	</resource-requirements>
 	<effects>
 		<unit name="tree_of_life"/>

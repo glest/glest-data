@@ -9,7 +9,7 @@
 	<resource-requirements>
 		<resource name="wood" amount="50"/>
 		<resource name="gold" amount="100"/>
-		<resource name="grace" amount="16"/>
+		<resource name="stone" amount="80"/>
 	</resource-requirements>
 	<effects>
 		<unit name="grey_elf_archer"/>

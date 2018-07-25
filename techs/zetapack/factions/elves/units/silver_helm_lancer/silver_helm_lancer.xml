@@ -28,7 +28,7 @@
 		<resource-requirements>
 			<resource name="gold" amount="475"/>
 			<resource name="wood" amount="200"/>
-			<resource name="grace" amount="11"/>
+			<resource name="grace" amount="2"/>
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/silver_helm.bmp"/>
