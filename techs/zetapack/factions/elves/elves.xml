@@ -10,7 +10,7 @@
 	<starting-units>
 		<unit name="tree_of_life" amount="1"/>
 		<unit name="forest_guardian" amount="1"/>
-		<unit name="elf" amount="4"/>
+		<unit name="elf" amount="3"/>
 		<unit name="minstrel" amount="1"/>
 		<unit name="grey_elf_archer" amount="1"/>
 		<unit name="magol_hedir" amount="2"/>

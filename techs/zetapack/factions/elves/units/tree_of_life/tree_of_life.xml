@@ -33,16 +33,15 @@
 			<upgrade name="mystical_forest"/>
 		</upgrade-requirements>
 		<resource-requirements>
-			<resource name="gold" amount="250"/>
+			<resource name="gold" amount="150"/>
 			<resource name="stone" amount="150"/>
-			<resource name="wood" amount="200"/>
+			<resource name="wood" amount="300"/>
 			<resource name="grace" amount="-26"/>
 		</resource-requirements>
 		<resources-stored>
 			<resource name="gold" amount="1800"/>
 			<resource name="wood" amount="1200"/>
 			<resource name="stone" amount="1400"/>
-			<resource name="grace" amount="100"/>
 		</resources-stored>
 		<image path="images/tree_of_life.bmp" />
 		<image-cancel path="images/stop.bmp"/>

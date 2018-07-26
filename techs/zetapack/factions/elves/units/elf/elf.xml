@@ -69,8 +69,6 @@
 			<sound enabled="false"/>
 		</skill>
 
-
-
 		<skill>
 			<type value="move"/>
 			<name value="move_skill"/>
@@ -107,7 +105,7 @@
 			<ep-cost value="0"/>
 			<speed value="225"/>
 			<anim-speed value="100"/>
-			<animation path="models/worker_walking.g3d"/>
+			<animation path="models/worker_walking_loaded.g3d"/>
 			<sound enabled="false"/>
 		</skill>
 
@@ -230,7 +228,6 @@
 				<building name="wood_hall"/>
 				<building name="forge"/>
 				<building name="lore_house"/>
-				<building name="forest_guardian"/>
 			</buildings>
 			<start-sound enabled="false"/>
 			<built-sound enabled="true">
