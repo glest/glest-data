@@ -7,7 +7,7 @@
 		<max-hp value="1600" regeneration="3"/>
 		<max-ep value="0"/>
 		<armor value="20"/>
-		<armor-type value="leather"/>
+		<armor-type value="wood"/>
 		<sight value="13"/>
 		<time value="150"/>
 		<multi-selection value="true"/>
