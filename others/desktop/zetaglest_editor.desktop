@@ -1,9 +1,9 @@
 [Desktop Entry]
 Categories=Game;StrategyGame;
 Comment=Map Editor
-Name=MegaGlest Map Editor
-Icon=megaglest
-Exec=megaglest_editor
+Name=ZetaGlest Map Editor
+Icon=zetaglest
+Exec=zetaglest_editor
 Terminal=false
 Type=Application
 Keywords=map;editor;
