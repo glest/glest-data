@@ -1,0 +1,327 @@
+TechTreeName=prax_0.5.9.5
+; --------------
+; Types of Armor
+ArmorTypeName_haut=skin
+ArmorTypeName_leder=leather
+ArmorTypeName_holz=wood
+ArmorTypeName_metall=metal
+ArmorTypeName_stein=stone
+; -------------- 
+; Types of Attack
+AttackTypeName_biss=bite
+AttackTypeName_schlag=blow
+AttackTypeName_pfeil=arrow
+AttackTypeName_stich=stab
+AttackTypeName_magie=magic
+AttackTypeName_einschlag=impact
+; ------------------
+; Types of Resources
+ResourceTypeName_food=food
+ResourceTypeName_gold=gold
+ResourceTypeName_stone=stone
+ResourceTypeName_wood=wood
+; -----------------
+; Types of Factions
+FactionName_*Observer*=*Observer*
+FactionName_*Random*=*Random*
+FactionName_natulka=natulka
+; ----------------------------------
+; Types of Upgrades for this Faction
+UpgradeTypeName_axt=optimize axes
+UpgradeTypeName_bogen=optimize bows
+UpgradeTypeName_drachenruf=call of the dragon
+UpgradeTypeName_gift=study poison
+UpgradeTypeName_heiltraenke=produce healing potions
+UpgradeTypeName_hexerzeitsprung=magical time jump
+UpgradeTypeName_hundefutter=dog food
+UpgradeTypeName_hundetraining=dog training
+UpgradeTypeName_manatraenke=produce mana potions
+UpgradeTypeName_medizin=study medicine
+UpgradeTypeName_ruestung=optimize armors
+UpgradeTypeName_schild=optimize shields
+UpgradeTypeName_schwert=optimize swords
+UpgradeTypeName_speer=optimize spears
+UpgradeTypeName_trainingsfeld=training field
+UpgradeTypeName_vergiftete_speere=poisoned spears
+; -------------------------------
+; Types of Units for this Faction
+UnitTypeName_arbeiter=worker
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=stop
+CommandName_bewegen=move
+CommandName_gebaeude_errichten=construct buildings
+CommandName_mine=Gold mining / quarrying
+CommandName_baum_faellen=wood harvesting
+CommandName_reparieren=repair
+UnitTypeName_axtkaempfer=axe-fighter
+; --------------------
+; Levels for this Unit
+LevelName_veteran=veteran
+LevelName_experte=expert
+LevelName_champion=champion
+LevelName_meister=master
+LevelName_grossmeister=grand master
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=stop
+CommandName_bewegen=move
+CommandName_angreifen=attack
+CommandName_position_halten=hold position
+CommandName_axtkaempfer_befoerdern=promote axe-fighter 
+UnitTypeName_bannertraeger=standard-bearer
+; --------------------
+; Levels for this Unit
+LevelName_veteran=veteran
+LevelName_experte=expert
+LevelName_champion=champion
+LevelName_meister=master
+LevelName_grossmeister=grand master
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=stop
+CommandName_bewegen=move
+CommandName_angreifen=attack
+CommandName_mit_schwert_angreifen=attack: sword
+CommandName_position_halten=hold position
+UnitTypeName_bauernhof=farm
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_kuh_erzeugen=produce cow
+CommandName_hundefutter_erzeugen=produce dog food
+UnitTypeName_drachenturm=dragon tower
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_wyvern_rufen=call wyvern
+UnitTypeName_gepanzerter_axtkaempfer=armored axe-fighter
+; --------------------
+; Levels for this Unit
+LevelName_veteran=veteran
+LevelName_experte=expert
+LevelName_champion=champion
+LevelName_meister=master
+LevelName_grossmeister=grand master
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=stop
+CommandName_bewegen=move
+CommandName_angreifen=attack
+CommandName_position_halten=hold position
+UnitTypeName_gepanzerter_schwertkaempfer=armored swordsman
+; --------------------
+; Levels for this Unit
+LevelName_veteran=veteran
+LevelName_experte=expert
+LevelName_champion=champion
+LevelName_meister=master
+LevelName_grossmeister=grand master
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=stop
+CommandName_bewegen=move
+CommandName_angreifen=attack
+CommandName_position_halten=hold position
+UnitTypeName_golemhoehle=golem cave
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_steingolem_erstellen=stone golem
+UnitTypeName_hexer=warlock
+; --------------------
+; Levels for this Unit
+LevelName_veteran=veteran
+LevelName_experte=expert
+LevelName_meister=master
+LevelName_legende=legend
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=stop
+CommandName_bewegen=move
+CommandName_zeige_reichweite=show range
+CommandName_wundheilung=wound healing
+CommandName_hexerzeitsprung=magical time jump
+CommandName_feuerblitz_defensive=hold position: fire flash
+CommandName_feuerschlag_defensive=hold position: fire blast
+CommandName_knueppelschlag_defensive=hold position: cudgel punch
+CommandName_der_ruf_des_drachen=call of the dragon
+CommandName_feuerblitz_angriff=attack: fire flash
+CommandName_feuerschlag_angriff=attack: fire blast
+CommandName_knueppelschlag_angriff=attack: beating
+CommandName_erzeuge_untoten=conjure undead
+UnitTypeName_hundehuette=doghouse
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_jagdhund_erstellen=train hunting dog
+CommandName_hundetraining=dog training
+UnitTypeName_jaeger=hunter
+; --------------------
+; Levels for this Unit
+LevelName_veteran=veteran
+LevelName_experte=expert
+LevelName_champion=champion
+LevelName_meister=master
+LevelName_grossmeister=grand master
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=stop
+CommandName_bewegen=move
+CommandName_angreifen=attack
+CommandName_position_halten=hold position
+UnitTypeName_jagdhund=hunting dog
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=stop
+CommandName_bewegen=move
+CommandName_angreifen=attack
+UnitTypeName_jagdturm=hunting tower
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_angriff_abbrechen=attack: inactive
+CommandName_angreifen=attack
+CommandName_zeige_reichweite=show range
+UnitTypeName_kuh=cow
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=stop
+CommandName_bewegen=move
+UnitTypeName_landsknechtzelt=lansquenet tent
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_schwertkaempfer_ausbilden=train swordsman
+CommandName_speerkaempfer_ausbilden=train spear-fighter
+CommandName_axtkaempfer_ausbilden=train axe-fighter
+CommandName_jaeger_ausbilden=train hunter
+CommandName_bannertraeger_ausbilden=train standard-bearer
+CommandName_trainingsfeld_erstellen=create training field
+UnitTypeName_schmiede=smithy
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_schwerter_optimieren=optimize swords
+CommandName_speere_optimieren=optimize spears
+CommandName_aexte_optimieren=optimize axes
+CommandName_boegen_optimieren=optimize bows
+CommandName_speere_vergiften=poison spears
+CommandName_schilde_optimieren=optimize shields
+CommandName_ruestung_optimieren=optimize armors
+UnitTypeName_schwertkaempfer=swordsman
+; --------------------
+; Levels for this Unit
+LevelName_veteran=veteran
+LevelName_experte=expert
+LevelName_champion=champion
+LevelName_meister=master
+LevelName_grossmeister=grand master
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=stop
+CommandName_bewegen=move
+CommandName_angreifen=attack
+CommandName_position_halten=hold position
+CommandName_schwertkaempfer_befoerdern=promote swordsman
+UnitTypeName_speerkaempfer=spear-fighter
+; --------------------
+; Levels for this Unit
+LevelName_veteran=veteran
+LevelName_experte=expert
+LevelName_champion=champion
+LevelName_meister=master
+LevelName_grossmeister=grand master
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=stop
+CommandName_bewegen=move
+CommandName_angreifen=attack
+CommandName_position_halten=hold position
+UnitTypeName_stachel=sting
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=stop
+CommandName_angreifen=attack
+CommandName_zeige_reichweite=show range
+UnitTypeName_steingolem=stone golem
+; --------------------
+; Levels for this Unit
+LevelName_veteran=veteran
+LevelName_experte=expert
+LevelName_champion=champion
+LevelName_meister=master
+LevelName_grossmeister=grand master
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=stop
+CommandName_bewegen=move
+CommandName_angreifen=attack
+CommandName_position_halten=hold position
+UnitTypeName_steinheiligtum=stone sanctuary
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=stop
+CommandName_zeige_reichweite=show range
+CommandName_hexer_erzeugen=train warlock
+CommandName_heiltraenke_herstellen=produce healing potions
+CommandName_manatraenke_herstellen=produce mana potions
+UnitTypeName_turm_akademie=tower academy
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_medizin_erforschen=study medicine
+CommandName_gift_erforschen=study poison
+UnitTypeName_untoter=undead
+; --------------------
+; Levels for this Unit
+LevelName_veteran=veteran
+LevelName_experte=expert
+LevelName_champion=champion
+LevelName_meister=master
+LevelName_grossmeister=grand master
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=stop
+CommandName_bewegen=move
+CommandName_rennen=run fast
+CommandName_angreifen=attack
+UnitTypeName_wyvern=wyvern
+; --------------------
+; Levels for this Unit
+LevelName_veteran=veteran
+LevelName_experte=expert
+LevelName_champion=champion
+LevelName_meister=master
+LevelName_grossmeister=grand master
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=stop
+CommandName_bewegen=move
+CommandName_angreifen=attack
+CommandName_luftziel_angreifen=attack air target
+CommandName_position_halten=hold position
+UnitTypeName_zentrum=centre
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_arbeiter_einstellen=hire worker

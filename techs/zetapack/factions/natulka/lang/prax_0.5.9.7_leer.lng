@@ -1,0 +1,327 @@
+TechTreeName=prax_0.5.9.5
+; --------------
+; Types of Armor
+ArmorTypeName_haut=
+ArmorTypeName_leder=
+ArmorTypeName_holz=
+ArmorTypeName_metall=
+ArmorTypeName_stein=
+; -------------- 
+; Types of Attack
+AttackTypeName_biss=
+AttackTypeName_schlag=
+AttackTypeName_pfeil=
+AttackTypeName_stich=
+AttackTypeName_magie=
+AttackTypeName_einschlag=
+; ------------------
+; Types of Resources
+ResourceTypeName_food=
+ResourceTypeName_gold=
+ResourceTypeName_stone=
+ResourceTypeName_wood=
+; -----------------
+; Types of Factions
+FactionName_*Observer*=
+FactionName_*Random*=
+FactionName_natulka=natulka
+; ----------------------------------
+; Types of Upgrades for this Faction
+UpgradeTypeName_axt=
+UpgradeTypeName_bogen=
+UpgradeTypeName_drachenruf=
+UpgradeTypeName_gift=
+UpgradeTypeName_heiltraenke=
+UpgradeTypeName_hexerzeitsprung=
+UpgradeTypeName_hundefutter=
+UpgradeTypeName_hundetraining=
+UpgradeTypeName_manatraenke=
+UpgradeTypeName_medizin=
+UpgradeTypeName_ruestung=
+UpgradeTypeName_schild=
+UpgradeTypeName_schwert=
+UpgradeTypeName_speer=
+UpgradeTypeName_trainingsfeld=
+UpgradeTypeName_vergiftete_speere=
+; -------------------------------
+; Types of Units for this Faction
+UnitTypeName_arbeiter=
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=
+CommandName_bewegen=
+CommandName_gebaeude_errichten=
+CommandName_mine=
+CommandName_baum_faellen=
+CommandName_reparieren=
+UnitTypeName_axtkaempfer=
+; --------------------
+; Levels for this Unit
+LevelName_veteran=
+LevelName_experte=
+LevelName_champion=
+LevelName_meister=
+LevelName_grossmeister=
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=
+CommandName_bewegen=
+CommandName_angreifen=
+CommandName_position_halten=
+CommandName_axtkaempfer_befoerdern=
+UnitTypeName_bannertraeger=
+; --------------------
+; Levels for this Unit
+LevelName_veteran=
+LevelName_experte=
+LevelName_champion=
+LevelName_meister=
+LevelName_grossmeister=
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=
+CommandName_bewegen=
+CommandName_angreifen=
+CommandName_mit_schwert_angreifen=
+CommandName_position_halten=
+UnitTypeName_bauernhof=
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_kuh_erzeugen=
+CommandName_hundefutter_erzeugen=
+UnitTypeName_drachenturm=
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_wyvern_rufen=
+UnitTypeName_gepanzerter_axtkaempfer=
+; --------------------
+; Levels for this Unit
+LevelName_veteran=
+LevelName_experte=
+LevelName_champion=
+LevelName_meister=
+LevelName_grossmeister=
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=
+CommandName_bewegen=
+CommandName_angreifen=
+CommandName_position_halten=
+UnitTypeName_gepanzerter_schwertkaempfer=
+; --------------------
+; Levels for this Unit
+LevelName_veteran=
+LevelName_experte=
+LevelName_champion=
+LevelName_meister=
+LevelName_grossmeister=
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=
+CommandName_bewegen=
+CommandName_angreifen=
+CommandName_position_halten=
+UnitTypeName_golemhoehle=
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_steingolem_erstellen=
+UnitTypeName_hexer=
+; --------------------
+; Levels for this Unit
+LevelName_veteran=
+LevelName_experte=
+LevelName_meister=
+LevelName_legende=
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=
+CommandName_bewegen=
+CommandName_zeige_reichweite=
+CommandName_wundheilung=
+CommandName_hexerzeitsprung=
+CommandName_feuerblitz_defensive=
+CommandName_feuerschlag_defensive=
+CommandName_knueppelschlag_defensive=
+CommandName_der_ruf_des_drachen=
+CommandName_feuerblitz_angriff=
+CommandName_feuerschlag_angriff=
+CommandName_knueppelschlag_angriff=
+CommandName_erzeuge_untoten=
+UnitTypeName_hundehuette=
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_jagdhund_erstellen=
+CommandName_hundetraining=
+UnitTypeName_jaeger=
+; --------------------
+; Levels for this Unit
+LevelName_veteran=
+LevelName_experte=
+LevelName_champion=
+LevelName_meister=
+LevelName_grossmeister=
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=
+CommandName_bewegen=
+CommandName_angreifen=
+CommandName_position_halten=
+UnitTypeName_jagdhund=
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=
+CommandName_bewegen=
+CommandName_angreifen=
+UnitTypeName_jagdturm=
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_angriff_abbrechen=
+CommandName_angreifen=
+CommandName_zeige_reichweite=
+UnitTypeName_kuh=
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=
+CommandName_bewegen=
+UnitTypeName_landsknechtzelt=
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_schwertkaempfer_ausbilden=
+CommandName_speerkaempfer_ausbilden=
+CommandName_axtkaempfer_ausbilden=
+CommandName_jaeger_ausbilden=
+CommandName_bannertraeger_ausbilden=
+CommandName_trainingsfeld_erstellen=
+UnitTypeName_schmiede=
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_schwerter_optimieren=
+CommandName_speere_optimieren=
+CommandName_aexte_optimieren=
+CommandName_boegen_optimieren=
+CommandName_speere_vergiften=
+CommandName_schilde_optimieren=
+CommandName_ruestung_optimieren=
+UnitTypeName_schwertkaempfer=
+; --------------------
+; Levels for this Unit
+LevelName_veteran=
+LevelName_experte=
+LevelName_champion=
+LevelName_meister=
+LevelName_grossmeister=
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=
+CommandName_bewegen=
+CommandName_angreifen=
+CommandName_position_halten=
+CommandName_schwertkaempfer_befoerdern=
+UnitTypeName_speerkaempfer=
+; --------------------
+; Levels for this Unit
+LevelName_veteran=
+LevelName_experte=
+LevelName_champion=
+LevelName_meister=
+LevelName_grossmeister=
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=
+CommandName_bewegen=
+CommandName_angreifen=
+CommandName_position_halten=
+UnitTypeName_stachel=
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=
+CommandName_angreifen=
+CommandName_zeige_reichweite=
+UnitTypeName_steingolem=
+; --------------------
+; Levels for this Unit
+LevelName_veteran=
+LevelName_experte=
+LevelName_champion=
+LevelName_meister=
+LevelName_grossmeister=
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=
+CommandName_bewegen=
+CommandName_angreifen=
+CommandName_position_halten=
+UnitTypeName_steinheiligtum=
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=
+CommandName_zeige_reichweite=
+CommandName_hexer_erzeugen=
+CommandName_heiltraenke_herstellen=
+CommandName_manatraenke_herstellen=
+UnitTypeName_turm_akademie=
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_medizin_erforschen=
+CommandName_gift_erforschen=
+UnitTypeName_untoter=
+; --------------------
+; Levels for this Unit
+LevelName_veteran=
+LevelName_experte=
+LevelName_champion=
+LevelName_meister=
+LevelName_grossmeister=
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=
+CommandName_bewegen=
+CommandName_rennen=
+CommandName_angreifen=
+UnitTypeName_wyvern=
+; --------------------
+; Levels for this Unit
+LevelName_veteran=
+LevelName_experte=
+LevelName_champion=
+LevelName_meister=
+LevelName_grossmeister=
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_anhalten=
+CommandName_bewegen=
+CommandName_angreifen=
+CommandName_luftziel_angreifen=
+CommandName_position_halten=
+UnitTypeName_zentrum=
+; --------------------
+; Levels for this Unit
+; -------------------------------
+; Types of Commands for this Unit
+CommandName_arbeiter_einstellen=
