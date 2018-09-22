@@ -79,7 +79,7 @@
 			<sound enabled="true" start-time="0.4">
 				<sound-file path="sounds/moose_rider_attack.wav"/>
 			</sound> 
-			<attack-strenght value="200"/>
+			<attack-strength value="200"/>
 			<attack-var value="25"/>
 			<attack-range value="1"/>
 			<attack-type value="slashing"/>	

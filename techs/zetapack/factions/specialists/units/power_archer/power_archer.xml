@@ -75,7 +75,7 @@
 			<sound enabled="true" start-time="0.5">
 				<sound-file path="../range_archer/sounds/range_archer_attack.wav"/>
 			</sound>
-			<attack-strenght value="300"/>
+			<attack-strength value="300"/>
 			<attack-var value="50"/>
 			<attack-range value="8"/>
 			<attack-type value="piercing"/>

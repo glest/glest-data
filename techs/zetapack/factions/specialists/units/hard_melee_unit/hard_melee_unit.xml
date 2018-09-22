@@ -75,7 +75,7 @@
 			<sound enabled="true" start-time="0.1">
 				<sound-file path="sounds/hard_melee_unit_attack.wav"/>
 			</sound> 
-			<attack-strenght value="12"/>
+			<attack-strength value="12"/>
 			<attack-var value="5"/>
 			<attack-range value="1"/>
 			<attack-type value="beat"/>

@@ -70,7 +70,7 @@
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/flame_thrower_attack.ogg"/>
 			</sound> 
-			<attack-strenght value="40"/>
+			<attack-strength value="40"/>
 			<attack-var value="1"/>
 			<attack-range value="8"/>
 			<attack-type value="energy"/>

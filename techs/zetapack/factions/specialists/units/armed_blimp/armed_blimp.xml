@@ -78,7 +78,7 @@
 			<sound enabled="true" start-time="0.1">
 				<sound-file path="sounds/armed_blimp_attack.wav"/>
 			</sound>
-			<attack-strenght value="200"/>
+			<attack-strength value="200"/>
 			<attack-var value="50"/>
 			<attack-range value="7"/>
 			<attack-type value="energy"/>

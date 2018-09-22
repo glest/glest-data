@@ -141,7 +141,7 @@
 			<sound enabled="true" start-time="0.47">
 				<sound-file path="sounds/land_worker_attack.wav"/>
 			</sound> 
-			<attack-strenght value="60"/>
+			<attack-strength value="60"/>
 			<attack-var value="25"/>
 			<attack-range value="1"/>
 			<attack-type value="slashing"/>

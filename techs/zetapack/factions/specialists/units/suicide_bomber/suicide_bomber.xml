@@ -67,7 +67,7 @@
 			<anim-speed value="1"/>
 			<animation path="models/suicide_bomber_sacrifice.g3d"/>
 			<sound enabled="false"/>
-			<attack-strenght value="4000"/>
+			<attack-strength value="4000"/>
 			<attack-var value="200"/>
 			<attack-range value="1"/>
 			<attack-type value="energy"/>				
