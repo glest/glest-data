@@ -48,11 +48,11 @@
 			<model path="models/tanne_big.g3d" />
 			<model path="models/tanne_small.g3d" />
 			<model path="models/tanne2.g3d" />
-                        <model path="models/birke.g3d" />
+                        <model path="models/birke.g3d"/>
                         <model path="models/palm2.g3d" />
-                        <model path="models/baum2.g3d" />
-                        <model path="models/baum2big.g3d" />
-                        <model path="models/baum2.g3d" />
+                        <model path="models/baum2.g3d" anim-speed="5" smoothTwoFrameAnim="true"/>
+                        <model path="models/baum2big.g3d" anim-speed="5" smoothTwoFrameAnim="true"/>
+                        <model path="models/baum2.g3d" anim-speed="5" smoothTwoFrameAnim="true"/>
 		</object>
 		<object walkable="false">
 			<model path="models/nettles2.g3d"/>
@@ -66,13 +66,13 @@
 			<model path="models/stone3.g3d"/>
 		</object>
 		<object walkable="true">
-                        <model path="models/farn.g3d"/>
+                        <model path="models/farn.g3d" anim-speed="5" smoothTwoFrameAnim="true"/>
 		</object>
                 <object walkable="true">
 			<model path="models/reed.g3d"/>
 		</object>
 		<object walkable="false">
-			<model path="models/deathtree.g3d"/>
+			<model path="models/deathtree.g3d" anim-speed="5" smoothTwoFrameAnim="true"/>
 			<model path="models/deathtree_small.g3d"/>
 		</object>
 		<object walkable="false">
@@ -87,6 +87,7 @@
                         <model path="models/battlemage_statue.g3d"/>
 			<model path="models/swordman_statue.g3d"/>
                         <model path="models/broken_statue2.g3d"/>
+						<model path="models/moose_statue.g3d"/>
 		</object>
 		<object walkable="false">
 			<model path="models/big_stone.g3d"/>
@@ -120,9 +121,8 @@
 		</water>
 		<fog enabled="false"/>
 		<sun-light red="1" green="1" blue="1"/>
-		<moon-light red="0.6" green="0.6" blue="0.8"/>
+		<moon-light red="0.6" green="0.6" blue="0.6"/>
 		<day-night value="0.7"/>
 		<weather sun="0.60" rain="0.30" snow="0.10"/>
 	</parameters>
 </tileset>
-
