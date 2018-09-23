@@ -1,6 +1,6 @@
 TUTORIAL_NAME=#1 - Velmi jednoduchý základní tutoriál
 ;message headers
-GlestBasicTutorial=MegaGlest základní tutoriál
+GlestBasicTutorial=ZetaGlest základní tutoriál
 WellDone=Výborně!
 Resources=Zdroje
 Combat=Boj
@@ -9,7 +9,7 @@ Tricks=Triky
 
 ;message strings
 ;------------------------------------------Start------------------------------------------------
-Welcome=Vítejte v základním MegaGlest tutoriálu.
+Welcome=Vítejte v základním ZetaGlest tutoriálu.
 
 FirstThing=Chcete-li nastavit viditelnou oblast, přesuňte ukazatel myši na okraj obrazovky nebo použijte kurzorové klávesy. Dalším způsobem, jak to udělat, je kliknout levým tlačítkem myši na minimapě (levý horní roh obrazovky).
 

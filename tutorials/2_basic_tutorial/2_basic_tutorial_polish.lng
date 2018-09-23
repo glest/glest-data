@@ -7,7 +7,7 @@ Combat=Bitwa
 Buildings=Budynki
 
 ;message strings
-Welcome=Witaj w 2 części samouczka do gry MegaGlest.
+Welcome=Witaj w 2 części samouczka do gry ZetaGlest.
 WillBeUsingTech=Dowodzisz frakcją Techników ('Tech'), w szeregach której są średniowieczni wojownicy i machiny wojenne.
 NeedWorkers=Aby zbierać surowce potrzebujesz robotników ('Workers'). Aby stworzyć kilku, zaznacz Zamek ('Castle') i kilka razy użyj polecenia 'Produce Worker'. Stwórz teraz 3 robotników.
 SelectAndCommand=Jednostki zaznacza się przez kliknięcie ich lewym przyciskiem myszy, a polecenia są wydawane prawym kliknięciem myszy na celu lub na mapie.

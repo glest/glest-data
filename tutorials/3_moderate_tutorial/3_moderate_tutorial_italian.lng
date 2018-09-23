@@ -1,6 +1,6 @@
 TUTORIAL_NAME=Tutorial Avanzato
 ;message headers
-GlestAdvancedTutorial=Tutorial Avanzato di MegaGlest
+GlestAdvancedTutorial=Tutorial Avanzato di ZetaGlest
 Promoting=Promozione delle Unità
 WellDone=Ben fatto!
 Summoning=Evocazione
@@ -9,7 +9,7 @@ Ritual=Rituale
 Armies=Eserciti
 
 ;message strings
-Welcome=Benvenuto al Tutorial Avanzato di MegaGlest, qui imparerai alcune delle funzioni più avanzate del gioco.
+Welcome=Benvenuto al Tutorial Avanzato di ZetaGlest, qui imparerai alcune delle funzioni più avanzate del gioco.
 MagicBrief=Hai a disposizione la fazione Magic, che usa la magia per evocare creature in battaglia.
 InitiateBrief=I Novizi sono le unità base della fazione Magic, possono raccogliere risorse e costruire costruzioni.
 InitiatePromotion=I Novizi possono essere promossi a Maghi da Guerra. Per farlo seleziona un Novizio e premi il pulsante "Promuovi a Mago da Guerra".

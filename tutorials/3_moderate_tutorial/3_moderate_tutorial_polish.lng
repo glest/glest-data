@@ -9,7 +9,7 @@ Ritual=Rytuał
 Armies=Armie
 
 ;message strings
-Welcome=Witaj w zaawansowanym samouczku do gry MegaGlest.
+Welcome=Witaj w zaawansowanym samouczku do gry ZetaGlest.
 MagicBrief=Dowodzisz frakcją Magów ('Magic'), która używa czarowników oraz przywołuje wojownicze stworzenia do walki.
 InitiateBrief=Adepci ('Initiate') są podstawową jednostką Magów, mogą oni zbierać surowce i budować struktury.
 InitiatePromotion=Adepci mogą być awansowani do Magów Bitewnych ('Battlemage'). Aby to zrobić zaznacz Adepta i użyj komendy 'Awans do Maga Bitewnego' ('Promote to Battlemage'). Awansuj teraz jednego Adepta.

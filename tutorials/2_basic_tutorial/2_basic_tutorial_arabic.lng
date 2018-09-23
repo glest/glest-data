@@ -1,13 +1,13 @@
 TUTORIAL_NAME=#2 الدروس الأساسية
 ;message headers
-GlestBasicTutorial=دروس MegaGlest الأساسية
+GlestBasicTutorial=دروس ZetaGlest الأساسية
 WellDone=أحسنت!
 Resources=مصادر
 Combat=معركة
 Buildings=منشآت
 
 ;message strings
-Welcome=مرحبا بكم في دروس MegaGlest الأساسية. هنا سوف تتعلم أساسيات اللعبة.
+Welcome=مرحبا بكم في دروس ZetaGlest الأساسية. هنا سوف تتعلم أساسيات اللعبة.
 WillBeUsingTech=أنت في قيادة الفصائل التقنية . التي تستخدم محاربي العصور الوسطى والاجهزة الميكانيكية للقتال.
 NeedWorkers=لجني الموارد ستحتاج للعمال. لانتاج البعض حدد اولا القلعة ثم استخدم أمر "انتاج عامل"
 SelectAndCommand=يتم اختيارالوحدات بالنقر باليسار عليها. يتم اعطاء الاوامر بالنقر باليمين سواء على الهدف أو على المنطقة.

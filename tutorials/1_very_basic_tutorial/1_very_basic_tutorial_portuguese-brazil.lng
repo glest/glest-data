@@ -1,6 +1,6 @@
 TUTORIAL_NAME=#1 Tutorial Básico
 ;message headers
-GlestBasicTutorial=MegaGlest Tutorial Básico
+GlestBasicTutorial=ZetaGlest Tutorial Básico
 WellDone=Bom trabalho!
 Resources=Recursos
 Combat=Combater
@@ -9,7 +9,7 @@ Tricks=Truques
 
 ;message strings
 ;------------------------------------------Start------------------------------------------------
-Welcome=Bem-vindo ao tutorial básico MegaGlest.
+Welcome=Bem-vindo ao tutorial básico ZetaGlest.
 
 FirstThing=Visualizar: Para ajustar a área visível, mova o ponteiro do mouse para as bordas da tela ou usar as teclas de cursor. Outra maneira de fazer isso é clicando no botão esquerdo do mouse no mini mapa (canto superior esquerdo da tela).
 

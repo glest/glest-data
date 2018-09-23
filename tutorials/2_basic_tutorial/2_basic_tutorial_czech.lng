@@ -1,13 +1,13 @@
 TUTORIAL_NAME=#2 - Základní tutoriál
 ;message headers
-GlestBasicTutorial=MegaGlest základní tutoriál
+GlestBasicTutorial=ZetaGlest základní tutoriál
 WellDone=Výborně!
 Resources=Zdroje
 Combat=Boj
 Buildings=Budovy
 
 ;message strings
-Welcome=Vítejte v MegaGlest základním tutoriálu. Zde se naučíte základy hry.
+Welcome=Vítejte v ZetaGlest základním tutoriálu. Zde se naučíte základy hry.
 WillBeUsingTech=Budete velet frakci techniků, která k boji využívá středověké bojovníky a mechanická zařízení.
 NeedWorkers=Ke sklizni zdrojů budete potřebovat dělníky. K produkci nějakého vyberte hrad a použijte příkaz "produkovat dělníka".
 SelectAndCommand=Jednotky vyberete, když na ně kliknete levým tlačítkem myši, příkazy se poté stanoví kliknutím pravým tlačítkem myši na cíl nebo na terén.

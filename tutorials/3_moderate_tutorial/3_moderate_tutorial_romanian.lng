@@ -1,6 +1,6 @@
 TUTORIAL_NAME=Tutorial Avansat
 ;message headers
-GlestAdvancedTutorial=Tutorial Avansat MegaGlest
+GlestAdvancedTutorial=Tutorial Avansat ZetaGlest
 Promoting=Promovarea Unităților
 WellDone=Bine făcut!
 Summoning=Invocare
@@ -9,7 +9,7 @@ Ritual=Ritual
 Armies=Armate
 
 ;message strings
-Welcome=Bun venit la Tutorialul Avansat MegaGlest. Aici vei învăța câteva dintre caracteristicile avansate ale jocului.
+Welcome=Bun venit la Tutorialul Avansat ZetaGlest. Aici vei învăța câteva dintre caracteristicile avansate ale jocului.
 MagicBrief=Ești la comanda facțiunii Magic, ce folosesc magi și creaturi invocate pentru a lupta.
 InitiateBrief=Inițiații sunt unitățile de bază Magic, ei pot colecta resurse și pot construi structuri.
 InitiatePromotion=Inițiații pot fi promovați la Magi Luptători, pentru a face aceasta, selectează un Inițiat, și folosește comanda "Promovează la Mag Luptător"

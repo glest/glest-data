@@ -1,13 +1,13 @@
 TUTORIAL_NAME=#2 Tutorial de Bază
 ;message headers
-GlestBasicTutorial=Tutorial de Bază MegaGlest
+GlestBasicTutorial=Tutorial de Bază ZetaGlest
 WellDone=Bine făcut!
 Resources=Resurse
 Combat=Luptă
 Buildings=Clădiri
 
 ;message strings
-Welcome=Bun venit la Tutorialul de Bază MegaGlest. Aici vom învăța bazele jocului.
+Welcome=Bun venit la Tutorialul de Bază ZetaGlest. Aici vom învăța bazele jocului.
 WillBeUsingTech=Ești la comanda facțiunii Tech, ce folosește luptători medievali și diapozitive de mecanice pentru a lupta.
 NeedWorkers=Pentru a colecta resurse, vei avea nevoie de Muncitori. Pentru a produce unii, selecteză mai întâi Castelul apoi folosește comanda "Produce Muncitori"
 SelectAndCommand=Unitățile sunt selectate prin apăsarea-stânga pe ei, comenzile sunt date fie prin apăsare-dreapta pe o țintă sau pe teren.

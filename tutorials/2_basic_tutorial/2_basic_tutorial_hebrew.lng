@@ -1,13 +1,13 @@
 TUTORIAL_NAME=#2 הדרכה בסיסית
 ;message headers
-GlestBasicTutorial=MegaGlest הדרכה בסיסית
+GlestBasicTutorial=ZetaGlest הדרכה בסיסית
 WellDone=כל הכבוד!
 Resources=משאבים
 Combat=קרב
 Buildings=מבנים
 
 ;message strings
-Welcome=ברוך הבא להדרכה הבסיסית של MegaGlest. כאן נלמד אותך את יסודות המשחק.
+Welcome=ברוך הבא להדרכה הבסיסית של ZetaGlest. כאן נלמד אותך את יסודות המשחק.
 WillBeUsingTech=אתה שולט על העם Tech, הם משתמשים בלוחמים מימי הביניים ומכשירים מכניים כדי להילחם.
 NeedWorkers=על מנת לאסוף משאבים אתה זקוק לפועלים. על מנת לייצר פועלים בחר את המצודה והשתמש בפקודה "ייצר פועל".
 SelectAndCommand=חיילים/פועלים נבחרים על ידי לחיצה שמאלית, פקודה ניתנת על ידי לחצן ימני על המטרה או השטח.

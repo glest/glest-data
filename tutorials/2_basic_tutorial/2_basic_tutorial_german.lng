@@ -1,13 +1,13 @@
 TUTORIAL_NAME=Einsteiger Tutorial
 ;message headers
-GlestBasicTutorial=MegaGlest Grundeinführung
+GlestBasicTutorial=ZetaGlest Grundeinführung
 WellDone=Gut gemacht!
 Resources=Ressourcen
 Combat=Gefecht
 Buildings=Gebäude
 
 ;message strings
-Welcome=Willkommen in der MegaGlest Grundeinführung. Hier wirst du die Grundlagen des Spiels lernen.
+Welcome=Willkommen in der ZetaGlest Grundeinführung. Hier wirst du die Grundlagen des Spiels lernen.
 WillBeUsingTech=Du kommandierst die Tech-Fraktion, welche mittelalterliche Krieger und Geräte zum Kämpfen nutzt.
 NeedWorkers=Um Ressourcen zu sammeln, benötigst du Arbeiter(worker). Um einige auszubilden, wähle das Schloss (Castle), dann nutze das Kommando "Produce Worker."
 SelectAndCommand=Einheiten werden durch einen Linksklick ausgewählt, Kommandos werden durch einen Rechtsklick auf das Ziel oder Gelände gegeben.

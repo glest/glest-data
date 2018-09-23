@@ -1,6 +1,6 @@
 TUTORIAL_NAME=#1 الدروس الأساسية
 ;message headers
-GlestBasicTutorial=دروس MegaGlest الأساسية
+GlestBasicTutorial=دروس ZetaGlest الأساسية
 WellDone=احسنت !
 Resources=مصادر
 Combat=معركة
@@ -9,7 +9,7 @@ Tricks=حيل
 
 ;message strings
 ;------------------------------------------Start------------------------------------------------
-Welcome=مرحبا بكم في دروس MegaGlest الأساسية.
+Welcome=مرحبا بكم في دروس ZetaGlest الأساسية.
 
 FirstThing=عرض: لضبط منطقة الرؤيا، حرك مؤشر الماوس على حواف الشاشة، أو استخدم مفاتيح المؤشرات. هناك طريقة أخرى للقيام بذلك وهي النقر الأيسر على الخريطة المصغرة (الزاوية اليسرى العليا من الشاشة).
 

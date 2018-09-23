@@ -1,6 +1,6 @@
 TUTORIAL_NAME=einfaches Einsteiger Tutorial
 ;message headers
-GlestBasicTutorial=MegaGlest Einsteiger-Einführung
+GlestBasicTutorial=ZetaGlest Einsteiger-Einführung
 WellDone=Gut gemacht!
 Resources=Ressourcen
 Combat=Gefecht
@@ -9,7 +9,7 @@ Tricks=Tricks
 
 ;message strings
 ;------------------------------------------Start------------------------------------------------
-Welcome=Willkommen zur MegaGlest-Einführung!
+Welcome=Willkommen zur ZetaGlest-Einführung!
 
 FirstThing=Zur Ansicht: Du kannst den angezeigten Bereich verändern, indem du die Maus an den Bildschirmrand bewegst oder die Pfeiltasten benutzt. Auch per Linksklick auf die Übersichtskarte (oben links im Bild) kannst du die Ansicht neu positionieren.
 

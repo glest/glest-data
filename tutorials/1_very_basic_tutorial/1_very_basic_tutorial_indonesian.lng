@@ -1,6 +1,6 @@
 TUTORIAL_NAME=#1 Cara Bermain Dasar
 ;message headers
-GlestBasicTutorial=Cara Bermain Dasar MegaGlest
+GlestBasicTutorial=Cara Bermain Dasar ZetaGlest
 WellDone=Bagus!
 Resources=Sumberdaya
 Combat=Pertarungan
@@ -9,7 +9,7 @@ Tricks=Trik
 
 ;message strings
 ;------------------------------------------Start------------------------------------------------
-Welcome=Selamat datang ke cara bermain dasar MegaGlest.
+Welcome=Selamat datang ke cara bermain dasar ZetaGlest.
 
 FirstThing=Tampilan: Untuk mengatur area yang terlihat, gerakkan mouse pointer Anda ke ujung layar Anda, atau gunakan tombol kursor. Cara lain untuk melakukan ini adalah dengan klik kiri pada peta (bagian kiri atas layar Anda).
 

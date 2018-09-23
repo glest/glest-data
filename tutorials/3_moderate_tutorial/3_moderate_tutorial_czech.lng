@@ -1,6 +1,6 @@
 TUTORIAL_NAME=#3 - Pokročilý tutoriál
 ;message headers
-GlestAdvancedTutorial=Pokročilý MegaGlest tutoriál
+GlestAdvancedTutorial=Pokročilý ZetaGlest tutoriál
 Promoting=Povýšení jednotek
 WellDone=Výborně!
 Summoning=Přivolávání
@@ -9,7 +9,7 @@ Ritual=Rituál
 Armies=Armády
 
 ;message strings
-Welcome=Vítejte v pokročilém MegaGlest tutoriálu, zde se dozvíte některé z pokročilejších funkcí hry.
+Welcome=Vítejte v pokročilém ZetaGlest tutoriálu, zde se dozvíte některé z pokročilejších funkcí hry.
 MagicBrief=Budete velet frakci mágů, která k boji využívá mágy a přivolávaná stvoření.
 InitiateBrief=Základní jednotkou mágů jsou novicové, mohou sklízet zdroje a budovat struktury.
 InitiatePromotion=Novicové mohou být povýšeni na bojové mágy. K tomuto povýšení nejprve vyberte novice a pak použijte příkaz "povýšit na bojového mága".

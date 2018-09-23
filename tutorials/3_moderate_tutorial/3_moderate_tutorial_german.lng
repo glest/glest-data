@@ -1,6 +1,6 @@
 TUTORIAL_NAME=Fortgeschrittenen Tutorial
 ;message headers
-GlestAdvancedTutorial=Fortgeschrittene MegaGlest-Einführung
+GlestAdvancedTutorial=Fortgeschrittene ZetaGlest-Einführung
 Promoting=Beförderung von Einheiten
 WellDone=Gut gemacht!
 Summoning=Beschwörung
@@ -9,7 +9,7 @@ Ritual=Ritual
 Armies=Armeen
 
 ;message strings
-Welcome=Willkommen in der fortgeschrittenen Einführung zu MegaGlest. Hier wirst du einige der erweiterten Funktionen des Spiels lernen.
+Welcome=Willkommen in der fortgeschrittenen Einführung zu ZetaGlest. Hier wirst du einige der erweiterten Funktionen des Spiels lernen.
 MagicBrief=Du kommandierst die Magier-Fraktion, die Zauberer und beschworene Kreaturen zum Kämpfen nutzt.
 InitiateBrief=Initiates sind die einfachsten Magier, sie können Ressourcen sammeln und Gebäude bauen.
 InitiatePromotion=Initiates können zu Kampfmagiern (Battlemage) befördert werden. Wähle dazu einen Initiate und klicke auf "Promote to Battlemage".

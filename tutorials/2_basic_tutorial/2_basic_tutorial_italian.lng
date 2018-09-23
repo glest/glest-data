@@ -1,13 +1,13 @@
 TUTORIAL_NAME=Tutorial Base #2
 ;message headers
-GlestBasicTutorial=Tutorial Base di MegaGlest
+GlestBasicTutorial=Tutorial Base di ZetaGlest
 WellDone=Ben Fatto!
 Resources=Risorse
 Combat=Combatti
 Buildings=Costruzioni
 
 ;message strings
-Welcome=Benvenuto al Tutorial Base di MegaGlest. Qui apprenderai le basi del gioco.
+Welcome=Benvenuto al Tutorial Base di ZetaGlest. Qui apprenderai le basi del gioco.
 WillBeUsingTech=Hai al comando la fazione Tech che usa guerrieri medievali e strumenti meccanici per combattere.
 NeedWorkers=Per raccogliere le risorse hai bisogno di Lavoratori. Per produrli per prima cosa seleziona il Castello e poi usa il comando "Crea Lavoratore".
 SelectAndCommand=Le unità vengono selezionate cliccandoci sopra col tasto sinistro. Puoi controllare le unità cliccandoci su e farle muovere e attaccare.
