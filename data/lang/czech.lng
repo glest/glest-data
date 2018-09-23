@@ -1,4 +1,4 @@
-; This is the main MegaGlest localization file (INI format)
+; This is the main ZetaGlest localization file (INI format)
 ;
 ; Your contributions are welcome. Please ensure you agree to the terms of the
 ; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
@@ -555,7 +555,7 @@ YouWin=Vyhráli jste!
 ;-------------------------------- Intro Text Start
 IntroText1=Založeno na klasické hře Glest
 IntroStartMilliseconds1=$USE_DEFAULT_LANGUAGE_VALUE
-IntroText2=tým MegaGlest představuje
+IntroText2=tým ZetaGlest představuje
 IntroStartMilliseconds2=$USE_DEFAULT_LANGUAGE_VALUE
 IntroText3=svobodnou strategickou hru v reálném čase
 IntroStartMilliseconds3=$USE_DEFAULT_LANGUAGE_VALUE

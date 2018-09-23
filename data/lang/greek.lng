@@ -1,4 +1,4 @@
-; This is the main MegaGlest localization file (INI format)
+; This is the main ZetaGlest localization file (INI format)
 ;
 ; Your contributions are welcome. Please ensure you agree to the terms of the
 ; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
@@ -301,8 +301,8 @@ MaxLoad=Μέγιστη φόρτωση
 MaxPlayers=Μέγιστος αριθμός παικτών
 MaxUnitCount=Μέγιστος αριθμός ταυτόχρονης ύπαρξης μονάδων
 MeetingPoint=Σημείο Συνάντησης
-Megaglest3d2dProgramming=MegaGlest 3D/2D+Προγραμματισμός
-MegaglestProgramming=MegaGlest Προγραμματισμός
+Megaglest3d2dProgramming=ZetaGlest 3D/2D+Προγραμματισμός
+MegaglestProgramming=ZetaGlest Προγραμματισμός
 MGBuildDateTime=Ημέρα και ώρα κατασκευής
 MGGameCountry=Χώρα
 MGGameStatus=Κατάσταση
@@ -555,7 +555,7 @@ YouWin=Κερδίσατε
 ;-------------------------------- Intro Text Start
 IntroText1=Βασισμένο στο βραβευμένο κλασσικό Glest
 IntroStartMilliseconds1=$USE_DEFAULT_LANGUAGE_VALUE
-IntroText2=η ομάδα του MegaGlest παρουσιάζει
+IntroText2=η ομάδα του ZetaGlest παρουσιάζει
 IntroStartMilliseconds2=$USE_DEFAULT_LANGUAGE_VALUE
 IntroText3=ένα ανοιχτού κώδικα παιχνίδι στρατηγικής πραγματικού χρόνου
 IntroStartMilliseconds3=$USE_DEFAULT_LANGUAGE_VALUE

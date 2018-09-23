@@ -1,4 +1,4 @@
-; This is the main MegaGlest localization file (INI format)
+; This is the main ZetaGlest localization file (INI format)
 ;
 ; Your contributions are welcome. Please ensure you agree to the terms of the
 ; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
@@ -555,7 +555,7 @@ YouWin=你贏了!
 ;-------------------------------- Intro Text Start
 IntroText1=基於屢獲殊榮的經典游戲Glest，\nGlest 是一個2005年發布的獲獎學生作品。
 IntroStartMilliseconds1=$USE_DEFAULT_LANGUAGE_VALUE
-IntroText2=MegaGlest 團隊出品
+IntroText2=ZetaGlest 團隊出品
 IntroStartMilliseconds2=$USE_DEFAULT_LANGUAGE_VALUE
 IntroText3=一款自由的即時戰略游戲
 IntroStartMilliseconds3=$USE_DEFAULT_LANGUAGE_VALUE

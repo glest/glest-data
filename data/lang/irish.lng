@@ -1,4 +1,4 @@
-; This is the main MegaGlest localization file (INI format)
+; This is the main ZetaGlest localization file (INI format)
 ;
 ; Your contributions are welcome. Please ensure you agree to the terms of the
 ; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
@@ -301,8 +301,8 @@ MaxLoad=Ualach is mó
 MaxPlayers=Uasmhéid na n-imreoirí
 MaxUnitCount=Uasmhéid na n-aonad
 MeetingPoint=Pointe Teagmhála
-Megaglest3d2dProgramming=Clárú MegaGlest 3T/2T
-MegaglestProgramming=Clárú MegaGlest
+Megaglest3d2dProgramming=Clárú ZetaGlest 3T/2T
+MegaglestProgramming=Clárú ZetaGlest
 MGBuildDateTime=Dáta/Am Tógála
 MGGameCountry=Tír
 MGGameStatus=Stádas
@@ -555,7 +555,7 @@ YouWin=Tá an bua agat.
 ;-------------------------------- Intro Text Start
 IntroText1=Bunaithe ar an gcluiche clasaiceach clúiteach Glest
 IntroStartMilliseconds1=$USE_DEFAULT_LANGUAGE_VALUE
-IntroText2=ón fhoireann MegaGlest
+IntroText2=ón fhoireann ZetaGlest
 IntroStartMilliseconds2=$USE_DEFAULT_LANGUAGE_VALUE
 IntroText3=cluiche straitéise fíor-ama le foinse oscailte agus saor in aisce
 IntroStartMilliseconds3=$USE_DEFAULT_LANGUAGE_VALUE

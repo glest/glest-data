@@ -1,4 +1,4 @@
-; This is the main MegaGlest localization file (INI format)
+; This is the main ZetaGlest localization file (INI format)
 ;
 ; Your contributions are welcome. Please ensure you agree to the terms of the
 ; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
@@ -301,8 +301,8 @@ MaxLoad=En çok yükleme
 MaxPlayers=En çok oyuncu
 MaxUnitCount=En çok birim sayısı
 MeetingPoint=Toplanma Noktası
-Megaglest3d2dProgramming=MegaGlest 3B/2B+Programlama
-MegaglestProgramming=MegaGlest Programlama
+Megaglest3d2dProgramming=ZetaGlest 3B/2B+Programlama
+MegaglestProgramming=ZetaGlest Programlama
 MGBuildDateTime=Yapı Tarih/Zamanı
 MGGameCountry=Ülke
 MGGameStatus=Durum
@@ -555,7 +555,7 @@ YouWin=Kazandın.
 ;-------------------------------- Intro Text Start
 IntroText1=Ödül temelli klasik Glest
 IntroStartMilliseconds1=$USE_DEFAULT_LANGUAGE_VALUE
-IntroText2=MegaGlest Takımı sunar
+IntroText2=ZetaGlest Takımı sunar
 IntroStartMilliseconds2=$USE_DEFAULT_LANGUAGE_VALUE
 IntroText3=Özgür yazılım gerçek zamanlı bir strateji oyunu
 IntroStartMilliseconds3=$USE_DEFAULT_LANGUAGE_VALUE

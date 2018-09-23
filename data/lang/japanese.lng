@@ -1,4 +1,4 @@
-; This is the main MegaGlest localization file (INI format)
+; This is the main ZetaGlest localization file (INI format)
 ;
 ; Your contributions are welcome. Please ensure you agree to the terms of the
 ; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
@@ -301,8 +301,8 @@ MaxLoad=最大容量
 MaxPlayers=最大プレイヤー数
 MaxUnitCount=ユニット数制限
 MeetingPoint=合流地点
-Megaglest3d2dProgramming=MegaGlest 3D/2D+Programming
-MegaglestProgramming=MegaGlest Programming
+Megaglest3d2dProgramming=ZetaGlest 3D/2D+Programming
+MegaglestProgramming=ZetaGlest Programming
 MGBuildDateTime=Build Date/Time
 MGGameCountry=国籍
 MGGameStatus=状態
@@ -555,7 +555,7 @@ YouWin=勝利
 ;-------------------------------- Intro Text Start
 IntroText1=SonyPlayStationArtFutura賞、MundosDigitales賞、Ytanium賞等、多数を受賞したGlestに基づきます。
 IntroStartMilliseconds1=$USE_DEFAULT_LANGUAGE_VALUE
-IntroText2=MegaGlestチームが提供する
+IntroText2=ZetaGlestチームが提供する
 IntroStartMilliseconds2=$USE_DEFAULT_LANGUAGE_VALUE
 IntroText3=フリーソフトウェアのリアルタイム戦略ゲーム
 IntroStartMilliseconds3=$USE_DEFAULT_LANGUAGE_VALUE

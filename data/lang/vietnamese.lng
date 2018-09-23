@@ -1,4 +1,4 @@
-; This is the main MegaGlest localization file (INI format)
+; This is the main ZetaGlest localization file (INI format)
 ;
 ; Your contributions are welcome. Please ensure you agree to the terms of the
 ; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
@@ -301,8 +301,8 @@ MaxLoad=Tải tối đa
 MaxPlayers=Số người chơi tối đa
 MaxUnitCount=Số đơn vị tối đa
 MeetingPoint=Điểm hẹn gặp
-Megaglest3d2dProgramming=MegaGlest 3D/2D+Programming
-MegaglestProgramming=MegaGlest Programming
+Megaglest3d2dProgramming=ZetaGlest 3D/2D+Programming
+MegaglestProgramming=ZetaGlest Programming
 MGBuildDateTime=Xây dựng ngày/thời gian
 MGGameCountry=quốc gia
 MGGameStatus=Trạng thái
@@ -555,7 +555,7 @@ YouWin=Bạn đã thắng
 ;-------------------------------- Intro Text Start
 IntroText1=Dựa trên phiên bản cổ điển của Glest
 IntroStartMilliseconds1=$USE_DEFAULT_LANGUAGE_VALUE
-IntroText2=MegaGlest xin trân trọng giới thiệu
+IntroText2=ZetaGlest xin trân trọng giới thiệu
 IntroStartMilliseconds2=$USE_DEFAULT_LANGUAGE_VALUE
 IntroText3=một trò chơi chiến đấu dựa trên thời gian thực
 IntroStartMilliseconds3=$USE_DEFAULT_LANGUAGE_VALUE
