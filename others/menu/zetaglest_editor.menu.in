@@ -2,7 +2,7 @@
     needs="X11" \
     hints="editor,maps" \
     section="Games/Tools" \
-    title="MegaGlest Map Editor" \
-    longtitle="MegaGlest Map Editor, a game tool for 3D real time strategy game: MegaGlest." \
+    title="ZetaGlest Map Editor" \
+    longtitle="ZetaGlest Map Editor, a game tool for 3D real time strategy game: ZetaGlest." \
     command="@MEGAGLEST_FULL_BIN_INSTALL_PATH@megaglest_editor" \
     icon="@MEGAGLEST_FULL_ICON_INSTALL_PATH@megaglest.xpm"
