@@ -29,14 +29,14 @@
       <image>http://megaglest.org/uploads/images/appdata/game5.png</image>
     </screenshot>
   </screenshots>
-  <url type="homepage">http://megaglest.org</url>
-  <url type="bugtracker">http://bugs.megaglest.org</url>
+  <url type="homepage">https://zetaglest.github.io/docs/</url>
+  <url type="bugtracker">https://github.com/ZetaGlest/zetaglest-source/issues</url>
   <url type="faq">http://faq.megaglest.org</url>
-  <url type="help">http://readme.megaglest.org</url>
-  <url type="donation">http://megaglest.org/donations</url>
-  <url type="translate">http://translate.megaglest.org</url>
-  <developer_name>The MegaGlest Team</developer_name>
-  <update_contact>contact_at_megaglest.org</update_contact>
+  <url type="help">https://zetaglest.github.io/docs/</url>
+  <!--   <url type="donation">http://megaglest.org/donations</url> -->
+  <!-- <url type="translate">http://translate.megaglest.org</url> -->
+  <developer_name>The ZetaGlest Team</developer_name>
+  <update_contact>https://github.com/ZetaGlest/zetaglest-source#contact</update_contact>
   <content_rating type="oars-1.0">
     <content_attribute id="violence-cartoon">none</content_attribute>
     <content_attribute id="violence-fantasy">moderate</content_attribute>

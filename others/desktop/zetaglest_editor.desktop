@@ -2,7 +2,7 @@
 Categories=Game;StrategyGame;
 Comment=Map Editor
 Name=ZetaGlest Map Editor
-Icon=zetaglest
+Icon=zetaglest_editor
 Exec=zetaglest_editor
 Terminal=false
 Type=Application

@@ -1,8 +1,8 @@
-?package(megaglest-data,megaglest): \
+?package(zetaglest-data,zetaglest): \
     needs="X11" \
     hints="RTS,rts" \
     section="Games/Strategy" \
     title="ZetaGlest" \
     longtitle="ZetaGlest, a 3D real time strategy game." \
-    command="@MEGAGLEST_FULL_BIN_INSTALL_PATH@megaglest" \
-    icon="@MEGAGLEST_FULL_ICON_INSTALL_PATH@megaglest.xpm"
+    command="@INSTALL_DIR_BIN@zetaglest" \
+    icon="@INSTALL_DIR_ICON@zetaglest.xpm"
