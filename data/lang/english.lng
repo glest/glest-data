@@ -472,6 +472,7 @@ ScreenShotFileType=Screenshot file format:
 ScreenshotSavedTo=Screenshot will be saved to: %s
 ScreenShotConsoleText=Show 'Screenshot saved':
 Server=Server:
+ServerDisconnected=Server has disconnected
 ServerPort=Server Port #:
 ServerType=Server type:
 ServerTypeFound=Found Games
