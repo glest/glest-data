@@ -5,7 +5,7 @@
 		<player control="human" faction="tech" team="1"/>
 		<player control="cpu-ultra" faction="norsemen" team="2"/>
 		<player control="cpu-ultra" faction="tech" team="1"/>
-		<player control="closed"/>
+		<player control="network" faction="Observer" team="11"/>
 	</players>
 	<map value="in_the_forest"/>
 	<tileset value="forest"/>
