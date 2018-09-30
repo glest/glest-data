@@ -6,10 +6,9 @@
   <metadata_license>CC-BY-SA-4.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
   <name>ZetaGlest Map Editor</name>
-  <summary>Map editor and viewer for ZetaGlest</summary>
+  <summary>Map editor and viewer for the ZetaGlest game engine</summary>
   <description>
     <p>ZetaGlest Map Editor is a user-friendly editor and viewer for maps used in ZetaGlest</p>
-    <p>ZetaGlest is a customizable 3D real-time strategy game (RTS).</p>
   </description>
   <screenshots>
     <screenshot type="default">

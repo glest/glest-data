@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2015 MegaGlest Team <contact_at_megaglest.org> -->
+<!-- Copyright 2018 ZetaGlest Team <zetaglest@gmail.com> -->
 <!-- all urls http type; minimal version of validator: 0.6.1 -->
 <component type="desktop">
   <id>megaglest.desktop</id>
   <metadata_license>CC-BY-SA-4.0</metadata_license>
   <project_license>GPL-3.0+ and CC-BY-SA-3.0</project_license>
   <name>ZetaGlest</name>
-  <summary>Real time strategy game (RTS)</summary>
+  <summary>network multi-player real-time strategy game engine</summary>
   <description>
-    <p>ZetaGlest is a 3D real-time strategy game (RTS) with medieval and magic character which offers tutorials, scenarios but also customizable single-player and multi-player skirmishes.</p>
-    <p>Multi-player mode supports cross-platform matches up to 8 players over the Internet or LAN against human opponents, or in cooperation against CPU (A.I.) players of various difficulty levels.</p>
-    <p>From within the game you can download a lot of additional game data (e.g. other maps) at no cost.</p>
+    <p>ZetaGlest is a network multi-player real-time strategy game
+    engine. It's shipped with the ZetaPack mod, which includes several
+    factions, each one consisting of many 3d characters. The factions
+    are loosely based on historical empires with added elements of
+    fantasy, such as mummies produced by Egyptian priests, Indian
+    shamans who summon thunderbirds for air assaults, and Norsemen who
+    can build flying valkries and "Thors". Start the game by harvesting
+    natural resources, then use the cash to produce an army.
+    Single-player mode against the CPU is also available.</p>
   </description>
   <screenshots>
     <screenshot type="default">
