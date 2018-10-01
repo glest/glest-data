@@ -1,21 +1,4 @@
-# -*- coding: utf-8 -*-
-
-###########################################################################
-# Glest Model / Texture / UV / Animation Importer and Exporter
-# for the Game Glest that u can find http://www.glest.org
-# copyright 2005 By Andreas Becker (seltsamuel@yahoo.de)
-#
-# 2011/05/25: v0.1 alpha1
-# modified by William Zheng for Blender 2.57(loveheaven_zhengwei@hotmail.com)
-#
-# corrected by MrPostiga for Blender 2.58
-#
-# extended by Yggdrasil
-#
-# Started Date: 07 June 2005  Put Public 20 June 2005   
-#  Distributed under the GNU PUBLIC LICENSE
-#"""
-#Here an explanation of the V4 Format found at www.glest.org
+# Glest G3D Model Specification
 #================================
 #1. DATA TYPES
 #================================
@@ -33,32 +16,32 @@
 #- Texture names
 #- Mesh data
 #================================
-#2. FILE HEADER
+#3. FILE HEADER
 #================================
 #Code:
-#struct FileHeader{
+#struct FileHeader {
 #   uint8 id[3];
 #   uint8 version;
-#};
+#}
 #This header is shared among all the versions of G3D, it identifies this file as a G3D model and provides information of the version.
 #id: must be "G3D"
 #version: must be 4, in binary (not '4')
 #================================
-#3. MODEL HEADER
+#4. MODEL HEADER
 #================================
 #Code:
-#struct ModelHeader{
+#struct ModelHeader {
 #   uint16 meshCount;
 #   uint8 type;
-#};		   
+#}
 #meshCount: number of meshes in this model
 #type: must be 0
 #================================
-#4. MESH HEADER
+#5. MESH HEADER
 #================================
 #There is a mesh header for each mesh, there must be "meshCount" headers in a file but they are not consecutive, texture names and mesh data are stored in between.
 #Code:
-#struct MeshHeader{
+#struct MeshHeader {
 #   uint8 name[64];
 #   uint32 frameCount;
 #   uint32 vertexCount;
@@ -69,42 +52,50 @@
 #   float32 opacity;
 #   uint32 properties;
 #   uint32 textures;
-#};
+#}
 #name: name of the mesh
 #frameCount: number of keyframes in this mesh
 #vertexCount: number of vertices in each frame
 #indexCount: number of indices in this mesh (the number of triangles is indexCount/3)
-#diffuseColor: RGB diffuse color
-#specularColor: RGB specular color (not used in ZetaGlest)
-#specularPower: specular power (not used in ZetaGlest)
-##properties: property flags
+#diffuseColor: RGB diffuse color (material hue)
+#specularColor: RGB specular color (ignored in ZetaGlest)
+#specularPower: specular power (ignored in ZetaGlest)
+#properties: property flags
 #Code:
-#enum MeshPropertyFlag{
+#enum MeshPropertyFlag {
+#		mpfNone = 0,
 #		mpfCustomColor = 1,
 #		mpfTwoSided = 2,
 #		mpfNoSelect = 4,
 #		mpfGlow = 8
-#};
-#The last 8 bits (little endian) of properties are used for teamcolor transparency, where 0 is opaque, and 255 is fully transparent team color. The value is inverted for compatibility with megaglest
+#}
+#mpfNone: No property is specified
 #mpfTwoSided: meshes in this mesh are rendered by both sides, if this flag is not present only "counter clockwise" faces are rendered (culling)
 #mpfCustomColor: alpha in this model is replaced by a custom color, usually the player color
 #mpfNoSelect: whether the model is selectable
 #mpfGlow: whether the model has a glow effect
+#The last 8 bits (little endian) of properties are used for teamcolor transparency, where 0 is opaque, and 255 is fully transparent team color. The value is inverted for compatibility with megaglest
 #textures: texture flags
 #Code:
-#enum MeshTexture{
+#enum MeshTexture {
+#		mtNone = 0,
 #		mtDiffuse = 1,
-#		mtSpecular = 2, (not used in ZetaGlest)
-#		mtNormal = 4 (not used in ZetaGlest)
-#};
+#		mtSpecular = 2,
+#		mtNormal = 4
+#}
+#mtNone: No texture is specified
+#mtDiffuse: The diffuse (regular) texture for the mesh. The texture can have up to 4 channels, ARGB
+#mtSpecular: The specular highlight texture for the mesh material. The texture can have up to a single channel (ignored in ZetaGlest)
+#mtNormal: The normal texture map for the mesh. The texture must have 3 channels, RGB, which map to x, y, z normal coords (ignored in ZetaGlest)
 #================================
-#4. TEXTURE NAMES
+#6. TEXTURE PATHS
 #================================
-#A list of (max 3) uint8[64] texture name values. One for each corresponding texture flag in the mesh. If there are no textures in the mesh, no texture names are present.
+#A list of (max 3) char[64] texture paths, where char is a 1 byte ASCII encoding. One for each corresponding texture flag in the mesh.
+#If there are no textures in the mesh, no texture paths are present.
 #================================
-#5. MESH DATA
+#7. MESH DATA
 #================================
-#After each mesh header and texture names the mesh data is placed.
+#After each mesh header and texture paths, the mesh data is placed:
 #vertices: frameCount * vertexCount * 3, float32 values representing the x, y, z vertex coords for all frames
 #normals: frameCount * vertexCount * 3, float32 values representing the x, y, z normal coords for all frames
 #texture coords: vertexCount * 2, float32 values representing the s, t tex coords for all frames (only present if the mesh has 1 texture at least)
