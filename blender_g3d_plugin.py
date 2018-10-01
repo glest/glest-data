@@ -7,6 +7,7 @@
 #uint16: 16 bit unsigned integer
 #uint32: 32 bit unsigned integer
 #float32: 32 bit floating point
+#char: 8 bit ASCII character
 #================================
 #2. OVERALL STRUCTURE
 #================================
@@ -44,7 +45,7 @@
 #================================
 #Code:
 #struct MeshHeader {
-#   uint8 name[64];
+#   char name[64];
 #   uint32 frameCount;
 #   uint32 vertexCount;
 #   uint32 indexCount;
@@ -92,7 +93,7 @@
 #================================
 #6. TEXTURE PATHS
 #================================
-#A list of (max 3) char[64] texture paths, where char is a 1 byte ASCII encoding. One for each corresponding texture flag in the mesh.
+#A list of (max 3) char[64] texture paths, one for each corresponding texture flag in the mesh.
 #If there are no textures in the mesh, no texture paths are present.
 #================================
 #7. MESH DATA
