@@ -10,11 +10,11 @@
 #================================
 #2. OVERALL STRUCTURE
 #================================
-#- File header
-#- Model header
-#- Mesh header
-#- Texture names
-#- Mesh data
+#- File Header
+#- Model Header
+#- Mesh Header
+#- Texture Paths
+#- Mesh Data
 #================================
 #3. FILE HEADER
 #================================
