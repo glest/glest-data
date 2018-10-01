@@ -12,9 +12,10 @@
 #================================
 #- File Header
 #- Model Header
-#- Mesh Header
-#- Texture Paths
-#- Mesh Data
+#- Then for every mesh in the model:
+#	- Mesh Header
+#	- Texture Paths
+#	- Mesh Data
 #================================
 #3. FILE HEADER
 #================================
@@ -36,10 +37,11 @@
 #}
 #meshCount: number of meshes in this model
 #type: must be 0
+#
+#There is a mesh header for each mesh, represented by meshCount. The headers are not consecutive, texture paths and mesh data are stored in between.
 #================================
 #5. MESH HEADER
 #================================
-#There is a mesh header for each mesh, there must be "meshCount" headers in a file but they are not consecutive, texture names and mesh data are stored in between.
 #Code:
 #struct MeshHeader {
 #   uint8 name[64];
@@ -98,7 +100,7 @@
 #After each mesh header and texture paths, the mesh data is placed:
 #vertices: frameCount * vertexCount * 3, float32 values representing the x, y, z vertex coords for all frames
 #normals: frameCount * vertexCount * 3, float32 values representing the x, y, z normal coords for all frames
-#texture coords: vertexCount * 2, float32 values representing the s, t tex coords for all frames (only present if the mesh has 1 texture at least)
+#texture coords: vertexCount * 2, float32 values representing the s, t tex coords for all frames (only present if the mesh has at least 1 texture)
 #indices: indexCount, uint32 values representing the indices
 ###########################################################################
 
