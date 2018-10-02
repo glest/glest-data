@@ -358,6 +358,16 @@
 		</command>
 
 		<command>
+			<type value="attack_stopped"/>
+			<name value="hold_position"/>
+			<image path="../archer/images/tech_hold.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="molotov_skill"/>
+		</command>
+
+		<command>
 			<type value="morph"/>
 			<name value="build_catapult"/>
 			<image path="../catapult/images/catapult.bmp"/>
