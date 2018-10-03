@@ -93,3 +93,6 @@ $RECYCLE.BIN/
 *.iobj
 /lua/
 #
+
+# The editor Andy uses
+*geany
