@@ -20,7 +20,6 @@
 #================================
 #3. FILE HEADER
 #================================
-#Code:
 #struct FileHeader {
 #   uint8 id[3];
 #   uint8 version;
@@ -31,7 +30,6 @@
 #================================
 #4. MODEL HEADER
 #================================
-#Code:
 #struct ModelHeader {
 #   uint16 meshCount;
 #   uint8 type;
@@ -43,7 +41,6 @@
 #================================
 #5. MESH HEADER
 #================================
-#Code:
 #struct MeshHeader {
 #   char name[64];
 #   uint32 frameCount;
@@ -53,8 +50,8 @@
 #   float32 specularColor[3];
 #   float32 specularPower;
 #   float32 opacity;
-#   uint32 properties;
-#   uint32 textures;
+#   MeshPropertyFlag properties;
+#   MeshTexture textures;
 #}
 #name: name of the mesh
 #frameCount: number of keyframes in this mesh
@@ -64,32 +61,21 @@
 #specularColor: RGB specular color (ignored in ZetaGlest)
 #specularPower: specular power (ignored in ZetaGlest)
 #properties: property flags
-#Code:
-#enum MeshPropertyFlag {
-#		mpfNone = 0,
-#		mpfCustomColor = 1,
-#		mpfTwoSided = 2,
-#		mpfNoSelect = 4,
-#		mpfGlow = 8
+#enum MeshPropertyFlag : uint32 {
+#		mpfNone = 0, #no property is specified
+#		mpfCustomColor = 1, #alpha in this model is replaced by a custom color, usually the player color
+#		mpfTwoSided = 2, #meshes in this mesh are rendered by both sides, if this flag is not present only "counter clockwise" faces are rendered (culling)
+#		mpfNoSelect = 4, #whether the model is selectable
+#		mpfGlow = 8 #whether the model has a glow effect
 #}
-#mpfNone: No property is specified
-#mpfTwoSided: meshes in this mesh are rendered by both sides, if this flag is not present only "counter clockwise" faces are rendered (culling)
-#mpfCustomColor: alpha in this model is replaced by a custom color, usually the player color
-#mpfNoSelect: whether the model is selectable
-#mpfGlow: whether the model has a glow effect
 #The last 8 bits (little endian) of properties are used for teamcolor transparency, where 0 is opaque, and 255 is fully transparent team color. The value is inverted for compatibility with megaglest
 #textures: texture flags
-#Code:
-#enum MeshTexture {
-#		mtNone = 0,
-#		mtDiffuse = 1,
-#		mtSpecular = 2,
-#		mtNormal = 4
+#enum MeshTexture : uint32 {
+#		mtNone = 0, #no texture is specified
+#		mtDiffuse = 1, #the diffuse (regular) texture for the mesh. The texture can have up to 4 byte channels (ARGB)
+#		mtSpecular = 2, #the specular highlight texture for the mesh material. The texture must have a single byte channel (ignored in ZetaGlest)
+#		mtNormal = 4 #the normal texture map for the mesh. The texture must have 3 byte channels, RGB, which map to x, y, z normal coords (ignored in ZetaGlest)
 #}
-#mtNone: No texture is specified
-#mtDiffuse: The diffuse (regular) texture for the mesh. The texture can have up to 4 channels, ARGB
-#mtSpecular: The specular highlight texture for the mesh material. The texture can have up to a single channel (ignored in ZetaGlest)
-#mtNormal: The normal texture map for the mesh. The texture must have 3 channels, RGB, which map to x, y, z normal coords (ignored in ZetaGlest)
 #================================
 #6. TEXTURE PATHS
 #================================
@@ -102,7 +88,7 @@
 #vertices: frameCount * vertexCount * 3, float32 values representing the x, y, z vertex coords for all frames
 #normals: frameCount * vertexCount * 3, float32 values representing the x, y, z normal coords for all frames
 #texture coords: vertexCount * 2, float32 values representing the s, t tex coords for all frames (only present if the mesh has at least 1 texture)
-#indices: indexCount, uint32 values representing the indices
+#indices: indexCount, uint32 values representing the indices. Every 3 consecutive indices represent a triangle
 ###########################################################################
 
 bl_info = {
