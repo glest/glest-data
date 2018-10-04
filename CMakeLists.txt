@@ -12,6 +12,7 @@ OPTION(WANT_INSTALL_DATA "Install ZetaGlest's data" OFF)
 # zetaglest data directory.
 #
 if(WANT_INSTALL_DATA)
+	add_definitions("-DDATADIR=${INSTALL_DIR_DATA}")
 
 	IF(NOT INSTALL_DIR_APPDATA)
 		SET(INSTALL_DIR_APPDATA "${CMAKE_INSTALL_PREFIX}/share/metainfo/" CACHE PATH "The installation path for appdata files")
