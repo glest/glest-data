@@ -8,7 +8,7 @@ LANG=C
 
 CURRENTDIR="$(dirname "$(readlink -f "$0")")"
 cd "$CURRENTDIR"
-Appdata_file="$CURRENTDIR/megaglest.appdata.xml"
+Appdata_file="$CURRENTDIR/zetaglest.appdata.xml"
 
 Lang_map="$(awk -F '=' '/lang_map/ {print "=" $2}' "$CURRENTDIR/../../.tx/config" | sed 's/[,=] /\\n/g')"
 Translations_list="$(find "$CURRENTDIR/../../data/lang" -maxdepth 1 -name "*.lng" -type f \

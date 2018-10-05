@@ -66,35 +66,35 @@
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
   <languages>
-    <lang percentage="54">sq</lang>
-    <lang percentage="67">ar</lang>
-    <lang percentage="99">zh_CN</lang>
-    <lang percentage="65">zh_TW</lang>
-    <lang percentage="100">cs</lang>
-    <lang percentage="93">da</lang>
-    <lang percentage="100">nl</lang>
+    <lang percentage="53">sq</lang>
+    <lang percentage="66">ar</lang>
+    <lang percentage="96">zh_CN</lang>
+    <lang percentage="63">zh_TW</lang>
+    <lang percentage="97">cs</lang>
+    <lang percentage="91">da</lang>
+    <lang percentage="97">nl</lang>
     <lang percentage="100">en</lang>
-    <lang percentage="100">fr</lang>
-    <lang percentage="100">gd</lang>
-    <lang percentage="100">de</lang>
-    <lang percentage="98">el</lang>
-    <lang percentage="96">he</lang>
-    <lang percentage="98">id</lang>
-    <lang percentage="100">ga</lang>
-    <lang percentage="100">it</lang>
-    <lang percentage="52">ja</lang>
-    <lang percentage="52">lt</lang>
-    <lang percentage="96">nqo</lang>
-    <lang percentage="100">pl</lang>
-    <lang percentage="62">pt</lang>
-    <lang percentage="100">pt_BR</lang>
-    <lang percentage="96">ro</lang>
-    <lang percentage="100">ru</lang>
-    <lang percentage="76">sl</lang>
-    <lang percentage="100">es</lang>
-    <lang percentage="79">tr</lang>
-    <lang percentage="91">uz</lang>
-    <lang percentage="59">vi</lang>
+    <lang percentage="97">fr</lang>
+    <lang percentage="97">gd</lang>
+    <lang percentage="97">de</lang>
+    <lang percentage="96">el</lang>
+    <lang percentage="94">he</lang>
+    <lang percentage="95">id</lang>
+    <lang percentage="97">ga</lang>
+    <lang percentage="97">it</lang>
+    <lang percentage="51">ja</lang>
+    <lang percentage="50">lt</lang>
+    <lang percentage="94">nqo</lang>
+    <lang percentage="97">pl</lang>
+    <lang percentage="61">pt</lang>
+    <lang percentage="97">pt_BR</lang>
+    <lang percentage="94">ro</lang>
+    <lang percentage="97">ru</lang>
+    <lang percentage="75">sl</lang>
+    <lang percentage="97">es</lang>
+    <lang percentage="77">tr</lang>
+    <lang percentage="88">uz</lang>
+    <lang percentage="57">vi</lang>
   </languages>
   <translation/>
 </component>
