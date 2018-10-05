@@ -14,6 +14,8 @@ OPTION(WANT_INSTALL_DATA "Install ZetaGlest's data" OFF)
 if(WANT_INSTALL_DATA)
 	add_definitions("-DDATADIR=${INSTALL_DIR_DATA}")
 
+# The two variables need to be set here, they are not set in the source
+# CMakeLists.txt, nor do they need to be.
 	IF(NOT INSTALL_DIR_APPDATA)
 		SET(INSTALL_DIR_APPDATA "${CMAKE_INSTALL_PREFIX}/share/metainfo/" CACHE PATH "The installation path for appdata files")
 	ENDIF()
@@ -22,20 +24,9 @@ if(WANT_INSTALL_DATA)
 		SET(INSTALL_DIR_MENU "${CMAKE_INSTALL_PREFIX}/share/menu/" CACHE PATH "The installation path for menus")
 	ENDIF()
 
-	FOREACH(ZG_PATH BIN ICON)
-		IF(NOT "${ZETAGLEST_${ZG_PATH}_INSTALL_PATH}" STREQUAL "")
-			IF(IS_ABSOLUTE "${ZETAGLEST_${ZG_PATH}_INSTALL_PATH}")
-				SET(ZETAGLEST_FULL_${ZG_PATH}_INSTALL_PATH "${ZETAGLEST_${ZG_PATH}_INSTALL_PATH}/")
-			ELSE()
-				SET(ZETAGLEST_FULL_${ZG_PATH}_INSTALL_PATH "${CMAKE_INSTALL_PREFIX}/${ZETAGLEST_${ZG_PATH}_INSTALL_PATH}/")
-			ENDIF()
-			STRING(REGEX REPLACE "//+" "/" ZETAGLEST_FULL_${ZG_PATH}_INSTALL_PATH "${ZETAGLEST_FULL_${ZG_PATH}_INSTALL_PATH}")
-		ENDIF()
-	ENDFOREACH()
-
 	CONFIGURE_FILE("${PROJECT_SOURCE_DIR}/others/menu/zetaglest.menu.in"
 		"${PROJECT_BINARY_DIR}/others/menu/zetaglest.menu.in" COPYONLY)
-	IF(BUILD_MAP_EDITOR OR NOT DEFINED BUILD_MAP_EDITOR)
+	IF(BUILD_MAP_EDITOR)
 		FILE(READ "${PROJECT_SOURCE_DIR}/others/menu/zetaglest_editor.menu.in" EDITOR_MENU)
 		FILE(APPEND "${PROJECT_BINARY_DIR}/others/menu/zetaglest.menu.in" "${EDITOR_MENU}")
 	ENDIF()
@@ -50,8 +41,7 @@ if(WANT_INSTALL_DATA)
 			"${PROJECT_SOURCE_DIR}/techs"
 			"${PROJECT_SOURCE_DIR}/tilesets"
 			"${PROJECT_SOURCE_DIR}/tutorials"
-			DESTINATION ${INSTALL_DIR_DATA}
-			OPTIONAL REGEX "/.git" EXCLUDE)
+			DESTINATION ${INSTALL_DIR_DATA})
 
 	INSTALL(FILES "${PROJECT_SOURCE_DIR}/others/appdata/zetaglest.appdata.xml"
 		DESTINATION ${INSTALL_DIR_APPDATA})
@@ -74,14 +64,18 @@ if(WANT_INSTALL_DATA)
 		"${PROJECT_SOURCE_DIR}/others/desktop/zetaglest.desktop"
 		DESTINATION ${INSTALL_DIR_DESKTOP})
 
-	IF(BUILD_MAP_EDITOR OR NOT DEFINED BUILD_MAP_EDITOR)
+	# Install only the desktop file. The icon gets installed from the
+	# cmake file in source/glest_map_editor
+	IF(BUILD_MAP_EDITOR)
 		INSTALL(FILES
 			"${PROJECT_SOURCE_DIR}/others/desktop/zetaglest_editor.desktop"
 			DESTINATION ${INSTALL_DIR_DESKTOP})
 	ENDIF()
 
+	IF(BUILD_MODEL_VIEWER)
 	INSTALL(FILES
 			"${PROJECT_SOURCE_DIR}/others/desktop/zetaglest_g3dviewer.desktop"
 			DESTINATION ${INSTALL_DIR_DESKTOP})
+	ENDIF()
 
 ENDIF()

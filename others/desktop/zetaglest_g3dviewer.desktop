@@ -2,7 +2,7 @@
 Categories=Game;StrategyGame;
 Comment=G3d Model Viewer
 Name=ZetaGlest Model Viewer
-Icon=g3dviewer
+Icon=g3d_viewer
 Exec=zetaglest_g3dviewer
 Terminal=false
 Type=Application
