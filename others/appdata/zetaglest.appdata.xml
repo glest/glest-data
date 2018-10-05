@@ -2,7 +2,7 @@
 <!-- Copyright 2018 ZetaGlest Team <zetaglest@gmail.com> -->
 <!-- all urls http type; minimal version of validator: 0.6.1 -->
 <component type="desktop">
-  <id>megaglest.desktop</id>
+  <id>zetaglest.desktop</id>
   <metadata_license>CC-BY-SA-4.0</metadata_license>
   <project_license>GPL-3.0+ and CC-BY-SA-3.0</project_license>
   <name>ZetaGlest</name>
@@ -20,19 +20,19 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image>http://megaglest.org/uploads/images/appdata/game1.png</image>
+      <image>https://zetaglest.github.io/docs/assets/screenshots/screen146.jpg</image>
     </screenshot>
     <screenshot>
-      <image>http://megaglest.org/uploads/images/appdata/game2.png</image>
+      <image>https://zetaglest.github.io/docs/assets/screenshots/natulka_1.png</image>
     </screenshot>
     <screenshot>
-      <image>http://megaglest.org/uploads/images/appdata/game3.png</image>
+      <image>https://zetaglest.github.io/docs/assets/screenshots/screen147.jpg</image>
     </screenshot>
     <screenshot>
-      <image>http://megaglest.org/uploads/images/appdata/game4.png</image>
+      <image>https://zetaglest.github.io/docs/assets/screenshots/screen141.jpg</image>
     </screenshot>
     <screenshot>
-      <image>http://megaglest.org/uploads/images/appdata/game5.png</image>
+      <image>https://zetaglest.github.io/docs/assets/screenshots/screen143.jpg</image>
     </screenshot>
   </screenshots>
   <url type="homepage">https://zetaglest.github.io/docs/</url>

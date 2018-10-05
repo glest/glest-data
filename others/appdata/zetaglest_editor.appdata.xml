@@ -2,7 +2,7 @@
 <!-- Copyright 2015 MegaGlest Team <contact_at_megaglest.org> -->
 <!-- all urls http type; minimal version of validator: 0.6.1 -->
 <component type="desktop">
-  <id>megaglest_editor.desktop</id>
+  <id>zetaglest_editor.desktop</id>
   <metadata_license>CC-BY-SA-4.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
   <name>ZetaGlest Map Editor</name>
@@ -12,7 +12,10 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image>http://megaglest.org/uploads/images/appdata/mapeditor1.png</image>
+      <image>https://raw.githubusercontent.com/ZetaGlest/zetaglest.github.io/master/docs/assets/screenshots/map_editor_pizza-pie-island.png</image>
+    </screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/ZetaGlest/zetaglest.github.io/master/docs/assets/screenshots/map_editor_conflict-2018.png</image>
     </screenshot>
   </screenshots>
   <url type="homepage">https://zetaglest.github.io/docs/</url>
