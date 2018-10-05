@@ -4,5 +4,5 @@
     section="Games/Strategy" \
     title="ZetaGlest" \
     longtitle="ZetaGlest, a 3D real time strategy game." \
-    command="@INSTALL_DIR_BIN@zetaglest" \
-    icon="@INSTALL_DIR_ICON@zetaglest.xpm"
+    command="@INSTALL_DIR_BIN@/zetaglest" \
+    icon="@INSTALL_DIR_ICON@/zetaglest.xpm"

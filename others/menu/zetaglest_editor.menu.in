@@ -4,5 +4,5 @@
     section="Games/Tools" \
     title="ZetaGlest Map Editor" \
     longtitle="ZetaGlest Map Editor, a game tool for 3D real time strategy game: ZetaGlest." \
-    command="@INSTALL_DIR_BIN@zetaglest_editor" \
-    icon="@INSTALL_DIR_ICON@zetaglest_editor.ico"
+    command="@INSTALL_DIR_BIN@/zetaglest_editor" \
+    icon="@INSTALL_DIR_ICON@/zetaglest_editor.ico"
