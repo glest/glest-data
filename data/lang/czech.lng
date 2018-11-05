@@ -578,8 +578,8 @@ IntroTextureStartMilliseconds=$USE_DEFAULT_LANGUAGE_VALUE
 ; Before using an alternative font, please verify license compatibility
 ISO639-1=cs
 NativeLanguageName=čeština, český jazyk
-MEGAGLEST_FONT=$APPLICATIONDATAPATH/data/core/fonts/LinBiolinum_RB.ttf
-MEGAGLEST_FONT_FAMILY=Linux Biolinum O:style=Bold
+GAME_FONT=$APPLICATIONDATAPATH/data/core/fonts/LinBiolinum_RB.ttf
+GAME_FONT_FAMILY=Linux Biolinum O:style=Bold
 FONT_SCALE_SIZE=0.75
 FONT_SCALE_CENTERH_FACTOR=$USE_DEFAULT_LANGUAGE_VALUE
 FONT_BASE_SIZE=$USE_DEFAULT_LANGUAGE_VALUE

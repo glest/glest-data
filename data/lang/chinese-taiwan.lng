@@ -1,4 +1,4 @@
-; This is the main ZetaGlest localization file (INI format)
+﻿; This is the main ZetaGlest localization file (INI format)
 ;
 ; Your contributions are welcome. Please ensure you agree to the terms of the
 ; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
@@ -578,8 +578,8 @@ IntroTextureStartMilliseconds=$USE_DEFAULT_LANGUAGE_VALUE
 ; Before using an alternative font, please verify license compatibility
 ISO639-1=zh_TW
 NativeLanguageName=正體中文 (Chinese Traditional), 漢語
-MEGAGLEST_FONT=$APPLICATIONDATAPATH/data/core/fonts/wqy-zenhei.ttc
-MEGAGLEST_FONT_FAMILY=WenQuanYi Zen Hei:style=Regular
+GAME_FONT=$APPLICATIONDATAPATH/data/core/fonts/wqy-zenhei.ttc
+GAME_FONT_FAMILY=WenQuanYi Zen Hei:style=Regular
 FONT_SCALE_SIZE=$USE_DEFAULT_LANGUAGE_VALUE
 FONT_SCALE_CENTERH_FACTOR=$USE_DEFAULT_LANGUAGE_VALUE
 FONT_BASE_SIZE=$USE_DEFAULT_LANGUAGE_VALUE
