@@ -1,10 +1,10 @@
-# ZetaGlest Data
+**Official Website: https://zetaglest.github.io/**
 
-> Repository contains data such as:
-> * maps, scenarios, tutorials
-> * techs, tilesets
-> * themes for menu/gui
-> * translations
+Data repository contains data such as:
+- maps, scenarios, tutorials
+- techs, tilesets
+- themes for menu/gui
+- translations
 
 ZetaGlest is a network multi-player real-time strategy game engine.
 It's shipped with the ZetaPack mod, which includes several factions,
