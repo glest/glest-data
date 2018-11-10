@@ -29,6 +29,9 @@
 			<resource name="food" amount="-10"/>
 		</resource-requirements>
 		<resources-stored/>
+		<resources-death>
+			<resource name="food" amount-value="10" />
+      		</resources-death>
 		<image path="images/kuh.png"/>
 		<image-cancel path="../worker/images/abbrechen.png"/>
 		<meeting-point value="false"/>
