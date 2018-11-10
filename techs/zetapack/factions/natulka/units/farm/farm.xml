@@ -38,6 +38,9 @@
 		<resources-stored>
 			<resource name="food" amount="20" />
 		</resources-stored>
+		<resources-death>
+			<resource name="food" amount-value="10" />
+      		</resources-death>
 		<image path="images/farm.png" />
 		<image-cancel path="../worker/images/abbrechen.png" />
 		<meeting-point value="true" image-path="../town_center/images/zielpunkt.png" />
