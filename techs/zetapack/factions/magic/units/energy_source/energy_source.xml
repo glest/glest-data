@@ -31,6 +31,9 @@
 			<resource name="energy" amount="-18"/>
 		</resource-requirements>
 		<resources-stored/>
+		<resources-death>
+			<resource name="energy" amount-value="18" />
+      		</resources-death>
 		<image path="images/energy_source.bmp"/>
 		<image-cancel path="../archmage/images/magic_cancel.bmp"/>
 		<meeting-point value="false"/>
