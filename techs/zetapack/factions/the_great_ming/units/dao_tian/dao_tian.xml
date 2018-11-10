@@ -39,6 +39,9 @@
 		<resources-stored>
 			<resource name="food" amount="20"/>
 		</resources-stored>
+		<resources-death>
+			<resource name="food" amount-value="10" />
+      		</resources-death>
 		<image path="images/farm.bmp"/>
 		<image-cancel path="images/tech_cancel.bmp"/>
 		<meeting-point value="true" image-path="../bing_ying/images/meeting_point.bmp"/>
