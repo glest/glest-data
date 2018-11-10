@@ -31,6 +31,9 @@
 			<resource name="food" amount="2"/>
 			<!-- more time for reaction in case of hunger -->
 		</resources-stored>
+		<resources-death>
+			<resource name="food" amount-value="10" />
+      		</resources-death>
 		<image path="images/cow.bmp"/>
 		<image-cancel path="../archer/images/tech_cancel.bmp"/>
 		<meeting-point value="false"/>
