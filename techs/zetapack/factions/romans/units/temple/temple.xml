@@ -38,6 +38,9 @@
 			<!--resource name= "gold" amount="400"/-->
 			<resource name= "grace" amount="100"/>
 		</resources-stored>
+		<resources-death>
+			<resource name="grace" amount-value="33" />
+      		</resources-death>
 		<image path="images/castle.bmp" />
 		<image-cancel path="../archer/images/tech_cancel.bmp"/>
 		<meeting-point value="false"/>
