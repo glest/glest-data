@@ -36,6 +36,9 @@
 		<resources-stored>
 			<resource name="food" amount="20"/>
 		</resources-stored>
+		<resources-death>
+			<resource name="food" amount-value="10" />
+      		</resources-death>
 		<image path="images/unit_peasant_house.bmp" />
 		<image-cancel path="images/japanese_cancel.bmp"/>
 		<meeting-point value="true" image-path="images/japanese_meetingpoint.bmp"/>
