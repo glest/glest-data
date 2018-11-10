@@ -33,6 +33,9 @@
 			<resource name="grace" amount="-23" />
 		</resource-requirements>
 		<resources-stored/>
+		<resources-death>
+			<resource name="grace" amount-value="23" />
+      		</resources-death>
 		<image path="images/es.bmp"/>
 		<image-cancel path="../archer/images/tech_cancel.bmp"/>
 		<meeting-point value="false"/>
