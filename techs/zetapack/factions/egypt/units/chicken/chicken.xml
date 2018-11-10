@@ -29,6 +29,9 @@
 			<resource name="food" amount="-5"/>
 		</resource-requirements>
 		<resources-stored/>
+		<resources-death>
+			<resource name="food" amount-value="5" />
+      		</resources-death>
 		<image path="images/chicken.bmp"/>
 		<image-cancel path="../spearman/images/tech_cancel.bmp"/>
 		<meeting-point value="false"/>
