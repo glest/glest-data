@@ -1,6 +1,6 @@
 # ZetaGlest
 
-**Official Website: https://zetaglest.github.io/**
+**Official Website: https://zetaglest.github.io**
 
 Data repository contains data such as:
 - maps, scenarios, tutorials
