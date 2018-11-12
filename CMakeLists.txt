@@ -3,7 +3,7 @@
 CMAKE_MINIMUM_REQUIRED( VERSION 3.2.0 )
 PROJECT( ZetaGlest )
 
-OPTION(WANT_INSTALL_DATA "Install ZetaGlest's data" OFF)
+OPTION(WANT_INSTALL_DATA "Install ZetaGlest's data" ON)
 
 #
 # In this file where the INSTALL() directive is used, nothing is actually installed
