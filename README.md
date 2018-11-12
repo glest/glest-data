@@ -66,8 +66,6 @@ To suggest a map, please [open a ticket](https://github.com/ZetaGlest/zetaglest-
 * [TILESETS.md](https://github.com/ZetaGlest/zetaglest-data/blob/develop/TILESETS.md)
 * [SCENARIOS.md](https://github.com/ZetaGlest/zetaglest-data/blob/develop/SCENARIOS.md)
 
-### Other artwork (sounds, graphics, 3d models, icons)
-
 ### Blender models
 
 [Modelling Information](https://zetaglest.github.io/docs/modelling/)
