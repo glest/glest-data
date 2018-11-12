@@ -77,7 +77,10 @@ $RECYCLE.BIN/
 /[rR]elease*/
 /[dD]ebug*/
 /dbg*/
-
+/CMakeFiles
+CMakeCache.txt
+cmake_install.cmake
+Makefile
 
 # Windows_build
 *.dll
