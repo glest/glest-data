@@ -1,6 +1,6 @@
 TUTORIAL_NAME=Tutoriel Avancé
 ;message headers
-GlestAdvancedTutorial=Tutoriel Avancé ZetaGlest
+GlestAdvancedTutorial=Tutoriel Avancé Glest
 Promoting=Évolution des Unités
 WellDone=Bien Joué !
 Summoning=Invocation
@@ -9,7 +9,7 @@ Ritual=Rituel
 Armies=Armées
 
 ;message strings
-Welcome=Bienvenue dans le tutoriel avancé de ZetaGlest, ici vous allez apprendre une partie des fonctionnalités les plus avancées du jeu.
+Welcome=Bienvenue dans le tutoriel avancé de Glest, ici vous allez apprendre une partie des fonctionnalités les plus avancées du jeu.
 MagicBrief=Vous commandez la faction des Magiciens, qui utilise des mages et des créatures invoquées pour combattre.
 InitiateBrief=Les Initiés (Initiate) sont les unités de base des Magiciens, ils peuvent récolter des ressources et construire des bâtiments.
 InitiatePromotion=Les Initiés peuvent se transformer en Mages de combat (Battlemage). Pour cela, sélectionnez un Initié, et utilisez la commande "Promote to Battlemage".

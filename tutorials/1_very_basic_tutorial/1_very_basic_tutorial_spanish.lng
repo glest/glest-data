@@ -1,6 +1,6 @@
 TUTORIAL_NAME=Tutorial básico #1
 ;message headers
-GlestBasicTutorial=Tutorial básico de ZetaGlest
+GlestBasicTutorial=Tutorial básico de Glest
 WellDone=¡Buen trabajo!
 Resources=Recursos
 Combat=Combate
@@ -9,7 +9,7 @@ Tricks=Trucos
 
 ;message strings
 ;------------------------------------------Start------------------------------------------------
-Welcome=Bienvenido al tutorial de ZetaGlest.
+Welcome=Bienvenido al tutorial de Glest.
 
 FirstThing=Vista: Para ajustar el área visible, mueve tu ratón hacia los extremos de la pantalla, también puedes usar las teclas del cursor. Otra forma de hacerlo es pulsando sobre el botón derecho en el minimapa (en la esquina superior izquierda de tu pantalla)
 

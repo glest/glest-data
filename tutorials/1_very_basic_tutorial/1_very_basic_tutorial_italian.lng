@@ -1,6 +1,6 @@
 TUTORIAL_NAME=Tutorial Base #1
 ;message headers
-GlestBasicTutorial=Tutorial base di ZetaGlest
+GlestBasicTutorial=Tutorial base di Glest
 WellDone=Ben fatto!
 Resources=Risorse
 Combat=Battaglia
@@ -9,7 +9,7 @@ Tricks=Trucchi
 
 ;message strings
 ;------------------------------------------Start------------------------------------------------
-Welcome=Benvenuto al tutorial base di ZetaGlest.
+Welcome=Benvenuto al tutorial base di Glest.
 
 FirstThing=Visuale: Per spostare l'angolo della visuale muovi il puntatore del mouse sui bordi dello schermo, o usa i tasti cursore, puoi anche cliccare sulla mini mappa (in alto a sinistra sullo schermo).
 

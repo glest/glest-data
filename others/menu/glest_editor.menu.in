@@ -1,0 +1,8 @@
+?package(glest-data,glest): \
+    needs="X11" \
+    hints="editor,maps" \
+    section="Games/Tools" \
+    title="Glest Map Editor" \
+    longtitle="Glest Map Editor, a game tool for 3D real time strategy game: Glest." \
+    command="@INSTALL_DIR_BIN@/glest_editor" \
+    icon="@INSTALL_DIR_ICON@/glest_editor.ico"

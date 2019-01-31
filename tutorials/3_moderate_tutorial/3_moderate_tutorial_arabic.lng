@@ -1,6 +1,6 @@
-TUTORIAL_NAME=دروس متقدمة
+﻿TUTORIAL_NAME=دروس متقدمة
 ;message headers
-GlestAdvancedTutorial=دروس ZetaGlest المتقدمة
+GlestAdvancedTutorial=دروس Glest المتقدمة
 Promoting=تعزيز وحدات
 WellDone=أحسنت!
 Summoning=استدعاء
@@ -9,7 +9,7 @@ Ritual=طقوس
 Armies=الجيوش
 
 ;message strings
-Welcome=مرحبا بكم في دروس ZetaGlest المتقدمة، هنا سوف تتعلم بعض الميزات الأكثر تقدما من اللعبة.
+Welcome=مرحبا بكم في دروس Glest المتقدمة، هنا سوف تتعلم بعض الميزات الأكثر تقدما من اللعبة.
 MagicBrief=أنت في قيادة فصيلة السحر، التي تستخدم السحرة واستدعاء المخلوقات للقتال.
 InitiateBrief=المستهلين هي الوحدة الأساسية للسحرة، و يمكنهم حصاد الموارد وبناء الهياكل.
 InitiatePromotion=يمكن ترقية المستهلين إلى سحرة محاربين، لتفعل ذلك، حدد أحد المستهلين، واستخدم أمر "ترقية لساحر محارب".

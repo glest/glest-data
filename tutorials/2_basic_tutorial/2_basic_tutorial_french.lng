@@ -1,13 +1,13 @@
 TUTORIAL_NAME=#2 Tutoriel de base
 ;message headers
-GlestBasicTutorial=Tutoriel Standard ZetaGlest
+GlestBasicTutorial=Tutoriel Standard Glest
 WellDone=Bien joué !
 Resources=Ressources
 Combat=Combat
 Buildings=Constructions
 
 ;message strings
-Welcome=Bienvenue dans le tutoriel standard de ZetaGlest. Ici vous apprendrez les bases du jeu.
+Welcome=Bienvenue dans le tutoriel standard de Glest. Ici vous apprendrez les bases du jeu.
 WillBeUsingTech=Vous commandez la faction des Tech, qui utilise des chevaliers du moyen âge et des engins mécaniques pour le combat.
 NeedWorkers=Pour récolter des ressources, vous aurez besoin de 'Worker' ("Travailleurs"). Pour en produire, sélectionnez le château puis utilisez la commande "Produce Worker".
 SelectAndCommand=Les unités sont sélectionnées en faisant un clic gauche dessus, les ordres sont donnés par un clic droit sur une cible ou sur le sol.

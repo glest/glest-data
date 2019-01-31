@@ -1,8 +1,8 @@
-﻿; This is the main ZetaGlest localization file (INI format)
+﻿; This is the main Glest localization file (INI format)
 ;
 ; Your contributions are welcome. Please ensure you agree to the terms of the
 ; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.megaglest.org
+; its entirety before contributing: http://translate.glest.org
 
 3dArt=ߘ߃ ߞߎ߬ߛߊ߲߬ߧߊ
 3dAnd2dArt=ߘ߃ ߣߌ߫ ߘ߂ ߞߎ߬ߛߊ߲߬ߧߊ
@@ -85,7 +85,7 @@ Cpu=ߕߟߋ߬ߓߊ߬ ߕߏ߬ߟߏ߲߬ߠߊ
 CpuEasy=ߕߟߋ߬ߓߊ߬ ߕߏ߬ߟߏ߲߬ߠߊ (ߣߐ߰ߡߊ߲)
 CpuMega=ߕߟߋ߬ߓߊ߬ ߕߏ߬ߟߏ߲߬ߠߊ (ߓߟߋ߬ߓߟߋ)
 CpuUltra=ߕߟߋ߬ߓߊ߬ ߕߏ߬ߟߏ߲߬ߠߊ (ߞߐߘߊ߲)
-CpuZeta=ߕߟߋ߬ߓߊ߬ ߕߏ߬ߟߏ߲߬ߠߊ (ߓߟߋ߬ߓߟߋ)
+CpuGlest=ߕߟߋ߬ߓߊ߬ ߕߏ߬ߟߏ߲߬ߠߊ (ߓߟߋ߬ߓߟߋ)
 CreateNewTeam=ߞߙߎ߫ ߞߎߘߊ ߛߌ߲ߘߌ߫
 CustomGame=ߕߏߟߏ߲߫ ߢߣߊߦߊߣߍ߲
 DataNotSynchedTitle=ߕߏߟߏ߲߫ ߟߐ߲ߕߊ ߣߊ߬ߕߐ ߣߌ߲߬ ߡߊ߲߫ ߞߊ߲߫
@@ -301,8 +301,8 @@ MaxLoad=ߟߊ߬ߦߟߍ ߛߊ߲ߘߐߕߊ
 MaxPlayers=ߕߏ߲ߟߏ߲ߠߊ ߛߊ߲ߘߐߕߊ
 MaxUnitCount=ߓߍ߲߬ߒ߬ߞߋ߬ߟߋ߲߬ߡߊ ߖߊ߬ߕߋ ߛߊ߲ߘߐߕߊ
 MeetingPoint=ߢߐ߲߯ߓߍ߲ ߦߙߐ
-Megaglest3d2dProgramming=ߡߋߜ߭ߊߜ߭ߟߌߛ ߘ߃\\ߘ߂ ߢߍߥߟߊߦߊߟߌ
-MegaglestProgramming=ߡߋߜ߭ߊߜ߭ߟߌߛ ߢߍߥߟߊߦߊߟߌ
+Glest3d2dProgramming=ߡߋߜ߭ߊߜ߭ߟߌߛ ߘ߃\\ߘ߂ ߢߍߥߟߊߦߊߟߌ
+GlestProgramming=ߡߋߜ߭ߊߜ߭ߟߌߛ ߢߍߥߟߊߦߊߟߌ
 MGBuildDateTime=ߟߐ߬ߟߌ߬ ߕߎߡߊ
 MGGameCountry=ߖߡߊ߬ߣߊ
 MGGameStatus=ߕߏߟߏ߲ ߟߌ߬ߤߟߊ
@@ -547,7 +547,7 @@ WalkSpeed=ߕߊ߯ߡߊ ߓߏ߬ߙߌ߬ߛߋ߲
 WaitingHost=ߕߏߟߏ߲ ߠߊߥߌ߬ߟߌ ߡߊߞߐ߬ߣߐ߲ ߌߘߐ߫
 # WaitingForPlayers=Wait at least for one more player!
 Windowed=ߝߢߐߘߊ ߞߙߊߞߏ
-# WrongRouterSetup=Your firewall or router is not properly configured to host games.\n\nTo fix it you can:\n- Simply use a headless server in the internet menu\n- Or visit faq.megaglest.org to read how to setup your router
+# WrongRouterSetup=Your firewall or router is not properly configured to host games.\n\nTo fix it you can:\n- Simply use a headless server in the internet menu\n- Or visit faq.glest.org to read how to setup your router
 Yes=ߊ߬ߥߊ߬
 YouLose=ߌ ߓߘߊ߫ ߗߌߙߏ߲߫߹
 YouWin=ߌ ߓߙߊ߫ ߛߎߘߊ߲߫߹

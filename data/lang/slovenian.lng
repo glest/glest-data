@@ -1,8 +1,8 @@
-; This is the main ZetaGlest localization file (INI format)
+; This is the main Glest localization file (INI format)
 ;
 ; Your contributions are welcome. Please ensure you agree to the terms of the
 ; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.megaglest.org
+; its entirety before contributing: http://translate.glest.org
 
 3dArt=Art 3D
 3dAnd2dArt=Art 2D in 3D
@@ -83,9 +83,9 @@ Control=Nadzor
 CouldNotConnect=Povezava neuspešna. Izberi drugi strežnik
 Cpu=CPE
 CpuEasy=CPE (Lahko)
-CpuMega=CPE (Mega)
+CpuMega=CPE (Glest)
 CpuUltra=CPE (Ultra)
-CpuZeta=CPE (Zeta)
+CpuGlest=CPE (Glest)
 CreateNewTeam=Ustvari novo ekipo
 CustomGame=Igra po meri
 DataNotSynchedTitle=Sledeči podatek v igri je različen:
@@ -301,8 +301,8 @@ MaxLoad=Največja obremenitev
 MaxPlayers=Največje število igralcev
 MaxUnitCount=Največje število enot
 MeetingPoint=Kraj srečanja
-Megaglest3d2dProgramming=Art 2D/3D ZetaGlest + Programiranje
-MegaglestProgramming=Programiranje ZetaGlest
+Glest3d2dProgramming=Art 2D/3D Glest + Programiranje
+GlestProgramming=Programiranje Glest
 MGBuildDateTime=Datum/ura builda
 MGGameCountry=Država
 MGGameStatus=Status igre
@@ -547,7 +547,7 @@ WalkSpeed=Hitrost premikanja
 WaitingHost=Čakanje strežnika na zagon igre
 # WaitingForPlayers=Wait at least for one more player!
 Windowed=Način v oknu
-# WrongRouterSetup=Your firewall or router is not properly configured to host games.\n\nTo fix it you can:\n- Simply use a headless server in the internet menu\n- Or visit faq.megaglest.org to read how to setup your router
+# WrongRouterSetup=Your firewall or router is not properly configured to host games.\n\nTo fix it you can:\n- Simply use a headless server in the internet menu\n- Or visit faq.glest.org to read how to setup your router
 Yes=Da
 YouLose=Izgubil si!
 YouWin=Zmagal si!
@@ -555,7 +555,7 @@ YouWin=Zmagal si!
 ;-------------------------------- Intro Text Start
 IntroText1=Nadgradnja igre Glest
 IntroStartMilliseconds1=$USE_DEFAULT_LANGUAGE_VALUE
-IntroText2=ZetaGlest Team predstavlja
+IntroText2=Glest Team predstavlja
 IntroStartMilliseconds2=$USE_DEFAULT_LANGUAGE_VALUE
 IntroText3=zastonjska in prosta realnočasovna strategija
 IntroStartMilliseconds3=$USE_DEFAULT_LANGUAGE_VALUE

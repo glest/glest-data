@@ -1,6 +1,6 @@
 TUTORIAL_NAME=#1 Tutorial de Bază
 ;message headers
-GlestBasicTutorial=Tutorial de bază ZetaGlest
+GlestBasicTutorial=Tutorial de bază Glest
 WellDone=Bine făcut!
 Resources=Resurse
 Combat=Luptă
@@ -9,7 +9,7 @@ Tricks=Șmecherii
 
 ;message strings
 ;------------------------------------------Start------------------------------------------------
-Welcome=Bun venit la tutorialul de bază ZetaGlest.
+Welcome=Bun venit la tutorialul de bază Glest.
 
 FirstThing=Vizualizare: Pentru a ajusta zona vizibilă, mută cursorul mouse-ului la marginea ecranului tău, sau folosește tastele cursorului. O altă cale pentru acest lucru este să faci clic pe mini hartă (colțul din stânga sus a ecranului tău).
 

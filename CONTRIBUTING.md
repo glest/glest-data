@@ -1,15 +1,15 @@
-# Contributing to the ZetaGlest data repository
+# Contributing to the Glest data repository
 
 Thank you your interest in this project!
 
-This repo mainly holds data used by [ZetaGlest](https://zetaglest.github.io/docs/).
+This repo mainly holds data used by [Glest](https://glest.github.io/docs/).
 
-The guidelines for contributing are the same for the [ZetaGlest source
-code](https://github.com/ZetaGlest/zetaglest-source), and can be found
+The guidelines for contributing are the same for the [Glest source
+code](https://github.com/Glest/glest-source), and can be found
 in
-[CONTRIBUTING.md](https://github.com/ZetaGlest/zetaglest-source/blob/develop/CONTRIBUTING.md)
-(link leads to a different repository in the [ZetaGlest
-organization](https://github.com/ZetaGlest)). That document also
+[CONTRIBUTING.md](https://github.com/Glest/glest-source/blob/develop/CONTRIBUTING.md)
+(link leads to a different repository in the [Glest
+organization](https://github.com/Glest)). That document also
 contains the instructions for performing pull requests.
 
-See Also: [data README](https://github.com/ZetaGlest/zetaglest-data/blob/develop/README.md)
+See Also: [data README](https://github.com/Glest/glest-data/blob/develop/README.md)

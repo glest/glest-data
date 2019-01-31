@@ -1,13 +1,13 @@
-TUTORIAL_NAME=#2 基礎チュートリアル
+﻿TUTORIAL_NAME=#2 基礎チュートリアル
 ;message headers
-GlestBasicTutorial=ZetaGlest　基本的チュートリアル
+GlestBasicTutorial=Glest　基本的チュートリアル
 WellDone=よくできました！
 Resources=資源
 Combat=戦闘
 Buildings=建築
 
 ;message strings
-Welcome=Megaglestの基本的チュートリアルへようこそ。 ここではゲームの基本を学びます。
+Welcome=Glestの基本的チュートリアルへようこそ。 ここではゲームの基本を学びます。
 WillBeUsingTech=あなたは中世風の戦士と機械戦闘装置を 使用するTech勢力を指揮しています。
 NeedWorkers=資源を収集するには労働者が必要です。 労働者を生産するには城を選択し、 "Produce Worker" コマンドを選択して下さい。
 SelectAndCommand=ユニットは左クリックで選択できます。 ユニットに命令を与えるには目標 或いは目的地を右クリックします。

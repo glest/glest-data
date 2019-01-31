@@ -1,0 +1,124 @@
+================================================================================
+
+Credit and THANKS :
+
+================================================================================
+
+models worker, hunter, stonegolem, cow, swordman, guard from Glest
+
+Archmage und Tucho      for model spearmen        from Forum
+Archmage		for model guard-axeman    from FactionPack-1.1
+madmanntis              for model worker(shovel)  from Woodsmen-Mod
+ElimiNator CC-BY-SA     for model sorcerer        from Ultrapack(DarkKnights)
+John.d.h.  CC-BY-SA     for model hound           from Solunar-Mod(Moon)
+
+most sounds from the units are from FactionPack (Tech, Magic, Egypts)
+
+Tiger
+wciow
+Omega
+titi
+
+hagekura     for particle (idea)          from Japanese-Mod
+Mr War       for range particle (idea)    from T-G-Ming-Mod
+
+Clint Bellanger    and    Justin Nichol (diffuse texture)
+--> "http://opengameart.org/content/wyvern-1"
+License CC-BY 3.0
+for model Wyvern (inclusive textures, animations etc.)
+
+Rosswet Mobile (submitted by dogchicken)
+--> "http://opengameart.org/content/thin-zombie-awake-zombie-asset"
+License CC-BY 3.0
+for model Untoter (inclusive textures, animations etc.)
+
+Matthew Pablo
+--> "http://opengameart.org/content/soliloquy"
+License CC-BY 3.0
+for the backgroundmusic
+
+yughues        (artist by opengameart.org)
+--> "http://opengameart.org/users/yughues"
+License CC0
+for textures
+
+darkwood
+for background icons
+
+darkwood´s cornwall stone, overcome (background icons)
+(http://darkwood67.deviantart.com/gallery/11280947)
+
+Model textures mainly from burningwell (http://www.burningwell.com)
+and opengameart (http://opengameart.org).
+
+Sounds for the "hunting dog" from (http://www.ringelkater.de) and
+(http://opengameart.org)
+
+Sounds for the "undead" from artisticdude
+Licence CC0
+(http://opengameart.org/content/zombies-sound-pack)(32-bit)
+
+
+================================================================================
+
+translation (big thanks !!!)
+
+
+english (help from lyra`(ctz))
+
+
+(most translations with google-translation)
+
+================================================================================
+================================================================================
+
+extra Thanks on:
+
+softcoder, titi and tomreyn for this whole project.
+
+tomreyn and titi for big help.
+
+Yggdrasil for this very usefull g3d-Blender(im-/exporter)-script,
+ Without these script, this mod would not have been possible.
+
+tomreyn, nig, titi, titi|son, filux, jammyjamjamman, derek
+for try out and hints.
+
+omega for forum.
+
+And big thanks to:
+
+The AgenzasBrothers (http://www.agenzasbrothers.de) (Thanks Zacharias Reinhardt)
+for the great and very understandable german blender tutorials. Without these
+great tutorials this mod would not have been possible.
+
+The developers of blender. (http://www.blender.org)
+
+The developers of gimp. (http://www.gimp.org)
+
+To the makers of  GIMPUSER and all those who wrote these fantastic tutorials on
+(http://www.gimpusers.de)
+
+To all those developers who helped ( directly or inderectly ) making openSUSE.
+(http://www.opensuse.org)
+
+Big thanks in general to all the creators of free software!
+
+Developers from Opera. (http://www.opera.com)
+
+* 2018
+
+Some modifications made for Glest by the Glest Team<https://github.com/Glest>
+
+=================================================================================
+License:
+=================================================================================
+
+All files are released under the Terms of the Creative Commons
+Attribution-ShareAlike 3.0 Unported license which is included in this
+distribution in the following file:
+
+  cc-by-sa-3.0-unported.txt
+
+
+=================================================================================

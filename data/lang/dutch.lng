@@ -1,8 +1,8 @@
-; This is the main ZetaGlest localization file (INI format)
+; This is the main Glest localization file (INI format)
 ;
 ; Your contributions are welcome. Please ensure you agree to the terms of the
 ; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.megaglest.org
+; its entirety before contributing: http://translate.glest.org
 
 3dArt=3D-kunst
 3dAnd2dArt=3D en 2D kunst
@@ -83,9 +83,9 @@ Control=Controle
 CouldNotConnect=Verbinding mislukt. Kies een andere server.
 Cpu=CPU
 CpuEasy=CPU (Makkie)
-CpuMega=CPU (Extreem)
+CpuMega=CPU (Glest)
 CpuUltra=CPU (Moeilijk)
-CpuZeta=CPU (Zeta)
+CpuGlest=CPU (Glest)
 CreateNewTeam=Creëer Nieuw Team
 CustomGame=Aangepast spel
 DataNotSynchedTitle=De volgende data komt niet overeen:
@@ -301,8 +301,8 @@ MaxLoad=Maximum belasting
 MaxPlayers=Maximum spelers
 MaxUnitCount=Maximum eenheden
 MeetingPoint=Verzamelpunt
-Megaglest3d2dProgramming=ZetaGlest 3D/2D + Programmeren
-MegaglestProgramming=ZetaGlest Programmeren
+Glest3d2dProgramming=Glest 3D/2D + Programmeren
+GlestProgramming=Glest Programmeren
 MGBuildDateTime=Build Datum/Tijd
 MGGameCountry=land
 MGGameStatus=Status
@@ -547,7 +547,7 @@ WalkSpeed=Loopsnelheid
 WaitingHost=Wachten op server om spel te beginnen...
 WaitingForPlayers=Wacht op minstens 1 andere speler!
 Windowed=Venster
-WrongRouterSetup=Je firewall of router is niet goed ingesteld om games te hosten.\n\nOm dit op te lossen kun je:\n- een headless server gebruiken in het internetmenu\n- of faq.megaglest.org bezoeken om te lezen hoe je je router in moet stellen
+WrongRouterSetup=Je firewall of router is niet goed ingesteld om games te hosten.\n\nOm dit op te lossen kun je:\n- een headless server gebruiken in het internetmenu\n- of faq.glest.org bezoeken om te lezen hoe je je router in moet stellen
 Yes=Ja
 YouLose=Je hebt verloren.
 YouWin=Je hebt gewonnen!
@@ -555,7 +555,7 @@ YouWin=Je hebt gewonnen!
 ;-------------------------------- Intro Text Start
 IntroText1=Gebaseerd op de bekroonde klassieker Glest
 IntroStartMilliseconds1=$USE_DEFAULT_LANGUAGE_VALUE
-IntroText2=het ZetaGlest Team presenteert
+IntroText2=het Glest Team presenteert
 IntroStartMilliseconds2=$USE_DEFAULT_LANGUAGE_VALUE
 IntroText3=een libre software real-time strategisch spel
 IntroStartMilliseconds3=$USE_DEFAULT_LANGUAGE_VALUE

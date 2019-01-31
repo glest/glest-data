@@ -27,7 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	</players>
 	<map value="Death_Road"/>
 	<tileset value="dark_forest"/>
-	<tech-tree value="zetapack"/>
+	<tech-tree value="factionpack"/>
 	<default-resources value="false"/>
 	<default-units value="false"/>
 	<fog-of-war value="false"/>

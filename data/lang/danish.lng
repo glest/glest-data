@@ -1,8 +1,8 @@
-; This is the main ZetaGlest localization file (INI format)
+; This is the main Glest localization file (INI format)
 ;
 ; Your contributions are welcome. Please ensure you agree to the terms of the
 ; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.megaglest.org
+; its entirety before contributing: http://translate.glest.org
 
 3dArt=3D kunst
 3dAnd2dArt=3D og 2D kunst
@@ -83,9 +83,9 @@ Control=Kontrol
 CouldNotConnect=Forbindelse fejlede, vælg en anden server
 Cpu=CPU
 CpuEasy=CPU (Nem)
-CpuMega=CPU (Mega)
+CpuMega=CPU (Glest)
 CpuUltra=CPU (Ultra)
-CpuZeta=CPU (Zeta)
+CpuGlest=CPU (Glest)
 CreateNewTeam=Opret nyt hold
 CustomGame=Brugerdefineret spil
 DataNotSynchedTitle=Følgende spil data er anderledes:
@@ -301,8 +301,8 @@ MaxLoad=Max load
 MaxPlayers=Max spillere
 MaxUnitCount=Max enhedstal
 MeetingPoint=Mødested
-Megaglest3d2dProgramming=Megaglest 3D/2D+Programering
-MegaglestProgramming=Megaglest Programering
+Glest3d2dProgramming=Glest 3D/2D+Programering
+GlestProgramming=Glest Programering
 MGBuildDateTime=Bygnings Dato/Tid
 MGGameCountry=Land
 MGGameStatus=Status
@@ -547,7 +547,7 @@ WalkSpeed=Walk speed
 WaitingHost=Venter på at serveren starter spillet
 WaitingForPlayers=Vent for mindst en spiller mere!
 Windowed=Windowed
-WrongRouterSetup=Din firewall eller router er ikke konfigureret til at være vært for spil.\n\nDet kan du ordne ved at:\n- bruge en hovedløs server på internetmenuen.\n- besøge faq.megaglest.org for at læse hvordan du indstiller din router
+WrongRouterSetup=Din firewall eller router er ikke konfigureret til at være vært for spil.\n\nDet kan du ordne ved at:\n- bruge en hovedløs server på internetmenuen.\n- besøge faq.glest.org for at læse hvordan du indstiller din router
 Yes=Ja
 YouLose=Du taber!
 YouWin=Du vinder!
@@ -555,7 +555,7 @@ YouWin=Du vinder!
 ;-------------------------------- Intro Text Start
 IntroText1=Baseret på det prisvindene klassiske glest
 IntroStartMilliseconds1=$USE_DEFAULT_LANGUAGE_VALUE
-IntroText2=Megaglest holdet Præsentere
+IntroText2=Glest holdet Præsentere
 IntroStartMilliseconds2=$USE_DEFAULT_LANGUAGE_VALUE
 IntroText3=Et frit realtids strategi spil
 IntroStartMilliseconds3=$USE_DEFAULT_LANGUAGE_VALUE

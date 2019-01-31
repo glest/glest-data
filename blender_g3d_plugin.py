@@ -58,8 +58,8 @@
 #vertexCount: number of vertices in each frame
 #indexCount: number of indices in this mesh (the number of triangles is indexCount/3)
 #diffuseColor: RGB diffuse color (material hue)
-#specularColor: RGB specular color (ignored in ZetaGlest)
-#specularPower: specular power (ignored in ZetaGlest)
+#specularColor: RGB specular color (ignored in Glest)
+#specularPower: specular power (ignored in Glest)
 #properties: property flags
 #enum MeshPropertyFlag : uint32 {
 #		mpfNone = 0, #no property is specified
@@ -68,13 +68,13 @@
 #		mpfNoSelect = 4, #whether the model is selectable
 #		mpfGlow = 8 #whether the model has a glow effect
 #}
-#The last 8 bits (little endian) of properties are used for teamcolor transparency, where 0 is opaque, and 255 is fully transparent team color. The value is inverted for compatibility with megaglest
+#The last 8 bits (little endian) of properties are used for teamcolor transparency, where 0 is opaque, and 255 is fully transparent team color. The value is inverted for compatibility with glest
 #textures: texture flags
 #enum MeshTexture : uint32 {
 #		mtNone = 0, #no texture is specified
 #		mtDiffuse = 1, #the diffuse (regular) texture for the mesh. The texture can have up to 4 byte channels (ARGB)
-#		mtSpecular = 2, #the specular highlight texture for the mesh material. The texture must have a single byte channel (ignored in ZetaGlest)
-#		mtNormal = 4 #the normal texture map for the mesh. The texture must have 3 byte channels, RGB, which map to x, y, z normal coords (ignored in ZetaGlest)
+#		mtSpecular = 2, #the specular highlight texture for the mesh material. The texture must have a single byte channel (ignored in Glest)
+#		mtNormal = 4 #the normal texture map for the mesh. The texture must have 3 byte channels, RGB, which map to x, y, z normal coords (ignored in Glest)
 #}
 #================================
 #6. TEXTURE PATHS
@@ -100,7 +100,7 @@ bl_info = {
 	"location": "File > Import-Export",
 	"warning": "always keep .blend files",
 	"wiki_url": "http://glest.wikia.com/wiki/G3D_support",
-	"tracker_url": "https://forum.megaglest.org/index.php?topic=6596",
+	"tracker_url": "https://forum.glest.org/index.php?topic=6596",
 	"category": "Import-Export"}
 ###########################################################################
 # Importing Structures needed (must later verify if i need them really all)
@@ -212,7 +212,7 @@ class G3DMeshHeaderv4:										 #Read Meshheader
 		self.noselect    = bool(self.properties & 4)
 		self.glow    = bool(self.properties & 8)
 		# Get last 8 bits for teamcolor transparency
-		# The value is inverted for compatibility with megaglest
+		# The value is inverted for compatibility with glest
 		self.teamcoloralpha = 255 - (self.properties >> 24)
 
 

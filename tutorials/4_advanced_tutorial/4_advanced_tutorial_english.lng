@@ -1,13 +1,13 @@
 TUTORIAL_NAME=Advanced Tutorial
 ;message headers
-GlestAdvancedTutorial=Advanced ZetaGlest Tutorial
+GlestAdvancedTutorial=Advanced Glest Tutorial
 WellDone=Good Job.
 Temple=Temple
 House=House
 Tent=Tent
 
 ;message strings
-Welcome=Welcome to the Advanced ZetaGlest Tutorial, here you will learn how to use the Persian Faction
+Welcome=Welcome to the Advanced Glest Tutorial, here you will learn how to use the Persian Faction
 PersianBrief=This is the Persian Faction. You can control and command the units in order to prepare for war.
 WorkerBrief=Workers, just as in Tech, are the basic Persian unit, they can harvest resources, repair and build structures.
 m1=Follow the objectives shown on the top left. First start by double-clicking on a worker to select all the workers you have, and click on the Build Basic icon. Then click the House image and click on the land where you want your workers to build the house.

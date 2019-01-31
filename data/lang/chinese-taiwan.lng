@@ -1,8 +1,8 @@
-﻿; This is the main ZetaGlest localization file (INI format)
+﻿; This is the main Glest localization file (INI format)
 ;
 ; Your contributions are welcome. Please ensure you agree to the terms of the
 ; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.megaglest.org
+; its entirety before contributing: http://translate.glest.org
 
 3dArt=3D藝術
 3dAnd2dArt=3D和2D藝術
@@ -85,7 +85,7 @@ Cpu=電腦(普通)
 CpuEasy=電腦(簡單)
 CpuMega=電腦(天才)
 CpuUltra=電腦(聰明)
-CpuZeta=電腦(天才)
+CpuGlest=電腦(天才)
 CreateNewTeam=建立新團隊
 CustomGame=自由游戲
 DataNotSynchedTitle=下面的游戲資料不同:
@@ -301,8 +301,8 @@ MaxLoad=最大載入數
 MaxPlayers=最大玩家數
 MaxUnitCount=最大部隊數量
 MeetingPoint=集合點
-Megaglest3d2dProgramming=3D/2D程式設計
-MegaglestProgramming=程式設計
+Glest3d2dProgramming=3D/2D程式設計
+GlestProgramming=程式設計
 MGBuildDateTime=建立日期/時間
 MGGameCountry=國家
 MGGameStatus=游戲狀態
@@ -547,7 +547,7 @@ WalkSpeed=行走速度
 WaitingHost=等待伺服器啟動游戲
 # WaitingForPlayers=Wait at least for one more player!
 Windowed=視窗化
-# WrongRouterSetup=Your firewall or router is not properly configured to host games.\n\nTo fix it you can:\n- Simply use a headless server in the internet menu\n- Or visit faq.megaglest.org to read how to setup your router
+# WrongRouterSetup=Your firewall or router is not properly configured to host games.\n\nTo fix it you can:\n- Simply use a headless server in the internet menu\n- Or visit faq.glest.org to read how to setup your router
 Yes=是
 YouLose=你輸了!
 YouWin=你贏了!
@@ -555,7 +555,7 @@ YouWin=你贏了!
 ;-------------------------------- Intro Text Start
 IntroText1=基於屢獲殊榮的經典游戲Glest，\nGlest 是一個2005年發布的獲獎學生作品。
 IntroStartMilliseconds1=$USE_DEFAULT_LANGUAGE_VALUE
-IntroText2=ZetaGlest 團隊出品
+IntroText2=Glest 團隊出品
 IntroStartMilliseconds2=$USE_DEFAULT_LANGUAGE_VALUE
 IntroText3=一款自由的即時戰略游戲
 IntroStartMilliseconds3=$USE_DEFAULT_LANGUAGE_VALUE

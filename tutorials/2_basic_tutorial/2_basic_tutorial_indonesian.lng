@@ -1,13 +1,13 @@
 TUTORIAL_NAME=#2 Cara Bermain Dasar
 ;message headers
-GlestBasicTutorial=Cara Bermain Dasar ZetaGlest
+GlestBasicTutorial=Cara Bermain Dasar Glest
 WellDone=Bagus!
 Resources=Sumberdaya
 Combat=Pertarungan
 Buildings=Bangunan
 
 ;message strings
-Welcome=Selamat datang ke Cara Bermain Dasar ZetaGlest. Di sini Anda akan belajar dasar dari permainan ini.
+Welcome=Selamat datang ke Cara Bermain Dasar Glest. Di sini Anda akan belajar dasar dari permainan ini.
 WillBeUsingTech=Anda akan memerintah fraksi Tekno, yang memakai tentara abad pertengahan dan mesin untuk berperang.
 NeedWorkers=Untuk mengumpulkan sumberdaya Anda akan membutuhkan Pekerja. Untuk memproduksi beberapa pekerja pertama pilih Kastil lalu gunakan perintah "Hasilkan Pekerja".
 SelectAndCommand=Unit dipilih dengan mengklik kiri pada mereka, perintah diberikan dengan mengklik kanan pada target atau pada arena permainan.

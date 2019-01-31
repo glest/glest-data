@@ -1,0 +1,9 @@
+[Desktop Entry]
+Categories=Game;StrategyGame;
+Comment=Map Editor
+Name=Glest Map Editor
+Icon=glest_editor
+Exec=glest_editor
+Terminal=false
+Type=Application
+Keywords=map;editor;

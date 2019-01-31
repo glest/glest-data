@@ -1,8 +1,8 @@
-﻿; This is the main ZetaGlest localization file (INI format)
+﻿; This is the main Glest localization file (INI format)
 ;
 ; Your contributions are welcome. Please ensure you agree to the terms of the
 ; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.megaglest.org
+; its entirety before contributing: http://translate.glest.org
 
 3dArt=3D дизайн
 3dAnd2dArt=3D и 2D дизайн
@@ -85,7 +85,7 @@ Cpu=Комп (Норма)
 CpuEasy=Комп (Слабый)
 CpuMega=Комп (Мега)
 CpuUltra=Комп (Ультра)
-CpuZeta=Комп (Мега)
+CpuGlest=Комп (Мега)
 CreateNewTeam=Создать новую команду
 CustomGame=Создать игру
 DataNotSynchedTitle=Следующие игровые данные отличаются:
@@ -301,8 +301,8 @@ MaxLoad=Максимум нагрузки
 MaxPlayers=Игроки (макс.)
 MaxUnitCount=Количество юнитов (макс.)
 MeetingPoint=Точка сбора
-Megaglest3d2dProgramming=3D/2D программирование ZetaGlest
-MegaglestProgramming=Программирование ZetaGlest
+Glest3d2dProgramming=3D/2D программирование Glest
+GlestProgramming=Программирование Glest
 MGBuildDateTime=Установка даты/времени
 MGGameCountry=страна
 MGGameStatus=Статус игры
@@ -547,7 +547,7 @@ WalkSpeed=Скорость перемещения
 WaitingHost=Ожидание сервера для запуска игры
 WaitingForPlayers=Подождите, хотя бы, еще одного игрока!
 Windowed=В окне (Alt+Enter)
-WrongRouterSetup=Ваш брандмауэр или маршрутизатор не настроен для создания игры.\n\nВы можете:\n- просто воспользоваться одним из главных серверов в сетевом меню\n- или получить инструкции по настройке оборудования на faq.megaglest.org
+WrongRouterSetup=Ваш брандмауэр или маршрутизатор не настроен для создания игры.\n\nВы можете:\n- просто воспользоваться одним из главных серверов в сетевом меню\n- или получить инструкции по настройке оборудования на faq.glest.org
 Yes=Да
 YouLose=Bы потерпели поражение
 YouWin=Bы одержали победу
@@ -555,7 +555,7 @@ YouWin=Bы одержали победу
 ;-------------------------------- Intro Text Start
 IntroText1=На основе заслуженной классической игры Glest
 IntroStartMilliseconds1=$USE_DEFAULT_LANGUAGE_VALUE
-IntroText2=команда ZetaGlest представляет
+IntroText2=команда Glest представляет
 IntroStartMilliseconds2=$USE_DEFAULT_LANGUAGE_VALUE
 IntroText3=свободную стратегию в реальном времени
 IntroStartMilliseconds3=$USE_DEFAULT_LANGUAGE_VALUE

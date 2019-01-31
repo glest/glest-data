@@ -1,8 +1,8 @@
-; This is the main ZetaGlest localization file (INI format)
+; This is the main Glest localization file (INI format)
 ;
 ; Your contributions are welcome. Please ensure you agree to the terms of the
 ; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.megaglest.org
+; its entirety before contributing: http://translate.glest.org
 
 3dArt=3D kūryba
 3dAnd2dArt=3D ir 2D kūryba
@@ -83,9 +83,9 @@ Control=Valdyti
 CouldNotConnect=Prisijungimas nesėkmingas. Pasirinkite kitą Serverį.
 Cpu=Procesorius
 CpuEasy=Procesorius (lengvas)
-CpuMega=Procesorius (Mega)
+CpuMega=Procesorius (Glest)
 CpuUltra=Procesorius (Ultra)
-CpuZeta=Procesorius (Zeta)
+CpuGlest=Procesorius (Glest)
 CreateNewTeam=Sukurti naują komandą
 CustomGame=Pasirinktinis žaidimas
 DataNotSynchedTitle=Šio žaidimo duomenys skiriasi:
@@ -301,8 +301,8 @@ MaxLoad=Didžiausia apkrova
 MaxPlayers=Daugiausia žaidėjų
 MaxUnitCount=Didžiausias dalinių skaičius
 MeetingPoint=Susitikimo vieta
-Megaglest3d2dProgramming=ZetaGlest 3D/2D + Programavimas
-MegaglestProgramming=Programavimas
+Glest3d2dProgramming=Glest 3D/2D + Programavimas
+GlestProgramming=Programavimas
 MGBuildDateTime=Leidimo data/laikas
 MGGameCountry=Šalis
 MGGameStatus=Būsena
@@ -547,7 +547,7 @@ WalkSpeed=Vaikščiojimo greitis
 WaitingHost=Žaidimas netrukus prasidės
 WaitingForPlayers=Reikalingas dar bent vienas žaidėjas!
 Windowed=Lango režimas:
-WrongRouterSetup=Jūsų ugniasienė arba maršrutizatorius nėra tinkamai suderintas sukurti žaidimus.\n\nNorėdami pataisyti, galite:\n- Naudoti bevietį serverį per interneto meniu\n- Arba apsilankyti faq.megaglest.org ir paskaityti, kaip tinkamai nustatyti maršrutizatorių
+WrongRouterSetup=Jūsų ugniasienė arba maršrutizatorius nėra tinkamai suderintas sukurti žaidimus.\n\nNorėdami pataisyti, galite:\n- Naudoti bevietį serverį per interneto meniu\n- Arba apsilankyti faq.glest.org ir paskaityti, kaip tinkamai nustatyti maršrutizatorių
 Yes=Taip
 YouLose=Pralaimėjote!
 YouWin=Laimėjote.
@@ -555,7 +555,7 @@ YouWin=Laimėjote.
 ;-------------------------------- Intro Text Start
 IntroText1=Paremtas klasikiniu Glest žaidimu
 IntroStartMilliseconds1=$USE_DEFAULT_LANGUAGE_VALUE
-IntroText2=ZetaGlest komanda pristato
+IntroText2=Glest komanda pristato
 IntroStartMilliseconds2=$USE_DEFAULT_LANGUAGE_VALUE
 IntroText3=nemokamos programinės įrangos realaus laiko strateginis žaidimas
 IntroStartMilliseconds3=$USE_DEFAULT_LANGUAGE_VALUE

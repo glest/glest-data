@@ -1,6 +1,6 @@
-TUTORIAL_NAME=הדרכה מתקדמת
+﻿TUTORIAL_NAME=הדרכה מתקדמת
 ;message headers
-GlestAdvancedTutorial=הדרכת ZetaGlest מתקדמת
+GlestAdvancedTutorial=הדרכת Glest מתקדמת
 Promoting=מקדם יחידות
 WellDone=כל הכבוד!
 Summoning=מזמנת
@@ -9,7 +9,7 @@ Ritual=חזרה
 Armies=צבאות
 
 ;message strings
-Welcome=ברוך הבא להדרכה מתקדמת של ZetaGlest, כאן תלמד כמה אפשרויות מתקדמות של המשחק.
+Welcome=ברוך הבא להדרכה מתקדמת של Glest, כאן תלמד כמה אפשרויות מתקדמות של המשחק.
 MagicBrief=אתה מפקד של כוחות הקוסמים, שמשתמשים בקסם וכוחות מזומנים להילחם.
 InitiateBrief=טירונים (Initiates), הם היחידות הבסיסיות של הקוסמים, הם יכולים לאסוף משאבים ולבנות מבנים.
 InitiatePromotion=טירונים יכולים להתקדם לBattlemages (מכשפי קרב), בחר בטירון, והשתמש בפקודה: "promote to Battlemage" (קדם למכשף קרב).

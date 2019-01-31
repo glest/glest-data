@@ -1,4 +1,4 @@
-TUTORIAL_NAME=游戲基礎教學
+﻿TUTORIAL_NAME=游戲基礎教學
 ;message headers
 GlestBasicTutorial=游戲基礎教學
 WellDone=幹得好！
@@ -9,7 +9,7 @@ Tricks=小技巧
 
 ;message strings
 ;------------------------------------------Start------------------------------------------------
-Welcome=歡迎進入 ZetaGlest 入門教學。
+Welcome=歡迎進入 Glest 入門教學。
 
 FirstThing=檢視：將滑鼠移動到螢幕邊緣，\n或靠游標鍵來調整可視區域。\n你也可以用滑鼠左擊螢幕左上方的小地圖。
 

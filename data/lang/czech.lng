@@ -1,8 +1,8 @@
-; This is the main ZetaGlest localization file (INI format)
+; This is the main Glest localization file (INI format)
 ;
 ; Your contributions are welcome. Please ensure you agree to the terms of the
 ; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.megaglest.org
+; its entirety before contributing: http://translate.glest.org
 
 3dArt=3D grafika
 3dAnd2dArt=3D a 2D grafika
@@ -83,9 +83,9 @@ Control=Ovládání
 CouldNotConnect=Připojení selhalo. Vyberte si jiný server.
 Cpu=CPU
 CpuEasy=CPU (Easy)
-CpuMega=CPU (Mega)
+CpuMega=CPU (Glest)
 CpuUltra=CPU (Ultra)
-CpuZeta=CPU (Zeta)
+CpuGlest=CPU (Glest)
 CreateNewTeam=Vytvořit nový tým
 CustomGame=Vlastní hra
 DataNotSynchedTitle=Následující herní data se liší:
@@ -301,8 +301,8 @@ MaxLoad=Max. načítání
 MaxPlayers=Max. počet hráčů
 MaxUnitCount=Max. počet jednotek
 MeetingPoint=Potkávací místo
-Megaglest3d2dProgramming=3D/2D grafika a programování
-MegaglestProgramming=Programování
+Glest3d2dProgramming=3D/2D grafika a programování
+GlestProgramming=Programování
 MGBuildDateTime=Datum a čas sestavení
 MGGameCountry=Země
 MGGameStatus=Stav
@@ -547,7 +547,7 @@ WalkSpeed=Rychlost chůze
 WaitingHost=Čekání na server pro spuštění hry
 WaitingForPlayers=Počkejte na alespoň jednoho dalšího hráče!
 Windowed=Okenní režim
-WrongRouterSetup=Váš firewall nebo router není správně nakonfigurován k hostování her.\n\nOpravit to lze:\n- jednoduše použijte bezobslužný (headless) server v internetovém menu\n- nebo navštivte faq.megaglest.org a přečtěte si, jak nastavit router
+WrongRouterSetup=Váš firewall nebo router není správně nakonfigurován k hostování her.\n\nOpravit to lze:\n- jednoduše použijte bezobslužný (headless) server v internetovém menu\n- nebo navštivte faq.glest.org a přečtěte si, jak nastavit router
 Yes=Ano
 YouLose=Prohráli jste!
 YouWin=Vyhráli jste!
@@ -555,7 +555,7 @@ YouWin=Vyhráli jste!
 ;-------------------------------- Intro Text Start
 IntroText1=Založeno na klasické hře Glest
 IntroStartMilliseconds1=$USE_DEFAULT_LANGUAGE_VALUE
-IntroText2=tým ZetaGlest představuje
+IntroText2=tým Glest představuje
 IntroStartMilliseconds2=$USE_DEFAULT_LANGUAGE_VALUE
 IntroText3=svobodnou strategickou hru v reálném čase
 IntroStartMilliseconds3=$USE_DEFAULT_LANGUAGE_VALUE

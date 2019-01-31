@@ -9,7 +9,7 @@
 	</players>
 	<map value="domination_isles"/>
 	<tileset value="desert2"/>
-	<tech-tree value="zetapack"/>
+	<tech-tree value="factionpack"/>
 	<default-resources value="true"/>
 	<default-units value="true"/>
 	<default-victory-conditions value="true"/>

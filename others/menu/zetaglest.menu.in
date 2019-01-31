@@ -1,8 +1,0 @@
-?package(zetaglest-data,zetaglest): \
-    needs="X11" \
-    hints="RTS,rts" \
-    section="Games/Strategy" \
-    title="ZetaGlest" \
-    longtitle="ZetaGlest, a 3D real time strategy game." \
-    command="@INSTALL_DIR_BIN@/zetaglest" \
-    icon="@INSTALL_DIR_ICON@/zetaglest.xpm"

@@ -1,6 +1,6 @@
 TUTORIAL_NAME=#1 Basiskursus
 ;message headers
-GlestBasicTutorial=Megaglest begynderkursus
+GlestBasicTutorial=Glest begynderkursus
 WellDone=Godt klaret!
 Resources=Ressourcer
 Combat=Kamp
@@ -9,7 +9,7 @@ Tricks=Tricks
 
 ;message strings
 ;------------------------------------------Start------------------------------------------------
-Welcome=Velkommen til Megaglest basiskursus.
+Welcome=Velkommen til Glest basiskursus.
 
 FirstThing=Udsigt: For at justere det synlige område, flyt din musemarkør til kanten af skærmen, eller brug piletasterne. En anden måde er at venstre-klikke på dit minimap (øverste venstre hjørne af skærmen).
 

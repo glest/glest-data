@@ -1,13 +1,13 @@
-TUTORIAL_NAME=#2 Boshlang‘ich qo‘llanma
+﻿TUTORIAL_NAME=#2 Boshlang‘ich qo‘llanma
 ;message headers
-GlestBasicTutorial=ZetaGlest asosiy qo‘llanmasi
+GlestBasicTutorial=Glest asosiy qo‘llanmasi
 WellDone=Yaxshi!
 Resources=Manbalar
 Combat=Jangchi
 Buildings=Binolar
 
 ;message strings
-Welcome=ZetaGlest asosiy qo‘llanmasiga xush kelibsiz. Bu yerda siz o‘yin asoslari bilan tanishasiz.
+Welcome=Glest asosiy qo‘llanmasiga xush kelibsiz. Bu yerda siz o‘yin asoslari bilan tanishasiz.
 WillBeUsingTech=Siz “Tex” fraksiyasini boshqarasiz. Bu fraksiya jang qilish uchun o‘rta asr jangchilari va mexanik qurilmalariga ega.
 NeedWorkers=Manbalarni yig‘ish uchun sizga “Ishchilar” kerak. Ishchilarni sotib olish uchun “Qasr”ni tanlang va “Ishchi sotib olish”ni bosing.
 SelectAndCommand=Qismlarning ustiga sichqoncha chap tugmasini bosib ularni tanlash mumkin. Ularga o‘ng tugmani mo‘ljal yoki manzil ustiga bosib buyruq berish mumkin.

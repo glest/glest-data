@@ -1,13 +1,13 @@
 TUTORIAL_NAME=Tutorial básico #2
 ;message headers
-GlestBasicTutorial=Tutorial Básico de ZetaGlest
+GlestBasicTutorial=Tutorial Básico de Glest
 WellDone=Bien Hecho
 Resources=Recursos
 Combat=Combate
 Buildings=Edificios
 
 ;message strings
-Welcome=Bienvenido al Tutorial Básico del ZetaGlest. Aquí aprenderás los conceptos básicos del juego.
+Welcome=Bienvenido al Tutorial Básico del Glest. Aquí aprenderás los conceptos básicos del juego.
 WillBeUsingTech=Estás en control de la facción Tecnológica (Tech), que usa guerreros medievales y aparatos mecanicos para luchar.
 NeedWorkers=Para recolectar recursos necesitas Trabajadores (Worker). Para producir algunos primero selecciona el Castillo (Castle) y luego usa el comando Producir Trabajador (Produce Worker)
 SelectAndCommand=Las unidades se seleccionan pinchando con el botón izquierdo, los comandos se dan pinchando con el botón derecho en el objetivo o en el terreno.

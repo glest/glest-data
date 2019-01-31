@@ -1,0 +1,9 @@
+[Desktop Entry]
+Categories=Game;StrategyGame;
+Comment=A real time strategy game.
+Name=Glest
+Icon=glest
+Exec=glest
+Terminal=false
+Type=Application
+Keywords=realtime;strategy;game;

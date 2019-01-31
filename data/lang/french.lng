@@ -1,8 +1,8 @@
-; This is the main ZetaGlest localization file (INI format)
+; This is the main Glest localization file (INI format)
 ;
 ; Your contributions are welcome. Please ensure you agree to the terms of the
 ; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.megaglest.org
+; its entirety before contributing: http://translate.glest.org
 
 3dArt=Art 3D
 3dAnd2dArt=Art 3D et 2D
@@ -83,9 +83,9 @@ Control=Contrôle
 CouldNotConnect=Echec de connexion. Choisissez un autre serveur.
 Cpu=CPU
 CpuEasy=CPU Facile
-CpuMega=CPU Méga
+CpuMega=CPU Glest
 CpuUltra=CPU Ultra
-CpuZeta=CPU Zéta
+CpuGlest=CPU Glest
 CreateNewTeam=Créer nouvelle équipe
 CustomGame=Partie Personnalisée
 DataNotSynchedTitle=La donnée suivante est différente :
@@ -301,8 +301,8 @@ MaxLoad=Charge Max
 MaxPlayers=Nombre de joueurs Maximum
 MaxUnitCount=Nombre d'unités Max
 MeetingPoint=Point de rencontre
-Megaglest3d2dProgramming=Programmation ZetaGlest + 2D/3D
-MegaglestProgramming=Programmation ZetaGlest
+Glest3d2dProgramming=Programmation Glest + 2D/3D
+GlestProgramming=Programmation Glest
 MGBuildDateTime=Date de compilation
 MGGameCountry=Pays
 MGGameStatus=Etat du jeu
@@ -547,7 +547,7 @@ WalkSpeed=Vitesse de marche
 WaitingHost=En attente du lancement de la partie
 WaitingForPlayers=Attendez d'autres joueurs !
 Windowed=Mode fenêtré
-WrongRouterSetup=Votre pare-feu ou routeur ne sont pas correctement configurés pour accueillir l'hôte du jeu.\n\nPour résoudre ce problème, vous pouvez:\n- Il suffit d'utiliser un serveur sans écran dans le menu internet\n- Ou visitez faq.megaglest.org puis lire comment configurer votre routeur
+WrongRouterSetup=Votre pare-feu ou routeur ne sont pas correctement configurés pour accueillir l'hôte du jeu.\n\nPour résoudre ce problème, vous pouvez:\n- Il suffit d'utiliser un serveur sans écran dans le menu internet\n- Ou visitez faq.glest.org puis lire comment configurer votre routeur
 Yes=Oui
 YouLose=Vous avez perdu !
 YouWin=Vous avez gagné !
@@ -555,7 +555,7 @@ YouWin=Vous avez gagné !
 ;-------------------------------- Intro Text Start
 IntroText1=Basé sur le jeu primé Glest
 IntroStartMilliseconds1=$USE_DEFAULT_LANGUAGE_VALUE
-IntroText2=L'équipe de ZetaGlest présente
+IntroText2=L'équipe de Glest présente
 IntroStartMilliseconds2=$USE_DEFAULT_LANGUAGE_VALUE
 IntroText3=Un jeu libre de stratégie en temps réel
 IntroStartMilliseconds3=$USE_DEFAULT_LANGUAGE_VALUE

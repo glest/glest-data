@@ -9,7 +9,7 @@
 	</players>
 	<map value="valley_of_death"/>
 	<tileset value="forest"/>
-	<tech-tree value="zetapack"/>
+	<tech-tree value="factionpack"/>
 	<default-resources value="true"/>
 	<default-units value="true"/>
 	<default-victory-conditions value="true"/>

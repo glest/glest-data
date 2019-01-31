@@ -9,7 +9,7 @@
 	</players>
 	<map value="conflict"/>
 	<tileset value="jungle"/>
-	<tech-tree value="zetapack"/>
+	<tech-tree value="factionpack"/>
 	<default-resources value="true"/>
 	<default-units value="true"/>
 	<default-victory-conditions value="true"/>

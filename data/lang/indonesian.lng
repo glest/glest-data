@@ -1,8 +1,8 @@
-; This is the main ZetaGlest localization file (INI format)
+; This is the main Glest localization file (INI format)
 ;
 ; Your contributions are welcome. Please ensure you agree to the terms of the
 ; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.megaglest.org
+; its entirety before contributing: http://translate.glest.org
 
 3dArt=seni 3D
 3dAnd2dArt=seni 3D dan 2D
@@ -83,9 +83,9 @@ Control=Kontrol
 CouldNotConnect=Sambungan gagal. Pilih server lain
 Cpu=CPU
 CpuEasy=CPU (Mudah)
-CpuMega=CPU (Mega)
+CpuMega=CPU (Glest)
 CpuUltra=CPU (Ultra)
-CpuZeta=CPU (Zeta)
+CpuGlest=CPU (Glest)
 CreateNewTeam=Buat Tim Baru
 CustomGame=Permainan Bebas
 DataNotSynchedTitle=Data game ini berbeda:
@@ -301,8 +301,8 @@ MaxLoad=Maksimal muatan
 MaxPlayers=Pemain maksimal
 MaxUnitCount=Jumlah Unit Maksimal
 MeetingPoint=Tempat Pertemuan
-Megaglest3d2dProgramming=3D/2D+Programmer ZetaGlest
-MegaglestProgramming=Programmer ZetaGlest
+Glest3d2dProgramming=3D/2D+Programmer Glest
+GlestProgramming=Programmer Glest
 # MGBuildDateTime=Build Date/Time
 MGGameCountry=Negara
 MGGameStatus=Status
@@ -547,7 +547,7 @@ WalkSpeed=Kecepatan berjalan
 WaitingHost=Menunggu server untuk memulai permainan
 WaitingForPlayers=Tunggu setidaknya satu pemain lagi!
 Windowed=Mode Jendela:
-WrongRouterSetup=Firewall atau router Anda tidak diatur dengan benar untuk membuat permainan.\nUntuk membetulkannya Anda dapat:\n- Secara mudah menggunakan server tanpa ketua di menu internet\n- Atau kunjungi faq.megaglest.org untuk membaca tentang cara mengatur router Anda
+WrongRouterSetup=Firewall atau router Anda tidak diatur dengan benar untuk membuat permainan.\nUntuk membetulkannya Anda dapat:\n- Secara mudah menggunakan server tanpa ketua di menu internet\n- Atau kunjungi faq.glest.org untuk membaca tentang cara mengatur router Anda
 Yes=Ya
 YouLose=Anda kalah!
 YouWin=Anda menang.
@@ -555,7 +555,7 @@ YouWin=Anda menang.
 ;-------------------------------- Intro Text Start
 IntroText1=Berdasarkan dari pemenang penghargaan klasik Glest
 IntroStartMilliseconds1=$USE_DEFAULT_LANGUAGE_VALUE
-IntroText2=Tim ZetaGlest mempersembahkan
+IntroText2=Tim Glest mempersembahkan
 IntroStartMilliseconds2=$USE_DEFAULT_LANGUAGE_VALUE
 IntroText3=sebuah software permainan strategi real-time gratis
 IntroStartMilliseconds3=$USE_DEFAULT_LANGUAGE_VALUE

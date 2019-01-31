@@ -1,9 +1,0 @@
-[Desktop Entry]
-Categories=Game;StrategyGame;
-Comment=A real time strategy game.
-Name=ZetaGlest
-Icon=zetaglest
-Exec=zetaglest
-Terminal=false
-Type=Application
-Keywords=realtime;strategy;game;

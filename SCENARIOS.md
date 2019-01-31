@@ -1,14 +1,14 @@
 # Scenarios
 
-To add your scenario to this list, please see the [data README](https://github.com/ZetaGlest/zetaglest-data/blob/develop/README.md)
+To add your scenario to this list, please see the [data README](https://github.com/Glest/glest-data/blob/develop/README.md)
 
-Note: These haven't been added to the ZetaGlest mod center yet.
+Note: These haven't been added to the Glest mod center yet.
 
 ## [Island Survival](https://github.com/mathusummut/island_survival)
 
 
 ## [Tartarus](https://github.com/KeithSammut/tartarus)<br />
-A Hard Hellish Mega Glest Scenario With Devastating Monsters And
+A Hard Hellish Glest Scenario With Devastating Monsters And
 Daemons. Also featuring obstacles like lava, volcanos and others!
 
 

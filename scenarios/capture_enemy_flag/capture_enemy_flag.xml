@@ -8,7 +8,7 @@
 	</players>
 	<map value="island_siege"/>
 	<tileset value="forest"/>
-	<tech-tree value="zetapack"/>
+	<tech-tree value="factionpack"/>
 	<default-resources value="false"/>
 	<default-units value="false"/>
 	<default-victory-conditions value="false"/>

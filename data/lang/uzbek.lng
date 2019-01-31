@@ -1,8 +1,8 @@
-; This is the main ZetaGlest localization file (INI format)
+; This is the main Glest localization file (INI format)
 ;
 ; Your contributions are welcome. Please ensure you agree to the terms of the
 ; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.megaglest.org
+; its entirety before contributing: http://translate.glest.org
 
 3dArt=3D dizayn
 3dAnd2dArt=3D and 2D dizayn
@@ -83,9 +83,9 @@ Control=Boshqarish
 CouldNotConnect=Ulanmdi. Boshqa serverni tanlang.
 Cpu=Kompyuter
 CpuEasy=Kompyuter (Oson)
-CpuMega=Kompyuter (Mega)
+CpuMega=Kompyuter (Glest)
 CpuUltra=Kompyuter (Ultra)
-CpuZeta=Kompyuter (Zeta)
+CpuGlest=Kompyuter (Glest)
 CreateNewTeam=Yangi guruh yaratish
 CustomGame=O‘yin tuzish
 DataNotSynchedTitle=Quyidagi o‘yin ma’lumotlari farq qiladi:
@@ -301,8 +301,8 @@ MaxLoad=Maksimal yuklash
 MaxPlayers=Maksimal o‘yinchilar
 MaxUnitCount=Maksimal qism miqdori
 MeetingPoint=Uchrashuv nuqtasi
-Megaglest3d2dProgramming=ZetaGlest 3D/2D+dasturchisi
-MegaglestProgramming=ZetaGlest dasturchisi
+Glest3d2dProgramming=Glest 3D/2D+dasturchisi
+GlestProgramming=Glest dasturchisi
 MGBuildDateTime=Tuzilgan sanasi/vaqti
 MGGameCountry=Mamlakat
 MGGameStatus=Holat
@@ -547,7 +547,7 @@ WalkSpeed=Yurish tezligi
 WaitingHost=Serverni o‘yinni ishga tushirishini kutmoqda
 WaitingForPlayers=Kamida birdan ortiq foydalanuvchini kuting!
 Windowed=Oynalangan:
-WrongRouterSetup=Hostdagi o‘yinlar uchun fayervol yoki routeringiz noto‘g‘ri sozlangan.\n\nTuzatish uchun:\n- Internet menyudagi boshsiz serverdan foydalaning.\n- Yoki routerni qanday sozlash haqida o‘qish uchun faq.megaglest.org saytiga tashrif buyuring.
+WrongRouterSetup=Hostdagi o‘yinlar uchun fayervol yoki routeringiz noto‘g‘ri sozlangan.\n\nTuzatish uchun:\n- Internet menyudagi boshsiz serverdan foydalaning.\n- Yoki routerni qanday sozlash haqida o‘qish uchun faq.glest.org saytiga tashrif buyuring.
 Yes=Ha
 YouLose=Siz yengildingiz!
 YouWin=Siz yutdingiz.
@@ -555,7 +555,7 @@ YouWin=Siz yutdingiz.
 ;-------------------------------- Intro Text Start
 IntroText1=Yutuqlarga sazovor bo‘lgan mumtoz Glest o‘yiniga asoslangan
 IntroStartMilliseconds1=$USE_DEFAULT_LANGUAGE_VALUE
-IntroText2=ZetaGlest guruhi namoyihs etadi
+IntroText2=Glest guruhi namoyihs etadi
 IntroStartMilliseconds2=$USE_DEFAULT_LANGUAGE_VALUE
 IntroText3=haqqoniy o‘yin erkin dasturiy mahsuloti
 IntroStartMilliseconds3=$USE_DEFAULT_LANGUAGE_VALUE

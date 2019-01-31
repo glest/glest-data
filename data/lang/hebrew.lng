@@ -1,8 +1,8 @@
-﻿; This is the main ZetaGlest localization file (INI format)
+﻿; This is the main Glest localization file (INI format)
 ;
 ; Your contributions are welcome. Please ensure you agree to the terms of the
 ; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.megaglest.org
+; its entirety before contributing: http://translate.glest.org
 
 3dArt=גרפיקת 3D
 3dAnd2dArt=גרפיקת דו ותלת מימד
@@ -85,7 +85,7 @@ Cpu=מחשב
 CpuEasy=מחשב(קל)
 CpuMega=מחשב (מגה)
 CpuUltra=מחשב (אולטרה)
-CpuZeta=מחשב (מגה)
+CpuGlest=מחשב (מגה)
 CreateNewTeam=צור צוות חדש
 CustomGame=משחק מותאם אישית
 DataNotSynchedTitle=הנתונים הבאים במשחק שונים:
@@ -301,8 +301,8 @@ MaxLoad=מקסימום נשיאה
 MaxPlayers=מקסימום שחקנים
 MaxUnitCount=מקסימום יחידות
 MeetingPoint=נקודת מפגש
-Megaglest3d2dProgramming=ZetaGlest תלת/דו מימד + תיכנות
-MegaglestProgramming=תיכנות ZetaGlest
+Glest3d2dProgramming=Glest תלת/דו מימד + תיכנות
+GlestProgramming=תיכנות Glest
 MGBuildDateTime=בנה תאריך/שעה
 MGGameCountry=מדינה
 MGGameStatus=סטטוס
@@ -547,7 +547,7 @@ WalkSpeed=מהירות תנועה
 WaitingHost=ממתין לשרת להתחלת המשחק
 # WaitingForPlayers=Wait at least for one more player!
 Windowed=חלונאות
-# WrongRouterSetup=Your firewall or router is not properly configured to host games.\n\nTo fix it you can:\n- Simply use a headless server in the internet menu\n- Or visit faq.megaglest.org to read how to setup your router
+# WrongRouterSetup=Your firewall or router is not properly configured to host games.\n\nTo fix it you can:\n- Simply use a headless server in the internet menu\n- Or visit faq.glest.org to read how to setup your router
 Yes=כן
 YouLose=הפסדת!
 YouWin=ניצחת!
@@ -555,7 +555,7 @@ YouWin=ניצחת!
 ;-------------------------------- Intro Text Start
 IntroText1=מבוסס על 'award-winning classic Glest'
 IntroStartMilliseconds1=$USE_DEFAULT_LANGUAGE_VALUE
-IntroText2=צוות ZetaGlest מציג
+IntroText2=צוות Glest מציג
 IntroStartMilliseconds2=$USE_DEFAULT_LANGUAGE_VALUE
 IntroText3=תוכנה חופשית - משחק אסטרטגיה בזמן אמת
 IntroStartMilliseconds3=$USE_DEFAULT_LANGUAGE_VALUE

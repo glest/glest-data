@@ -1,13 +1,13 @@
 TUTORIAL_NAME=#2 Begynderkursus
 ;message headers
-GlestBasicTutorial=Megaglest begynderkursus
+GlestBasicTutorial=Glest begynderkursus
 WellDone=Godt gået!
 Resources=Resources
 Combat=Kamp
 Buildings=Bygninger
 
 ;message strings
-Welcome=Velkommen til ZetaGlest begynderkursus. Her vil du lære de basale elementer i spillet.
+Welcome=Velkommen til Glest begynderkursus. Her vil du lære de basale elementer i spillet.
 WillBeUsingTech=Du kontrollerer Tek-fraktionen, som bruger middelalderlige krigere og mekaniske instrumenter i kamp.
 NeedWorkers=For at høste ressourcer skal du bruge Arbejdere. For at producere nogen skal du vælge slottet og bruge "Producer Arbejder" kommandoen.
 SelectAndCommand=Enheder bliver valgt ved at venstreklikke på dem. Kommandoer bliver givet ved at højreklikke på enten et mål eller et sted i terrænet.

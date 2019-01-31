@@ -1,6 +1,6 @@
 TUTORIAL_NAME=#1 Tutoriali Baze
 ;message headers
-GlestBasicTutorial=ZetaGlest Tutoriali Baze
+GlestBasicTutorial=Glest Tutoriali Baze
 WellDone=Shume bukur!
 Resources=Resurset
 Combat=Luftimi
@@ -9,7 +9,7 @@ Tricks=Truqet
 
 ;message strings
 ;------------------------------------------Start------------------------------------------------
-Welcome=Mire se vini ne tutorialin baze te ZetaGlest
+Welcome=Mire se vini ne tutorialin baze te Glest
 
 FirstThing=Shikimi: Per te e rregulluar zonen e dukshme, levizni miun ne cepat e ekranit ose perdorni shigjetat ne tastier. Nje menyre tjeter eshte te klikoni ne Harten e Vogel (lart-majtas ne ekran).
 

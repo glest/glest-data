@@ -1,6 +1,6 @@
 TUTORIAL_NAME=Avanceret kursus.
 ;message headers
-GlestAdvancedTutorial=Avanceret ZetaGlest Kursus
+GlestAdvancedTutorial=Avanceret Glest Kursus
 Promoting=At Forfremme Enheder
 WellDone=Godt gået!
 Summoning=Hidkaldelse
@@ -9,7 +9,7 @@ Ritual=Ritual
 Armies=Hære
 
 ;message strings
-Welcome=Velkommen til det Avancerede ZetaGlest Kursus, her vil du lære nogen af de mere avancerede funktioner i spillet.
+Welcome=Velkommen til det Avancerede Glest Kursus, her vil du lære nogen af de mere avancerede funktioner i spillet.
 MagicBrief=Du kontrollerer Magi-Faktionen, som bruger troldmænd og hidkaldte væsner til at kæmpe.
 InitiateBrief=Indviede er de basale Magi enheder, de kan indsamle ressourcer og bygge bygninger.
 InitiatePromotion=Initierede kan blive forfremmet til Kamptroldmænd. For at gøre det, vælg en Initieret, og brug kommandoen "Forfrem til Kamptroldmand".

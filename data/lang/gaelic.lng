@@ -1,8 +1,8 @@
-; This is the main ZetaGlest localization file (INI format)
+; This is the main Glest localization file (INI format)
 ;
 ; Your contributions are welcome. Please ensure you agree to the terms of the
 ; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.megaglest.org
+; its entirety before contributing: http://translate.glest.org
 
 3dArt=Ealain 3D
 3dAnd2dArt=Ealain 3D is 2D
@@ -85,7 +85,7 @@ Cpu=CPU
 CpuEasy=CPU (Furasta)
 CpuMega=CPU (Cruaidh)
 CpuUltra=CPU (Doirbh)
-CpuZeta=CPU (Zeta)
+CpuGlest=CPU (Glest)
 CreateNewTeam=Cruthaich sgioba ùr
 CustomGame=Geama gnàthaichte
 DataNotSynchedTitle=Tha dàta a' gheama a leanas diofraichte:
@@ -301,8 +301,8 @@ MaxLoad=Eallach as motha
 MaxPlayers=Cluicheadairean as motha
 MaxUnitCount=Àireamh de dh'aonadan as motha
 MeetingPoint=Ceann-cruinneachaidh
-Megaglest3d2dProgramming=ZetaGlest 3D/2D+Prògramachadh
-MegaglestProgramming=Prògramachadh ZetaGlest
+Glest3d2dProgramming=Glest 3D/2D+Prògramachadh
+GlestProgramming=Prògramachadh Glest
 MGBuildDateTime=Ceann-latha/Ùine an togail
 MGGameCountry=Dùthaich
 MGGameStatus=Staid
@@ -547,7 +547,7 @@ WalkSpeed=Luaths coiseachd
 WaitingHost=A' feitheamh gus an cur am frithealaiche an geama gu dol
 WaitingForPlayers=Fuirich gus an tig cluicheadair no dhà eile!
 Windowed=Am modh uinneagach
-WrongRouterSetup=Cha deach an cachaileith-theine no an rùtair agad a rèiteachadh mar bu chòir ach am b' urrainn dhut geama òstadh.\n\nSeo nas urrainn dhut dèanamh gus a chàradh:\n- Cleachd fhrithealaiche gun cheann sa chlàr-taice eadar-lìn\n- Tadhail air faq.megaglest.org gus leughadh mu mar a shuidhicheas tu an rùtair agad
+WrongRouterSetup=Cha deach an cachaileith-theine no an rùtair agad a rèiteachadh mar bu chòir ach am b' urrainn dhut geama òstadh.\n\nSeo nas urrainn dhut dèanamh gus a chàradh:\n- Cleachd fhrithealaiche gun cheann sa chlàr-taice eadar-lìn\n- Tadhail air faq.glest.org gus leughadh mu mar a shuidhicheas tu an rùtair agad
 Yes=Seadh
 YouLose=Chaill thu!
 YouWin=Bhuannaich thu!
@@ -555,7 +555,7 @@ YouWin=Bhuannaich thu!
 ;-------------------------------- Intro Text Start
 IntroText1=Stèidhichte air Glest clasaigeach a choisinn duaisean
 IntroStartMilliseconds1=$USE_DEFAULT_LANGUAGE_VALUE
-IntroText2=tha sgioba ZetaGlest a' toirt dhuibh
+IntroText2=tha sgioba Glest a' toirt dhuibh
 IntroStartMilliseconds2=$USE_DEFAULT_LANGUAGE_VALUE
 IntroText3=geama ro-innleachd fìor-ùine bathair-bhog shaoir
 IntroStartMilliseconds3=$USE_DEFAULT_LANGUAGE_VALUE
