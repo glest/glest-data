@@ -1,8 +1,4 @@
 ; This is the main Glest localization file (INI format)
-;
-; Your contributions are welcome. Please ensure you agree to the terms of the
-; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.glest.org
 
 3dArt=3D art
 3dAnd2dArt=3D and 2D art
@@ -303,21 +299,22 @@ MaxUnitCount=Max Unit Count
 MeetingPoint=Meeting Point
 Glest3d2dProgramming=Glest 3D/2D+Programming
 GlestProgramming=Glest Programming
-MGBuildDateTime=Build Date/Time
-MGGameCountry=Country
-MGGameStatus=Status
-MGGameTitle=Title
-MGGameSlots=Slots
-MGGameSlotsFull=Game Full
-MGGameIP=Server IP Address
-MGGameStatus0=Accepting players
-MGGameStatus1=Game full, game start pending
-MGGameStatus2=Game in progress
-MGGameStatus3=Game finished
-MGJoinGameSlots=Join Game
-MGPlatform=Platform
-MGVersion=Version
+BuildDateTime=Build Date/Time
+GameCountry=Country
+GameStatus=Status
+GameTitle=Title
+GameSlots=Slots
+GameSlotsFull=Game Full
+GameIP=Server IP Address
+GameStatus0=Accepting players
+GameStatus1=Game full, game start pending
+GameStatus2=Game in progress
+GameStatus3=Game finished
+JoinGameSlots=Join Game
+Platform=Platform
+Version=Version
 Misc=Misc
+ShowDevConsoleWin=Show developer console on Windows
 
 MismatchedFactions=The following factions are mismatched:
 MismatchedFactionsMissing=(missing)
@@ -376,10 +373,6 @@ Move=Move
 MultiPlayer=Multiplayer:
 MusicVolume=Music Volume:
 Network=Network
-NetworkCpuEasy=Network CPU Easy
-NetworkCpu=Network CPU
-NetworkCpuUltra=Network Cpu Ultra
-NetworkCpuMega=Network Cpu Mega
 NetworkFramePeriod=Network Send FrameCount
 NetworkGameClientLoadStatus=Waiting for network: %lld seconds elapsed (maximum wait time: %d seconds)
 NetworkGameServerLoadStatus=Waiting for network: %lld seconds elapsed (maximum wait time: %d seconds)

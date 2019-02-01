@@ -1,8 +1,4 @@
 ; This is the main Glest localization file (INI format)
-;
-; Your contributions are welcome. Please ensure you agree to the terms of the
-; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.glest.org
 
 3dArt=3 boyutlu sanat
 3dAnd2dArt=3 Boyutlu ve 2 Boyutlu sanat
@@ -303,21 +299,23 @@ MaxUnitCount=En çok birim sayısı
 MeetingPoint=Toplanma Noktası
 Glest3d2dProgramming=Glest 3B/2B+Programlama
 GlestProgramming=Glest Programlama
-MGBuildDateTime=Yapı Tarih/Zamanı
-MGGameCountry=Ülke
-MGGameStatus=Durum
-MGGameTitle=Başlık
-MGGameSlots=Yuvalar
-MGGameSlotsFull=Tam Oyun
-MGGameIP=Sunucu IP Adresleri
-MGGameStatus0=Oyuncuları kabul etme
-MGGameStatus1=Oyun tamam,başlatma bekleniyor
-MGGameStatus2=Oyun sürüyor
-MGGameStatus3=Oyun bitti
-MGJoinGameSlots=Oyuna Katıl
-MGPlatform=Düzlem
-MGVersion=Sürüm
+BuildDateTime=Yapı Tarih/Zamanı
+GameCountry=Ülke
+GameStatus=Durum
+GameTitle=Başlık
+GameSlots=Yuvalar
+GameSlotsFull=Tam Oyun
+GameIP=Sunucu IP Adresleri
+GameStatus0=Oyuncuları kabul etme
+GameStatus1=Oyun tamam,başlatma bekleniyor
+GameStatus2=Oyun sürüyor
+GameStatus3=Oyun bitti
+JoinGameSlots=Oyuna Katıl
+Platform=Düzlem
+Version=Sürüm
 Misc=Çeşitli
+
+ShowDevConsoleWin=Show developer console on Windows
 
 MismatchedFactions=Aşağıdaki gruplar uyumsuzsur:
 MismatchedFactionsMissing=(kayıp)
@@ -376,13 +374,9 @@ Move=Taşı
 MultiPlayer=Çoklu oyunculu:
 MusicVolume=Müzik Ses seviyesi:
 Network=Ağ
-NetworkCpuEasy=Ağ İşlemci Kolay
-NetworkCpu=Ağ İşlemcisi
-NetworkCpuUltra=Ağ işlemcisi ultra
-# NetworkCpuMega=Network Cpu Mega
-# NetworkFramePeriod=Network Send FrameCount
-# NetworkGameClientLoadStatus=Waiting for network: %lld seconds elapsed (maximum wait time: %d seconds)
-# NetworkGameServerLoadStatus=Waiting for network: %lld seconds elapsed (maximum wait time: %d seconds)
+NetworkFramePeriod=Network Send FrameCount
+NetworkGameClientLoadStatus=Waiting for network: %lld seconds elapsed (maximum wait time: %d seconds)
+NetworkGameServerLoadStatus=Waiting for network: %lld seconds elapsed (maximum wait time: %d seconds)
 NetworkGameStatusWaiting=Oyuncular bekleniyor: %s
 NetworkPauseGameForLaggedClients=Gecikmeli İstemciler İçin Duraklat
 NetworkSlotUnassignedErrorUI=Oyun başlatılamıyor.Bazı oyuncu(lar) oyun ağında yok!

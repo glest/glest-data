@@ -1,8 +1,4 @@
 ; This is the main Glest localization file (INI format)
-;
-; Your contributions are welcome. Please ensure you agree to the terms of the
-; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.glest.org
 
 3dArt=Arte 3D
 3dAnd2dArt=Arte 2D e 3D
@@ -303,21 +299,23 @@ MaxUnitCount=CConteggio Massimo delle Unità
 MeetingPoint=Punto d'Incontro
 Glest3d2dProgramming=Arte 2D/3D Glest + Programmazione
 GlestProgramming=Programmazione Glest
-MGBuildDateTime=Data/Tempo di Costruzione
-MGGameCountry=Nazione
-MGGameStatus=Stato della Partita
-MGGameTitle=Titolo della Partita
-MGGameSlots=Posti
-MGGameSlotsFull=Partita Piena
-MGGameIP=Indirizzo IP del Server
-MGGameStatus0=Accetto giocatori
-MGGameStatus1=Partita piena, inizio del gioco in attesa
-MGGameStatus2=Partita in corso
-MGGameStatus3=Partita conclusa
-MGJoinGameSlots=Unisciti
-MGPlatform=Piattaforma
-MGVersion=Versione
+BuildDateTime=Data/Tempo di Costruzione
+GameCountry=Nazione
+GameStatus=Stato della Partita
+GameTitle=Titolo della Partita
+GameSlots=Posti
+GameSlotsFull=Partita Piena
+GameIP=Indirizzo IP del Server
+GameStatus0=Accetto giocatori
+GameStatus1=Partita piena, inizio del gioco in attesa
+GameStatus2=Partita in corso
+GameStatus3=Partita conclusa
+JoinGameSlots=Unisciti
+Platform=Piattaforma
+Version=Versione
 Misc=Varie
+
+ShowDevConsoleWin=Show developer console on Windows
 
 MismatchedFactions=Le seguenti fazioni non sono compatibili:
 MismatchedFactionsMissing=(mancante)
@@ -376,10 +374,6 @@ Move=Muovi
 MultiPlayer=Multigiocatore:
 MusicVolume=Volume Musica:
 Network=Rete
-NetworkCpuEasy=CPU Rete Facile
-NetworkCpu=CPU Rete
-NetworkCpuUltra=CPU Rete Ultra
-NetworkCpuMega=CPU Rete Mega
 NetworkFramePeriod=Conteggio dei frame inviati alla rete
 NetworkGameClientLoadStatus=Attesa per il network: %lld secondi trascorsi (tempo massimo di attesa: %d secondi)
 NetworkGameServerLoadStatus=In attesa per il network: %lld secondi trascorsi (tempo massimo di attesa:%d secondi)

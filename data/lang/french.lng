@@ -1,8 +1,4 @@
 ; This is the main Glest localization file (INI format)
-;
-; Your contributions are welcome. Please ensure you agree to the terms of the
-; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.glest.org
 
 3dArt=Art 3D
 3dAnd2dArt=Art 3D et 2D
@@ -303,21 +299,23 @@ MaxUnitCount=Nombre d'unités Max
 MeetingPoint=Point de rencontre
 Glest3d2dProgramming=Programmation Glest + 2D/3D
 GlestProgramming=Programmation Glest
-MGBuildDateTime=Date de compilation
-MGGameCountry=Pays
-MGGameStatus=Etat du jeu
-MGGameTitle=Titre de la partie
-MGGameSlots=Places
-MGGameSlotsFull=Partie pleine
-MGGameIP=Adresse IP du serveur
-MGGameStatus0=En attente de joueurs
-MGGameStatus1=Jeu plein, démarrage
-MGGameStatus2=Jeu en cours
-MGGameStatus3=Jeu fini
-MGJoinGameSlots=Rejoindre la partie
-MGPlatform=Plateforme
-MGVersion=Version du jeu
+BuildDateTime=Date de compilation
+GameCountry=Pays
+GameStatus=Etat du jeu
+GameTitle=Titre de la partie
+GameSlots=Places
+GameSlotsFull=Partie pleine
+GameIP=Adresse IP du serveur
+GameStatus0=En attente de joueurs
+GameStatus1=Jeu plein, démarrage
+GameStatus2=Jeu en cours
+GameStatus3=Jeu fini
+JoinGameSlots=Rejoindre la partie
+Platform=Plateforme
+Version=Version du jeu
 Misc=Divers
+
+ShowDevConsoleWin=Show developer console on Windows
 
 MismatchedFactions=Les races suivantes ont des versions incompatibles
 MismatchedFactionsMissing=(manquant)
@@ -376,10 +374,6 @@ Move=Déplacement
 MultiPlayer=Multijoueur:
 MusicVolume=Volume Musique :
 Network=Réseau
-NetworkCpuEasy=CPU Réseau (Facile)
-NetworkCpu=CPU Réseau
-NetworkCpuUltra=CPU Réseau (Psycho)
-NetworkCpuMega=CPU Réseau (Dur)
 NetworkFramePeriod=Réseau Envoi FPS
 NetworkGameClientLoadStatus=En attente du réseau : %lld secondes (attente maximum : %d secondes)
 NetworkGameServerLoadStatus=En attente du réseau : %lld secondes (attente maximum : %d secondes)

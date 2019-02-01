@@ -1,8 +1,4 @@
 ﻿; This is the main Glest localization file (INI format)
-;
-; Your contributions are welcome. Please ensure you agree to the terms of the
-; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.glest.org
 
 3dArt=ߘ߃ ߞߎ߬ߛߊ߲߬ߧߊ
 3dAnd2dArt=ߘ߃ ߣߌ߫ ߘ߂ ߞߎ߬ߛߊ߲߬ߧߊ
@@ -303,21 +299,23 @@ MaxUnitCount=ߓߍ߲߬ߒ߬ߞߋ߬ߟߋ߲߬ߡߊ ߖߊ߬ߕߋ ߛߊ߲ߘߐߕߊ
 MeetingPoint=ߢߐ߲߯ߓߍ߲ ߦߙߐ
 Glest3d2dProgramming=ߡߋߜ߭ߊߜ߭ߟߌߛ ߘ߃\\ߘ߂ ߢߍߥߟߊߦߊߟߌ
 GlestProgramming=ߡߋߜ߭ߊߜ߭ߟߌߛ ߢߍߥߟߊߦߊߟߌ
-MGBuildDateTime=ߟߐ߬ߟߌ߬ ߕߎߡߊ
-MGGameCountry=ߖߡߊ߬ߣߊ
-MGGameStatus=ߕߏߟߏ߲ ߟߌ߬ߤߟߊ
-MGGameTitle=ߛߟߊߟߊ
-MGGameSlots=ߦߙߐ ߟߎ߬
-MGGameSlotsFull=ߕߏߟߏ߲߫ ߘߝߊߣߍ߲
-MGGameIP=ߛߐߘߊ߮ ߟߊ߫ ߓߟߐߟߐ߫ ߝߐߞߊ߲ ߛߊ߲߬ߓߊ߬ߕߐ߮
-MGGameStatus0=ߕߏߟߏ߲ߠߊ ߟߎ߬ ߡߊߞߐ߬ߣߐ߲߬ߓߊ߮
-MGGameStatus1=ߕߏߟߏ߲߫ ߘߝߊߣߍ߲߸ ߘߊߡߌߣߊߟߌ
-MGGameStatus2=ߛߋ߲߬ߠߊ߬ ߕߏߟߏ߲
-MGGameStatus3=ߕߏߟߏ߲߫ ߓߊ߲ߣߍ߲
-MGJoinGameSlots=ߕߏߟߏ߲ ߡߊߜߍ߲߫
-MGPlatform=ߝߘߏ߬ߓߊ߬ߘߊ
-MGVersion=ߕߏߟߏ߲ ߓߐߞߏ
+BuildDateTime=ߟߐ߬ߟߌ߬ ߕߎߡߊ
+GameCountry=ߖߡߊ߬ߣߊ
+GameStatus=ߕߏߟߏ߲ ߟߌ߬ߤߟߊ
+GameTitle=ߛߟߊߟߊ
+GameSlots=ߦߙߐ ߟߎ߬
+GameSlotsFull=ߕߏߟߏ߲߫ ߘߝߊߣߍ߲
+GameIP=ߛߐߘߊ߮ ߟߊ߫ ߓߟߐߟߐ߫ ߝߐߞߊ߲ ߛߊ߲߬ߓߊ߬ߕߐ߮
+GameStatus0=ߕߏߟߏ߲ߠߊ ߟߎ߬ ߡߊߞߐ߬ߣߐ߲߬ߓߊ߮
+GameStatus1=ߕߏߟߏ߲߫ ߘߝߊߣߍ߲߸ ߘߊߡߌߣߊߟߌ
+GameStatus2=ߛߋ߲߬ߠߊ߬ ߕߏߟߏ߲
+GameStatus3=ߕߏߟߏ߲߫ ߓߊ߲ߣߍ߲
+JoinGameSlots=ߕߏߟߏ߲ ߡߊߜߍ߲߫
+Platform=ߝߘߏ߬ߓߊ߬ߘߊ
+Version=ߕߏߟߏ߲ ߓߐߞߏ
 Misc=ߓߐߢߐ߲߯ߡߊ
+
+ShowDevConsoleWin=Show developer console on Windows
 
 MismatchedFactions=ߛߌߦߊ ߢߌ߲߬ ߠߎ߬ ߓߘߊ߫ ߝߎ߬ߕߎ߲߬ߕߌ ߞߍ߫:
 MismatchedFactionsMissing=(ߖߊ߲߬ߠߌ)
@@ -376,10 +374,6 @@ Move=ߊ߬ ߟߊߡߊ߰ߡߊ߰
 MultiPlayer=ߞߙߎߕߏߟߏ߲ߠߊ
 MusicVolume=ߘߏ߲߬ߞߟߌ ߞߊߓߋ:
 Network=ߞߙߏ߬ߝߏ
-NetworkCpuEasy=ߕ.ߕ ߞߙߏ߬ߝߏ (ߣߐ߰ߡߊ߲)
-NetworkCpu=ߕ.ߕ ߞߙߏ߬ߝߏ
-NetworkCpuUltra=ߕ.ߕ ߞߙߏ߬ߝߏ ߢߝߍߕߊ
-NetworkCpuMega=ߕ.ߕ ߞߙߏ߬ߝߏ ߓߟߋ߬ߓߟߋ
 NetworkFramePeriod=ߞߙߏ߬ߝߏ ߦߋ߫ ߡߊ߬ߘߏ߲ߖߊ߬ߕߋ ߟߊߕߊ߯ ߟߊ߫ ߟߋ߬
 NetworkGameClientLoadStatus=ߞߙߏ߬ߝߏ ߡߊߞߐ߬ߣߐ߲ ߌߘߐ߫: ߝߌߟߊ߲߫ %lld (ߡߊ߬ߞߐ߬ߣߐ߲߬ߠߌ߲ ߞߐߘߊ߲ ߦߋ߫ ߝߌߟߊ߲߫: %d)
 NetworkGameServerLoadStatus=ߞߙߏ߬ߝߏ ߡߊߞߐ߬ߣߐ߲ ߌߘߐ߫: ߝߌߟߊ߲߫ %lld (ߡߊ߬ߞߐ߬ߣߐ߲߬ߠߌ߲ ߞߐߘߊ߲ ߦߋ߫ ߝߌߟߊ߲߫: %d)

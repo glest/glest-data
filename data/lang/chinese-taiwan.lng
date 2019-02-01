@@ -1,8 +1,4 @@
 ﻿; This is the main Glest localization file (INI format)
-;
-; Your contributions are welcome. Please ensure you agree to the terms of the
-; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.glest.org
 
 3dArt=3D藝術
 3dAnd2dArt=3D和2D藝術
@@ -303,21 +299,23 @@ MaxUnitCount=最大部隊數量
 MeetingPoint=集合點
 Glest3d2dProgramming=3D/2D程式設計
 GlestProgramming=程式設計
-MGBuildDateTime=建立日期/時間
-MGGameCountry=國家
-MGGameStatus=游戲狀態
-MGGameTitle=場景
-MGGameSlots=連線量
-MGGameSlotsFull=滿員
-MGGameIP=IP位址
-MGGameStatus0=接受玩家
-MGGameStatus1=游戲滿員，暫停新要求
-MGGameStatus2=游戲進行中
-MGGameStatus3=游戲完成
-MGJoinGameSlots=目前連線量
-MGPlatform=平台
-MGVersion=版本
+BuildDateTime=建立日期/時間
+GameCountry=國家
+GameStatus=游戲狀態
+GameTitle=場景
+GameSlots=連線量
+GameSlotsFull=滿員
+GameIP=IP位址
+GameStatus0=接受玩家
+GameStatus1=游戲滿員，暫停新要求
+GameStatus2=游戲進行中
+GameStatus3=游戲完成
+JoinGameSlots=目前連線量
+Platform=平台
+Version=版本
 Misc=其他
+
+ShowDevConsoleWin=Show developer console on Windows
 
 MismatchedFactions=下列種族不符合:
 MismatchedFactionsMissing=(丟失)
@@ -376,10 +374,6 @@ Move=移動
 MultiPlayer=多人模式
 MusicVolume=場景渲染音量
 Network=網路
-NetworkCpuEasy=網路 CPU 簡單
-NetworkCpu=網路 CPU
-NetworkCpuUltra=網路 Cpu 極端
-NetworkCpuMega=網路 Cpu 超級
 NetworkFramePeriod=網路幀數量
 NetworkGameClientLoadStatus=等待網路:%lld秒已過(最大等待時間:%d秒)
 NetworkGameServerLoadStatus=等待網路:%lld秒已過(最大等待時間:%d秒)

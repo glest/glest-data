@@ -1,8 +1,4 @@
 ; This is the main Glest localization file (INI format)
-;
-; Your contributions are welcome. Please ensure you agree to the terms of the
-; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.glest.org
 
 3dArt=Grafică 3D
 3dAnd2dArt=Grafică 3D și 2D
@@ -303,21 +299,23 @@ MaxUnitCount=Total Maxim de Unități
 MeetingPoint=Punct de Întâlnire
 Glest3d2dProgramming=Glest 3D/2D+Programare
 GlestProgramming=Programare Glest
-MGBuildDateTime=Data/Ora de Creare
-MGGameCountry=țara
-MGGameStatus=Status
-MGGameTitle=Titlu
-MGGameSlots=Sloturi
-MGGameSlotsFull=Joc Plin
-MGGameIP=Adrese IP Server
-MGGameStatus0=Acceptare jucători
-MGGameStatus1=Joc plin, pornirea jocului în așteptare
-MGGameStatus2=Joc în progres
-MGGameStatus3=Joc finalizat
-MGJoinGameSlots=Alăturare în Joc
-MGPlatform=Platformă
-MGVersion=Versiune
+BuildDateTime=Data/Ora de Creare
+GameCountry=țara
+GameStatus=Status
+GameTitle=Titlu
+GameSlots=Sloturi
+GameSlotsFull=Joc Plin
+GameIP=Adrese IP Server
+GameStatus0=Acceptare jucători
+GameStatus1=Joc plin, pornirea jocului în așteptare
+GameStatus2=Joc în progres
+GameStatus3=Joc finalizat
+JoinGameSlots=Alăturare în Joc
+Platform=Platformă
+Version=Versiune
 Misc=Diverse
+
+ShowDevConsoleWin=Show developer console on Windows
 
 MismatchedFactions=Următoarele facțiuni sunt sunt nepotrivite:
 MismatchedFactionsMissing=(lipsește)
@@ -376,10 +374,6 @@ Move=Miscă
 MultiPlayer=Cu mai mulți jucători:
 MusicVolume=Volum Muzică:
 Network=Rețea
-NetworkCpuEasy=CPU de Rețea Ușor
-NetworkCpu=CPU Rețea
-NetworkCpuUltra=CPU de Rețea Ultra
-NetworkCpuMega=CPU de Rețea Mega
 NetworkFramePeriod=Rețeaua Trimite SumăCadre
 NetworkGameClientLoadStatus=Se așteaptă rețeaua: %lld secunde trecute (timp max de așteptare: %d secunde)
 NetworkGameServerLoadStatus=Se așteaptă rețeaua: %lld secunde trecute (timp max de așteptare: %d secunde)

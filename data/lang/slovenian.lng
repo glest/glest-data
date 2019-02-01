@@ -1,8 +1,4 @@
 ; This is the main Glest localization file (INI format)
-;
-; Your contributions are welcome. Please ensure you agree to the terms of the
-; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.glest.org
 
 3dArt=Art 3D
 3dAnd2dArt=Art 2D in 3D
@@ -303,21 +299,23 @@ MaxUnitCount=Največje število enot
 MeetingPoint=Kraj srečanja
 Glest3d2dProgramming=Art 2D/3D Glest + Programiranje
 GlestProgramming=Programiranje Glest
-MGBuildDateTime=Datum/ura builda
-MGGameCountry=Država
-MGGameStatus=Status igre
-MGGameTitle=Naslov igre
-MGGameSlots=Prostor
-MGGameSlotsFull=Igra je zapolnjena
-MGGameIP=IP naslov strežnika
-MGGameStatus0=Sprejemanje igralcev
-MGGameStatus1=Igra je zapolnjena, čakanje na začetek igre
-MGGameStatus2=Igra že poteka
-MGGameStatus3=Igra je zaključena
-MGJoinGameSlots=Pridruži se
-MGPlatform=Platforma
-MGVersion=Verzija
+BuildDateTime=Datum/ura builda
+GameCountry=Država
+GameStatus=Status igre
+GameTitle=Naslov igre
+GameSlots=Prostor
+GameSlotsFull=Igra je zapolnjena
+GameIP=IP naslov strežnika
+GameStatus0=Sprejemanje igralcev
+GameStatus1=Igra je zapolnjena, čakanje na začetek igre
+GameStatus2=Igra že poteka
+GameStatus3=Igra je zaključena
+JoinGameSlots=Pridruži se
+Platform=Platforma
+Version=Verzija
 Misc=Ostalo
+
+ShowDevConsoleWin=Show developer console on Windows
 
 MismatchedFactions=Sledeče frakcije niso kompatibiline:
 MismatchedFactionsMissing=(manjka)
@@ -376,10 +374,6 @@ Move=Premakni
 MultiPlayer=Večigralstvo:
 MusicVolume=Glasnost glasbe:
 Network=Mreža
-NetworkCpuEasy=Mrežni Lahek CPE
-NetworkCpu=Mrežni CPE
-NetworkCpuUltra=Mrežni Ultra CPE
-NetworkCpuMega=Mrežni Mega CPE
 NetworkFramePeriod=Število okvirjev poslanih na mrežo
 NetworkGameClientLoadStatus=Čakanje na mrežo: %lld sekund preteklo (rok čakanja: %d secondi)
 NetworkGameServerLoadStatus=Čakanje na mrežo: %lld sekund preteklo (rok čakanja:%d secondi)

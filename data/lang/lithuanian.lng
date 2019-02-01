@@ -1,8 +1,4 @@
 ; This is the main Glest localization file (INI format)
-;
-; Your contributions are welcome. Please ensure you agree to the terms of the
-; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.glest.org
 
 3dArt=3D kūryba
 3dAnd2dArt=3D ir 2D kūryba
@@ -303,21 +299,23 @@ MaxUnitCount=Didžiausias dalinių skaičius
 MeetingPoint=Susitikimo vieta
 Glest3d2dProgramming=Glest 3D/2D + Programavimas
 GlestProgramming=Programavimas
-MGBuildDateTime=Leidimo data/laikas
-MGGameCountry=Šalis
-MGGameStatus=Būsena
-MGGameTitle=Pavadinimas
-MGGameSlots=Laukeliai
-MGGameSlotsFull=Žaidimas pilnas
-MGGameIP=Serverio IP adresas
-MGGameStatus0=Priimami žaidėjai
-MGGameStatus1=Žaidimas pilnas, laukiama žaidimo pradžios
-MGGameStatus2=Vyksta žaidimas
-MGGameStatus3=Žaidimas baigtas
-MGJoinGameSlots=Prisijungti
-MGPlatform=Platforma
-MGVersion=Versija
+BuildDateTime=Leidimo data/laikas
+GameCountry=Šalis
+GameStatus=Būsena
+GameTitle=Pavadinimas
+GameSlots=Laukeliai
+GameSlotsFull=Žaidimas pilnas
+GameIP=Serverio IP adresas
+GameStatus0=Priimami žaidėjai
+GameStatus1=Žaidimas pilnas, laukiama žaidimo pradžios
+GameStatus2=Vyksta žaidimas
+GameStatus3=Žaidimas baigtas
+JoinGameSlots=Prisijungti
+Platform=Platforma
+Version=Versija
 Misc=Įvairūs
+
+ShowDevConsoleWin=Show developer console on Windows
 
 MismatchedFactions=Šios grupuotės skiriasi:
 MismatchedFactionsMissing=(trūkstamas)
@@ -376,10 +374,6 @@ MouseScrollsWorld=Kameros judinimas pele:
 MultiPlayer=Kelių žaidėjų:
 MusicVolume=Muzikos garsumas:
 Network=Tinklas
-NetworkCpuEasy=Tinklo Procesorius Lengva
-NetworkCpu=Tinklo Procesorius
-NetworkCpuUltra=Tinklo Procesorius Ultra
-NetworkCpuMega=Tinklo Procesorius Mega
 # NetworkFramePeriod=Network Send FrameCount
 NetworkGameClientLoadStatus=Laukiama tinklo: praėjo %lld sekundžių (maksimalus laukimo laikas: %d sekundžių)
 NetworkGameServerLoadStatus=Laukiama tinklo: praėjo %lld sekundžių (maksimalus laukimo laikas: %d sekundžių)

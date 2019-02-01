@@ -1,8 +1,4 @@
 ; This is the main Glest localization file (INI format)
-;
-; Your contributions are welcome. Please ensure you agree to the terms of the
-; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.glest.org
 
 3dArt=Arte 3D
 3dAnd2dArt=Arte 3D e 2D
@@ -303,21 +299,23 @@ MaxUnitCount=Máximo de Unidades
 MeetingPoint=Ponto de Encontro
 Glest3d2dProgramming=Glest 3D/2D+Programação
 GlestProgramming=Programação do Glest
-MGBuildDateTime=Data/Hora da Compilação
-MGGameCountry=País
-MGGameStatus=Status do Jogo
-MGGameTitle=Nome do Jogo
-MGGameSlots=Lugares
-MGGameSlotsFull=Jogo Cheio
-MGGameIP=IP do Servidor
-MGGameStatus0=Aceitando jogadores
-MGGameStatus1=Jogo cheio, mas não iniciado
-MGGameStatus2=Jogo em progresso
-MGGameStatus3=Jogo terminado
-MGJoinGameSlots=Entrar no Jogo
-MGPlatform=Platforma
-MGVersion=Versão do Jogo
+BuildDateTime=Data/Hora da Compilação
+GameCountry=País
+GameStatus=Status do Jogo
+GameTitle=Nome do Jogo
+GameSlots=Lugares
+GameSlotsFull=Jogo Cheio
+GameIP=IP do Servidor
+GameStatus0=Aceitando jogadores
+GameStatus1=Jogo cheio, mas não iniciado
+GameStatus2=Jogo em progresso
+GameStatus3=Jogo terminado
+JoinGameSlots=Entrar no Jogo
+Platform=Platforma
+Version=Versão do Jogo
 Misc=Display
+
+ShowDevConsoleWin=Show developer console on Windows
 
 MismatchedFactions=As seguintes facções estão diferentes:
 MismatchedFactionsMissing=(faltando)
@@ -376,10 +374,6 @@ Move=Mover
 MultiPlayer=Multijogador:
 MusicVolume=Volume da Música:
 Network=Rede
-NetworkCpuEasy=CPU Fácil em Rede
-NetworkCpu=CPU em Rede
-NetworkCpuUltra=CPU Ultra em Rede
-NetworkCpuMega=CPU Mega em Rede
 NetworkFramePeriod=Frames Enviadas pela Rede
 NetworkGameClientLoadStatus=Esperando pela rede: %lld segundos passados(espera máximo: %d segundos)
 NetworkGameServerLoadStatus=Esperando pela rede: %lld segundos passados(espera máximo: %d segundos)

@@ -1,8 +1,4 @@
 ﻿; This is the main Glest localization file (INI format)
-;
-; Your contributions are welcome. Please ensure you agree to the terms of the
-; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.glest.org
 
 3dArt=גרפיקת 3D
 3dAnd2dArt=גרפיקת דו ותלת מימד
@@ -303,21 +299,23 @@ MaxUnitCount=מקסימום יחידות
 MeetingPoint=נקודת מפגש
 Glest3d2dProgramming=Glest תלת/דו מימד + תיכנות
 GlestProgramming=תיכנות Glest
-MGBuildDateTime=בנה תאריך/שעה
-MGGameCountry=מדינה
-MGGameStatus=סטטוס
-MGGameTitle=כותרת
-MGGameSlots=מקומות
-MGGameSlotsFull=המשחק מלא
-MGGameIP=כתובת IP של השרת
-MGGameStatus0=מקבל שחקנים
-MGGameStatus1=המשחק מלא ויתחיל בקרוב
-MGGameStatus2=המשחק באמצע
-MGGameStatus3=המשחק נגמר
-MGJoinGameSlots=הצטרף למשחק
-MGPlatform=פלטפורמה
-MGVersion=גירסה
+BuildDateTime=בנה תאריך/שעה
+GameCountry=מדינה
+GameStatus=סטטוס
+GameTitle=כותרת
+GameSlots=מקומות
+GameSlotsFull=המשחק מלא
+GameIP=כתובת IP של השרת
+GameStatus0=מקבל שחקנים
+GameStatus1=המשחק מלא ויתחיל בקרוב
+GameStatus2=המשחק באמצע
+GameStatus3=המשחק נגמר
+JoinGameSlots=הצטרף למשחק
+Platform=פלטפורמה
+Version=גירסה
 Misc=שונות
+
+ShowDevConsoleWin=Show developer console on Windows
 
 MismatchedFactions=הגזעים הללו אינם תואמים:
 MismatchedFactionsMissing=(חסר)
@@ -376,10 +374,6 @@ Move=לך
 MultiPlayer=משתתפים:
 MusicVolume=עוצמת מוזיקה:
 Network=רשת
-NetworkCpuEasy=שחקן מחשב רשת רמה קלה
-NetworkCpu=שחקן מחשב רשת רמה רגילה
-NetworkCpuUltra=שחקן מחשב רשת רמה קשה
-NetworkCpuMega=שחקן מחשב רשת רמה קשה מאוד
 NetworkFramePeriod=סכום פריימים נשלח ברשת
 NetworkGameClientLoadStatus=מחכה לרשת: %lld שניות עברו (זמן המתנה מקסימלי: %d שניות)
 NetworkGameServerLoadStatus=מחכה לרשת: %lld שניות עברו (זמן המתנה מקסימלי: %d שניות)

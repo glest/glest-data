@@ -1,8 +1,4 @@
 ﻿; This is the main Glest localization file (INI format)
-;
-; Your contributions are welcome. Please ensure you agree to the terms of the
-; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.glest.org
 
 3dArt=3D アート
 3dAnd2dArt=3D と 2D アート
@@ -303,21 +299,23 @@ MaxUnitCount=ユニット数制限
 MeetingPoint=合流地点
 Glest3d2dProgramming=Glest 3D/2D+Programming
 GlestProgramming=Glest Programming
-MGBuildDateTime=Build Date/Time
-MGGameCountry=国籍
-MGGameStatus=状態
-MGGameTitle=題名
-MGGameSlots=スロット数
-MGGameSlotsFull=満員です
-MGGameIP=サーバーの IP アドレス
-MGGameStatus0=プレイヤーの参加待ち
-MGGameStatus1=満員, ゲームは開始していません
-MGGameStatus2=ゲーム開始中
-MGGameStatus3=ゲーム終了
-MGJoinGameSlots=ゲームに参加
-MGPlatform=プラットフォーム
-MGVersion=バージョン
+BuildDateTime=Build Date/Time
+GameCountry=国籍
+GameStatus=状態
+GameTitle=題名
+GameSlots=スロット数
+GameSlotsFull=満員です
+GameIP=サーバーの IP アドレス
+GameStatus0=プレイヤーの参加待ち
+GameStatus1=満員, ゲームは開始していません
+GameStatus2=ゲーム開始中
+GameStatus3=ゲーム終了
+JoinGameSlots=ゲームに参加
+Platform=プラットフォーム
+Version=バージョン
 Misc=その他
+
+ShowDevConsoleWin=Show developer console on Windows
 
 MismatchedFactions=次の勢力が一致しません:
 MismatchedFactionsMissing=(missing)
@@ -376,10 +374,6 @@ Move=移動
 MultiPlayer=マルチプレイヤー:
 MusicVolume=音楽音量:
 Network=ネットワーク
-NetworkCpuEasy=ネットワーク CPU 弱い
-NetworkCpu=ネットワーク CPU
-NetworkCpuUltra=ネットワーク Cpu 強い
-NetworkCpuMega=ネットワーク Cpu 超強い
 NetworkFramePeriod=Network Send FrameCount
 NetworkGameClientLoadStatus=ネットワーク待機中: %lld 秒経過 (最大待機時間: %d 秒)
 NetworkGameServerLoadStatus=ネットワーク待機中: %lld 秒経過 (最大待機時間: %d 秒)

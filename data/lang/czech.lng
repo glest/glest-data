@@ -1,8 +1,4 @@
 ; This is the main Glest localization file (INI format)
-;
-; Your contributions are welcome. Please ensure you agree to the terms of the
-; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.glest.org
 
 3dArt=3D grafika
 3dAnd2dArt=3D a 2D grafika
@@ -303,21 +299,23 @@ MaxUnitCount=Max. počet jednotek
 MeetingPoint=Potkávací místo
 Glest3d2dProgramming=3D/2D grafika a programování
 GlestProgramming=Programování
-MGBuildDateTime=Datum a čas sestavení
-MGGameCountry=Země
-MGGameStatus=Stav
-MGGameTitle=Jméno
-MGGameSlots=Sloty
-MGGameSlotsFull=Hra je plná
-MGGameIP=IP adresa serveru
-MGGameStatus0=Přijímá hráče
-MGGameStatus1=Hra je plná, čeká se na start
-MGGameStatus2=Hra běží
-MGGameStatus3=Hra je skončena
-MGJoinGameSlots=Přidat se do hry
-MGPlatform=Platforma
-MGVersion=Verze
+BuildDateTime=Datum a čas sestavení
+GameCountry=Země
+GameStatus=Stav
+GameTitle=Jméno
+GameSlots=Sloty
+GameSlotsFull=Hra je plná
+GameIP=IP adresa serveru
+GameStatus0=Přijímá hráče
+GameStatus1=Hra je plná, čeká se na start
+GameStatus2=Hra běží
+GameStatus3=Hra je skončena
+JoinGameSlots=Přidat se do hry
+Platform=Platforma
+Version=Verze
 Misc=Další
+
+ShowDevConsoleWin=Show developer console on Windows
 
 MismatchedFactions=Následující frakce jsou nevhodně zkombinované:
 MismatchedFactionsMissing=(chybí)
@@ -376,10 +374,6 @@ Move=Přesun
 MultiPlayer=Více hráčů:
 MusicVolume=Hlasitost hudby:
 Network=Síť
-NetworkCpuEasy=Síťové CPU Easy
-NetworkCpu=Síťové CPU
-NetworkCpuUltra=Síťové CPU Ultra
-NetworkCpuMega=Síťové CPU Mega
 NetworkFramePeriod=Síťový počet FPS
 NetworkGameClientLoadStatus=Čekání na síť: %lld sekund uplynulo (maximální čas čekání: %d sekund)
 NetworkGameServerLoadStatus=Čekání na síť: %lld sekund uplynulo (maximální čas čekání: %d sekund)

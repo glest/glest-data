@@ -1,8 +1,4 @@
 ; This is the main Glest localization file (INI format)
-;
-; Your contributions are welcome. Please ensure you agree to the terms of the
-; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.glest.org
 
 3dArt=3D kunst
 3dAnd2dArt=3D og 2D kunst
@@ -303,21 +299,23 @@ MaxUnitCount=Max enhedstal
 MeetingPoint=Mødested
 Glest3d2dProgramming=Glest 3D/2D+Programering
 GlestProgramming=Glest Programering
-MGBuildDateTime=Bygnings Dato/Tid
-MGGameCountry=Land
-MGGameStatus=Status
-MGGameTitle=Spil Titel
-MGGameSlots=Pladser
-MGGameSlotsFull=Spil er fuldt
-MGGameIP=Server IP Addresse
-MGGameStatus0=Acceptere spillere
-MGGameStatus1=Spillet er fuldt,Spilstarts afventes.
-MGGameStatus2=Spil igang
-MGGameStatus3=Spil afsluttet
-MGJoinGameSlots=Tilslut spil
-MGPlatform=Platform
-MGVersion=Spil Version
+BuildDateTime=Bygnings Dato/Tid
+GameCountry=Land
+GameStatus=Status
+GameTitle=Spil Titel
+GameSlots=Pladser
+GameSlotsFull=Spil er fuldt
+GameIP=Server IP Addresse
+GameStatus0=Acceptere spillere
+GameStatus1=Spillet er fuldt,Spilstarts afventes.
+GameStatus2=Spil igang
+GameStatus3=Spil afsluttet
+JoinGameSlots=Tilslut spil
+Platform=Platform
+Version=Spil Version
 Misc=Diverse
+
+ShowDevConsoleWin=Show developer console on Windows
 
 MismatchedFactions=Følgende faktioner er uens
 MismatchedFactionsMissing=(manlger)
@@ -376,10 +374,6 @@ Move=flyt
 MultiPlayer=Flere spillere
 MusicVolume=Musik styrke:
 Network=Åben
-NetworkCpuEasy=Netværk CPU Nem
-NetworkCpu=Netværk CPU
-NetworkCpuUltra=Netværk Cpu Ultra
-NetworkCpuMega=Netværk Cpu Mega
 NetworkFramePeriod=Netværk Send FrameCount
 NetworkGameClientLoadStatus=Venter på netværk spil klient: %lld Sekunder gået (Maximal ventetid: %d sekunder)
 NetworkGameServerLoadStatus=Venter på netværk spilserver: %lld Sekunder gået (Maximal ventetid: %d sekunder)

@@ -1,8 +1,4 @@
 ; This is the main Glest localization file (INI format)
-;
-; Your contributions are welcome. Please ensure you agree to the terms of the
-; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.glest.org
 
 3dArt=Đồ họa 3 chiều
 3dAnd2dArt=Đồ họa 3 và 2 chiều
@@ -303,21 +299,23 @@ MaxUnitCount=Số đơn vị tối đa
 MeetingPoint=Điểm hẹn gặp
 Glest3d2dProgramming=Glest 3D/2D+Programming
 GlestProgramming=Glest Programming
-MGBuildDateTime=Xây dựng ngày/thời gian
-MGGameCountry=quốc gia
-MGGameStatus=Trạng thái
-MGGameTitle=Tiêu đề
-MGGameSlots=Slots
-MGGameSlotsFull=Màn chơi đã đủ người
-MGGameIP=Địa chỉ IP máy chủ
-MGGameStatus0=Đang chấp nhận người chơi
-MGGameStatus1=Màn chơi đã đủ người, hãy đợi trong giây lát
-MGGameStatus2=Màn chơi đang diễn ra
-MGGameStatus3=Màn chơi đã kết thúc
-MGJoinGameSlots=Tham gia màn chơi
-MGPlatform=Nền tảng
-MGVersion=Phiên bản
+BuildDateTime=Xây dựng ngày/thời gian
+GameCountry=quốc gia
+GameStatus=Trạng thái
+GameTitle=Tiêu đề
+GameSlots=Slots
+GameSlotsFull=Màn chơi đã đủ người
+GameIP=Địa chỉ IP máy chủ
+GameStatus0=Đang chấp nhận người chơi
+GameStatus1=Màn chơi đã đủ người, hãy đợi trong giây lát
+GameStatus2=Màn chơi đang diễn ra
+GameStatus3=Màn chơi đã kết thúc
+JoinGameSlots=Tham gia màn chơi
+Platform=Nền tảng
+Version=Phiên bản
 Misc=Tổng hợp
+
+ShowDevConsoleWin=Show developer console on Windows
 
 MismatchedFactions=Phe sau đây không đúng kết quả truy vết:
 MismatchedFactionsMissing=(bị thiếu)
@@ -376,10 +374,6 @@ Move=Di chuyển
 MultiPlayer=Nhiều người chơi:
 MusicVolume=Âm lượng nhạc nền:
 Network=Network
-NetworkCpuEasy=Network CPU Easy
-NetworkCpu=Network CPU
-NetworkCpuUltra=Network Cpu Ultra
-NetworkCpuMega=Network Cpu Mega
 NetworkFramePeriod=Network Send FrameCount
 NetworkGameClientLoadStatus=Đợi phần chơi mạng: %lld giây đã qua (thời gian chời tối đa là: %d giây)
 NetworkGameServerLoadStatus=Đang đợi màn chơi Network: %lld giây đã qua (thời gian chờ tối đa: %d giây)

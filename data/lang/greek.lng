@@ -1,8 +1,4 @@
 ﻿; This is the main Glest localization file (INI format)
-;
-; Your contributions are welcome. Please ensure you agree to the terms of the
-; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.glest.org
 
 3dArt=3D τέχνη
 3dAnd2dArt=3D και 2D τέχνη
@@ -303,21 +299,23 @@ MaxUnitCount=Μέγιστος αριθμός ταυτόχρονης ύπαρξη
 MeetingPoint=Σημείο Συνάντησης
 Glest3d2dProgramming=Glest 3D/2D+Προγραμματισμός
 GlestProgramming=Glest Προγραμματισμός
-MGBuildDateTime=Ημέρα και ώρα κατασκευής
-MGGameCountry=Χώρα
-MGGameStatus=Κατάσταση
-MGGameTitle=Τίτλος
-MGGameSlots=Θέσεις
-MGGameSlotsFull=Γεμάτο Παιχνίδι
-MGGameIP=Διεύθυνση IP Διακομιστή
-MGGameStatus0=Δεχόμαστε παίκτες
-MGGameStatus1=Γεμάτο παιχνίδι, εν αναμονή έναρξης
-MGGameStatus2=Παιχνίδι σε εξέλιξη
-MGGameStatus3=Τελειωμένο παιχνίδι
-MGJoinGameSlots=Λάβε μέρος στο παιχνίδι
-MGPlatform=Πλατφόρμα
-MGVersion=Έκδοση
+BuildDateTime=Ημέρα και ώρα κατασκευής
+GameCountry=Χώρα
+GameStatus=Κατάσταση
+GameTitle=Τίτλος
+GameSlots=Θέσεις
+GameSlotsFull=Γεμάτο Παιχνίδι
+GameIP=Διεύθυνση IP Διακομιστή
+GameStatus0=Δεχόμαστε παίκτες
+GameStatus1=Γεμάτο παιχνίδι, εν αναμονή έναρξης
+GameStatus2=Παιχνίδι σε εξέλιξη
+GameStatus3=Τελειωμένο παιχνίδι
+JoinGameSlots=Λάβε μέρος στο παιχνίδι
+Platform=Πλατφόρμα
+Version=Έκδοση
 Misc=Διάφορα
+
+ShowDevConsoleWin=Show developer console on Windows
 
 MismatchedFactions=Οι ακόλουθες φυλές δεν ταιριάζουν:
 MismatchedFactionsMissing=(λείπει)
@@ -376,10 +374,6 @@ Move=Κίνηση
 MultiPlayer=Multiplayer:
 MusicVolume=Ένταση Μουσικής:
 Network=Διαδίκτυο
-NetworkCpuEasy=Διαδικτυακό CPU Εύκολο
-NetworkCpu=Διαδικτυακό CPU
-NetworkCpuUltra=Διαδικτυακό Cpu Ultra
-NetworkCpuMega=Διαδικτυακό Cpu Mega
 NetworkFramePeriod=Διαδικτυακή Αποστολή Μέτρησης Πλαισίων
 NetworkGameClientLoadStatus=Αναμονή για διαδίκτυο: %lld δευτερόλεπτα πέρασαν (μέγιστος χρόνος αναμονής: %d δευτερόλεπτα)
 NetworkGameServerLoadStatus=Αναμονή για διαδίκτυο: %lld δευτερόλεπτα πέρασαν (μέγιστος χρόνος αναμονής: %d δευτερόλεπτα)

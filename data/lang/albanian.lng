@@ -1,8 +1,4 @@
 ; This is the main Glest localization file (INI format)
-;
-; Your contributions are welcome. Please ensure you agree to the terms of the
-; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.glest.org
 
 3dArt=3D arti
 3dAnd2dArt=3D and 2D arti
@@ -303,21 +299,23 @@ MaxUnitCount=Numërimi maksimal i njësiteve
 MeetingPoint=Pika e takimit
 Glest3d2dProgramming=Glest 3D/2D+Programim
 GlestProgramming=Glest Programim
-MGBuildDateTime=Koha/Ora e lansimit
-MGGameCountry=shteti
-MGGameStatus=Statusi
-MGGameTitle=Titulli
-MGGameSlots=Vendet e lira
-MGGameSlotsFull=E mbushur
-MGGameIP=Server IP Address
-MGGameStatus0=Bashkangjitu
-MGGameStatus1=Loja ështe plot
-MGGameStatus2=Duke luajtur
-MGGameStatus3=Loja përfundoj
-MGJoinGameSlots=Hyrë në lojë
-MGPlatform=Platforma
-MGVersion=Verzioni
+BuildDateTime=Koha/Ora e lansimit
+GameCountry=shteti
+GameStatus=Statusi
+GameTitle=Titulli
+GameSlots=Vendet e lira
+GameSlotsFull=E mbushur
+GameIP=Server IP Address
+GameStatus0=Bashkangjitu
+GameStatus1=Loja ështe plot
+GameStatus2=Duke luajtur
+GameStatus3=Loja përfundoj
+JoinGameSlots=Hyrë në lojë
+Platform=Platforma
+Version=Verzioni
 Misc=Të ndryshme
+
+ShowDevConsoleWin=Show developer console on Windows
 
 MismatchedFactions=Keto grupe nuk përputhen:
 MismatchedFactionsMissing=(mungon)
@@ -376,10 +374,6 @@ Move=Leviz
 MultiPlayer=Multiplayer:
 MusicVolume=Zeri i muzikës:
 Network=Rrjeti
-NetworkCpuEasy=Rrjet CPU Lehtë
-NetworkCpu=Rrjet CPU
-NetworkCpuUltra=Rrjet CPU Ultra
-NetworkCpuMega=Rrjet CPU Mega
 NetworkFramePeriod=Network Send FrameCount
 NetworkGameClientLoadStatus=Waiting for network: %lld seconds elapsed (maximum wait time: %d seconds)
 NetworkGameServerLoadStatus=Waiting for network: %lld seconds elapsed (maximum wait time: %d seconds)

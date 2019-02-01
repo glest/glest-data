@@ -1,8 +1,4 @@
 ﻿; This is the main Glest localization file (INI format)
-;
-; Your contributions are welcome. Please ensure you agree to the terms of the
-; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.glest.org
 
 3dArt=فن ثلاثي الأبعاد
 3dAnd2dArt=فن ثلاثي وثنائي الأبعاد
@@ -303,21 +299,23 @@ MaxUnitCount=أقصى حد للوحدة
 MeetingPoint=نقطة تجميع
 Glest3d2dProgramming=Glest ثلاثي/ثنائي الأبعاد+برمجة
 GlestProgramming=برمجة Glest
-MGBuildDateTime=تاريخ/وقت البناء
-MGGameCountry=البلد
-MGGameStatus=الحالة
-MGGameTitle=العنوان
-MGGameSlots=الفتحات
-MGGameSlotsFull=اللعبة ممتلئة
-MGGameIP=عنوان IP الخادم
-MGGameStatus0=قبول اللاعبين
-MGGameStatus1=لعبة كاملة .ستبدىءلعبة
-MGGameStatus2=اللعبة في لتقدم\n
-MGGameStatus3=انتهت اللعبة
-MGJoinGameSlots=\nالانضمام لعبة
-MGPlatform=البيئة
-MGVersion=الإصدار
+BuildDateTime=تاريخ/وقت البناء
+GameCountry=البلد
+GameStatus=الحالة
+GameTitle=العنوان
+GameSlots=الفتحات
+GameSlotsFull=اللعبة ممتلئة
+GameIP=عنوان IP الخادم
+GameStatus0=قبول اللاعبين
+GameStatus1=لعبة كاملة .ستبدىءلعبة
+GameStatus2=اللعبة في لتقدم\n
+GameStatus3=انتهت اللعبة
+JoinGameSlots=\nالانضمام لعبة
+Platform=البيئة
+Version=الإصدار
 Misc=منوعات
+
+ShowDevConsoleWin=Show developer console on Windows
 
 MismatchedFactions=\n\nالفصائل التالية متطابقة:
 MismatchedFactionsMissing=المفقود
@@ -376,10 +374,6 @@ Move=تحريك
 MultiPlayer=متعدد اللاعبين
 MusicVolume=مستوى صوت الموسيقى
 Network=الشبكة
-NetworkCpuEasy=معالج شبكة سهل
-NetworkCpu=معالج شبكة
-NetworkCpuUltra=معالج شبكة فائق
-NetworkCpuMega=معالج شبكة ميجا
 NetworkFramePeriod=عدد الإطارات المرسلة في الشبكة
 NetworkGameClientLoadStatus=في انتظار الشبكة: %lld ثواني منقضية (الوقت الأقصى للإانتظار: %d ثانية)
 NetworkGameServerLoadStatus=في انتظار الشبكة: %lld ثواني منقضية (الوقت الأقصى للإانتظار: %d ثانية)

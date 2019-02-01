@@ -1,8 +1,4 @@
 ; This is the main Glest localization file (INI format)
-;
-; Your contributions are welcome. Please ensure you agree to the terms of the
-; contributors license (CC-BY-SA 3.0 Unported). Please also read this page in
-; its entirety before contributing: http://translate.glest.org
 
 3dArt=3D-kunst
 3dAnd2dArt=3D en 2D kunst
@@ -303,21 +299,23 @@ MaxUnitCount=Maximum eenheden
 MeetingPoint=Verzamelpunt
 Glest3d2dProgramming=Glest 3D/2D + Programmeren
 GlestProgramming=Glest Programmeren
-MGBuildDateTime=Build Datum/Tijd
-MGGameCountry=land
-MGGameStatus=Status
-MGGameTitle=Spelnaam
-MGGameSlots=Spelers
-MGGameSlotsFull=Maximum bereikt
-MGGameIP=IP-adres sever
-MGGameStatus0=Spelers welkom
-MGGameStatus1=Vol, wachten op begin van spel
-MGGameStatus2=Spel aan de gang
-MGGameStatus3=Spel afgelopen
-MGJoinGameSlots=Meespelen
-MGPlatform=Platform
-MGVersion=Versie
+BuildDateTime=Build Datum/Tijd
+GameCountry=land
+GameStatus=Status
+GameTitle=Spelnaam
+GameSlots=Spelers
+GameSlotsFull=Maximum bereikt
+GameIP=IP-adres sever
+GameStatus0=Spelers welkom
+GameStatus1=Vol, wachten op begin van spel
+GameStatus2=Spel aan de gang
+GameStatus3=Spel afgelopen
+JoinGameSlots=Meespelen
+Platform=Platform
+Version=Versie
 Misc=Overig
+
+ShowDevConsoleWin=Show developer console on Windows
 
 MismatchedFactions=De volgende Groeperingen komen niet overeen:
 MismatchedFactionsMissing=(missend)
@@ -376,10 +374,6 @@ Move=Verplaatsen
 MultiPlayer=Multiplayer:
 MusicVolume=Muziek-volume:
 Network=Netwerk
-NetworkCpuEasy=Netwerk-CPU Gemakkelijk
-NetworkCpu=Netwerk-CPU
-NetworkCpuUltra=Netwerk-CPU Moeilijk
-NetworkCpuMega=Netwerk-CPU Extreem
 NetworkFramePeriod=Network Send FrameCount
 NetworkGameClientLoadStatus=Wachten op network... al %lld seconden aan het wachten (maximum wachttijd: %d seconden)
 NetworkGameServerLoadStatus=Wachten op network... al %lld seconden aan het wachten (maximum wachttijd: %d seconden)
