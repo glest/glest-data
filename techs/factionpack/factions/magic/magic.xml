@@ -18,7 +18,7 @@
 	</starting-units>
 	<music value="true" path="music/music_magic.ogg"/>
 	<flat-particle-positions value="true"/>
-	<!--ai-behavior>
+	<ai-behavior>
 		<worker-units/>
 		<warrior-units>
 			<unit name="daemon" minimum="4"/>
@@ -44,5 +44,5 @@
 			<static type-name="MinStaticResourceCount" value="30"/>
 			<static type-name="MinWorkerAttackersHarvesting" value="35"/>
 		</static-values>
-	</ai-behavior-->
+	</ai-behavior>
 </faction>
