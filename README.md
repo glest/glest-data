@@ -43,7 +43,7 @@ Include the following information:
 ```
 --validate-techtrees=x=purgeunused=purgeduplicates=gitdelete=hideduplicates
                      	Where x is a comma-delimited list of techtrees to validate.
-                     	glest --validate-techtrees=factionpack,vbros_pack_5
+                     	glest --validate-techtrees=glestpack,vbros_pack_5
 --validate-factions=x=purgeunused=purgeduplicates=hideduplicates
                      	Where x is a comma-delimited list of factions to validate.
                      	    --validate-techtrees

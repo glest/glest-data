@@ -9,7 +9,7 @@
 	</players>
 	<map value="valley_of_death"/>
 	<tileset value="spring"/>
-	<tech-tree value="factionpack"/>
+	<tech-tree value="glestpack"/>
 	<default-resources value="false"/>
 	<default-units value="false"/>
 	<default-victory-conditions value="false"/>

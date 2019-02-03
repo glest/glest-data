@@ -13,7 +13,7 @@
 	</players>
 	<map value="eight_gradient"/>
 	<tileset value="mediterran"/>
-	<tech-tree value="factionpack"/>
+	<tech-tree value="glestpack"/>
 	<default-resources value="false"/>
 	<default-units value="false"/>
 	<default-victory-conditions value="false"/>

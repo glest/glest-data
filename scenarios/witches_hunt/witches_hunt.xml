@@ -27,7 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	</players>
 	<map value="Witches_Hunt"/>
 	<tileset value="dark_forest"/>
-	<tech-tree value="factionpack"/>
+	<tech-tree value="glestpack"/>
 	<default-resources value="false"/>
 	<default-units value="false"/>
 	<fog-of-war value="true"/>

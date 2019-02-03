@@ -7,12 +7,12 @@ Credit and THANKS :
 models worker, hunter, stonegolem, cow, swordman, guard from Glest
 
 Archmage und Tucho      for model spearmen        from Forum
-Archmage		for model guard-axeman    from FactionPack-1.1
+Archmage		for model guard-axeman    from GlestPack-1.1
 madmanntis              for model worker(shovel)  from Woodsmen-Mod
 ElimiNator CC-BY-SA     for model sorcerer        from Ultrapack(DarkKnights)
 John.d.h.  CC-BY-SA     for model hound           from Solunar-Mod(Moon)
 
-most sounds from the units are from FactionPack (Tech, Magic, Egypts)
+most sounds from the units are from GlestPack (Tech, Magic, Egypts)
 
 Tiger
 wciow

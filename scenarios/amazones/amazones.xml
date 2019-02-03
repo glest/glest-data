@@ -9,7 +9,7 @@
 	</players>
 	<map value="in_the_forest"/>
 	<tileset value="forest"/>
-	<tech-tree value="factionpack"/>
+	<tech-tree value="glestpack"/>
 	<default-resources value="false"/>
 	<default-units value="false"/>
 	<default-victory-conditions value="false"/>

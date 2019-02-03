@@ -16,7 +16,7 @@ Official thread of the mod at Glest board(www.glest.org)
 http://glest.org/glest_board/index.php?topic=6103.0
 
 Currently this mod works properly only in Glest.
-This faction is magitech and factionpack compatible.
+This faction is magitech and glestpack compatible.
 
 Licensing: I am placing this mod under Creative Commons CC-BY-NC-SA license. This means you can share it anyway you want, as long as it is non-commercial and goes under the same license and the author is creditted somewhere.
 

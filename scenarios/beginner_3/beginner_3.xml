@@ -9,7 +9,7 @@
 	</players>
 	<map value="swamp_of_sorrow"/>
 	<tileset value="autumn"/>
-	<tech-tree value="factionpack"/>
+	<tech-tree value="glestpack"/>
 	<default-resources value="true"/>
 	<default-units value="true"/>
 	<default-victory-conditions value="true"/>

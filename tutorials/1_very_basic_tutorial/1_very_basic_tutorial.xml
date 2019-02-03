@@ -9,7 +9,7 @@
 	</players>
 	<map value="conflict"/>
 	<tileset value="evergreen"/>
-	<tech-tree value="factionpack"/>
+	<tech-tree value="glestpack"/>
 	<default-resources value="true"/>
 	<default-units value="false"/>
 	<default-victory-conditions value="false"/>

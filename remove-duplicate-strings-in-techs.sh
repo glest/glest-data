@@ -1,6 +1,6 @@
 #!/bin/sh
 # Use this script to remove duplicate lines from default language files in tech trees,
-# e.g. factionpack_default.lng. Basically script is usefull only (once) with freshly produced
+# e.g. glestpack_default.lng. Basically script is usefull only (once) with freshly produced
 # default lng (--translate-techtrees=x).
 #
 # How to use: Execute this script with one parameter, which should be an absolute path
