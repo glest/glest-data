@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=玩家 %s 成功下载科技树 %s
 DataMissingTechtreeFailDownload=玩家 %s 下载科技树 %s 失败，CURL 版本 %s
 Deaths=死亡
 Defaults=默认值
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=失败
 Deleting=正在删除
 Description=描述

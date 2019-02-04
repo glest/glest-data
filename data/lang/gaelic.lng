@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=Cluicheadair: %s, CHAIDH leis a' chraobh thei
 DataMissingTechtreeFailDownload=Cluicheadair: %s, DH'FHÀILLIG luchdadh a-nuas na craoibhe teicneolais: [%s] a' cleachdadh an tionndadh [%s] aig CURL
 Deaths=Air chall
 Defaults=Bun-roghainn
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=Ruaig
 Deleting=Ga sguabadh às
 Description=Tuairisgeul

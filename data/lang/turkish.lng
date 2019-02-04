@@ -105,6 +105,7 @@ DataMissingMapSuccessDownload=Oyuncu: %sharita başarıyla indirildi: %s
 # DataMissingTechtreeFailDownload=Player: %s FAILED to download the techtree: [%s] using CURL version [%s]
 Deaths=Ölümler
 Defaults=Varsayılan
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=Yenil
 Deleting=Siliniyor
 Description=Açıklama

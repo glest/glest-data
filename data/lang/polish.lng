@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=%s SKUTECZNIE pobrał(a) drzewo technologii: 
 DataMissingTechtreeFailDownload=%s NIE ZDOŁAŁ(a) pobrać drzewa technologii: [%s] > z pomocą CURL [%s]
 Deaths=Jednostek zginęło
 Defaults=Domyślne
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=Porażka
 Deleting=Usuwanie
 Description=Opis

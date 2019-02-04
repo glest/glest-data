@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=Người chơi: %s đã tải thành công te
 DataMissingTechtreeFailDownload=Người chơi: %s đã thất bại trong việc tải techtree: [%s] sử dụng phiên bản CURL [%s]
 Deaths=Số lượng chết
 Defaults=Mặc định
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=Đánh bại
 Deleting=Đang xóa
 Description=Mô tả

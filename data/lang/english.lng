@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=Player: %s SUCCESSFULLY downloaded the techtr
 DataMissingTechtreeFailDownload=Player: %s FAILED to download the techtree: [%s] using CURL version [%s]
 Deaths=Deaths
 Defaults=Defaults
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=Defeat
 Deleting=Deleting
 Description=Description

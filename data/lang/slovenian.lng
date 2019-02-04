@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=Igralec: %s je USPEŠNO prenesel tehnološko 
 DataMissingTechtreeFailDownload=Igralec: %s je NEUSPEŠNO prenesel tehnološko drevo: [%s] z uporabo CURL verzije [%s]
 Deaths=Mrtvi
 Defaults=Privzeto
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=Poraz
 Deleting=Preklic
 Description=Opis

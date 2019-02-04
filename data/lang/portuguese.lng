@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=O jogador: %s baixou, COM SUCESSO, a árvore 
 DataMissingTechtreeFailDownload=O jogador: %s FALHOU ao baixar a árvore tecnológica: [%s] usando o CURL versão [%s]
 Deaths=Mortos
 Defaults=Padrões
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=Derrota
 Deleting=Deletando
 # Description=Description

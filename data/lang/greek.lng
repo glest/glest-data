@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=Ο παίχτης: %s ΕΠΙΤΥΧΙΑ μετ
 DataMissingTechtreeFailDownload=Ο παίκτης: %s ΑΠΟΤΥΧΙΑ μεταφόρτωσης του techtree: [%s] χρησιμοποιώντας CURL έκδοσης [%s]
 Deaths=Θάνατοι
 Defaults=Προεπιλογές
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=Ήττα
 Deleting=Διαγραφή
 Description=Περιγραφή

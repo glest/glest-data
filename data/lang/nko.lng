@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=ߕߏߟߏ߲ߠߊ: %s ߓߘߊ߫ ߛߋߒߞߏߟߊߘ�
 DataMissingTechtreeFailDownload=ߕߏߟߏ߲ߠߊ %s ߓߘߊ߫ ߞߢߊ߬ ߛߋߒߞߏߟߊߘߐߦߊ߫ ߦߙߌ ߟߊߖߌ߰ ߟߊ߫: [%s] ߛߘߌ߬ߜߋ߲ ߓߐߞߏ ߡߊߝߟߍ߫ [%s]
 Deaths=ߛߊ߬ߦߊ
 Defaults=ߖߏߣߡߊ
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=ߓߋ߭
 Deleting=ߖߐ߬ߛߌ߬ߟߌ
 Description=ߡߊ߲߬ߞߕߎ

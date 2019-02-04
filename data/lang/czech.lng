@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=Hráč '%s' ÚSPĚŠNĚ stáhnul technologick
 DataMissingTechtreeFailDownload=Hráči '%s' se NEPODAŘILO stáhnout technologický strom '%s' za použití CURL verze [%s]
 Deaths=Smrti
 Defaults=Výchozí
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=Prohra
 Deleting=Vymazávání
 Description=Popis

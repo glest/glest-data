@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=Spieler %s lud erfolgreich den Techtree %s he
 DataMissingTechtreeFailDownload=Spieler %s konnte den Techtree [%s] NICHT herunterladen (CURL version [%s])
 Deaths=Tote
 Defaults=Standardsetup
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=Verloren
 Deleting=löschen
 Description=Beschreibung

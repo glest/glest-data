@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=Žaidėjas: %s SĖKMINGAI atsisiuntė technol
 DataMissingTechtreeFailDownload=Žaidėjui: %s NEPAVYKO atsisiųsti technologijų medžio: [%s] naudojant CURL versiją [%s]
 Deaths=Mirčių
 Defaults=Numatyti
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=Žlugimas
 Deleting=Šalinama
 Description=Aprašymas

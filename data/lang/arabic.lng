@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=اللاعب: %s نجح في تحميل نو�
 DataMissingTechtreeFailDownload=اللاعب: %s فشل في تحميل نوع اللعبة: [%s] باستخدام CURL الإصدار [%s]
 Deaths=وفيات
 Defaults=افتراضية
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=هزم
 Deleting=يحذف
 Description=وصف

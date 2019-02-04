@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=%s nomli o‘yinchi texnologik daraxtni yukla
 DataMissingTechtreeFailDownload=%s nomli foydalanuvchi [%s] texnologik daraxtini [%s] CURL versiyadan foydalanib yuklab ololmadi
 Deaths=O‘limlar soni
 Defaults=Standart
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=Mag‘lubiyat
 Deleting=O‘chirish
 Description=Ta'rifi

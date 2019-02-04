@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=Игрок: %s УСПЕШНО загрузи�
 DataMissingTechtreeFailDownload=Игрок: %s НЕ СМОГ загрузить цивилизации: [%s], используя CURL версии [%s]
 Deaths=Смертей
 Defaults=По умолчанию
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=Поражение
 Deleting=Удаление
 Description=Описание

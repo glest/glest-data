@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=Speler %s heeft de techtree %s SUCCESSVOL ged
 DataMissingTechtreeFailDownload=Speler %s's download van techtree [%s] is GEFAALD. (cURL-versie: [%s])
 Deaths=Doden
 Defaults=Standaard
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=Verslagen
 Deleting=Verwijderen
 Description=Beschrijving

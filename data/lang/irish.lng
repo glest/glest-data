@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=Imreoir: D'éirigh le %s an crann teicneolaí
 DataMissingTechtreeFailDownload=Imreoir: Theip ar %s an crann teic a íoslódáil: [%s] ag úsáid leagan [%s] de CURL
 Deaths=Básanna
 Defaults=Réamhshocruithe
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=Briseadh ort
 Deleting=Scriosadh
 Description=Cur Síos

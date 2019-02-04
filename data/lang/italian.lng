@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=Il tentativo da parte del Giocatore: %s di sc
 DataMissingTechtreeFailDownload=Il tentativo del Giocatore: %s nello scaricare l'Albero Tecnologico: [%s] using CURL version [%s] è FALLITO
 Deaths=Morti
 Defaults=Default
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=Sconfitta
 Deleting=Cancellazione
 Description=Descrizione

@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=Le joueur %s a RÉUSSI à télécharger l'arb
 DataMissingTechtreeFailDownload=Le joueur %s a ÉCHOUÉ à télécharger l'arbre des technologies %s : version de CURL [%s]
 Deaths=Décès
 Defaults=Par Défaut
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=Défaite
 Deleting=Suppression
 Description=Description

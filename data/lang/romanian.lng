@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=Jucătorul: %s a descărcat cu SUCCES techtre
 DataMissingTechtreeFailDownload=Jucătorul: %s a EȘUAT la descărcarea techtree-ul: [%s] folosind versiunea CURL [%s]
 Deaths=Ucideri
 Defaults=Implicite
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=Înfrângeri
 Deleting=Ștergere
 Description=Descriere

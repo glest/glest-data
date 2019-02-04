@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=Player: %s はテックツリーのダウン�
 DataMissingTechtreeFailDownload=Player: %s はテックツリーのダウンロードに失敗しました: [%s] using CURL version [%s]
 Deaths=死亡数
 Defaults=標準
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=敗北
 Deleting=削除
 Description=説明

@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=Spiller: %s har sucessfyldt overført teknotr
 DataMissingTechtreeFailDownload=Spiller: %s Teknotræ overførsel fejlede: [%s] using CURL version [%s]
 Deaths=Døde
 Defaults=Standarder
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=Nederlag
 Deleting=Sletter
 Description=Beskrivelse

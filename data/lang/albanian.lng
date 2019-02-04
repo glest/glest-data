@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=Lojtari: %s shkarkoj me SUKSES techtree: %s
 DataMissingTechtreeFailDownload=Lojtari: %s DESHTOJ te shkarkoj techtree: [%s] duke perdorur verzionin e CURL [%s]
 Deaths=Vdekjet
 Defaults=Parazgjedhjet
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=Humbje
 Deleting=Duke e fshire
 Description=Pershkrimi

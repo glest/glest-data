@@ -105,6 +105,7 @@ DataMissingTechtreeSuccessDownload=השחקן: %s הצליח להוריד את �
 DataMissingTechtreeFailDownload=השחקן: %s נכשל בלהוריד את ההרחבה: [%s] על ידי CURL גירסה [%s]
 Deaths=אבידות
 Defaults=ברירת מחדל
+DefaultActionOnRightClick=Default action on right-click is attack
 Defeat=הפסיד
 Deleting=מוחק
 Description=תיאור
