@@ -120,7 +120,7 @@ CommandName_research_ibis=odkrycie ptaka ibis\n('Research ibis')
 CommandName_get_power_of_ra=odkrycie mocy Ra\n('Research power of Ra')
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_indian=Indianie
+FactionName_natives=Nativesie
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_advanced_iron=zaawansowane Żelazo ('Advanced iron')
@@ -132,7 +132,7 @@ UpgradeTypeName_training_field=plac treningowy ('Training field')
 ; -------------------------------------
 UnitTypeName_archer=Łucznik ('Archer')
 ; -------------------------------------
-UnitTypeName_axe_indian=indianin z toporem\n('Axe indian')
+UnitTypeName_axe_natives=nativesin z toporem\n('Axe natives')
 ; -------------------------------------
 UnitTypeName_axe_thrower=miotacz toporów\n('Axe thrower')
 ; -------------------------------------
@@ -173,7 +173,7 @@ CommandName_research_bull_food=odkrycie karmy dla byków\n('Research bull food')
 ; -------------------------------------
 UnitTypeName_round_tent=okrągły namiot\n('Round tent')
 ; --------------------
-CommandName_produce_axe_indian=produkcja indianina z toporem\n('Produce axe indian')
+CommandName_produce_axe_natives=produkcja nativesina z toporem\n('Produce axe natives')
 CommandName_produce_axe_thrower=produkcja miotacza toporów\n('Produce axe thrower')
 CommandName_produce_fire_archer=produkcja ognistego Łucznika\n('Produce fire archer')
 CommandName_create_training_field=tworzenie placu treningowego\n('Create training field')
@@ -388,7 +388,7 @@ CommandName_airattack=atak celu powietrznego\n('To attack air')
 UnitTypeName_wild_sow=dzika locha ('Wild sow')
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_persian=Persowie
+FactionName_persians=Persowie
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_corn_and_wicker=kukurydza i wikliny ('Corn and wicker')

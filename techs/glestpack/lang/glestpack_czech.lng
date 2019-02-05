@@ -120,7 +120,7 @@ CommandName_research_ibis=výzkum ibise
 CommandName_get_power_of_ra=získat sílu od Rea
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_indian=indiáni
+FactionName_natives=indiáni
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_advanced_iron=pokročilé železo
@@ -132,7 +132,7 @@ UpgradeTypeName_training_field=výcvikové pole
 ; -------------------------------------
 UnitTypeName_archer=lučištník
 ; -------------------------------------
-UnitTypeName_axe_indian=indián se sekerou
+UnitTypeName_axe_natives=indián se sekerou
 ; -------------------------------------
 UnitTypeName_axe_thrower=vrhač seker
 ; -------------------------------------
@@ -173,7 +173,7 @@ CommandName_research_bull_food=vývoj býčí potravy
 ; -------------------------------------
 UnitTypeName_round_tent=kruhový stan
 ; --------------------
-CommandName_produce_axe_indian=produkovat indiána se sekerou
+CommandName_produce_axe_natives=produkovat indiána se sekerou
 CommandName_produce_axe_thrower=produkovat vrhače seker
 CommandName_produce_fire_archer=produkovat požárního lučištníka
 CommandName_create_training_field=vytvořit výcvikové pole
@@ -388,7 +388,7 @@ CommandName_airattack=vzdušný útok
 UnitTypeName_wild_sow=divoká svině
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_persian=peršané
+FactionName_persians=peršané
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_corn_and_wicker=kukuřice a proutí

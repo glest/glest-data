@@ -120,7 +120,7 @@ CommandName_research_ibis=procurar íbis
 CommandName_get_power_of_ra=conseguir poder do Rá
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_indian=Índios
+FactionName_natives=Índios
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_advanced_iron=ferro avançado
@@ -132,7 +132,7 @@ UpgradeTypeName_training_field=campo de treinamento
 ; -------------------------------------
 UnitTypeName_archer=Arqueiro
 ; -------------------------------------
-UnitTypeName_axe_indian=Ameríndio
+UnitTypeName_axe_natives=Ameríndio
 ; -------------------------------------
 UnitTypeName_axe_thrower=Cherokee
 ; -------------------------------------
@@ -173,7 +173,7 @@ CommandName_research_bull_food=Procurar Carne Bovina
 ; -------------------------------------
 UnitTypeName_round_tent=Oca
 ; --------------------
-CommandName_produce_axe_indian=produzir Ameríndio
+CommandName_produce_axe_natives=produzir Ameríndio
 CommandName_produce_axe_thrower=produzir Cherokee
 CommandName_produce_fire_archer=produzir Arqueiro de fogo
 CommandName_create_training_field=criar campo de treinamento
@@ -388,7 +388,7 @@ CommandName_airattack=ataque aério\n
 UnitTypeName_wild_sow=Touro selvagem
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_persian=Persas
+FactionName_persians=Persas
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_corn_and_wicker=milho e vime

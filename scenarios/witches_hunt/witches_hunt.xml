@@ -21,9 +21,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 		<player control="cpu-mega" faction="tech" team="2"/>
 		<player control="cpu-mega" faction="egypt" team="2"/>
 		<player control="cpu-mega" faction="magic" team="2"/>
-		<player control="cpu-mega" faction="indian" team="2"/>
+		<player control="cpu-mega" faction="natives" team="2"/>
 		<player control="cpu-mega" faction="tech" team="2"/>
-		<player control="cpu-mega" faction="indian" team="2"/>
+		<player control="cpu-mega" faction="natives" team="2"/>
 	</players>
 	<map value="Witches_Hunt"/>
 	<tileset value="dark_forest"/>

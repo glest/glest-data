@@ -13,7 +13,7 @@ Welcome=Witaj w samouczku do gry Glest.
 
 FirstThing=Widok: Aby ustawić widoczny obszar przesuń wskaźnik myszy do krawędzi ekranu/ lub użyj strzałek na klawiaturze./ Możesz też kliknąć lewym klawiszem myszy na minimapie (lewy górny róg ekranu).
 
-WillBeUsingIndian=W tej części samouczka dowodzisz Indianami. Indianie w walce generalnie wykorzystują łuczników i wojowników z prymitywną bronią.
+WillBeUsingNatives=W tej części samouczka dowodzisz Nativesami. Nativesie w walce generalnie wykorzystują łuczników i wojowników z prymitywną bronią.
 
 NeedWorkers=Na początku potrzebujemy robotnika ('Worker'). Aby jednego zdobyć kliknij lewym klawiszem myszy na Głównym Tipi ('Main teepee') i rozpocznij trening robotnika używając komendy: 'Produkcja robotnika'/ ('Produce Worker') poprzez kliknięcie na ikonie robotnika.
 
@@ -46,7 +46,7 @@ HarvestGoldandStone3=Teraz zbieraj złoto i kamień aż do czasu gdy zdobędzies
 ;------------------------------------------Get Wood------------------------------------------
 
 HarvestGoldAndStoneDone=Teraz potrzebujesz nieco drewna ('Wood'). Aby go zdobyć użyj piątej ikony. Ta ikona również służy gromadzeniu surowców więc działa w analogiczny sposób jak poprzednia (od wydobywania złota i kamienia).
-ResourceInformation=Warto wiedzieć, że: Indianie głównie potrzebują złota i drewna.
+ResourceInformation=Warto wiedzieć, że: Nativesie głównie potrzebują złota i drewna.
 GetWood=Zamiast używać ikony możesz też zaznaczyć robotnika i kliknąć prawym klawiszem myszy na surowcu który ma on zacząć zbierać (jeśli wskażesz surowiec poprawnie, pojawi się żółta strzałka). Teraz zbieraj drewno ('Wood') do czasu aż będziesz go mieć 550 sztuk.
 
 ;------------------------------------------Learn meeting Point and build a tent-------------------------------------------------------

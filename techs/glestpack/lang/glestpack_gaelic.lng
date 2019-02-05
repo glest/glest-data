@@ -120,7 +120,7 @@ CommandName_research_ibis=rannsaich ìbis
 CommandName_get_power_of_ra=faigh cumhachd Rà
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_indian=Innseanaich
+FactionName_natives=Innseanaich
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_advanced_iron=iarainn adhartach
@@ -132,7 +132,7 @@ UpgradeTypeName_training_field=raon trèanaidh
 ; -------------------------------------
 UnitTypeName_archer=boghadair
 ; -------------------------------------
-UnitTypeName_axe_indian=Innseanach tuaighe
+UnitTypeName_axe_natives=Innseanach tuaighe
 ; -------------------------------------
 UnitTypeName_axe_thrower=tilgeir tuaighe
 ; -------------------------------------
@@ -173,7 +173,7 @@ CommandName_research_bull_food=rannsaich biadh sprèidhe
 ; -------------------------------------
 UnitTypeName_round_tent=teanta cruinn
 ; --------------------
-CommandName_produce_axe_indian=dèan tùsanach tuaighe
+CommandName_produce_axe_natives=dèan tùsanach tuaighe
 CommandName_produce_axe_thrower=dèan tilgeir tuaighe
 CommandName_produce_fire_archer=dèan boghadair teine
 CommandName_create_training_field=tog raon trèanaidh
@@ -388,7 +388,7 @@ CommandName_airattack=ionnsaigh adhair
 UnitTypeName_wild_sow=cràin-fhiadhaich
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_persian=Pearsaich
+FactionName_persians=Pearsaich
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_corn_and_wicker=slat is arbhar

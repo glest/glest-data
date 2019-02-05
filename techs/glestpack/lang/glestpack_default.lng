@@ -120,7 +120,7 @@ CommandName_research_ibis=research ibis
 CommandName_get_power_of_ra=get power of ra
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_indian=indian
+FactionName_natives=natives
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_advanced_iron=advanced iron
@@ -132,7 +132,7 @@ UpgradeTypeName_training_field=training field
 ; -------------------------------------
 UnitTypeName_archer=archer
 ; -------------------------------------
-UnitTypeName_axe_indian=axe indian
+UnitTypeName_axe_natives=axe natives
 ; -------------------------------------
 UnitTypeName_axe_thrower=axe thrower
 ; -------------------------------------
@@ -173,7 +173,7 @@ CommandName_research_bull_food=research bull food
 ; -------------------------------------
 UnitTypeName_round_tent=round tent
 ; --------------------
-CommandName_produce_axe_indian=produce axe indian
+CommandName_produce_axe_natives=produce axe natives
 CommandName_produce_axe_thrower=produce axe thrower
 CommandName_produce_fire_archer=produce fire archer
 CommandName_create_training_field=create training field
@@ -388,7 +388,7 @@ CommandName_airattack=airattack
 UnitTypeName_wild_sow=wild sow
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_persian=persian
+FactionName_persians=persians
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_corn_and_wicker=corn and wicker

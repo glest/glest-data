@@ -120,7 +120,7 @@ CommandName_research_ibis=חקור_מגלן
 CommandName_get_power_of_ra=קבל את כוחו של רע
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_indian=אינדיאנים
+FactionName_natives=אינדיאנים
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_advanced_iron=ברזל_מתקדם
@@ -132,7 +132,7 @@ UpgradeTypeName_training_field=שדה_אימונים
 ; -------------------------------------
 UnitTypeName_archer=קשת
 ; -------------------------------------
-UnitTypeName_axe_indian=גרזן_אינדיאני
+UnitTypeName_axe_natives=גרזן_אינדיאני
 ; -------------------------------------
 UnitTypeName_axe_thrower=מטיל_גרזנים
 ; -------------------------------------
@@ -173,7 +173,7 @@ CommandName_research_bull_food=חקור_מזון_שוורים
 ; -------------------------------------
 UnitTypeName_round_tent=אוהל_מוקף
 ; --------------------
-CommandName_produce_axe_indian=מייצר_גרזן_אינדיאני
+CommandName_produce_axe_natives=מייצר_גרזן_אינדיאני
 CommandName_produce_axe_thrower=מייצר_מטיל_גרזנים
 CommandName_produce_fire_archer=מייצר_קשת_אש
 CommandName_create_training_field=מייצר_אזור_אימונים
@@ -388,7 +388,7 @@ CommandName_airattack=התקפה_אווירי
 UnitTypeName_wild_sow=חזיר_בר
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_persian=פרסים
+FactionName_persians=פרסים
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_corn_and_wicker=תירס_ומקלעת

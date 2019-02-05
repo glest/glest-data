@@ -120,7 +120,7 @@ CommandName_research_ibis=taighde ar ibis
 CommandName_get_power_of_ra=faigh cumhacht ra
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_indian=bundúchasach
+FactionName_natives=bundúchasach
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_advanced_iron=ardiarann
@@ -132,7 +132,7 @@ UpgradeTypeName_training_field=machaire traenála
 ; -------------------------------------
 UnitTypeName_archer=saighdeoir
 ; -------------------------------------
-UnitTypeName_axe_indian=tua bhundúchasach
+UnitTypeName_axe_natives=tua bhundúchasach
 ; -------------------------------------
 UnitTypeName_axe_thrower=caiteoir tuanna
 ; -------------------------------------
@@ -173,7 +173,7 @@ CommandName_research_bull_food=taighde ar bhia tairbh
 ; -------------------------------------
 UnitTypeName_round_tent=puball cruinn
 ; --------------------
-CommandName_produce_axe_indian=táirg tua bhundúchasach
+CommandName_produce_axe_natives=táirg tua bhundúchasach
 CommandName_produce_axe_thrower=táirg caiteoir tuanna
 CommandName_produce_fire_archer=táirg saighdeoir tine
 CommandName_create_training_field=cruthaigh machaire traenála
@@ -388,7 +388,7 @@ CommandName_airattack=ionsaí aeir
 UnitTypeName_wild_sow=cráin fhiáin
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_persian=peirseach
+FactionName_persians=peirseach
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_corn_and_wicker=arbhar agus caoladóireacht

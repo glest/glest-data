@@ -24,14 +24,14 @@ FactionControlForIndex0=7
 ResourceMultiplierIndex0=1
 FactionTeamForIndex0=0
 FactionStartLocationForIndex0=0
-FactionTypeNameForIndex0=indian
+FactionTypeNameForIndex0=natives
 FactionPlayerNameForIndex0=???
 
 FactionControlForIndex1=5
 ResourceMultiplierIndex1=1
 FactionTeamForIndex1=0
 FactionStartLocationForIndex1=1
-FactionTypeNameForIndex1=indian
+FactionTypeNameForIndex1=natives
 FactionPlayerNameForIndex1=???
 
 FactionControlForIndex2=1
@@ -45,14 +45,14 @@ FactionControlForIndex3=0
 ResourceMultiplierIndex3=1
 FactionTeamForIndex3=1
 FactionStartLocationForIndex3=3
-FactionTypeNameForIndex3=persian
+FactionTypeNameForIndex3=persians
 FactionPlayerNameForIndex3=???
 
 FactionControlForIndex4=0
 ResourceMultiplierIndex4=1
 FactionTeamForIndex4=0
 FactionStartLocationForIndex4=4
-FactionTypeNameForIndex4=persian
+FactionTypeNameForIndex4=persians
 FactionPlayerNameForIndex4=Closed
 
 FactionControlForIndex5=0

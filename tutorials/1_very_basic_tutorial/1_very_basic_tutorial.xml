@@ -2,7 +2,7 @@
 <scenario>
 	<difficulty value="0"/>
 	<players>
-		<player control="human" faction="indian" team="1"/>
+		<player control="human" faction="natives" team="1"/>
 		<player control="cpu" faction="magic" team="2"/>
 		<player control="closed"/>
 		<player control="closed"/>
@@ -20,7 +20,7 @@
 			createUnit('mage_tower', 1, startLocation(1))
 			showMessage('Welcome', 'GlestBasicTutorial')
 			showMessage('FirstThing', 'GlestBasicTutorial')
-			showMessage('WillBeUsingIndian', 'GlestBasicTutorial')
+			showMessage('WillBeUsingNatives', 'GlestBasicTutorial')
 			showMessage('NeedWorkers', 'Resources')
 			setDisplayText('ProduceWorker')
 			objective= 'produce_worker'

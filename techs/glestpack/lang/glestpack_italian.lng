@@ -120,7 +120,7 @@ CommandName_research_ibis=ricerca ibis
 CommandName_get_power_of_ra=ottieni il potere di ra
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_indian=indiano
+FactionName_natives=nativeso
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_advanced_iron=ferro avanzato
@@ -132,7 +132,7 @@ UpgradeTypeName_training_field=campo di allenamento
 ; -------------------------------------
 UnitTypeName_archer=arciere
 ; -------------------------------------
-UnitTypeName_axe_indian=indiano con ascia
+UnitTypeName_axe_natives=nativeso con ascia
 ; -------------------------------------
 UnitTypeName_axe_thrower=lanciatore di asce
 ; -------------------------------------
@@ -163,7 +163,7 @@ CommandName_research_stables=ricerca stalle
 ; -------------------------------------
 UnitTypeName_horseman=cavaliere
 ; -------------------------------------
-UnitTypeName_main_teepee=tenda indiana principale
+UnitTypeName_main_teepee=tenda nativesa principale
 ; --------------------
 CommandName_produce_worker=produci lavoratore
 ; -------------------------------------
@@ -173,7 +173,7 @@ CommandName_research_bull_food=ricerca carne di toro
 ; -------------------------------------
 UnitTypeName_round_tent=tenda rotonda
 ; --------------------
-CommandName_produce_axe_indian=produci indiano con ascia
+CommandName_produce_axe_natives=produci nativeso con ascia
 CommandName_produce_axe_thrower=produci lanciatore di ascia
 CommandName_produce_fire_archer=produci arciere con frecce infuocate
 CommandName_create_training_field=crea campo di allenamento
@@ -388,7 +388,7 @@ CommandName_airattack=attacco aereo
 UnitTypeName_wild_sow=scrofa selvatica
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_persian=persiano
+FactionName_persians=persianso
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_corn_and_wicker=corno e vimini

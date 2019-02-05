@@ -13,7 +13,7 @@ Welcome=Willkommen zur Glest-Einführung!
 
 FirstThing=Zur Ansicht: Du kannst den angezeigten Bereich verändern, indem du die Maus an den Bildschirmrand bewegst oder die Pfeiltasten benutzt. Auch per Linksklick auf die Übersichtskarte (oben links im Bild) kannst du die Ansicht neu positionieren.
 
-WillBeUsingIndian=In dieser Einführung kommandierst du den Indianer-Stamm (indian). Die Indianer kämpfen mit Bogenschützen und einfachen Waffen.
+WillBeUsingNatives=In dieser Einführung kommandierst du den Nativeser-Stamm (natives). Die Nativeser kämpfen mit Bogenschützen und einfachen Waffen.
 
 NeedWorkers=Als erstes benötigen wir einen Arbeiter (Worker). Wähle hierzu per linker Maustaste das Hauptzelt (Mainteepee) an und starte die Ausbildung des Arbeiters mit dem Kommando "Produce Worker", indem du auf sein Bild klickst.
 
@@ -46,7 +46,7 @@ HarvestGoldandStone3=Baue nun solange Gold und Stein (Stone) ab, bis du 600 Gold
 ;------------------------------------------Get Wood------------------------------------------
 
 HarvestGoldAndStoneDone=Jetzt brauchst du nur noch ein bisschen Holz (Wood). Um an Holz zu kommen, benutze das fünfte Kommando. Es ist auch ein "Sammel"-Kommando, d.h. du kannst es genauso benutzen wie das vierte Kommando.
-ResourceInformation=Bei den Indianern (Indian) braucht man grösstenteils Gold und Holz (Wood).
+ResourceInformation=Bei den Nativesern (Natives) braucht man grösstenteils Gold und Holz (Wood).
 GetWood=Man kann auch dieses Kommando abkürzen, indem man mit der rechten Maustaste auf die Ressource klickt. War dies erfolgreich, erscheint ein gelber Pfeil. Sammle nun 550 Holz (Wood).
 
 ;------------------------------------------Learn meeting Point and build a tent-------------------------------------------------------

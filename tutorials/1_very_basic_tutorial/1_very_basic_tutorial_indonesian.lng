@@ -13,7 +13,7 @@ Welcome=Selamat datang ke cara bermain dasar Glest.
 
 FirstThing=Tampilan: Untuk mengatur area yang terlihat, gerakkan mouse pointer Anda ke ujung layar Anda, atau gunakan tombol kursor. Cara lain untuk melakukan ini adalah dengan klik kiri pada peta (bagian kiri atas layar Anda).
 
-WillBeUsingIndian=Di perkenalan ini, Anda akan memerintah indian. Fraksi indian bertarung dengan pemanah dan senjata sederhana.
+WillBeUsingNatives=Di perkenalan ini, Anda akan memerintah natives. Fraksi natives bertarung dengan pemanah dan senjata sederhana.
 
 NeedWorkers=Pertama kita butuh seorang pekerja. Untuk mendapatnya, klik kiri pada Kemahutama dan mulai melatih pekerja Anda. Untuk melakukannya, gunakan perintah 'Hasilkan Pekerja' dengan mengklik pada ikon pekerja.
 
@@ -46,7 +46,7 @@ HarvestGoldandStone3=Sekarang gali emas dan batu sampai Anda memiliki total 600 
 ;------------------------------------------Get Wood------------------------------------------
 
 HarvestGoldAndStoneDone=Sekarang yang Anda butuhkan adalah sedikit kayu. Untuk mendapatnya, gunakan ikon perintah kelima. Ini juga sebuah perintah mengumpulkan jadi Anda dapat memakainya dengan cara yang sama dengan emas dan batu.
-ResourceInformation=Ngomong-ngomong, fraksi indian kebanyakan membutuhkan emas dan kayu.
+ResourceInformation=Ngomong-ngomong, fraksi natives kebanyakan membutuhkan emas dan kayu.
 GetWood=Sebagai bantuan lain. Anda dapat mempercepat perintah mengumpulkan apapun dengan memilih pekerja, lalu klik kanan ke sebuah lokasi dimana sumberdaya ini tersedia (jadi untuk kayu dalam hal ini). Jika hal ini berhasil dilakukan, sebuah panah kuning akan muncul. Sekarang kumpulkan kayu sampai Anda memiliki 550 kayu di penyimpanan.
 
 ;------------------------------------------Learn meeting Point and build a tent-------------------------------------------------------

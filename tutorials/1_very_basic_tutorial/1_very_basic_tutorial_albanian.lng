@@ -13,7 +13,7 @@ Welcome=Mire se vini ne tutorialin baze te Glest
 
 FirstThing=Shikimi: Per te e rregulluar zonen e dukshme, levizni miun ne cepat e ekranit ose perdorni shigjetat ne tastier. Nje menyre tjeter eshte te klikoni ne Harten e Vogel (lart-majtas ne ekran).
 
-WillBeUsingIndian=Ne kete mesim, ju komandoni Indianet. Fraksioni i Indianeve lufton me shigjetare dhe arme te thjeshta.
+WillBeUsingNatives=Ne kete mesim, ju komandoni Nativeset. Fraksioni i Nativeseve lufton me shigjetare dhe arme te thjeshta.
 
 NeedWorkers=Se pari na duhet nje Punetor. Per te e marre nje, klikoni me te majten e miut ne Maintipi (Ndertesa kryesore) dhe filloni te prodhoni nje punetor. Per te e bere ate klikoni ne ikonen 'Prodho Punetor' per te e dhene komanden.
 
@@ -46,7 +46,7 @@ HarvestGoldandStone3=Tash mbledhni Ari dhe Guri deri sate i beni 600 Ari dhe 550
 ;------------------------------------------Get Wood------------------------------------------
 
 HarvestGoldAndStoneDone=Tash ju duhet edhe pake Dru. Per te mbledhur Dru perdorni komanden e peste. Kjo gjithashtu eshte komande per te mbledhur sikur per Ari dhe Guri.
-ResourceInformation=Pasi qe ra fjala, fraksioni i Indianeve me se shumti i duhet Ari dhe Druri.
+ResourceInformation=Pasi qe ra fjala, fraksioni i Nativeseve me se shumti i duhet Ari dhe Druri.
 GetWood=Nje keshille tjeter, per te e bere kete proces me shpejt, klikoni mbi Punetore dhe pastaj me te djathten e miut klikoni ne vendin se ku deshironi te mbledhni Ari, Guri apo Dru. Ne raste te suksesit nje shigjete e verdhe do te paraqitet. Tash mbledhni Dru deri sa te i keni 550.
 
 ;------------------------------------------Learn meeting Point and build a tent-------------------------------------------------------

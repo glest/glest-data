@@ -12,8 +12,7 @@
     engine. It includes several
     factions, each one consisting of many 3d characters. The factions
     are loosely based on historical empires with added elements of
-    fantasy, such as mummies produced by Egyptian priests, Indian
-    shamans who summon thunderbirds for air assaults, and Norsemen who
+    fantasy, such as mummies produced by Egyptian priests, shamans who summon thunderbirds for air assaults, and Norsemen who
     can build flying valkries and "Thors". Start the game by harvesting
     natural resources, then use the cash to produce an army.
     Single-player mode against the CPU is also available.</p>
@@ -35,10 +34,10 @@
       <image>https://glest.github.io/docs/assets/screenshots/screen143.jpg</image>
     </screenshot>
   </screenshots>
-  <url type="homepage">https://glest.github.io/docs/</url>
+  <url type="homepage">https://glest.github.io</url>
   <url type="bugtracker">https://github.com/Glest/glest-source/issues</url>
   <url type="faq">http://faq.glest.org</url>
-  <url type="help">https://glest.github.io/docs/</url>
+  <url type="help">https://glest.github.io</url>
   <!--   <url type="donation">http://glest.org/donations</url> -->
   <!-- <url type="translate">http://translate.glest.org</url> -->
   <developer_name>The Glest Team</developer_name>

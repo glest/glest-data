@@ -4,7 +4,7 @@
 	<players>
 		<player control="cpu-ultra" faction="romans" team="9"/>
 		<player control="human" faction="tech" team="1"/>
-		<player control="network" faction="indian" team="2"/>
+		<player control="network" faction="natives" team="2"/>
 	</players>
 	<map value="island_siege"/>
 	<tileset value="forest"/>

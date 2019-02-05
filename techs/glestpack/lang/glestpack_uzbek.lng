@@ -120,7 +120,7 @@ CommandName_research_ibis=ibisni chiqarish
 CommandName_get_power_of_ra=Raning quvvatini olish
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_indian=hind
+FactionName_natives=hind
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_advanced_iron=qo‘shimcha temir
@@ -132,7 +132,7 @@ UpgradeTypeName_training_field=mashq qilish maydonchasi
 ; -------------------------------------
 UnitTypeName_archer=kamonboz
 ; -------------------------------------
-UnitTypeName_axe_indian=boltali hind
+UnitTypeName_axe_natives=boltali hind
 ; -------------------------------------
 UnitTypeName_axe_thrower=bolta otuvchi
 ; -------------------------------------
@@ -173,7 +173,7 @@ CommandName_research_bull_food=mol yemini tadqiq qilish
 ; -------------------------------------
 UnitTypeName_round_tent=aylana chodir
 ; --------------------
-CommandName_produce_axe_indian=hind boltabozini tarbiyalash
+CommandName_produce_axe_natives=hind boltabozini tarbiyalash
 CommandName_produce_axe_thrower=bolta otuvchini tarbiyalash
 CommandName_produce_fire_archer=olovli kamonbozni tarbiyalash
 CommandName_create_training_field=mashq maydonini yaratish
@@ -388,7 +388,7 @@ CommandName_airattack=havo hujumi
 UnitTypeName_wild_sow=yovoyi to‘ng‘iz
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_persian=fors
+FactionName_persians=fors
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_corn_and_wicker=makkajo‘xori va qamish

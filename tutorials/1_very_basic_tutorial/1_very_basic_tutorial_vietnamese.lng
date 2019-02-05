@@ -1,4 +1,4 @@
-TUTORIAL_NAME=#1 Hướng dẫn cơ bản
+﻿TUTORIAL_NAME=#1 Hướng dẫn cơ bản
 ;message headers
 GlestBasicTutorial=Hướng dẫn cơ bản
 WellDone=Đã hoàn tất!
@@ -13,7 +13,7 @@ Welcome=Chào mừng đến phần hướng dẫn cơ bản
 
 FirstThing=Xem: thiết lập các thông số về camera/góc nhìn của người chơi bằng cách di chuyển con trỏ chuột về phía bờ rìa của màn hình, hoặc sử dụng ngay chính con trỏ chuột. Một cách đơn giản hơn là click chuột trái vào bản đồ thu nhỏ(nằm ở phía bên trên góc phía trái của màn hình).
 
-WillBeUsingIndian=Trong phần giới thiêu này, bạn sẽ đóng vai trò là người chỉ huy dân da đỏ. Phe da đỏ sẽ chống lại những binh sĩ dùng cung tên cùng những vũ khí đơn giản.
+WillBeUsingNatives=Trong phần giới thiêu này, bạn sẽ đóng vai trò là người chỉ huy dân da đỏ. Phe da đỏ sẽ chống lại những binh sĩ dùng cung tên cùng những vũ khí đơn giản.
 
 NeedWorkers=Đầu tiên là việc thao tác đi lại. Để thao tác phần này, bạn click chuột trái vào Mainteepee và bắt đầu huấn luyện quân của mình. Để làm thế, sử dụng lệnh "produce worker" bằng cách click chuột vào biểu tượng của người thợ đó.
 

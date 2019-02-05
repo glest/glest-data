@@ -1,4 +1,4 @@
-; TechTree
+﻿; TechTree
 TechTreeName=究极包
 ; -------------------------------------
 ; Types of Armor
@@ -120,7 +120,7 @@ CommandName_research_ibis=研究不死鸟
 CommandName_get_power_of_ra=获得太阳神的力量
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_indian=印第安
+FactionName_natives=印第安
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_advanced_iron=高级钢铁
@@ -132,7 +132,7 @@ UpgradeTypeName_training_field=训练场
 ; -------------------------------------
 UnitTypeName_archer=弓箭手
 ; -------------------------------------
-UnitTypeName_axe_indian=印第安战斧兵
+UnitTypeName_axe_natives=印第安战斧兵
 ; -------------------------------------
 UnitTypeName_axe_thrower=掷斧兵
 ; -------------------------------------
@@ -173,7 +173,7 @@ CommandName_research_bull_food=研究牛饲料
 ; -------------------------------------
 UnitTypeName_round_tent=圆形帐篷
 ; --------------------
-CommandName_produce_axe_indian=生产印第安战斧兵
+CommandName_produce_axe_natives=生产印第安战斧兵
 CommandName_produce_axe_thrower=生产掷斧兵
 CommandName_produce_fire_archer=生产火箭射手
 CommandName_create_training_field=创建训练场
@@ -388,7 +388,7 @@ CommandName_airattack=对空攻击
 UnitTypeName_wild_sow=野猪
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_persian=波斯人
+FactionName_persians=波斯人
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_corn_and_wicker=玉米和藤条

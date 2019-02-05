@@ -3,7 +3,7 @@
 	<difficulty value="1"/>
 	<players>
 		<player control="cpu" faction="tech" team="1"/>
-		<player control="human" faction="persian" team="2"/>
+		<player control="human" faction="persians" team="2"/>
 		<player control="closed"/>
 		<player control="closed"/>
 	</players>
@@ -26,7 +26,7 @@
 			giveResource('stone', 1, 500)
 			giveResource('wood', 1, 500)
 			showMessage('Welcome', 'GlestAdvancedTutorial')
-			showMessage('PersianBrief', 'GlestAdvancedTutorial')
+			showMessage('PersiansBrief', 'GlestAdvancedTutorial')
 			showMessage('WorkerBrief', 'GlestAdvancedTutorial')
 			showMessage('m1', 'GlestAdvancedTutorial')
 			setDisplayText('o1')

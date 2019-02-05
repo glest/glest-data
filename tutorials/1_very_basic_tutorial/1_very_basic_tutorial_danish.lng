@@ -13,7 +13,7 @@ Welcome=Velkommen til Glest basiskursus.
 
 FirstThing=Udsigt: For at justere det synlige område, flyt din musemarkør til kanten af skærmen, eller brug piletasterne. En anden måde er at venstre-klikke på dit minimap (øverste venstre hjørne af skærmen).
 
-WillBeUsingIndian=I denne introduktion styrer du indianerne. Den indianske fraktion kæmper med bueskytter og simple våben.
+WillBeUsingNatives=I denne introduktion styrer du nativeserne. Den nativeske fraktion kæmper med bueskytter og simple våben.
 
 NeedWorkers=Først skal vi bruge en arbejder. Får at få en, venstre klik på Hovedtipien og start træningen af en arbejder. For at gøre dette skal du bruge 'Producer Arbejder'-kommandoen, ved at trykke på arbejder ikonet.
 
@@ -46,7 +46,7 @@ HarvestGoldandStone3=Grav nu efter guld og sten indtil du har i alt 600 guld og 
 ;------------------------------------------Get Wood------------------------------------------
 
 HarvestGoldAndStoneDone=Nu mangler du kun en smule træ. For at skaffe noget, brug det femte kommandoikon. Dette er også en indsamlingskommando, så du kan bruge den på samme måde som dem for guld og sten.
-ResourceInformation=I øvrigt har indianerfaktionen mest brug for guld og træ.
+ResourceInformation=I øvrigt har nativeserfaktionen mest brug for guld og træ.
 GetWood=Endnu et tip: Du kan bruge indsamlingskommandoen hurtigere ved at vælge din arbejde og derefter højre-klikke på den ressource du gerne vil indsamle, for at få arbejderen i gang. Du vil se en gul pil hvis du har gjort det korrekt. Indsaml nu træ indtil du har 550 lagret.
 
 ;------------------------------------------Learn meeting Point and build a tent-------------------------------------------------------

@@ -13,7 +13,7 @@ Welcome=Benvenuto al tutorial base di Glest.
 
 FirstThing=Visuale: Per spostare l'angolo della visuale muovi il puntatore del mouse sui bordi dello schermo, o usa i tasti cursore, puoi anche cliccare sulla mini mappa (in alto a sinistra sullo schermo).
 
-WillBeUsingIndian=In questa introduzione comanderai gli indiani. La fazione degli indiani combatte soprattutto con archi e armi semplici.
+WillBeUsingNatives=In questa introduzione comanderai gli nativesi. La fazione degli nativesi combatte soprattutto con archi e armi semplici.
 
 NeedWorkers=Per prima cosa abbiamo bisogno di un operaio. Per crearne fai click sinistro sul Grande Tepee, e clicca sull'icona dell'operaio.
 
@@ -46,7 +46,7 @@ HarvestGoldandStone3=Ora raccogli oro e pietra, finché non hai da parte 600 oro
 ;------------------------------------------Get Wood------------------------------------------
 
 HarvestGoldAndStoneDone=Adesso ti servirà un po' di legna. Per raccoglierla usa la quinta icona di comando. Questo comando funziona nella stessa maniera di quello per raccogliere oro e pietra.
-ResourceInformation=A proposito, la fazione indiana necessita per lo più di oro e legna.
+ResourceInformation=A proposito, la fazione nativesa necessita per lo più di oro e legna.
 GetWood=Una scorciatoia è di selezionare il tuo lavoratore e poi fare click con il destro sulla risorsa che vuoi raccogliere, in questo caso sugli alberi. In caso di successo apparirà una freccia gialla. Adesso accumula 550 legna.
 
 ;------------------------------------------Learn meeting Point and build a tent-------------------------------------------------------

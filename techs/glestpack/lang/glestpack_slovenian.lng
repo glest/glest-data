@@ -120,7 +120,7 @@ CommandName_research_ibis=razišči ibisa
 CommandName_get_power_of_ra=dobi silo Ra
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_indian=indijanci
+FactionName_natives=indijanci
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_advanced_iron=napredno železo
@@ -132,7 +132,7 @@ UpgradeTypeName_training_field=vadbišče
 ; -------------------------------------
 UnitTypeName_archer=lokostrelec
 ; -------------------------------------
-UnitTypeName_axe_indian=indijanska sekira
+UnitTypeName_axe_natives=indijanska sekira
 ; -------------------------------------
 UnitTypeName_axe_thrower=metalec sekir
 ; -------------------------------------
@@ -173,7 +173,7 @@ CommandName_research_bull_food=razišči bikovo hrano
 ; -------------------------------------
 UnitTypeName_round_tent=okrogli šotor
 ; --------------------
-CommandName_produce_axe_indian=naredi indijansko sekiro
+CommandName_produce_axe_natives=naredi indijansko sekiro
 CommandName_produce_axe_thrower=naredi metalca sekire
 CommandName_produce_fire_archer=naredi ognjenega lokostrelca
 CommandName_create_training_field=naredi vadbišče
@@ -388,7 +388,7 @@ CommandName_airattack=airattack
 UnitTypeName_wild_sow=merjasec
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_persian=perzijci
+FactionName_persians=perzijci
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_corn_and_wicker=koruza in vrbovje

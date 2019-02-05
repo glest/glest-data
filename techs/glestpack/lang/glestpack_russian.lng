@@ -120,7 +120,7 @@ CommandName_research_ibis=вывести ибиса
 CommandName_get_power_of_ra=получить власть ра
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_indian=индейцы
+FactionName_natives=индейцы
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_advanced_iron=железные сплавы
@@ -132,7 +132,7 @@ UpgradeTypeName_training_field=тренировочная площадка
 ; -------------------------------------
 UnitTypeName_archer=лучник
 ; -------------------------------------
-UnitTypeName_axe_indian=индеец с топором
+UnitTypeName_axe_natives=индеец с топором
 ; -------------------------------------
 UnitTypeName_axe_thrower=метатель топоров
 ; -------------------------------------
@@ -173,7 +173,7 @@ CommandName_research_bull_food=заготовить корма
 ; -------------------------------------
 UnitTypeName_round_tent=круглая палатка
 ; --------------------
-CommandName_produce_axe_indian=обучить индейца с топором
+CommandName_produce_axe_natives=обучить индейца с топором
 CommandName_produce_axe_thrower=обучить метателя топоров
 CommandName_produce_fire_archer=обучить стрелка огнём
 CommandName_create_training_field=обустроить тренировочную площадку
@@ -388,7 +388,7 @@ CommandName_airattack=воздушная атака
 UnitTypeName_wild_sow=дикая свинья
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_persian=персы
+FactionName_persians=персы
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_corn_and_wicker=кукурузный плетень

@@ -120,7 +120,7 @@ CommandName_research_ibis=onderzoek ibis
 CommandName_get_power_of_ra=krijg macht van ra
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_indian=indiaan
+FactionName_natives=indiaan
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_advanced_iron=geavanceerd ijzer
@@ -132,7 +132,7 @@ UpgradeTypeName_training_field=oefen veld
 ; -------------------------------------
 UnitTypeName_archer=boogschutter
 ; -------------------------------------
-UnitTypeName_axe_indian=bijl indiaan
+UnitTypeName_axe_natives=bijl indiaan
 ; -------------------------------------
 UnitTypeName_axe_thrower=bijl werper
 ; -------------------------------------
@@ -173,7 +173,7 @@ CommandName_research_bull_food=onderzoek stierenvoedsel
 ; -------------------------------------
 UnitTypeName_round_tent=ronde tent
 ; --------------------
-CommandName_produce_axe_indian=produceer bijl indiaan
+CommandName_produce_axe_natives=produceer bijl indiaan
 CommandName_produce_axe_thrower=produceeer vuurwerper
 CommandName_produce_fire_archer=produceer vuurboogschieter
 CommandName_create_training_field=creëer trainingsveld
@@ -388,7 +388,7 @@ CommandName_airattack=luchtaanval
 UnitTypeName_wild_sow=wilde zeug
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_persian=Pers
+FactionName_persians=Pers
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_corn_and_wicker=mais en riet

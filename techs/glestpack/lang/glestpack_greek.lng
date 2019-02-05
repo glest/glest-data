@@ -120,7 +120,7 @@ CommandName_research_ibis=έρευνα του ibis
 CommandName_get_power_of_ra=πάρτε δύναμη απο τον ra
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_indian=Ινδός
+FactionName_natives=Ινδός
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_advanced_iron=προηγμένο σίδερο
@@ -132,7 +132,7 @@ UpgradeTypeName_training_field=χώρος προπονησης
 ; -------------------------------------
 UnitTypeName_archer=τοξότης
 ; -------------------------------------
-UnitTypeName_axe_indian=τσεκούρι ινδικό
+UnitTypeName_axe_natives=τσεκούρι ινδικό
 ; -------------------------------------
 UnitTypeName_axe_thrower=τσεκούρι ρίπτη
 ; -------------------------------------
@@ -173,7 +173,7 @@ CommandName_research_bull_food=έρευνα τροφίμων ταύρου
 ; -------------------------------------
 UnitTypeName_round_tent=στρογγυλή σκηνή
 ; --------------------
-CommandName_produce_axe_indian=παραγωγή τσεκούρι Ινδικό
+CommandName_produce_axe_natives=παραγωγή τσεκούρι Ινδικό
 CommandName_produce_axe_thrower=παραγωγή τσεκούρι ρίπτη
 CommandName_produce_fire_archer=παραγωγή τοξότη φωτιάς
 CommandName_create_training_field=δημιουργία χώρου προπονησης
@@ -388,7 +388,7 @@ CommandName_airattack=εναέρια επίθεση
 UnitTypeName_wild_sow=άγρια γουρούνα
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_persian=περσικά
+FactionName_persians=περσικά
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_corn_and_wicker=καλαμπόκι και λυγαριά

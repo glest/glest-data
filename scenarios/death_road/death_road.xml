@@ -20,10 +20,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 		<player control="cpu" faction="magic" team="2"/>
 		<player control="cpu" faction="magic" team="2"/>
 		<player control="cpu" faction="tech" team="1"/>
-		<player control="cpu" faction="indian" team="3"/>
-		<player control="cpu" faction="indian" team="3"/>
-		<player control="cpu" faction="indian" team="3"/>
-		<player control="cpu" faction="indian" team="3"/>
+		<player control="cpu" faction="natives" team="3"/>
+		<player control="cpu" faction="natives" team="3"/>
+		<player control="cpu" faction="natives" team="3"/>
+		<player control="cpu" faction="natives" team="3"/>
 	</players>
 	<map value="Death_Road"/>
 	<tileset value="dark_forest"/>
@@ -138,10 +138,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 			createUnit('axe_thrower', 5, {startLocation(5)[1] - 1, startLocation(5)[2]})
 			createUnit('axe_thrower', 5, {startLocation(5)[1] + 1, startLocation(5)[2] + 1})
-			createUnit('axe_indian', 5, {startLocation(5)[1] - 2, startLocation(5)[2] - 2})
-			createUnit('axe_indian', 5, {startLocation(5)[1], startLocation(5)[2] - 2})
-			createUnit('axe_indian', 5, {startLocation(5)[1] + 2, startLocation(5)[2] - 1})
-			createUnit('axe_indian', 5, {startLocation(5)[1] + 4, startLocation(5)[2] - 1})
+			createUnit('axe_natives', 5, {startLocation(5)[1] - 2, startLocation(5)[2] - 2})
+			createUnit('axe_natives', 5, {startLocation(5)[1], startLocation(5)[2] - 2})
+			createUnit('axe_natives', 5, {startLocation(5)[1] + 2, startLocation(5)[2] - 1})
+			createUnit('axe_natives', 5, {startLocation(5)[1] + 4, startLocation(5)[2] - 1})
 
 			createUnit('archer', 6, startLocation(6))
 			createUnit('axe_thrower', 6, {startLocation(6)[1], startLocation(6)[2] - 2})

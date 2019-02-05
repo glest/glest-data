@@ -120,7 +120,7 @@ CommandName_research_scarab=mayıs böceği araştır
 CommandName_get_power_of_ra=ra'nın gücünü elde et
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_indian=kızılderili
+FactionName_natives=kızılderili
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_advanced_iron=gelişmiş demir
@@ -132,7 +132,7 @@ UpgradeTypeName_training_field=eğitim alanı
 ; -------------------------------------
 UnitTypeName_archer=okçu
 ; -------------------------------------
-UnitTypeName_axe_indian=baltalı kızılderili
+UnitTypeName_axe_natives=baltalı kızılderili
 ; -------------------------------------
 UnitTypeName_axe_thrower=balta sallayan
 ; -------------------------------------
@@ -173,7 +173,7 @@ CommandName_research_bull_food=boğa yemi araştır
 ; -------------------------------------
 UnitTypeName_round_tent=yuvarlak çadır
 ; --------------------
-CommandName_produce_axe_indian=baltalı kızılderili üret
+CommandName_produce_axe_natives=baltalı kızılderili üret
 CommandName_produce_axe_thrower=balta sallayan üret
 CommandName_produce_fire_archer=ateş okçusu üret
 CommandName_create_training_field=eğitim alanı oluştur
@@ -388,7 +388,7 @@ CommandName_airattack=hava saldırısı
 UnitTypeName_wild_sow=yaban domuzu
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_persian=farsça
+FactionName_persians=farsça
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_corn_and_wicker=mısır ve sepet

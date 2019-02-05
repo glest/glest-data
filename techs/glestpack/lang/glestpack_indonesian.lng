@@ -120,7 +120,7 @@ CommandName_research_ibis=riset ibis
 CommandName_get_power_of_ra=dapatkan kekuatan ra
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_indian=indian
+FactionName_natives=natives
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_advanced_iron=besi terdahulu
@@ -132,7 +132,7 @@ UpgradeTypeName_training_field=tempat latihan
 ; -------------------------------------
 UnitTypeName_archer=pemanah
 ; -------------------------------------
-UnitTypeName_axe_indian=indian berkapak
+UnitTypeName_axe_natives=natives berkapak
 ; -------------------------------------
 UnitTypeName_axe_thrower=pelempar kapak
 ; -------------------------------------
@@ -173,7 +173,7 @@ CommandName_research_bull_food=riset makanan banteng
 ; -------------------------------------
 UnitTypeName_round_tent=tenda bundar
 ; --------------------
-CommandName_produce_axe_indian=hasilkan indian berkapak
+CommandName_produce_axe_natives=hasilkan natives berkapak
 CommandName_produce_axe_thrower=hasilkan pelempar kapak
 CommandName_produce_fire_archer=hasilkan pemanah api
 CommandName_create_training_field=buat tempat latihan
@@ -388,7 +388,7 @@ CommandName_airattack=serangudara
 UnitTypeName_wild_sow=induk babi liar
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_persian=persia
+FactionName_persians=persia
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_corn_and_wicker=jagung dan anyaman

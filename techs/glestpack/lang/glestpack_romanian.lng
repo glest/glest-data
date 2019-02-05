@@ -120,7 +120,7 @@ CommandName_research_ibis=cercetare ibis
 CommandName_get_power_of_ra=obține puterea lui ra
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_indian=indian
+FactionName_natives=natives
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_advanced_iron=fier avansat
@@ -132,7 +132,7 @@ UpgradeTypeName_training_field=câmp antrenament
 ; -------------------------------------
 UnitTypeName_archer=arcaș
 ; -------------------------------------
-UnitTypeName_axe_indian=indian cu topor
+UnitTypeName_axe_natives=natives cu topor
 ; -------------------------------------
 UnitTypeName_axe_thrower=aruncător de topor
 ; -------------------------------------
@@ -173,7 +173,7 @@ CommandName_research_bull_food=studiează hrană vită
 ; -------------------------------------
 UnitTypeName_round_tent=cort rotund
 ; --------------------
-CommandName_produce_axe_indian=produ indian cu topor
+CommandName_produce_axe_natives=produ natives cu topor
 CommandName_produce_axe_thrower=produ aruncător de topor
 CommandName_produce_fire_archer=produ arcaș foc
 CommandName_create_training_field=crează câmp antrenament
@@ -388,7 +388,7 @@ CommandName_airattack=atac din aer
 UnitTypeName_wild_sow=scroafă sălbatică
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_persian=persan
+FactionName_persians=persan
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_corn_and_wicker=porumb și răchită

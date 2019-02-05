@@ -2,8 +2,8 @@
 <scenario>
 	<difficulty value="2"/>
 	<players>
-		<player control="human" faction="indian" team="1"/>
-		<player control="cpu-ultra"  faction="indian" team="1"/>
+		<player control="human" faction="natives" team="1"/>
+		<player control="cpu-ultra"  faction="natives" team="1"/>
 		<player control="cpu" faction="norsemen" team="3"/>
 		<player control="cpu-ultra" faction="norsemen" team="3"/>
 	</players>

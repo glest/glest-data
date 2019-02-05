@@ -120,7 +120,7 @@ CommandName_research_ibis=Ibis forskning
 CommandName_get_power_of_ra=Få ra's kræfter
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_indian=Indianer
+FactionName_natives=Nativeser
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_advanced_iron=Avanceret Jern
@@ -132,7 +132,7 @@ UpgradeTypeName_training_field=Trænings mark
 ; -------------------------------------
 UnitTypeName_archer=bueskytte
 ; -------------------------------------
-UnitTypeName_axe_indian=Økse indianer
+UnitTypeName_axe_natives=Økse nativeser
 ; -------------------------------------
 UnitTypeName_axe_thrower=øksekaster
 ; -------------------------------------
@@ -173,7 +173,7 @@ CommandName_research_bull_food=Tyrefoder forskning
 ; -------------------------------------
 UnitTypeName_round_tent=Rundtelt
 ; --------------------
-CommandName_produce_axe_indian=Træn økse indianer
+CommandName_produce_axe_natives=Træn økse nativeser
 CommandName_produce_axe_thrower=Træn øksekaster
 CommandName_produce_fire_archer=Træn Ild bueskytter
 CommandName_create_training_field=Skab trænings mark
@@ -388,7 +388,7 @@ CommandName_airattack=luft angreb
 UnitTypeName_wild_sow=vild sow?
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_persian=Perser
+FactionName_persians=Perser
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 # UpgradeTypeName_corn_and_wicker=corn and wicker

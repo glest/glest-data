@@ -120,7 +120,7 @@ CommandName_research_ibis=Ibis erforschen
 CommandName_get_power_of_ra=Macht des Ra entwickeln
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_indian=Indianer
+FactionName_natives=Nativeser
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_advanced_iron=optimiertes Eisen
@@ -132,7 +132,7 @@ UpgradeTypeName_training_field=Trainingsfeld
 ; -------------------------------------
 UnitTypeName_archer=Bogenschütze
 ; -------------------------------------
-UnitTypeName_axe_indian=Axtkämpfer
+UnitTypeName_axe_natives=Axtkämpfer
 ; -------------------------------------
 UnitTypeName_axe_thrower=Axtwerfer
 ; -------------------------------------
@@ -173,7 +173,7 @@ CommandName_research_bull_food=Bullenfutter erforschen
 ; -------------------------------------
 UnitTypeName_round_tent=Rundzelt
 ; --------------------
-CommandName_produce_axe_indian=produziere Axtkämpfer
+CommandName_produce_axe_natives=produziere Axtkämpfer
 CommandName_produce_axe_thrower=produziere Axtwerfer
 CommandName_produce_fire_archer=produziere Brandpfeilschütze
 CommandName_create_training_field=erstelle Trainingsfeld
@@ -388,7 +388,7 @@ CommandName_airattack=Luftangriff
 UnitTypeName_wild_sow=Wildsau
 ; -----------------------------------------------------------------------------
 ; Faction
-FactionName_persian=Perser
+FactionName_persians=Perser
 ; -------------------------------------
 ; Types of Upgrades for this Faction
 UpgradeTypeName_corn_and_wicker=Korn und Korbwaren

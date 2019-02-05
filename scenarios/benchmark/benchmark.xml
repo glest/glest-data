@@ -4,12 +4,12 @@
 	<players>
 		<player control="human" faction="tech" team="1"/>
 		<player control="cpu-ultra" faction="egypt" team="1"/>
-		<player control="cpu-ultra" faction="indian" team="2"/>
-		<player control="cpu-ultra" faction="indian" team="2"/>
-		<player control="cpu-ultra" faction="indian" team="2"/>
-		<player control="cpu-ultra" faction="indian" team="2"/>
-		<player control="cpu-ultra" faction="indian" team="2"/>
-		<player control="cpu-ultra" faction="indian" team="2"/>
+		<player control="cpu-ultra" faction="natives" team="2"/>
+		<player control="cpu-ultra" faction="natives" team="2"/>
+		<player control="cpu-ultra" faction="natives" team="2"/>
+		<player control="cpu-ultra" faction="natives" team="2"/>
+		<player control="cpu-ultra" faction="natives" team="2"/>
+		<player control="cpu-ultra" faction="natives" team="2"/>
 	</players>
 	<map value="eight_gradient"/>
 	<tileset value="mediterran"/>

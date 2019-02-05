@@ -13,7 +13,7 @@ Welcome=Bun venit la tutorialul de bază Glest.
 
 FirstThing=Vizualizare: Pentru a ajusta zona vizibilă, mută cursorul mouse-ului la marginea ecranului tău, sau folosește tastele cursorului. O altă cale pentru acest lucru este să faci clic pe mini hartă (colțul din stânga sus a ecranului tău).
 
-WillBeUsingIndian=În această introducere, ești conducătorul indienilor. Gruparea indiană luptă cu arcuri și arme simple.
+WillBeUsingNatives=În această introducere, ești conducătorul indienilor. Gruparea nativesă luptă cu arcuri și arme simple.
 
 NeedWorkers=Întâi avem nevoie de un muncitori. Pentru a obține unul, clic-stânga pe Cortul-Principal și începe antrenarea muncitorului tău. Pentru acest lucru, folosește comanda 'Produce Muncitor' apăsând pe pictograma muncitorului.
 
@@ -46,7 +46,7 @@ HarvestGoldandStone3=Acum sapă după aur și pietre până vei avea un total de
 ;------------------------------------------Get Wood------------------------------------------
 
 HarvestGoldAndStoneDone=Acum tot ceea ce ai nevoie, este puțin lemn, Pentru a obține lemn, folosește pictograma celei de-a cincea comandă. Aceasta este tot o comandă de colectare, deci o poți folosi în același mod ca și cele pentru aur și pietre.
-ResourceInformation=Apropo, facțiunea indiană are cel mai adesea nevoie de aur și lemn.
+ResourceInformation=Apropo, facțiunea nativesă are cel mai adesea nevoie de aur și lemn.
 GetWood=Pentru un alt indiciu, poți crea orice comandă de colectare selectând muncitorul, apoi clic-dreapta pe o locație unde această resursă este diponibilă (deci în păduri în acest acest caz). În cazul unui succes, va apare o săgeată galbenă. Acum recolteză lemn până vei avea 550 în depozitul tău.
 
 ;------------------------------------------Learn meeting Point and build a tent-------------------------------------------------------

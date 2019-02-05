@@ -16,7 +16,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 <scenario>
 	<difficulty value="3"/>
 	<players>
-		<player control="human" faction="indian" team="1"/>
+		<player control="human" faction="natives" team="1"/>
 		<player control="cpu" faction="tech" team="2"/>
 		<player control="cpu" faction="tech" team="2"/>
 		<player control="cpu" faction="tech" team="2"/>
@@ -71,9 +71,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			player_units[#player_units + 1] = lastCreatedUnit()
 			createUnit('stickfighter', 0, {startLocation(0)[1] + 5, startLocation(0)[2] + 1})
 			player_units[#player_units + 1] = lastCreatedUnit()
-			createUnit('axe_indian', 0, {startLocation(0)[1] + 5, startLocation(0)[2] - 2})
+			createUnit('axe_natives', 0, {startLocation(0)[1] + 5, startLocation(0)[2] - 2})
 			player_units[#player_units + 1] = lastCreatedUnit()
-			createUnit('axe_indian', 0, {startLocation(0)[1] + 5, startLocation(0)[2] + 2})
+			createUnit('axe_natives', 0, {startLocation(0)[1] + 5, startLocation(0)[2] + 2})
 			player_units[#player_units + 1] = lastCreatedUnit()
 
 			-- Create enemy units

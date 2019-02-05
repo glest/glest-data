@@ -13,7 +13,7 @@ Copyright 2001-2011 (c) The Glest Team (<http://glest.org>)
 Partial Copyright 2010-2011 (c) The Glest Team (<http://glest.org>)
 The Glest team has made minor modifications to the original data.
 
-Indians:
+Natives:
 Copyright 2007-2011 (c) Titus Tscharntke and Philipp Tscharntke
 (<http://www.titusgames.de>)
 Titus Tscharntke is AKA titi.
@@ -143,13 +143,13 @@ Scenarios:
  amazones_light             by Titus Tscharntke (titi)
  beehive_castle             by Titus Tscharntke (titi)
  death_road                 by Julie Marchant
- indian_attack              by Titus Tscharntke (titi)
+ natives_attack              by Titus Tscharntke (titi)
  kill_the_magic             by Titus Tscharntke (titi)
  magic_can_do_it            by Titus Tscharntke (titi)
  my_island                  by Titus Tscharntke (titi)
  native_unrest              by Julie Marchant
  norsemen_attack            by Titus Tscharntke (titi)
- persian_conflict           by Philipp Tscharntke
+ persians_conflict           by Philipp Tscharntke
  warlock_overlords          by Julie Marchant
  waterworld                 by Titus Tscharntke (titi)
  waterworld_light           by Titus Tscharntke (titi)
@@ -202,15 +202,15 @@ Mark Vejvoda (SoftCoder) - Developer of Glest( http://www.soft-haus.com)
 
 The original Glest team who made all this possible!!!
 
-Aminos for the indians and persian background music !!
+Aminos for the natives and persians background music !!
 Margaras for the egypt background music!!
 manolo camp for the background music (norsemen)!!
 http://www.burningwell.org who have nice free (public domain) textures!
 Gameboy for the norsemen icons.
-Weedkiller who created the spearman model of the indians, and the princess and
-  swordman model of the persian faction.
+Weedkiller who created the spearman model of the natives, and the princess and
+  swordman model of the persians faction.
 My family, some friends and neighbors for the unit voices.
-ZaggyDad for some help with textures/models (norsemen) and for the persian
+ZaggyDad for some help with textures/models (norsemen) and for the persians
   elephant model.
 Baida for the axe_thrower model (norsemen)
 Elimnator (from http://www.soundbible.com) for the autumn day sound
