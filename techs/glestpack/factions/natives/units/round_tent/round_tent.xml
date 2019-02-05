@@ -127,12 +127,12 @@
 	<commands>
 		<command>
 			<type value="produce"/>
-			<name value="produce_axe_natives" />
-			<image path="../axe_natives/images/axe_natives.bmp" />
+			<name value="produce_axe_native" />
+			<image path="../axe_native/images/axe_native.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
-			<produced-unit name="axe_natives"/>
+			<produced-unit name="axe_native"/>
 		</command>
 		<command>
 			<type value="produce"/>

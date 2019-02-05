@@ -34,7 +34,7 @@
 			<resource name="housing" amount="1"/>
 		</resource-requirements>
 		<resources-stored/>
-		<image path="images/axe_natives.bmp"/>
+		<image path="images/axe_native.bmp"/>
 		<image-cancel path="../archer/images/tech_cancel.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
@@ -66,7 +66,7 @@
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="80"/>
-			<animation path="models/axe_natives_standing.g3d"/>
+			<animation path="models/axe_native_standing.g3d"/>
 			<sound enabled="false"/>
 		</skill>
 
@@ -170,7 +170,7 @@
 		<command>
 			<type value="attack"/>
 			<name value="attack"/>
-			<image path="images/axe_natives_attack.bmp"/>
+			<image path="images/axe_native_attack.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>

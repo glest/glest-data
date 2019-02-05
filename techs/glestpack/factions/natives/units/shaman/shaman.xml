@@ -65,7 +65,7 @@
 				<radius value="5"/>
 				<target value="faction">
 					<unit-type name="archer" />
-					<unit-type name="axe_natives" />
+					<unit-type name="axe_native" />
 					<unit-type name="axe_thrower" />
 					<unit-type name="fire_archer" />
 					<unit-type name="spearman" />
@@ -97,7 +97,7 @@
 				<radius value="5"/>
 				<target value="faction">
 					<unit-type name="archer" />
-					<unit-type name="axe_natives" />
+					<unit-type name="axe_native" />
 					<unit-type name="axe_thrower" />
 					<unit-type name="fire_archer" />
 					<unit-type name="spearman" />
@@ -285,7 +285,7 @@
 				<unit name="bull"/>
 				<unit name="fire_archer"/>
 				<unit name="thunderbird"/>
-				<unit name="axe_natives"/>
+				<unit name="axe_native"/>
 				<unit name="axe_thrower"/>
                                 <unit name="horseman"/>
 			</repaired-units>
