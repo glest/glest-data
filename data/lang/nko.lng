@@ -1,5 +1,6 @@
 ﻿; This is the main Glest localization file (INI format)
 
+StartMessage=Select units and buildings and tell them what to do. You can use the right mouse button for moving units.
 3dArt=ߘ߃ ߞߎ߬ߛߊ߲߬ߧߊ
 3dAnd2dArt=ߘ߃ ߣߌ߫ ߘ߂ ߞߎ߬ߛߊ߲߬ߧߊ
 2dArtAndWeb=ߘ߂ ߞߎ߬ߛߊ߲߬ߧߊ
