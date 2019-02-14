@@ -19,24 +19,24 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image>https://glest.github.io/docs/assets/screenshots/screen146.jpg</image>
+      <image>https://glest.io/docs/assets/screenshots/screen146.jpg</image>
     </screenshot>
     <screenshot>
-      <image>https://glest.github.io/docs/assets/screenshots/natulka_1.png</image>
+      <image>https://glest.io/docs/assets/screenshots/natulka_1.png</image>
     </screenshot>
     <screenshot>
-      <image>https://glest.github.io/docs/assets/screenshots/screen147.jpg</image>
+      <image>https://glest.io/docs/assets/screenshots/screen147.jpg</image>
     </screenshot>
     <screenshot>
-      <image>https://glest.github.io/docs/assets/screenshots/screen141.jpg</image>
+      <image>https://glest.io/docs/assets/screenshots/screen141.jpg</image>
     </screenshot>
     <screenshot>
-      <image>https://glest.github.io/docs/assets/screenshots/screen143.jpg</image>
+      <image>https://glest.io/docs/assets/screenshots/screen143.jpg</image>
     </screenshot>
   </screenshots>
-  <url type="homepage">https://glest.github.io</url>
+  <url type="homepage">https://glest.io</url>
   <url type="bugtracker">https://github.com/Glest/glest-source/issues</url>
-  <url type="faq">http://faq.glest.org</url>
+  <url type="faq">https://glest.io/docs/faq.html</url>
   <url type="help">https://glest.github.io</url>
   <!--   <url type="donation">http://glest.org/donations</url> -->
   <!-- <url type="translate">http://translate.glest.org</url> -->

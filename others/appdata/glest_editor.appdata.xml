@@ -18,10 +18,10 @@
       <image>https://raw.githubusercontent.com/Glest/glest.github.io/master/docs/assets/screenshots/map_editor_conflict-2018.png</image>
     </screenshot>
   </screenshots>
-  <url type="homepage">https://glest.github.io</url>
+  <url type="homepage">https://glest.io</url>
   <url type="bugtracker">https://github.com/Glest/glest-source/issues</url>
   <url type="faq">http://faq.glest.org</url>
-  <url type="help">https://glest.github.io</url>
+  <url type="help">https://glest.io</url>
   <!--   <url type="donation">http://glest.org/donations</url> -->
   <!-- <url type="translate">http://translate.glest.org</url> -->
   <developer_name>The Glest Team</developer_name>
