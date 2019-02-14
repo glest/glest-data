@@ -18,7 +18,7 @@ valkries and "Thors". Start the game by harvesting natural resources,
 then use the cash to produce an army. Single-player mode against the
 CPU is also available.
 
-go to the [Main Repository](https://github.com/Glest/glest-source)
+Go to the [Main Repository](https://github.com/Glest/glest-source)
 
 ## Submitting mods, tech trees, tilesets, maps, scenarios
 
