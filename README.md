@@ -1,6 +1,6 @@
 # Glest
 
-**Official Website: https://glest.github.io**
+**Official Website: https://glest.io**
 
 Data repository contains data such as:
 - maps, scenarios, tutorials
@@ -68,7 +68,7 @@ To suggest a map, please [open a ticket](https://github.com/Glest/glest-data/iss
 
 ### Blender models
 
-[Modelling Information](https://glest.github.io/docs/modelling/)
+[Modelling Information](https://glest.io/docs/modelling/)
 
 We are working on creating and completing documentation. In the
 meantime, please contact us with any questions or ideas. Thank you for
