@@ -139,6 +139,15 @@
 			<produced-unit name="horseman"/>
 		</command>
 		<command>
+			<type value="produce"/>
+			<name value="produce_horse_archer" />
+			<image path="../horse_archer/images/horse_archer.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="horse_archer"/>
+		</command>
+		<command>
 			<type value="upgrade"/>
 			<name value="create_training_field"/>
 			<image path="../../upgrades/training_field/images/training_field.bmp" />
