@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+
+<tileset>
+	<surfaces>
+		<surface>
+			<texture path="textures/snow1.tga" prob="0.20"/>
+			<texture path="textures/snow2.tga" prob="0.20"/>
+			<texture path="textures/snow3.tga" prob="0.20"/>
+			<texture path="textures/snow4.tga" prob="0.20"/>
+			<texture path="textures/snow5.tga" prob="0.20"/>
+                </surface>
+		<surface>
+			<texture path="textures/snowrock1.tga" prob="0.20"/>
+			<texture path="textures/snowrock2.tga" prob="0.20"/>
+			<texture path="textures/snowrock3.tga" prob="0.20"/>
+			<texture path="textures/snowrock4.tga" prob="0.20"/>
+			<texture path="textures/snowrock5.tga" prob="0.20"/>
+		</surface>
+		<surface>
+			<texture path="textures/ground1.tga" prob="0.25"/>
+			<texture path="textures/ground2.tga" prob="0.25"/>
+			<texture path="textures/ground3.tga" prob="0.25"/>
+			<texture path="textures/ground4.tga" prob="0.25"/>
+		</surface>
+		<surface>
+			<texture path="textures/rock1.tga" prob="0.20"/>
+			<texture path="textures/rock2.tga" prob="0.10"/>
+			<texture path="textures/rock3.tga" prob="0.20"/>
+			<texture path="textures/rock4.tga" prob="0.20"/>
+			<texture path="textures/rock5.tga" prob="0.20"/>
+			<texture path="textures/rock6.tga" prob="0.10"/>
+		</surface>
+		<surface>
+			<texture path="textures/tile1.tga" prob="0.98"/>
+			<texture path="textures/tile2.tga" prob="0.02"/>
+		</surface>
+		<surface>
+			<texture path="textures/cliffrock1.tga" prob="0.25"/>
+			<texture path="textures/cliffrock2.tga" prob="0.25"/>
+			<texture path="textures/cliffrock3.tga" prob="0.25"/>
+		        <texture path="textures/cliffrock4.tga" prob="0.25"/>
+		</surface>
+	</surfaces>
+
+	<objects>
+		<object walkable="false">
+                        <model path="models/tree.g3d" />
+                        <model path="models/tree2.g3d" />
+                        <model path="models/tree3.g3d" />
+                        <model path="models/tree4.g3d" />
+                        <model path="models/tree5.g3d" />
+                        <model path="models/tree6.g3d" />
+                        <model path="models/tree7.g3d" />
+                        <model path="models/tree8.g3d" />
+                        <model path="models/tree9.g3d" />
+		</object>	
+		<object walkable="false">
+			<model path="models/icicles.g3d" >
+				<particles value="true">
+					<particle-file path="glow_particles.xml"/>
+				</particles>
+			</model>	
+			<model path="models/icicles2.g3d">
+				<particles value="true">
+					<particle-file path="glow_particles.xml"/>
+				</particles>
+			</model>			
+		</object>					
+		<object walkable="false">
+			<model path="models/stone.g3d"/>
+			<model path="models/stone1.g3d"/>
+			<model path="models/stone2.g3d"/>
+			<model path="models/stone3.g3d"/>
+		</object>					
+		<object walkable="true">
+			<model path="models/bush.g3d"/>			
+                        <model path="models/bush2.g3d"/>		
+			<model path="models/bush3.g3d"/>
+			<model path="models/bush4.g3d"/>
+			<model path="models/bush5.g3d"/>	
+ 		</object>					
+                <object walkable="true">
+			<model path="models/waterobject.g3d"/>
+			<model path="models/waterobject2.g3d"/>
+			<model path="models/waterobject3.g3d"/>
+		</object>										
+		<object walkable="false">
+			<model path="models/bigtree.g3d"/>
+			<model path="models/bigtree2.g3d"/>
+			<model path="models/bigtree3.g3d"/>
+			<model path="models/bigtree4.g3d"/>
+			<model path="models/bigtree5.g3d"/>
+		</object>					
+		<object walkable="false">
+			<model path="models/runes.g3d">
+				<particles value="true">
+					<particle-file path="rune_particles.xml"/>
+				</particles>
+			</model>
+			<model path="models/runes2.g3d">
+				<particles value="true">
+					<particle-file path="rune_particles.xml"/>
+				</particles>
+			</model>
+			<model path="models/runes3.g3d">
+				<particles value="true">
+					<particle-file path="rune_particles.xml"/>
+				</particles>
+			</model>
+			<model path="models/runes4.g3d">
+				<particles value="true">
+					<particle-file path="rune_particles.xml"/>
+				</particles>
+			</model>		
+		</object>					
+		<object walkable="false">
+			<model path="models/statue.g3d">
+				<rotationAllowed value="false"/>
+			</model>
+			<model path="models/statue2.g3d">	
+				<rotationAllowed value="false"/>
+			</model>
+			<model path="models/statue3.g3d">
+				<rotationAllowed value="false"/>	
+			</model>
+		</object>					
+		<object walkable="false">
+			<model path="models/bigrock.g3d"/>
+		</object>					
+		<object walkable="false">
+			<model path="models/none.g3d"/>
+		</object>					
+	</objects>
+	
+	<ambient-sounds>
+		<day-sound enabled="true" path="sounds/day.ogg" play-always="false"/>
+		<night-sound enabled="true" path="sounds/night.ogg" play-always="false"/>
+		<rain-sound enabled="true" path="sounds/rain.ogg"/>
+		<snow-sound enabled="false"/>		
+		<day-start-sound enabled="true" path="sounds/chicken.wav"/>	
+		<night-start-sound enabled="true" path="sounds/wolf.wav"/>						
+	</ambient-sounds>
+
+	<parameters>
+		<water effects="true">
+			<texture path="textures/water_001.tga"/>
+			<texture path="textures/water_002.tga"/>
+			<texture path="textures/water_003.tga"/>
+			<texture path="textures/water_004.tga"/>
+			<texture path="textures/water_005.tga"/>
+			<texture path="textures/water_006.tga"/>
+			<texture path="textures/water_007.tga"/>
+			<texture path="textures/water_008.tga"/>
+		</water>
+		<fog enabled="true" mode="2" density="0.022" color-red="0.5" color-green="0.6" color-blue="1" /> 
+		<sun-light red="0.5" green="0.5" blue="1"/>
+		<moon-light red="0.3" green="0.3" blue="0.5"/>
+		<day-night value="0.7"/>
+		<weather sun="0.0" rain="0.0" snow="1.0"/> 
+	</parameters>
+</tileset>
+

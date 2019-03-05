@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+
+<tileset>
+	<surfaces>
+		
+		<!-- *** Surface 1  Charred Earth ***-->
+		<surface>
+			<texture path="textures/surface_1a.bmp" prob="0.85"/>
+			<texture path="textures/surface_1b.bmp" prob="0.04"/>
+			<texture path="textures/surface_1c.bmp" prob="0.04"/>
+         <texture path="textures/surface_1d.bmp" prob="0.03"/>
+         <texture path="textures/surface_1e.bmp" prob="0.04"/>
+		</surface>
+		
+		<!-- *** Surface 2  Charred Earth 2 ***-->
+		<surface>
+			<texture path="textures/surface_2a.bmp" prob="0.96"/>
+			<texture path="textures/surface_2b.bmp" prob="0.01"/>
+         <texture path="textures/surface_2c.bmp" prob="0.01"/>
+         <texture path="textures/surface_2d.bmp" prob="0.01"/>
+         <texture path="textures/surface_2e.bmp" prob="0.01"/>
+		</surface>
+		
+		<!-- *** Surface 3 Road ***-->
+		<surface>
+			<texture path="textures/surface_3a.bmp" prob="0.5"/>
+			<texture path="textures/surface_3b.bmp" prob="0.5"/>
+		</surface>
+		
+		<!-- *** Surface 4 Stone ***-->
+		<surface>
+			<texture path="textures/surface_4a.bmp" prob="1.0"/>
+		</surface>
+		
+		<!-- *** Surface 5 Magma ***-->
+		<surface>
+			<texture path="textures/surface_5a.bmp" prob="1.0"/>
+		</surface>
+		
+	</surfaces>
+
+	<objects>
+		
+		<!-- *** Object 1 Trees ***-->
+		<object walkable="false">
+			<model path="models/dead_tree1.g3d"/>	
+         <model path="models/dead_tree2.g3d"/>	
+         <model path="models/dead_tree3.g3d"/>	
+         <model path="models/dead_tree4.g3d"/>	
+		</object>					
+		
+		<!-- *** Object 2 Dead Trees ***-->
+		<object walkable="false">
+			<model path="models/dead.g3d"/>
+         <model path="models/stump.g3d"/>
+		</object>					
+		
+		<!-- *** Object 3 Volcanic Rock ***-->
+		<object walkable="false">
+			<model path="models/stone1.g3d"/>
+         <model path="models/stone2.g3d"/>
+		</object>					
+		
+		<!-- *** Object 4 Bush ***-->
+		<object walkable="true">
+			<model path="models/grass.g3d"/>
+		</object>					
+		
+		<!-- *** Object 5 Water Object ***-->
+		<object walkable="true">
+			<model path="models/riverside_object.g3d"/>
+                        <model path="models/riverside_object2.g3d"/>
+                        <model path="models/riverside_object3.g3d"/>
+                        <model path="models/riverside_object4.g3d"/>
+                        <model path="models/riverside_object5.g3d"/>
+		</object>		
+		
+		<!-- *** Object 6 Big Tree ***-->
+		<object walkable="false">
+			<model path="models/none.g3d"/>
+		</object>					
+		
+		<!-- *** Object 7 Carcass ***-->
+		<object walkable="false">
+			<model path="models/carcass.g3d"/>
+		</object>					
+		
+		<!-- *** Object 8 Shrine ***-->
+		<object walkable="false">
+			<model path="models/shrine.g3d"/>
+		</object>					
+		
+		<!-- *** Object 9 Big Stones ***-->
+		<object walkable="false">
+			<model path="models/vulcano1.g3d"/>
+         <model path="models/vulcano2.g3d"/>
+		</object>					
+		
+		<!-- *** Object 10 None ***-->
+		<object walkable="false">
+			<model path="models/none.g3d"/>
+		</object>					
+		
+	</objects>
+	
+	<ambient-sounds>
+		<!-- Sounds (Do not change) -->
+		<day-sound enabled="true" path="sounds/ambience.ogg" play-always="false"/>
+		<night-sound enabled="true" path="sounds/ambience.ogg" play-always="false"/>
+		<rain-sound enabled="false"/>
+		<snow-sound enabled="false"/>
+		<day-start-sound enabled="true" path="sounds/erruption.ogg"/>	
+		<night-start-sound enabled="true" path="sounds/erruption.ogg"/>							
+	</ambient-sounds>
+
+	<parameters>
+		<water effects="true">
+			<!-- Water Textures -->
+			<texture path="textures/water1.tga"/>
+			<texture path="textures/water2.tga"/>
+			<texture path="textures/water3.tga"/>
+			<texture path="textures/water4.tga"/>
+		</water>
+		<fog enabled="true" mode="2" density="0.020" color-red="0.3" color-green="0" color-blue="0" /> 
+		<sun-light red="1" green="0.9" blue="0.9"/>
+		<moon-light red="0.3" green="0.2" blue="0.2"/>
+		<day-night value="0.7"/>
+		<weather sun="1.0" rain="0" snow="0"/> 
+	</parameters>
+	
+</tileset>
+
