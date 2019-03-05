@@ -60,12 +60,6 @@ Include the following information:
 
 To suggest a map, please [open a ticket](https://github.com/Glest/glest-data/issues) and attach your map file.
 
-## Contributed Content (not yet available on the Glest server)
-
-* [MODS.md](https://github.com/Glest/glest-data/blob/develop/MODS.md)
-* [TILESETS.md](https://github.com/Glest/glest-data/blob/develop/TILESETS.md)
-* [SCENARIOS.md](https://github.com/Glest/glest-data/blob/develop/SCENARIOS.md)
-
 ### Blender models
 
 [Modelling Information](https://glest.io/docs/modelling/)
