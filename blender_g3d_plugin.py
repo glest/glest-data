@@ -99,8 +99,8 @@ bl_info = {
 	"blender": (2, 65, 0),
 	"location": "File > Import-Export",
 	"warning": "always keep .blend files",
-	"wiki_url": "http://glest.wikia.com/wiki/G3D_support",
-	"tracker_url": "https://forum.glest.org/index.php?topic=6596",
+	"wiki_url": "https://glest.io/docs/modelling/g3d_blender.html",
+	"tracker_url": "https://glest.fandom.com/wiki/G3D_support",
 	"category": "Import-Export"}
 ###########################################################################
 # Importing Structures needed (must later verify if i need them really all)
