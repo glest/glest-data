@@ -228,6 +228,7 @@
 				<building name="small_container"/>
 				<building name="large_container"/>	
 				<building name="defence_turret"/>
+				<building name="trade_market"/>
 			</buildings>
 			<start-sound enabled="false"/>
 			<built-sound enabled="true">
@@ -272,6 +273,7 @@
 				<unit name="small_container"/>
 				<unit name="large_container"/>	
 				<unit name="defence_turret"/>
+				<unit name="trade_market"/>
 			</repaired-units>	
 		</command>	
 

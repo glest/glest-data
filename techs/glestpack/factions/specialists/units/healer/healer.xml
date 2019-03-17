@@ -124,6 +124,7 @@
 				<production-speed value="0"/>
 				<particles value="true">
 					<affected-particle-file path="aura_particles.xml"/>
+					<particle-file path="glow_particles.xml"/>
 				</particles>
                 </attack-boost>
 		</skill>
@@ -255,6 +256,7 @@
 				<unit name="flame_thrower"/>
 				<unit name="melee_unit"/>
 				<unit name="healer"/>
+				<unit name="trade_cart"/>
 			</repaired-units>		
 		</command>
 	</commands>
