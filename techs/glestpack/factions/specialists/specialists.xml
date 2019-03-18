@@ -22,4 +22,32 @@
 		<building-units/>
 		<upgrades/>
 	</ai-behavior>
+	<scripts>
+		<startup>
+			for index = 0, 7 do
+				if getFactionName(index) == 'specialists' then
+
+					type = getPlayerType(index)
+					
+					if type ~= 1 and type ~= 6 then
+					
+						setLockedUnitForFaction('trade_cart', index, 1)
+						
+					end
+				end
+			end
+		</startup>
+		<unitDied>
+            unitC = lastDeadUnitKiller()
+            unitD = lastDeadUnit()
+			if lastDeadUnitCauseOfDeath() ~= 3 then
+			
+				if lastDeadUnitName()=='trade_cart' then
+
+					giveResource('gold', unitFaction(unitC), 400)
+
+				end
+			end
+        </unitDied>
+	</scripts>
 </faction>
