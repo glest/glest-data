@@ -2,6 +2,8 @@
 
 StartMessage=Select units and buildings and tell them what to do. You can use the right mouse button for moving units.
 UpdateNoticeOption=Notify when update is available
+UpdateNotice=A new update was detected, please visit glest.io for details.\n\nCurrent: %s\nNew: %s
+UpdateNoticeDownloadOffer=A new update was detected, do you want to download it now?\n\nCurrent: %s\nNew: %s
 3dArt=3D art
 3dAnd2dArt=3D and 2D art
 2dArtAndWeb=2D art
