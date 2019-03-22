@@ -87,6 +87,14 @@
 	</skills>
 
 	<commands>
+		<command>
+			<type value= "stop"/>
+			<name value="stop"/>
+			<image path="../stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
 	
 		<command>
 			<type value= "move"/>

@@ -10,7 +10,7 @@
 		<armor value="1"/>
 		<armor-type value="wood"/>
 		<sight value="12"/>
-		<time value="10"/>
+		<time value="50"/>
 		<multi-selection value="true"/>
 		<uniform-selection value="false"/>
 		<cellmap value="true">
@@ -64,7 +64,7 @@
 			<type value="move"/>
 			<name value="move_skill"/>
 			<ep-cost value="0"/>
-			<speed value="500"/>
+			<speed value="300"/>
 			<anim-speed value="120"/>
 			<animation path="models/tradecart_move.g3d"/>
 			<sound enabled="true" start-time="0">
