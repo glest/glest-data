@@ -69,4 +69,4 @@ meantime, please contact us with any questions or ideas. Thank you for
 your interest in this project.
 
 * [Contact / Community](https://github.com/Glest/glest-source#contact)
-* [Contributing](https://github.com/Glest/glest-source/blob/develop/CONTRIBUTING.md)
+* [Contributing](https://github.com/Glest/glest-source/blob/master/CONTRIBUTING.md)

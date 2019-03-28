@@ -197,12 +197,12 @@ Vietnamese            by ppanhh (Anh Phan)
 
 Credits go to:
 ==============
-Titus Tscharntke (titi) - Lead developer and creator of the Glest (http://www.titusgames.de)
-Mark Vejvoda (SoftCoder) - Developer of Glest( http://www.soft-haus.com)
+Titus Tscharntke (titi) - Lead developer and creator of MegaGlest (http://www.titusgames.de)
+Mark Vejvoda (SoftCoder) - Developer of MegaGlest( http://www.soft-haus.com)
 
 The original Glest team who made all this possible!!!
 
-Aminos for the natives and persians background music !!
+Aminos for the natives and persians background music!!
 Margaras for the egypt background music!!
 manolo camp for the background music (norsemen)!!
 http://www.burningwell.org who have nice free (public domain) textures!
