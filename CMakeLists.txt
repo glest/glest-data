@@ -35,7 +35,6 @@ if(WANT_INSTALL_DATA)
 
 	# Installation of the data
 	INSTALL(DIRECTORY "${PROJECT_SOURCE_DIR}/data"
-			"${PROJECT_SOURCE_DIR}/docs"
 			"${PROJECT_SOURCE_DIR}/maps"
 			"${PROJECT_SOURCE_DIR}/scenarios"
 			"${PROJECT_SOURCE_DIR}/techs"
