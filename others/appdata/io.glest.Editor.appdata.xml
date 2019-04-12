@@ -2,7 +2,7 @@
 <!-- Copyright 2015 Glest Team <contact_at_glest.org> -->
 <!-- all urls http type; minimal version of validator: 0.6.1 -->
 <component type="desktop">
-  <id>glest_editor.desktop</id>
+  <id>io.glest.Editor.desktop</id>
   <metadata_license>CC-BY-SA-4.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
   <name>Glest Map Editor</name>
