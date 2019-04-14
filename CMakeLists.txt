@@ -12,10 +12,28 @@ OPTION(WANT_INSTALL_DATA "Install Glest's data" ON)
 # glest data directory.
 #
 if(WANT_INSTALL_DATA)
-	add_definitions("-DDATADIR=${INSTALL_DIR_DATA}")
-
 # The two variables need to be set here, they are not set in the source
 # CMakeLists.txt, nor do they need to be.
+
+    IF(NOT CMAKE_INSTALL_PREFIX)
+        SET(CMAKE_INSTALL_PREFIX "/usr")
+    ENDIF()
+
+	IF(NOT INSTALL_DIR_BIN)
+		SET(INSTALL_DIR_BIN "${CMAKE_INSTALL_PREFIX}/bin/" CACHE PATH "The installation path for binaries")
+	ENDIF()
+# The data dir will get defined as a macro at compile-time
+	IF(NOT INSTALL_DIR_DATA)
+		SET(INSTALL_DIR_DATA "${CMAKE_INSTALL_PREFIX}/share/glest/" CACHE PATH "The installation path for data files")
+	ENDIF()
+	SET(INSTALL_DIR_INI "${INSTALL_DIR_DATA}")
+	IF(NOT INSTALL_DIR_DESKTOP)
+		SET(INSTALL_DIR_DESKTOP "${CMAKE_INSTALL_PREFIX}/share/applications/" CACHE PATH "The installation path for desktop files")
+	ENDIF()
+	IF(NOT INSTALL_DIR_ICON)
+		SET(INSTALL_DIR_ICON "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/256x256/apps" CACHE PATH "The installation path for icon files")
+	ENDIF()
+	
 	IF(NOT INSTALL_DIR_APPDATA)
 		SET(INSTALL_DIR_APPDATA "${CMAKE_INSTALL_PREFIX}/share/metainfo/" CACHE PATH "The installation path for appdata files")
 	ENDIF()
@@ -35,7 +53,6 @@ if(WANT_INSTALL_DATA)
 
 	# Installation of the data
 	INSTALL(DIRECTORY "${PROJECT_SOURCE_DIR}/data"
-			"${PROJECT_SOURCE_DIR}/docs"
 			"${PROJECT_SOURCE_DIR}/maps"
 			"${PROJECT_SOURCE_DIR}/scenarios"
 			"${PROJECT_SOURCE_DIR}/techs"
@@ -43,10 +60,10 @@ if(WANT_INSTALL_DATA)
 			"${PROJECT_SOURCE_DIR}/tutorials"
 			DESTINATION ${INSTALL_DIR_DATA})
 
-	INSTALL(FILES "${PROJECT_SOURCE_DIR}/others/appdata/glest.appdata.xml"
+	INSTALL(FILES "${PROJECT_SOURCE_DIR}/others/appdata/io.glest.Glest.appdata.xml"
 		DESTINATION ${INSTALL_DIR_APPDATA})
 
-		INSTALL(FILES "${PROJECT_SOURCE_DIR}/others/appdata/glest_editor.appdata.xml"
+		INSTALL(FILES "${PROJECT_SOURCE_DIR}/others/appdata/io.glest.Editor.appdata.xml"
 			DESTINATION ${INSTALL_DIR_APPDATA})
 
 	INSTALL(FILES
@@ -61,20 +78,20 @@ if(WANT_INSTALL_DATA)
 	ENDIF()
 
 	INSTALL(FILES
-		"${PROJECT_SOURCE_DIR}/others/desktop/glest.desktop"
+		"${PROJECT_SOURCE_DIR}/others/desktop/io.glest.Glest.desktop"
 		DESTINATION ${INSTALL_DIR_DESKTOP})
 
 	# Install only the desktop file. The icon gets installed from the
 	# cmake file in source/map_editor
 	IF(BUILD_MAP_EDITOR)
 		INSTALL(FILES
-			"${PROJECT_SOURCE_DIR}/others/desktop/glest_editor.desktop"
+			"${PROJECT_SOURCE_DIR}/others/desktop/io.glest.Editor.desktop"
 			DESTINATION ${INSTALL_DIR_DESKTOP})
 	ENDIF()
 
 	IF(BUILD_MODEL_VIEWER)
 	INSTALL(FILES
-			"${PROJECT_SOURCE_DIR}/others/desktop/glest_g3dviewer.desktop"
+			"${PROJECT_SOURCE_DIR}/others/desktop/io.glest.G3dviewer.desktop"
 			DESTINATION ${INSTALL_DIR_DESKTOP})
 	ENDIF()
 

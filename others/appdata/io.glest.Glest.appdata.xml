@@ -2,7 +2,7 @@
 <!-- Copyright 2018 Glest Team <glest@gmail.com> -->
 <!-- all urls http type; minimal version of validator: 0.6.1 -->
 <component type="desktop">
-  <id>glest.desktop</id>
+  <id>io.glest.Glest.desktop</id>
   <metadata_license>CC-BY-SA-4.0</metadata_license>
   <project_license>GPL-3.0+ and CC-BY-SA-3.0</project_license>
   <name>Glest</name>
@@ -95,5 +95,4 @@
     <lang percentage="88">uz</lang>
     <lang percentage="57">vi</lang>
   </languages>
-  <translation/>
 </component>
