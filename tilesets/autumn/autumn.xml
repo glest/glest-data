@@ -58,7 +58,7 @@
 			<model path="models/nettles2.g3d"/>
 			<model path="models/nettles1.g3d"/>
 			<model path="models/nettles2.g3d"/>
-			<model path="models/stump2.g3d" anim-speed="200" smoothTwoFrameAnim="true"/>
+			<model path="models/stump2.g3d" anim-speed="100" smoothTwoFrameAnim="true"/>
 		</object>
 		<object walkable="false">
 
