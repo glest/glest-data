@@ -15,7 +15,6 @@
 		<levels/>
 		<fields>
 			<field value="land"/>
-			<field value="air"/>
 		</fields>	
 		<properties/>
 		<light enabled="false"/>
