@@ -1,0 +1,224 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="1"/>
+		<height value="1"/>
+		<max-hp value="950" regeneration="4"/>
+		<max-ep value="3000" regeneration="20"/>
+		<armor value="20"/>	
+		<armor-type value="leather"/>
+		<sight value="14"/>
+		<time value="200"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels>
+			<level name="wise" kills="5"/>
+			<level name="gnostic" kills="15"/>
+			<level name="sage" kills="30"/>
+		</levels>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements/>
+		  <unit name="necromancer"/>
+		<upgrade-requirements>
+			<upgrade name="soul_binding"/>
+			<upgrade name="manifestation"/>
+			<upgrade name="profane_blessing"/>
+		</upgrade-requirements>
+		<resource-requirements>
+			<resource name="gold" amount="200"/>
+			<resource name="souls" amount="2"/>
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/lich.bmp"/>
+		<image-cancel path="images/dark_magic_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="false"/>
+		<command-sounds enabled="false"/>
+	</parameters>
+
+	<skills>
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="35"/>
+			<animation path="models/elder_standing.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+		
+    <skill>
+			<type value="move"/>
+			<name value="charge_skill"/>
+			<ep-cost value="0"/>
+			<speed value="250"/>
+			<anim-speed value="50"/>
+			<animation path="models/elder_charging.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+    		
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>
+			<ep-cost value="0"/>
+			<speed value="180"/>
+			<anim-speed value="180"/>
+			<animation path="models/elder_walking.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="75"/>
+			<anim-speed value="75"/>
+			<animation path="models/elder_attacking.g3d"/>
+			<sound enabled="false"/>
+			<attack-strenght value="200"/>
+			<attack-var value="45"/>
+			<attack-range value="2"/>
+			<attack-type value="slashing"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<attack-start-time value="0.5"/>
+			<projectile value="false"/>
+			<splash value="false"/>
+		</skill>
+		
+    <skill>
+			<type value="attack"/>
+			<name value="attack_air_skill"/>		
+			<ep-cost value="200"/>
+			<speed value="75"/>
+			<anim-speed value="75"/>
+			<animation path="models/elder_air_attack.g3d"/>
+			<sound enabled="false"/>
+			<attack-strenght value="425"/>
+			<attack-var value="90"/>
+			<attack-range value="10"/>
+			<attack-type value="energy"/>
+			<attack-fields>
+				<field value="air"/>
+			</attack-fields>
+			<attack-start-time value="0.5"/>
+			<projectile value="true">
+				<particle value="true" path="particle_proj.xml"/>
+				<sound enabled="false"/>
+			</projectile>
+			<splash value="true">
+				<radius value="2"/>
+				<damage-all value="true"/>
+				<particle value="true" path="particle_splash.xml"/>
+			</splash>
+		</skill>
+
+		<skill>
+			<type value="morph"/>
+			<name value="morph_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="500"/>
+			<anim-speed value="80"/>
+			<animation path="models/elder_morphing.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="produce"/>
+			<name value="conjure_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="150"/>
+			<anim-speed value="20"/>
+			<animation path="models/elder_producing.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>	
+			<ep-cost value="0"/>
+			<speed value="120"/>
+			<anim-speed value="120"/>
+			<animation path="models/elder_dying.g3d"/>
+			<sound enabled="false"/>
+			<fade value="true"/>
+		</skill>
+	</skills>
+	
+	<commands>
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="images/dark_magic_stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="images/dark_magic_move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="images/attack_melee.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="charge_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+		
+		<command>
+			<type value="attack"/>
+			<name value="attack_air"/>
+			<image path="images/death_bolt.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="charge_skill"/>
+			<attack-skill value="attack_air_skill"/>
+		</command>
+
+		<command>
+			<type value="attack_stopped"/>
+			<name value="hold_position"/>
+			<image path="images/dark_magic_hold.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>			
+		
+		<command>
+			<type value="produce"/>
+			<name value="conjure_skeleton" />
+			<image path="../skeleton/images/skeleton.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<produce-skill value="conjure_skill"/>
+			<produced-unit name="skeleton"/>
+		</command>    
+    	
+		<command>
+			<type value="morph"/>
+			<name value="promote_to_fallen_ranger"/>
+			<image path="../fallen_ranger/images/alliyp.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<morph-skill value="morph_skill"/>
+			<morph-unit name= "fallen_ranger"/>
+			<discount value="0"/>
+		</command>
+	</commands>
+</unit>

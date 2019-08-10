@@ -1,0 +1,184 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="1"/>
+		<height value="2"/>
+		<max-hp value="950" regeneration="2"/>
+		<max-ep value="0"/>
+		<armor value="40"/>	
+		<armor-type value="metal"/>
+		<sight value="13"/>
+		<time value="60"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels>
+			<level name="ancient" kills="5"/>
+		</levels>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements />
+		<upgrade-requirements>
+			<upgrade name="manifestation"/>
+		</upgrade-requirements>
+		<resource-requirements>
+			<resource name="gold" amount="150"/>
+			<resource name="souls" amount="2"/>				
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/shadow_walker.bmp"/>
+		<image-cancel path="../lich/images/dark_magic_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="sounds/shadow_walker_select1.wav"/>
+			<sound path="sounds/shadow_walker_select2.wav"/>
+			<sound path="sounds/shadow_walker_select3.wav"/>
+			<sound path="sounds/shadow_walker_select4.wav"/>
+			<sound path="sounds/shadow_walker_select5.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="sounds/shadow_walker_ack2.wav"/>
+			<sound path="sounds/shadow_walker_ack3.wav"/>
+			<sound path="sounds/shadow_walker_ack4.wav"/>
+			<sound path="sounds/shadow_walker_ack5.wav"/>
+			<sound path="sounds/shadow_walker_ack6.wav"/>
+			<sound path="sounds/shadow_walker_ack7.wav"/>
+			<sound path="sounds/shadow_walker_ack8.wav"/>
+		</command-sounds>
+
+	</parameters>
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="40"/>
+			<animation path="models/standing.g3d"/>
+			<particles value="true">
+				<particle-file path="smoke_particles.xml"/>
+				<particle-file path="fire_particles.xml"/>
+			</particles>
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="180"/>
+			<anim-speed value="120"/>
+			<animation path="models/walking.g3d"/>
+			<particles value="true">
+				<particle-file path="smoke_particles.xml"/>
+				<particle-file path="fire_particles.xml"/>
+			</particles>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="100"/>
+			<anim-speed value="100"/>
+			<animation path="models/attacking.g3d"/>
+			<particles value="true">
+				<particle-file path="smoke_particles.xml"/>
+				<particle-file path="fire_particles.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0.4">
+				<sound-file path="sounds/shadow_walker_attack1.wav"/>
+				<sound-file path="sounds/shadow_walker_attack2.wav"/>
+				<sound-file path="sounds/shadow_walker_attack3.wav"/>
+				<sound-file path="sounds/shadow_walker_attack4.wav"/>
+				<sound-file path="sounds/shadow_walker_attack5.wav"/>
+				<sound-file path="sounds/shadow_walker_attack6.wav"/>
+				<sound-file path="sounds/shadow_walker_attack7.wav"/>
+				<sound-file path="sounds/shadow_walker_attack8.wav"/>
+				<sound-file path="sounds/shadow_walker_attack9.wav"/>
+				<sound-file path="sounds/shadow_walker_attack10.wav"/>
+				<sound-file path="sounds/shadow_walker_attack11.wav"/>
+				<sound-file path="sounds/shadow_walker_attack12.wav"/>
+				<sound-file path="sounds/shadow_walker_attack13.wav"/>
+				<sound-file path="sounds/shadow_walker_attack14.wav"/>
+				<sound-file path="sounds/shadow_walker_attack15.wav"/>
+			</sound> 
+			<attack-strenght value="150"/>
+			<attack-var value="40"/>
+			<attack-range value="1"/>
+			<attack-type value="slashing"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<attack-start-time value="0.3"/>
+			<projectile value="false"/>
+			<splash value="false"/>
+		</skill>
+	
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="120"/>
+			<anim-speed value="120"/>
+			<animation path="models/dying.g3d"/>
+			<particles value="true">
+				<particle-file path="smoke_particles.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/shadow_walker_die1.wav"/>
+				<sound-file path="sounds/shadow_walker_die2.wav"/>
+				<sound-file path="sounds/shadow_walker_die3.wav"/>
+				<sound-file path="sounds/shadow_walker_die4.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+
+	<commands>
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="../lich/images/dark_magic_stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="../lich/images/dark_magic_move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="images/attack.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+
+		<command>
+			<type value="attack_stopped"/>
+			<name value="hold_position"/>
+			<image path="../lich/images/dark_magic_hold.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+	</commands>
+</unit>

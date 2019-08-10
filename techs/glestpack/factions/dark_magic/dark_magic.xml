@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="no"?>
+
+<faction>
+	<starting-resources>
+		<resource name="gold" amount="500"/>
+		<resource name="wood" amount="300"/>	
+		<resource name="stone" amount="400"/>
+		<resource name="souls" amount="15"/>		
+	</starting-resources>
+	<starting-units>
+		<unit name="malevolent_shrine" amount="1"/>
+		<unit name="blood_fountain" amount="1"/>
+		<unit name="acolyte" amount="3"/>
+		<unit name="necromancer" amount="1"/>
+		<unit name="ghoul" amount="1"/>
+		<unit name="cursed_grave" amount="1"/>
+		<unit name="fallen_ranger" amount="0"/>
+		<unit name="shadow_walker" amount="0"/>
+		<unit name="oblivion_portal" amount="0"/>
+		<unit name="sorcery_runes" amount="0"/>
+		<unit name="corrupt_mage" amount="1"/>
+	</starting-units>	
+	<music value="true" path="music/music_dark_magic.ogg"/>
+</faction>

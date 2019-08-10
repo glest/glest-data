@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<projectile-particle-system>
+    	<texture value="true" path="../corrupt_mage/images/particle.bmp" luminance="true"/>
+	<mode value="normal"/>
+    	<model value="false"/>
+	<primitive value="quad"/>
+	<offset x="0" y="1.5" z="1"/>
+	<color red="0.1" green="0.3" blue="1.0" alpha="0.6" />
+	<color-no-energy red="0.0" green="0.7" blue="0.7" alpha="0.6" />
+    	<teamcolorNoEnergy value="false" />
+    	<size value="2.0" />
+    	<size-no-energy value="0.1" />
+    	<speed value="7.0" />
+	<gravity value="0.1"/>
+    	<emission-rate value="3" />
+    	<energy-max value="50" />
+    	<energy-var value="10" />
+	<trajectory type="linear">
+		<speed value="14.0"/>
+		<scale value="4"/>
+	</trajectory>
+</projectile-particle-system>

@@ -1,0 +1,109 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="1"/>
+		<height value="1"/>
+		<max-hp value="1" regeneration="-1"/>
+		<max-ep value="0"/>
+		<armor value="0"/>
+		<armor-type value="organic"/>					
+		<sight value="0"/>
+		<time value="40"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false">
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements/>
+		<upgrade-requirements/>
+		<resource-requirements>			
+		</resource-requirements>
+		<resources-stored/>
+		<image path="../lesser_soul_trap/images/5_energy.bmp"/>
+		<image-cancel path="../lich/images/dark_magic_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="false"/>
+		<command-sounds enabled="false"/>
+	</parameters>
+
+	<skills>
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="15"/>
+			<animation path="../lesser_soul_trap/models/l_soul.g3d"/>
+			<particles value="true">
+				<particle-file path="fire_particles.xml"/>
+				<particle-file path="../shadow_walker/smoke_particles.xml"/>
+			</particles>
+			<attack-boost>
+				<allow-multiple-boosts value="false" />
+				<radius value="2"/>
+                      <target value="foe"/>
+				<max-hp value="0" regeneration="-100"/>
+				<max-ep value="-1"/>
+				<sight value="0"/>
+				<attack-strength value="-25" value-percent-multiplier="false"/>
+				<attack-range value="0"/>
+				<armor value="-10"/>
+				<move-speed value="-100"/>
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="../oblivion_portal/produce_particles.xml"/>
+				</particles>
+               </attack-boost>
+		</skill>
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1"/>
+			<anim-speed value="1"/>
+			<animation path="../lesser_soul_trap/models/l_soul.g3d"/>
+			<sound enabled="false"/>		
+			<fade value="true"/>
+			<particles value="true">
+				<particle-file path="../shadow_walker/smoke_particles.xml"/>
+				<particle-file path="fire_particles.xml"/>
+			</particles>
+			<attack-boost>
+				<allow-multiple-boosts value="false" />
+				<radius value="2"/>
+                      <target value="foe"/>
+				<max-hp value="0" regeneration="-80"/>
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-strength value="-25" value-percent-multiplier="false"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<move-speed value="-100"/>
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="../oblivion_portal/produce_particles.xml"/>
+				</particles>
+              </attack-boost>
+		</skill>
+
+	</skills>
+	<!-- *** commands *** -->
+	
+	<commands>
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="../lich/images/dark_magic_stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+	</commands>
+</unit>

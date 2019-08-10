@@ -1,0 +1,129 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<parameters>
+		<size value="3" />
+		<height value="2" />
+		<max-hp value="6000" regeneration="0"/>
+		<max-ep value="0" />
+		<armor value="0" />
+		<armor-type value="stone"/>
+		<sight value="6" />
+		<time value="100" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
+		<cellmap value="false"/>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false" />
+		<unit-requirements>
+			<unit name="sorcery_runes"/>
+		</unit-requirements>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="gold" amount="100" />
+			<resource name="stone" amount="150" />
+			<resource name="wood" amount="50" />
+		</resource-requirements>
+		<resources-stored />
+		<image path="images/portal.bmp" />
+		<image-cancel path="../lich/images/dark_magic_cancel.bmp"/>
+		<meeting-point value="true" image-path="../malevolent_shrine/images/meeting_point.bmp"/>
+		<selection-sounds enabled="true">
+			<sound path="../blood_fountain/sounds/dark_magic_click.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="false"/>
+	</parameters>
+	
+	<skills>
+		<skill>
+			<type value="stop"/>	
+			<name value="stop_skill"/>
+			<ep-cost value="0" />
+			<speed value="50" />
+			<anim-speed value="100" />
+			<animation path="models/oportal.g3d" />
+			<sound enabled="false" />
+			<particles value="true">
+				<particle-file path="fire_left.xml"/>
+				<particle-file path="glow_left.xml"/>
+				<particle-file path="fire_right.xml"/>
+			</particles>
+		</skill>
+		
+		<skill>
+			<type value="be_built" />	
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/portal_construction.g3d" />
+			<sound enabled="false" />
+		</skill>
+		
+		<skill>
+			<type value="produce"/>
+			<name value="produce_skill"/>	
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/oportal.g3d" />
+			<particles value="true">
+				<particle-file path="produce_particles.xml"/>
+				<particle-file path="fire_left.xml"/>
+				<particle-file path="glow_left.xml"/>
+				<particle-file path="fire_right.xml"/>
+			</particles>
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="die" />	
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/portal_destruction.g3d" />
+			<sound enabled="true" start-time="0">
+				<sound-file path="../blood_fountain/sounds/dark_magic_building_fall6.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+	</skills>
+	
+	<commands>
+		<command>
+			<type value="produce"/>
+			<name value="produce_deathhound" />
+			<image path="../deathhound/images/deathhound.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="deathhound"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_lich" />
+			<image path="../lich/images/lich.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="lich"/>
+		</command>
+		
+		<command>
+			<type value="produce"/>
+			<name value="produce_guardian_of_sheol" />
+			<image path="../guardian_of_sheol/images/guardian_of_sheol.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="guardian_of_sheol"/>
+		</command>
+	</commands>
+</unit>

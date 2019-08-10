@@ -1,0 +1,40 @@
+<?xml version="1.0" standalone="yes"?>
+<projectile-particle-system>
+    	<texture value="true" path="images/particle.bmp" luminance="true"/>
+    	<model value="false"/>
+	<primitive value="quad"/>
+	<mode value="normal"/>
+	<offset x="0.25" y="0.6" z=".5"/>
+	<direction x="0" y="0" z="0"/>
+	<radius value="0"/>
+	<color red="0.125" green="0.2" blue="0.2" alpha="1" />
+	<color-no-energy red="0.3" green="0.9" blue="0.5" alpha="0.1" />
+    <size value="0.45" />
+    <size-no-energy value="0.1" />
+	<speed value="10" />
+	<gravity value="0.1"/>
+   	<emission-rate value="50" />
+   	<energy-max value="4" />
+    <energy-var value="4" />
+		
+	<fixed value="false" />
+	<relativeDirection value="false" />
+	<relative value="false"/>
+	
+	<child-particles value="true">
+    	<particle-file path="particle_proj_child1.xml">
+    		<offset x="0" y="0" z="0"/>
+    		<radius value=".25"/>
+    		<size value=".2"/>
+			<size-no-energy value="1.5" />
+    		<gravity value=".1"/>
+    		<direction x="0" y="0" z="0"/>
+			<speed value="1" />
+    	</particle-file>
+    </child-particles>
+	
+	<trajectory type="parabolic">
+		<speed value="16.0"/>
+		<scale value="0.4"/>
+	</trajectory>
+</projectile-particle-system>

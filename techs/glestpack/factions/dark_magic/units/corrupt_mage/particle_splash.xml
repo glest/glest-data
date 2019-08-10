@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="yes"?>
+<splash-particle-system>
+    	<texture value="true" path="images/particle.bmp" luminance="true"/>
+    	<model value="false"/>
+	<primitive value="quad"/>
+	<mode value="normal"/>
+	<offset x="0" y="0.2" z="0"/>
+	<color red=".65" green="1" blue="1" alpha="1" />
+	<color-no-energy red="0.3" green="0.9" blue="0.5" alpha="1" />
+    	<size value="0.8" />
+    	<size-no-energy value="0" />
+    	<speed value="10" />
+	<gravity value="1.75"/>
+    	<emission-rate value="25" />
+    	<energy-max value="12" />
+    	<energy-var value="12" />
+	<emission-rate-fade value="10"/>
+	<vertical-spread a=".1" b=".65"/>
+	<horizontal-spread a=".5" b="0"/>
+	
+	<child-particles value="true">
+    	<particle-file path="particle_splash_child1.xml">
+    		<offset x="0" y=".2" z="0"/>
+    		<radius value="0.75"/>
+    		<size value=".2"/>
+			<size-no-energy value="3" />
+    		<gravity value=".5"/>
+    		<direction x="0" y=".5" z="0"/>
+			<speed value="5" />
+    	</particle-file>
+		<particle-file path="particle_splash_child2.xml">
+    		<offset x="0" y=".2" z="0"/>
+    		<radius value="0.1"/>
+    		<size value="0.25"/>
+			<size-no-energy value="0" />
+    		<gravity value="0.5"/>
+    		<direction x="0" y="1" z="0"/>
+			<speed value="10" />
+    	</particle-file>
+    </child-particles>
+</splash-particle-system>

@@ -1,0 +1,105 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+
+	<!-- *** parameters *** -->
+
+	<parameters>
+		<size value="0"/>
+		<height value="1"/>
+		<max-hp value="1500" regeneration="-1"/>
+		<max-ep value="0"/>
+		<armor value="0"/>
+		<armor-type value="organic"/>					
+		<sight value="0"/>
+		<time value="120"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels/>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements/>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="gold" amount="200"/>
+			<resource name="stone" amount="100"/>
+			<resource name="souls" amount="-15"/>			
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/20_energy.bmp"/>
+		<image-cancel path="../lich/images/dark_magic_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="false"/>
+		<command-sounds enabled="false"/>
+
+	</parameters>
+
+
+	<!-- *** skills *** -->
+
+	<skills>
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="5"/>
+			<animation path="models/skull_standing.g3d"/>
+			<particles value="true">
+				<particle-file path="effect_particles.xml"/>
+				<particle-file path="glow_particles.xml"/>
+			</particles>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="120"/>
+			<anim-speed value="85"/>
+			<animation path="models/skull_standing.g3d"/>
+			<sound enabled="false"/>		
+			<fade value="true"/>
+		</skill>
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="180"/>
+			<anim-speed value="50"/>
+			<animation path="models/skull_move.g3d"/>
+			<particles value="true">
+				<particle-file path="effect_particles.xml"/>
+				<particle-file path="glow_particles.xml"/>
+			</particles>
+			<sound enabled="false"/>
+		</skill>
+
+	</skills>
+	<!-- *** commands *** -->
+	
+	<commands>
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="../lich/images/dark_magic_stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="../lich/images/dark_magic_move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+	</commands>
+</unit>

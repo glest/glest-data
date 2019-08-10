@@ -1,0 +1,143 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="1"/>
+		<height value="2"/>
+		<max-hp value="600" regeneration="5"/>
+		<max-ep value="500" regeneration="20"/>
+		<armor value="20"/>	
+		<armor-type value="leather"/>
+		<sight value="11"/>
+		<time value="80"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels>
+			<level name="greater" kills="5"/>
+			<level name="legendary" kills="12"/>
+		</levels>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+			<light enabled="false"/>
+		<unit-requirements/>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="gold" amount="85"/>
+			<resource name="souls" amount="1"/>
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/corrupt_mage.bmp"/>
+		<image-cancel path="../lich/images/dark_magic_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="false"/>
+		<command-sounds enabled="false"/>
+	</parameters>
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="30"/>
+			<animation path="models/dark_mage_idle.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="275"/>
+			<anim-speed value="55"/>
+			<animation path="models/dark_mage_walking.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="60"/>
+			<speed value="60"/>
+			<anim-speed value="60"/>
+			<animation path="models/dark_mage_attacking.g3d"/>
+			<sound enabled="false"/>
+			<particles value="true" start-time="0.2" end-time="0.6">
+				<particle-file path="attack_particles.xml"/>
+				<particle-file path="attack_particles_2.xml"/>
+			</particles>
+			<attack-strenght value="150"/>
+			<attack-var value="45"/>
+			<attack-range value="8"/>
+			<attack-type value="energy"/>
+			<attack-fields>
+				<field value="land"/>
+				<field value="air"/>
+			</attack-fields>
+			<attack-start-time value="0.6"/>
+			<projectile value="true">
+				<particle value="true" path="particle_proj.xml"/>
+				<sound enabled="false"/>
+			</projectile>
+			<splash value="true">
+				<radius value="0"/>
+				<damage-all value="true"/>
+				<particle value="true" path="particle_splash.xml"/>
+			</splash>
+		</skill>
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="120"/>
+			<anim-speed value="40"/>
+			<animation path="models/dark_mage_death.g3d"/>
+			<sound enabled="false"/>
+			<fade value="false"/>
+		</skill>
+	</skills>
+
+	<commands>
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="../lich/images/dark_magic_stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="../lich/images/dark_magic_move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="dark_nova"/>
+			<image path="images/flame_throw.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+
+		<command>
+			<type value="attack_stopped"/>
+			<name value="hold_position"/>
+			<image path="../lich/images/dark_magic_hold.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+	</commands>
+</unit>

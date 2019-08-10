@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes"?>
+<splash-particle-system>
+    	<texture value="true" path="images/particle.bmp" luminance="true"/>
+    	<model value="false"/>
+	<primitive value="quad"/>
+	<mode value="normal"/>
+	<offset x="0" y="0" z="0"/>
+	<color red="0.4" green="0.2" blue="0.2" alpha="1" />
+	<color-no-energy red="0.3" green="0.9" blue="0.5" alpha="1" />
+    	<size value="0.4" />
+    	<size-no-energy value="0" />
+    	<speed value="10" />
+	<gravity value="-1"/>
+    	<emission-rate value="30" />
+    	<energy-max value="35" />
+    	<energy-var value="15" />
+	<emission-rate-fade value="10"/>
+	<vertical-spread a=".75" b="0"/>
+	<horizontal-spread a="1" b="0"/>
+	<shape value="conical">
+		<angle value="45"/>
+	</shape>
+	
+	<fixed value="false" />
+	<relativeDirection value="false" />
+	<relative value="true"/>
+</splash-particle-system>

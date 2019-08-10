@@ -1,0 +1,148 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<parameters>
+		<size value="2" />
+		<height value="2" />
+		<max-hp value="1400" regeneration="0"/>
+		<max-ep value="0"/>
+		<armor value="0" />
+		<armor-type value="stone"/>
+		<sight value="5" />
+		<time value="50" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
+		<cellmap value="false"/>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false" />
+		<unit-requirements>
+			<unit name="malevolent_shrine"/>
+		</unit-requirements>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="gold" amount="100"/>
+			<resource name="stone" amount="100"/>
+		</resource-requirements>
+		<resources-stored>
+			<resource name= "gold" amount="100"/>
+		</resources-stored>
+		<image path="images/energy_fountain.bmp"/>
+		<image-cancel path="../lich/images/dark_magic_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="../blood_fountain/sounds/dark_magic_click.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="../blood_fountain/sounds/dark_magic_click.wav"/>
+		</command-sounds>
+	</parameters>
+
+	<skills>
+		<skill>
+			<type value="be_built" />
+			<name value="be_built_skill"/>
+			<ep-cost value="0" />
+			<speed value="120"/>
+			<speed value="120"/>
+			<anim-speed value="300" />
+			<animation path="models/construction_blood_fountain.g3d" />
+			<sound enabled="false" />
+		</skill>
+
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill"/>
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="100" />
+			<animation path="models/blood_fountain_idle.g3d" />
+			<particles value="true">
+				<particle-file path="blood_particles.xml"/>
+				<particle-file path="blood_particles_up.xml"/>
+				<particle-file path="boil_particles.xml"/>
+			</particles>
+			<sound enabled="false" />
+		</skill>
+
+		<skill>
+			<type value="produce"/>
+			<name value="produce_skill"/>
+			<ep-cost value="0"/>
+			<speed value="150"/>
+			<anim-speed value="80"/>
+			<animation path="models/blood_fountain_wave.g3d"/>
+			<particles value="true">
+				<particle-file path="boil_produce_particles.xml"/>
+				<particle-file path="blood_particles_up.xml"/>
+				<particle-file path="blood_particles.xml"/>
+			</particles>
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="upgrade" />
+			<name value="upgrade_skill"/>
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="75" />
+			<animation path="models/blood_fountain_idle.g3d" />
+			<particles value="true">
+				<particle-file path="blood_particles.xml"/>
+				<particle-file path="blood_particles_up.xml"/>
+				<particle-file path="boil_particles.xml"/>
+			</particles>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="die" />
+			<name value="die_skill"/>
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/destruction_blood_fountain.g3d" />
+			<sound enabled="true" start-time="0">
+				<sound-file path="../blood_fountain/sounds/dark_magic_building_fall1.wav"/>
+			</sound>
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+
+	<commands>
+		<command>
+			<type value="produce"/>
+			<name value="produce_lesser_soul_trap" />
+			<image path="../lesser_soul_trap/images/5_energy.bmp"/>
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="lesser_soul_trap"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_greater_soul_trap" />
+			<image path="../greater_soul_trap/images/20_energy.bmp"/>
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="greater_soul_trap"/>
+		</command>
+		
+		<command>
+			<type value="upgrade"/>
+			<name value="research_corruption"/>
+			<image path="../../upgrades/corruption/images/corruption.bmp" />
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="corruption"/>
+		</command>
+	</commands>
+</unit>
