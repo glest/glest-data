@@ -1,0 +1,616 @@
+; TechTree
+TechTreeName=mixpack
+; -------------------------------------
+; Types of Armor
+ArmorTypeName_organic=organiczny 'Organic'
+ArmorTypeName_leather=skórzany 'Leather'
+ArmorTypeName_wood=drewniany 'Wood'
+ArmorTypeName_metal=metalowy 'Metal'
+ArmorTypeName_stone=kamienny 'Stone'
+; --------------------
+; Types of Attack
+AttackTypeName_slashing=siekący
+AttackTypeName_piercing=przeszywający
+AttackTypeName_impact=wstrząsający
+AttackTypeName_energy=energetyczny
+AttackTypeName_sword=ostrzem
+AttackTypeName_arrow=strzałą
+AttackTypeName_magic=magiczny
+AttackTypeName_beat=uderzający
+; --------------------
+; Types of Resources
+ResourceTypeName_energy=energia ('Energy')
+ResourceTypeName_food=Żywność ('Food')
+ResourceTypeName_gold=złoto ('Gold')
+ResourceTypeName_housing=miejsc ('Housing')
+ResourceTypeName_stone=kamień ('Stone')
+ResourceTypeName_wood=drewno ('Wood')
+; -----------------------------------------------------------------------------
+; Faction
+FactionName_egypt=Egipcjanie
+; -------------------------------------
+; Types of Upgrades for this Faction
+UpgradeTypeName_power_of_ra=moc Ra ('Power of Ra')
+UpgradeTypeName_spear_weapons=włócznie ('Spear weapons')
+UpgradeTypeName_speedup_priest_production=szybka produkcja u kapłanów ('Fast priest's production')
+UpgradeTypeName_summon_ibis=ptak ibis ('Ibis')
+UpgradeTypeName_summon_scarab=skarabeusz ('Scarab')
+; -------------------------------------
+UnitTypeName_air_pyramid=p.powietrzna piramida\n('A.air pyramid')
+; --------------------
+LevelName_elite=elitarny-
+; --------------------
+CommandName_attack_off=atak - nieaktywny\n('Attack - inactive')
+CommandName_attack_on=atak - aktywny ('Attack - active')
+; -------------------------------------
+UnitTypeName_anubis_warrior=wojownik anubisa\n('Anubis' warrior')
+; --------------------
+LevelName_ancient=starożytny-
+; --------------------
+CommandName_stop=stop ('Stop')
+CommandName_move=przesuń się / idź ('Move')
+CommandName_attack=atak ('Attack')
+; -------------------------------------
+UnitTypeName_chicken=kurczak ('Chicken')
+; -------------------------------------
+UnitTypeName_desert_camp=pustynny obóz\n('Desert camp')
+; --------------------
+CommandName_produce_spearthrower=produkcja miotacza włóczni\n('Produce spear thrower')
+CommandName_produce_spearman=produkcja włócznika\n('Produce spearman')
+CommandName_upgrade_spear_weapons=ulepszenie włóczni\n('Upgrade spear weapons')\n
+; -------------------------------------
+UnitTypeName_farm=farma ('Farm')
+; --------------------
+CommandName_produce_chicken=produkcja kurczaka\n('Produce chicken')
+; -------------------------------------
+UnitTypeName_ibis=ptak ibis ('Ibis')
+; --------------------
+CommandName_hold_position=utrzymaj pozycję ('Hold position')\n
+; -------------------------------------
+UnitTypeName_mummy=mumia ('Mummy')
+; -------------------------------------
+UnitTypeName_obelisk=obelisk ('Obelisk')
+; --------------------
+CommandName_produce_scarab=produkcja skarabeusza\n('Produce scarab')
+CommandName_produce_snake=produkcja węża ('Produce snake')
+CommandName_produce_ibis=produkcja ptaka ibis\n('Produce ibis')
+; -------------------------------------
+UnitTypeName_priest=kapłan ('Priest')
+; --------------------
+CommandName_speedup_priest_production=przyśp. produkcji u kapłanów\n('Speed up priest's production')\n
+CommandName_heal=leczenie ('To heal')
+CommandName_produce_mummy=produkcja mumii\n('Produce mummy')
+CommandName_produce_anubis_warrior=produkcja wojownika anubisa\n('Produce anubis' warrior')
+CommandName_ice_nova=lodowy wybuch ('Ice nova')
+; -------------------------------------
+UnitTypeName_pyramid=piramida ('Pyramid')
+; --------------------
+CommandName_produce_slave=produkcja niewolnika\n('Produce slave')
+; -------------------------------------
+UnitTypeName_scarab=skarabeusz ('Scarab')
+; --------------------
+LevelName_expert=ekspercki-
+LevelName_master=mistrzowski-
+LevelName_legendary=legendarny-
+; --------------------
+CommandName_dung_attack=obrzucenie gnojem ('Dung attack')
+; -------------------------------------
+UnitTypeName_slave=niewolnik ('Slave')
+; --------------------
+CommandName_build_basic=budowanie, b. podstawowe\n('Build, basic b.')
+CommandName_repair=naprawianie ('Repair')
+CommandName_mine=wydobyw. złota lub kamienia\n('Gold or stone mining')
+CommandName_harvest_wood=pozyskiwanie drewna\n('Wood harvesting')
+; -------------------------------------
+UnitTypeName_snake=wąż ('Snake')
+; --------------------
+CommandName_poison_shot=strzał trucizną ('Poison shot')
+; -------------------------------------
+UnitTypeName_spearman=włócznik ('Spearman')
+; -------------------------------------
+UnitTypeName_spearthrower=miotacz włóczni\n('Spear thrower')
+; -------------------------------------
+UnitTypeName_sphinx=sfinks ('Sphinx')
+; -------------------------------------
+UnitTypeName_temple=Świątynia ('Temple')
+; --------------------
+CommandName_produce_priest=produkcja kapłana\n('Produce priest')
+CommandName_research_scarab=odkrycie skarabeusza\n('Research scarab')
+CommandName_research_ibis=odkrycie ptaka ibis\n('Research ibis')
+CommandName_get_power_of_ra=odkrycie mocy Ra\n('Research power of Ra')
+; -----------------------------------------------------------------------------
+; Faction
+FactionName_natives=Nativesie
+; -------------------------------------
+; Types of Upgrades for this Faction
+UpgradeTypeName_advanced_iron=zaawansowane Żelazo ('Advanced iron')
+UpgradeTypeName_bull_food=karma dla byków ('Bull food')
+UpgradeTypeName_iron=Żelazo ('Iron')
+UpgradeTypeName_petroleum=nafta ('Petroleum')
+UpgradeTypeName_stables=stajnie ('Stables')
+UpgradeTypeName_training_field=plac treningowy ('Training field')
+; -------------------------------------
+UnitTypeName_archer=Łucznik ('Archer')
+; -------------------------------------
+UnitTypeName_axe_natives=nativesin z toporem\n('Axe natives')
+; -------------------------------------
+UnitTypeName_axe_thrower=miotacz toporów\n('Axe thrower')
+; -------------------------------------
+UnitTypeName_beehive=pszczeli ul ('Beehive')
+; -------------------------------------
+UnitTypeName_big_tent=wielki namiot ('Big tent')
+; --------------------
+CommandName_produce_stickfighter=produkcja kijkarza\n('Produce stick fighter')
+CommandName_produce_archer=produkcja Łucznika\n('Produce archer')
+; -------------------------------------
+UnitTypeName_bull=byk ('Bull')
+; -------------------------------------
+UnitTypeName_campfire=ognisko ('Campfire')
+; --------------------
+CommandName_produce_fire_golem=produkcja ognistego golema\n('Produce fire golem')
+CommandName_research_iron=odkrycie Żelaza ('Research iron')
+CommandName_research_advanced_iron=odkrycie zaawansow. Żelaza\n('Research advanced iron')
+; -------------------------------------
+UnitTypeName_fire_archer=ognisty Łucznik\n('Fire archer')
+; -------------------------------------
+UnitTypeName_fire_golem=ognisty golem ('Fire golem')\n
+; -------------------------------------
+UnitTypeName_horse_farm=stadnina koni ('Horse farm')\n
+; --------------------
+CommandName_produce_horseman=produkcja jeźdzca\n('Produce horseman')
+CommandName_produce_bull=produkcja byka ('Produce bull')
+CommandName_research_stables=odkrycie stajni\n('Research stables')
+; -------------------------------------
+UnitTypeName_horseman=jeździec ('Horseman')
+; -------------------------------------
+UnitTypeName_main_teepee=główne tipi ('Main teepee')\n
+; --------------------
+CommandName_produce_worker=produkcja robotnika\n('Produce worker')
+; -------------------------------------
+UnitTypeName_reed=trzcina ('Reed')
+; --------------------
+CommandName_research_bull_food=odkrycie karmy dla byków\n('Research bull food')
+; -------------------------------------
+UnitTypeName_round_tent=okrągły namiot\n('Round tent')
+; --------------------
+CommandName_produce_axe_natives=produkcja nativesina z toporem\n('Produce axe natives')
+CommandName_produce_axe_thrower=produkcja miotacza toporów\n('Produce axe thrower')
+CommandName_produce_fire_archer=produkcja ognistego Łucznika\n('Produce fire archer')
+CommandName_create_training_field=tworzenie placu treningowego\n('Create training field')
+; -------------------------------------
+UnitTypeName_shaman=szaman ('Shaman')
+; --------------------
+CommandName_molotov=butelka z benzyną ('Molotov')
+CommandName_produce_thunderbird=produkcja grzmiącego ptaka\n('Produce thunderbird')
+CommandName_build_beehive=budowa ula ('Build beehive')
+; -------------------------------------
+; Unit > spearman
+; --------------------
+LevelName_guardian=opiekuńczy-
+LevelName_chief=przywódczy-
+; -------------------------------------
+UnitTypeName_stickfighter=kijkarz ('Stick fighter')
+; -------------------------------------
+UnitTypeName_tent=namiot ('Tent')
+; -------------------------------------
+UnitTypeName_thunderbird=grzmiący ptak\n('Thunderbird')
+; --------------------
+CommandName_throw=miotanie ('Throw')
+CommandName_breath=oddech ('Breath')
+; -------------------------------------
+UnitTypeName_totem=totem ('Totem')
+; --------------------
+CommandName_air_on=p.powietrzny atak - aktywny\n('A.air attack - active')
+CommandName_research_petroleum=odkrycie nafty\n('Research petroleum')
+CommandName_produce_shaman=produkcja szamana\n('Produce shaman')
+; -------------------------------------
+UnitTypeName_worker=robotnik ('Worker')
+; -----------------------------------------------------------------------------
+; Faction
+FactionName_magic=Magicy
+; -------------------------------------
+; Types of Upgrades for this Faction
+UpgradeTypeName_ancient_summoning=starożytne przywoływanie ('Ancient summoning')
+UpgradeTypeName_dragon_call=przywoływanie smoka ('Dragon call')
+UpgradeTypeName_energy_compression=skondensowana energia ('Condensed energy')
+UpgradeTypeName_energy_sharpening=gwałtowna magia ('Sharp magic')
+UpgradeTypeName_faster_movement=szybsze przemieszczanie ('Faster movement')
+UpgradeTypeName_golem_power=potężny golem ('Power golem')
+UpgradeTypeName_hell_gate=wrota piekła ('Hell gate')
+; -------------------------------------
+UnitTypeName_archmage=arcymag ('Archmage')
+; --------------------
+CommandName_static_fire=statyczny ogień ('Static fire')
+; -------------------------------------
+UnitTypeName_archmage_tower=wieża arcymagów\n('Archmages' tower')
+; --------------------
+CommandName_research_dragon_call=odkrycie przywoływania smoka\n('Research dragon call')
+CommandName_golem_power=odkrycie potężnego golema\n('Research power golem')
+; -------------------------------------
+UnitTypeName_battlemage=mag bitewny ('Battlemage')\n
+; --------------------
+CommandName_fire_bolt=ognisty piorun ('Fire bolt')
+CommandName_promote_to_archmage=awans do arcymaga\n('Promote to archmage')
+; -------------------------------------
+UnitTypeName_behemoth=potwór ('Behemoth')
+; -------------------------------------
+UnitTypeName_daemon=demon ('Daemon')
+; -------------------------------------
+UnitTypeName_dragon_rider=jaszczurza jeźdźczyni\n('Dragon rider')
+; --------------------
+CommandName_fire_breath=ognisty oddech ('Fire breath')
+CommandName_flare=flara ('Flare')
+; -------------------------------------
+UnitTypeName_dragon=smok ('Dragon')
+; --------------------
+CommandName_promote_to_evil_dragon=awans do złego smoka\n('Promote to evil dragon')
+; -------------------------------------
+UnitTypeName_energy_source=Źródło energii\n('Energy source')
+; -------------------------------------
+UnitTypeName_evil_dragon=zły smok ('Evil dragon')
+; -------------------------------------
+UnitTypeName_ghost_armor=zbrojny duch\n('Ghost armor')
+; -------------------------------------
+UnitTypeName_golem=golem ('Golem')
+; --------------------
+CommandName_promote_to_power_golem=awans do potężnego golema\n('Promote to power golem')
+; -------------------------------------
+UnitTypeName_initiate=adept ('Initiate')
+; --------------------
+CommandName_build=budowanie ('Build')
+CommandName_ritual=rytuały ('Ritual')
+CommandName_harvest=pozyskiwanie drewna\n('Wood harvesting')
+CommandName_promote_to_battlemage=awans do maga bitewnego\n('Promote to battlemage')
+; -------------------------------------
+UnitTypeName_library=biblioteka ('Library')
+; --------------------
+CommandName_research_energy_compression=kondensacja energii\n('Energy condensation')
+CommandName_research_energy_sharpening=wyostrzenie magii\n('Magic sharpening')
+CommandName_research_hell_gate=odkrycie wrót piekła\n('Research hell gate')
+; -------------------------------------
+UnitTypeName_mage_tower=wieża magów\n('Mages' tower')
+; --------------------
+CommandName_produce_initiate=produkcja adepta\n('Produce initiate')
+; -------------------------------------
+UnitTypeName_power_golem=potężny golem\n('Power golem')
+; -------------------------------------
+UnitTypeName_summoner=przywoływaczka\n('Summoner')
+; --------------------
+CommandName_summon_daemon=przyzywanie demona\n('Summon daemon')
+CommandName_summon_ghost_armor=przyzywanie zbrojnego ducha\n('Summon ghost armor')
+CommandName_summon_dragon=przyzywanie smoka\n('Summon dragon')
+CommandName_summon_wingless_dragon=przyzwanie jaszczura\n('Summon wingless dragon')
+; -------------------------------------
+UnitTypeName_summoner_guild=gildia przywoływaczek\n('Summoners' guild')
+; --------------------
+CommandName_produce_summoner=produkcja przywoływaczki\n('Produce summoner')
+CommandName_research_ancient_summoning=odkrycie staroż. przywoływania\n('Research ancient summoning')
+CommandName_speed_up_movement=przyspieszenie ruchu\n('Speed up movement')
+; -------------------------------------
+UnitTypeName_tower_of_souls=wieża dusz\n('Tower of souls')
+; -------------------------------------
+UnitTypeName_wicker_behemoth=wiklinowy potwór\n('Wicker behemoth')
+; --------------------
+CommandName_promote_to_behemoth=transformacja do potwora\n('Transform to behemoth')
+; -----------------------------------------------------------------------------
+; Faction
+FactionName_norsemen=Normanowie
+; -------------------------------------
+; Types of Upgrades for this Faction
+UpgradeTypeName_arrow=strzały ('Arrows')
+UpgradeTypeName_holy_valkyrie=Święta walkiria ('Holy valkyrie')
+UpgradeTypeName_mead=miód pitny ('Mead')
+UpgradeTypeName_root=korzeń ('Root')
+; -------------------------------------
+UnitTypeName_battleaxe=topornik ('Battleaxe')
+; --------------------
+CommandName_promote_to_battleaxe_berserk=awans do oszalałego topornika\n('Promote to battleaxe berserk')\n
+; -------------------------------------
+UnitTypeName_battleaxe_berserk=oszalały topornik\n('Battleaxe berserk')
+; -------------------------------------
+UnitTypeName_blacksmith=kowal ('Blacksmith')
+; --------------------
+CommandName_upgrade_iron=ulepszenie Żelaza ('Upgrade iron')
+CommandName_upgrade_arrow=ulepszenie strzał\n('Upgrade arrows')
+CommandName_upgrade_advanced_iron=ulepszenie do zaaw. Żelaza\n('Upgrade to advanced iron')
+CommandName_produce_crossbow=produkcja kuszy\n('Produce crossbow')
+; -------------------------------------
+UnitTypeName_bone_tent=kościany namiot\n('Bone tent')
+; --------------------
+CommandName_produce_swordman=produkcja miecznika\n('Produce swordsman')
+CommandName_produce_battleaxe=produkcja topornika\n('Produce battleaxe')
+; -------------------------------------
+UnitTypeName_castle=zamek ('Castle')
+; --------------------
+CommandName_produce_thrall=produkcja służącego\n('Produce thrall')
+; -------------------------------------
+UnitTypeName_cow=krowa ('Cow')
+; -------------------------------------
+UnitTypeName_crossbow=kusza ('Crossbow')
+; --------------------
+CommandName_attack_arrow=atak strzałą ('Attack arrow')
+; -------------------------------------
+UnitTypeName_cudgel_lady=dama z maczugą\n('Cudgel lady')
+; --------------------
+CommandName_cudgel=maczuga ('Cudgel')
+; -------------------------------------
+; Unit > farm
+; --------------------
+CommandName_produce_cow=produkcja krowy ('Produce cow')
+; -------------------------------------
+UnitTypeName_flying_valkyrie=latająca walkiria\n('Flying valkyrie')
+; -------------------------------------
+UnitTypeName_house=dom ('House')
+; --------------------
+CommandName_produce_cudgel_lady=produkcja damy z maczugą\n('Produce cudgel lady')
+; -------------------------------------
+UnitTypeName_mead_bar=bar z miodem pitnym\n('Mead bar')
+; --------------------
+CommandName_research_mead=odkrycie miodu pitnego\n('Research mead')
+; -------------------------------------
+UnitTypeName_mistletoe_tree=jemiołowe drzewo\n('Mistletoe tree')
+; --------------------
+CommandName_research_root=odkrycie korzenia\n('Research root')
+CommandName_resurrect_wild_sow=wskrzeszenie dzikiej lochy\n('Resurrect wild sow')
+; -------------------------------------
+; Unit > spearman
+; --------------------
+CommandName_promote_to_spearman_berserk=awans do oszalałego włócznika\n('Promote to spearman berserk')\n
+; -------------------------------------
+UnitTypeName_spearman_berserk=oszalały włócznik\n('Spearman berserk')
+; -------------------------------------
+UnitTypeName_swordman=miecznik ('Swordsman')
+; --------------------
+CommandName_promote_to_swordman_berserk=awans do oszalałego miecznika\n('Promote to swordsman berserk')\n
+; -------------------------------------
+UnitTypeName_swordman_berserk=oszalały miecznik\n('Swordsman berserk')
+; -------------------------------------
+UnitTypeName_thor=thor ('Thor')
+; --------------------
+LevelName_advanced=zaawansowany-
+; -------------------------------------
+UnitTypeName_thor_totem=totem thora ('Thor's totem')\n
+; --------------------
+CommandName_build_thor=transformacja do thora\n('Transform to thor')
+; -------------------------------------
+UnitTypeName_thrall=służący ('Thrall')
+; -------------------------------------
+UnitTypeName_valhalla=walhalla ('Valhalla')
+; --------------------
+CommandName_produce_flying_valkyrie=produkcja latającej walkirii\n('Produce flying valkyrie')
+CommandName_produce_valkyrie=produkcja walkirii\n('Produce valkyrie')
+CommandName_research_holy_valkyrie=odkrycie Świętej walkirii\n('Research holy valkyrie')
+; -------------------------------------
+UnitTypeName_valkyrie=walkiria ('Valkyrie')
+; --------------------
+CommandName_airattack=atak celu powietrznego\n('To attack air')
+; -------------------------------------
+UnitTypeName_wild_sow=dzika locha ('Wild sow')
+; -----------------------------------------------------------------------------
+; Faction
+FactionName_persians=Persowie
+; -------------------------------------
+; Types of Upgrades for this Faction
+UpgradeTypeName_corn_and_wicker=kukurydza i wikliny ('Corn and wicker')
+UpgradeTypeName_magic_level_1=1 poziom magiczny ('Magic level 1')
+UpgradeTypeName_magic_level_2=2 poziom magiczny ('Magic level 2')
+UpgradeTypeName_nails=gwoździe ('Nails')
+UpgradeTypeName_shield=tarcze ('Shields')
+UpgradeTypeName_weapons=broń ('Weapons')
+; -------------------------------------
+; Unit > blacksmith
+; --------------------
+CommandName_upgrade_weapons=ulepszenie broni\n('Upgrade weapons')
+CommandName_upgrade_nails=ulepszenie gwoździ\n('Upgrade nails')
+CommandName_upgrade_shield=ulepszenie tarcz\n('Upgrade shields')
+; -------------------------------------
+UnitTypeName_elephant=słoń ('Elephant')
+; -------------------------------------
+UnitTypeName_elephant_cage=słoniowa klatka\n('Elephant's cage')
+; --------------------
+CommandName_produce_elephant=produkcja słonia\n('Produce elephant')
+; -------------------------------------
+UnitTypeName_fakir=fakir ('Fakir')
+; -------------------------------------
+; Unit > farm
+; --------------------
+CommandName_produce_sheep=produkcja owcy ('Produce sheep')
+CommandName_research_corn_and_wicker=odkrycie kukurydzy i wiklin\n('Research corn and wicker')
+; -------------------------------------
+UnitTypeName_flying_carpet=latający dywan\n('Flying carpet')
+; --------------------
+CommandName_magic_attack=atak magiczny ('Magic attack')
+; -------------------------------------
+UnitTypeName_genie=dżin ('Genie')
+; -------------------------------------
+; Unit > house
+; --------------------
+CommandName_produce_fakir=produkcja fakira ('Produce fakir')
+; -------------------------------------
+UnitTypeName_magician=czarodziej ('Magician')
+; --------------------
+CommandName_build_snake_basket=budowa koszyka z wężem\n('Build snake basket')
+; -------------------------------------
+UnitTypeName_minaret=minaret ('Minaret')
+; -------------------------------------
+UnitTypeName_palace=pałac ('Palace')
+; -------------------------------------
+UnitTypeName_princess=księżniczka ('Princess')
+; -------------------------------------
+UnitTypeName_sheep=owca ('Sheep')
+; -------------------------------------
+UnitTypeName_snake_basket=koszyk z wężem\n('Snake basket')
+; -------------------------------------
+; Unit > temple
+; --------------------
+CommandName_produce_princess=produkcja księżniczki\n('Produce princess')
+; -------------------------------------
+; Unit > tent
+; --------------------
+CommandName_produce_genie=produkcja dżina ('Produce genie')
+CommandName_produce_flying_carpet=produkcja latającego dywanu\n('Produce flying carpet')
+CommandName_produce_magician=produkcja czarodzieja\n('Produce magician')
+CommandName_upgrade_magic_level_1=ulepszenie magii do 1 poziomu\n('Upgrade magic to level 1')
+CommandName_upgrade_magic_level_2=ulepszenie magii do 2 poziomu\n('Upgrade magic to level 2')
+; -----------------------------------------------------------------------------
+; Faction
+FactionName_romans=Rzymianie
+; -------------------------------------
+; Types of Upgrades for this Faction
+UpgradeTypeName_advanced_architecture=zaawansowana architektura ('Advanced architecture')
+UpgradeTypeName_bless_of_minerva=przychylność minewry ('The favor of minerva')
+UpgradeTypeName_enlarge_shields=duże tarcze ('Large shields')
+UpgradeTypeName_formations=formacje ('Formations')
+UpgradeTypeName_jupiter=przychylność jowisza ('The favor of jupiter')
+UpgradeTypeName_reinforce_armor=wytrzymały pancerz ('Strength armor')
+UpgradeTypeName_sharpen_points=ostre groty ('Sharp points')
+UpgradeTypeName_sign_of_mars=przychylność marsa ('The favor of mars')
+UpgradeTypeName_strengthen_swords=wytrzymałe miecze ('Strength swords')
+; -------------------------------------
+; Unit > archer
+; --------------------
+CommandName_get_fire_arrows=awans do ognistego łucznika\n('Promote to fire archer')
+; -------------------------------------
+UnitTypeName_axe_man=topornik ('Axe man')
+; -------------------------------------
+UnitTypeName_ballista=balista ('Ballista')
+; -------------------------------------
+UnitTypeName_battering_ram=taran ('Battering ram')
+; --------------------
+CommandName_attack_land=atak celu naziemnego\n('To attack land')
+CommandName_attack_air=atak celu powietrznego\n('To attack air')
+; -------------------------------------
+UnitTypeName_blacksmith_shop=kowal ('Blacksmith')
+; --------------------
+CommandName_strengthen_swords=wzmocnienie mieczy\n('Strengthen swords')
+CommandName_sharpen_points=ostrzenie grotów\n('Sharpen points')
+CommandName_reinforce_armor=wzmocnienie pancerza\n('Strengthen armor')
+CommandName_enlarge_shields=powiększenie tarcz\n('Enlarge shields')
+; -------------------------------------
+UnitTypeName_catapult=katapulta ('Catapult')
+; --------------------
+CommandName_fire_ball=ognista kula ('Fire ball')
+; -------------------------------------
+UnitTypeName_cavalry=kawalerzysta ('Cavalry')
+; --------------------
+CommandName_promote_to_tribune=awans do trybuna\n('Promote to tribune')
+; -------------------------------------
+UnitTypeName_eagle_pillar=orli słup ('Eagle pillar')
+; -------------------------------------
+; Unit > fire archer
+; --------------------
+LevelName_accurate=dokładny-
+; -------------------------------------
+UnitTypeName_forum=forum ('Forum')
+; -------------------------------------
+UnitTypeName_general=generał ('General')
+; --------------------
+LevelName_esteemed=szanowany-
+LevelName_grand=wspaniały-
+; -------------------------------------
+UnitTypeName_gladiator=gladiator ('Gladiator')
+; -------------------------------------
+UnitTypeName_gladiator_school=szkoła gladiatorów\n('Gladiators' school')
+; --------------------
+CommandName_train_gladiator=wytrenowanie gladiatora\n('Train gladiator')
+CommandName_produce_axe_man=produkcja topornika\n('Produce axe man')
+; -------------------------------------
+UnitTypeName_guard=strażnik ('Guard')
+; -------------------------------------
+UnitTypeName_guard_tower=wieża strażnicza\n('Guard tower')
+; -------------------------------------
+UnitTypeName_military_camp=obóz wojskowy\n('Military camp')
+; --------------------
+CommandName_produce_cavalry=produkcja kawalerzysty\n('Produce cavalry')
+CommandName_produce_turtle_formation=produkcja żółwiej formacji\n('Produce turtle formation')
+CommandName_produce_general=produkcja generała\n('Produce general')
+CommandName_produce_mechanic=produkcja mechanika wojennego\n('Produce wartime mechanic')
+CommandName_upgrade_advanced_architecture=ulepszenie architektury\n('Upgrade architecture')
+CommandName_upgrade_formations=odkrycie formacji\n('Research formations')
+; -------------------------------------
+UnitTypeName_swordsman=miecznik ('Swordsman')
+; -------------------------------------
+; Unit > temple
+; --------------------
+CommandName_research_sign_of_mars=błogosławieństwo marsa\n('Blessing of mars')
+CommandName_research_jupiter=błogosławieństwo jowisza\n('Blessing of jupiter')
+CommandName_upgrade_bless_of_minerva=błogosławieństwo minewry\n('Blessing of minerva')
+; -------------------------------------
+UnitTypeName_training_camp=obóz treningowy\n('Training camp')
+; --------------------
+CommandName_produce_guard=produkcja strażnika\n('Produce guard')
+CommandName_produce_swordsman=produkcja miecznika\n('Produce swordsman')
+; -------------------------------------
+UnitTypeName_tribune=Trybun ('Tribune')
+; -------------------------------------
+UnitTypeName_turtle_formation=Żółwia formacja\n('Turtle formation')
+; -------------------------------------
+UnitTypeName_wartime_mechanic=mechanik wojenny\n('Wartime mechanic')
+; --------------------
+CommandName_build_catapult=transformacja do katapulty\n('Transform to catapult')
+CommandName_build_battering_ram=transformacja do tarana\n('Transform to battering ram')
+CommandName_build_ballista=transformacja do balisty\n('Transform to ballista')
+; -----------------------------------------------------------------------------
+; Faction
+FactionName_tech=Technicy
+; -------------------------------------
+; Types of Upgrades for this Faction
+UpgradeTypeName_blade_weapons=broń biała ('Blade weapons')
+UpgradeTypeName_piercing_weapons=broń przeszywająca ('Piercing weapons')
+UpgradeTypeName_robotics=robotyzacja ('Robotics')
+UpgradeTypeName_shield_level_1=1 poziom tarcz ('Shields Level 1')
+UpgradeTypeName_shield_level_2=2 poziom tarcz ('Shields Level 2')
+; -------------------------------------
+UnitTypeName_aerodrome=lądowisko ('Aerodrome')
+; --------------------
+CommandName_produce_ornithopter=produkcja ornitoptera\n('Produce ornithopter')
+CommandName_produce_airship=produkcja sterowca\n('Produce airship')
+; -------------------------------------
+UnitTypeName_air_ballista=p.powietrzna balista\n('A.air ballista')
+; -------------------------------------
+UnitTypeName_airship=sterowiec ('Airship')
+; --------------------
+CommandName_missile=pocisk ('Missile')
+; -------------------------------------
+UnitTypeName_barracks=koszary ('Barracks')
+; -------------------------------------
+UnitTypeName_battle_machine=maszyna bojowa\n('Battle machine')
+; -------------------------------------
+; Unit > blacksmith
+; --------------------
+CommandName_upgrade_blade_weapons=ulepszenie broni białej\n('Upgrade blade weapons')
+CommandName_upgrade_piercing_weapons=ulepszenie broni przeszywającej\n('Upgrade piercing weapons')
+; -------------------------------------
+UnitTypeName_defense_tower=wieża obronna\n('Defense tower')
+; -------------------------------------
+; Unit > farm
+; --------------------
+CommandName_produce_pig=produkcja Świni ('Produce pig')
+; -------------------------------------
+UnitTypeName_ornithopter=ornitopter ('Ornithopter')
+; --------------------
+CommandName_fire_arrow=ognista strzała ('Fire arrow')
+; -------------------------------------
+UnitTypeName_pig=Świnia ('Pig')
+; -------------------------------------
+; Unit > swordman
+; --------------------
+CommandName_promote_to_guard=awans do strażnika\n('Promote to guard')
+; -------------------------------------
+UnitTypeName_technician=technik ('Technician')
+; --------------------
+CommandName_build_ultimate=budowanie, b. b. zaawansowane\n('Build, ultimate b.')
+CommandName_mine_gold=wydobywanie złota\n('Gold mining')
+CommandName_build_battle_machine=transf. do maszyny bojowej\n('Transform to battle machine')
+CommandName_build_air_ballista=transf. do p.pow. balisty\n('Transform to a.air ballista')
+; -------------------------------------
+UnitTypeName_technodrome=Warsztat techników\n('Technicians' workshop')
+; --------------------
+CommandName_produce_technician=produkcja technika\n('Produce technician')
+CommandName_research_advanced_architecture=odkrycie zaaw. architektury\n('Research advanced architecture')
+CommandName_research_robotics=odkrycie robotyzacji\n('Research robotics')
+; -------------------------------------
+; Unit > worker
+; --------------------
+CommandName_build_advanced=budowanie, b. zaawansowane\n('Build, advanced b.')
+; -------------------------------------

@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+
+<faction>
+	<starting-resources>
+		<resource name="gold" amount="500"/>
+		<resource name="wood" amount="500"/>
+		<resource name="stone" amount="500"/>
+		<resource name="food" amount="50"/>
+	</starting-resources>
+	<starting-units>
+		<unit name="castle" amount="1"/>
+		<unit name="swordman" amount="1"/>
+		<unit name="archer" amount="1"/>
+		<unit name="spearman" amount="2"/>
+		<unit name="cow" amount="1"/>
+		<unit name="axe_thrower" amount="1"/>
+		<unit name="thrall" amount="3"/>
+		<unit name="thor" amount="0"/>
+	</starting-units>
+	<music value="true" path="music/manolo_camp-medieval.ogg"/>
+	<flat-particle-positions value="true"/>
+</faction>

@@ -1,0 +1,89 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="2" />
+		<height value="2" />
+		<ai-build-size value="4"/>
+		<max-hp value="2600" regeneration="0"/>
+		<max-ep value="0" regeneration="0"/>
+		<armor value="0" />
+		<armor-type value="wood"/>
+		<sight value="5" />
+		<time value="50" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
+		<cellmap value="false"/>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false" />
+		<unit-requirements>
+			<unit name="tree_of_life"/>
+		</unit-requirements>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="gold" amount="60"/>
+			<resource name="stone" amount="20"/>
+			<resource name="wood" amount="80"/>
+			<resource name="grace" amount="-16"/>
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/sanctuary.bmp"/>
+		<image-cancel path="../tree_of_life/images/stop.bmp"/>
+		<meeting-point value="true" image-path="../academy/images/mp.bmp"/>
+		<selection-sounds enabled="true">
+			<sound path="../tree_of_life/sounds/magic_click.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="../tree_of_life/sounds/magic_click.wav"/>
+		</command-sounds>
+	</parameters>
+
+	<!-- *** skills *** -->
+	<skills>
+		<!-- *** skill 0 *** -->
+		<skill>
+			<type value="be_built" />
+			<name value="be_built_skill"/>
+			<ep-cost value="0" />
+			<speed value="250"/>
+			<anim-speed value="300" />
+			<animation path="models/sanctuary_con.g3d" />
+			<sound enabled="false" />
+		</skill>
+
+		<!-- *** skill 1 *** -->
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill"/>
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="100" />
+			<animation path="models/sanctuary.g3d" />
+			<sound enabled="false" />
+		</skill>
+
+		<!-- *** skill 2 *** -->
+		<skill>
+			<type value="die" />
+			<name value="die_skill"/>
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/sanctuary_con.g3d" />
+			<sound enabled="true" start-time="0">
+				<sound-file path="../tree_of_life/sounds/magic_building_fall1.wav"/>
+			</sound>
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+
+	<commands/>
+
+</unit>

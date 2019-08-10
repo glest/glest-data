@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="no"?>
+
+<faction>
+	<starting-resources>
+		<resource name="gold" amount="500"/>
+		<resource name="wood" amount="500"/>
+		<resource name="stone" amount="500"/>
+		<resource name="grace" amount="50"/>
+	</starting-resources>
+	<starting-units>
+		<unit name="colosseum" amount="1"/>
+		<unit name="guard_tower" amount="1"/>
+		<unit name="slave" amount="3"/>
+		<unit name="spearman" amount="2"/>
+		<unit name="eagle_pillar" amount="1"/>
+		<unit name="archer" amount="1"/>
+	</starting-units>
+	<music value="true" path="music/romans.ogg"/>
+	<flat-particle-positions value="true"/>
+	<ai-behavior>
+		<worker-units/>
+		<warrior-units/>
+		<resource-producer-units/>
+		<building-units/>
+		<upgrades>
+			<upgrade name="reinforce_armor"/>
+			<upgrade name="sign_of_mars"/>
+			<upgrade name="sharpen_points"/>
+			<upgrade name="bless_of_minerva"/>
+		</upgrades>
+		<static-values/>
+	</ai-behavior>
+</faction>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no"?>
+
+<upgrade>
+	<image path="images/noldor_weaponry.bmp"/>
+	<image-cancel path="../../units/tree_of_life/images/stop.bmp"/>
+	<time value="175"/>
+	<unit-requirements/>
+	<upgrade-requirements>
+		<upgrade name="elven_lore"/>
+	</upgrade-requirements>
+	<resource-requirements>
+		<resource name="wood" amount="150"/>
+		<resource name="gold" amount="300"/>
+		<resource name="stone" amount="50"/>
+	</resource-requirements>
+	<effects>
+		<unit name="magol_hedir"/>
+	</effects>
+	<max-hp value="35"/>
+	<max-ep value="0"/>
+	<sight value="1"/>
+	<attack-strength value="75"/>
+	<attack-range value="0"/>
+	<armor value="0"/>
+	<move-speed value="20"/>
+	<production-speed value="0"/>
+</upgrade>

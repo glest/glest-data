@@ -1,0 +1,72 @@
+<?xml version="1.0" standalone="no"?>
+
+<faction>
+	<starting-resources>
+		<resource name="gold" amount="500"/>
+		<resource name="wood" amount="500"/>
+		<resource name="stone" amount="500"/>
+		<resource name="food" amount="50"/>
+	</starting-resources>
+	<starting-units>
+		<unit name="large_container" amount="1"/>
+		<unit name="land_worker" amount="1"/>
+		<unit name="range_archer" amount="1"/>
+		<unit name="defence_turret" amount="1"/>
+		<unit name="wheat_patch" amount="1"/>
+	</starting-units>
+	<music value="true" path="music/behind_you.ogg"/>
+	<flat-particle-positions value="true"/>
+	<ai-behavior>
+		<worker-units>
+			<unit name="land_worker" minimum="8"/>
+		</worker-units>
+		<warrior-units>
+			<unit name="range_archer" minimum="4"/>
+			<unit name="jabber" minimum="2"/>
+		</warrior-units>
+		<resource-producer-units>
+			<unit name="wheat_patch" minimum="2"/>
+			<unit name="bread" minimum="5"/>
+		</resource-producer-units>
+		<building-units>
+			<unit name="battle_factory" minimum="2"/>
+			<unit name="bakery" minimum="1"/>
+			<unit name="armory" minimum="1"/>
+			<unit name="bomb_plant" minimum="1"/>
+		</building-units>
+		<upgrades>
+			<upgrade name="power"/>
+			<upgrade name="precision"/>
+			<upgrade name="animal_training"/>
+		</upgrades>
+		<static-values/>
+	</ai-behavior>
+	<scripts>
+		<startup>
+			for index = 0, 7 do
+				if getFactionName(index) == 'specialists' then
+
+					type = getPlayerType(index)
+					
+					if type ~= 1 and type ~= 6 then
+					
+						setLockedUnitForFaction('trade_cart', index, 1)
+						
+					end
+				end
+			end
+		</startup>
+		<unitDied>
+            unitC = lastDeadUnitKiller()
+            unitD = lastDeadUnit()
+			if lastDeadUnitCauseOfDeath() ~= 3 then
+			
+				if lastDeadUnitName()=='trade_cart' then
+
+					giveResource('gold', unitFaction(unitC), 400)
+
+				end
+			end
+        </unitDied>
+	</scripts>
+</faction>

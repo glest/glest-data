@@ -1,0 +1,262 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="2"/>
+		<height value="5"/>
+		<max-hp value="6300" regeneration="3"/>
+		<max-ep value="0" />
+		<armor value="15"/>
+		<armor-type value="wood"/>
+		<sight value="18"/>
+		<time value="250"/>
+		<multi-selection value="true"/>
+		<uniform-selection value="false"/>
+		<cellmap value="false"/>
+		<levels>
+			<level name="great" kills="14"/>
+			<level name="ancient" kills="36"/>
+		</levels>
+		<fields>
+			<field value="land"/>
+		</fields>
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements>
+			<unit name="wise_elf"/>
+		</unit-requirements>
+		<upgrade-requirements>
+			<upgrade name="mystical_forest"/>
+		</upgrade-requirements>
+		<resource-requirements>
+			<resource name="gold" amount="220"/>
+			<resource name="wood" amount="580"/>
+			<resource name="stone" amount="100"/>
+			<resource name="grace" amount="2"/>
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/ent.bmp"/>
+		<image-cancel path="../tree_of_life/images/stop.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/golem_select1.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/golem_select2.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/golem_select3.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/golem_select4.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/golem_attack_command1.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/golem_attack_command2.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/golem_attack_command3.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/golem_attack_command4.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/golem_attack_command5.wav"/>
+		</command-sounds>
+
+	</parameters>
+
+
+	<!-- *** skills *** -->
+
+	<skills>
+
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="25"/>
+			<animation path="models/ent_idle.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>
+			<ep-cost value="0"/>
+			<speed value="150"/>
+			<anim-speed value="20"/>
+			<animation path="models/ent_walking.g3d"/>
+			<sound enabled="true" start-time="0">
+			<sound-file path="$COMMONDATAPATH/sounds/golem_die1.wav"/>
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="melee"/>
+			<ep-cost value="0"/>
+			<speed value="40"/>
+			<anim-speed value="40"/>
+			<animation path="models/ent_melee_attack.g3d"/>
+			<sound enabled="true" start-time="0.02">
+				<sound-file path="$COMMONDATAPATH/sounds/golem_attack1.wav"/>
+			</sound>
+			<attack-strength value="475"/>
+			<attack-var value="60"/>
+			<attack-range value="1"/>
+			<attack-type value="impact"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<attack-start-time value="0.31"/>
+			<projectile value="false"/>
+			<splash value="true">
+				<radius value="1"/>
+				<damage-all value="false"/>
+				<particle value="false"/>
+			</splash>
+		</skill>
+
+                <skill>
+			<type value="attack"/>
+			<name value="siege"/>
+			<ep-cost value="0"/>
+			<speed value="50"/>
+			<anim-speed value="25"/>
+			<animation path="models/ent_siege_attack.g3d"/>
+			<sound enabled="true" start-time="0.1">
+				<sound-file path="$COMMONDATAPATH/sounds/catapult_attack1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/catapult_attack2.wav"/>
+			</sound>
+			<attack-strength value="320"/>
+			<attack-var value="300"/>
+			<attack-range value="10"/>
+			<attack-type value="impact"/>
+			<attack-start-time value="0.72"/>
+			<attack-fields>
+				<field value="land"/>
+				<field value="air"/>
+			</attack-fields>
+			<projectile value="true">
+				<particle value="true" path="particle_proj.xml"/>
+				<sound enabled="true">
+					<sound-file path="$COMMONDATAPATH/sounds/catapult_hit1.wav"/>
+					<sound-file path="$COMMONDATAPATH/sounds/catapult_hit2.wav"/>
+				</sound>
+			</projectile>
+			<splash value="true">
+				<radius value="2"/>
+				<damage-all value="true"/>
+				<particle value="true" path="particle_splash.xml"/>
+			</splash>
+		</skill>
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>
+			<ep-cost value="0"/>
+			<speed value="120"/>
+			<anim-speed value="30"/>
+			<animation path="models/ent_dying.g3d"/>
+			<sound enabled="true" start-time="0.75">
+				<sound-file path="$COMMONDATAPATH/sounds/catapult_hit1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/catapult_hit2.wav"/>
+			</sound>
+			<fade value="false"/>
+		</skill>
+
+		<skill>
+			<type value="build"/>
+			<name value="plant_skill"/>
+			<ep-cost value="0"/>
+			<speed value="150"/>
+			<anim-speed value="50"/>
+			<animation path="models/ent_planting.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="repair"/>
+			<name value="repair_skill"/>
+			<ep-cost value="0"/>
+			<speed value="50"/>
+			<anim-speed value="150"/>
+			<animation path="models/ent_planting.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+	</skills>
+
+	<commands>
+
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="../tree_of_life/images/stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="../tree_of_life/images/move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="siege"/>
+			<image path="../gryphon/images/siege_attack.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="siege"/>
+		</command>
+
+        <command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="../magol_hedir/images/melee.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="melee"/>
+		</command>
+
+		<command>
+			<type value="build"/>
+			<name value="plant"/>
+			<image path="images/treeb.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<build-skill value="plant_skill"/>
+			<buildings>
+				<building name="forest_guardian"/>
+			</buildings>
+			<start-sound enabled="false"/>
+
+			<built-sound enabled="false"/>
+
+		</command>
+
+		<command>
+			<type value="repair"/>
+			<name value="heal"/>
+			<image path="../minstrel/images/heal.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<repair-skill value="repair_skill"/>
+			<repaired-units>
+				<unit name="forest_guardian"/>
+				<unit name="tree_of_life"/>
+			</repaired-units>
+		</command>
+
+		<command>
+			<type value="attack_stopped"/>
+			<name value="hold_position"/>
+			<image path="../tree_of_life/images/hold.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="melee"/>
+		</command>
+
+	</commands>
+</unit>

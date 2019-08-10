@@ -1,0 +1,616 @@
+; TechTree
+TechTreeName=mixpack
+; -------------------------------------
+; Types of Armor
+ArmorTypeName_organic=οργανικό
+ArmorTypeName_leather=δέρμα
+ArmorTypeName_wood=ξύλο
+ArmorTypeName_metal=μέταλλο
+ArmorTypeName_stone=πέτρα
+; --------------------
+; Types of Attack
+AttackTypeName_slashing=περικοπή
+AttackTypeName_piercing=διάτρηση
+AttackTypeName_impact=επίπτωση
+AttackTypeName_energy=ενέργεια
+AttackTypeName_sword=σπαθί
+AttackTypeName_arrow=βέλος
+AttackTypeName_magic=μαγεία
+AttackTypeName_beat=χτύπησαν
+; --------------------
+; Types of Resources
+ResourceTypeName_energy=ενέργεια
+ResourceTypeName_food=τροφή
+ResourceTypeName_gold=χρυσός
+ResourceTypeName_housing=στέγαση
+ResourceTypeName_stone=πέτρα
+ResourceTypeName_wood=ξύλο
+; -----------------------------------------------------------------------------
+; Faction
+FactionName_egypt=αίγυπτος
+; -------------------------------------
+; Types of Upgrades for this Faction
+UpgradeTypeName_power_of_ra=δύναμη του ra
+UpgradeTypeName_spear_weapons=δόρυ οπλισμος
+UpgradeTypeName_speedup_priest_production=επιτάχυνση της παραγωγής ιερέων
+UpgradeTypeName_summon_ibis=κλήτευση του ibis
+UpgradeTypeName_summon_scarab=κλήτευση του scarab
+; -------------------------------------
+UnitTypeName_air_pyramid=πυραμίδα του αέρα
+; --------------------
+LevelName_elite=ελίτ
+; --------------------
+CommandName_attack_off=τερματισμος επίθεσης
+CommandName_attack_on=εναρξη επίθεσης
+; -------------------------------------
+UnitTypeName_anubis_warrior=anubis πολεμιστής
+; --------------------
+LevelName_ancient=αρχαίος
+; --------------------
+CommandName_stop=σταμάτημα
+CommandName_move=κίνηση
+CommandName_attack=επίθεση
+; -------------------------------------
+UnitTypeName_chicken=κοτόπουλο
+; -------------------------------------
+UnitTypeName_desert_camp=στρατόπεδο της ερήμου
+; --------------------
+CommandName_produce_spearthrower=παραγωγή δόρατος ρίπτη
+CommandName_produce_spearman=παραγωγή ακοντιστων
+CommandName_upgrade_spear_weapons=αναβάθμιση δόρατος οπλισμού
+; -------------------------------------
+UnitTypeName_farm=αγρόκτημα
+; --------------------
+CommandName_produce_chicken=παραγωγή κοτόπουλων
+; -------------------------------------
+UnitTypeName_ibis=ibis
+; --------------------
+CommandName_hold_position=θέση αναμονής
+; -------------------------------------
+UnitTypeName_mummy=μούμια
+; -------------------------------------
+UnitTypeName_obelisk=οβελίσκος
+; --------------------
+CommandName_produce_scarab=παραγωγή σκαραβαίου
+CommandName_produce_snake=παραγωγή φιδιού
+CommandName_produce_ibis=παραγωγή ibis
+; -------------------------------------
+UnitTypeName_priest=ιερέας
+; --------------------
+CommandName_speedup_priest_production=επιτάχυνση της παραγωγής ιερέων
+CommandName_heal=θεραπεια
+CommandName_produce_mummy=παραγωγή μούμιας
+CommandName_produce_anubis_warrior=παραγωγή Anubis πολεμιστών
+CommandName_ice_nova=ice nova
+; -------------------------------------
+UnitTypeName_pyramid=πυραμίδα
+; --------------------
+CommandName_produce_slave=παραγωγή σκλάβων
+; -------------------------------------
+UnitTypeName_scarab=σκαραβαίος
+; --------------------
+LevelName_expert=ειδικός
+LevelName_master=δάσκαλος
+LevelName_legendary=θρυλικός
+; --------------------
+CommandName_dung_attack=επίθεση με περιττώματα
+; -------------------------------------
+UnitTypeName_slave=σκλάβος
+; --------------------
+CommandName_build_basic=δημιουργια στοιχειώδεις
+CommandName_repair=επιδιόρθωση
+CommandName_mine=ορυχείο
+CommandName_harvest_wood=συγκομιδή ξύλου
+; -------------------------------------
+UnitTypeName_snake=φιδι
+; --------------------
+CommandName_poison_shot=βολή δηλητηρίου
+; -------------------------------------
+UnitTypeName_spearman=ακοντιστής
+; -------------------------------------
+UnitTypeName_spearthrower=δόρατος ρίπτη
+; -------------------------------------
+UnitTypeName_sphinx=σφίγγα
+; -------------------------------------
+UnitTypeName_temple=ναός
+; --------------------
+CommandName_produce_priest=παραγωγή ιερέων
+CommandName_research_scarab=έρευνα σκαραβαίου
+CommandName_research_ibis=έρευνα του ibis
+CommandName_get_power_of_ra=πάρτε δύναμη απο τον ra
+; -----------------------------------------------------------------------------
+; Faction
+FactionName_natives=Ινδός
+; -------------------------------------
+; Types of Upgrades for this Faction
+UpgradeTypeName_advanced_iron=προηγμένο σίδερο
+UpgradeTypeName_bull_food=τροφή ταύρου
+UpgradeTypeName_iron=σίδερο
+UpgradeTypeName_petroleum=πετρέλαιο
+UpgradeTypeName_stables=στάβλοι
+UpgradeTypeName_training_field=χώρος προπονησης
+; -------------------------------------
+UnitTypeName_archer=τοξότης
+; -------------------------------------
+UnitTypeName_axe_natives=τσεκούρι ινδικό
+; -------------------------------------
+UnitTypeName_axe_thrower=τσεκούρι ρίπτη
+; -------------------------------------
+UnitTypeName_beehive=κυψέλη
+; -------------------------------------
+UnitTypeName_big_tent=μεγάλη σκηνή
+; --------------------
+CommandName_produce_stickfighter=παραγωγή ραβδί μαχητή
+CommandName_produce_archer=παραγωγή τοξότη
+; -------------------------------------
+UnitTypeName_bull=ταύρος
+; -------------------------------------
+UnitTypeName_campfire=φωτιά
+; --------------------
+CommandName_produce_fire_golem=παραγωγή φωτιάς
+CommandName_research_iron=έρευνα σιδήρου
+CommandName_research_advanced_iron=έρευνα προηγμένου σιδήρου
+; -------------------------------------
+UnitTypeName_fire_archer=φωτιά τοξότη
+; -------------------------------------
+UnitTypeName_fire_golem=φωτιά
+; -------------------------------------
+UnitTypeName_horse_farm=φάρμα αλόγων
+; --------------------
+CommandName_produce_horseman=παραγωγή ιππέων
+CommandName_produce_bull=παραγωγή ταύρων
+CommandName_research_stables=έρευνα στάβλων
+; -------------------------------------
+UnitTypeName_horseman=ιππέας
+; -------------------------------------
+UnitTypeName_main_teepee=κύρια τριγωνική σκηνή
+; --------------------
+CommandName_produce_worker=παραγωγή εργατων
+; -------------------------------------
+UnitTypeName_reed=καλάμι
+; --------------------
+CommandName_research_bull_food=έρευνα τροφίμων ταύρου
+; -------------------------------------
+UnitTypeName_round_tent=στρογγυλή σκηνή
+; --------------------
+CommandName_produce_axe_natives=παραγωγή τσεκούρι Ινδικό
+CommandName_produce_axe_thrower=παραγωγή τσεκούρι ρίπτη
+CommandName_produce_fire_archer=παραγωγή τοξότη φωτιάς
+CommandName_create_training_field=δημιουργία χώρου προπονησης
+; -------------------------------------
+UnitTypeName_shaman=σαμάνος
+; --------------------
+CommandName_molotov=μολότοφ
+CommandName_produce_thunderbird=παραγωγή Thunderbird
+CommandName_build_beehive=δημιουργια κυψέλης
+; -------------------------------------
+; Unit > spearman
+; --------------------
+LevelName_guardian=θεματοφύλακας
+LevelName_chief=αρχηγός
+; -------------------------------------
+UnitTypeName_stickfighter=ραβδί μαχητή
+; -------------------------------------
+UnitTypeName_tent=σκηνή
+; -------------------------------------
+UnitTypeName_thunderbird=thunderbird
+; --------------------
+CommandName_throw=βολή
+CommandName_breath=αναπνοή
+; -------------------------------------
+UnitTypeName_totem=τοτέμ
+; --------------------
+CommandName_air_on=αέρας σε
+CommandName_research_petroleum=πετρελαϊκη ερευνα
+CommandName_produce_shaman=παραγωγή σαμάνου
+; -------------------------------------
+UnitTypeName_worker=εργάτης
+; -----------------------------------------------------------------------------
+; Faction
+FactionName_magic=μαγεία
+; -------------------------------------
+; Types of Upgrades for this Faction
+UpgradeTypeName_ancient_summoning=κλήτευση αρχαίων
+UpgradeTypeName_dragon_call=πρόσκληση δράκου
+UpgradeTypeName_energy_compression=συμπίεση ενέργειας
+UpgradeTypeName_energy_sharpening=ενεργειακή όξυνση
+# UpgradeTypeName_faster_movement=faster movement
+UpgradeTypeName_golem_power=Golem δύναμη
+UpgradeTypeName_hell_gate=πύλη κόλασης
+; -------------------------------------
+UnitTypeName_archmage=αρχιμάγος
+; --------------------
+CommandName_static_fire=στατική φωτιά
+; -------------------------------------
+UnitTypeName_archmage_tower=πύργος αρχιμάγου
+; --------------------
+CommandName_research_dragon_call=έρευνα πρόσκλησης δράκου
+CommandName_golem_power=Golem δύναμη
+; -------------------------------------
+UnitTypeName_battlemage=μάχη μάγων
+; --------------------
+CommandName_fire_bolt=μπουλόνι φωτιάς
+CommandName_promote_to_archmage=προώθηση στον Αρχιμάγο
+; -------------------------------------
+UnitTypeName_behemoth=μεγαθήριο
+; -------------------------------------
+UnitTypeName_daemon=δαίμονας
+; -------------------------------------
+UnitTypeName_dragon_rider=Ντρέικ αναβάτης
+; --------------------
+CommandName_fire_breath=αναπνοή φωτιάς
+CommandName_flare=φωτοβολίδα
+; -------------------------------------
+UnitTypeName_dragon=δράκος
+; --------------------
+CommandName_promote_to_evil_dragon=προώθηση στον κακό δράκο
+; -------------------------------------
+UnitTypeName_energy_source=πηγή ενέργειας
+; -------------------------------------
+UnitTypeName_evil_dragon=κακός δράκος
+; -------------------------------------
+UnitTypeName_ghost_armor=πανοπλία φαντασμάτων
+; -------------------------------------
+UnitTypeName_golem=golem
+; --------------------
+CommandName_promote_to_power_golem=προώθηση στην Golem δύναμη
+; -------------------------------------
+UnitTypeName_initiate=έναρξη
+; --------------------
+CommandName_build=χτίσιμο
+CommandName_ritual=τελετουργικό
+CommandName_harvest=συγκομιδή
+CommandName_promote_to_battlemage=προώθηση στην μάχη μάγων
+; -------------------------------------
+UnitTypeName_library=βιβλιοθήκη
+; --------------------
+CommandName_research_energy_compression=ενέργεια συμπίεσης της έρευνας
+CommandName_research_energy_sharpening=έρευνα για την ενέργεια ακονίσματος
+CommandName_research_hell_gate=έρευνα πύλης κόλασης
+; -------------------------------------
+UnitTypeName_mage_tower=πύργος μάγου
+; --------------------
+CommandName_produce_initiate=έναρξη παραγωγής
+; -------------------------------------
+UnitTypeName_power_golem=Golem δύναμη
+; -------------------------------------
+UnitTypeName_summoner=κλήτευση
+; --------------------
+CommandName_summon_daemon=κλήτευση δαίμονα
+CommandName_summon_ghost_armor=κλήτευση πανοπλίας
+CommandName_summon_dragon=κλήτευση δράκου
+CommandName_summon_wingless_dragon=κλήτευση του Ντρέικ
+; -------------------------------------
+UnitTypeName_summoner_guild=κλήτευση τάγματος
+; --------------------
+CommandName_produce_summoner=παραγωγή κλήτευσης
+CommandName_research_ancient_summoning=έρευνα κλήτευσης
+# CommandName_speed_up_movement=speed up movement
+; -------------------------------------
+UnitTypeName_tower_of_souls=πύργος ψυχών
+; -------------------------------------
+UnitTypeName_wicker_behemoth=λυγαριά μεγαθήριου
+; --------------------
+CommandName_promote_to_behemoth=προώθηση στο μεγαθήριο
+; -----------------------------------------------------------------------------
+; Faction
+FactionName_norsemen=Σκανδιναβοί άνδρες
+; -------------------------------------
+; Types of Upgrades for this Faction
+UpgradeTypeName_arrow=βέλος
+UpgradeTypeName_holy_valkyrie=ιερή Βαλκυρία
+UpgradeTypeName_mead=γιατρος
+UpgradeTypeName_root=ρίζα
+; -------------------------------------
+UnitTypeName_battleaxe=τσεκούρι μάχης
+; --------------------
+CommandName_promote_to_battleaxe_berserk=προώθηση τσεκούριου μάχης
+; -------------------------------------
+UnitTypeName_battleaxe_berserk=τσεκούρι μάχης Berzerk
+; -------------------------------------
+UnitTypeName_blacksmith=σιδηρουργός
+; --------------------
+CommandName_upgrade_iron=αναβάθμιση σιδήρου
+CommandName_upgrade_arrow=αναβάθμιση βέλους
+CommandName_upgrade_advanced_iron=αναβάθμιση προηγμένου σιδήρου
+CommandName_produce_crossbow=παραγωγή βαλλίστρας
+; -------------------------------------
+UnitTypeName_bone_tent=σκηνή οστών
+; --------------------
+CommandName_produce_swordman=παραγωγή ξιφομάχου
+CommandName_produce_battleaxe=παραγωγή τσεκούριου μάχης
+; -------------------------------------
+UnitTypeName_castle=κάστρο
+; --------------------
+CommandName_produce_thrall=παραγωγή thrall
+; -------------------------------------
+UnitTypeName_cow=αγελάδα
+; -------------------------------------
+UnitTypeName_crossbow=βαλλίστρα
+; --------------------
+CommandName_attack_arrow=επίθεση βέλος
+; -------------------------------------
+UnitTypeName_cudgel_lady=ρόπαλο κυρίας
+; --------------------
+CommandName_cudgel=ρόπαλο
+; -------------------------------------
+; Unit > farm
+; --------------------
+CommandName_produce_cow=παραγωγή αγελάδας
+; -------------------------------------
+UnitTypeName_flying_valkyrie=ιπταμενη βαλκυρια
+; -------------------------------------
+UnitTypeName_house=σπίτι
+; --------------------
+CommandName_produce_cudgel_lady=παραγωγή ρόπαλου
+; -------------------------------------
+UnitTypeName_mead_bar=γιατρος
+; --------------------
+CommandName_research_mead=έρευνα γιατρου
+; -------------------------------------
+UnitTypeName_mistletoe_tree=δέντρο mistle
+; --------------------
+CommandName_research_root=έρευνα ρίζας
+CommandName_resurrect_wild_sow=αναστήση άγριας γουρούνας
+; -------------------------------------
+; Unit > spearman
+; --------------------
+CommandName_promote_to_spearman_berserk=προώθηση στον ακοντιστή
+; -------------------------------------
+UnitTypeName_spearman_berserk=ακοντιστής berzerk
+; -------------------------------------
+UnitTypeName_swordman=ξιφομάχος
+; --------------------
+CommandName_promote_to_swordman_berserk=προώθηση στον ξιφομάχο
+; -------------------------------------
+UnitTypeName_swordman_berserk=ξιφομάχος berzerk
+; -------------------------------------
+UnitTypeName_thor=thor
+; --------------------
+LevelName_advanced=προηγμένο
+; -------------------------------------
+UnitTypeName_thor_totem=Thor τοτέμ
+; --------------------
+CommandName_build_thor=δημιουργια του thor
+; -------------------------------------
+UnitTypeName_thrall=thrall
+; -------------------------------------
+UnitTypeName_valhalla=Βαλχάλλα
+; --------------------
+CommandName_produce_flying_valkyrie=παραγωγή ιπταμενης Βαλκυρίας
+CommandName_produce_valkyrie=παραγωγή βαλκυρίας
+CommandName_research_holy_valkyrie=έρευνα ιερής Βαλκυρίας
+; -------------------------------------
+UnitTypeName_valkyrie=Βαλκυρία
+; --------------------
+CommandName_airattack=εναέρια επίθεση
+; -------------------------------------
+UnitTypeName_wild_sow=άγρια γουρούνα
+; -----------------------------------------------------------------------------
+; Faction
+FactionName_persians=περσικά
+; -------------------------------------
+; Types of Upgrades for this Faction
+UpgradeTypeName_corn_and_wicker=καλαμπόκι και λυγαριά
+UpgradeTypeName_magic_level_1=μαγεία επίπεδο 1
+UpgradeTypeName_magic_level_2=μαγεία επίπεδο 2
+UpgradeTypeName_nails=καρφιά
+UpgradeTypeName_shield=ασπίδα
+UpgradeTypeName_weapons=οπλα
+; -------------------------------------
+; Unit > blacksmith
+; --------------------
+CommandName_upgrade_weapons=αναβάθμιση οπλισμου
+CommandName_upgrade_nails=αναβάθμιση καρφιών
+CommandName_upgrade_shield=αναβάθμιση ασπίδας
+; -------------------------------------
+UnitTypeName_elephant=ελέφαντας
+; -------------------------------------
+UnitTypeName_elephant_cage=κλουβί ελέφαντα
+; --------------------
+CommandName_produce_elephant=παραγωγή ελέφαντα
+; -------------------------------------
+UnitTypeName_fakir=φακίρης
+; -------------------------------------
+; Unit > farm
+; --------------------
+CommandName_produce_sheep=παραγωγή προβάτων
+CommandName_research_corn_and_wicker=έρευνα καλαμποκιού και λυγαριάς
+; -------------------------------------
+UnitTypeName_flying_carpet=ιπτάμενο χαλί
+; --------------------
+CommandName_magic_attack=μαγική επίθεση
+; -------------------------------------
+UnitTypeName_genie=μεγαλοφυία
+; -------------------------------------
+; Unit > house
+; --------------------
+CommandName_produce_fakir=παραγωγή φακίρη
+; -------------------------------------
+UnitTypeName_magician=μάγος
+; --------------------
+CommandName_build_snake_basket=κατασκευή καλαθιού φιδιού
+; -------------------------------------
+UnitTypeName_minaret=μιναρές
+; -------------------------------------
+UnitTypeName_palace=παλάτι
+; -------------------------------------
+UnitTypeName_princess=πριγκίπισσα
+; -------------------------------------
+UnitTypeName_sheep=προβατα
+; -------------------------------------
+UnitTypeName_snake_basket=καλάθι φιδιού
+; -------------------------------------
+; Unit > temple
+; --------------------
+CommandName_produce_princess=παραγωγή πριγκίπισσας
+; -------------------------------------
+; Unit > tent
+; --------------------
+CommandName_produce_genie=παραγωγή μεγαλοφυίας
+CommandName_produce_flying_carpet=παραγωγή ιπτάμενου χαλίου
+CommandName_produce_magician=παραγωγή μάγου
+CommandName_upgrade_magic_level_1=αναβάθμιση μαγεία επίπεδο 1
+CommandName_upgrade_magic_level_2=αναβάθμιση μαγεία επίπεδο 2
+; -----------------------------------------------------------------------------
+; Faction
+FactionName_romans=ρωμαίοι
+; -------------------------------------
+; Types of Upgrades for this Faction
+UpgradeTypeName_advanced_architecture=προηγμένη αρχιτεκτονική
+UpgradeTypeName_bless_of_minerva=ευλογία της Μινέρβα
+UpgradeTypeName_enlarge_shields=μεγέθυνση ασπίδων
+UpgradeTypeName_formations=σχηματισμοί
+UpgradeTypeName_jupiter=Δίας
+UpgradeTypeName_reinforce_armor=ενίσχυση πανοπλίας
+UpgradeTypeName_sharpen_points=ακονιση σημείων
+UpgradeTypeName_sign_of_mars=σημα του Άρη
+UpgradeTypeName_strengthen_swords=ενίσχυση ξίφων
+; -------------------------------------
+; Unit > archer
+; --------------------
+CommandName_get_fire_arrows=χρηση βέλη φωτιάς
+; -------------------------------------
+UnitTypeName_axe_man=με τσεκούρι
+; -------------------------------------
+UnitTypeName_ballista=βαλλίστρα
+; -------------------------------------
+UnitTypeName_battering_ram=πολιορκητικός κριός
+; --------------------
+CommandName_attack_land=επίθεση γης
+CommandName_attack_air=εναέρια επίθεση
+; -------------------------------------
+UnitTypeName_blacksmith_shop=κατάστημα σιδηρουργού
+; --------------------
+CommandName_strengthen_swords=ενίσχυση των ξίφων
+CommandName_sharpen_points=ακονίση σημείων
+CommandName_reinforce_armor=ενίσχυση πανοπλίας
+CommandName_enlarge_shields=μεγέθυνση ασπίδων
+; -------------------------------------
+UnitTypeName_catapult=καταπέλτης
+; --------------------
+CommandName_fire_ball=μπάλα φωτιάς
+; -------------------------------------
+UnitTypeName_cavalry=ιππικό
+; --------------------
+CommandName_promote_to_tribune=προώθηση στο βήμα
+; -------------------------------------
+UnitTypeName_eagle_pillar=αετός πυλώνα
+; -------------------------------------
+; Unit > fire archer
+; --------------------
+LevelName_accurate=ακριβής
+; -------------------------------------
+UnitTypeName_forum=φόρουμ
+; -------------------------------------
+UnitTypeName_general=γενικα
+; --------------------
+LevelName_esteemed=αγαπητό
+LevelName_grand=μεγαλοπρεπής
+; -------------------------------------
+UnitTypeName_gladiator=μονομάχος
+; -------------------------------------
+UnitTypeName_gladiator_school=σχολή μονομάχων
+; --------------------
+CommandName_train_gladiator=τρένο μονομάχων
+CommandName_produce_axe_man=παραγωγή με τσεκούρι
+; -------------------------------------
+UnitTypeName_guard=φύλακας
+; -------------------------------------
+UnitTypeName_guard_tower=φρουρά πύργου
+; -------------------------------------
+UnitTypeName_military_camp=στρατόπεδο
+; --------------------
+CommandName_produce_cavalry=παραγωγή ιππικού
+CommandName_produce_turtle_formation=παραγωγή σχηματισμού χελώνας
+CommandName_produce_general=παραγωγη γενικου
+CommandName_produce_mechanic=παραγωγή μηχανικού
+CommandName_upgrade_advanced_architecture=αναβάθμιση προηγμένης αρχιτεκτονικής
+CommandName_upgrade_formations=αναβάθμιση σχηματισμών
+; -------------------------------------
+UnitTypeName_swordsman=ξιφομάχος
+; -------------------------------------
+; Unit > temple
+; --------------------
+CommandName_research_sign_of_mars=έρευνα σηματος του Άρη
+CommandName_research_jupiter=έρευνα του Δία
+CommandName_upgrade_bless_of_minerva=αναβάθμιση ευλογίας της Μινέρβα
+; -------------------------------------
+UnitTypeName_training_camp=στρατόπεδο εκπαίδευσης
+; --------------------
+CommandName_produce_guard=παραγωγή φρουράς
+CommandName_produce_swordsman=παραγωγή ξιφομάχου
+; -------------------------------------
+UnitTypeName_tribune=βήμα
+; -------------------------------------
+UnitTypeName_turtle_formation=σχηματισμός χελώνας
+; -------------------------------------
+UnitTypeName_wartime_mechanic=εν καιρώ πολέμου μηχανικός
+; --------------------
+CommandName_build_catapult=κατασκευή καταπέλτη
+CommandName_build_battering_ram=κατασκευή πολιορκητικου κριου
+CommandName_build_ballista=κατασκευή βαλλίστρας
+; -----------------------------------------------------------------------------
+; Faction
+FactionName_tech=τεχνολογία
+; -------------------------------------
+; Types of Upgrades for this Faction
+UpgradeTypeName_blade_weapons=λεπίδα όπλων
+UpgradeTypeName_piercing_weapons=διάτρηση όπλων
+UpgradeTypeName_robotics=ρομποτική
+UpgradeTypeName_shield_level_1=επίπεδο ασπίδας 1
+UpgradeTypeName_shield_level_2=επίπεδο ασπίδας 2
+; -------------------------------------
+UnitTypeName_aerodrome=αεροδρόμιο
+; --------------------
+CommandName_produce_ornithopter=παραγωγή ορνιθόπτερου
+CommandName_produce_airship=παραγωγή αερόπλοιου
+; -------------------------------------
+UnitTypeName_air_ballista=βαλλίστρα αέρα
+; -------------------------------------
+UnitTypeName_airship=αερόπλοιο
+; --------------------
+CommandName_missile=βλήμα
+; -------------------------------------
+UnitTypeName_barracks=στρατώνες
+; -------------------------------------
+UnitTypeName_battle_machine=μηχανή μάχης
+; -------------------------------------
+; Unit > blacksmith
+; --------------------
+CommandName_upgrade_blade_weapons=αναβάθμιση των όπλων λεπίδας
+CommandName_upgrade_piercing_weapons=αναβάθμιση διάτρησης όπλων
+; -------------------------------------
+UnitTypeName_defense_tower=πύργος άμυνας
+; -------------------------------------
+; Unit > farm
+; --------------------
+CommandName_produce_pig=παραγωγή χοίρων
+; -------------------------------------
+UnitTypeName_ornithopter=ορνιθόπτερο
+; --------------------
+CommandName_fire_arrow=βέλος φωτιά
+; -------------------------------------
+UnitTypeName_pig=χοίρος
+; -------------------------------------
+; Unit > swordman
+; --------------------
+CommandName_promote_to_guard=προώθηση στην φρουρά
+; -------------------------------------
+UnitTypeName_technician=τεχνικός
+; --------------------
+CommandName_build_ultimate=τελική κατασκευή
+CommandName_mine_gold=ορυχείο χρυσού
+CommandName_build_battle_machine=χτισιμο μηχανής μάχης
+CommandName_build_air_ballista=κατασκευή βαλλίστρα αέρα
+; -------------------------------------
+UnitTypeName_technodrome=τεχνοδρομιο
+; --------------------
+CommandName_produce_technician=παραγωγή τεχνικού
+CommandName_research_advanced_architecture=έρευνα προηγμένης αρχιτεκτονικής
+CommandName_research_robotics=έρευνα ρομποτικής
+; -------------------------------------
+; Unit > worker
+; --------------------
+CommandName_build_advanced=κατασκευή προηγμενου
+; -------------------------------------

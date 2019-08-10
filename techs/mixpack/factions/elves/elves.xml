@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no"?>
+
+<faction>
+    <starting-resources>
+		<resource name="gold" amount="500"/>
+		<resource name="stone" amount="500"/>
+		<resource name="wood" amount="500"/>
+		<resource name="grace" amount="0"/>
+	</starting-resources>
+	<starting-units>
+		<unit name="tree_of_life" amount="1"/>
+		<unit name="forest_guardian" amount="1"/>
+		<unit name="elf" amount="3"/>
+		<unit name="minstrel" amount="1"/>
+		<unit name="grey_elf_archer" amount="1"/>
+		<unit name="magol_hedir" amount="2"/>
+		<unit name="sanctuary" amount="1"/>
+	</starting-units>
+	<ai-behavior>
+		<worker-units/>
+		<warrior-units/>
+		<resource-producer-units/>
+		<building-units/>
+		<upgrades/>
+	</ai-behavior>
+	<music value="true" path="music/elven_music.ogg"/>
+</faction>
