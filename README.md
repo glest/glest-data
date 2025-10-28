@@ -1,13 +1,9 @@
 
 ========================================================================================
 
-This project is no longer maintained. If you would like to contact about this, please find us on **[Discord](https://discord.gg/es3EyBB)**.
+This project is no longer maintained. If you would like to contact about this, please find us on **[Discord](https://discord.gg/jPAG4ck3)**.
 
 ========================================================================================
-
-# Glest
-
-**Official Website: https://glest.io**
 
 Data repository contains data such as:
 - maps, scenarios, tutorials
@@ -67,13 +63,8 @@ Include the following information:
 
 To suggest a map, please [open a ticket](https://github.com/Glest/glest-data/issues) and attach your map file.
 
-### Blender models
 
-[Modelling Information](https://glest.io/docs/modelling/)
+Thank you for your interest in this project.
 
-We are working on creating and completing documentation. In the
-meantime, please contact us with any questions or ideas. Thank you for
-your interest in this project.
-
-* [Contact / Community](https://github.com/Glest/glest-source#Links)
+* [Contact / Community](https://discord.gg/jPAG4ck3)
 * [Contributing](https://github.com/Glest/glest-source/blob/master/CONTRIBUTING.md)
