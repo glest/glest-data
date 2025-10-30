@@ -136,6 +136,16 @@
 			<produce-skill value="produce_black_skill"/>
 			<produced-unit name="spearman"/>
 		</command>
+		
+		<command>
+			<type value="produce"/>
+			<name value="produce_camel_rider" />
+			<image path="../camel_rider/images/camel_rider.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_white_skill"/>
+			<produced-unit name="camel_rider"/>
+		</command>
 
 		<command>
 			<type value="upgrade"/>

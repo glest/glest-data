@@ -9,7 +9,7 @@ bl_info = {
 }
 
 import bpy
-from bpy.props import StringProperty, BoolProperty, IntProperty
+from bpy.props import StringProperty, BoolProperty, IntProperty, FloatVectorProperty
 from bpy_extras.io_utils import ImportHelper, ExportHelper
 import struct, os, traceback, bmesh, subprocess
 from mathutils import Matrix
@@ -156,9 +156,7 @@ def createMesh_import(filename, header, data, toblender, operator):
         tree = mat.node_tree
         nodes = tree.nodes
         links = tree.links
-        # Clear default nodes
-        for n in nodes:
-            nodes.remove(n)
+        nodes.clear()
 
         output_node = nodes.new(type="ShaderNodeOutputMaterial")
         output_node.location = (400, 0)
@@ -166,27 +164,65 @@ def createMesh_import(filename, header, data, toblender, operator):
         bsdf = nodes.new(type="ShaderNodeBsdfPrincipled")
         bsdf.location = (0, 0)
         links.new(bsdf.outputs['BSDF'], output_node.inputs['Surface'])
-        
+
         def resolve_texture_path(base_path, tex_name):
-            """Return PNG path if it exists, otherwise fallback to original."""
             tex_dir = os.path.dirname(base_path)
             tex_name_noext, ext = os.path.splitext(tex_name)
             png_path = os.path.join(tex_dir, tex_name_noext + ".png")
             original_path = os.path.join(tex_dir, tex_name)
             return png_path if os.path.exists(png_path) else original_path
 
-        # Diffuse texture
+        # --- Diffuse texture (with team color + diffuse multiplier support) ---
+        color_input = None
         if header.diffusetexture:
             tex_diff = nodes.new(type="ShaderNodeTexImage")
-            tex_diff.location = (-400, 200)
+            tex_diff.location = (-600, 200)
             tex_path = resolve_texture_path(filename, header.diffusetexture)
             try:
                 tex_diff.image = bpy.data.images.load(tex_path)
             except:
                 print(f"Warning: Diffuse texture not found: {tex_path}")
-            links.new(tex_diff.outputs['Color'], bsdf.inputs['Base Color'])
+            color_input = tex_diff.outputs['Color']
 
-        # Specular texture
+            # If model uses custom alpha (team color regions)
+        if header.customalpha or getattr(meshobj.data, "g3d_customColor", False):
+            team_color_node = nodes.new(type="ShaderNodeRGB")
+            team_color_node.location = (-600, 0)
+            team_color_node.outputs[0].default_value = (0.1, 0.4, 1.0, 1.0)
+
+            mix_team = nodes.new(type="ShaderNodeMixRGB")
+            mix_team.blend_type = 'MIX'
+            mix_team.location = (-400, 100)
+            mix_team.inputs['Fac'].default_value = header.teamcoloralpha / 255.0
+            links.new(tex_diff.outputs['Alpha'], mix_team.inputs['Fac'])
+            links.new(team_color_node.outputs['Color'], mix_team.inputs['Color2'])
+            links.new(tex_diff.outputs['Color'], mix_team.inputs['Color1'])
+            color_input = mix_team.outputs['Color']
+
+            # enable transparency on the material
+            mat.blend_method = 'BLEND'
+            if hasattr(mat, "shadow_method"):
+                mat.shadow_method = 'HASHED'
+
+            # Apply diffuse color multiplier if needed
+            if header.diffusecolor != (1.0, 1.0, 1.0):
+                mult_node = nodes.new(type="ShaderNodeMixRGB")
+                mult_node.location = (-150, 100)
+                mult_node.blend_type = 'MULTIPLY'
+                mult_node.inputs['Fac'].default_value = 1.0
+                mult_node.inputs['Color2'].default_value = (
+                    header.diffusecolor[0],
+                    header.diffusecolor[1],
+                    header.diffusecolor[2],
+                    1.0
+                )
+                links.new(color_input, mult_node.inputs['Color1'])
+                color_input = mult_node.outputs['Color']
+
+            # Final link to shader
+            links.new(color_input, bsdf.inputs['Base Color'])
+
+        # --- Specular texture ---
         if header.speculartexture:
             tex_spec = nodes.new(type="ShaderNodeTexImage")
             tex_spec.location = (-400, 0)
@@ -195,10 +231,9 @@ def createMesh_import(filename, header, data, toblender, operator):
                 tex_spec.image = bpy.data.images.load(tex_path)
             except:
                 print(f"Warning: Specular texture not found: {tex_path}")
-            # Connect to Specular input
             links.new(tex_spec.outputs['Color'], bsdf.inputs['Specular'])
 
-        # Normal map
+        # --- Normal map ---
         if header.normaltexture:
             tex_norm = nodes.new(type="ShaderNodeTexImage")
             tex_norm.location = (-400, -200)
@@ -384,7 +419,7 @@ def G3DSaver(filepath, context, toglest, operator):
         mat_data = obj.data
         if hasattr(mat_data, "g3d_customColor") and mat_data.g3d_customColor:
             properties |= 1
-        if hasattr(mat_data, "show_double_sided") and mat_data.show_double_sided:
+        if hasattr(mat_data, "g3d_double_sided") and mat_data.show_double_sided:
             properties |= 2
         if hasattr(mat_data, "g3d_noSelect") and mat_data.g3d_noSelect:
             properties |= 4
@@ -446,11 +481,15 @@ class G3DPanel(bpy.types.Panel):
         col = self.layout.column()
         col.prop(context.object.data, "teamcolor_alpha")
         col.enabled = context.object.data.g3d_customColor
-        self.layout.prop(context.object.data, "show_double_sided", text="double sided")
+        self.layout.prop(context.object.data, "g3d_double_sided", text="double sided")
         self.layout.prop(context.object.data, "g3d_noSelect")
         self.layout.prop(context.object.data, "g3d_fullyOpaque")
         self.layout.prop(context.object.data, "g3d_glow")
-        
+        self.layout.prop(context.object.data, "g3d_ignore_lighting", text="Ignore Scene Lights")
+        if context.object.data.g3d_ignore_lighting:
+            row = self.layout.row()
+            row.prop(context.object.data, "g3d_ignore_lighting_normal", text="Uniform Normal", slider=False)   
+            
 class G3DPlayShapeKeys(bpy.types.Operator):
     bl_idname = "object.play_g3d_shapes"
     bl_label = "Play G3D Animation"
@@ -697,14 +736,28 @@ def G3DSaver(filepath, context, toglest, operator):
         if getattr(mesh_data, "g3d_customColor", False):
             properties |= 1
             properties |= (255 - getattr(mesh_data, "teamcolor_alpha", 0)) << 24
-        if getattr(mesh_data, "show_double_sided", False):
+        if getattr(mesh_data, "g3d_double_sided", False):
             properties |= 2
         if getattr(mesh_data, "g3d_noSelect", False):
             properties |= 4
         if getattr(mesh_data, "g3d_glow", False):
             properties |= 8
         if getattr(mesh_data, "g3d_fullyOpaque", False):
-            opacity = 1.0
+            opacity = 1.0    
+        if getattr(obj.data, "g3d_ignore_lighting", True):
+            if hasattr(me, "use_auto_smooth"):
+                me.use_auto_smooth = True
+
+            normals_arr = [loop.normal.copy() for loop in me.loops]
+            me.normals_split_custom_set(normals_arr)
+
+            normals_all = []
+            uniform_normal = Vector(mesh_data.g3d_ignore_lighting_normal)
+            uniform_normal = obj.matrix_world.to_3x3() @ uniform_normal
+
+            for f_idx in range(frameCount):
+                for v in me.vertices:
+                    normals_all.extend([uniform_normal.x, uniform_normal.y, uniform_normal.z])
 
         meshname_bytes = bytes(obj.name[:64], "ascii")
         f.write(struct.pack("<64s3I8f2I",
@@ -753,6 +806,22 @@ def register():
         name="team color alpha",
         description="set the transparency of the teamcolor part of the texture only",
         default=0, min=0, max=2**8 - 1)
+    bpy.types.Mesh.g3d_ignore_lighting = BoolProperty(
+        name="ignore lighting",
+        description="set a custom lighting normal",
+        default=True)
+    bpy.types.Mesh.g3d_ignore_lighting_normal = FloatVectorProperty(
+        name="Uniform Normal",
+        description="Vector used for exporting normals when ignoring scene lighting",
+        default=(0.0, -1.0, -4.0),
+        size=3,
+        precision=1
+    )
+    bpy.types.Mesh.g3d_double_sided = BoolProperty(
+        name="double sided",
+        description="Render mesh as double sided",
+        default=True
+    )
 
     for cls in classes:
         bpy.utils.register_class(cls)

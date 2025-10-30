@@ -23,6 +23,7 @@
 			<unit name="slave" minimum="8"/>
 		</worker-units>
 		<warrior-units>
+			<unit name="camel_rider" minimum="1"/>
 			<unit name="spearthrower" minimum="2"/>
 			<unit name="chicken" minimum="6"/>
 			<unit name="spearman" minimum="1"/>
