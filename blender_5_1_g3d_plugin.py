@@ -144,6 +144,33 @@ def createMesh_import(filename, header, data, toblender, operator):
                     data.vertices[idx + 2]
                 )
 
+        # --- Auto-keyframe shape keys for timeline playback ---
+        print(f"Baking {len(meshobj.data.shape_keys.key_blocks) - 1} shape keys into timeline keyframes...")
+
+        shape_keys = [k for k in meshobj.data.shape_keys.key_blocks if k.name != "Basis"]
+        start_frame = 1
+        frame_step = 1
+
+        # Ensure we're in object mode
+        if bpy.ops.object.mode_set.poll():
+            bpy.ops.object.mode_set(mode='OBJECT')
+
+        # Reset all values
+        for key in shape_keys:
+            key.value = 0.0
+            key.keyframe_insert(data_path="value", frame=start_frame)
+
+        # Insert keyframes one per shape key
+        frame = start_frame
+        for key in shape_keys:
+            for k in shape_keys:
+                k.value = 0.0
+                k.keyframe_insert(data_path="value", frame=frame)
+            key.value = 1.0
+            key.keyframe_insert(data_path="value", frame=frame)
+            key.value = 0.0
+            frame += frame_step
+
     if toblender:
         meshobj.rotation_euler = (radians(90), 0, 0)
         
@@ -305,164 +332,6 @@ def find_image_in_material(material):
                     return slot.texture.image
     return None
 
-
-def G3DSaver(filepath, context, toglest, operator):
-    print(f"\nExporting: {filepath}")
-    depsgraph = context.evaluated_depsgraph_get()
-
-    objs = context.selected_objects
-    if len(objs) == 0:
-        objs = list(bpy.data.objects)
-    mesh_objs = [o for o in objs if o.type == 'MESH']
-    if not mesh_objs:
-        operator.report({'ERROR'}, "No mesh objects found to export")
-        return -1
-
-    try:
-        f = open(filepath, "wb")
-    except Exception as e:
-        operator.report({'ERROR'}, f"Unable to open file for writing: {e}")
-        return -1
-
-    f.write(struct.pack("<3cB", b'G', b'3', b'D', 4))
-    f.write(struct.pack("<HB", len(mesh_objs), 0))
-
-    for obj in mesh_objs:
-        eval_obj = obj.evaluated_get(depsgraph)
-        me = eval_obj.to_mesh()
-        frameCount = 1
-        shapekeys = getattr(me, "shape_keys", None)
-        if shapekeys and len(shapekeys.key_blocks) > 1:
-            frameCount = len(shapekeys.key_blocks)
-            
-        base_count = len(me.vertices)
-        for key in shapekeys.key_blocks:
-            if len(key.data) != base_count:
-                operator.report({'ERROR'}, f"Shape key '{key.name}' has mismatched vertex count")
-                return -1
-
-        me.calc_loop_triangles()
-
-        diffuseColor = (1.0, 1.0, 1.0)
-        specularColor = (0.9, 0.9, 0.9)
-        opacity = 1.0
-        textures_flag = 0
-        texnames = []
-
-        if obj.data.materials:
-            mat = obj.data.materials[0]
-            img = find_image_in_material(mat)
-            if img and hasattr(img, "filepath"):
-                textures_flag |= 1
-                texnames.append(os.path.basename(bpy.path.abspath(img.filepath)))
-                diffuseColor = mat.diffuse_color[:3] if hasattr(mat, "diffuse_color") else diffuseColor
-                specularColor = mat.specular_color[:3] if hasattr(mat, "specular_color") else specularColor
-                opacity = mat.alpha if hasattr(mat, "alpha") else opacity
-
-                if mat.use_nodes and mat.node_tree:
-                    images = []
-                    for node in mat.node_tree.nodes:
-                        if node.type == 'TEX_IMAGE' and getattr(node, "image", None):
-                            images.append(node.image)
-                    for im in images[1:3]:
-                        texnames.append(os.path.basename(bpy.path.abspath(im.filepath)))
-                        textures_flag |= 1 << (len(texnames)-1)
-                        
-        uv_layer = me.uv_layers.active.data if me.uv_layers.active else None
-        
-        vmap = {}
-        uvlist = []
-        indices = []
-
-        next_index = 0
-        vertices_all = []
-        normals_all = []
-
-        if frameCount == 1:
-            for v in me.vertices:
-                vertices_all.extend(v.co)
-                normals_all.extend(v.normal)
-        else:
-            keys = [k for k in shapekeys.key_blocks if k.name != "Basis"]
-            frameCount = len(keys)
-            
-            for key in keys:
-                for v in key.data:
-                    vertices_all.extend(v.co)
-                for v in me.vertices:
-                    normals_all.extend(v.normal)
-                    
-        for tri in me.loop_triangles:
-            tri_verts = []
-            for li in tri.loops:
-                v_idx = me.loops[li].vertex_index
-                uv_u, uv_v = uv_layer[li].uv if uv_layer else (0.0, 0.0)
-                vkey = (v_idx, float(uv_u), float(uv_v))
-                if vkey in vmap:
-                    new_idx = vmap[vkey]
-                else:
-                    co = obj.matrix_world @ me.vertices[v_idx].co
-                    no = obj.matrix_world.to_3x3() @ me.vertices[v_idx].normal
-                    vertices_all.extend([co.x, co.y, co.z])
-                    normals_all.extend([no.x, no.y, no.z])
-                    uvlist.extend([uv_u, uv_v])
-                    new_idx = next_index
-                    vmap[vkey] = new_idx
-                    next_index += 1
-                tri_verts.append(new_idx)
-            indices.extend(tri_verts)
-
-        indexCount = len(indices)
-        vertexCount = next_index
-
-        properties = 0
-        mat_data = obj.data
-        if hasattr(mat_data, "g3d_customColor") and mat_data.g3d_customColor:
-            properties |= 1
-        if hasattr(mat_data, "g3d_double_sided") and mat_data.show_double_sided:
-            properties |= 2
-        if hasattr(mat_data, "g3d_noSelect") and mat_data.g3d_noSelect:
-            properties |= 4
-        if hasattr(mat_data, "g3d_glow") and mat_data.g3d_glow:
-            properties |= 8
-            
-        team_alpha = getattr(mat_data, "teamcolor_alpha", 0)
-        properties |= (255 - int(team_alpha)) << 24
-
-        textures = textures_flag
-
-        meshname_bytes = bytes(obj.name[:64], "ascii")
-
-        f.write(struct.pack("<64s3I8f2I",
-            meshname_bytes,
-            frameCount, vertexCount, indexCount,
-            float(diffuseColor[0]), float(diffuseColor[1]), float(diffuseColor[2]),
-            float(specularColor[0]), float(specularColor[1]), float(specularColor[2]),
-            float(9.999999), float(opacity),
-            int(properties), int(textures)
-        ))
-
-        if textures:
-            for tn in texnames:
-                f.write(struct.pack("<64s", bytes(tn[:64], "ascii")))
-
-        vertex_format = "<%if" % int(frameCount * vertexCount * 3)
-        normals_format = "<%if" % int(frameCount * vertexCount * 3)
-        texturecoords_format = "<%if" % int(vertexCount * 2)
-        indices_format = "<%iI" % int(indexCount)
-
-        if vertexCount > 0:
-            f.write(struct.pack(vertex_format, *vertices_all))
-            f.write(struct.pack(normals_format, *normals_all))
-            if textures:
-                f.write(struct.pack(texturecoords_format, *uvlist))
-            f.write(struct.pack(indices_format, *indices))
-
-        eval_obj.to_mesh_clear()
-    f.close()
-    operator.report({'INFO'}, f"Exported {len(mesh_objs)} mesh(es) to {os.path.basename(filepath)}")
-    return 0
-
 ###########################################################################
 # --- Blender UI / Operators / Panel ---
 ###########################################################################
@@ -601,12 +470,11 @@ classes = (
 def G3DSaver(filepath, context, toglest, operator):
     print(f"\nExporting: {filepath}")
     depsgraph = context.evaluated_depsgraph_get()
+    scene = bpy.context.scene
 
-    objs = context.selected_objects
-    if not objs:
-        objs = list(bpy.data.objects)
-
+    objs = context.selected_objects or list(bpy.data.objects)
     mesh_objs = [o for o in objs if o.type == 'MESH']
+
     if not mesh_objs:
         operator.report({'ERROR'}, "No mesh objects found to export")
         return -1
@@ -617,34 +485,36 @@ def G3DSaver(filepath, context, toglest, operator):
         operator.report({'ERROR'}, f"Cannot open file for writing: {e}")
         return -1
 
+    # --- File header ---
     f.write(struct.pack("<3cB", b'G', b'3', b'D', 4))
     f.write(struct.pack("<HB", len(mesh_objs), 0))
 
-    def find_image_in_material(mat):
-        if mat is None:
-            return None
-        if mat.use_nodes and mat.node_tree:
-            for node in mat.node_tree.nodes:
-                if node.type == 'TEX_IMAGE' and getattr(node, "image", None):
-                    return node.image
-        return None
-
+    # --- Export each object ---
     for obj in mesh_objs:
-        eval_obj = obj.evaluated_get(depsgraph)
-        me = eval_obj.to_mesh()
-        me.calc_loop_triangles()
-        uv_layer = me.uv_layers.active.data if me.uv_layers.active else None
+        print(f"Processing object: {obj.name}")
 
-        shapekeys = getattr(me, "shape_keys", None)
-        if shapekeys and len(shapekeys.key_blocks) > 1:
-            keys = list(shapekeys.key_blocks)
-            if keys[0].name != "Basis":
-                keys.sort(key=lambda k: 0 if k.name == "Basis" else 1)
-            frameCount = len(keys)
+        # Determine animation range
+        frame_start = scene.frame_start
+        frame_end = scene.frame_end
+        current_frame = scene.frame_current
+
+        # Determine if animated
+        animated = False
+        if getattr(obj, "animation_data", None) and obj.animation_data.action:
+            animated = True
+        sk = getattr(obj.data, "shape_keys", None)
+        if sk and getattr(sk, "animation_data", None) and sk.animation_data.action:
+            animated = True
+        if any(m.type == 'ARMATURE' for m in obj.modifiers):
+            animated = True
+
+        if animated:
+            frames = list(range(frame_start, frame_end + 1))
         else:
-            keys = [None]
-            frameCount = 1
+            frames = [current_frame]
+        frameCount = len(frames)
 
+        # --- Gather material info ---
         diffuseColor = (1.0, 1.0, 1.0)
         specularColor = (0.9, 0.9, 0.9)
         opacity = 1.0
@@ -655,11 +525,11 @@ def G3DSaver(filepath, context, toglest, operator):
             mat = obj.data.materials[0]
             img = find_image_in_material(mat)
             if img and getattr(img, "filepath", None):
-                textures_flag |= 1  # diffuse
+                textures_flag |= 1
                 texnames.append(os.path.basename(bpy.path.abspath(img.filepath)))
-                diffuseColor = mat.diffuse_color[:3] if hasattr(mat, "diffuse_color") else diffuseColor
-                specularColor = mat.specular_color[:3] if hasattr(mat, "specular_color") else specularColor
-                opacity = mat.alpha if hasattr(mat, "alpha") else opacity
+                diffuseColor = getattr(mat, "diffuse_color", diffuseColor)[:3]
+                specularColor = getattr(mat, "specular_color", specularColor)[:3]
+                opacity = getattr(mat, "alpha", opacity)
 
             if mat.use_nodes and mat.node_tree:
                 images = [n.image for n in mat.node_tree.nodes if n.type == 'TEX_IMAGE' and getattr(n, "image", None)]
@@ -667,72 +537,89 @@ def G3DSaver(filepath, context, toglest, operator):
                     texnames.append(os.path.basename(bpy.path.abspath(im.filepath)))
                     textures_flag |= 1 << (len(texnames)-1)
 
+        # --- Base mesh from first frame ---
+        scene.frame_set(frames[0])
+        bpy.context.view_layer.update()
+        eval_obj0 = obj.evaluated_get(depsgraph)
+        me0 = eval_obj0.to_mesh()
+        me0.calc_loop_triangles()
+        uv_layer0 = me0.uv_layers.active.data if me0.uv_layers.active else None
+
         vmap = {}
+        next_index = 0
         base_vertices = []
         base_normals = []
         uvlist = []
         indices = []
-        next_index = 0
 
-        for tri in me.loop_triangles:
+        for tri in me0.loop_triangles:
             tri_verts = []
             for li in tri.loops:
-                v_idx = me.loops[li].vertex_index
-                uv_u, uv_v = uv_layer[li].uv if uv_layer else (0.0, 0.0)
+                v_idx = me0.loops[li].vertex_index
+                uv_u, uv_v = uv_layer0[li].uv if uv_layer0 else (0.0, 0.0)
                 vkey = (v_idx, float(uv_u), float(uv_v))
                 if vkey not in vmap:
                     vmap[vkey] = next_index
                     next_index += 1
-                    co = me.vertices[v_idx].co
-                    no = me.vertices[v_idx].normal
-                    base_vertices.extend([co.x, co.y, co.z])
-                    base_normals.extend([no.x, no.y, no.z])
+                    co_local = me0.vertices[v_idx].co.copy()
+                    no_local = me0.vertices[v_idx].normal.copy()
+                    base_vertices.extend([co_local.x, co_local.y, co_local.z])
+                    base_normals.extend([no_local.x, no_local.y, no_local.z])
                     uvlist.extend([uv_u, uv_v])
                 tri_verts.append(vmap[vkey])
             indices.extend(tri_verts)
 
         vertexCount = next_index
         indexCount = len(indices)
-        specularPower = 9.999999
-        properties = 0
+        eval_obj0.to_mesh_clear()
 
+        # --- Gather vertices/normals across all frames ---
         vertices_all = []
         normals_all = []
 
-        if frameCount == 1:
-            vertices_all = base_vertices[:]
-            normals_all = base_normals[:]
-        else:
-            for key in keys:
-                for vkey, idx in vmap.items():
-                    orig_index = vkey[0]
-                    co = obj.matrix_world @ key.data[orig_index].co
-                    vertices_all.extend([co.x, co.y, co.z])
-                normals_all.extend(base_normals)
+        for f_idx, fnum in enumerate(frames):
+            scene.frame_set(fnum)
+            bpy.context.view_layer.update()
+            eval_obj = obj.evaluated_get(depsgraph)
+            me = eval_obj.to_mesh()
+            mat_world = eval_obj.matrix_world
+            mat_world3 = mat_world.to_3x3()
 
-        rot_forward_x = Matrix((
-            (1,  0,  0, 0),
-            (0,  0,  1, 0),
-            (0, -1,  0, 0),
-            (0,  0,  0, 1)
-        ))
+            # vertices
+            for vkey, idx in sorted(vmap.items(), key=lambda i: i[1]):
+                orig_index = vkey[0]
+                v = me.vertices[orig_index].co
+                v_world = mat_world @ v
+                vertices_all.extend([v_world.x, v_world.y, v_world.z])
 
-        rot = rot_forward_x
+            # normals
+            for v in me.vertices:
+                n = mat_world3 @ v.normal
+                normals_all.extend([n.x, n.y, n.z])
 
-        rot3 = rot.to_3x3()
+            eval_obj.to_mesh_clear()
 
-        for i in range(0, len(vertices_all), 3):
-            v = Vector(vertices_all[i:i+3])
-            v_rot = rot3 @ v
-            vertices_all[i:i+3] = v_rot
+        # --- Coordinate conversion if needed ---
+        if toglest:
+            rot_forward_x = Matrix((
+                (1, 0, 0, 0),
+                (0, 0, 1, 0),
+                (0, -1, 0, 0),
+                (0, 0, 0, 1)
+            ))
+            rot3 = rot_forward_x.to_3x3()
+            for i in range(0, len(vertices_all), 3):
+                v = Vector(vertices_all[i:i+3])
+                v = rot3 @ v
+                vertices_all[i:i+3] = v
+            for i in range(0, len(normals_all), 3):
+                n = Vector(normals_all[i:i+3])
+                n = (rot3 @ n).normalized()
+                normals_all[i:i+3] = n
 
-        for i in range(0, len(normals_all), 3):
-            n = Vector(normals_all[i:i+3])
-            n_rot = rot3 @ n
-            normals_all[i:i+3] = n_rot.normalized()
-
-                
+        # --- Mesh properties ---
         mesh_data = obj.data
+        properties = 0
         if getattr(mesh_data, "g3d_customColor", False):
             properties |= 1
             properties |= (255 - getattr(mesh_data, "teamcolor_alpha", 0)) << 24
@@ -743,23 +630,11 @@ def G3DSaver(filepath, context, toglest, operator):
         if getattr(mesh_data, "g3d_glow", False):
             properties |= 8
         if getattr(mesh_data, "g3d_fullyOpaque", False):
-            opacity = 1.0    
-        if getattr(obj.data, "g3d_ignore_lighting", True):
-            if hasattr(me, "use_auto_smooth"):
-                me.use_auto_smooth = True
+            opacity = 1.0
 
-            normals_arr = [loop.normal.copy() for loop in me.loops]
-            me.normals_split_custom_set(normals_arr)
-
-            normals_all = []
-            uniform_normal = Vector(mesh_data.g3d_ignore_lighting_normal)
-            uniform_normal = obj.matrix_world.to_3x3() @ uniform_normal
-
-            for f_idx in range(frameCount):
-                for v in me.vertices:
-                    normals_all.extend([uniform_normal.x, uniform_normal.y, uniform_normal.z])
-
+        # --- Write mesh header ---
         meshname_bytes = bytes(obj.name[:64], "ascii")
+        specularPower = 9.999999
         f.write(struct.pack("<64s3I8f2I",
             meshname_bytes,
             frameCount, vertexCount, indexCount,
@@ -769,20 +644,22 @@ def G3DSaver(filepath, context, toglest, operator):
             properties, textures_flag
         ))
 
+        # --- Texture names ---
         for tn in texnames:
             f.write(struct.pack("<64s", bytes(tn[:64], "ascii")))
 
-        f.write(struct.pack("<%if" % (frameCount*vertexCount*3), *vertices_all))
-        f.write(struct.pack("<%if" % (frameCount*vertexCount*3), *normals_all))
+        # --- Vertex/normals/uvs/indices ---
+        f.write(struct.pack("<%if" % (frameCount * vertexCount * 3), *vertices_all))
+        f.write(struct.pack("<%if" % (frameCount * vertexCount * 3), *normals_all))
         if textures_flag:
-            f.write(struct.pack("<%if" % (vertexCount*2), *uvlist))
+            f.write(struct.pack("<%if" % (vertexCount * 2), *uvlist))
         f.write(struct.pack("<%iI" % indexCount, *indices))
 
-        eval_obj.to_mesh_clear()
-
     f.close()
+    scene.frame_set(scene.frame_current)
     operator.report({'INFO'}, f"Exported {len(mesh_objs)} mesh(es) to {os.path.basename(filepath)}")
     return 0
+
 
 
 def register():
