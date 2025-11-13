@@ -12,7 +12,6 @@
 		<unit name="sphinx" amount="1"/>
 		<unit name="slave" amount="3"/>
 		<unit name="spearman" amount="1"/>
-		<unit name="camel_rider" amount="1"/>
 		<unit name="spearthrower" amount="1"/>
 		<unit name="chicken" amount="3"/>
 		<unit name="priest" amount="1"/>
