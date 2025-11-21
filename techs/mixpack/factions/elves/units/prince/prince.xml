@@ -20,7 +20,6 @@
 		</levels>
 		<fields>
 			<field value="land"/>
-			<field value="air"/>
 		</fields>
 		<properties/>
 		<light enabled="true" red="0.7" green="0.8" blue="0.8"/>

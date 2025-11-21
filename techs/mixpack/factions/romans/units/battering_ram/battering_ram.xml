@@ -21,7 +21,6 @@
 		</levels>
 		<fields>
 			<field value="land"/>
-			<field value="air"/>
 		</fields>
 		<properties>
 			<property value="burnable"/>
